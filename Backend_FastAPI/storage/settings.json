@@ -110,13 +110,14 @@
   "glowSpread": 11,
   "glowOpacity": 0.2,
   "faviconUrl": "https://cdn.imgbin.com/14/0/22/imgbin-computer-icons-robotics-android-avatar-robot-SBhiWvqMR8xkP6wQLwW3NJwD6.jpg",
-  "sendButtonBgColor": "#111111",
+  "sendButtonBgColor": "#0d0d0d",
   "taglineColor": "#3370eb",
-  "titleColor": "#878892",
+  "titleColor": "#ff5722",
   "titleBold": true,
   "titleItalic": true,
   "titleFontSize": 70,
   "taglineBold": true,
   "taglineItalic": true,
-  "userBubbleBg": "#222222"
+  "userBubbleBg": "#1e1e1e",
+  "assistantTextColor": "#eaeaea"
 }
