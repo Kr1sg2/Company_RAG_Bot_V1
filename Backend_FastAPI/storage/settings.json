@@ -13,8 +13,8 @@
   "uiHeader": "Closed-book RAG system - answers only from company documents",
   "uiSubtitle": "Ask me anything about your company documents",
   "uiPlaceholder": "Ask a question about your documents",
-  "strictness": 6,
-  "temperature": 0.5,
+  "strictness": 10,
+  "temperature": 0,
   "top_k": 5,
   "max_tokens": 500,
   "enableSpeechToText": true,
@@ -25,11 +25,11 @@
   "title": "Leaders AI Company Chatbot",
   "mutedTextColor": "#64748b",
   "background": {
-    "color": "#8c088c",
+    "color": "#e8bbe8",
     "imageUrl": "https://t4.ftcdn.net/jpg/04/27/16/05/360_F_427160582_w0D5Z01pVaz32w7JzzNWTtE2n1VvvKmi.jpg"
   },
   "foreground": {
-    "color": "#716f71",
+    "color": "#f01919",
     "imageUrl": null
   },
   "shadow": {
@@ -110,14 +110,15 @@
   "glowSpread": 11,
   "glowOpacity": 0.2,
   "faviconUrl": "https://cdn.imgbin.com/14/0/22/imgbin-computer-icons-robotics-android-avatar-robot-SBhiWvqMR8xkP6wQLwW3NJwD6.jpg",
-  "sendButtonBgColor": "#0d0d0d",
+  "sendButtonBgColor": "#202020",
   "taglineColor": "#3370eb",
-  "titleColor": "#7a7b7f",
+  "titleColor": "#00ff00",
   "titleBold": true,
   "titleItalic": true,
   "titleFontSize": 70,
   "taglineBold": true,
   "taglineItalic": true,
-  "userBubbleBg": "#1e1e1e",
-  "assistantTextColor": "#eaeaea"
+  "userBubbleBg": "#101010",
+  "assistantTextColor": "#eaeaea",
+  "userTextColor": "#366ee7"
 }
