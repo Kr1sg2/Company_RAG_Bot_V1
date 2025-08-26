@@ -1,108 +1,19 @@
 INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-INFO:     Started server process [6361]
+INFO:     Started server process [12276]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8600 (Press CTRL+C to quit)
-INFO:     127.0.0.1:42514 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42518 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52950 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55040 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55056 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60610 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60616 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35892 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35908 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40390 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40404 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40406 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40418 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58402 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58404 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:50156 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:50168 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54938 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54944 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44700 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44702 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44714 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44724 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59176 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59186 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43970 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43978 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41124 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41126 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41130 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33680 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33688 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52532 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41734 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41740 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56712 - "GET /list_documents/ HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42052 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42054 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42066 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42072 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42074 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42082 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42088 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42102 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42118 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42126 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42130 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42138 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42144 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42154 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42168 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42172 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42186 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40680 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40686 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40698 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40702 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40718 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40724 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40732 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40734 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59024 - "GET /admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55640 - "GET /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55654 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55656 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55662 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55678 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55686 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55696 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54190 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54196 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54198 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54202 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54208 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54222 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54224 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54238 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54250 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40980 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58956 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58966 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56476 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56482 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53352 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53368 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53382 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58340 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49512 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49518 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41056 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41066 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41080 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41086 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58158 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58166 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58182 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58188 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58200 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:39254 - "GET /list_documents/ HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49002 - "GET /files/0-0-eligibility-to-earn-commission.pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53520 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35184 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35194 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44622 - "GET /api/admin/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44630 - "GET /auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44636 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44648 - "PUT /api/admin/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44664 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45096 - "GET /admin/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39250 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39260 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
@@ -110,180 +21,50 @@ INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:42550 - "POST /chat/?query=dress+code HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44422 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59596 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59600 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59616 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59626 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59630 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59632 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59640 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59642 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59646 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46384 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46388 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46402 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46418 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46430 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46444 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46452 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46460 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46472 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46482 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46484 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46496 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36310 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36322 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36332 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36338 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:49870 - "POST /chat/?query=leaders HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60012 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60024 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60038 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60054 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:58478 - "POST /chat/?query=leaders HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58390 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58402 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58412 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58416 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:58432 - "POST /chat/?query=leaders HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42824 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42830 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42836 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42848 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:54390 - "POST /chat/?query=leaders HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53022 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53028 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:53038 - "POST /chat/?query=leaders HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56282 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56292 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56304 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56306 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33554 - "GET /admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54618 - "GET /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54632 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54634 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54636 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54648 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54664 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54678 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54688 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:48320 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:38374 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:38376 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:38380 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59890 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59894 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59900 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56528 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56536 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56558 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56546 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33790 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33792 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33800 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33798 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36400 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36412 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36414 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:57620 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:57634 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:37432 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:37438 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:37454 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:49096 - "POST /chat/?query=dress+code HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43280 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43282 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43286 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43300 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52986 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52992 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53004 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53020 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55568 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55570 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47686 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47690 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47692 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:57100 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41994 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42000 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:48992 - "POST /chat/?query=leaders+dress+code HTTP/1.1" 200 OK
-INFO:     127.0.0.1:38212 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47824 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47828 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47834 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47844 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35042 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35050 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35052 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35062 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35076 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35090 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35098 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35100 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35114 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35116 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35128 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35136 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47086 - "POST /chat/?query=leaders HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43602 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43616 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34876 - "POST /chat/?query=dress+code HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54398 - "GET /files/0-7-dress-code-policy.pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54398 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39292 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39306 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51722 - "GET /api/admin/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51724 - "GET /auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51732 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59396 - "PUT /api/admin/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59400 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59408 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59414 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59430 - "PUT /api/admin/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59446 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59448 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60510 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60518 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47300 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47316 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47320 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42180 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42188 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34050 - "GET /api/admin/branding HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:34038 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35172 - "HEAD /api/admin/branding%20%7C%20jq HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35182 - "HEAD /api/admin HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55176 - "GET /api/admin/branding%20%7C%20jq HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48838 - "GET /admin/settings?public=true%20\%20|%20jq HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:33846 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33406 - "GET /api/admin/branding%20/titleColor HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52582 - "GET /api/admin/branding%20%7C%20jq HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49354 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32828 - "GET /api/admin/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49832 - "GET /api/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49834 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49840 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50754 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43296 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41122 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53166 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53176 - "PUT /api/admin/branding HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59196 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54898 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56230 - "GET /api/admin/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40774 - "PUT /api/admin/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40784 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
