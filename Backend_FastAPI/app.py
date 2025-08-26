@@ -446,7 +446,18 @@ def list_dir_files(d: str | Path) -> list[str]:
 
 @app.get("/list_documents/")
 def list_documents():
-    return {"stored_documents": list_dir_files(WATCH_DIRECTORY)}
+    files = []
+    for name in sorted(os.listdir(WATCH_DIRECTORY)):
+        path = os.path.join(WATCH_DIRECTORY, name)
+        if os.path.isfile(path) and _is_supported(name):
+            stat = os.stat(path)
+            files.append({
+                "name": name,
+                "size": stat.st_size,
+                "modified": stat.st_mtime,
+                "type": Path(name).suffix.lower().lstrip('.') or 'unknown'
+            })
+    return {"stored_documents": [f["name"] for f in files], "documents": files}
 
 @app.get("/count_documents/")
 def count_documents():
