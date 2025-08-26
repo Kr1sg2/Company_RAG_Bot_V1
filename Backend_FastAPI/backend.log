@@ -235,3 +235,11 @@ INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 INFO:     127.0.0.1:49096 - "POST /chat/?query=dress+code HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43280 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43282 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43286 - "GET /auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43300 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52986 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52992 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53004 - "GET /auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53020 - "GET /api/admin/branding HTTP/1.1" 200 OK
