@@ -25,7 +25,7 @@
   "title": "Leaders AI Company Chatbot",
   "mutedTextColor": "#64748b",
   "background": {
-    "color": "#e4a6e8",
+    "color": "#7f767f",
     "imageUrl": "https://t4.ftcdn.net/jpg/04/27/16/05/360_F_427160582_w0D5Z01pVaz32w7JzzNWTtE2n1VvvKmi.jpg"
   },
   "foreground": {
@@ -100,9 +100,9 @@
   "taglineText": "Closed-book RAG system - answers only from company documents",
   "emptyStateText": "Ask me anything about our company documents!",
   "inputPlaceholder": "Ask a question about your documents...",
-  "pageBackgroundColor": "#7f767f",
+  "pageBackgroundColor": "#8c088c",
   "pageBackgroundUrl": "https://t4.ftcdn.net/jpg/04/27/16/05/360_F_427160582_w0D5Z01pVaz32w7JzzNWTtE2n1VvvKmi.jpg",
-  "chatCardBackgroundColor": "#aa7cb6",
+  "chatCardBackgroundColor": "#716f71",
   "chatCardBackgroundUrl": null,
   "inputBackgroundColor": "#f8f2f2",
   "glowColor": "#edf4b3",
@@ -110,12 +110,13 @@
   "glowSpread": 11,
   "glowOpacity": 0.2,
   "faviconUrl": "https://cdn.imgbin.com/14/0/22/imgbin-computer-icons-robotics-android-avatar-robot-SBhiWvqMR8xkP6wQLwW3NJwD6.jpg",
-  "sendButtonBgColor": "#f56bff",
+  "sendButtonBgColor": "#111111",
   "taglineColor": "#3370eb",
-  "titleColor": "#ff5722",
+  "titleColor": "#878892",
   "titleBold": true,
   "titleItalic": true,
   "titleFontSize": 70,
   "taglineBold": true,
-  "taglineItalic": true
+  "taglineItalic": true,
+  "userBubbleBg": "#222222"
 }
