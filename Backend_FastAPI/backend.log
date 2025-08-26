@@ -219,3 +219,11 @@ INFO:     127.0.0.1:33790 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
 INFO:     127.0.0.1:33792 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
 INFO:     127.0.0.1:33800 - "GET /auth/me HTTP/1.1" 200 OK
 INFO:     127.0.0.1:33798 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36400 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36412 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36414 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57620 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57634 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37432 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37438 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37454 - "GET /admin/settings?public=true HTTP/1.1" 200 OK

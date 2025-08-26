@@ -1519,6 +1519,25 @@ async def upload_logo(
 
     return {"ok": True, "url": logo_url, "source": "upload"}
 
+@admin.post("/admin/assets")
+async def upload_asset(file: UploadFile = File(...)):
+    """Upload any asset file and return URL for use in branding."""
+    ext = Path(file.filename or "").suffix.lower() or ".png"
+    if ext not in {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg", ".ico", ".pdf", ".txt"}:
+        raise HTTPException(status_code=400, detail="Unsupported file type")
+    
+    # Generate unique filename to avoid collisions
+    import time
+    timestamp = int(time.time())
+    base_name = Path(file.filename or "asset").stem
+    dest_name = f"{base_name}_{timestamp}{ext}"
+    dest = BRANDING_DIR / dest_name
+    
+    dest.write_bytes(await file.read())
+    asset_url = f"/branding/{dest_name}"
+    
+    return {"url": asset_url}
+
 @admin.post("/ingest/webpage")
 def ingest_webpage(payload: IngestURLRequest, request: Request):
     url = payload.url.strip()
