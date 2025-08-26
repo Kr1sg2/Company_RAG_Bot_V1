@@ -333,9 +333,12 @@ def _apply_branding_to_public_settings(branding: dict) -> dict:
         "emptyStateText", "inputPlaceholder", "fontSize"
     ]
     
-    # Pass through all extended fields that exist
+    # Pass through all extended fields that exist (skip empty URLs)
     for field in extended_fields:
         if field in branding and branding[field] is not None:
+            # Skip empty URL fields
+            if field.endswith('Url') and str(branding[field]).strip() == "":
+                continue
             result[field] = branding[field]
     
     # Legacy field mappings for backward compatibility
@@ -1400,16 +1403,14 @@ def get_admin_branding():
     # Return full branding settings with both new and legacy fields for compatibility
     branding_result = _apply_branding_to_public_settings(s)
     
-    # Include legacy format fields for backward compatibility
-    branding_result.update({
+    # Include legacy format fields for backward compatibility, but skip empty URLs
+    legacy_data = {
         "title": branding_result.get("companyName"),
         "background": {
-            "color": branding_result.get("pageBackgroundColor"),
-            "imageUrl": branding_result.get("pageBackgroundUrl")
+            "color": branding_result.get("pageBackgroundColor")
         },
         "foreground": {
-            "color": branding_result.get("chatCardBackgroundColor"),
-            "imageUrl": branding_result.get("chatCardBackgroundUrl")
+            "color": branding_result.get("chatCardBackgroundColor")
         },
         "shadow": {
             "color": branding_result.get("glowColor"),
@@ -1436,7 +1437,18 @@ def get_admin_branding():
             "fontSize": branding_result.get("fontSize") or 14,
             "color": "#9ca3af"
         }
-    })
+    }
+    
+    # Add URL fields only if they're not empty
+    page_bg_url = branding_result.get("pageBackgroundUrl")
+    if page_bg_url and page_bg_url.strip():
+        legacy_data["background"]["imageUrl"] = page_bg_url
+        
+    chat_bg_url = branding_result.get("chatCardBackgroundUrl") 
+    if chat_bg_url and chat_bg_url.strip():
+        legacy_data["foreground"]["imageUrl"] = chat_bg_url
+    
+    branding_result.update(legacy_data)
     
     # Remove None values
     return {k: v for k, v in branding_result.items() if v is not None}
@@ -1488,6 +1500,20 @@ def put_admin_branding(payload: dict = Body(...)):
                 payload["robotLogoDataUrl"] = robot["imageUrl"]
             if robot.get("size") is not None and "robotSize" not in payload:
                 payload["robotSize"] = robot["size"]
+    
+    # Map aliases to canonical field names
+    if "sendBtnBg" in payload and "sendButtonBgColor" not in payload:
+        payload["sendButtonBgColor"] = payload["sendBtnBg"]
+    
+    if "inputBg" in payload and "inputBackgroundColor" not in payload:
+        payload["inputBackgroundColor"] = payload["inputBg"]
+    
+    # Treat empty URL as removal so it doesn't come back on refresh
+    for k in ("pageBackgroundUrl", "chatCardBackgroundUrl"):
+        if k in payload and (payload[k] is None or str(payload[k]).strip() == ""):
+            payload.pop(k, None)
+            if k in s:
+                s.pop(k, None)
     
     # Merge all payload into settings
     s.update(payload)
