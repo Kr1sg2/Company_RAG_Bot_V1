@@ -68,3 +68,13 @@ INFO:     127.0.0.1:54898 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
 INFO:     127.0.0.1:56230 - "GET /api/admin/settings HTTP/1.1" 200 OK
 INFO:     127.0.0.1:40774 - "PUT /api/admin/settings HTTP/1.1" 200 OK
 INFO:     127.0.0.1:40784 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34126 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34130 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36064 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42972 - "PUT /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32892 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32908 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38168 - "POST /api/admin/assets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38178 - "GET /branding/test-asset_1756215809.txt HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50290 - "GET /list_documents/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59220 - "GET /list_documents/ HTTP/1.1" 200 OK
