@@ -1,0 +1,9 @@
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite --host --port 8080
+
+
+  VITE v5.4.19  ready in 267 ms
+
+  ➜  Local:   https://localhost:8080/
+  ➜  Network: https://192.168.238.134:8080/

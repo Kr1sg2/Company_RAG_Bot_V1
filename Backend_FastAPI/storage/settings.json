@@ -1,0 +1,121 @@
+{
+  "companyName": "Leaders AI Company Chatbot",
+  "primaryColor": "#6190ff",
+  "accentColor": "#756bff",
+  "fontFamily": "dm-sans",
+  "fontSize": 14,
+  "foregroundColor": "#0F172A",
+  "mutedForegroundColor": "#64748B",
+  "themeMode": "system",
+  "companyLogoDataUrl": "https://leadersfurniture.com/cdn/shop/files/leaders_logo-black.png?v=1725474257&width=250",
+  "backgroundImageDataUrl": null,
+  "robotIconDataUrl": null,
+  "uiHeader": "Closed-book RAG system - answers only from company documents",
+  "uiSubtitle": "Ask me anything about your company documents",
+  "uiPlaceholder": "Ask a question about your documents",
+  "strictness": 6,
+  "temperature": 0.5,
+  "top_k": 5,
+  "max_tokens": 500,
+  "enableSpeechToText": true,
+  "enableTextToSpeech": false,
+  "sttEnabled": true,
+  "sttLanguage": "en-US",
+  "sttAutoSend": false,
+  "title": "Leaders AI Company Chatbot",
+  "mutedTextColor": "#64748b",
+  "background": {
+    "color": "#e4a6e8",
+    "imageUrl": "https://t4.ftcdn.net/jpg/04/27/16/05/360_F_427160582_w0D5Z01pVaz32w7JzzNWTtE2n1VvvKmi.jpg"
+  },
+  "foreground": {
+    "color": "#aa7cb6",
+    "imageUrl": null
+  },
+  "shadow": {
+    "color": "#edf4b3",
+    "blur": 25,
+    "spread": 11,
+    "opacity": 0.2
+  },
+  "robot": {
+    "imageUrl": "data:image/png;base64,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",
+    "size": 80
+  },
+  "tagline": {
+    "fontFamily": "dm-sans",
+    "fontSize": 14,
+    "color": "#64748b"
+  },
+  "emptyState": {
+    "fontFamily": "dm-sans",
+    "fontSize": 14,
+    "color": "#64748b"
+  },
+  "placeholder": {
+    "fontFamily": "dm-sans",
+    "fontSize": 14,
+    "color": "#9ca3af"
+  },
+  "branding": {
+    "title": "LexaAI Company Chatbot",
+    "emptyState": {
+      "fontFamily": "system-ui",
+      "fontSize": 14,
+      "color": "#64748b"
+    },
+    "robot": {
+      "size": 144,
+      "imageUrl": "https://leadersfurniture.com/cdn/shop/files/leaders_logo-black.png?v=1725474257&width=250"
+    },
+    "placeholder": {
+      "fontFamily": "system-ui",
+      "fontSize": 14,
+      "color": "#9ca3af"
+    },
+    "primaryColor": "#6190ff",
+    "foreground": {
+      "color": "#0a3a3a"
+    },
+    "background": {
+      "color": "#e6eafd"
+    },
+    "mutedTextColor": "#64748b",
+    "accentColor": "#ff6bee",
+    "tagline": {
+      "fontFamily": "system-ui",
+      "fontSize": 16,
+      "color": "#64748b"
+    },
+    "shadow": {
+      "color": "#6bff89",
+      "blur": 25,
+      "spread": 11,
+      "opacity": 0.15
+    }
+  },
+  "logoDataUrl": "https://leadersfurniture.com/cdn/shop/files/leaders_logo-black.png?v=1725474257&width=250",
+  "robotLogoDataUrl": "data:image/png;base64,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",
+  "robotSize": 80,
+  "taglineText": "Closed-book RAG system - answers only from company documents",
+  "emptyStateText": "Ask me anything about our company documents!",
+  "inputPlaceholder": "Ask a question about your documents...",
+  "pageBackgroundColor": "#7f767f",
+  "pageBackgroundUrl": "https://t4.ftcdn.net/jpg/04/27/16/05/360_F_427160582_w0D5Z01pVaz32w7JzzNWTtE2n1VvvKmi.jpg",
+  "chatCardBackgroundColor": "#aa7cb6",
+  "chatCardBackgroundUrl": null,
+  "inputBackgroundColor": "#f8f2f2",
+  "glowColor": "#edf4b3",
+  "glowBlur": 25,
+  "glowSpread": 11,
+  "glowOpacity": 0.2,
+  "faviconUrl": "https://cdn.imgbin.com/14/0/22/imgbin-computer-icons-robotics-android-avatar-robot-SBhiWvqMR8xkP6wQLwW3NJwD6.jpg",
+  "sendButtonBgColor": "#f56bff",
+  "taglineColor": "#3370eb",
+  "titleColor": "#ff5722",
+  "titleBold": true,
+  "titleItalic": true,
+  "titleFontSize": 70,
+  "taglineBold": true,
+  "taglineItalic": true
+}

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(pkill:*)",
+      "Bash(set +e)",
+      "Bash(/dev/null)",
+      "Bash(pgrep:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(pip -q install -U pip wheel setuptools)",
+      "Bash(pip -q install fastapi \"uvicorn[standard]\" python-dotenv passlib[bcrypt] itsdangerous requests beautifulsoup4 pymupdf pytesseract pandas python-docx pillow chromadb langchain-openai openai)",
+      "Bash(export FRONTEND_ORIGIN=\"http://localhost:8080,http://localhost:8082\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

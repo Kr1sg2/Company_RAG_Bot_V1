@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+requests
+python-docx
+pymupdf
+passlib
+bcrypt<4.1
+python-dotenv
+openai
+chromadb
+langchain
+langchain-openai
+tiktoken
+pillow
+numpy
+pytesseract

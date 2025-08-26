@@ -1,0 +1,677 @@
+import logging
+import os
+import io
+import json
+import time
+import threading
+import shutil
+import pytesseract
+import pandas as pd
+from typing import List
+from pathlib import Path
+from PIL import Image
+
+# External libraries
+import fitz
+from docx import Document
+from fastapi import FastAPI, UploadFile, File, HTTPException, Depends, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
+from passlib.context import CryptContext
+from urllib.parse import quote
+from dotenv import load_dotenv
+from openai import OpenAI
+from fastapi.staticfiles import StaticFiles
+
+# ----------------------------
+# Load Environment Variables
+# ----------------------------
+BASE_DIR = Path(__file__).resolve().parent
+load_dotenv(BASE_DIR / ".env")  # -> /home/.../Lexa_AI_V2/Backend_FastAPI/.env
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise RuntimeError("OPENAI_API_KEY is missing. Put it in Backend_FastAPI/.env")
+
+# === All paths under Lexa_AI_V2/Backend_FastAPI ===
+DATA_ROOT = "/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI"
+WATCH_DIRECTORY = os.path.join(DATA_ROOT, "Database")
+CHROMA_PATH = os.path.join(DATA_ROOT, "chroma_db")
+DOCUMENT_IDS_FILE = os.path.join(DATA_ROOT, "document_ids.json")
+
+# ensure dirs/files exist
+os.makedirs(WATCH_DIRECTORY, exist_ok=True)
+os.makedirs(CHROMA_PATH, exist_ok=True)
+
+# Optional for dev: don't hard-stop if ADMIN_PASSWORD missing
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "Krypt0n!t3")  # <-- change in .env for prod
+
+# ----------------------------
+# Optional knobs (safe to leave unset)
+# ----------------------------
+OPENAI_API_BASE = os.getenv("OPENAI_API_BASE")  # e.g., http://127.0.0.1:8080/v1 for LocalAI
+SIMILARITY_THRESHOLD = float(os.getenv("SIMILARITY_THRESHOLD", "0.55"))
+
+# ----------------------------
+# Logging Configuration
+# ----------------------------
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# ----------------------------
+# Create FastAPI Application
+# ----------------------------
+app = FastAPI()
+
+# Setup CORS middleware (adjust for production)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Change this for production!
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# ----------------------------
+# Define BASE_URL for file links (used only for stored metadata)
+# ----------------------------
+BASE_URL = "http://localhost:8600/files"  # Response links use build_file_url(request, ...)
+
+# ----------------------------
+# File System Setup
+# ----------------------------
+# Mount the directory as static files so it can be served over HTTP
+app.mount("/files", StaticFiles(directory=WATCH_DIRECTORY), name="files")
+
+# Build a proxy-safe link to a file, honoring the incoming Host/X-Forwarded-Proto.
+def build_file_url(request: Request, source_doc: str, page_number: int) -> str:
+    base = str(request.base_url).rstrip("/")  # e.g., https://your.domain or http://localhost:8600
+    safe = quote(source_doc)
+    ext = os.path.splitext(source_doc)[1].lower()
+    url = f"{base}/files/{safe}"
+    return f"{url}#page={page_number}" if ext == ".pdf" else url
+
+def load_document_ids():
+    if os.path.exists(DOCUMENT_IDS_FILE):
+        with open(DOCUMENT_IDS_FILE, "r") as f:
+            return set(json.load(f))
+    return set()
+
+def save_document_ids(document_ids):
+    with open(DOCUMENT_IDS_FILE, "w") as f:
+        json.dump(list(document_ids), f)
+
+document_ids = load_document_ids()
+
+# ----------------------------
+# Security Setup
+# ----------------------------
+security = HTTPBasic()
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+USER_CREDENTIALS = {
+    "admin": pwd_context.hash(ADMIN_PASSWORD)
+}
+
+def authenticate(credentials: HTTPBasicCredentials = Depends(security)):
+    """Authenticate user for file operations."""
+    username = credentials.username
+    password = credentials.password
+    if username not in USER_CREDENTIALS or not pwd_context.verify(password, USER_CREDENTIALS[username]):
+        raise HTTPException(status_code=401, detail="Unauthorized")
+    return username
+
+# ----------------------------
+# OpenAI client (after env is loaded)
+# ----------------------------
+oai_client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_API_BASE) if OPENAI_API_BASE \
+             else OpenAI(api_key=OPENAI_API_KEY)
+
+# ----------------------------
+# Initialize ChromaDB & Embeddings
+# ----------------------------
+from chromadb import PersistentClient
+from langchain_openai import OpenAIEmbeddings
+
+try:
+    # Newer langchain_openai versions accept openai_api_base
+    embeddings = OpenAIEmbeddings(
+        openai_api_key=OPENAI_API_KEY,
+        model=os.getenv("OPENAI_EMBED_MODEL", "text-embedding-3-small"),
+        openai_api_base=OPENAI_API_BASE
+    )
+except TypeError:
+    # Some versions expect base_url instead
+    embeddings = OpenAIEmbeddings(
+        openai_api_key=OPENAI_API_KEY,
+        model=os.getenv("OPENAI_EMBED_MODEL", "text-embedding-3-small"),
+        base_url=OPENAI_API_BASE
+    )
+
+chroma_client = PersistentClient(path=CHROMA_PATH)
+db_collection = chroma_client.get_or_create_collection(name="documents")
+
+# ----------------------------
+# Text Splitter Setup
+# ----------------------------
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
+
+# ----------------------------
+# Utility Functions
+# ----------------------------
+def is_valid_chunk(chunk: str) -> bool:
+    """
+    Checks if a chunk is mostly printable text and has a minimum length.
+    """
+    if len(chunk) < 30:  # Minimum length requirement
+        return False
+    printable_ratio = sum(c.isprintable() for c in chunk) / len(chunk)
+    return printable_ratio > 0.6  # Adjust threshold if needed
+
+def add_document(pages: List[dict], doc_id: str, file_link: str):
+    """Index document in ChromaDB with page numbers, filtering out invalid chunks."""
+    try:
+        logger.info(f"Indexing document: {doc_id}")
+
+        for page_data in pages:
+            text = page_data["text"]
+            page_number = page_data["page"]
+
+            # Split text into chunks
+            chunks = splitter.split_text(text)
+
+            # Filter out empty and invalid chunks
+            filtered_chunks = [c for c in chunks if c.strip() and is_valid_chunk(c)]
+            if not filtered_chunks:
+                logger.warning(f"Skipping {doc_id} Page {page_number}: No valid text found.")
+                continue  # Skip if no valid text
+
+            # Generate embeddings for valid chunks
+            vectors = embeddings.embed_documents(filtered_chunks)
+            if not vectors:
+                logger.warning(f"Skipping {doc_id} Page {page_number}: Embeddings not generated.")
+                continue
+
+            for i, chunk in enumerate(filtered_chunks):
+                unique_chunk_id = f"{doc_id}-page{page_number}-{i}"
+                db_collection.add(
+                    ids=[unique_chunk_id],
+                    embeddings=[vectors[i]],
+                    metadatas=[{
+                        "text": chunk,
+                        "source_doc": doc_id,
+                        "file_link": file_link,
+                        "page": page_number
+                    }]
+                )
+
+        document_ids.add(doc_id)
+        save_document_ids(document_ids)
+        logger.info(f"Document indexed successfully: {doc_id}")
+
+    except Exception as e:
+        logger.error(f"Error indexing document: {doc_id}, Error: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error indexing document: {str(e)}")
+
+def delete_document_from_db(doc_id: str):
+    """Delete document from ChromaDB."""
+    try:
+        logger.info(f"Deleting document: {doc_id}")
+        db_collection.delete(where={"source_doc": doc_id})
+        document_ids.discard(doc_id)
+        save_document_ids(document_ids)
+        logger.info(f"Document deleted successfully: {doc_id}")
+    except Exception as e:
+        logger.error(f"Error deleting document: {doc_id}, Error: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error deleting document: {str(e)}")
+
+def extract_text_from_docx(docx_bytes: bytes) -> List[dict]:
+    try:
+        doc = Document(io.BytesIO(docx_bytes))
+        paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
+        filtered_paragraphs = []
+        previous_was_image = False
+
+        for para in paragraphs:
+            if "table of contents" in para.lower() or "contents" in para.lower():
+                logger.info("Skipping potential TOC in DOCX")
+                continue
+
+            if previous_was_image and para.lower().strip() == "click":
+                logger.info("Skipping 'Click' that follows an image in DOCX")
+                previous_was_image = False
+                continue
+
+            if any(tag in para.lower() for tag in ["image", "figure", "graphic"]):
+                logger.info("Skipping image-related text in DOCX")
+                previous_was_image = True
+                continue
+
+            previous_was_image = False
+            filtered_paragraphs.append(para)
+
+        if not filtered_paragraphs:
+            return []
+
+        full_text = "\n".join(filtered_paragraphs)
+        return [{"text": full_text, "page": 1}]
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing DOCX file: {str(e)}")
+
+def extract_text_from_xlsx(xlsx_bytes: bytes) -> List[dict]:
+    """Extracts text from an Excel (.xlsx) file and returns a structured list."""
+    try:
+        excel_file = io.BytesIO(xlsx_bytes)
+        df_sheets = pd.read_excel(excel_file, sheet_name=None, dtype=str)  # Read all sheets as strings
+        extracted_text = []
+        
+        for sheet_name, df in df_sheets.items():
+            if df.empty:
+                continue  # Skip empty sheets
+            
+            text = df.fillna("").to_string(index=False, header=False)  # Convert sheet data to text
+            extracted_text.append({"text": text, "page": sheet_name})  # Use sheet names as "pages"
+        
+        return extracted_text
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing XLSX file: {str(e)}")
+
+def extract_text_from_csv(csv_bytes: bytes) -> List[dict]:
+    """Extracts text from a CSV file."""
+    try:
+        csv_file = io.StringIO(csv_bytes.decode("utf-8", errors="ignore"))
+        df = pd.read_csv(csv_file, dtype=str)  # Read CSV as string
+        
+        if df.empty:
+            return []
+        
+        text = df.fillna("").to_string(index=False, header=False)
+        return [{"text": text, "page": 1}]
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing CSV file: {str(e)}")
+
+def extract_text_from_pdf(pdf_bytes: bytes) -> List[dict]:
+    """Extracts text from PDFs, using OCR for scanned images if needed."""
+    try:
+        doc = fitz.open(stream=io.BytesIO(pdf_bytes), filetype="pdf")
+        page_texts = []
+
+        for page_num, page in enumerate(doc, start=1):
+            text = page.get_text("text")
+
+            # If no text was extracted, try OCR on images
+            if not text.strip():
+                logger.info(f"Page {page_num} contains no text. Trying OCR...")
+                pix = page.get_pixmap()  # Convert PDF page to image
+                img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+
+                # Use Tesseract OCR to extract text
+                text = pytesseract.image_to_string(img)
+
+                if not text.strip():
+                    logger.warning(f"OCR could not extract text from Page {page_num}")
+
+            page_texts.append({"text": text, "page": page_num})
+
+        return page_texts
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing PDF: {str(e)}")
+
+def scan_directory():
+    """Scan the directory for file changes and update the ChromaDB collection."""
+    try:
+        logger.info("Scanning directory for changes.")
+        current_files = set(os.listdir(WATCH_DIRECTORY))
+        logger.info(f"Current files in WATCH_DIRECTORY: {current_files}")
+
+        # Index new files
+        for file_name in current_files - document_ids:
+            file_path = os.path.join(WATCH_DIRECTORY, file_name)
+
+            # Skip directories
+            if os.path.isdir(file_path):
+                logger.warning(f"Skipping directory: {file_path}")
+                continue
+
+            logger.info(f"Indexing new file: {file_path}")
+            with open(file_path, "rb") as f:
+                file_content = f.read()
+
+            if file_name.lower().endswith(".pdf"):
+                text = extract_text_from_pdf(file_content)
+            elif file_name.lower().endswith(".txt"):
+                text = [{"text": file_content.decode("utf-8", errors="ignore"), "page": 1}]
+            elif file_name.lower().endswith(".docx"):
+                text = extract_text_from_docx(file_content)
+            elif file_name.lower().endswith(".xlsx"):
+                text = extract_text_from_xlsx(file_content)
+            elif file_name.lower().endswith(".csv"):
+                text = extract_text_from_csv(file_content)
+            else:
+                logger.warning(f"Skipping unsupported file type: {file_name}")
+                continue  # Skip unsupported file types
+
+            # Build HTTP URL link instead of a file:// URL (metadata only)
+            file_link = f"{BASE_URL}/{file_name}"
+            add_document(text, file_name, file_link)
+
+        # Remove deleted files from the index
+        for file_name in document_ids - current_files:
+            logger.info(f"Removing deleted file from index: {file_name}")
+            delete_document_from_db(file_name)
+
+        logger.info("Directory scan completed successfully.")
+    except Exception as e:
+        logger.error(f"Error scanning directory: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error scanning directory: {str(e)}")
+
+def periodic_scan():
+    """Periodically scan the directory for changes."""
+    while True:
+        scan_directory()
+        time.sleep(8 * 60 * 60)  # Sleep for 8 hours
+
+# Start the periodic directory scanning once per process
+@app.on_event("startup")
+def _start_scanner():
+    # If you ever run multiple replicas, set SCAN_WORKER=0 on the extras
+    if os.environ.get("SCAN_WORKER", "1") == "1":
+        threading.Thread(target=periodic_scan, daemon=True).start()
+
+# ----------------------------
+# API Endpoints
+# ----------------------------
+@app.post("/upload/")
+async def upload_documents(
+    request: Request,
+    files: List[UploadFile] = File(...),
+    username: str = Depends(authenticate),
+):
+    """
+    Upload 1..N documents, save into WATCH_DIRECTORY, (re)index into Chroma,
+    and return the list of filenames that were indexed.
+    """
+    uploaded_files: List[str] = []
+
+    for file in files:
+        filename = file.filename
+        ext = os.path.splitext(filename)[1].lower()
+
+        # Save file to disk
+        file_bytes = await file.read()
+        file_path = os.path.join(WATCH_DIRECTORY, filename)
+        with open(file_path, "wb") as f:
+            f.write(file_bytes)
+        logger.info(f"Saved {filename} ({len(file_bytes)} bytes)")
+
+        # Extract text by type
+        if ext == ".pdf":
+            pages = extract_text_from_pdf(file_bytes)
+            logger.info(f"Extracted text from PDF: {filename}")
+        elif ext == ".txt":
+            pages = [{"text": file_bytes.decode("utf-8", errors="ignore"), "page": 1}]
+            logger.info(f"Extracted text from TXT: {filename}")
+        elif ext == ".docx":
+            pages = extract_text_from_docx(file_bytes)
+            logger.info(f"Extracted text from DOCX: {filename}")
+        elif ext == ".xlsx":
+            pages = extract_text_from_xlsx(file_bytes)
+            logger.info(f"Extracted text from XLSX: {filename}")
+        elif ext == ".csv":
+            pages = extract_text_from_csv(file_bytes)
+            logger.info(f"Extracted text from CSV: {filename}")
+        else:
+            logger.warning(f"Skipping unsupported file type: {filename}")
+            continue  # Unsupported type
+
+        # Build proxy-safe HTTP link (PDFs default to page=1)
+        file_link = build_file_url(request, filename, 1)
+
+        # If re-uploaded, wipe prior chunks first to avoid duplicates
+        if filename in document_ids:
+            delete_document_from_db(filename)
+
+        # Index into Chroma
+        add_document(pages, filename, file_link)
+        uploaded_files.append(filename)
+
+    return {"message": "Documents indexed successfully", "files": uploaded_files}
+
+@app.delete("/delete/")
+def delete_document(doc_id: str, username: str = Depends(authenticate)):
+    try:
+        delete_document_from_db(doc_id)
+        return {"message": f"Document '{doc_id}' deleted successfully."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Delete failed: {str(e)}")
+
+@app.get("/query/")
+def query_chatbot(query: str, request: Request):
+    if not query.strip():
+        return {"response": "Error: Query cannot be empty."}
+
+    try:
+        logger.info(f"Generating embedding for query: {query}")
+        qv = embeddings.embed_query(query)
+
+        logger.info("Querying ChromaDB.")
+        res = db_collection.query(
+            query_embeddings=[qv],
+            n_results=8,
+            include=["metadatas", "distances"]
+        )
+
+        # Flatten results into (similarity, metadata)
+        candidates = []
+        for md_list, dist_list in zip(res.get("metadatas", []) or [], res.get("distances", []) or []):
+            for md, d in zip(md_list or [], dist_list or []):
+                sim = 1 - (d if d is not None else 1.0)
+                if md:
+                    candidates.append((sim, md))
+
+        if not candidates:
+            return {"response": [{"text": "No relevant results found. Try rephrasing your query.", "file_link": None}]}
+
+        # Sort by similarity desc, then by file mtime desc (newer files float up)
+        def _mtime(md):
+            try:
+                return os.path.getmtime(os.path.join(WATCH_DIRECTORY, md.get("source_doc", "")))
+            except Exception:
+                return 0.0
+
+        candidates.sort(key=lambda tup: (tup[0], _mtime(tup[1])), reverse=True)
+
+        # Apply threshold; if nothing passes, fall back to top 5
+        passed = [md for sim, md in candidates if sim >= SIMILARITY_THRESHOLD]
+        picked = (passed or [md for _, md in candidates[:5]])[:5]
+
+        # Build response
+        out = []
+        for md in picked:
+            source_doc = md.get("source_doc", "Unknown Source")
+            full_text = md.get("text", "") or ""
+            snippet = (full_text[:1500] + "...") if len(full_text) > 1500 else full_text
+            page_number = int(md.get("page", 1))
+            out.append({
+                "text": snippet,
+                "file_link": build_file_url(request, source_doc, page_number)
+            })
+
+        return {"response": out}
+
+    except Exception as e:
+        logger.error(f"Error querying ChromaDB: {str(e)}")
+        return {"response": "Error querying database."}
+
+@app.post("/chat/")
+def chat_with_openai(
+    query: str,
+    request: Request,
+    style: str = "paragraph",   # paragraph | bullets | hybrid
+    tone: str = "friendly",     # friendly | neutral | formal
+    length: str = "medium",     # short | medium | long
+):
+    if not query.strip():
+        return {"response": "Error: Query cannot be empty.", "sources": []}
+
+    # 1) Retrieve context
+    try:
+        query_vector = embeddings.embed_query(query)
+        results = db_collection.query(
+            query_embeddings=[query_vector],
+            n_results=5,
+            include=["metadatas", "distances"]
+        )
+    except Exception as e:
+        logger.exception("Chroma query failed")
+        raise HTTPException(status_code=500, detail=f"DB error: {e}")
+
+    context_snippets, sources = [], []
+    seen = set()
+
+    for md_list in results.get("metadatas", []) or []:
+        for md in md_list or []:
+            snippet = (md.get("text") or "").strip()
+            if snippet:
+                context_snippets.append(snippet[:700] + ("..." if len(snippet) > 700 else ""))
+
+            src = md.get("source_doc")
+            if not src:
+                continue
+            page = int(md.get("page", 1))
+            url = build_file_url(request, src, page)
+            if url in seen:
+                continue
+            name = f"{src} (p.{page})" if src.lower().endswith(".pdf") else src
+            sources.append({"name": name, "url": url})
+            seen.add(url)
+            if len(sources) >= 5:
+                break
+
+    if not context_snippets:
+        return {"response": "I could not find relevant information in my database.", "sources": []}
+
+    # 2) Style/tone/length guidance for the model
+    style = (style or "paragraph").lower()
+    tone = (tone or "friendly").lower()
+    length = (length or "medium").lower()
+
+    style_rules = {
+        "paragraph": (
+            "Write in natural, conversational prose using full sentences. "
+            "Avoid bullets or numbered lists unless absolutely necessary. "
+            "Weave steps into a flowing explanation."
+        ),
+        "bullets": (
+            "Use concise bullet points for each step or idea. Keep bullets short and scannable."
+        ),
+        "hybrid": (
+            "Begin with 2-3 conversational sentences that summarize the answer, "
+            "then include a short bulleted checklist of the key steps."
+        ),
+    }
+    length_targets = {
+        "short": "Aim for roughly 100–150 words.",
+        "medium": "Aim for roughly 200–350 words.",
+        "long": "Aim for roughly 500–700 words with helpful detail.",
+    }
+    tone_map = {
+        "friendly": "Use a warm, helpful tone.",
+        "neutral": "Use a clear, professional tone.",
+        "formal": "Use a formal, precise tone.",
+    }
+
+    style_instruction = style_rules.get(style, style_rules["paragraph"])
+    length_instruction = length_targets.get(length, length_targets["medium"])
+    tone_instruction = tone_map.get(tone, tone_map["friendly"])
+
+    system_message = (
+        "You are a company assistant. Only use the provided context to answer questions. "
+        "If no relevant information is available, say 'I could not find relevant information in my database.'\n\n"
+        f"{tone_instruction} {style_instruction} {length_instruction}\n"
+        "Do not invent facts not present in the context. If the user asks for procedures, explain them in a narrative way when using paragraph style.\n\n"
+        "Context:\n" + "\n\n".join(context_snippets) + "\n\n"
+        "User Question: " + query + "\n"
+        "Provide a precise and relevant answer strictly based on the context."
+    )
+
+    # 3) Call LLM (slightly higher temperature for more natural phrasing)
+    try:
+        resp = oai_client.chat.completions.create(
+            model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+            messages=[
+                {"role": "system", "content": system_message},
+                {"role": "user", "content": query},
+            ],
+            temperature=float(os.getenv("OPENAI_TEMPERATURE", "0.5")),
+            max_tokens=1200,
+        )
+        answer = resp.choices[0].message.content.strip()
+        return {"response": answer, "sources": sources}
+    except Exception as e:
+        logger.exception("OpenAI call failed")
+        raise HTTPException(status_code=500, detail=f"OpenAI error: {e}")
+
+
+@app.post("/scan/")
+def manual_scan(username: str = Depends(authenticate)):
+    """Manually trigger a scan of the directory."""
+    try:
+        scan_directory()
+        return {"message": "Directory scanned successfully."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Scan failed: {str(e)}")
+
+@app.post("/reset_memory/")
+def reset_memory(username: str = Depends(authenticate)):
+    """Reset the memory by closing ChromaDB and deleting its directory."""
+    try:
+        logger.info("Attempting to reset ChromaDB memory.")
+        global chroma_client, db_collection
+        chroma_client.reset()  # Close any open connections
+        time.sleep(2)  # Allow file handles to close
+
+        chromadb_path = CHROMA_PATH
+        if os.path.exists(chromadb_path):
+            shutil.rmtree(chromadb_path)
+            logger.info("ChromaDB directory deleted successfully.")
+
+        os.makedirs(chromadb_path, exist_ok=True)
+        chroma_client = PersistentClient(path=chromadb_path)
+        db_collection = chroma_client.get_or_create_collection(name="documents")
+
+        document_ids.clear()
+        save_document_ids(document_ids)
+
+        logger.info("ChromaDB memory reset and re-initialized.")
+        return {"message": "Memory reset successfully."}
+    except Exception as e:
+        logger.error(f"Failed to reset memory: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to reset memory: {str(e)}")
+
+@app.get("/count_documents/")
+def count_documents():
+    """Return the number of documents stored in ChromaDB."""
+    try:
+        count = len(document_ids)
+        logger.info(f"Document count: {count}")
+        return {"document_count": count}
+    except Exception as e:
+        logger.error(f"Error counting documents: {str(e)}")
+        return {"document_count": 0, "error": str(e)}
+
+@app.get("/list_documents/")
+def list_documents():
+    """List all stored document IDs in ChromaDB."""
+    try:
+        logger.info(f"Stored documents: {list(document_ids)}")
+        return {"stored_documents": list(document_ids)}
+    except Exception as e:
+        logger.error(f"Error listing documents: {str(e)}")
+        return {"stored_documents": [], "error": str(e)}
+
+@app.get("/healthz")
+def healthz():
+    return {"ok": True}
+

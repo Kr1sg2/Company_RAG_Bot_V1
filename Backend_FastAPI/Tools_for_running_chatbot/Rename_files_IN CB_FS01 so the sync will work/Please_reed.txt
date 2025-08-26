@@ -1,0 +1,21 @@
+1. Open PowerShell as Administrator
+Press Win + S, type PowerShell.
+Right-click on Windows PowerShell and choose Run as Administrator.
+
+2. Run the Script
+Navigate to the folder where the script is saved. If it’s in C:\company_chatbot\Tools_for_running_chatbot, type:
+
+powershell
+cd C:\company_chatbot\Tools_for_running_chatbot
+
+Run the script by typing:
+
+powershell
+.\rename_files.ps1
+
+3. Verify the Results
+PowerShell will display messages like:
+
+Renamed: 'Old File Name.txt' to 'old_file_name.txt'
+Check the C:\CB_FS01 folder to ensure all files are renamed correctly.
+

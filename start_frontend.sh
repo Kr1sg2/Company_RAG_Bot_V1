@@ -1,0 +1,1 @@
+/opt/lexa/start_frontend.sh
