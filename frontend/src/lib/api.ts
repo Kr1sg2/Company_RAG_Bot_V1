@@ -16,6 +16,68 @@ export type Branding = {
   chatOffsetTop: string;
   cardRadius: string;
   cardBg: string;
+  
+  // Fonts - Typography
+  fontFamily?: string;
+  titleFontSize?: number;
+  bodyFontSize?: number;
+  titleBold?: boolean;
+  titleItalic?: boolean;
+  taglineFontSize?: number;
+  taglineBold?: boolean;
+  taglineItalic?: boolean;
+  
+  // Enhanced Bubble Controls
+  bubblePadding?: number;
+  bubbleMaxWidth?: number;
+  aiTextColor?: string;
+  aiBubbleBorder?: string;
+  userTextColor?: string;
+  userBubbleBorder?: string;
+  
+  // Enhanced Card Controls
+  cardPadding?: number;
+  inputHeight?: number;
+  inputRadius?: number;
+  messageSpacing?: number;
+  
+  // Backgrounds & Shadows
+  pageBackgroundColor?: string;
+  cardBackgroundColor?: string;
+  cardOpacity?: number;
+  shadowColor?: string;
+  shadowBlur?: number;
+  shadowSpread?: number;
+  shadowOpacity?: number;
+  enableShadow?: boolean;
+  enableGlow?: boolean;
+  
+  // Robot / Avatar
+  avatarImageUrl?: string | null;
+  avatarSize?: number;
+  avatarPosition?: string;
+  avatarShape?: string;
+  showAvatarOnMobile?: boolean;
+  
+  // Audio / TTS & STT
+  enableTextToSpeech?: boolean;
+  enableSpeechToText?: boolean;
+  ttsVoice?: string;
+  ttsSpeed?: number;
+  sttLanguage?: string;
+  sttAutoSend?: boolean;
+  showAudioControls?: boolean;
+  ttsAutoPlay?: boolean;
+  
+  // LLM Controls
+  aiModel?: string;
+  aiTemperature?: number;
+  aiMaxTokens?: number;
+  aiTopK?: number;
+  aiStrictness?: string;
+  aiSystemPrompt?: string;
+  aiStreamResponses?: boolean;
+  aiRetainContext?: boolean;
 };
 
 export async function fetchPublicBranding(): Promise<Branding> {
