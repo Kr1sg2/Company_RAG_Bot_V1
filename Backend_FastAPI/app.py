@@ -22,7 +22,7 @@ import re
 from dataclasses import dataclass, asdict
 from enum import Enum
 from pathlib import Path
-from typing import List
+from typing import List, Dict, Any
 
 from fastapi import FastAPI, UploadFile, File, HTTPException, Depends, Request, Query, Body, APIRouter, Form
 from fastapi.middleware.cors import CORSMiddleware
@@ -37,6 +37,19 @@ from itsdangerous import TimestampSigner, BadSignature, SignatureExpired
 from passlib.context import CryptContext
 from pydantic import BaseModel, Field
 from urllib.parse import urlparse, urljoin, quote
+
+# Import new settings store modules
+from settings_store import (
+    load_settings,
+    save_settings,
+    extract_branding_fields,
+    extract_ai_fields,
+    extract_full_settings,
+    update_branding_fields,
+    update_ai_fields,
+    update_full_settings
+)
+from migrate_settings import migrate_once
 
 # ---------- Optional extractors ----------
 try:
@@ -94,13 +107,26 @@ ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "Krypt0n!t3")  # change for prod
 # Public host fallback for file URLs
 PUBLIC_HOST = os.getenv("PUBLIC_HOST", "").strip()
 
-# OpenAI & knobs
+# OpenAI & knobs (fallback from env, but use settings when available)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 OPENAI_API_BASE = os.getenv("OPENAI_API_BASE")  # optional proxy/base
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 OPENAI_TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", "0.5"))
 
 SIMILARITY_THRESHOLD = float(os.getenv("SIMILARITY_THRESHOLD", "0.55"))
+
+# Helper to get AI settings from store with env fallbacks
+def get_ai_settings() -> Dict[str, Any]:
+    """Get current AI settings from store with environment fallbacks."""
+    settings = load_settings()
+    ai_settings = extract_ai_fields(settings)
+    
+    # Apply environment fallbacks for missing values
+    ai_settings.setdefault("model", OPENAI_MODEL)
+    ai_settings.setdefault("temperature", OPENAI_TEMPERATURE)
+    ai_settings.setdefault("strictness", 1)
+    
+    return ai_settings
 
 # Chat/guardrails
 MAX_INPUT_CHARS = int(os.getenv("MAX_INPUT_CHARS", "4000"))
@@ -333,28 +359,38 @@ def _apply_branding_to_public_settings(branding: dict) -> dict:
         "emptyStateText", "inputPlaceholder", "fontSize"
     ]
     
-    # Pass through all extended fields that exist (skip empty URLs)
+    # Track which URL fields are explicitly present (including if set to None/cleared)
+    explicitly_present_urls = {field for field in ["pageBackgroundUrl", "chatCardBackgroundUrl"] if field in branding}
+    
+    # Pass through all extended fields that exist
     for field in extended_fields:
-        if field in branding and branding[field] is not None:
-            # Skip empty URL fields
-            if field.endswith('Url') and str(branding[field]).strip() == "":
-                continue
-            result[field] = branding[field]
+        if field in branding:
+            # For URL fields that are explicitly present, preserve null (cleared) state
+            if field.endswith('Url') and field in explicitly_present_urls:
+                result[field] = branding[field]  # Include even if None (cleared)
+            # For non-URL fields or URL fields not explicitly set, only include non-None values
+            elif branding[field] is not None:
+                # Skip empty URL fields  
+                if field.endswith('Url') and str(branding[field]).strip() == "":
+                    continue
+                result[field] = branding[field]
     
     # Legacy field mappings for backward compatibility
     if not result.get("companyName"):
         result["companyName"] = branding.get("title") or "LexaAI Company Chatbot"
     
-    # Map legacy background/foreground objects
+    # Map legacy background/foreground objects (only if URLs not explicitly cleared)
     bg = branding.get("background") or {}
     fg = branding.get("foreground") or {}
     if not result.get("pageBackgroundColor") and bg.get("color"):
         result["pageBackgroundColor"] = bg["color"]
-    if not result.get("pageBackgroundUrl") and bg.get("imageUrl"):
+    # Only use legacy URL if field not explicitly present in branding (not explicitly cleared)
+    if "pageBackgroundUrl" not in explicitly_present_urls and not result.get("pageBackgroundUrl") and bg.get("imageUrl"):
         result["pageBackgroundUrl"] = bg["imageUrl"]
     if not result.get("chatCardBackgroundColor") and fg.get("color"):
         result["chatCardBackgroundColor"] = fg["color"]
-    if not result.get("chatCardBackgroundUrl") and fg.get("imageUrl"):
+    # Only use legacy URL if field not explicitly present in branding (not explicitly cleared)
+    if "chatCardBackgroundUrl" not in explicitly_present_urls and not result.get("chatCardBackgroundUrl") and fg.get("imageUrl"):
         result["chatCardBackgroundUrl"] = fg["imageUrl"]
     
     # Map legacy shadow object
@@ -418,16 +454,8 @@ def _to_public_settings(s: dict) -> dict:
     
     return result
 
-def load_settings() -> dict:
-    if SETTINGS_FILE.exists():
-        try:
-            return json.loads(SETTINGS_FILE.read_text(encoding="utf-8"))
-        except Exception:
-            return {}
-    return {}
-
-def save_settings(s: dict):
-    SETTINGS_FILE.write_text(json.dumps(s, indent=2), encoding="utf-8")
+# Legacy settings functions (kept for compatibility - now directly using store functions)
+# load_settings and save_settings are imported directly from settings_store
 
 if not SETTINGS_FILE.exists():
     save_settings(asdict(BrandingSettings()))
@@ -1015,14 +1043,20 @@ def chat_with_openai(
     if not OPENAI_API_KEY:
         return {"response": "OpenAI API key is not configured on the server.", "sources": sources}
 
+    # Get current AI settings
+    ai_settings = get_ai_settings()
+    
     from openai import OpenAI
     client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_API_BASE)
     resp = client.chat.completions.create(
-        model=OPENAI_MODEL,
+        model=ai_settings.get("model", OPENAI_MODEL),
         messages=[{"role": "system", "content": system_message},
                   {"role": "user", "content": query}],
-        temperature=float(OPENAI_TEMPERATURE),
-        max_tokens=MAX_OUTPUT_TOKENS,
+        temperature=float(ai_settings.get("temperature", OPENAI_TEMPERATURE)),
+        max_tokens=int(ai_settings.get("max_tokens", MAX_OUTPUT_TOKENS)),
+        top_p=1.0,  # Keep deterministic
+        frequency_penalty=0,
+        presence_penalty=0,
     )
     answer = resp.choices[0].message.content.strip()
     return {"response": answer, "sources": sources}
@@ -1032,8 +1066,50 @@ def chat_with_openai(
 def get_settings(public: bool = False):
     s = load_settings()
     if public:
-        return _to_public_settings(s)
+        public_settings = _to_public_settings(s)
+        # Emergency hotfix toggle to force clear URLs
+        if os.getenv("BRANDING_FORCE_CLEAR") == "1":
+            public_settings["pageBackgroundUrl"] = None
+            public_settings["chatCardBackgroundUrl"] = None
+        return public_settings
     return s
+
+# New unified settings endpoints
+# DEPRECATED: use /api/admin/settings/branding
+@app.get("/admin/settings/branding")
+def get_branding_settings():
+    """Get only branding-related settings."""
+    return extract_branding_fields(load_settings())
+
+# DEPRECATED: use /api/admin/settings/ai
+@app.get("/admin/settings/ai")
+def get_ai_settings_endpoint():
+    """Get only AI-related settings."""
+    return extract_ai_fields(load_settings())
+
+# DEPRECATED: use /api/admin/settings
+@app.get("/admin/settings/full")
+def get_full_settings():
+    """Get complete settings (branding + AI)."""
+    return extract_full_settings(load_settings())
+
+# DEPRECATED: use /api/admin/settings/branding
+@app.put("/admin/settings/branding")
+def put_branding_settings(payload: dict, _: str = Depends(require_admin)):
+    """Update only branding settings, preserving AI settings."""
+    return update_branding_fields(payload)
+
+# DEPRECATED: use /api/admin/settings/ai
+@app.put("/admin/settings/ai")
+def put_ai_settings(payload: dict, _: str = Depends(require_admin)):
+    """Update only AI settings, preserving branding settings."""
+    return update_ai_fields(payload)
+
+# DEPRECATED: use /api/admin/settings
+@app.put("/admin/settings/full")
+def put_full_settings(payload: dict, _: str = Depends(require_admin)):
+    """Update complete settings."""
+    return update_full_settings(payload)
 
 ## MOVED under /api via guarded admin router
 # @app.put("/admin/settings")
@@ -1219,7 +1295,11 @@ class IngestSiteRequest(BaseModel):
 # ---------- Guarded Admin API Router ----------
 from app_security import require_admin_basic
 
+# Existing admin router (for backwards compatibility)
 admin = APIRouter(prefix="/api", dependencies=[Depends(require_admin_basic)])
+
+# New normalized admin router
+admin_normalized = APIRouter(prefix="/api/admin", dependencies=[Depends(require_admin)])
 
 @admin.post("/scan/")
 def scan_index():
@@ -1508,12 +1588,26 @@ def put_admin_branding(payload: dict = Body(...)):
     if "inputBg" in payload and "inputBackgroundColor" not in payload:
         payload["inputBackgroundColor"] = payload["inputBg"]
     
-    # Treat empty URL as removal so it doesn't come back on refresh
+    # Normalize URL fields: treat "", " none ", and null as null
+    def _normalize_url(v):
+        if v is None:
+            return None
+        s = str(v).strip().lower()
+        return None if s in ("", "none") else v
+    
+    # Apply URL normalization and clear from storage when null
     for k in ("pageBackgroundUrl", "chatCardBackgroundUrl"):
-        if k in payload and (payload[k] is None or str(payload[k]).strip() == ""):
-            payload.pop(k, None)
-            if k in s:
-                s.pop(k, None)
+        if k in payload:
+            payload[k] = _normalize_url(payload[k])
+            if payload[k] is None:
+                s.pop(k, None)  # Remove from stored settings completely
+                # Also clear corresponding legacy fields to prevent fallback
+                if k == "pageBackgroundUrl":
+                    if "background" in s and isinstance(s["background"], dict):
+                        s["background"].pop("imageUrl", None)
+                elif k == "chatCardBackgroundUrl":
+                    if "foreground" in s and isinstance(s["foreground"], dict):
+                        s["foreground"].pop("imageUrl", None)
     
     # Merge all payload into settings
     s.update(payload)
@@ -1670,6 +1764,38 @@ def ingest_website(payload: IngestSiteRequest, request: Request):
         },
     }
 
+# ---- Normalized Admin Settings (secured) ----
+
+@admin_normalized.get("/settings/branding")
+def get_branding_settings_api():
+    return extract_branding_fields(load_settings())
+
+@admin_normalized.put("/settings/branding")
+def put_branding_settings_api(payload: dict):
+    return update_branding_fields(payload)
+
+@admin_normalized.get("/settings/ai")
+def get_ai_settings_api():
+    return extract_ai_fields(load_settings())
+
+@admin_normalized.put("/settings/ai")
+def put_ai_settings_api(payload: dict):
+    return update_ai_fields(payload)
+
+@admin_normalized.get("/settings")
+def get_full_settings_api():
+    return extract_full_settings(load_settings())
+
+@admin_normalized.put("/settings")
+def put_full_settings_api(payload: dict):
+    return update_full_settings(payload)
+
+# ---- Public Branding (no auth) ----
+@app.get("/api/admin/settings/public/branding")
+def get_public_branding():
+    return extract_branding_fields(load_settings())
+
 app.include_router(admin)
+app.include_router(admin_normalized)
 
 

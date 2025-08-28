@@ -1,19 +1,18 @@
 INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-INFO:     Started server process [12276]
+INFO:     Started server process [19208]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8600 (Press CTRL+C to quit)
-INFO:     127.0.0.1:53520 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35184 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35194 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44622 - "GET /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44630 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44636 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44648 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44664 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:45096 - "GET /admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:39250 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:39260 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46636 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46642 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46642 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60002 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51992 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51996 - "GET /docks HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52008 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52008 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50370 - "POST /api/auth_echo/ HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:47228 - "POST /api/auth_echo/ HTTP/1.1" 200 OK
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
@@ -21,77 +20,16 @@ INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:34876 - "POST /chat/?query=dress+code HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54398 - "GET /files/0-7-dress-code-policy.pdf HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54398 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:39292 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:39306 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51722 - "GET /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51724 - "GET /auth/me HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51732 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59396 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59400 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59408 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59414 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59430 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59446 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59448 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59450 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60510 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60518 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47300 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47316 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47320 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42180 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42188 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:34050 - "GET /api/admin/branding HTTP/1.1" 401 Unauthorized
-INFO:     127.0.0.1:34038 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:35172 - "HEAD /api/admin/branding%20%7C%20jq HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:35182 - "HEAD /api/admin HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:55176 - "GET /api/admin/branding%20%7C%20jq HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:48838 - "GET /admin/settings?public=true%20\%20|%20jq HTTP/1.1" 422 Unprocessable Entity
-INFO:     127.0.0.1:33846 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33406 - "GET /api/admin/branding%20/titleColor HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:52582 - "GET /api/admin/branding%20%7C%20jq HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:49354 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:32828 - "GET /api/admin/ HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:49832 - "GET /api/ HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:49834 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49840 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:50754 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43296 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41122 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53166 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53176 - "PUT /api/admin/branding HTTP/1.1" 401 Unauthorized
-INFO:     127.0.0.1:59196 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54898 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56230 - "GET /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40774 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:40784 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:34126 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:34130 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36064 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42972 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:32892 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:32908 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:38168 - "POST /api/admin/assets HTTP/1.1" 200 OK
-INFO:     127.0.0.1:38178 - "GET /branding/test-asset_1756215809.txt HTTP/1.1" 200 OK
-INFO:     127.0.0.1:50290 - "GET /list_documents/ HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59220 - "GET /list_documents/ HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44478 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:44488 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52752 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:48806 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:48820 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52758 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:39416 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56568 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59750 - "PUT /api/admin/settings HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51062 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51076 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51150 - "PUT /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51162 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46772 - "GET /api/admin/branding HTTP/1.1" 200 OK
-INFO:     127.0.0.1:42004 - "GET /api/admin/branding HTTP/1.1" 401 Unauthorized
-INFO:     127.0.0.1:55700 - "GET /list_documents/ HTTP/1.1" 200 OK
-INFO:     127.0.0.1:48552 - "HEAD /files/-19350seat.docx HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54036 - "POST /chat/?query=dress%20code&style=paragraph&tone=friendly&length=medium HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52886 - "GET /admin/settings?public=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55468 - "GET /auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55476 - "GET /api/admin/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43038 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43038 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34100 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34114 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34114 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19208]
