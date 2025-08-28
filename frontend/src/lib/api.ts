@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8600";
+const API_BASE = import.meta.env.VITE_API_BASE || "";
 
 export type Branding = {
   companyName: string;
@@ -107,11 +107,11 @@ export async function putAdminBranding(auth: string, payload: Partial<Branding>)
   return res.json();
 }
 
-export async function chat(query: string): Promise<{ response: string; sources?: any[] }> {
-  const res = await fetch(`${API_BASE}/chat/`, {
+export async function chat(message: string): Promise<{ response: string; sources?: any[] }> {
+  const res = await fetch(`${API_BASE}/api/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query }),
+    body: JSON.stringify({ message }),
   });
   if (!res.ok) throw new Error(`chat ${res.status}`);
   return res.json();

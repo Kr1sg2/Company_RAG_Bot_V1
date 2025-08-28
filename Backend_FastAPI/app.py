@@ -466,6 +466,10 @@ if not SETTINGS_FILE.exists():
 def health():
     return {"ok": True}
 
+@app.get("/api/health")
+def api_health():
+    return {"ok": True}
+
 # ---------- Simple FS listing ----------
 def list_dir_files(d: str | Path) -> list[str]:
     files: list[str] = []
@@ -902,6 +906,7 @@ def ensure_hyphen_file(dirpath: str, filename: str) -> str:
 
 # ---------- Query (snippet list) ----------
 @app.get("/query/")
+@app.get("/api/query")
 def query_snippets(query: str, request: Request):
     if not query.strip():
         return {"response": [{"text": "Query cannot be empty.", "file_link": None}]}
@@ -966,6 +971,9 @@ class ChatResponse(BaseModel):
     response: str
     sources: list[dict] = Field(default_factory=list)
 
+class ChatIn(BaseModel):
+    message: str
+
 @app.post("/chat/", response_model=ChatResponse)
 def chat_with_openai(
     request: Request,
@@ -974,6 +982,7 @@ def chat_with_openai(
     tone: ChatTone = Query(ChatTone.friendly),
     length: ChatLength = Query(ChatLength.medium),
 ):
+    """Original chat endpoint with query parameters."""
     if not query.strip():
         return {"response": "Query cannot be empty.", "sources": []}
 
@@ -1060,6 +1069,17 @@ def chat_with_openai(
     )
     answer = resp.choices[0].message.content.strip()
     return {"response": answer, "sources": sources}
+
+@app.post("/api/chat", response_model=ChatResponse)
+def api_chat_post(request: Request, payload: ChatIn):
+    """JSON API endpoint for chat - accepts POST with message in body."""
+    return chat_with_openai(
+        request=request,
+        query=payload.message,
+        style=ChatStyle.paragraph,
+        tone=ChatTone.friendly,
+        length=ChatLength.medium
+    )
 
 # ---------- Admin: settings/branding ----------
 @app.get("/admin/settings")

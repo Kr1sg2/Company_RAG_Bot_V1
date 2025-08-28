@@ -1695,3 +1695,28 @@ INFO:     127.0.0.1:44964 - "GET /api/admin/settings/branding HTTP/1.1" 200 OK
 INFO:     127.0.0.1:44964 - "GET /api/admin/settings/branding HTTP/1.1" 200 OK
 INFO:     127.0.0.1:52456 - "GET /api/admin/settings/public/branding HTTP/1.1" 200 OK
 INFO:     127.0.0.1:52456 - "GET /api/admin/settings/public/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42514 - "GET /api/admin/settings/public/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42514 - "GET /api/admin/settings/public/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50358 - "OPTIONS /chat/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50364 - "POST /chat/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:47818 - "OPTIONS /api/admin/settings/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47822 - "PUT /api/admin/settings/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47822 - "PUT /api/admin/settings/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47822 - "PUT /api/admin/settings/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35138 - "GET /api/admin/settings/public/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35138 - "GET /api/admin/settings/public/branding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35148 - "POST /chat/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:47262 - "POST /chat/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:42008 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42008 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
+INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
+INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
+INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
+INFO:lexa-backend:build_file_url base=http://localhost:8600 via=base_url
+INFO:     127.0.0.1:53402 - "GET /query/?query=what%20is%20the%20company%20dress%20code HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [44748]

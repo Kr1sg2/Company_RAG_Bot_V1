@@ -1,5 +1,5 @@
 {
-  "companyName": "Phase 3 Test",
+  "companyName": "leaders AI (normalized)",
   "primaryColor": "#6190ff",
   "accentColor": "#756bff",
   "fontFamily": "lora",
@@ -134,19 +134,19 @@
   "pageBackgroundUrl": "https://i.ytimg.com/vi/wHev33JXyPA/maxresdefault.jpg",
   "chatCardBackgroundUrl": null,
   "colors": {
-    "primary": "#6190ff",
-    "accent": "#756bff"
+    "primary": "#add8e6",
+    "accent": "#add8e6"
   },
   "bubbles": {
-    "aiBg": "#0f1530",
-    "userBg": "#1b2447",
-    "radius": "18px"
+    "radius": "18px",
+    "aiBg": "#7b8ee5",
+    "userBg": "#8592c7"
   },
-  "chatWidth": "1100",
+  "chatWidth": "920",
   "chatHeight": "56",
   "chatOffsetTop": "7",
   "cardRadius": "18",
-  "cardBg": "rgba(255,255,255,0.85)",
+  "cardBg": "rgba(255,255,255,0.88)",
   "voice": "alloy",
   "model": "gpt-4o-mini"
 }
