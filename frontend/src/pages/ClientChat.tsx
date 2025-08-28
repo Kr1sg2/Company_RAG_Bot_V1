@@ -1,461 +1,311 @@
-import { useEffect, useState } from "react";
-import { fetchPublicBranding, chat, type Branding } from "../lib/api";
+import React, { useEffect, useRef, useState } from "react";
+import { fetchPublicBranding, type Branding } from "../lib/api";
 
-// Default branding values
-const defaultBranding: Branding = {
-  companyName: "AI Company Chatbot",
-  taglineText: "",
-  emptyStateText: "Ask me anything about your company!",
-  inputPlaceholder: "Ask a question...",
-  logoDataUrl: null,
-  faviconUrl: null,
-  pageBackgroundUrl: null,
-  chatCardBackgroundUrl: null,
-  colors: { primary: "#000000", accent: "#0066cc", bg: "#ffffff", text: "#000000" },
-  bubbles: { radius: "12px", aiBg: "#f3f4f6", userBg: "#0066cc" },
-  chatWidth: "800",
-  chatHeight: "80",
-  chatOffsetTop: "4",
-  cardRadius: "16",
-  cardBg: "rgba(255,255,255,0.88)",
-  
-  // Fonts - Typography defaults
-  fontFamily: "system-ui",
-  titleFontSize: 32,
-  bodyFontSize: 16,
-  titleBold: true,
-  titleItalic: false,
-  taglineFontSize: 18,
-  taglineBold: false,
-  taglineItalic: false,
-  
-  // Enhanced Bubble defaults
-  bubblePadding: 12,
-  bubbleMaxWidth: 70,
-  aiTextColor: "#000000",
-  aiBubbleBorder: "none",
-  userTextColor: "#ffffff",
-  userBubbleBorder: "none",
-  
-  // Enhanced Card defaults
-  cardPadding: 24,
-  inputHeight: 44,
-  inputRadius: 8,
-  messageSpacing: 16,
-  
-  // Backgrounds & Shadows defaults
-  pageBackgroundColor: "#ffffff",
-  cardBackgroundColor: "#ffffff",
-  cardOpacity: 100,
-  shadowColor: "#000000",
-  shadowBlur: 10,
-  shadowSpread: 0,
-  shadowOpacity: 20,
-  enableShadow: true,
-  enableGlow: false,
-  
-  // Robot / Avatar defaults
-  avatarImageUrl: null,
-  avatarSize: 40,
-  avatarPosition: "left",
-  avatarShape: "circle",
-  showAvatarOnMobile: true,
-  
-  // Audio / TTS & STT defaults
-  enableTextToSpeech: false,
-  enableSpeechToText: false,
-  ttsVoice: "default",
-  ttsSpeed: 1.0,
-  sttLanguage: "en-US",
-  sttAutoSend: false,
-  showAudioControls: true,
-  ttsAutoPlay: false,
-  
-  // LLM Controls defaults
-  aiModel: "gpt-4",
-  aiTemperature: 0.7,
-  aiMaxTokens: 2048,
-  aiTopK: 50,
-  aiStrictness: "balanced",
-  aiSystemPrompt: "You are a helpful AI assistant.",
-  aiStreamResponses: true,
-  aiRetainContext: true,
+/** ------------------------------------------------------------------
+ *  Types and helpers
+ *  ------------------------------------------------------------------ */
+type Source = { name?: string; url?: string; file_link?: string };
+type Chunk = { text: string; name?: string; file_link?: string };
+
+type ChatReply =
+  | { response: string; sources?: Source[] }
+  | { response: Chunk[]; sources?: never };
+
+type Normalized = {
+  answer: string;
+  sources: { label: string; href?: string }[];
 };
 
-// Simple chat component
-function SimpleChat({ branding }: { branding: Branding }) {
-  const [messages, setMessages] = useState<Array<{ role: 'user' | 'assistant'; content: string }>>([]);
+const API_BASE = import.meta.env.VITE_API_BASE || "/api";
+
+function normalizeReply(payload: ChatReply): Normalized {
+  // Case A: response is a string with optional sources[]
+  if (typeof (payload as any)?.response === "string") {
+    const answer = (payload as any).response as string;
+    const sources = ((payload as any).sources ?? []) as Source[];
+    return {
+      answer,
+      sources: sources.map((s) => ({
+        label: s.name ?? s.url ?? s.file_link ?? "source",
+        href: s.url ?? s.file_link,
+      })),
+    };
+  }
+
+  // Case B: response is an array of chunks [{text,...}]
+  const arr = (payload as any).response as Chunk[];
+  const answer = Array.isArray(arr) ? arr.map((x) => x.text).join("\n\n") : "";
+  const sources =
+    Array.isArray(arr)
+      ? arr.slice(0, 3).map((x) => ({
+          label: x.name ?? "source",
+          href: x.file_link,
+        }))
+      : [];
+  return { answer, sources };
+}
+
+function friendlyError(message: string) {
+  const m = message.toLowerCase();
+  if (m.includes("db error") || m.includes("compactor") || m.includes("500")) {
+    return "The knowledge index is rebuilding or temporarily unavailable. Please try again in a minute.";
+  }
+  return "Sorry, I hit an error while contacting the assistant. Please try again.";
+}
+
+/** ------------------------------------------------------------------
+ *  UI
+ *  ------------------------------------------------------------------ */
+type Msg = {
+  id: string;
+  role: "user" | "assistant";
+  text: string;
+  sources?: { label: string; href?: string }[];
+};
+
+export default function ClientChat() {
+  const [messages, setMessages] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [throttled, setThrottled] = useState(false);
+  const [branding, setBranding] = useState<Branding | null>(null);
+  const lastSentAtRef = useRef<number>(0);
+  const listRef = useRef<HTMLDivElement>(null);
 
-  const handleSend = async () => {
+  // Load branding on mount
+  useEffect(() => {
+    fetchPublicBranding()
+      .then(setBranding)
+      .catch(() => console.warn("Failed to load branding, using defaults"));
+  }, []);
+
+  // Auto-scroll to latest
+  useEffect(() => {
+    listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
+  }, [messages, loading]);
+
+  async function sendMessage() {
+    const now = Date.now();
+    if (loading) return;
     if (!input.trim()) return;
-    
-    const userMessage = input.trim();
+
+    // Simple rate limit: 1 request / 750ms
+    if (now - lastSentAtRef.current < 750) {
+      setThrottled(true);
+      setTimeout(() => setThrottled(false), 750);
+      return;
+    }
+    lastSentAtRef.current = now;
+
+    const userMsg: Msg = { id: crypto.randomUUID(), role: "user", text: input.trim() };
+    setMessages((prev) => [...prev, userMsg]);
     setInput("");
-    setMessages(prev => [...prev, { role: 'user', content: userMessage }]);
     setLoading(true);
 
     try {
-      const result = await chat(userMessage);
-      setMessages(prev => [...prev, { role: 'assistant', content: result.response }]);
-    } catch (error) {
-      setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, I encountered an error. Please try again.' }]);
+      const r = await fetch(`${API_BASE}/chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userMsg.text }),
+      });
+
+      if (!r.ok) {
+        throw new Error(`${r.status} ${r.statusText}`);
+      }
+
+      const raw: ChatReply = await r.json();
+      const { answer, sources } = normalizeReply(raw);
+
+      const assistantMsg: Msg = {
+        id: crypto.randomUUID(),
+        role: "assistant",
+        text: answer || "No results found.",
+        sources,
+      };
+      setMessages((prev) => [...prev, assistantMsg]);
+    } catch (err: any) {
+      const assistantMsg: Msg = {
+        id: crypto.randomUUID(),
+        role: "assistant",
+        text: friendlyError(String(err?.message || err)),
+      };
+      setMessages((prev) => [...prev, assistantMsg]);
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      handleSend();
-    }
-  };
-
-  return (
-    <div 
-      className="flex flex-col h-full"
-      style={{ 
-        maxWidth: `${branding.chatWidth}px`,
-        height: `${branding.chatHeight}vh`,
-        backgroundColor: branding.cardBg,
-        padding: `${branding.cardPadding || 24}px`,
-        fontFamily: branding.fontFamily || "system-ui",
-        fontSize: `${branding.bodyFontSize || 16}px`,
-      }}
-    >
-      {/* Messages */}
-      <div 
-        className="flex-1 overflow-y-auto"
-        style={{ 
-          marginBottom: `${branding.messageSpacing || 16}px`,
-        }}
-      >
-        {messages.length === 0 ? (
-          <div 
-            className="text-center py-8"
-            style={{ 
-              color: branding.colors.text,
-              fontSize: `${branding.bodyFontSize || 16}px`,
-            }}
-          >
-            {branding.emptyStateText}
-          </div>
-        ) : (
-          <div 
-            className="space-y-4"
-            style={{ gap: `${branding.messageSpacing || 16}px` }}
-          >
-            {messages.map((message, i) => (
-              <div key={i} className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'} items-end gap-2`}>
-                {/* AI Avatar - Left */}
-                {message.role === 'assistant' && branding.avatarPosition === 'left' && branding.avatarImageUrl && (
-                  <img
-                    src={branding.avatarImageUrl}
-                    alt="AI Assistant"
-                    className={`${branding.showAvatarOnMobile ? '' : 'hidden sm:block'} flex-shrink-0`}
-                    style={{
-                      width: `${branding.avatarSize || 40}px`,
-                      height: `${branding.avatarSize || 40}px`,
-                      borderRadius: branding.avatarShape === 'circle' ? '50%' 
-                        : branding.avatarShape === 'rounded' ? '8px' : '0px',
-                    }}
-                  />
-                )}
-
-                <div
-                  style={{
-                    maxWidth: `${branding.bubbleMaxWidth || 70}%`,
-                    padding: `${branding.bubblePadding || 12}px`,
-                    backgroundColor: message.role === 'user' ? branding.bubbles.userBg : branding.bubbles.aiBg,
-                    borderRadius: branding.bubbles.radius,
-                    color: message.role === 'user' 
-                      ? (branding.userTextColor || "#ffffff")
-                      : (branding.aiTextColor || "#000000"),
-                    border: message.role === 'user' 
-                      ? (branding.userBubbleBorder || "none")
-                      : (branding.aiBubbleBorder || "none"),
-                    fontSize: `${branding.bodyFontSize || 16}px`,
-                    fontFamily: branding.fontFamily || "system-ui",
-                  }}
-                >
-                  {message.content}
-                </div>
-
-                {/* AI Avatar - Right */}
-                {message.role === 'assistant' && branding.avatarPosition === 'right' && branding.avatarImageUrl && (
-                  <img
-                    src={branding.avatarImageUrl}
-                    alt="AI Assistant"
-                    className={`${branding.showAvatarOnMobile ? '' : 'hidden sm:block'} flex-shrink-0`}
-                    style={{
-                      width: `${branding.avatarSize || 40}px`,
-                      height: `${branding.avatarSize || 40}px`,
-                      borderRadius: branding.avatarShape === 'circle' ? '50%' 
-                        : branding.avatarShape === 'rounded' ? '8px' : '0px',
-                    }}
-                  />
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-        {loading && (
-          <div className="flex justify-start items-end gap-2 mt-4">
-            {/* AI Avatar - Left */}
-            {branding.avatarPosition === 'left' && branding.avatarImageUrl && (
-              <img
-                src={branding.avatarImageUrl}
-                alt="AI Assistant"
-                className={`${branding.showAvatarOnMobile ? '' : 'hidden sm:block'} flex-shrink-0`}
-                style={{
-                  width: `${branding.avatarSize || 40}px`,
-                  height: `${branding.avatarSize || 40}px`,
-                  borderRadius: branding.avatarShape === 'circle' ? '50%' 
-                    : branding.avatarShape === 'rounded' ? '8px' : '0px',
-                }}
-              />
-            )}
-
-            <div
-              style={{
-                maxWidth: `${branding.bubbleMaxWidth || 70}%`,
-                padding: `${branding.bubblePadding || 12}px`,
-                backgroundColor: branding.bubbles.aiBg,
-                borderRadius: branding.bubbles.radius,
-                color: branding.aiTextColor || "#000000",
-                border: branding.aiBubbleBorder || "none",
-                fontSize: `${branding.bodyFontSize || 16}px`,
-                fontFamily: branding.fontFamily || "system-ui",
-              }}
-            >
-              Thinking...
-            </div>
-
-            {/* AI Avatar - Right */}
-            {branding.avatarPosition === 'right' && branding.avatarImageUrl && (
-              <img
-                src={branding.avatarImageUrl}
-                alt="AI Assistant"
-                className={`${branding.showAvatarOnMobile ? '' : 'hidden sm:block'} flex-shrink-0`}
-                style={{
-                  width: `${branding.avatarSize || 40}px`,
-                  height: `${branding.avatarSize || 40}px`,
-                  borderRadius: branding.avatarShape === 'circle' ? '50%' 
-                    : branding.avatarShape === 'rounded' ? '8px' : '0px',
-                }}
-              />
-            )}
-          </div>
-        )}
-      </div>
-      
-      {/* Input */}
-      <div>
-        <div className="flex gap-2">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyPress={handleKeyPress}
-            placeholder={branding.inputPlaceholder}
-            style={{
-              height: `${branding.inputHeight || 44}px`,
-              borderRadius: `${branding.inputRadius || 8}px`,
-              fontSize: `${branding.bodyFontSize || 16}px`,
-              fontFamily: branding.fontFamily || "system-ui",
-            }}
-            className="flex-1 px-3 border focus:outline-none focus:ring-2 focus:ring-blue-500"
-            disabled={loading}
-          />
-          <button
-            onClick={handleSend}
-            disabled={loading || !input.trim()}
-            style={{
-              height: `${branding.inputHeight || 44}px`,
-              borderRadius: `${branding.inputRadius || 8}px`,
-              backgroundColor: branding.colors.accent || "#0066cc",
-              fontSize: `${branding.bodyFontSize || 16}px`,
-              fontFamily: branding.fontFamily || "system-ui",
-            }}
-            className="px-4 text-white hover:opacity-90 disabled:opacity-50 transition-opacity"
-          >
-            Send
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default function ClientChatPage() {
-  const [branding, setBranding] = useState<Branding>(defaultBranding);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    let alive = true;
-
-    async function load() {
-      try {
-        const data = await fetchPublicBranding();
-        if (!alive) return;
-        
-        setBranding(data);
-        
-        // Apply basic styling
-        if (data.companyName) {
-          document.title = data.companyName;
-        }
-        
-        // Apply favicon if provided
-        if (data.faviconUrl) {
-          const head = document.head || document.getElementsByTagName("head")[0];
-          const existingIcon = head.querySelector('link[rel="icon"]');
-          if (existingIcon) existingIcon.remove();
-          
-          const link = document.createElement("link");
-          link.rel = "icon";
-          link.href = data.faviconUrl;
-          head.appendChild(link);
-        }
-      } catch (error) {
-        console.error("Failed to load branding:", error);
-      } finally {
-        if (alive) setLoading(false);
-      }
-    }
-
-    load();
-
-    return () => {
-      alive = false;
-    };
-  }, []);
-
-  if (loading) {
-    return <div className="p-6">Loading…</div>;
   }
 
-  // Generate card shadow/glow CSS
-  const cardShadow = () => {
-    if (!branding.enableShadow && !branding.enableGlow) return "none";
-    
-    const shadowParts = [];
-    
-    if (branding.enableShadow) {
-      const shadowOpacity = (branding.shadowOpacity || 20) / 100;
-      const shadowColor = branding.shadowColor || "#000000";
-      const blur = branding.shadowBlur || 10;
-      const spread = branding.shadowSpread || 0;
-      
-      // Convert hex to rgba for opacity
-      const hexToRgba = (hex: string, alpha: number) => {
-        const r = parseInt(hex.slice(1, 3), 16);
-        const g = parseInt(hex.slice(3, 5), 16);
-        const b = parseInt(hex.slice(5, 7), 16);
-        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-      };
-      
-      shadowParts.push(`0 4px ${blur}px ${spread}px ${hexToRgba(shadowColor, shadowOpacity)}`);
+  function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
     }
-    
-    if (branding.enableGlow) {
-      const glowColor = branding.colors.accent || "#0066cc";
-      shadowParts.push(`0 0 20px ${glowColor}33`);
-    }
-    
-    return shadowParts.join(", ");
+  }
+
+  // Helper functions for branding styles
+  const px = (n?: number, d = 0) => `${n ?? d}px`;
+  const asDim = (v: unknown, d: string) => (typeof v === "number" ? `${v}px` : (typeof v === "string" && v.trim()) ? v : d);
+
+  // Derive styles from branding
+  const pageStyle: React.CSSProperties = {
+    background: branding?.pageBackgroundUrl
+      ? `url(${branding.pageBackgroundUrl}) center/cover no-repeat`
+      : branding?.pageBackgroundColor ?? "#f8fafc",
+    fontFamily: branding?.fontFamily ?? 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    minHeight: "100vh",
   };
 
-  // Generate card background with opacity
-  const cardBackground = () => {
-    if (branding.cardBg && branding.cardBg !== "rgba(255,255,255,0.88)") {
-      return branding.cardBg; // Use CSS override if provided
-    }
-    
-    const opacity = (branding.cardOpacity || 100) / 100;
-    const baseColor = branding.cardBackgroundColor || "#ffffff";
-    
-    // Convert hex to rgba
-    const hexToRgba = (hex: string, alpha: number) => {
-      const r = parseInt(hex.slice(1, 3), 16);
-      const g = parseInt(hex.slice(3, 5), 16);
-      const b = parseInt(hex.slice(5, 7), 16);
-      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-    };
-    
-    return hexToRgba(baseColor, opacity);
+  const cardStyle: React.CSSProperties = {
+    maxWidth: asDim(branding?.chatWidth, "64rem"),
+    borderRadius: asDim(branding?.cardRadius, "1rem"),
+    backgroundColor: branding?.cardBackgroundColor ?? "rgba(255,255,255,0.9)",
+    border: "1px solid rgb(226 232 240)",
+    backdropFilter: "blur(8px)",
+    padding: px(branding?.cardPadding, 0),
+  };
+
+  const titleStyle: React.CSSProperties = {
+    fontSize: px(branding?.titleFontSize, 20),
+    fontWeight: branding?.titleBold ? "600" : "normal",
+    fontStyle: branding?.titleItalic ? "italic" : "normal",
+    color: "#0f172a",
+  };
+
+  const taglineStyle: React.CSSProperties = {
+    fontSize: px(branding?.taglineFontSize, 14),
+    fontWeight: branding?.taglineBold ? "600" : "normal",
+    fontStyle: branding?.taglineItalic ? "italic" : "normal",
+    color: "#64748b",
   };
 
   return (
-    <div 
-      className="min-h-screen w-full p-4 sm:p-6"
-      style={{ 
-        backgroundColor: branding.pageBackgroundColor || branding.colors.bg,
-        backgroundImage: branding.pageBackgroundUrl ? `url(${branding.pageBackgroundUrl})` : "none",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        color: branding.colors.text 
-      }}
-    >
-      <div className="max-w-3xl mx-auto">
-        <header className="text-center mb-6">
-          {branding.logoDataUrl && (
-            <img
-              src={branding.logoDataUrl}
-              alt=""
-              style={{ height: 52 }}
-              className="mx-auto mb-2"
-            />
+    <div className="min-h-screen w-full flex items-center justify-center p-4" style={pageStyle}>
+      <div className="w-full shadow-lg" style={cardStyle}>
+        {/* Header */}
+        <div className="px-6 py-4 border-b border-slate-200">
+          <h1 style={titleStyle}>{branding?.companyName ?? "Company Chat"}</h1>
+          <p style={taglineStyle}>{branding?.taglineText ?? "Ask questions about your company documents."}</p>
+        </div>
+
+        {/* Messages */}
+        <div 
+          ref={listRef} 
+          className="px-6 py-4 overflow-y-auto space-y-4"
+          style={{ height: asDim(branding?.chatHeight, "60vh"), paddingTop: px(branding?.chatOffsetTop, 16) }}
+        >
+          {messages.length === 0 && (
+            <div className="text-slate-500 text-sm">
+              {branding?.emptyStateText ?? "Start by asking something like 'What is the company dress code?'"}
+            </div>
           )}
 
-          <h1 
-            className="mb-1"
-            style={{
-              fontSize: `${branding.titleFontSize || 32}px`,
-              fontWeight: branding.titleBold ? "bold" : "normal",
-              fontStyle: branding.titleItalic ? "italic" : "normal",
-              fontFamily: branding.fontFamily || "system-ui",
-              color: branding.colors.text,
-            }}
-          >
-            {branding.companyName || "AI Company Chatbot"}
-          </h1>
+          {messages.map((m) => (
+            <div key={m.id} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
+              <div
+                className="text-sm whitespace-pre-wrap"
+                style={{
+                  maxWidth: `${branding?.bubbleMaxWidth ?? 70}%`,
+                  borderRadius: asDim(branding?.bubbles?.radius, "1rem"),
+                  padding: px(branding?.bubblePadding, 12),
+                  backgroundColor: m.role === "user" 
+                    ? branding?.bubbles?.userBg ?? "#4f46e5"
+                    : branding?.bubbles?.aiBg ?? "#f1f5f9",
+                  color: m.role === "user"
+                    ? branding?.userTextColor ?? "#ffffff"
+                    : branding?.aiTextColor ?? "#0f172a",
+                  border: m.role === "user"
+                    ? branding?.userBubbleBorder ?? "none"
+                    : branding?.aiBubbleBorder ?? "none",
+                  borderBottomRightRadius: m.role === "user" ? "4px" : undefined,
+                  borderBottomLeftRadius: m.role === "assistant" ? "4px" : undefined,
+                  marginBottom: px(branding?.messageSpacing, 16),
+                }}
+              >
+                {m.text}
 
-          {branding.taglineText && (
-            <p 
-              className="opacity-80"
+                {/* Sources (assistant only) */}
+                {m.role === "assistant" && m.sources && m.sources.length > 0 && (
+                  <div className="mt-3 pt-2 border-t border-slate-200/70 text-xs text-slate-600">
+                    <div className="font-semibold mb-1">Sources</div>
+                    <ul className="list-disc pl-4 space-y-1">
+                      {m.sources.slice(0, 5).map((s, i) => (
+                        <li key={i}>
+                          {s.href ? (
+                            <a className="underline" href={s.href} target="_blank" rel="noreferrer">
+                              {truncate(s.label, 80)}
+                            </a>
+                          ) : (
+                            <span>{truncate(s.label, 80)}</span>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+
+          {loading && (
+            <div className="flex items-center gap-2 text-slate-500 text-sm">
+              <span className="inline-block h-2 w-2 rounded-full bg-slate-400 animate-pulse"></span>
+              Thinking…
+            </div>
+          )}
+        </div>
+
+        {/* Input */}
+        <div className="px-6 py-4 border-t border-slate-200">
+          <div className="flex items-center gap-2">
+            <input
+              className="flex-1 px-4 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               style={{
-                fontSize: `${branding.taglineFontSize || 18}px`,
-                fontWeight: branding.taglineBold ? "bold" : "normal",
-                fontStyle: branding.taglineItalic ? "italic" : "normal",
-                fontFamily: branding.fontFamily || "system-ui",
-                color: branding.colors.text,
+                height: px(branding?.inputHeight, 48),
+                borderRadius: asDim(branding?.inputRadius, "0.75rem"),
+              }}
+              placeholder={branding?.inputPlaceholder ?? "Type your question and press Enter…"}
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={onKeyDown}
+              disabled={loading}
+            />
+            <button
+              onClick={sendMessage}
+              disabled={loading || throttled || !input.trim()}
+              className="text-white transition cursor-pointer"
+              style={{
+                height: px(branding?.inputHeight, 48),
+                paddingLeft: "20px",
+                paddingRight: "20px",
+                borderRadius: asDim(branding?.inputRadius, "0.75rem"),
+                backgroundColor: loading || throttled || !input.trim()
+                  ? "#94a3b8"
+                  : branding?.colors?.primary ?? "#4f46e5",
+                cursor: loading || throttled || !input.trim() ? "not-allowed" : "pointer",
+              }}
+              title={throttled ? "Please wait a moment…" : "Send"}
+              onMouseOver={(e) => {
+                if (!loading && !throttled && input.trim()) {
+                  (e.target as HTMLButtonElement).style.backgroundColor = branding?.colors?.accent ?? "#4338ca";
+                }
+              }}
+              onMouseOut={(e) => {
+                if (!loading && !throttled && input.trim()) {
+                  (e.target as HTMLButtonElement).style.backgroundColor = branding?.colors?.primary ?? "#4f46e5";
+                }
               }}
             >
-              {branding.taglineText}
-            </p>
-          )}
-        </header>
-
-        <div 
-          className="rounded-2xl mx-auto"
-          style={{
-            backgroundColor: cardBackground(),
-            backgroundImage: branding.chatCardBackgroundUrl ? `url(${branding.chatCardBackgroundUrl})` : "none",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            borderRadius: `${branding.cardRadius}px`,
-            maxWidth: `${branding.chatWidth}px`,
-            boxShadow: cardShadow(),
-          }}
-        >
-          <SimpleChat branding={branding} />
+              {loading ? "…" : "Send"}
+            </button>
+          </div>
+          {throttled && <div className="mt-2 text-xs text-slate-500">Rate limit: please wait a moment.</div>}
         </div>
       </div>
     </div>
   );
 }
 
+/** utils */
+function truncate(s: string, n: number) {
+  return s.length > n ? s.slice(0, n - 1) + "…" : s;
+}

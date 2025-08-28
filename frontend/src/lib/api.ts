@@ -1,84 +1,6 @@
-const API_BASE = import.meta.env.VITE_API_BASE || "";
+import { Branding } from './brandingTypes';
 
-export type Branding = {
-  companyName: string;
-  taglineText?: string;
-  emptyStateText?: string;
-  inputPlaceholder?: string;
-  logoDataUrl?: string | null;
-  faviconUrl?: string | null;
-  pageBackgroundUrl?: string | null;
-  chatCardBackgroundUrl?: string | null;
-  colors: { primary: string; accent: string; bg: string; text: string };
-  bubbles: { radius: string; aiBg: string; userBg: string };
-  chatWidth: string;
-  chatHeight: string;
-  chatOffsetTop: string;
-  cardRadius: string;
-  cardBg: string;
-  
-  // Fonts - Typography
-  fontFamily?: string;
-  titleFontSize?: number;
-  bodyFontSize?: number;
-  titleBold?: boolean;
-  titleItalic?: boolean;
-  taglineFontSize?: number;
-  taglineBold?: boolean;
-  taglineItalic?: boolean;
-  
-  // Enhanced Bubble Controls
-  bubblePadding?: number;
-  bubbleMaxWidth?: number;
-  aiTextColor?: string;
-  aiBubbleBorder?: string;
-  userTextColor?: string;
-  userBubbleBorder?: string;
-  
-  // Enhanced Card Controls
-  cardPadding?: number;
-  inputHeight?: number;
-  inputRadius?: number;
-  messageSpacing?: number;
-  
-  // Backgrounds & Shadows
-  pageBackgroundColor?: string;
-  cardBackgroundColor?: string;
-  cardOpacity?: number;
-  shadowColor?: string;
-  shadowBlur?: number;
-  shadowSpread?: number;
-  shadowOpacity?: number;
-  enableShadow?: boolean;
-  enableGlow?: boolean;
-  
-  // Robot / Avatar
-  avatarImageUrl?: string | null;
-  avatarSize?: number;
-  avatarPosition?: string;
-  avatarShape?: string;
-  showAvatarOnMobile?: boolean;
-  
-  // Audio / TTS & STT
-  enableTextToSpeech?: boolean;
-  enableSpeechToText?: boolean;
-  ttsVoice?: string;
-  ttsSpeed?: number;
-  sttLanguage?: string;
-  sttAutoSend?: boolean;
-  showAudioControls?: boolean;
-  ttsAutoPlay?: boolean;
-  
-  // LLM Controls
-  aiModel?: string;
-  aiTemperature?: number;
-  aiMaxTokens?: number;
-  aiTopK?: number;
-  aiStrictness?: string;
-  aiSystemPrompt?: string;
-  aiStreamResponses?: boolean;
-  aiRetainContext?: boolean;
-};
+const API_BASE = import.meta.env.VITE_API_BASE || "";
 
 export async function fetchPublicBranding(): Promise<Branding> {
   const res = await fetch(`${API_BASE}/api/admin/settings/public/branding`);
@@ -87,7 +9,7 @@ export async function fetchPublicBranding(): Promise<Branding> {
 }
 
 export async function getAdminBranding(auth: string): Promise<Branding> {
-  const res = await fetch(`${API_BASE}/api/admin/settings/branding`, {
+  const res = await fetch(`${API_BASE}/admin/settings/branding`, {
     headers: { Authorization: `Basic ${auth}` },
   });
   if (!res.ok) throw new Error(`admin branding ${res.status}`);
@@ -95,7 +17,7 @@ export async function getAdminBranding(auth: string): Promise<Branding> {
 }
 
 export async function putAdminBranding(auth: string, payload: Partial<Branding>): Promise<Branding> {
-  const res = await fetch(`${API_BASE}/api/admin/settings/branding`, {
+  const res = await fetch(`${API_BASE}/admin/settings/branding`, {
     method: "PUT",
     headers: {
       Authorization: `Basic ${auth}`,
@@ -103,16 +25,90 @@ export async function putAdminBranding(auth: string, payload: Partial<Branding>)
     },
     body: JSON.stringify(payload),
   });
-  if (!res.ok) throw new Error(`put branding ${res.status}`);
+  if (!res.ok) {
+    const errorText = await res.text();
+    throw new Error(`put branding ${res.status}: ${errorText}`);
+  }
   return res.json();
 }
 
-export async function chat(message: string): Promise<{ response: string; sources?: any[] }> {
+// Chat API types for better error handling
+export type ChatSource = {
+  name?: string;
+  url?: string;
+  file_link?: string;
+};
+
+export type ChatChunk = {
+  text: string;
+  name?: string;
+  file_link?: string;
+};
+
+export type ChatReply = 
+  | { response: string; sources?: ChatSource[] }
+  | { response: ChatChunk[]; sources?: never };
+
+export type NormalizedChatReply = {
+  answer: string;
+  sources: { label: string; href?: string }[];
+};
+
+// Enhanced chat function with better error handling
+export async function chat(message: string): Promise<NormalizedChatReply> {
   const res = await fetch(`${API_BASE}/api/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message }),
   });
-  if (!res.ok) throw new Error(`chat ${res.status}`);
-  return res.json();
+  
+  if (!res.ok) {
+    const errorText = await res.text();
+    throw new Error(`chat ${res.status}: ${errorText}`);
+  }
+  
+  const raw: ChatReply = await res.json();
+  return normalizeChatReply(raw);
+}
+
+// Normalize different response formats
+export function normalizeChatReply(payload: ChatReply): NormalizedChatReply {
+  // Case A: response is a string with optional sources[]
+  if (typeof (payload as any)?.response === "string") {
+    const answer = (payload as any).response as string;
+    const sources = ((payload as any).sources ?? []) as ChatSource[];
+    return {
+      answer,
+      sources: sources.map((s) => ({
+        label: s.name ?? s.url ?? s.file_link ?? "source",
+        href: s.url ?? s.file_link,
+      })),
+    };
+  }
+
+  // Case B: response is an array of chunks [{text,...}]
+  const arr = (payload as any).response as ChatChunk[];
+  const answer = Array.isArray(arr) ? arr.map((x) => x.text).join("\n\n") : "";
+  const sources = Array.isArray(arr)
+    ? arr.slice(0, 5).map((x) => ({
+        label: x.name ?? "source",
+        href: x.file_link,
+      }))
+    : [];
+  return { answer, sources };
+}
+
+// Friendly error messages
+export function friendlyError(message: string): string {
+  const m = message.toLowerCase();
+  if (m.includes("db error") || m.includes("compactor") || m.includes("500")) {
+    return "The knowledge index is rebuilding or temporarily unavailable. Please try again in a minute.";
+  }
+  if (m.includes("401") || m.includes("unauthorized")) {
+    return "Authentication required. Please log in.";
+  }
+  if (m.includes("429") || m.includes("rate limit")) {
+    return "Too many requests. Please wait a moment before trying again.";
+  }
+  return "Sorry, I hit an error while contacting the assistant. Please try again.";
 }
