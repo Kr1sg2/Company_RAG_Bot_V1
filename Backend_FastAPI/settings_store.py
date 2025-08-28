@@ -33,6 +33,7 @@ def save_settings(data: Dict[str, Any]) -> None:
 def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
     """Extract only branding-related fields with defaults."""
     branding = {
+        # Basic Settings
         "companyName": settings.get("companyName", "Leaders AI Company Chatbot"),
         "taglineText": settings.get("taglineText", "Closed-book RAG system - answers only from company documents"),
         "emptyStateText": settings.get("emptyStateText", "Ask me anything about your company documents!"),
@@ -41,6 +42,8 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
         "faviconUrl": settings.get("faviconUrl"),
         "pageBackgroundUrl": settings.get("pageBackgroundUrl"),
         "chatCardBackgroundUrl": settings.get("chatCardBackgroundUrl"),
+        
+        # Colors
         "colors": settings.get("colors", {
             "primary": "#6190ff",
             "accent": "#756bff",
@@ -52,11 +55,75 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
             "aiBg": "#0f1530",
             "userBg": "#1b2447"
         }),
+        
+        # Original dimensions
         "chatWidth": settings.get("chatWidth", "920"),
         "chatHeight": settings.get("chatHeight", "56"),
         "chatOffsetTop": settings.get("chatOffsetTop", "7"),
         "cardRadius": settings.get("cardRadius", "18"),
-        "cardBg": settings.get("cardBg", "rgba(255,255,255,0.88)")
+        "cardBg": settings.get("cardBg", "rgba(255,255,255,0.88)"),
+        
+        # NEW: Fonts - Typography
+        "fontFamily": settings.get("fontFamily", "system-ui"),
+        "titleFontSize": settings.get("titleFontSize", 32),
+        "bodyFontSize": settings.get("bodyFontSize", 16),
+        "titleBold": settings.get("titleBold", True),
+        "titleItalic": settings.get("titleItalic", False),
+        "taglineFontSize": settings.get("taglineFontSize", 18),
+        "taglineBold": settings.get("taglineBold", False),
+        "taglineItalic": settings.get("taglineItalic", False),
+        
+        # NEW: Enhanced Bubble Controls
+        "bubblePadding": settings.get("bubblePadding", 12),
+        "bubbleMaxWidth": settings.get("bubbleMaxWidth", 70),
+        "aiTextColor": settings.get("aiTextColor", "#000000"),
+        "aiBubbleBorder": settings.get("aiBubbleBorder", "none"),
+        "userTextColor": settings.get("userTextColor", "#ffffff"),
+        "userBubbleBorder": settings.get("userBubbleBorder", "none"),
+        
+        # NEW: Enhanced Card Controls
+        "cardPadding": settings.get("cardPadding", 24),
+        "inputHeight": settings.get("inputHeight", 44),
+        "inputRadius": settings.get("inputRadius", 8),
+        "messageSpacing": settings.get("messageSpacing", 16),
+        
+        # NEW: Backgrounds & Shadows
+        "pageBackgroundColor": settings.get("pageBackgroundColor", "#ffffff"),
+        "cardBackgroundColor": settings.get("cardBackgroundColor", "#ffffff"),
+        "cardOpacity": settings.get("cardOpacity", 100),
+        "shadowColor": settings.get("shadowColor", "#000000"),
+        "shadowBlur": settings.get("shadowBlur", 10),
+        "shadowSpread": settings.get("shadowSpread", 0),
+        "shadowOpacity": settings.get("shadowOpacity", 20),
+        "enableShadow": settings.get("enableShadow", True),
+        "enableGlow": settings.get("enableGlow", False),
+        
+        # NEW: Robot / Avatar
+        "avatarImageUrl": settings.get("avatarImageUrl"),
+        "avatarSize": settings.get("avatarSize", 40),
+        "avatarPosition": settings.get("avatarPosition", "left"),
+        "avatarShape": settings.get("avatarShape", "circle"),
+        "showAvatarOnMobile": settings.get("showAvatarOnMobile", True),
+        
+        # NEW: Audio / TTS & STT
+        "enableTextToSpeech": settings.get("enableTextToSpeech", False),
+        "enableSpeechToText": settings.get("enableSpeechToText", False),
+        "ttsVoice": settings.get("ttsVoice", "default"),
+        "ttsSpeed": settings.get("ttsSpeed", 1.0),
+        "sttLanguage": settings.get("sttLanguage", "en-US"),
+        "sttAutoSend": settings.get("sttAutoSend", False),
+        "showAudioControls": settings.get("showAudioControls", True),
+        "ttsAutoPlay": settings.get("ttsAutoPlay", False),
+        
+        # NEW: LLM Controls
+        "aiModel": settings.get("aiModel", "gpt-4"),
+        "aiTemperature": settings.get("aiTemperature", 0.7),
+        "aiMaxTokens": settings.get("aiMaxTokens", 2048),
+        "aiTopK": settings.get("aiTopK", 50),
+        "aiStrictness": settings.get("aiStrictness", "balanced"),
+        "aiSystemPrompt": settings.get("aiSystemPrompt", "You are a helpful AI assistant."),
+        "aiStreamResponses": settings.get("aiStreamResponses", True),
+        "aiRetainContext": settings.get("aiRetainContext", True)
     }
     # Remove None values
     return {k: v for k, v in branding.items() if v is not None}
@@ -87,10 +154,37 @@ def extract_full_settings(settings: Dict[str, Any]) -> Dict[str, Any]:
 def update_branding_fields(branding_data: Dict[str, Any]) -> Dict[str, Any]:
     """Update only allowed branding fields, preserving other settings."""
     allowed_fields = {
+        # Basic Settings
         "companyName", "taglineText", "emptyStateText", "inputPlaceholder",
         "logoDataUrl", "faviconUrl", "pageBackgroundUrl", "chatCardBackgroundUrl",
         "colors", "bubbles", "chatWidth", "chatHeight", "chatOffsetTop", 
-        "cardRadius", "cardBg"
+        "cardRadius", "cardBg",
+        
+        # Fonts - Typography
+        "fontFamily", "titleFontSize", "bodyFontSize", "titleBold", "titleItalic",
+        "taglineFontSize", "taglineBold", "taglineItalic",
+        
+        # Enhanced Bubble Controls
+        "bubblePadding", "bubbleMaxWidth", "aiTextColor", "aiBubbleBorder",
+        "userTextColor", "userBubbleBorder",
+        
+        # Enhanced Card Controls
+        "cardPadding", "inputHeight", "inputRadius", "messageSpacing",
+        
+        # Backgrounds & Shadows
+        "pageBackgroundColor", "cardBackgroundColor", "cardOpacity", "shadowColor",
+        "shadowBlur", "shadowSpread", "shadowOpacity", "enableShadow", "enableGlow",
+        
+        # Robot / Avatar
+        "avatarImageUrl", "avatarSize", "avatarPosition", "avatarShape", "showAvatarOnMobile",
+        
+        # Audio / TTS & STT
+        "enableTextToSpeech", "enableSpeechToText", "ttsVoice", "ttsSpeed",
+        "sttLanguage", "sttAutoSend", "showAudioControls", "ttsAutoPlay",
+        
+        # LLM Controls
+        "aiModel", "aiTemperature", "aiMaxTokens", "aiTopK", "aiStrictness",
+        "aiSystemPrompt", "aiStreamResponses", "aiRetainContext"
     }
     
     settings = load_settings()
