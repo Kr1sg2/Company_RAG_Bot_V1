@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "devcheck": "bash scripts/devcheck.sh",
+    "test:api": "curl -s http://localhost:8600/api/admin/settings/public/branding | jq .companyName && curl -s -X POST http://localhost:8600/api/chat -H 'Content-Type: application/json' -d '{\"message\":\"What is the company dress code?\"}' | jq .response"
   },
   "dependencies": {
     "react": "^19.1.1",

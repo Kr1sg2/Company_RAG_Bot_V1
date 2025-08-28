@@ -1,4 +1,5 @@
-import { Branding, DEFAULT_BRANDING, getBrandingValue } from './brandingTypes';
+import type { Branding } from './brandingTypes';
+import { getBrandingValue } from './brandingTypes';
 
 // Helper functions
 const px = (n?: number | string, defaultValue: number = 0): string => {
@@ -24,7 +25,11 @@ const asOpacity = (n?: number, defaultValue: number = 1): number => {
 
 // Convert branding settings to CSS styles for consistent application
 export class BrandingStyleMapper {
-  constructor(private branding: Partial<Branding>) {}
+  private branding: Partial<Branding>;
+  
+  constructor(branding: Partial<Branding>) {
+    this.branding = branding;
+  }
 
   // Page-level styles
   getPageStyle(): React.CSSProperties {

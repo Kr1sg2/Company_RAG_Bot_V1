@@ -1,4 +1,4 @@
-import { Branding } from './brandingTypes';
+import type { Branding } from './brandingTypes';
 
 const API_BASE = import.meta.env.VITE_API_BASE || "";
 
