@@ -1,0 +1,42 @@
+[
+  {
+    "page": 12,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "Pricing Tab"
+      },
+      {
+        "0": "Price Levels Subtab"
+      },
+      {
+        "0": "All the price levels an item can be sold at.  These prices populate automatically on a Sales Order"
+      },
+      {
+        "0": "based on the customer type."
+      },
+      {
+        "0": "Point of Purchase Files Subtab"
+      },
+      {
+        "0": "All the retail Floor Easels and item price tags can be printed from here."
+      },
+      {
+        "0": "Related Records Tab"
+      },
+      {
+        "0": "Transactions Subtab"
+      },
+      {
+        "0": "A history of transactions with this specific item on it"
+      }
+    ],
+    "csv": "0\nPricing Tab\nPrice Levels Subtab\nAll the price levels an item can be sold at.  These prices populate automatically on a Sales Order\nbased on the customer type.\nPoint of Purchase Files Subtab\nAll the retail Floor Easels and item price tags can be printed from here.\nRelated Records Tab\nTransactions Subtab\nA history of transactions with this specific item on it\n",
+    "shape": [
+      9,
+      1
+    ]
+  }
+]

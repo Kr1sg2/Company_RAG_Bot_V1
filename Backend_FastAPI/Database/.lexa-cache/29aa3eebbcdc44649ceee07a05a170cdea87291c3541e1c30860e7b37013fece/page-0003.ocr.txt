@@ -1,0 +1,35 @@
+6 Daily Delivery Paperwork 
+Page 3 of 3 
+6 Daily Delivery Paperwork 
+5/18/2015 
+ 
+Damaged 
+1. Contact the customer to learn more about the damage. 
+Stock 
+Refused the product? 
+1. Confirm the correct product is in stock 
+2. Contact the customer and reschedule the delivery 
+Kept the product? 
+1. Confirm the correct product is in stock 
+2. Write a new invoice for the correct product 
+3. Write a credit memo for the wrong product delivered 
+a. Make sure the refund is $0 and the money transfers to the new invoice you wrote in 
+b(ii) 
+Special Order 
+1. Open a service to keep track of the progress on the customer’s account  
+Refused the product? 
+1. Inspect the product thoroughly when it returns 
+b. Can be Repaired 
+i. Submit the packet to the repair department  
+c. Can Not Be Repaired 
+i. Re-order the product from the factory 
+1. Submit an RS to the factory 
+2. Contact the customer and reschedule the delivery once a resolution has been reached 
+Kept the product? 
+1. Verify the damage with pictures 
+a. Driver should have taken pictures, if not request from customer 
+2. Write a new invoice to re-order the product from the factory 
+3. Write a credit memo for the wrong product delivered  
+a. Make sure the refund is $0 and the money transfers to the new invoice you wrote in 
+b(ii) 
+ 

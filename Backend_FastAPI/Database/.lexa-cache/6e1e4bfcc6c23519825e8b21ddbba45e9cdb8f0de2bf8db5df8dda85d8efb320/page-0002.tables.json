@@ -1,0 +1,125 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 99.99999999999997,
+    "data": [
+      {
+        "0": "Date",
+        "1": "Meal",
+        "2": "Total"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Breakfast       Lunch       Dinner",
+        "2": ""
+      },
+      {
+        "0": "Total",
+        "1": "",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\nDate,Meal,Total\n,,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\n,Breakfast       Lunch       Dinner,\nTotal,,\n",
+    "shape": [
+      22,
+      3
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 99.99999999999994,
+    "data": [
+      {
+        "0": "W\nelcome new Team Member!"
+      },
+      {
+        "0": "O\nn behalf of your colleagues, I welcome you to Leaders Holding Co\u2122, as known throughout the"
+      },
+      {
+        "0": "handbook as \u201cthe company\u201d and wish you every success here."
+      },
+      {
+        "0": "W\ne believe that each Team Member contributes directly to our growth and success, and we hope"
+      },
+      {
+        "0": "you will take pride in being a member of our team."
+      },
+      {
+        "0": "T\nhis handbook was developed to describe some of the expectations of our Team Members and"
+      },
+      {
+        "0": "to  outline  the  policies,  programs,  and  benefits  available  to  eligible  Team  Members.    Team"
+      },
+      {
+        "0": "Members  should  familiarize  themselves  with  the  contents  of  the  Team  Member  handbook  as"
+      },
+      {
+        "0": "soon as possible, for it will answer many questions about employment with our company."
+      },
+      {
+        "0": "T\nhe company reserves the right to alter, amend, or modify these policies with or without prior"
+      },
+      {
+        "0": "notice.    No  statement  by  management  may  be  interpreted  as  a  change  in  policy,  nor  will  it"
+      },
+      {
+        "0": "constitute an agreement with an Team Member."
+      },
+      {
+        "0": "W\ne  hope  that  your  experience  here  will  be  challenging,  enjoyable,  and  rewarding.  Again,"
+      },
+      {
+        "0": "welcome!"
+      },
+      {
+        "0": "S\nincerely,"
+      },
+      {
+        "0": "T\nim Newton, President"
+      },
+      {
+        "0": "LEADERS HOLDING CO\u2122"
+      }
+    ],
+    "csv": "0\n\"W\nelcome new Team Member!\"\n\"O\nn behalf of your colleagues, I welcome you to Leaders Holding Co\u2122, as known throughout the\"\nhandbook as \u201cthe company\u201d and wish you every success here.\n\"W\ne believe that each Team Member contributes directly to our growth and success, and we hope\"\nyou will take pride in being a member of our team.\n\"T\nhis handbook was developed to describe some of the expectations of our Team Members and\"\n\"to  outline  the  policies,  programs,  and  benefits  available  to  eligible  Team  Members.    Team\"\nMembers  should  familiarize  themselves  with  the  contents  of  the  Team  Member  handbook  as\n\"soon as possible, for it will answer many questions about employment with our company.\"\n\"T\nhe company reserves the right to alter, amend, or modify these policies with or without prior\"\n\"notice.    No  statement  by  management  may  be  interpreted  as  a  change  in  policy,  nor  will  it\"\nconstitute an agreement with an Team Member.\n\"W\ne  hope  that  your  experience  here  will  be  challenging,  enjoyable,  and  rewarding.  Again,\"\nwelcome!\n\"S\nincerely,\"\n\"T\nim Newton, President\"\nLEADERS HOLDING CO\u2122\n",
+    "shape": [
+      17,
+      1
+    ]
+  }
+]

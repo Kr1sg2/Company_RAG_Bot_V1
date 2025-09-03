@@ -1,0 +1,79 @@
+[
+  {
+    "page": 9,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "",
+        "1": "What?",
+        "2": ""
+      },
+      {
+        "0": "1",
+        "1": "Locations Filter",
+        "2": "Change your view to only include the inventory of a single \nlocation"
+      },
+      {
+        "0": "2",
+        "1": "Items Status by Location",
+        "2": "A detailed view of inventory by location by status"
+      }
+    ],
+    "csv": "0,1,2\n,What?,\n1,Locations Filter,\"Change your view to only include the inventory of a single \nlocation\"\n2,Items Status by Location,A detailed view of inventory by location by status\n",
+    "shape": [
+      3,
+      3
+    ]
+  },
+  {
+    "page": 9,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 100.00000000000004,
+    "data": [
+      {
+        "0": "Column Headers",
+        "1": "What it means\u2026"
+      },
+      {
+        "0": "Physical Location",
+        "1": "The location that the information on the row represents"
+      },
+      {
+        "0": "Quantity on Hand",
+        "1": "Total quantity in the location including committed inventory"
+      },
+      {
+        "0": "Quantity Committed",
+        "1": "The amount of inventory in the location committed to a sale"
+      },
+      {
+        "0": "Quantity Available",
+        "1": "Quantity on Hand \u2013 Quantity Committed.  The amount of the \nitem at the location not on a sales order"
+      },
+      {
+        "0": "Quantity on Order",
+        "1": "The amount in transit to a location.  For the Distribution Center \nthis could include Purchase Orders and incoming transfers from \nretail locations.  For retail locations this is for product coming in \non a transfer only."
+      },
+      {
+        "0": "Quantity in Transit",
+        "1": "The amount of inventory scheduled to leave on a transfer but \nhave not yet started their journey."
+      },
+      {
+        "0": "Quantity Back Ordered",
+        "1": "The number of items that are committed on sales orders to fulfill \nfrom that location but are not in the location.  This could also \nshow items for a sales order scheduled to fulfill from that location \nthat are not committed to a sales order."
+      },
+      {
+        "0": "Preferred Stock Level",
+        "1": "The amount of an item that the system will automatically keep at \na retail location."
+      }
+    ],
+    "csv": "0,1\nColumn Headers,What it means\u2026\nPhysical Location,The location that the information on the row represents\nQuantity on Hand,Total quantity in the location including committed inventory\nQuantity Committed,The amount of inventory in the location committed to a sale\nQuantity Available,\"Quantity on Hand \u2013 Quantity Committed.  The amount of the \nitem at the location not on a sales order\"\nQuantity on Order,\"The amount in transit to a location.  For the Distribution Center \nthis could include Purchase Orders and incoming transfers from \nretail locations.  For retail locations this is for product coming in \non a transfer only.\"\nQuantity in Transit,\"The amount of inventory scheduled to leave on a transfer but \nhave not yet started their journey.\"\nQuantity Back Ordered,\"The number of items that are committed on sales orders to fulfill \nfrom that location but are not in the location.  This could also \nshow items for a sales order scheduled to fulfill from that location \nthat are not committed to a sales order.\"\nPreferred Stock Level,\"The amount of an item that the system will automatically keep at \na retail location.\"\n",
+    "shape": [
+      9,
+      2
+    ]
+  }
+]

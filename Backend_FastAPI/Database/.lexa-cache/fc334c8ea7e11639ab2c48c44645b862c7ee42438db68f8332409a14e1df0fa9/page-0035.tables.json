@@ -1,0 +1,210 @@
+[
+  {
+    "page": 35,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 65.35167219937584,
+    "data": [
+      {
+        "0": "35",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "doses,  alcohol  can  dull  sensation  and  impair  muscular  coordination,  memory,  and  judgment.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Taken in larger quantities over a long period of time, alcohol can damage the liver and heart and",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "can  cause  permanent  brain  damage.  On  the  average  heavy  drinkers  shorten  their  lifespan  by",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "about 10 years.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "O",
+        "1": "ther Effects",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "impaired driving ability"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "impaired vision and judgment"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "reduced coordination and reflex action"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "overindulgence (hangover) can cause headaches, nausea, dehydration, unclear thinking,"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "aching muscles, etc."
+      },
+      {
+        "0": "You may observe slurred speech, bloodshot and watery eyes, poor balance, odor on breath, and",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "involuntary or sudden movement of the eyes.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "B",
+        "1": ". Marijuana",
+        "2": ""
+      },
+      {
+        "0": "Marijuana is also called grass, pot, weed, Mary Jane, Acapulco Gold, joint, roach, and other street",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "names. Marijuana stays in the body for up to 28 days, depending on usage.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Marijuana alters sense of time and reduces the ability to perform tasks requiring concentration,",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "swift  reactions,  and  coordination.  The  drug  has  a  significant  effect  on  judgment,  caution,  and",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "sensory or motor abilities.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "O",
+        "1": "ther Effects",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Impairs driving ability for at least 4-6 hours after smoking one \u2018joint\u201d;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Inability to concentrate;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Restlessness;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Increased heart rate and blood pressure;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Erratic behavior and rapidly changing emotions;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Altered sense of identity;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Impaired memory;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Dulling of attention;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Hallucinations, fantasies and paranoia;"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Reduction or temporary loss of fertility;"
+      },
+      {
+        "0": "S",
+        "1": "ection VII: Effects of Alcohol and Drugs on the Body (Cont.)",
+        "2": ""
+      },
+      {
+        "0": "Y",
+        "1": "ou may observe bloodshot eyes, muscular tremors, (involuntary quivering), impaired time and",
+        "2": ""
+      },
+      {
+        "0": "distance perception, short attention span, disoriented behavior, and inability to divide attention.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "C",
+        "1": ". Cocaine",
+        "2": ""
+      },
+      {
+        "0": "Cocaine is a stimulant drug, increasing heart rate and blood pressure. As a powder, cocaine  is",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "inhaled (snorted), ingested, or injected. It is known as coke, snow, nose candy, lady, and various",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "street  names.  Cocaine  is  also  used,  and  free-base  cocaine  known  as  crack  or  rock,  which  is",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "smoked. It acquired its name from the popping sound heard when it is heated. Some people think",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "that because crack is smoked it is safer than other forms of cocaine use. It is not. Crack cocaine is",
+        "1": "",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\n35,,\n\"doses,  alcohol  can  dull  sensation  and  impair  muscular  coordination,  memory,  and  judgment.\",,\n\"Taken in larger quantities over a long period of time, alcohol can damage the liver and heart and\",,\ncan  cause  permanent  brain  damage.  On  the  average  heavy  drinkers  shorten  their  lifespan  by,,\nabout 10 years.,,\nO,ther Effects,\n,\u2022,impaired driving ability\n,\u2022,impaired vision and judgment\n,\u2022,reduced coordination and reflex action\n,\u2022,\"overindulgence (hangover) can cause headaches, nausea, dehydration, unclear thinking,\"\n,,\"aching muscles, etc.\"\n\"You may observe slurred speech, bloodshot and watery eyes, poor balance, odor on breath, and\",,\ninvoluntary or sudden movement of the eyes.,,\nB,. Marijuana,\n\"Marijuana is also called grass, pot, weed, Mary Jane, Acapulco Gold, joint, roach, and other street\",,\n\"names. Marijuana stays in the body for up to 28 days, depending on usage.\",,\n\"Marijuana alters sense of time and reduces the ability to perform tasks requiring concentration,\",,\n\"swift  reactions,  and  coordination.  The  drug  has  a  significant  effect  on  judgment,  caution,  and\",,\nsensory or motor abilities.,,\nO,ther Effects,\n,\u2022,Impairs driving ability for at least 4-6 hours after smoking one \u2018joint\u201d;\n,\u2022,Inability to concentrate;\n,\u2022,Restlessness;\n,\u2022,Increased heart rate and blood pressure;\n,\u2022,Erratic behavior and rapidly changing emotions;\n,\u2022,Altered sense of identity;\n,\u2022,Impaired memory;\n,\u2022,Dulling of attention;\n,\u2022,\"Hallucinations, fantasies and paranoia;\"\n,\u2022,Reduction or temporary loss of fertility;\nS,ection VII: Effects of Alcohol and Drugs on the Body (Cont.),\nY,\"ou may observe bloodshot eyes, muscular tremors, (involuntary quivering), impaired time and\",\n\"distance perception, short attention span, disoriented behavior, and inability to divide attention.\",,\nC,. Cocaine,\n\"Cocaine is a stimulant drug, increasing heart rate and blood pressure. As a powder, cocaine  is\",,\n\"inhaled (snorted), ingested, or injected. It is known as coke, snow, nose candy, lady, and various\",,\n\"street  names.  Cocaine  is  also  used,  and  free-base  cocaine  known  as  crack  or  rock,  which  is\",,\nsmoked. It acquired its name from the popping sound heard when it is heated. Some people think,,\nthat because crack is smoked it is safer than other forms of cocaine use. It is not. Crack cocaine is,,\n",
+    "shape": [
+      39,
+      3
+    ]
+  }
+]

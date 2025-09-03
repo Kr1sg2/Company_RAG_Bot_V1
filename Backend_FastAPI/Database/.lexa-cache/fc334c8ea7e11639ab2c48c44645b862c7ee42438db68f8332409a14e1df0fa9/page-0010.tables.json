@@ -1,0 +1,132 @@
+[
+  {
+    "page": 10,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 99.99999999999991,
+    "data": [
+      {
+        "0": "10"
+      },
+      {
+        "0": "Work Schedules"
+      },
+      {
+        "0": "Our workweek runs from Monday to Sunday.  Operational demands may necessitate variations in"
+      },
+      {
+        "0": "starting and ending times, as well as variations in the total hours that may be scheduled each day"
+      },
+      {
+        "0": "and week.  Schedule and Team Member assignments are subject to change."
+      },
+      {
+        "0": "Meal Periods"
+      },
+      {
+        "0": "All full-time Team Members are provided with one unpaid meal period of at least 30 minutes and"
+      },
+      {
+        "0": "up to 60 minutes in length each workday.  Supervisors will schedule meal periods to accommodate"
+      },
+      {
+        "0": "operating  requirements. \n  Team  Members  will  be  relieved  of  all  active  responsibilities  and"
+      },
+      {
+        "0": "restrictions during meal periods and will not be compensated for that time."
+      },
+      {
+        "0": "Rest Breaks"
+      },
+      {
+        "0": "Team  Members  may  not \nleave  their  work  areas  without  the  expressed  approval  of  their"
+      },
+      {
+        "0": "supervisor. All Team Members who work 8 hours during the workday are provided with two rest"
+      },
+      {
+        "0": "periods of 15 minutes  in length.  If you are a non-exempt (hourly), Team Member  you are not"
+      },
+      {
+        "0": "permitted  to  leave  company  property  during  your  paid  rest  period.  As  much  as  possible,  rest"
+      },
+      {
+        "0": "periods will be provided in the middle of work periods depending on your department\u2019s schedule."
+      },
+      {
+        "0": "Since this time is counted and paid as time worked, Team Members must not be absent from their"
+      },
+      {
+        "0": "workstations beyond the allotted 15-minute rest period time."
+      },
+      {
+        "0": "Overtime"
+      },
+      {
+        "0": "When operating requirements or other needs cannot be met during regular working hours, Team"
+      },
+      {
+        "0": "Members may  be  scheduled  to  work overtime  hours.    When  possible,  advance  notification of"
+      },
+      {
+        "0": "these mandatory assignments will be provided.  All overtime work must receive the supervisor's"
+      },
+      {
+        "0": "prior authorization.  Overtime assignments will be distributed as equally as practical to all Team"
+      },
+      {
+        "0": "Members qualified to perform the required work."
+      },
+      {
+        "0": "O\nvertime compensation is paid to all nonexempt Team Members in accordance with federal and"
+      },
+      {
+        "0": "state wage and hour restrictions.  Overtime pay is based on actual hours worked plus premium"
+      },
+      {
+        "0": "hours. Time off on vacation leave, holidays, or any leave of absence will not be considered hours"
+      },
+      {
+        "0": "worked for purposes of performing overtime calculations."
+      },
+      {
+        "0": "Absenteeism and Tardiness"
+      },
+      {
+        "0": "Team Members are expected to be at work on time and to work their full scheduled hours as part"
+      },
+      {
+        "0": "of the essential functions of their position. Team Members who report late to work or return late"
+      },
+      {
+        "0": "(more  than  5  minutes)  from:  meal  periods,  breaks,  or  leave  prior  to  the  end  of  the  workday"
+      },
+      {
+        "0": "without permission, will be considered tardy."
+      },
+      {
+        "0": "R\nepeated absenteeism and/or tardiness will not be tolerated. A Team Member who will be absent"
+      },
+      {
+        "0": "from work for any reason must communicate with your manager at least one hour before the"
+      },
+      {
+        "0": "start time of their shift. If you are absent from work without prior authorization or without giving"
+      },
+      {
+        "0": "proper notice to your supervisor or Human Resources, the Team Member will be considered to"
+      },
+      {
+        "0": "have  voluntarily resigned  from the company  if they do not  contact  their supervisor or Human"
+      },
+      {
+        "0": "Resources department within 48 hours. If a Team Member is absent from work due to illness the"
+      }
+    ],
+    "csv": "0\n10\nWork Schedules\nOur workweek runs from Monday to Sunday.  Operational demands may necessitate variations in\n\"starting and ending times, as well as variations in the total hours that may be scheduled each day\"\nand week.  Schedule and Team Member assignments are subject to change.\nMeal Periods\nAll full-time Team Members are provided with one unpaid meal period of at least 30 minutes and\nup to 60 minutes in length each workday.  Supervisors will schedule meal periods to accommodate\n\"operating  requirements. \n  Team  Members  will  be  relieved  of  all  active  responsibilities  and\"\nrestrictions during meal periods and will not be compensated for that time.\nRest Breaks\n\"Team  Members  may  not \nleave  their  work  areas  without  the  expressed  approval  of  their\"\nsupervisor. All Team Members who work 8 hours during the workday are provided with two rest\n\"periods of 15 minutes  in length.  If you are a non-exempt (hourly), Team Member  you are not\"\n\"permitted  to  leave  company  property  during  your  paid  rest  period.  As  much  as  possible,  rest\"\nperiods will be provided in the middle of work periods depending on your department\u2019s schedule.\n\"Since this time is counted and paid as time worked, Team Members must not be absent from their\"\nworkstations beyond the allotted 15-minute rest period time.\nOvertime\n\"When operating requirements or other needs cannot be met during regular working hours, Team\"\n\"Members may  be  scheduled  to  work overtime  hours.    When  possible,  advance  notification of\"\nthese mandatory assignments will be provided.  All overtime work must receive the supervisor's\nprior authorization.  Overtime assignments will be distributed as equally as practical to all Team\nMembers qualified to perform the required work.\n\"O\nvertime compensation is paid to all nonexempt Team Members in accordance with federal and\"\nstate wage and hour restrictions.  Overtime pay is based on actual hours worked plus premium\n\"hours. Time off on vacation leave, holidays, or any leave of absence will not be considered hours\"\nworked for purposes of performing overtime calculations.\nAbsenteeism and Tardiness\nTeam Members are expected to be at work on time and to work their full scheduled hours as part\nof the essential functions of their position. Team Members who report late to work or return late\n\"(more  than  5  minutes)  from:  meal  periods,  breaks,  or  leave  prior  to  the  end  of  the  workday\"\n\"without permission, will be considered tardy.\"\n\"R\nepeated absenteeism and/or tardiness will not be tolerated. A Team Member who will be absent\"\nfrom work for any reason must communicate with your manager at least one hour before the\nstart time of their shift. If you are absent from work without prior authorization or without giving\n\"proper notice to your supervisor or Human Resources, the Team Member will be considered to\"\nhave  voluntarily resigned  from the company  if they do not  contact  their supervisor or Human\nResources department within 48 hours. If a Team Member is absent from work due to illness the\n",
+    "shape": [
+      39,
+      1
+    ]
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "HANAMINT"
+      }
+    ],
+    "csv": "0\n\"\"\nHANAMINT\n",
+    "shape": [
+      2,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "POLYWOOD"
+      }
+    ],
+    "csv": "0\n\"\"\nPOLYWOOD\n",
+    "shape": [
+      2,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 2,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "SPHINX RUGS"
+      }
+    ],
+    "csv": "0\n\"\"\nSPHINX RUGS\n",
+    "shape": [
+      2,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 3,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "SUNBRELLA"
+      }
+    ],
+    "csv": "0\n\"\"\nSUNBRELLA\n",
+    "shape": [
+      2,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 4,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "GROSFILLEX"
+      }
+    ],
+    "csv": "0\n\"\"\nGROSFILLEX\n",
+    "shape": [
+      2,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 5,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "TRANSOCEAN"
+      }
+    ],
+    "csv": "0\n\"\"\nTRANSOCEAN\n",
+    "shape": [
+      2,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 6,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "TROPITONE"
+      }
+    ],
+    "csv": "0\n\"\"\nTROPITONE\n",
+    "shape": [
+      2,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 7,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "FIBERBUILT"
+      }
+    ],
+    "csv": "0\n\"\"\nFIBERBUILT\n",
+    "shape": [
+      2,
+      1
+    ]
+  }
+]

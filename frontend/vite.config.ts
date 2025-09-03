@@ -1,36 +1,21 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
     port: 8080,
     proxy: {
+      // Dev-only: keep /api prefix; NGINX handles this in prod
       '/api': {
-        target: 'http://localhost:8600',
+        target: 'http://127.0.0.1:8600',
         changeOrigin: true,
       },
-      '/admin': {
-        target: 'http://localhost:8600',
-        changeOrigin: true,
-      },
-      '/auth': {
-        target: 'http://localhost:8600',
-        changeOrigin: true,
-      },
-      '/query': {
-        target: 'http://localhost:8600',
-        changeOrigin: true,
-      },
-      '/chat': {
-        target: 'http://localhost:8600',
-        changeOrigin: true,
-      },
-      '/files': {
-        target: 'http://localhost:8600',
-        changeOrigin: true,
-      },
-    }
-  }
-})
+    },
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+  },
+});
+

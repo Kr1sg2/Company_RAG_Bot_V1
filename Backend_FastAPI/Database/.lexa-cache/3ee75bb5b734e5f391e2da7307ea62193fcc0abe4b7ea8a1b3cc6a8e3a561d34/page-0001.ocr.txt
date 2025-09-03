@@ -1,0 +1,28 @@
+Page 1 of 5 
+3.1.1 Convert an Opportunity or Quote to a Sale 
+12/5/2023 
+ 
+Convert an Opportunity to a Quote to a Sales Order 
+NetSuite’s CRM (customer relationship manager) is a powerful way to organize and manage your 
+interactions with guests.  If you take the time to use it correctly you will give your guests a more 
+powerful comprehensive presentation, make it easier for the guest to buy and close more sales.  An 
+important part of this powerful tool is the ability to convert Opportunities and Quotes into Sales Orders. 
+✓ An Opportunity is converted to a Quote.  A Quote is converted to a Sales Order.  You cannot skip 
+a step. 
+✓ For more information on CRM see the section titled Stages of A Customer in the Procedure 
+Manual. 
+ 
+Pricing on a quote expires in 10 days or at the end of a sale period whichever comes first. 
+ 
+Table of Contents 
+Close an Opportunity .................................................................................................................................... 2 
+Convert an Opportunity to a Quote .............................................................................................................. 2 
+Creating a Quote ........................................................................................................................................... 4 
+Quote to a Sales Order .................................................................................................................................. 5 
+ 
+Note: When converting an opportunity to a quote you must have all of the required fields on the 
+customer record filled out.  If you do not you will automatically be redirected from the quote to 
+the customer record to complete the fields.  You will have to go back to the quote through recent 
+records or Sales/Transactions subtab on the customer record. 
+ 
+ 

@@ -1,0 +1,361 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 96.60038812026633,
+    "data": [
+      {
+        "0": "Vendor",
+        "1": "Upholstered/Frame",
+        "2": "Wicker",
+        "3": "Springs/Mechs\nCushions",
+        "4": "",
+        "5": "",
+        "6": "Fabric",
+        "7": "",
+        "8": "Mattress",
+        "9": "",
+        "10": "Mechanisms"
+      },
+      {
+        "0": "Palm Springs Upholstery \u00ae",
+        "1": "10 Yrs",
+        "2": "N/A",
+        "3": "3 Yrs\nLimited",
+        "4": "",
+        "5": "1 Yr\nLoss of resiliency - NOT softening",
+        "6": "1 Yr against MFG Defect\nNo Warranty on fading/pilling",
+        "7": "",
+        "8": "1 Yr",
+        "9": "",
+        "10": "1 Yr"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "",
+        "10": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "Contract",
+        "8": "",
+        "9": "",
+        "10": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "",
+        "10": ""
+      },
+      {
+        "0": "Vendor",
+        "1": "Finish/Wicker\nFrame\nSprings/Mechs\nCushions",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "Fabric",
+        "7": "",
+        "8": "Frame",
+        "9": "",
+        "10": "Finish"
+      },
+      {
+        "0": "Palm Springs \u00ae",
+        "1": "3 yrs",
+        "2": "3Yr",
+        "3": "3 Yrs\nLimited",
+        "4": "",
+        "5": "1 Yr",
+        "6": "1 Yr against MFG Defect",
+        "7": "",
+        "8": "3 Yr",
+        "9": "",
+        "10": "1 Yr"
+      },
+      {
+        "0": "Central Cushions \u00ae",
+        "1": "N/A",
+        "2": "N/A",
+        "3": "N/A",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "N/A",
+        "9": "",
+        "10": "N/A"
+      }
+    ],
+    "csv": "0,1,2,3,4,5,6,7,8,9,10\nVendor,Upholstered/Frame,Wicker,\"Springs/Mechs\nCushions\",,,Fabric,,Mattress,,Mechanisms\nPalm Springs Upholstery \u00ae,10 Yrs,N/A,\"3 Yrs\nLimited\",,\"1 Yr\nLoss of resiliency - NOT softening\",\"1 Yr against MFG Defect\nNo Warranty on fading/pilling\",,1 Yr,,1 Yr\n,,,,,,,,,,\n,,,,,,,Contract,,,\n,,,,,,,,,,\nVendor,\"Finish/Wicker\nFrame\nSprings/Mechs\nCushions\",,,,,Fabric,,Frame,,Finish\nPalm Springs \u00ae,3 yrs,3Yr,\"3 Yrs\nLimited\",,1 Yr,1 Yr against MFG Defect,,3 Yr,,1 Yr\nCentral Cushions \u00ae,N/A,N/A,N/A,,,,,N/A,,N/A\n",
+    "shape": [
+      8,
+      11
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 98.07417007967071,
+    "data": [
+      {
+        "0": "Vendor",
+        "1": "Frame",
+        "2": "Finish",
+        "3": "Fabric",
+        "4": "",
+        "5": "Frame",
+        "6": "Finish"
+      },
+      {
+        "0": "Acaia - Front Porch Dining",
+        "1": "3 yrs",
+        "2": "3 Yrs",
+        "3": "1 Yr against\nmanufacturers defects",
+        "4": "",
+        "5": "N/A",
+        "6": "N/A"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "Crimson Casual",
+        "1": "18 Yrs",
+        "2": "5 Yrs",
+        "3": "1 Yr against\nmanufacturers defects",
+        "4": "",
+        "5": "5 Yrs",
+        "6": "3 Yrs"
+      },
+      {
+        "0": "Table tops",
+        "1": "3 Yrs",
+        "2": "3 Yrs",
+        "3": "",
+        "4": "",
+        "5": "2 Yrs",
+        "6": "2 Yrs"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "FishTales",
+        "1": "1 Yr",
+        "2": "1 Yr",
+        "3": "N/A",
+        "4": "",
+        "5": "N/A",
+        "6": "N/A"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "Hanamint\n**PRIOR TO 7/09",
+        "1": "10 Yrs",
+        "2": "3 Yrs",
+        "3": "1 Yr against\nmanufacturers defects",
+        "4": "",
+        "5": "N/A",
+        "6": "N/A"
+      },
+      {
+        "0": "",
+        "1": "5 Yrs",
+        "2": "3 Yrs",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "Pride  Family Brands",
+        "1": "15 Yrs",
+        "2": "5 Yrs",
+        "3": "2 Yr (limited)against MFG Defect\nNo Warranty on fading/pilling",
+        "4": "",
+        "5": "2 Yrs",
+        "6": "1 Yr"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "Tropitone - 7/07 - PRESENT\n15 Yrs (frame & swivel mech)\n*customer responible for freight after 1 Yr*",
+        "1": "",
+        "2": "5 Yrs",
+        "3": "1 Yr against\nmanufacturers defects",
+        "4": "",
+        "5": "5 Yrs",
+        "6": "3Yrs"
+      },
+      {
+        "0": "**PRIOR TO 7/07\n15 Yrs\n*customer responible for freight after 3 Yr*",
+        "1": "",
+        "2": "15 Yrs",
+        "3": "1 Yr against\nmanufacturers defects",
+        "4": "",
+        "5": "5 Yrs",
+        "6": "5 Yrs"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "Windward\n15 Yrs\n*customer responible for freight after 1 Yr*",
+        "1": "",
+        "2": "15 Yrs",
+        "3": "1 Yr against\nmanufacturers defects",
+        "4": "",
+        "5": "5 Yrs",
+        "6": "5 Yrs"
+      }
+    ],
+    "csv": "0,1,2,3,4,5,6\nVendor,Frame,Finish,Fabric,,Frame,Finish\nAcaia - Front Porch Dining,3 yrs,3 Yrs,\"1 Yr against\nmanufacturers defects\",,N/A,N/A\n,,,,,,\nCrimson Casual,18 Yrs,5 Yrs,\"1 Yr against\nmanufacturers defects\",,5 Yrs,3 Yrs\nTable tops,3 Yrs,3 Yrs,,,2 Yrs,2 Yrs\n,,,,,,\nFishTales,1 Yr,1 Yr,N/A,,N/A,N/A\n,,,,,,\n\"Hanamint\n**PRIOR TO 7/09\",10 Yrs,3 Yrs,\"1 Yr against\nmanufacturers defects\",,N/A,N/A\n,5 Yrs,3 Yrs,,,,\n,,,,,,\nPride  Family Brands,15 Yrs,5 Yrs,\"2 Yr (limited)against MFG Defect\nNo Warranty on fading/pilling\",,2 Yrs,1 Yr\n,,,,,,\n\"Tropitone - 7/07 - PRESENT\n15 Yrs (frame & swivel mech)\n*customer responible for freight after 1 Yr*\",,5 Yrs,\"1 Yr against\nmanufacturers defects\",,5 Yrs,3Yrs\n\"**PRIOR TO 7/07\n15 Yrs\n*customer responible for freight after 3 Yr*\",,15 Yrs,\"1 Yr against\nmanufacturers defects\",,5 Yrs,5 Yrs\n,,,,,,\n\"Windward\n15 Yrs\n*customer responible for freight after 1 Yr*\",,15 Yrs,\"1 Yr against\nmanufacturers defects\",,5 Yrs,5 Yrs\n",
+    "shape": [
+      17,
+      7
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 2,
+    "method": "lattice",
+    "accuracy": 97.1666764909066,
+    "data": [
+      {
+        "0": "Garden Classics \u00ae",
+        "1": "Frame",
+        "2": "Finish",
+        "3": "Sling/Cushion",
+        "4": "",
+        "5": "Frame",
+        "6": "Finish"
+      },
+      {
+        "0": "All Collections",
+        "1": "3 Yrs",
+        "2": "3 Yrs",
+        "3": "1 yr",
+        "4": "",
+        "5": "1 Yr",
+        "6": "1 Yr"
+      },
+      {
+        "0": "Umbrellas",
+        "1": "1 Yr against\nmanufacturers defects",
+        "2": "1 Yr",
+        "3": "1 Yr against MFG Defect\nNo Warranty on fading/pilling",
+        "4": "",
+        "5": "N/A",
+        "6": "N/A"
+      },
+      {
+        "0": "**wind damage is not a defect",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "Wood",
+        "1": "1 Yr",
+        "2": "1 Yr",
+        "3": "N/A",
+        "4": "",
+        "5": "1 Yr",
+        "6": "1 Yr"
+      },
+      {
+        "0": "**finish will gray over time**",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      {
+        "0": "Fabric Protection",
+        "1": "January 2008 - forward warranty through Leaders. Prior to January 2008 - warranty through Ultra Shield",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      }
+    ],
+    "csv": "0,1,2,3,4,5,6\nGarden Classics \u00ae,Frame,Finish,Sling/Cushion,,Frame,Finish\nAll Collections,3 Yrs,3 Yrs,1 yr,,1 Yr,1 Yr\nUmbrellas,\"1 Yr against\nmanufacturers defects\",1 Yr,\"1 Yr against MFG Defect\nNo Warranty on fading/pilling\",,N/A,N/A\n**wind damage is not a defect,,,,,,\nWood,1 Yr,1 Yr,N/A,,1 Yr,1 Yr\n**finish will gray over time**,,,,,,\nFabric Protection,January 2008 - forward warranty through Leaders. Prior to January 2008 - warranty through Ultra Shield,,,,,\n",
+    "shape": [
+      7,
+      7
+    ]
+  }
+]

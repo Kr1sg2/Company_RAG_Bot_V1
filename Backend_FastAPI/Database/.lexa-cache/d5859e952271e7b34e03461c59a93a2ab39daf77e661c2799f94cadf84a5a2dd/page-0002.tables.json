@@ -1,0 +1,156 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 82.96041230926366,
+    "data": [
+      {
+        "0": "The safety of our teams and guests is paramount.  If any situation is observed that could potentially be unsafe for any",
+        "1": ""
+      },
+      {
+        "0": "reason, please call a member of Sales Leadership and follow up with email sales.leadership@leadersfurniture.com",
+        "1": ""
+      },
+      {
+        "0": "Cleaning",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "The interior of every Showroom should be cleaned by the dedicated cleaning company every other week.  If the"
+      },
+      {
+        "0": "",
+        "1": "cleaning service did not cover all items on the check list or you are not satisfied with their"
+      },
+      {
+        "0": "",
+        "1": "job, please share with them what you would like them to do in a polite way.  The company will not get paid if"
+      },
+      {
+        "0": "",
+        "1": "you do not sign off.  Your store\u2019s team is responsible for the quality of the job performed."
+      },
+      {
+        "0": "Lighting (Interior)",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "It is important to have a well-lit store.  Interior lighting is evaluated on all store visits and on the Store"
+      },
+      {
+        "0": "Evaluation.",
+        "1": ""
+      },
+      {
+        "0": "Air Conditioning",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "Before calling an air conditioning service provider, please review the basics of the concern."
+      },
+      {
+        "0": "\u2713",
+        "1": "Is the thermostat on?"
+      },
+      {
+        "0": "\u2713",
+        "1": "Is the thermostat set to a temperature that is lower than the air temperature?"
+      },
+      {
+        "0": "",
+        "1": "\u2713  Are all units on in the building?"
+      },
+      {
+        "0": "",
+        "1": "HVAC Systems work by taking in warm air and letting out cooler air.  The difference in the temperature of the"
+      },
+      {
+        "0": "",
+        "1": "air going in and the air coming out is called the differential.  The air coming out of the a/c vent should be"
+      },
+      {
+        "0": "",
+        "1": "between 14 to 20 degrees cooler than the air going into the air return."
+      },
+      {
+        "0": "Windows",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "The interior windows of the showroom windows should be cleaned twice a year.  Please use the check list that"
+      },
+      {
+        "0": "",
+        "1": "can be found here: (R:\\8 About Store Procedures\\2.0 General Store Procedure\\8.25 Windows Check List)."
+      },
+      {
+        "0": "Plumbing",
+        "1": ""
+      },
+      {
+        "0": "Emergency",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\nThe safety of our teams and guests is paramount.  If any situation is observed that could potentially be unsafe for any,\n\"reason, please call a member of Sales Leadership and follow up with email sales.leadership@leadersfurniture.com\",\nCleaning,\n,The interior of every Showroom should be cleaned by the dedicated cleaning company every other week.  If the\n,cleaning service did not cover all items on the check list or you are not satisfied with their\n,\"job, please share with them what you would like them to do in a polite way.  The company will not get paid if\"\n,you do not sign off.  Your store\u2019s team is responsible for the quality of the job performed.\nLighting (Interior),\n,It is important to have a well-lit store.  Interior lighting is evaluated on all store visits and on the Store\nEvaluation.,\nAir Conditioning,\n,\"Before calling an air conditioning service provider, please review the basics of the concern.\"\n\u2713,Is the thermostat on?\n\u2713,Is the thermostat set to a temperature that is lower than the air temperature?\n,\u2713  Are all units on in the building?\n,HVAC Systems work by taking in warm air and letting out cooler air.  The difference in the temperature of the\n,air going in and the air coming out is called the differential.  The air coming out of the a/c vent should be\n,between 14 to 20 degrees cooler than the air going into the air return.\nWindows,\n,The interior windows of the showroom windows should be cleaned twice a year.  Please use the check list that\n,can be found here: (R:\\8 About Store Procedures\\2.0 General Store Procedure\\8.25 Windows Check List).\nPlumbing,\nEmergency,\n",
+    "shape": [
+      23,
+      2
+    ]
+  },
+  {
+    "page": 2,
+    "table_index": 1,
+    "method": "stream",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Windows"
+      },
+      {
+        "0": "The interior windows of the showroom windows should be cleaned twice a year.  Please use the check list that"
+      },
+      {
+        "0": "can be found here: (R:\\8 About Store Procedures\\2.0 General Store Procedure\\8.25 Windows Check List)."
+      },
+      {
+        "0": "Plumbing"
+      },
+      {
+        "0": "Emergency"
+      },
+      {
+        "0": "If water is leaking uncontrollably, the situation is a risk to safety, or it has rendered the restrooms in"
+      },
+      {
+        "0": "operable, call a Sales Leadership team member and find a highly rated local service"
+      },
+      {
+        "0": "provider.  Please see \u201cFinding a Local Service Provider\u201d later in this procedure."
+      },
+      {
+        "0": "Non-Emergency"
+      },
+      {
+        "0": "For all other non-emergencies, like plunging or a leaky flapper, the store team should attempt to"
+      },
+      {
+        "0": "remediate the concern in a safe way.  If the store team does not have the skill or knowledge, please"
+      },
+      {
+        "0": "submit a Maintenance Request."
+      }
+    ],
+    "csv": "0\nWindows\nThe interior windows of the showroom windows should be cleaned twice a year.  Please use the check list that\ncan be found here: (R:\\8 About Store Procedures\\2.0 General Store Procedure\\8.25 Windows Check List).\nPlumbing\nEmergency\n\"If water is leaking uncontrollably, the situation is a risk to safety, or it has rendered the restrooms in\"\n\"operable, call a Sales Leadership team member and find a highly rated local service\"\nprovider.  Please see \u201cFinding a Local Service Provider\u201d later in this procedure.\nNon-Emergency\n\"For all other non-emergencies, like plunging or a leaky flapper, the store team should attempt to\"\n\"remediate the concern in a safe way.  If the store team does not have the skill or knowledge, please\"\nsubmit a Maintenance Request.\n",
+    "shape": [
+      12,
+      1
+    ]
+  }
+]

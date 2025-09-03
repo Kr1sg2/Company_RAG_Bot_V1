@@ -1,0 +1,110 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 93.99847660133543,
+    "data": [
+      {
+        "0": "Sign Book & Special Order Pricelist Outline",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "LOLOI RUGS",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Latest SPO Pricelist:",
+        "1": "2024 Loloi Pricelist",
+        "2": "Updated: 7/22/2024"
+      },
+      {
+        "0": "Latest Catalog:",
+        "1": "2023 Edition",
+        "2": ""
+      },
+      {
+        "0": "NARDI",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "For Commercial Use Only - Please contact purchasing for Pricing Quote",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "PATIO RENAISSANCE",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "For Returning Customer's Use Only - Please contact purchasing for Pricing Quote",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "ORIENTAL  RUGS",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Latest SPO Pricelist:",
+        "1": "Accessories & Misc/2022Sphinx Pricelist",
+        "2": "Updated:7/21/2023"
+      },
+      {
+        "0": "Latest Catalog:",
+        "1": "Indoor/Outdoor Area Rugs May 2022",
+        "2": ""
+      },
+      {
+        "0": "TRANSOCEAN",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Latest SPO Pricelist:",
+        "1": "2022 TransOcean Pricelist",
+        "2": "Updated:1/19/2023"
+      },
+      {
+        "0": "Latest Catalog:",
+        "1": "Indoor/Outdoor Rug Collections 2022",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Indoor/Outdoor Novelty Rugs & Mats Collection 2022",
+        "2": ""
+      },
+      {
+        "0": "TREASURE GARDEN",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Latest SPO Pricelist:",
+        "1": "Treasure Garden 2025 Pricelist",
+        "2": "Updated: 10/1/2024"
+      },
+      {
+        "0": "Latest Catalog:",
+        "1": "2025 Edition",
+        "2": ""
+      },
+      {
+        "0": "Fabric Book:",
+        "1": "Black Cover - Top fabric Mosaic Tile 7822",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\nSign Book & Special Order Pricelist Outline,,\nLOLOI RUGS,,\nLatest SPO Pricelist:,2024 Loloi Pricelist,Updated: 7/22/2024\nLatest Catalog:,2023 Edition,\nNARDI,,\nFor Commercial Use Only - Please contact purchasing for Pricing Quote,,\nPATIO RENAISSANCE,,\nFor Returning Customer's Use Only - Please contact purchasing for Pricing Quote,,\nORIENTAL  RUGS,,\nLatest SPO Pricelist:,Accessories & Misc/2022Sphinx Pricelist,Updated:7/21/2023\nLatest Catalog:,Indoor/Outdoor Area Rugs May 2022,\nTRANSOCEAN,,\nLatest SPO Pricelist:,2022 TransOcean Pricelist,Updated:1/19/2023\nLatest Catalog:,Indoor/Outdoor Rug Collections 2022,\n,Indoor/Outdoor Novelty Rugs & Mats Collection 2022,\nTREASURE GARDEN,,\nLatest SPO Pricelist:,Treasure Garden 2025 Pricelist,Updated: 10/1/2024\nLatest Catalog:,2025 Edition,\nFabric Book:,Black Cover - Top fabric Mosaic Tile 7822,\n",
+    "shape": [
+      19,
+      3
+    ]
+  }
+]

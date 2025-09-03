@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* === Branding Variables (global) === */
+:root {
+  /* existing vars (keep yours) */
+  --ai-bubble-bg: #d946ef;
+  --ai-text-color: #111827;
+  --user-bubble-bg: #50c8e8;
+  --user-text-color: #111827;
+
+  --card-bg: #ffffff;
+  --card-width-pct: 90;
+  --card-max-width-pct: 90;
+  --card-offset-top-px: 0;
+  --card-border-radius-px: 24;
+  --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  /* NEW: rgba-computed vars (set from JS) */
+  --card-bg-rgba: var(--card-bg);
+  --ai-bubble-bg-rgba: var(--ai-bubble-bg);
+  --user-bubble-bg-rgba: var(--user-bubble-bg);
+
+  /* bubble shape defaults */
+  --bubble-radius-px: 16;
+  --bubble-pad-y: 12;
+  --bubble-pad-x: 14;
+}
+
+/* === Reusable classes === */
+.bubble {
+  border-radius: calc(var(--bubble-radius-px) * 1px);
+  padding: calc(var(--bubble-pad-y) * 1px) calc(var(--bubble-pad-x) * 1px);
+  line-height: 1.45;
+  word-wrap: break-word;
+}
+
+.bubble.assistant {
+  /* rgba background so text stays solid */
+  background: var(--ai-bubble-bg-rgba, var(--ai-bubble-bg));
+  color: var(--ai-text-color);
+}
+
+.bubble.user {
+  background: var(--user-bubble-bg-rgba, var(--user-bubble-bg));
+  color: var(--user-text-color);
+}
+
+/* Container/card influenced by branding */
+.chat-card {
+  /* rgba background so content stays solid */
+  background: var(--card-bg-rgba, var(--card-bg));
+  box-shadow: var(--card-shadow);
+  border-radius: calc(var(--card-border-radius-px) * 1px);
+  width: min(calc(var(--card-max-width-pct) * 1%), 100%);
+  /* IMPORTANT: do NOT use opacity here */
+  margin: 0 auto;
+  position: relative;
+  top: calc(var(--card-offset-top-px) * 1px);
+}
+
+.chat-card-inner {
+  width: calc(var(--card-width-pct) * 1%);
+  margin: 0 auto;
+}

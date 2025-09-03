@@ -1,0 +1,235 @@
+[
+  {
+    "page": 32,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 66.44976023755129,
+    "data": [
+      {
+        "0": "32",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "TESTING METHODOLOGY:",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Only laboratories certified by the Department of Health and Human Services (DHHS) will be used",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "for  drug  urinalysis.  Every  specimen",
+        "1": "is  required  to  undergo  an \ninitial  screen",
+        "2": "followed  by"
+      },
+      {
+        "0": "confirmation  of  all  positive  screen  results.  This  screen-confirmation  process  utilizes  highly",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "sophisticated techniques to detect minute levels of prohibited substances in urine.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "R\neporting of Results:",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "The laboratory is required to report the test results directly to the Company's Medical Review",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Officer (MRO) within 5 working days. The report shall indicate the drug/metabolites tested for,",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "whether the results are positive or negative, the specimen number assigned by the Company and",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "the drug testing laboratory identification number.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "R\neview of Results/MRO:",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "The medical review officer (MRO) is a licensed physician and possesses knowledge of drug abuse",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "disorders. The MRO may be a Team Member of the Company or one contracted to provide the",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "services  required.  The  MRO  will  review  and",
+        "1": "interpret  positive  results  obtained",
+        "2": "from  the"
+      },
+      {
+        "0": "laboratory. The MRO through a verification process will assess and determine whether alternate",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "medical explanations could account for the positive test results. The MRO may conduct medical",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "interviews  of  the  Team  Member,  review  the  Team  Member\u2019s  medical  history  and  review  any",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "other relevant bio-medical factors. Additionally, the MRO will examine all medical records and",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "data made available by the tested individual, such as evidence of prescribed medications.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "As a part of the verification process the MRO is prohibited from verifying a test negative based on",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "information that a physician recommended that the Team Member use a drug listed in Schedule",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "I  of  the  Controlled  Substances  Act.  (e.g.,  under  a  state  law  that  purports  to  authorize  such",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "recommendations, such as the \u201cmedical marijuana\u201d laws that some states have adopted).",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "The MRO will give the individual testing positive an opportunity to discuss the test results prior to",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "making  a  final  decision.  After  the  final  decision  is  made,  the  MRO  will  notify  the  Company  as",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "prescribed below. If during an interview with a Team Member who has tested positive, the MRO",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "learns of a medical condition, which could, in the MRO's reasonable medical judgment, pose a risk",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "to safety, the MRO may report that information to the Department of Transportation (DOT) or to",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "the Company.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "The MRO will notify each Team Member who has a confirmed positive test that the Team Member",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "has 72 hours in which to request a test of the split specimen. If the Team Member makes such a",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "request, the MRO will direct, in writing, the laboratory to provide the split specimen to another",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "certified laboratory for analysis. If the analysis of the split specimen fails to reconfirm the presence",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "of the drug(s) or drug metabolite(s)  found in the primary specimen, or if the split  specimen is",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "unavailable,  inadequate  for  testing  or  not  testable,  the  MRO  will  cancel  the  test  and  report",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "cancellation and the reasons for it to the DOT, the Company, and the Team Member. A request",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "for testing of the split sample and associated costs are the responsibility of the Team Member. If",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "the MRO, after making and documenting all reasonable efforts, is unable to contact the tested",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "person, the MRO will contact a designated management official of the Company to arrange for",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "the Team Member to contact the MRO prior to going on duty. Within 5 days after a documented",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "contact  by  designated  management  official  of  the  Company  instructing  the  Team  Member  to",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "contact the MRO, the Team Member has not done so the MRO will verify the test positive and",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "report it to the Company.",
+        "1": "",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\n32,,\nTESTING METHODOLOGY:,,\nOnly laboratories certified by the Department of Health and Human Services (DHHS) will be used,,\nfor  drug  urinalysis.  Every  specimen,\"is  required  to  undergo  an \ninitial  screen\",followed  by\nconfirmation  of  all  positive  screen  results.  This  screen-confirmation  process  utilizes  highly,,\nsophisticated techniques to detect minute levels of prohibited substances in urine.,,\n\"R\neporting of Results:\",,\nThe laboratory is required to report the test results directly to the Company's Medical Review,,\n\"Officer (MRO) within 5 working days. The report shall indicate the drug/metabolites tested for,\",,\n\"whether the results are positive or negative, the specimen number assigned by the Company and\",,\nthe drug testing laboratory identification number.,,\n\"R\neview of Results/MRO:\",,\nThe medical review officer (MRO) is a licensed physician and possesses knowledge of drug abuse,,\ndisorders. The MRO may be a Team Member of the Company or one contracted to provide the,,\nservices  required.  The  MRO  will  review  and,interpret  positive  results  obtained,from  the\nlaboratory. The MRO through a verification process will assess and determine whether alternate,,\nmedical explanations could account for the positive test results. The MRO may conduct medical,,\n\"interviews  of  the  Team  Member,  review  the  Team  Member\u2019s  medical  history  and  review  any\",,\n\"other relevant bio-medical factors. Additionally, the MRO will examine all medical records and\",,\n\"data made available by the tested individual, such as evidence of prescribed medications.\",,\nAs a part of the verification process the MRO is prohibited from verifying a test negative based on,,\ninformation that a physician recommended that the Team Member use a drug listed in Schedule,,\n\"I  of  the  Controlled  Substances  Act.  (e.g.,  under  a  state  law  that  purports  to  authorize  such\",,\n\"recommendations, such as the \u201cmedical marijuana\u201d laws that some states have adopted).\",,\nThe MRO will give the individual testing positive an opportunity to discuss the test results prior to,,\n\"making  a  final  decision.  After  the  final  decision  is  made,  the  MRO  will  notify  the  Company  as\",,\n\"prescribed below. If during an interview with a Team Member who has tested positive, the MRO\",,\n\"learns of a medical condition, which could, in the MRO's reasonable medical judgment, pose a risk\",,\n\"to safety, the MRO may report that information to the Department of Transportation (DOT) or to\",,\nthe Company.,,\nThe MRO will notify each Team Member who has a confirmed positive test that the Team Member,,\nhas 72 hours in which to request a test of the split specimen. If the Team Member makes such a,,\n\"request, the MRO will direct, in writing, the laboratory to provide the split specimen to another\",,\ncertified laboratory for analysis. If the analysis of the split specimen fails to reconfirm the presence,,\n\"of the drug(s) or drug metabolite(s)  found in the primary specimen, or if the split  specimen is\",,\n\"unavailable,  inadequate  for  testing  or  not  testable,  the  MRO  will  cancel  the  test  and  report\",,\n\"cancellation and the reasons for it to the DOT, the Company, and the Team Member. A request\",,\nfor testing of the split sample and associated costs are the responsibility of the Team Member. If,,\n\"the MRO, after making and documenting all reasonable efforts, is unable to contact the tested\",,\n\"person, the MRO will contact a designated management official of the Company to arrange for\",,\nthe Team Member to contact the MRO prior to going on duty. Within 5 days after a documented,,\ncontact  by  designated  management  official  of  the  Company  instructing  the  Team  Member  to,,\n\"contact the MRO, the Team Member has not done so the MRO will verify the test positive and\",,\nreport it to the Company.,,\n",
+    "shape": [
+      44,
+      3
+    ]
+  }
+]

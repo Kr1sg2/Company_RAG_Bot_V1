@@ -1,0 +1,55 @@
+[
+  {
+    "page": 10,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "Column Headers",
+        "1": "What it means\u2026"
+      },
+      {
+        "0": "Order Date",
+        "1": "Date the purchase order on the row was ordered"
+      },
+      {
+        "0": "Created From",
+        "1": "If the item was a special order for a sales order the Sales Order that the \npurchase order was created for will show here"
+      },
+      {
+        "0": "PO#",
+        "1": "Purchase order number"
+      },
+      {
+        "0": "ACK#",
+        "1": "Acknowledgement number from the factory"
+      },
+      {
+        "0": "Item#",
+        "1": "The SKU number that was ordered"
+      },
+      {
+        "0": "Order QTY",
+        "1": "The number of the SKU number that was ordered on the purchase order"
+      },
+      {
+        "0": "QTY Received",
+        "1": "If the purchase order was partially received it will show an amount received \nless than the total quantity ordered"
+      },
+      {
+        "0": "QTY On Order",
+        "1": "The quantity of the SKU that was order but no yet received"
+      },
+      {
+        "0": "ETA",
+        "1": "The estimated date of arrival for items not yet received on the purchase order"
+      }
+    ],
+    "csv": "0,1\nColumn Headers,What it means\u2026\nOrder Date,Date the purchase order on the row was ordered\nCreated From,\"If the item was a special order for a sales order the Sales Order that the \npurchase order was created for will show here\"\nPO#,Purchase order number\nACK#,Acknowledgement number from the factory\nItem#,The SKU number that was ordered\nOrder QTY,The number of the SKU number that was ordered on the purchase order\nQTY Received,\"If the purchase order was partially received it will show an amount received \nless than the total quantity ordered\"\nQTY On Order,The quantity of the SKU that was order but no yet received\nETA,The estimated date of arrival for items not yet received on the purchase order\n",
+    "shape": [
+      10,
+      2
+    ]
+  }
+]

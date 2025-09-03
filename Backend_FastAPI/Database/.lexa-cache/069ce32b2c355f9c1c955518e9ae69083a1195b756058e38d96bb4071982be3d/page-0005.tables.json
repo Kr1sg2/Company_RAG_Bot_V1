@@ -1,0 +1,63 @@
+[
+  {
+    "page": 5,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 100.00000000000003,
+    "data": [
+      {
+        "0": "Field",
+        "1": "What is it"
+      },
+      {
+        "0": "Internal ID",
+        "1": "ID Number to reference the item when programing NetSuite"
+      },
+      {
+        "0": "Item Name/Number",
+        "1": "The full SKU for the item in Vendor-Frame, Finish, Fabric format"
+      },
+      {
+        "0": "Display Name",
+        "1": "Description of the base SKU of the item"
+      },
+      {
+        "0": "Sales Description",
+        "1": "Description of the item including option attributes"
+      },
+      {
+        "0": "Item Status",
+        "1": "Defines the current stocking status of the item."
+      },
+      {
+        "0": "Nail Down",
+        "1": "If this box is checked the item cannot be sold off the retail floor"
+      },
+      {
+        "0": "Item Category",
+        "1": "Defines the category the item is in for tracking sales metrics"
+      },
+      {
+        "0": "Assembly Needed",
+        "1": "This box will be checked if an item needs to be assembled"
+      },
+      {
+        "0": "Subitem Of",
+        "1": "Base SKU of the item"
+      },
+      {
+        "0": "Item Display Thumbnail",
+        "1": "Black and white image of the item"
+      },
+      {
+        "0": "Total Quantity on Hand",
+        "1": "Total number of the item in all locations"
+      }
+    ],
+    "csv": "0,1\nField,What is it\nInternal ID,ID Number to reference the item when programing NetSuite\nItem Name/Number,\"The full SKU for the item in Vendor-Frame, Finish, Fabric format\"\nDisplay Name,Description of the base SKU of the item\nSales Description,Description of the item including option attributes\nItem Status,Defines the current stocking status of the item.\nNail Down,If this box is checked the item cannot be sold off the retail floor\nItem Category,Defines the category the item is in for tracking sales metrics\nAssembly Needed,This box will be checked if an item needs to be assembled\nSubitem Of,Base SKU of the item\nItem Display Thumbnail,Black and white image of the item\nTotal Quantity on Hand,Total number of the item in all locations\n",
+    "shape": [
+      12,
+      2
+    ]
+  }
+]

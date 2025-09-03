@@ -1,0 +1,135 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 90.80937197751497,
+    "data": [
+      {
+        "0": "",
+        "1": "6 Daily Delivery Paperwork"
+      },
+      {
+        "0": "Damaged",
+        "1": ""
+      },
+      {
+        "0": "1.",
+        "1": "Contact the customer to learn more about the damage."
+      },
+      {
+        "0": "Stock",
+        "1": ""
+      },
+      {
+        "0": "Refused the product?",
+        "1": ""
+      },
+      {
+        "0": "1.",
+        "1": "Confirm the correct product is in stock"
+      },
+      {
+        "0": "2.",
+        "1": "Contact the customer and reschedule the delivery"
+      },
+      {
+        "0": "Kept the product?",
+        "1": ""
+      },
+      {
+        "0": "1.",
+        "1": "Confirm the correct product is in stock"
+      },
+      {
+        "0": "",
+        "1": "2.  Write a new invoice for the correct product"
+      },
+      {
+        "0": "",
+        "1": "3.  Write a credit memo for the wrong product delivered"
+      },
+      {
+        "0": "",
+        "1": "a.  Make sure the refund is $0 and the money transfers to the new invoice you wrote in"
+      },
+      {
+        "0": "",
+        "1": "b(ii)"
+      },
+      {
+        "0": "Special Order",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "1.  Open a service to keep track of the progress on the customer\u2019s account"
+      },
+      {
+        "0": "Refused the product?",
+        "1": ""
+      },
+      {
+        "0": "1.",
+        "1": "Inspect the product thoroughly when it returns"
+      },
+      {
+        "0": "",
+        "1": "b. \nCan be Repaired"
+      },
+      {
+        "0": "",
+        "1": "i. \nSubmit the packet to the repair department"
+      },
+      {
+        "0": "",
+        "1": "c. \nCan Not Be Repaired"
+      },
+      {
+        "0": "",
+        "1": "i.  Re-order the product from the factory"
+      },
+      {
+        "0": "",
+        "1": "1. \nSubmit an RS to the factory"
+      },
+      {
+        "0": "2.",
+        "1": "Contact the customer and reschedule the delivery once a resolution has been reached"
+      },
+      {
+        "0": "Kept the product?",
+        "1": ""
+      },
+      {
+        "0": "1.",
+        "1": "Verify the damage with pictures"
+      },
+      {
+        "0": "",
+        "1": "a. \nDriver should have taken pictures, if not request from customer"
+      },
+      {
+        "0": "",
+        "1": "2.  Write a new invoice to re-order the product from the factory"
+      },
+      {
+        "0": "",
+        "1": "3.  Write a credit memo for the wrong product delivered"
+      },
+      {
+        "0": "",
+        "1": "a.  Make sure the refund is $0 and the money transfers to the new invoice you wrote in"
+      },
+      {
+        "0": "",
+        "1": "b(ii)"
+      }
+    ],
+    "csv": "0,1\n,6 Daily Delivery Paperwork\nDamaged,\n1.,Contact the customer to learn more about the damage.\nStock,\nRefused the product?,\n1.,Confirm the correct product is in stock\n2.,Contact the customer and reschedule the delivery\nKept the product?,\n1.,Confirm the correct product is in stock\n,2.  Write a new invoice for the correct product\n,3.  Write a credit memo for the wrong product delivered\n,a.  Make sure the refund is $0 and the money transfers to the new invoice you wrote in\n,b(ii)\nSpecial Order,\n,1.  Open a service to keep track of the progress on the customer\u2019s account\nRefused the product?,\n1.,Inspect the product thoroughly when it returns\n,\"b. \nCan be Repaired\"\n,\"i. \nSubmit the packet to the repair department\"\n,\"c. \nCan Not Be Repaired\"\n,i.  Re-order the product from the factory\n,\"1. \nSubmit an RS to the factory\"\n2.,Contact the customer and reschedule the delivery once a resolution has been reached\nKept the product?,\n1.,Verify the damage with pictures\n,\"a. \nDriver should have taken pictures, if not request from customer\"\n,2.  Write a new invoice to re-order the product from the factory\n,3.  Write a credit memo for the wrong product delivered\n,a.  Make sure the refund is $0 and the money transfers to the new invoice you wrote in\n,b(ii)\n",
+    "shape": [
+      30,
+      2
+    ]
+  }
+]

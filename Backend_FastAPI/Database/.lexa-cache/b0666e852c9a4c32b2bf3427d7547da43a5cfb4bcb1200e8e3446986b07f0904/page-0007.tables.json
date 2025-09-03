@@ -1,0 +1,35 @@
+[
+  {
+    "page": 7,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Exposure",
+        "1": "Frequency"
+      },
+      {
+        "0": "Full sun, marine or poolside",
+        "1": "Clean and protect once every three months"
+      },
+      {
+        "0": "Full sun no marine or pool exposure",
+        "1": "Clean and protect once every three months"
+      },
+      {
+        "0": "Under cover partial sun",
+        "1": "Clean as needed, protect at least once a year"
+      },
+      {
+        "0": "Under cover no sun",
+        "1": "Clean as needed, protect at least once a year"
+      }
+    ],
+    "csv": "0,1\nExposure,Frequency\n\"Full sun, marine or poolside\",Clean and protect once every three months\nFull sun no marine or pool exposure,Clean and protect once every three months\nUnder cover partial sun,\"Clean as needed, protect at least once a year\"\nUnder cover no sun,\"Clean as needed, protect at least once a year\"\n",
+    "shape": [
+      5,
+      2
+    ]
+  }
+]

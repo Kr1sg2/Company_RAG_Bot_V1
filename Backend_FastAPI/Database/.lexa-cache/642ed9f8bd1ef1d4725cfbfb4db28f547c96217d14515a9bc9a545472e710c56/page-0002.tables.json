@@ -1,0 +1,212 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "RUNNER BRONZE 906CK 907 920",
+        "2": "P-UMRUNNER3-00",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RUNNER CHAMPAGNE 906CK 907 920",
+        "2": "P-UMRUNNER3-01",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RUNNER ANTHRACITE 906CK 907 920",
+        "2": "P-UMRUNNER3-02",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RUNNER WHITE 906CK 907 920",
+        "2": "P-UMRUNNER3-03",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RUNNER BLACK 906CK 907 920",
+        "2": "P-UMRUNNER3-09",
+        "3": "$10.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,RUNNER BRONZE 906CK 907 920,P-UMRUNNER3-00,$10.00\n,RUNNER CHAMPAGNE 906CK 907 920,P-UMRUNNER3-01,$10.00\n,RUNNER ANTHRACITE 906CK 907 920,P-UMRUNNER3-02,$10.00\n,RUNNER WHITE 906CK 907 920,P-UMRUNNER3-03,$10.00\n,RUNNER BLACK 906CK 907 920,P-UMRUNNER3-09,$10.00\n",
+    "shape": [
+      5,
+      4
+    ]
+  },
+  {
+    "page": 2,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "",
+        "1": "PULLEY 906CK 907 920",
+        "2": "P-UMPULLEY3-XX",
+        "3": "$3.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,PULLEY 906CK 907 920,P-UMPULLEY3-XX,$3.00\n",
+    "shape": [
+      1,
+      4
+    ]
+  },
+  {
+    "page": 2,
+    "table_index": 2,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "RIB END CAP BRONZE 807 800 801 810 812 906CK 907 920",
+        "2": "P-UMRIBEND-00",
+        "3": "$1.00"
+      },
+      {
+        "0": "",
+        "1": "RIB END CAP CHAMP 807 800 801 810 812 906CK 907 920",
+        "2": "P-UMRIBEND-01",
+        "3": "$1.00"
+      },
+      {
+        "0": "",
+        "1": "RIB END CAP ATHRACITE 807 800 801 810 812 906CK 907 920",
+        "2": "P-UMRIBEND-02",
+        "3": "$1.00"
+      },
+      {
+        "0": "",
+        "1": "RIB END CAP WHITE 807 800 801 810 812 906CK 907 920",
+        "2": "P-UMRIBEND-03",
+        "3": "$1.00"
+      },
+      {
+        "0": "",
+        "1": "RIB END CAP BLACK 807 800 801 810 812 906CK 907 920",
+        "2": "P-UMRIBEND-09",
+        "3": "$1.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,RIB END CAP BRONZE 807 800 801 810 812 906CK 907 920,P-UMRIBEND-00,$1.00\n,RIB END CAP CHAMP 807 800 801 810 812 906CK 907 920,P-UMRIBEND-01,$1.00\n,RIB END CAP ATHRACITE 807 800 801 810 812 906CK 907 920,P-UMRIBEND-02,$1.00\n,RIB END CAP WHITE 807 800 801 810 812 906CK 907 920,P-UMRIBEND-03,$1.00\n,RIB END CAP BLACK 807 800 801 810 812 906CK 907 920,P-UMRIBEND-09,$1.00\n",
+    "shape": [
+      5,
+      4
+    ]
+  },
+  {
+    "page": 2,
+    "table_index": 3,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "RIB BRONZE 920",
+        "2": "P-UMRIB2-00",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RIB CHAMPAGNE 920",
+        "2": "P-UMRIB2-01",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RIB ANTHRACITE 920",
+        "2": "P-UMRIB2-02",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RIB WHITE 920",
+        "2": "P-UMRIB2-03",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RIB BLACK 920",
+        "2": "P-UMRIB2-09",
+        "3": "$10.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,RIB BRONZE 920,P-UMRIB2-00,$10.00\n,RIB CHAMPAGNE 920,P-UMRIB2-01,$10.00\n,RIB ANTHRACITE 920,P-UMRIB2-02,$10.00\n,RIB WHITE 920,P-UMRIB2-03,$10.00\n,RIB BLACK 920,P-UMRIB2-09,$10.00\n",
+    "shape": [
+      5,
+      4
+    ]
+  },
+  {
+    "page": 2,
+    "table_index": 4,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "RIB BRONZE 807 907",
+        "2": "P-UMRIB-00",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RIB CHAMPAGNE 807 907",
+        "2": "P-UMRIB-01",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RIB ANTHRACITE 807 907",
+        "2": "P-UMRIB-02",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RIB WHITE 807 908",
+        "2": "P-UMRIB-03",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "RIB BLACK 807 907",
+        "2": "P-UMRIB-09",
+        "3": "$10.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,RIB BRONZE 807 907,P-UMRIB-00,$10.00\n,RIB CHAMPAGNE 807 907,P-UMRIB-01,$10.00\n,RIB ANTHRACITE 807 907,P-UMRIB-02,$10.00\n,RIB WHITE 807 908,P-UMRIB-03,$10.00\n,RIB BLACK 807 907,P-UMRIB-09,$10.00\n",
+    "shape": [
+      5,
+      4
+    ]
+  },
+  {
+    "page": 2,
+    "table_index": 5,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "",
+        "1": "RIB PIN 906CK 907 920",
+        "2": "P-UMRIBPIN3-XX",
+        "3": "$1.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,RIB PIN 906CK 907 920,P-UMRIBPIN3-XX,$1.00\n",
+    "shape": [
+      1,
+      4
+    ]
+  }
+]

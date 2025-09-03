@@ -1,0 +1,39 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "Community Matters"
+      },
+      {
+        "0": "Leaders is committed to giving back to local communities 5% of all In-Home Delivery fees collected.  Our Community"
+      },
+      {
+        "0": "Matters program allows each retail team to choose where the donation goes to impact their local community."
+      },
+      {
+        "0": "Table of Contents"
+      },
+      {
+        "0": "How Funds Are Generated and Used ..................................................................................................................... 2"
+      },
+      {
+        "0": "How Much Has My Team Accrued To Give Back? .................................................................................................. 2"
+      },
+      {
+        "0": "How Do We Donate? .............................................................................................................................................. 2"
+      },
+      {
+        "0": "Where Can I Find the Donation Application Form? ................................................................................................ 3"
+      }
+    ],
+    "csv": "0\nCommunity Matters\nLeaders is committed to giving back to local communities 5% of all In-Home Delivery fees collected.  Our Community\nMatters program allows each retail team to choose where the donation goes to impact their local community.\nTable of Contents\nHow Funds Are Generated and Used ..................................................................................................................... 2\nHow Much Has My Team Accrued To Give Back? .................................................................................................. 2\nHow Do We Donate? .............................................................................................................................................. 2\nWhere Can I Find the Donation Application Form? ................................................................................................ 3\n",
+    "shape": [
+      8,
+      1
+    ]
+  }
+]

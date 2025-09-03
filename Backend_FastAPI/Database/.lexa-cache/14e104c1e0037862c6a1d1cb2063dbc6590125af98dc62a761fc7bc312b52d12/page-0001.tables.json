@@ -1,0 +1,172 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 99.99999999999996,
+    "data": [
+      {
+        "0": "Paper\u00a0Towels\u00a0(2)\n\uf071 Brown\u00a0Roll\n\uf071 Tri\u2010Fold,\u00a0White"
+      },
+      {
+        "0": "Penciling\n\uf071 Pencil\u00a0(6)\n\uf071 Sharpener\u00a0(1)"
+      },
+      {
+        "0": "Pens\u00a0(6)\n\uf071 Black\n\uf071 Blue"
+      },
+      {
+        "0": "Post\u00a0It\u00a0Notes\u00a0(2)\n\uf071 Small\n\uf071 Large"
+      },
+      {
+        "0": "Protection\u00a0Cards\u00a0(25)\n\uf071 Fabric\u00a0Protection\n\uf071 Protection\u00a0Plus"
+      },
+      {
+        "0": "Rubber\u00a0Bands\u00a0(1\u00a0bag)\n\uf071 Easel\n\uf071 Assorted\n\uf071 Garbage\u00a0Can\u00a0(1)"
+      },
+      {
+        "0": "\uf071\nRuler\u00a0(1)"
+      },
+      {
+        "0": "\uf071\nScissors\u00a0(1)"
+      },
+      {
+        "0": "Sharpie\u00a0(4)\n\uf071 Black\n\uf071 Red"
+      },
+      {
+        "0": "Sheet\u00a0Protectors\u00a0(1\u00a0pack)\n\uf071 Letter\n\uf071 Legal"
+      },
+      {
+        "0": "Slatwall\u00a0Hardware\n\uf071 1\u00a01/2\"\u00a0Hook\u00a0(5)\n\uf071 Picture\u00a0Hook\u00a0(5)\n\uf071 10\"\u00a0Hanging\u00a0Arm\u00a0(1)"
+      },
+      {
+        "0": "Slatwall\u00a0Shelving\n\uf071 Glass\u00a0(4)\n\uf071 Arm\u00a0(8)"
+      },
+      {
+        "0": "Stapling\u00a0(1)\n\uf071 Box\u00a0of\u00a0Staples\n\uf071 Stapler\n\uf071 Staple\u00a0Remover"
+      },
+      {
+        "0": "\uf071\nStorage\u00a0Boxes\u00a0(2)"
+      },
+      {
+        "0": "Tape\u00a0(1\u00a0roll)\n\uf071 Scotch\n\uf071 Packing\n\uf071 Red\u00a0(for\u00a0damages)"
+      },
+      {
+        "0": "\uf071\nTape\u00a0Dispenser\u00a0(1)"
+      },
+      {
+        "0": "\uf071\nTape\u00a0Measurer\u00a0(1)"
+      },
+      {
+        "0": "\uf071\nToilet\u00a0Paper\u00a0(4)"
+      },
+      {
+        "0": "\uf071\nWhite\u00a0Out\u00a0Tape\u00a0(1)"
+      }
+    ],
+    "csv": "0\n\"Paper\u00a0Towels\u00a0(2)\n\uf071 Brown\u00a0Roll\n\uf071 Tri\u2010Fold,\u00a0White\"\n\"Penciling\n\uf071 Pencil\u00a0(6)\n\uf071 Sharpener\u00a0(1)\"\n\"Pens\u00a0(6)\n\uf071 Black\n\uf071 Blue\"\n\"Post\u00a0It\u00a0Notes\u00a0(2)\n\uf071 Small\n\uf071 Large\"\n\"Protection\u00a0Cards\u00a0(25)\n\uf071 Fabric\u00a0Protection\n\uf071 Protection\u00a0Plus\"\n\"Rubber\u00a0Bands\u00a0(1\u00a0bag)\n\uf071 Easel\n\uf071 Assorted\n\uf071 Garbage\u00a0Can\u00a0(1)\"\n\"\uf071\nRuler\u00a0(1)\"\n\"\uf071\nScissors\u00a0(1)\"\n\"Sharpie\u00a0(4)\n\uf071 Black\n\uf071 Red\"\n\"Sheet\u00a0Protectors\u00a0(1\u00a0pack)\n\uf071 Letter\n\uf071 Legal\"\n\"Slatwall\u00a0Hardware\n\uf071 1\u00a01/2\"\"\u00a0Hook\u00a0(5)\n\uf071 Picture\u00a0Hook\u00a0(5)\n\uf071 10\"\"\u00a0Hanging\u00a0Arm\u00a0(1)\"\n\"Slatwall\u00a0Shelving\n\uf071 Glass\u00a0(4)\n\uf071 Arm\u00a0(8)\"\n\"Stapling\u00a0(1)\n\uf071 Box\u00a0of\u00a0Staples\n\uf071 Stapler\n\uf071 Staple\u00a0Remover\"\n\"\uf071\nStorage\u00a0Boxes\u00a0(2)\"\n\"Tape\u00a0(1\u00a0roll)\n\uf071 Scotch\n\uf071 Packing\n\uf071 Red\u00a0(for\u00a0damages)\"\n\"\uf071\nTape\u00a0Dispenser\u00a0(1)\"\n\"\uf071\nTape\u00a0Measurer\u00a0(1)\"\n\"\uf071\nToilet\u00a0Paper\u00a0(4)\"\n\"\uf071\nWhite\u00a0Out\u00a0Tape\u00a0(1)\"\n",
+    "shape": [
+      19,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 2,
+    "method": "lattice",
+    "accuracy": 99.99999999999991,
+    "data": [
+      {
+        "0": "Acrylic\u00a0Easel\u00a0(10)\n\uf071 Legal\n\uf071 Letter"
+      },
+      {
+        "0": "Bags\u00a0(2\u00a0Rolls)\n\uf071 Cushion\u00a0Bag\n\uf071 Garbage\u00a0Bag\n\uf071 Thank\u00a0You\u00a0Bag"
+      },
+      {
+        "0": "\uf071\nBallot\u00a0Pads\u00a0(2)"
+      },
+      {
+        "0": "\uf071\nBank\u00a0Deposit\u00a0Bags"
+      },
+      {
+        "0": "\uf071\nBinder,\u00a02\"\u00a0Black\u00a0(1)"
+      },
+      {
+        "0": "\uf071\nBump\u00a0Ons\u00a0(1\u00a0Sheet)"
+      },
+      {
+        "0": "\uf071\nCalculator\u00a0(1)"
+      },
+      {
+        "0": "Cleaner\u00a0(1)\n\uf071 Glass\u00a0Cleaner\n\uf071 Disinfectant\n\uf071 Liquid\u00a0Hand\u00a0Soap"
+      },
+      {
+        "0": "Clip\u00a0Board\u00a0(1)\n\uf071 Small\n\uf071 Large"
+      },
+      {
+        "0": "\uf071\nColoring\u00a0Sheets\u00a0&\u00a0Crayons"
+      },
+      {
+        "0": "\uf071\nCredit\u00a0Card\u00a0Rolls\u00a0(3)"
+      },
+      {
+        "0": "Dennison\u00a0Gun\u00a0(1)\n\uf071 Gun\n\uf071 Needles"
+      },
+      {
+        "0": "Dennison\u00a0Strings\u00a0(1\u00a0box)\n\uf071 1\"\n\uf071 9\"\u00a0Loop/Lock"
+      },
+      {
+        "0": "Envelopes\u00a0(10)\n\uf071 6x9\u00a0Inch\u00a0Clasp\n\uf071 Leaders\u00a0Logo"
+      },
+      {
+        "0": "Fabric\u00a0Care\u00a0Card\u00a0(25)\n\uf071 Sunbrella\n\uf071 Z\u2010Woven"
+      },
+      {
+        "0": "Fabric\u00a0Hanging\u00a0(10)\n\uf071 Hangers\n\uf071 Hanger\u00a0Rings\n\uf071 Swatch\u00a0Bags"
+      },
+      {
+        "0": "\uf071\nFinance\u00a0Applications"
+      },
+      {
+        "0": "Folders\u00a0(10)\n\uf071 Manila\u00a0File\n\uf071 Hanging,\u00a0Green"
+      },
+      {
+        "0": "\uf071\nGlue\u00a0Sticks\u00a0(1)"
+      },
+      {
+        "0": "\uf071\nHand\u00a0Sanitizer\u00a0(1)"
+      },
+      {
+        "0": "Highlighter\u00a0(3)\n\uf071 Yellow\n\uf071 Blue"
+      },
+      {
+        "0": "Legal\u00a0Pads\u00a0(3)\n\uf071 Small\n\uf071 Large"
+      },
+      {
+        "0": "\uf071\nLight\u00a0Bulbs\u00a0\u2010\u00a0Lamp\u00a0(1\u00a0pk)"
+      },
+      {
+        "0": "\uf071\nManual\u00a0Invoices\u00a0(1\u00a0pad)"
+      },
+      {
+        "0": "\uf071\nMouse\u00a0Pad,\u00a0Black\u00a0(1)"
+      },
+      {
+        "0": "\uf071\nNon\u2010Skid\u00a0Pads\u00a0(5)"
+      },
+      {
+        "0": "\uf071\nPage\u00a0Dividers\u00a0with\u00a0Tabs"
+      },
+      {
+        "0": "Paper\n\uf071 Copy/Fax\u00a0(4\u00a0pk)\n\uf071 Easel\u00a0Paper\u00a0(25)"
+      },
+      {
+        "0": "Paper\u00a0Clips\u00a0(1\u00a0box)\n\uf071 Small\n\uf071 Large"
+      }
+    ],
+    "csv": "0\n\"Acrylic\u00a0Easel\u00a0(10)\n\uf071 Legal\n\uf071 Letter\"\n\"Bags\u00a0(2\u00a0Rolls)\n\uf071 Cushion\u00a0Bag\n\uf071 Garbage\u00a0Bag\n\uf071 Thank\u00a0You\u00a0Bag\"\n\"\uf071\nBallot\u00a0Pads\u00a0(2)\"\n\"\uf071\nBank\u00a0Deposit\u00a0Bags\"\n\"\uf071\nBinder,\u00a02\"\"\u00a0Black\u00a0(1)\"\n\"\uf071\nBump\u00a0Ons\u00a0(1\u00a0Sheet)\"\n\"\uf071\nCalculator\u00a0(1)\"\n\"Cleaner\u00a0(1)\n\uf071 Glass\u00a0Cleaner\n\uf071 Disinfectant\n\uf071 Liquid\u00a0Hand\u00a0Soap\"\n\"Clip\u00a0Board\u00a0(1)\n\uf071 Small\n\uf071 Large\"\n\"\uf071\nColoring\u00a0Sheets\u00a0&\u00a0Crayons\"\n\"\uf071\nCredit\u00a0Card\u00a0Rolls\u00a0(3)\"\n\"Dennison\u00a0Gun\u00a0(1)\n\uf071 Gun\n\uf071 Needles\"\n\"Dennison\u00a0Strings\u00a0(1\u00a0box)\n\uf071 1\"\"\n\uf071 9\"\"\u00a0Loop/Lock\"\n\"Envelopes\u00a0(10)\n\uf071 6x9\u00a0Inch\u00a0Clasp\n\uf071 Leaders\u00a0Logo\"\n\"Fabric\u00a0Care\u00a0Card\u00a0(25)\n\uf071 Sunbrella\n\uf071 Z\u2010Woven\"\n\"Fabric\u00a0Hanging\u00a0(10)\n\uf071 Hangers\n\uf071 Hanger\u00a0Rings\n\uf071 Swatch\u00a0Bags\"\n\"\uf071\nFinance\u00a0Applications\"\n\"Folders\u00a0(10)\n\uf071 Manila\u00a0File\n\uf071 Hanging,\u00a0Green\"\n\"\uf071\nGlue\u00a0Sticks\u00a0(1)\"\n\"\uf071\nHand\u00a0Sanitizer\u00a0(1)\"\n\"Highlighter\u00a0(3)\n\uf071 Yellow\n\uf071 Blue\"\n\"Legal\u00a0Pads\u00a0(3)\n\uf071 Small\n\uf071 Large\"\n\"\uf071\nLight\u00a0Bulbs\u00a0\u2010\u00a0Lamp\u00a0(1\u00a0pk)\"\n\"\uf071\nManual\u00a0Invoices\u00a0(1\u00a0pad)\"\n\"\uf071\nMouse\u00a0Pad,\u00a0Black\u00a0(1)\"\n\"\uf071\nNon\u2010Skid\u00a0Pads\u00a0(5)\"\n\"\uf071\nPage\u00a0Dividers\u00a0with\u00a0Tabs\"\n\"Paper\n\uf071 Copy/Fax\u00a0(4\u00a0pk)\n\uf071 Easel\u00a0Paper\u00a0(25)\"\n\"Paper\u00a0Clips\u00a0(1\u00a0box)\n\uf071 Small\n\uf071 Large\"\n",
+    "shape": [
+      29,
+      1
+    ]
+  }
+]

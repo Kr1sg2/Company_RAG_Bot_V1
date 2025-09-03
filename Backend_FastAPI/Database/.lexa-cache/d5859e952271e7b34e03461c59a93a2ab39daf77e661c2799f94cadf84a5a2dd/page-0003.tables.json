@@ -1,0 +1,184 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 99.99999999999999,
+    "data": [
+      {
+        "0": "Lighting"
+      },
+      {
+        "0": "Most store lighting is controlled by timers.  For the outline of how to use the timers and when to set the"
+      },
+      {
+        "0": "lights to go on and off review. (R:\\8 About Store Procedures \\3.19 Exterior Lighting Procedure)."
+      },
+      {
+        "0": "Building Sign Letters"
+      },
+      {
+        "0": "Please submit a Maintenance Request for any letters that need to be repaired."
+      },
+      {
+        "0": "Pylon Sign"
+      },
+      {
+        "0": "Please submit a Maintenance Request for any pylon repairs.  (R:\\14 Templates, Forms and"
+      },
+      {
+        "0": "Reference\\EmailTemplates\\Maintenance Request)"
+      },
+      {
+        "0": "Parking Lot Lights"
+      },
+      {
+        "0": "Some locations have parking lot lights.  It is expected that all parking lot lights be in good working order at"
+      },
+      {
+        "0": "all"
+      },
+      {
+        "0": "times for safety and to prevent vandalism.  If a bulb needs to be replaced, please submit a Maintenance"
+      },
+      {
+        "0": "Request.  All parking lot light lights should be set and synchronized to the exterior signs.  (R:\\8 About"
+      },
+      {
+        "0": "Store Procedures\\3.0 Store Management\\3.19 Exterior Lighting Procedure)."
+      }
+    ],
+    "csv": "0\nLighting\nMost store lighting is controlled by timers.  For the outline of how to use the timers and when to set the\nlights to go on and off review. (R:\\8 About Store Procedures \\3.19 Exterior Lighting Procedure).\nBuilding Sign Letters\nPlease submit a Maintenance Request for any letters that need to be repaired.\nPylon Sign\n\"Please submit a Maintenance Request for any pylon repairs.  (R:\\14 Templates, Forms and\"\nReference\\EmailTemplates\\Maintenance Request)\nParking Lot Lights\nSome locations have parking lot lights.  It is expected that all parking lot lights be in good working order at\nall\n\"times for safety and to prevent vandalism.  If a bulb needs to be replaced, please submit a Maintenance\"\nRequest.  All parking lot light lights should be set and synchronized to the exterior signs.  (R:\\8 About\nStore Procedures\\3.0 Store Management\\3.19 Exterior Lighting Procedure).\n",
+    "shape": [
+      14,
+      1
+    ]
+  },
+  {
+    "page": 3,
+    "table_index": 1,
+    "method": "stream",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Exterior"
+      },
+      {
+        "0": "The \u201ccurb appeal\u201d of every location day and night is extremely important.  All locations should be clean, and all"
+      },
+      {
+        "0": "lighting should be in full working order at all times."
+      },
+      {
+        "0": "Windows"
+      },
+      {
+        "0": "The exterior side of the showroom windows should be cleaned once a month at every location and the"
+      },
+      {
+        "0": "interior side of the windows twice a year. please use the check list that can be found here"
+      },
+      {
+        "0": "(R:\\8 About Store Procedures\\2.0 General Store Procedure\\8.25 Windows Check List)."
+      },
+      {
+        "0": "If the window cleaning service did not cover all items on the check list or you are not satisfied with their job,"
+      },
+      {
+        "0": "please share with them what you would like them to do in a polite way.  The company will not get paid if you"
+      },
+      {
+        "0": "do not sign off.  Your store\u2019s team is responsible for the quality of the job performed."
+      },
+      {
+        "0": "Roof Leaks"
+      },
+      {
+        "0": "It is important to address roof leaks immediately.  If roof leaks are allowed to persist, they can cause"
+      },
+      {
+        "0": "extensive damage and attract pests.  For minor leaks please submit a Maintenance Request."
+      },
+      {
+        "0": "If water is leaking uncontrollably, the situation is a risk to safety, call first, then send a regular email to a"
+      },
+      {
+        "0": "member of the Sales Leadership team (no email template is required for emergency situations).  We will"
+      },
+      {
+        "0": "address the concern immediately after receiving your call, however we also need to keep a digital record of"
+      },
+      {
+        "0": "each emergency and non- emergency repair request (email)."
+      },
+      {
+        "0": "Lighting"
+      },
+      {
+        "0": "Most store lighting is controlled by timers.  For the outline of how to use the timers and when to set the"
+      },
+      {
+        "0": "lights to go on and off review. (R:\\8 About Store Procedures \\3.19 Exterior Lighting Procedure)."
+      },
+      {
+        "0": "Building Sign Letters"
+      },
+      {
+        "0": "Please submit a Maintenance Request for any letters that need to be repaired."
+      },
+      {
+        "0": "Pylon Sign"
+      },
+      {
+        "0": "Please submit a Maintenance Request for any pylon repairs.  (R:\\14 Templates, Forms and"
+      },
+      {
+        "0": "Reference\\EmailTemplates\\Maintenance Request)"
+      },
+      {
+        "0": "Parking Lot Lights"
+      },
+      {
+        "0": "Some locations have parking lot lights.  It is expected that all parking lot lights be in good working order at"
+      },
+      {
+        "0": "all"
+      },
+      {
+        "0": "times for safety and to prevent vandalism.  If a bulb needs to be replaced, please submit a Maintenance"
+      },
+      {
+        "0": "Request.  All parking lot light lights should be set and synchronized to the exterior signs.  (R:\\8 About"
+      },
+      {
+        "0": "Store Procedures\\3.0 Store Management\\3.19 Exterior Lighting Procedure)."
+      },
+      {
+        "0": "Landscaping and Curb Appeal"
+      },
+      {
+        "0": "Leaders uses a single company statewide and you no longer need to provide a sign-off for each visit.  Lawns should"
+      },
+      {
+        "0": "be consistently mowed, parking lots, garden beds and sidewalks should all be weed-free, and all shrubs should be"
+      },
+      {
+        "0": "trimmed."
+      },
+      {
+        "0": "If the lawn service did not cover all items on the checklist or you are not satisfied with their job, please report your"
+      },
+      {
+        "0": "concern to Tim Newton at timnewton@leadersfurniture.com.  Your store\u2019s team is responsible for the quality of"
+      },
+      {
+        "0": "the job performed."
+      }
+    ],
+    "csv": "0\nExterior\n\"The \u201ccurb appeal\u201d of every location day and night is extremely important.  All locations should be clean, and all\"\nlighting should be in full working order at all times.\nWindows\nThe exterior side of the showroom windows should be cleaned once a month at every location and the\ninterior side of the windows twice a year. please use the check list that can be found here\n(R:\\8 About Store Procedures\\2.0 General Store Procedure\\8.25 Windows Check List).\n\"If the window cleaning service did not cover all items on the check list or you are not satisfied with their job,\"\nplease share with them what you would like them to do in a polite way.  The company will not get paid if you\ndo not sign off.  Your store\u2019s team is responsible for the quality of the job performed.\nRoof Leaks\n\"It is important to address roof leaks immediately.  If roof leaks are allowed to persist, they can cause\"\nextensive damage and attract pests.  For minor leaks please submit a Maintenance Request.\n\"If water is leaking uncontrollably, the situation is a risk to safety, call first, then send a regular email to a\"\nmember of the Sales Leadership team (no email template is required for emergency situations).  We will\n\"address the concern immediately after receiving your call, however we also need to keep a digital record of\"\neach emergency and non- emergency repair request (email).\nLighting\nMost store lighting is controlled by timers.  For the outline of how to use the timers and when to set the\nlights to go on and off review. (R:\\8 About Store Procedures \\3.19 Exterior Lighting Procedure).\nBuilding Sign Letters\nPlease submit a Maintenance Request for any letters that need to be repaired.\nPylon Sign\n\"Please submit a Maintenance Request for any pylon repairs.  (R:\\14 Templates, Forms and\"\nReference\\EmailTemplates\\Maintenance Request)\nParking Lot Lights\nSome locations have parking lot lights.  It is expected that all parking lot lights be in good working order at\nall\n\"times for safety and to prevent vandalism.  If a bulb needs to be replaced, please submit a Maintenance\"\nRequest.  All parking lot light lights should be set and synchronized to the exterior signs.  (R:\\8 About\nStore Procedures\\3.0 Store Management\\3.19 Exterior Lighting Procedure).\nLandscaping and Curb Appeal\nLeaders uses a single company statewide and you no longer need to provide a sign-off for each visit.  Lawns should\n\"be consistently mowed, parking lots, garden beds and sidewalks should all be weed-free, and all shrubs should be\"\ntrimmed.\n\"If the lawn service did not cover all items on the checklist or you are not satisfied with their job, please report your\"\nconcern to Tim Newton at timnewton@leadersfurniture.com.  Your store\u2019s team is responsible for the quality of\nthe job performed.\n",
+    "shape": [
+      38,
+      1
+    ]
+  }
+]

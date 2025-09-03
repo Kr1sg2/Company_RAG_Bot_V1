@@ -1,0 +1,47 @@
+[
+  {
+    "page": 5,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 95.83006533557226,
+    "data": [
+      {
+        "0": "Quote to a Sales Order",
+        "1": ""
+      },
+      {
+        "0": "1.",
+        "1": "From the NetSuite Dashboard, Guest Lookup"
+      },
+      {
+        "0": "2.",
+        "1": "From the Guest Record in View mode Click the Sales tab and view the Transactions subtab"
+      },
+      {
+        "0": "3.",
+        "1": "Select the Quote you would like to convert into a Sales Order by clicking the Date or Document"
+      },
+      {
+        "0": "",
+        "1": "Number."
+      },
+      {
+        "0": "4.",
+        "1": "Click the button"
+      },
+      {
+        "0": "5.",
+        "1": "The Quote will convert into a Sales Order and open in Edit mode.  Make sure the information is"
+      },
+      {
+        "0": "",
+        "1": "correct and proceed with the transaction."
+      }
+    ],
+    "csv": "0,1\nQuote to a Sales Order,\n1.,\"From the NetSuite Dashboard, Guest Lookup\"\n2.,From the Guest Record in View mode Click the Sales tab and view the Transactions subtab\n3.,Select the Quote you would like to convert into a Sales Order by clicking the Date or Document\n,Number.\n4.,Click the button\n5.,The Quote will convert into a Sales Order and open in Edit mode.  Make sure the information is\n,correct and proceed with the transaction.\n",
+    "shape": [
+      8,
+      2
+    ]
+  }
+]

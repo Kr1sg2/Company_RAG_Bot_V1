@@ -1,0 +1,151 @@
+import { apiUrl } from '../config';
+import type { Branding } from './brandingTypes';
+
+// --- Types used by the chat client ------------------------------------------------
+export type ChatRole = 'system' | 'user' | 'assistant';
+export interface ChatMessage { role: ChatRole; content: string; }
+
+// Keep `answer?` for compatibility with ClientChat.tsx which may read response.answer
+export interface ChatResponse {
+  reply: string;
+  answer?: string;
+  sources?: any[];
+}
+
+// --- Helpers ----------------------------------------------------------------------
+function ok<T>(res: Response): Promise<T> {
+  if (!res.ok) {
+    const err = new Error(`HTTP ${res.status} ${res.statusText}`);
+    (err as any).status = res.status;
+    throw err;
+  }
+  return res.json() as Promise<T>;
+}
+
+export function friendlyError(err: unknown): string {
+  if (typeof err === 'string') return err;
+  if (err instanceof Error) {
+    const code = (err as any)?.status;
+    if (code === 401) return 'Unauthorized — please log in.';
+    if (code === 403) return 'Forbidden — your account lacks access.';
+    if (code === 404) return 'Not found — the endpoint may be disabled.';
+    return err.message || 'Unexpected error.';
+  }
+  try { return JSON.stringify(err); } catch { return 'Unexpected error.'; }
+}
+
+function authHeaders(auth?: string): HeadersInit {
+  return auth
+    ? { Authorization: `Basic ${auth}`, 'Content-Type': 'application/json' }
+    : { 'Content-Type': 'application/json' };
+}
+
+// --- Branding endpoints -----------------------------------------------------------
+// apiUrl() will prefix `/api` automatically when needed.
+// Passing '/admin/branding' -> '/api/admin/branding', etc.
+
+/** Public branding (no auth). GET /api/admin/settings/public/branding */
+export async function fetchPublicBranding(): Promise<Branding> {
+  const res = await fetch(apiUrl('/admin/settings/public/branding'), {
+    credentials: 'include',
+  });
+  return ok<Branding>(res);
+}
+
+/** Admin branding (auth required). GET /api/admin/settings/branding */
+export async function getAdminBranding(auth: string): Promise<Branding> {
+  const res = await fetch(apiUrl('/admin/settings/branding'), {
+    method: 'GET',
+    headers: authHeaders(auth),
+    credentials: 'include',
+  });
+  return ok<Branding>(res);
+}
+
+/** Save branding. PUT /api/admin/settings/branding */
+export async function putAdminBranding(
+  auth: string,
+  partial: Partial<Branding>
+): Promise<Branding> {
+  const res = await fetch(apiUrl('/admin/settings/branding'), {
+    method: 'PUT',
+    headers: authHeaders(auth),
+    credentials: 'include',
+    body: JSON.stringify(partial ?? {}),
+  });
+  return ok<Branding>(res);
+}
+
+// --- Chat endpoint(s) -------------------------------------------------------------
+// Primary: POST /api/chat with JSON { message: "..." }.
+// Fallback: POST /api/chat?query=... (legacy style still supported).
+export async function chat(
+  input: string | ChatMessage[],
+  opts?: { system?: string; timeoutMs?: number }
+): Promise<ChatResponse> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), opts?.timeoutMs ?? 60000);
+
+  try {
+    const userText = Array.isArray(input)
+      ? input.map(m => (m.role === 'user' ? m.content : '')).join('\n').trim()
+      : input;
+
+    // 1) Preferred JSON endpoint: POST /api/chat { message }
+    try {
+      const r = await fetch(apiUrl('/chat'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        signal: controller.signal,
+        body: JSON.stringify({ message: userText }),
+      });
+      const j: any = await ok<any>(r);
+
+      const reply =
+        j?.reply ??
+        j?.response ??
+        j?.content ??
+        j?.message ??
+        (typeof j === 'string' ? j : '');
+
+      const sources =
+        j?.sources ??
+        j?.data?.sources ??
+        j?.context?.sources ??
+        [];
+
+      if (typeof reply === 'string' && reply.length) {
+        return { reply, answer: reply, sources };
+      }
+    } catch {
+      // fall through to legacy path
+    }
+
+    // 2) Legacy: POST /api/chat?query=...
+    const r2 = await fetch(apiUrl(`/chat?query=${encodeURIComponent(userText)}`), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      signal: controller.signal,
+    });
+    const j2: any = await ok<any>(r2);
+
+    const reply2 =
+      j2?.reply ??
+      j2?.response ??
+      j2?.content ??
+      j2?.message ??
+      (typeof j2 === 'string' ? j2 : '');
+
+    const sources2 =
+      j2?.sources ??
+      j2?.data?.sources ??
+      j2?.context?.sources ??
+      [];
+
+    return { reply: reply2 ?? '', answer: reply2 ?? '', sources: sources2 };
+  } finally {
+    clearTimeout(timeout);
+  }
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "page": 23,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 69.84838631256775,
+    "data": [
+      {
+        "0": "23",
+        "1": ""
+      },
+      {
+        "0": "and Reemployment Rights Act (USERRA1). Advance notice of military service is required, unless",
+        "1": ""
+      },
+      {
+        "0": "military necessity prevents such notice, or it is otherwise impossible or unreasonable.",
+        "1": ""
+      },
+      {
+        "0": "T",
+        "1": "he leave will be unpaid. However, Team Members may use any available paid time off for the"
+      },
+      {
+        "0": "absence.",
+        "1": ""
+      },
+      {
+        "0": "C",
+        "1": "ontinuation of health insurance benefits is available as required by USERRA based on the length"
+      },
+      {
+        "0": "of the leave and subject to the terms, conditions, and limitations of the applicable plans for which",
+        "1": ""
+      },
+      {
+        "0": "the Team Member is otherwise eligible.",
+        "1": ""
+      },
+      {
+        "0": "B",
+        "1": "enefit accruals, such as PTO, a leave of absence, or holiday benefits, will be suspended during"
+      },
+      {
+        "0": "the leave and will resume upon the Team Member's return to active employment.",
+        "1": ""
+      },
+      {
+        "0": "T",
+        "1": "eam Members on military leave for up to 30 days are required to return to work for the first"
+      },
+      {
+        "0": "regularly scheduled shift after the end of service, allowing reasonable travel time. Team Members",
+        "1": ""
+      },
+      {
+        "0": "on \nlonger  military",
+        "1": "leave  must  apply  for  reinstatement \nin  accordance  with  USERRA  and  all"
+      },
+      {
+        "0": "applicable state laws.",
+        "1": ""
+      },
+      {
+        "0": "T",
+        "1": "eam  Members  returning  from  military  leave  will  be  placed  in  the  position  they  would  have"
+      },
+      {
+        "0": "attained had they remained continuously employed or a comparable one depending on the length",
+        "1": ""
+      },
+      {
+        "0": "of  military  service",
+        "1": "in  accordance  with  USERRA.  They  will  be  treated  as  though  they  were"
+      },
+      {
+        "0": "continuously employed for the purpose of determining benefits based on length of service.",
+        "1": ""
+      },
+      {
+        "0": "C\n                                 \nontact Human Resources for more information or questions about military leave.",
+        "1": ""
+      },
+      {
+        "0": "1 Under USERRA, uniformed services consist of the following: Army, Navy, Marine Corps, Air Force,",
+        "1": ""
+      },
+      {
+        "0": "Coast Guard, Army Reserve, Naval Reserve, Marine Corps Reserve, Air Force Reserve, Coast Guard",
+        "1": ""
+      },
+      {
+        "0": "Reserve, Army National Guard, Air National Guard, Commissioned Corps of the Public Health Service and",
+        "1": ""
+      },
+      {
+        "0": "any other category of persons designated by the President in time of war or emergency.  State laws may",
+        "1": ""
+      },
+      {
+        "0": "expand the uniformed services definition",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\n23,\n\"and Reemployment Rights Act (USERRA1). Advance notice of military service is required, unless\",\n\"military necessity prevents such notice, or it is otherwise impossible or unreasonable.\",\nT,\"he leave will be unpaid. However, Team Members may use any available paid time off for the\"\nabsence.,\nC,ontinuation of health insurance benefits is available as required by USERRA based on the length\n\"of the leave and subject to the terms, conditions, and limitations of the applicable plans for which\",\nthe Team Member is otherwise eligible.,\nB,\"enefit accruals, such as PTO, a leave of absence, or holiday benefits, will be suspended during\"\nthe leave and will resume upon the Team Member's return to active employment.,\nT,eam Members on military leave for up to 30 days are required to return to work for the first\n\"regularly scheduled shift after the end of service, allowing reasonable travel time. Team Members\",\n\"on \nlonger  military\",\"leave  must  apply  for  reinstatement \nin  accordance  with  USERRA  and  all\"\napplicable state laws.,\nT,eam  Members  returning  from  military  leave  will  be  placed  in  the  position  they  would  have\nattained had they remained continuously employed or a comparable one depending on the length,\nof  military  service,in  accordance  with  USERRA.  They  will  be  treated  as  though  they  were\ncontinuously employed for the purpose of determining benefits based on length of service.,\n\"C\n                                 \nontact Human Resources for more information or questions about military leave.\",\n\"1 Under USERRA, uniformed services consist of the following: Army, Navy, Marine Corps, Air Force,\",\n\"Coast Guard, Army Reserve, Naval Reserve, Marine Corps Reserve, Air Force Reserve, Coast Guard\",\n\"Reserve, Army National Guard, Air National Guard, Commissioned Corps of the Public Health Service and\",\nany other category of persons designated by the President in time of war or emergency.  State laws may,\nexpand the uniformed services definition,\n",
+    "shape": [
+      24,
+      2
+    ]
+  }
+]

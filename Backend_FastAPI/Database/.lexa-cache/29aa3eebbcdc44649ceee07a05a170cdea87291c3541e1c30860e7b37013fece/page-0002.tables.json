@@ -1,0 +1,110 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 71.87087706718866,
+    "data": [
+      {
+        "0": "",
+        "1": "",
+        "2": "6 Daily Delivery Paperwork"
+      },
+      {
+        "0": "Customer Not Home",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "No action is necessary from the Solutions Center.  The store team will reschedule the delivery",
+        "2": ""
+      },
+      {
+        "0": "Wrong Product Delivered",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Refused the product?",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "1.",
+        "1": "Confirm the correct product is in stock",
+        "2": ""
+      },
+      {
+        "0": "2.",
+        "1": "Contact the customer and reschedule the delivery",
+        "2": ""
+      },
+      {
+        "0": "Kept the product?",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "1.",
+        "1": "Confirm the correct product is in stock",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "2.  Write a new invoice for the correct product",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "3.  Write a credit memo for the wrong product delivered",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "a.  Make sure the refund is $0 and the money transfers to the new invoice you wrote in"
+      },
+      {
+        "0": "",
+        "1": "b(ii)",
+        "2": ""
+      },
+      {
+        "0": "Wrong Product Ordered",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "No action is necessary from the Solutions Center.  The store team will reschedule the delivery",
+        "2": ""
+      },
+      {
+        "0": "Wrong Address",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "No action is necessary from the Solutions Center.  The store team will reschedule the delivery",
+        "2": ""
+      },
+      {
+        "0": "Bad/No Directions",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "No action is necessary from the Solutions Center.  The store team will reschedule the delivery",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\n,,6 Daily Delivery Paperwork\nCustomer Not Home,,\n,No action is necessary from the Solutions Center.  The store team will reschedule the delivery,\nWrong Product Delivered,,\nRefused the product?,,\n1.,Confirm the correct product is in stock,\n2.,Contact the customer and reschedule the delivery,\nKept the product?,,\n1.,Confirm the correct product is in stock,\n,2.  Write a new invoice for the correct product,\n,3.  Write a credit memo for the wrong product delivered,\n,,a.  Make sure the refund is $0 and the money transfers to the new invoice you wrote in\n,b(ii),\nWrong Product Ordered,,\n,No action is necessary from the Solutions Center.  The store team will reschedule the delivery,\nWrong Address,,\n,No action is necessary from the Solutions Center.  The store team will reschedule the delivery,\nBad/No Directions,,\n,No action is necessary from the Solutions Center.  The store team will reschedule the delivery,\n",
+    "shape": [
+      19,
+      3
+    ]
+  }
+]

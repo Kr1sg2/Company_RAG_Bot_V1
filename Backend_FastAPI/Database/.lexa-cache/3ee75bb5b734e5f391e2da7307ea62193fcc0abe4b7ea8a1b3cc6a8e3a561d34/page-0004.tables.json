@@ -1,0 +1,83 @@
+[
+  {
+    "page": 4,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 99.99999999999993,
+    "data": [
+      {
+        "0": "1.",
+        "1": "From the customer account click"
+      },
+      {
+        "0": "2.",
+        "1": "Fill out the required fields.  Required fields are marked with an \n in the primary information, 2."
+      },
+      {
+        "0": "",
+        "1": "Items tab and 3. Shipping tab."
+      },
+      {
+        "0": "",
+        "1": "a. \nThe more accurate and detailed you are filling out all the fields on a quote the easier it"
+      },
+      {
+        "0": "",
+        "1": "will be to follow up with your best prospects to increase your level of service and"
+      },
+      {
+        "0": "",
+        "1": "income."
+      },
+      {
+        "0": "3.",
+        "1": "Press"
+      },
+      {
+        "0": "",
+        "1": "a. \nThe quote will not automatically email.  If you would like to email the quote to the guest"
+      },
+      {
+        "0": "",
+        "1": "follow these steps."
+      },
+      {
+        "0": "",
+        "1": "i.  Hover over \non the top of the quote."
+      },
+      {
+        "0": "",
+        "1": "ii. \nClick \u201cEmail\u201d"
+      },
+      {
+        "0": "",
+        "1": "iii. \nCheck to make sure the email is going where you want on the Recipients tab"
+      },
+      {
+        "0": "",
+        "1": "iv.  On the Message tab select"
+      },
+      {
+        "0": "",
+        "1": "1. \nTemplate Category: \nRetail Customer Communication"
+      },
+      {
+        "0": "",
+        "1": "2. \nTemplate: \nRetail | Quote"
+      },
+      {
+        "0": "",
+        "1": "3. \nClick"
+      },
+      {
+        "0": "",
+        "1": "b. \nTo continue on a path to a Sales Order skip to Step 4 below."
+      }
+    ],
+    "csv": "0,1\n1.,From the customer account click\n2.,\"Fill out the required fields.  Required fields are marked with an \n in the primary information, 2.\"\n,Items tab and 3. Shipping tab.\n,\"a. \nThe more accurate and detailed you are filling out all the fields on a quote the easier it\"\n,will be to follow up with your best prospects to increase your level of service and\n,income.\n3.,Press\n,\"a. \nThe quote will not automatically email.  If you would like to email the quote to the guest\"\n,follow these steps.\n,\"i.  Hover over \non the top of the quote.\"\n,\"ii. \nClick \u201cEmail\u201d\"\n,\"iii. \nCheck to make sure the email is going where you want on the Recipients tab\"\n,iv.  On the Message tab select\n,\"1. \nTemplate Category: \nRetail Customer Communication\"\n,\"2. \nTemplate: \nRetail | Quote\"\n,\"3. \nClick\"\n,\"b. \nTo continue on a path to a Sales Order skip to Step 4 below.\"\n",
+    "shape": [
+      17,
+      2
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+Page 10 of 12 
+1.2 NetSuite Check Stock, Look Up Product.docx 
+8/20/2019 
+Purchase orders Pending Subtab 
+Columns 
+Note: All columns can be sorted by clicking on the header 
+Column Headers 
+What it means… 
+Order Date 
+Date the purchase order on the row was ordered 
+Created From 
+If the item was a special order for a sales order the Sales Order that the 
+purchase order was created for will show here 
+PO# 
+Purchase order number 
+ACK# 
+Acknowledgement number from the factory 
+Item# 
+The SKU number that was ordered 
+Order QTY 
+The number of the SKU number that was ordered on the purchase order 
+QTY Received 
+If the purchase order was partially received it will show an amount received 
+less than the total quantity ordered 
+QTY On Order 
+The quantity of the SKU that was order but no yet received 
+ETA 
+The estimated date of arrival for items not yet received on the purchase order 
+ 
+ 
+ 

@@ -1,0 +1,126 @@
+[
+  {
+    "page": 4,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 96.3846024830966,
+    "data": [
+      {
+        "0": "EASEL NAME",
+        "1": "Topper\nEasel Date Code",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "",
+        "1": "FRONT\nBACK\nFRONT\nBACK",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "Brasilia Seating",
+        "1": "B",
+        "2": "D",
+        "3": "7/8/2024",
+        "4": "10/1/2024"
+      },
+      {
+        "0": "Brasilia Dining",
+        "1": "B",
+        "2": "C",
+        "3": "7/8/2024",
+        "4": "10/1/2024"
+      },
+      {
+        "0": "Lakeside Seating",
+        "1": "B",
+        "2": "D",
+        "3": "11/27/2024",
+        "4": "11/27/2024"
+      },
+      {
+        "0": "Shoreline Dining",
+        "1": "B",
+        "2": "C",
+        "3": "11/13/2024",
+        "4": "11/13/2024"
+      }
+    ],
+    "csv": "0,1,2,3,4\nEASEL NAME,\"Topper\nEasel Date Code\",,,\n,\"FRONT\nBACK\nFRONT\nBACK\",,,\nBrasilia Seating,B,D,7/8/2024,10/1/2024\nBrasilia Dining,B,C,7/8/2024,10/1/2024\nLakeside Seating,B,D,11/27/2024,11/27/2024\nShoreline Dining,B,C,11/13/2024,11/13/2024\n",
+    "shape": [
+      6,
+      5
+    ]
+  },
+  {
+    "page": 4,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 97.36173694712458,
+    "data": [
+      {
+        "0": "EASEL NAME",
+        "1": "Topper\nEasel Date Code",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "",
+        "1": "FRONT\nBACK\nFRONT\nBACK",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "Country Club Strap",
+        "1": "B",
+        "2": "D",
+        "3": "12/1/2023",
+        "4": "12/1/2023"
+      },
+      {
+        "0": "Outer Banks Bar",
+        "1": "B",
+        "2": "C",
+        "3": "12/1/2023",
+        "4": "12/1/2023"
+      },
+      {
+        "0": "Outer Banks Dining",
+        "1": "B",
+        "2": "C",
+        "3": "12/1/2023",
+        "4": "12/1/2023"
+      },
+      {
+        "0": "Sand Key Dining",
+        "1": "B",
+        "2": "C",
+        "3": "8/12/2024",
+        "4": "8/12/2024"
+      },
+      {
+        "0": "Tobago Dining",
+        "1": "B",
+        "2": "D",
+        "3": "12/1/2023",
+        "4": "12/1/2023"
+      },
+      {
+        "0": "Tobago Seating",
+        "1": "B",
+        "2": "E",
+        "3": "12/1/2023",
+        "4": "12/1/2023"
+      }
+    ],
+    "csv": "0,1,2,3,4\nEASEL NAME,\"Topper\nEasel Date Code\",,,\n,\"FRONT\nBACK\nFRONT\nBACK\",,,\nCountry Club Strap,B,D,12/1/2023,12/1/2023\nOuter Banks Bar,B,C,12/1/2023,12/1/2023\nOuter Banks Dining,B,C,12/1/2023,12/1/2023\nSand Key Dining,B,C,8/12/2024,8/12/2024\nTobago Dining,B,D,12/1/2023,12/1/2023\nTobago Seating,B,E,12/1/2023,12/1/2023\n",
+    "shape": [
+      8,
+      5
+    ]
+  }
+]

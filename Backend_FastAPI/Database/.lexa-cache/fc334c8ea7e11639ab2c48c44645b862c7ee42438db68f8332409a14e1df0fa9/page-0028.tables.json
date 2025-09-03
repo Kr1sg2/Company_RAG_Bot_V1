@@ -1,0 +1,187 @@
+[
+  {
+    "page": 28,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 56.81656039989805,
+    "data": [
+      {
+        "0": "28",
+        "1": ""
+      },
+      {
+        "0": "Company  prohibits  any  alcohol  misuse  and/or  any  drug  use  that  could  affect  performance  of",
+        "1": ""
+      },
+      {
+        "0": "safety-sensitive functions, including:",
+        "1": ""
+      },
+      {
+        "0": "A\nlcohol:",
+        "1": ""
+      },
+      {
+        "0": "1.  Use while performing safety-sensitive functions",
+        "1": ""
+      },
+      {
+        "0": "2.  Use during 4 hours before performing safety-sensitive functions.",
+        "1": ""
+      },
+      {
+        "0": "3.",
+        "1": "Reporting for duty or remaining on duty to perform safety-sensitive functions with an alcohol"
+      },
+      {
+        "0": "",
+        "1": "concentration of 0.04 or greater."
+      },
+      {
+        "0": "4.",
+        "1": "Possession of alcohol unless the alcohol is manifested and transported as part of a shipment."
+      },
+      {
+        "0": "5.",
+        "1": "This \nincludes  the  possession  of  medicines  containing  alcohol  (prescription  or  over-the"
+      },
+      {
+        "0": "",
+        "1": "counter), unless the packaging seal is unbroken."
+      },
+      {
+        "0": "6.  Use during the 8 hours following an accident, or until he/she undergoes a post-accident test.",
+        "1": ""
+      },
+      {
+        "0": "7.",
+        "1": "Refusal to take a required test."
+      },
+      {
+        "0": "Note: An Team Member found to have an alcohol concentration of 0.02 or greater but less than",
+        "1": ""
+      },
+      {
+        "0": "0.04  shall  not  perform,  nor  be  permitted  to  perform,  safety-sensitive  functions  for  at  least  24",
+        "1": ""
+      },
+      {
+        "0": "hours.",
+        "1": ""
+      },
+      {
+        "0": "Controlled Substance:",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "1.  Use of any drug, except by doctor's prescription, and then only if the doctor has advised"
+      },
+      {
+        "0": "",
+        "1": "the  driver  that  the  drug  will  not  adversely  affect  the  Team  Member's  ability  to  safely"
+      },
+      {
+        "0": "",
+        "1": "operate the CMV."
+      },
+      {
+        "0": "",
+        "1": "2. \nTesting positive for drugs;"
+      },
+      {
+        "0": "",
+        "1": "3. \nRefusing to take a required test."
+      },
+      {
+        "0": "C\nonsequences and Disqualifications:",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "1. \nThe  Team  Member  shall  not  perform,  or  be  permitted  to  perform,  a  safety-sensitive"
+      },
+      {
+        "0": "",
+        "1": "function if any of the above listed prohibitions are violated."
+      },
+      {
+        "0": "",
+        "1": "2. \nAny Team Member violating these prohibitions will be referred to a Substance Abuse"
+      },
+      {
+        "0": "",
+        "1": "3. \nProfessional (SAP) for evaluation, regardless of employment status."
+      },
+      {
+        "0": "S\nection IV. Testing Circumstances:",
+        "1": ""
+      },
+      {
+        "0": "A. Pre-Employment Testing:",
+        "1": ""
+      },
+      {
+        "0": "All  applicants  for  part-time  or  full-time  and  all  persons  transferring  from  non-safety-sensitive",
+        "1": ""
+      },
+      {
+        "0": "positions at the Company will be directed to submit to a Controlled Substance test. A drug test",
+        "1": ""
+      },
+      {
+        "0": "will be conducted during the pre-employment process and a negative drug test result must be",
+        "1": ""
+      },
+      {
+        "0": "received before a final offer of employment is made.",
+        "1": ""
+      },
+      {
+        "0": "B\n. Post-accident Testing:",
+        "1": ""
+      },
+      {
+        "0": "Any  Team  Member  while  operating  a  Company  vehicle  or  equipment  or  conducting  company",
+        "1": ""
+      },
+      {
+        "0": "business is involved in an accident that involves a fatality, or any accident in which the driver is",
+        "1": ""
+      },
+      {
+        "0": "issued a citation under state or local law for a moving traffic violation arising from the accident,",
+        "1": ""
+      },
+      {
+        "0": "or if any vehicle involved was towed or any person in any vehicle involved was transported for",
+        "1": ""
+      },
+      {
+        "0": "medical treatment, that Team Member will be required to submit to an Alcohol and a Controlled",
+        "1": ""
+      },
+      {
+        "0": "Substance  test. Testing  will  be  administered  immediately  following the  accident  or  as  soon  as",
+        "1": ""
+      },
+      {
+        "0": "medically  and  legally  possible.    If  a  Team  Member  refuses  testing,  they  will  be  immediately",
+        "1": ""
+      },
+      {
+        "0": "terminated. The alcohol test must be administered within 2 hours following the accident and in",
+        "1": ""
+      },
+      {
+        "0": "no case shall more than 8 hours elapse before the test is administered. It is the Team Member's",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\n28,\nCompany  prohibits  any  alcohol  misuse  and/or  any  drug  use  that  could  affect  performance  of,\n\"safety-sensitive functions, including:\",\n\"A\nlcohol:\",\n1.  Use while performing safety-sensitive functions,\n2.  Use during 4 hours before performing safety-sensitive functions.,\n3.,Reporting for duty or remaining on duty to perform safety-sensitive functions with an alcohol\n,concentration of 0.04 or greater.\n4.,Possession of alcohol unless the alcohol is manifested and transported as part of a shipment.\n5.,\"This \nincludes  the  possession  of  medicines  containing  alcohol  (prescription  or  over-the\"\n,\"counter), unless the packaging seal is unbroken.\"\n\"6.  Use during the 8 hours following an accident, or until he/she undergoes a post-accident test.\",\n7.,Refusal to take a required test.\nNote: An Team Member found to have an alcohol concentration of 0.02 or greater but less than,\n\"0.04  shall  not  perform,  nor  be  permitted  to  perform,  safety-sensitive  functions  for  at  least  24\",\nhours.,\nControlled Substance:,\n,\"1.  Use of any drug, except by doctor's prescription, and then only if the doctor has advised\"\n,the  driver  that  the  drug  will  not  adversely  affect  the  Team  Member's  ability  to  safely\n,operate the CMV.\n,\"2. \nTesting positive for drugs;\"\n,\"3. \nRefusing to take a required test.\"\n\"C\nonsequences and Disqualifications:\",\n,\"1. \nThe  Team  Member  shall  not  perform,  or  be  permitted  to  perform,  a  safety-sensitive\"\n,function if any of the above listed prohibitions are violated.\n,\"2. \nAny Team Member violating these prohibitions will be referred to a Substance Abuse\"\n,\"3. \nProfessional (SAP) for evaluation, regardless of employment status.\"\n\"S\nection IV. Testing Circumstances:\",\nA. Pre-Employment Testing:,\nAll  applicants  for  part-time  or  full-time  and  all  persons  transferring  from  non-safety-sensitive,\npositions at the Company will be directed to submit to a Controlled Substance test. A drug test,\nwill be conducted during the pre-employment process and a negative drug test result must be,\nreceived before a final offer of employment is made.,\n\"B\n. Post-accident Testing:\",\nAny  Team  Member  while  operating  a  Company  vehicle  or  equipment  or  conducting  company,\n\"business is involved in an accident that involves a fatality, or any accident in which the driver is\",\n\"issued a citation under state or local law for a moving traffic violation arising from the accident,\",\nor if any vehicle involved was towed or any person in any vehicle involved was transported for,\n\"medical treatment, that Team Member will be required to submit to an Alcohol and a Controlled\",\nSubstance  test. Testing  will  be  administered  immediately  following the  accident  or  as  soon  as,\n\"medically  and  legally  possible.    If  a  Team  Member  refuses  testing,  they  will  be  immediately\",\nterminated. The alcohol test must be administered within 2 hours following the accident and in,\nno case shall more than 8 hours elapse before the test is administered. It is the Team Member's,\n",
+    "shape": [
+      43,
+      2
+    ]
+  }
+]

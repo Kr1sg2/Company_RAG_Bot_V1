@@ -1,0 +1,34 @@
+Page 8 of 12 
+1.2 NetSuite Check Stock, Look Up Product.docx 
+8/20/2019 
+Tabs 
+Below add ons you will see the tabs for the form.  They include the following: 
+ 
+Tab 
+Information it holds 
+Subtabs 
+Inventory Detail 
+Shows the location and status of 
+inventory in the company and 
+inventory on purchase orders 
+coming to the company. 
+Locations – Inventory by location 
+Purchase Orders Pending – Order for 
+inventory yet to be received 
+Open Transfer Orders – Transfers within the 
+company that have not been completed 
+Pricing 
+The price of the item at all 
+available levels 
+N/A 
+Related Records 
+Shows the history of all 
+transactions that had the item on 
+it 
+N/A 
+Communication 
+Information coming soon…. 
+ 
+ 
+ 
+ 

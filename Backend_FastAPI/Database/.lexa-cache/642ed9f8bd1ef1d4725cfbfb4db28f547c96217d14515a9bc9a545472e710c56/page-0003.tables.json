@@ -1,0 +1,64 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "MAIN POLE CAP BRONZE 906CK 907 920",
+        "2": "P-UMPOLE12-00",
+        "3": "$4.00"
+      },
+      {
+        "0": "",
+        "1": "MAIN POLE CAP CHAMPAGNE 906CK 907 920",
+        "2": "P-UMPOLE12-01",
+        "3": "$4.00"
+      },
+      {
+        "0": "",
+        "1": "MAIN POLE CAP ANTHRACITE 906CK 907 920",
+        "2": "P-UMPOLE12-02",
+        "3": "$4.00"
+      },
+      {
+        "0": "",
+        "1": "MAIN POLE CAP WHITE 906CK 907 920",
+        "2": "P-UMPOLE12-03",
+        "3": "$4.00"
+      },
+      {
+        "0": "",
+        "1": "MAIN POLE CAP BLACK 906CK 907 920",
+        "2": "P-UMPOLE12-09",
+        "3": "$4.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,MAIN POLE CAP BRONZE 906CK 907 920,P-UMPOLE12-00,$4.00\n,MAIN POLE CAP CHAMPAGNE 906CK 907 920,P-UMPOLE12-01,$4.00\n,MAIN POLE CAP ANTHRACITE 906CK 907 920,P-UMPOLE12-02,$4.00\n,MAIN POLE CAP WHITE 906CK 907 920,P-UMPOLE12-03,$4.00\n,MAIN POLE CAP BLACK 906CK 907 920,P-UMPOLE12-09,$4.00\n",
+    "shape": [
+      5,
+      4
+    ]
+  },
+  {
+    "page": 3,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "",
+        "1": "U-SPRING LOCK & BUTTOM 906CK 907 920",
+        "2": "P-UMLOCK3-XX",
+        "3": "$2.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,U-SPRING LOCK & BUTTOM 906CK 907 920,P-UMLOCK3-XX,$2.00\n",
+    "shape": [
+      1,
+      4
+    ]
+  }
+]

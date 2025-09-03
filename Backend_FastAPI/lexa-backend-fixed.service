@@ -1,0 +1,15 @@
+[Unit]
+Description=Lexa FastAPI backend (fixed)
+After=network.target
+
+[Service]
+User=bizbots24
+Group=www-data
+WorkingDirectory=/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI/venv/bin/uvicorn app_fixed:app --host 0.0.0.0 --port 8600 --proxy-headers
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

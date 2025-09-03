@@ -1,0 +1,26 @@
+Page 2 of 5 
+3.1.1 Convert an Opportunity or Quote to a Sale 
+12/5/2023 
+Close an Opportunity 
+To close an Opportunity, in Edit Mode, set the probability of the Opportunity to 0% and click 
+ 
+Convert an Opportunity to a Quote 
+Note: When converting an opportunity to a quote you must have all of the required fields on the 
+customer record filled out.  If you do not you will automatically be redirected from the quote to 
+the customer record to complete the fields.  You will have to go back to the quote through recent 
+records or Sales/Transactions subtab on the customer record. 
+ 
+1. There are two methods to find an opportunity 
+a. The easiest is to type the customer's last name, email, or customer number in the global 
+search.  It will show all their customer record and open opportunities.  Simply click on 
+the opportunity you are looking for. 
+b. From the NetSuite Dashboard Look Up a Guest 
+ 
+i. From the Guest Record in View mode scroll down to the “Sales” tab and expand 
+the “Opportunities” subtab  
+ 
+ii. Open the opportunity in View mode by clicking on the Date, Title, or Document 
+Number.  Do not click on Edit.  If you open by mistake in Edit mode, simply press 
+ to go to View. 
+ 
+ 

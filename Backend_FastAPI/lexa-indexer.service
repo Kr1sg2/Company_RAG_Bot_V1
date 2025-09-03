@@ -1,0 +1,21 @@
+[Unit]
+Description=Lexa Document Indexer Service
+After=network.target
+
+[Service]
+Type=simple
+User=bizbots24
+Group=bizbots24
+WorkingDirectory=/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI
+Environment=LEXA_WATCH_DIR=/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI/Database
+Environment=LEXA_CACHE_DIR=/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI/Database/.lexa-cache
+Environment=LEXA_CHROMA_PATH=/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI/chroma_db
+Environment=PYTHONPATH=/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI
+ExecStart=/home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI/venv/bin/python -m indexer.watch
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

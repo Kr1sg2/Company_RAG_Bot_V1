@@ -1,0 +1,147 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 85.41874429250231,
+    "data": [
+      {
+        "0": "Boxed\u00a0&\u00a0Welted",
+        "1": "Single\u00a0Welt",
+        "2": "No\u00a0Welt"
+      },
+      {
+        "0": "Boxed\u00a0Edge\u00a0with\u00a0Double\u00a0Welt",
+        "1": "Single\u00a0Welt\u00a0along\u00a0front\u00a0edge",
+        "2": "Seamed\u00a0along\u00a0front\u00a0edge"
+      },
+      {
+        "0": "Terms\u00a0&\u00a0Conditions",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "All\u00a0cushions\u00a0are\u00a0100%\u00a0hand\u00a0made\u00a0to\u00a0order\u00a0for\u00a0you,\u00a0the\u00a0customer,\u00a0using\u00a0your",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "specifications.\u00a0Therefore,\u00a0cancellations\u00a0and\u00a0returns\u00a0are\u00a0not\u00a0accepted.\u00a0\u00a0Perfect\u00a0FitTM\u00a0is",
+        "2": ""
+      },
+      {
+        "0": "responsible\u00a0for\u00a0creating\u00a0finished\u00a0products\u00a0within\u00a0a\u00a01/2\"\u00a0tolerance\u00a0of\u00a0provided",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "measurements.",
+        "1": "",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\nBoxed\u00a0&\u00a0Welted,Single\u00a0Welt,No\u00a0Welt\nBoxed\u00a0Edge\u00a0with\u00a0Double\u00a0Welt,Single\u00a0Welt\u00a0along\u00a0front\u00a0edge,Seamed\u00a0along\u00a0front\u00a0edge\nTerms\u00a0&\u00a0Conditions,,\n,\"All\u00a0cushions\u00a0are\u00a0100%\u00a0hand\u00a0made\u00a0to\u00a0order\u00a0for\u00a0you,\u00a0the\u00a0customer,\u00a0using\u00a0your\",\n,\"specifications.\u00a0Therefore,\u00a0cancellations\u00a0and\u00a0returns\u00a0are\u00a0not\u00a0accepted.\u00a0\u00a0Perfect\u00a0FitTM\u00a0is\",\n\"responsible\u00a0for\u00a0creating\u00a0finished\u00a0products\u00a0within\u00a0a\u00a01/2\"\"\u00a0tolerance\u00a0of\u00a0provided\",,\nmeasurements.,,\n",
+    "shape": [
+      7,
+      3
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 1,
+    "method": "stream",
+    "accuracy": 99.99999999999996,
+    "data": [
+      {
+        "0": ""
+      },
+      {
+        "0": "Name:\u00a0\u00a0__________________________________\nDEEP\u00a0SEATING\u00a0OTTOMAN\u00a0CUSHION\u00a0(DS4)"
+      },
+      {
+        "0": "Order\u00a0#:\u00a0_____________\u00a0\u00a0\u00a0\u00a0\u00a0Fabric:\u00a0\u00a0__________\nOttoman\u00a0Cushion"
+      },
+      {
+        "0": "NOTE:\u00a0It\u00a0is\u00a0always\u00a0best\u00a0to\u00a0take\u00a0your\u00a0measurements\u00a0from\u00a0the"
+      },
+      {
+        "0": "furniture\u00a0piece\u00a0in\u00a0lieu\u00a0of\u00a0an\u00a0existing\u00a0cushion."
+      },
+      {
+        "0": "Ottoman\u00a0Cushion\u00a0Dimensions"
+      },
+      {
+        "0": "A. Ottoman\u00a0Width\u00a0(18\"\u00a0\u2010\u00a036\")\n_________\u00a0inches"
+      },
+      {
+        "0": "_________\u00a0inches\nB. Ottoman\u00a0Depth\u00a0(16\"\u00a0\u2010\u00a034\")"
+      },
+      {
+        "0": "_________\u00a0inches\nC. Ottoman\u00a0Thickness\u00a0(3\"\u00a0\u2010\u00a08\")"
+      },
+      {
+        "0": "Buy\u00a0More,\u00a0Save\u00a0More!\n_________\u00a0quantity"
+      },
+      {
+        "0": "Custom\u00a0Ottoman\u00a0Cushions\u00a0have\u00a0a\u00a0Foam\u00a0Core\u00a0and\u00a0a\u00a0zipper\u00a0on\u00a0the\u00a0left\u00a0side."
+      },
+      {
+        "0": "Select\u00a0YourOttoman\u00a0Style\nSeat\u00a0Ties"
+      },
+      {
+        "0": "No\u00a0Ties"
+      },
+      {
+        "0": "Corner"
+      },
+      {
+        "0": "Ties"
+      },
+      {
+        "0": "Boxed\u00a0&\u00a0Welted\n\u00a0\u00a0Single\u00a0Welt\n\u00a0\u00a0\u00a0\u00a0No\u00a0Welt"
+      },
+      {
+        "0": "Boxed\u00a0Edge\u00a0with\u00a0Double\u00a0Welt\nSingle\u00a0Welt\u00a0along\u00a0front\u00a0edge\nSeamed\u00a0along\u00a0front\u00a0edge\nTie\u00a0Length\u00a0______"
+      },
+      {
+        "0": "Terms\u00a0&\u00a0Conditions\nPRICE\u00a0QUOTES"
+      },
+      {
+        "0": "All\u00a0cushions\u00a0are\u00a0100%\u00a0hand\u00a0made\u00a0to\u00a0order\u00a0for\u00a0you,\u00a0the\u00a0customer,\u00a0using\u00a0your\u00a0\nClassic\u00a0Fabric"
+      },
+      {
+        "0": "specifications.\u00a0Therefore,\u00a0cancellations\u00a0and\u00a0returns\u00a0are\u00a0not\u00a0accepted.\u00a0\u00a0Perfect\u00a0FitTM\u00a0is"
+      },
+      {
+        "0": "Premium\u00a0Fabric"
+      },
+      {
+        "0": "responsible\u00a0for\u00a0creating\u00a0finished\u00a0products\u00a0within\u00a0a\u00a01/2\"\u00a0tolerance\u00a0of\u00a0provided"
+      },
+      {
+        "0": "Elite\u00a0Fabric"
+      },
+      {
+        "0": "measurements."
+      },
+      {
+        "0": "Select\u00a0Fabric"
+      },
+      {
+        "0": "Customer\u00a0Signature\u00a0&\u00a0Date"
+      },
+      {
+        "0": "TOTAL\u00a0COM"
+      },
+      {
+        "0": "Revised:\u00a0\u00a08/1/2022"
+      }
+    ],
+    "csv": "0\n\"\"\n\"Name:\u00a0\u00a0__________________________________\nDEEP\u00a0SEATING\u00a0OTTOMAN\u00a0CUSHION\u00a0(DS4)\"\n\"Order\u00a0#:\u00a0_____________\u00a0\u00a0\u00a0\u00a0\u00a0Fabric:\u00a0\u00a0__________\nOttoman\u00a0Cushion\"\nNOTE:\u00a0It\u00a0is\u00a0always\u00a0best\u00a0to\u00a0take\u00a0your\u00a0measurements\u00a0from\u00a0the\nfurniture\u00a0piece\u00a0in\u00a0lieu\u00a0of\u00a0an\u00a0existing\u00a0cushion.\nOttoman\u00a0Cushion\u00a0Dimensions\n\"A. Ottoman\u00a0Width\u00a0(18\"\"\u00a0\u2010\u00a036\"\")\n_________\u00a0inches\"\n\"_________\u00a0inches\nB. Ottoman\u00a0Depth\u00a0(16\"\"\u00a0\u2010\u00a034\"\")\"\n\"_________\u00a0inches\nC. Ottoman\u00a0Thickness\u00a0(3\"\"\u00a0\u2010\u00a08\"\")\"\n\"Buy\u00a0More,\u00a0Save\u00a0More!\n_________\u00a0quantity\"\nCustom\u00a0Ottoman\u00a0Cushions\u00a0have\u00a0a\u00a0Foam\u00a0Core\u00a0and\u00a0a\u00a0zipper\u00a0on\u00a0the\u00a0left\u00a0side.\n\"Select\u00a0YourOttoman\u00a0Style\nSeat\u00a0Ties\"\nNo\u00a0Ties\nCorner\nTies\n\"Boxed\u00a0&\u00a0Welted\n\u00a0\u00a0Single\u00a0Welt\n\u00a0\u00a0\u00a0\u00a0No\u00a0Welt\"\n\"Boxed\u00a0Edge\u00a0with\u00a0Double\u00a0Welt\nSingle\u00a0Welt\u00a0along\u00a0front\u00a0edge\nSeamed\u00a0along\u00a0front\u00a0edge\nTie\u00a0Length\u00a0______\"\n\"Terms\u00a0&\u00a0Conditions\nPRICE\u00a0QUOTES\"\n\"All\u00a0cushions\u00a0are\u00a0100%\u00a0hand\u00a0made\u00a0to\u00a0order\u00a0for\u00a0you,\u00a0the\u00a0customer,\u00a0using\u00a0your\u00a0\nClassic\u00a0Fabric\"\n\"specifications.\u00a0Therefore,\u00a0cancellations\u00a0and\u00a0returns\u00a0are\u00a0not\u00a0accepted.\u00a0\u00a0Perfect\u00a0FitTM\u00a0is\"\nPremium\u00a0Fabric\n\"responsible\u00a0for\u00a0creating\u00a0finished\u00a0products\u00a0within\u00a0a\u00a01/2\"\"\u00a0tolerance\u00a0of\u00a0provided\"\nElite\u00a0Fabric\nmeasurements.\nSelect\u00a0Fabric\nCustomer\u00a0Signature\u00a0&\u00a0Date\nTOTAL\u00a0COM\nRevised:\u00a0\u00a08/1/2022\n",
+    "shape": [
+      28,
+      1
+    ]
+  }
+]

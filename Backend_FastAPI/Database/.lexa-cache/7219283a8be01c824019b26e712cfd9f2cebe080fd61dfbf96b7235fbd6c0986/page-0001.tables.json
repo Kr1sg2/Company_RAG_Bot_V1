@@ -1,0 +1,51 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 93.3997325062754,
+    "data": [
+      {
+        "0": "Full Exposure",
+        "1": "100% USA Made",
+        "2": "Create Your Own",
+        "3": ""
+      },
+      {
+        "0": "",
+        "1": "SAFETY, CARE, MAINTENANCE & WARRANTY INFORMATION",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "",
+        "1": "2024",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "Page 1 of 11"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "2024 Tropitone Ownership Packet"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "2/28/2024"
+      }
+    ],
+    "csv": "0,1,2,3\nFull Exposure,100% USA Made,Create Your Own,\n,\"SAFETY, CARE, MAINTENANCE & WARRANTY INFORMATION\",,\n,2024,,\n,,,Page 1 of 11\n,,,2024 Tropitone Ownership Packet\n,,,2/28/2024\n",
+    "shape": [
+      6,
+      4
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "page": 30,
+    "table_index": 1,
+    "method": "stream",
+    "accuracy": 77.02808469040234,
+    "data": [
+      {
+        "0": "Refusal to test will be treated the same as if the result is 0.04 or greater.",
+        "1": ""
+      },
+      {
+        "0": "Leaders  Holding  Co\u2122  will  maintain  alcohol  and  drug  test  results  in  a  secure  and  confidential",
+        "1": ""
+      },
+      {
+        "0": "manner, so that disclosure of information to unauthorized persons does not occur. Team Member",
+        "1": ""
+      },
+      {
+        "0": "information shall only be released as required by law or as expressly authorized.",
+        "1": ""
+      },
+      {
+        "0": "\u2022",
+        "1": "A Team Member shall have access to any of his/her alcohol and drug testing records upon"
+      },
+      {
+        "0": "",
+        "1": "written request."
+      },
+      {
+        "0": "\u2022",
+        "1": "The Company must allow any DOT authorized agency access to facilities and records in"
+      },
+      {
+        "0": "",
+        "1": "connection with the Company's alcohol misuse and drug abuse prevention program."
+      },
+      {
+        "0": "\u2022",
+        "1": "When  requested,  the  Company  shall  disclose  post-accident  testing  information  to  the"
+      },
+      {
+        "0": "",
+        "1": "National Transportation Safety Board as part of an accident investigation."
+      },
+      {
+        "0": "\u2022",
+        "1": "The Company will make records available to a subsequent employer upon receipt of a"
+      },
+      {
+        "0": "",
+        "1": "written request from the Team Member."
+      }
+    ],
+    "csv": "0,1\nRefusal to test will be treated the same as if the result is 0.04 or greater.,\nLeaders  Holding  Co\u2122  will  maintain  alcohol  and  drug  test  results  in  a  secure  and  confidential,\n\"manner, so that disclosure of information to unauthorized persons does not occur. Team Member\",\ninformation shall only be released as required by law or as expressly authorized.,\n\u2022,A Team Member shall have access to any of his/her alcohol and drug testing records upon\n,written request.\n\u2022,The Company must allow any DOT authorized agency access to facilities and records in\n,connection with the Company's alcohol misuse and drug abuse prevention program.\n\u2022,\"When  requested,  the  Company  shall  disclose  post-accident  testing  information  to  the\"\n,National Transportation Safety Board as part of an accident investigation.\n\u2022,The Company will make records available to a subsequent employer upon receipt of a\n,written request from the Team Member.\n",
+    "shape": [
+      12,
+      2
+    ]
+  }
+]

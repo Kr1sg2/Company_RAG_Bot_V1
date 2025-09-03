@@ -1,0 +1,40 @@
+[
+  {
+    "page": 8,
+    "table_index": 2,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Tab",
+        "1": "Information it holds",
+        "2": "Subtabs"
+      },
+      {
+        "0": "Inventory Detail",
+        "1": "Shows the location and status of \ninventory in the company and \ninventory on purchase orders \ncoming to the company.",
+        "2": "Locations \u2013 Inventory by location \nPurchase Orders Pending \u2013 Order for \ninventory yet to be received \nOpen Transfer Orders \u2013 Transfers within the \ncompany that have not been completed"
+      },
+      {
+        "0": "Pricing",
+        "1": "The price of the item at all \navailable levels",
+        "2": "N/A"
+      },
+      {
+        "0": "Related Records",
+        "1": "Shows the history of all \ntransactions that had the item on \nit",
+        "2": "N/A"
+      },
+      {
+        "0": "Communication",
+        "1": "Information coming soon\u2026.",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\nTab,Information it holds,Subtabs\nInventory Detail,\"Shows the location and status of \ninventory in the company and \ninventory on purchase orders \ncoming to the company.\",\"Locations \u2013 Inventory by location \nPurchase Orders Pending \u2013 Order for \ninventory yet to be received \nOpen Transfer Orders \u2013 Transfers within the \ncompany that have not been completed\"\nPricing,\"The price of the item at all \navailable levels\",N/A\nRelated Records,\"Shows the history of all \ntransactions that had the item on \nit\",N/A\nCommunication,Information coming soon\u2026.,\n",
+    "shape": [
+      5,
+      3
+    ]
+  }
+]

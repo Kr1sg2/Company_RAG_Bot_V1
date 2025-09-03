@@ -1,0 +1,65 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 91.59322342960647,
+    "data": [
+      {
+        "0": "Who uses Powder Coat Finishing?",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Powder Coat  finishing is the  fastest-growing finishing technology in North America and is mainly  used",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "for  coating  metals;  including  aluminum  furniture,  appliances,  automotive  parts,  sporting  goods  and",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "countless other products.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "What is the best way to clean furniture with a Powder Coat Finish?",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Most stains on aluminum patio furniture can be removed with mild soap or detergent.  You should avoid",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "using abrasive  cleaners so not  to damage the finish, diminishing the benefits of a Powder Coat  finish.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "For  non-textured,  smooth  gloss  finishes  only,  you  can  periodically  wax  the",
+        "1": "furniture",
+        "2": "frame  with"
+      },
+      {
+        "0": "automotive  paste  wax  to  help  restore  the  luster  of  your  finish.    However  textured  finishes  should  be",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "cleaned with mild soap and water only.",
+        "1": "",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\nWho uses Powder Coat Finishing?,,\nPowder Coat  finishing is the  fastest-growing finishing technology in North America and is mainly  used,,\n\"for  coating  metals;  including  aluminum  furniture,  appliances,  automotive  parts,  sporting  goods  and\",,\ncountless other products.,,\nWhat is the best way to clean furniture with a Powder Coat Finish?,,\nMost stains on aluminum patio furniture can be removed with mild soap or detergent.  You should avoid,,\n\"using abrasive  cleaners so not  to damage the finish, diminishing the benefits of a Powder Coat  finish.\",,\n\"For  non-textured,  smooth  gloss  finishes  only,  you  can  periodically  wax  the\",furniture,frame  with\nautomotive  paste  wax  to  help  restore  the  luster  of  your  finish.    However  textured  finishes  should  be,,\ncleaned with mild soap and water only.,,\n",
+    "shape": [
+      10,
+      3
+    ]
+  }
+]

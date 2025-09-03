@@ -1,0 +1,36 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "2.  While reviewing the opportunity hover over \nand click Quote"
+      },
+      {
+        "0": "3. \nThis will move the Opportunity information into a Quote.  An Opportunity does not have specific"
+      },
+      {
+        "0": "product information.  To save the new quote, you will have to complete all of the required"
+      },
+      {
+        "0": "fields, including the products the guest is interested in."
+      },
+      {
+        "0": "Page 3 of 5"
+      },
+      {
+        "0": "3.1.1 Convert an Opportunity or Quote to a Sale"
+      },
+      {
+        "0": "12/5/2023"
+      }
+    ],
+    "csv": "0\n\"2.  While reviewing the opportunity hover over \nand click Quote\"\n\"3. \nThis will move the Opportunity information into a Quote.  An Opportunity does not have specific\"\n\"product information.  To save the new quote, you will have to complete all of the required\"\n\"fields, including the products the guest is interested in.\"\nPage 3 of 5\n3.1.1 Convert an Opportunity or Quote to a Sale\n12/5/2023\n",
+    "shape": [
+      7,
+      1
+    ]
+  }
+]

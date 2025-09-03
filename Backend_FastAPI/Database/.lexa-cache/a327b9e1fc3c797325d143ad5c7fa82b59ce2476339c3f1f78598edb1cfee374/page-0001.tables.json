@@ -1,0 +1,321 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 91.39066562705636,
+    "data": [
+      {
+        "0": "against  tearing,  discoloration  or  fading.  We  warranty  the  following  for  one  year",
+        "1": ""
+      },
+      {
+        "0": "from  the  date  of purchase:  Woven  seat  buckets  used  in  commercial  areas  against",
+        "1": ""
+      },
+      {
+        "0": "manufacturer's  defects,  finish  on  coiled  steel  spring  rocker  mechanisms,  cushion",
+        "1": "fills,"
+      },
+      {
+        "0": "acrylic  table  tops  against  bowing  and  warping,  teak  components,  glides,  hardware,",
+        "1": ""
+      },
+      {
+        "0": "wheels,  connectors,  table  rims,  metal  umbrellas  and  umbrella  bases.  Solid  surface",
+        "1": ""
+      },
+      {
+        "0": "table  tops  used  in  commercial  areas  are  warranted  against  manufacturer's  defect  for",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "one  year.  Teak  used  in  residential  settings  is  warranted  against  struct ural  failure  during"
+      },
+      {
+        "0": "normal  usage \nfor  one  year.",
+        "1": ""
+      },
+      {
+        "0": "What Is  Not Covered",
+        "1": ""
+      },
+      {
+        "0": "Failure  caused  by  unreasonable  or  abusive  use",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\n\"against  tearing,  discoloration  or  fading.  We  warranty  the  following  for  one  year\",\nfrom  the  date  of purchase:  Woven  seat  buckets  used  in  commercial  areas  against,\n\"manufacturer's  defects,  finish  on  coiled  steel  spring  rocker  mechanisms,  cushion\",\"fills,\"\n\"acrylic  table  tops  against  bowing  and  warping,  teak  components,  glides,  hardware,\",\n\"wheels,  connectors,  table  rims,  metal  umbrellas  and  umbrella  bases.  Solid  surface\",\ntable  tops  used  in  commercial  areas  are  warranted  against  manufacturer's  defect  for,\n,one  year.  Teak  used  in  residential  settings  is  warranted  against  struct ural  failure  during\n\"normal  usage \nfor  one  year.\",\nWhat Is  Not Covered,\nFailure  caused  by  unreasonable  or  abusive  use,\n",
+    "shape": [
+      10,
+      2
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 1,
+    "method": "stream",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "one  year.  Teak  used  in  residential  settings  is  warranted  against  struct ural  failure  during"
+      },
+      {
+        "0": "normal  usage \nfor  one  year."
+      },
+      {
+        "0": "What Is  Not Covered"
+      },
+      {
+        "0": "Failure  caused  by  unreasonable  or  abusive  use"
+      },
+      {
+        "0": "Failure  caused  by  neglect  of reasonable  and  necessary  care  and  maintenance"
+      },
+      {
+        "0": "Normal  fading  of fabrics  or  upholstery  materials"
+      },
+      {
+        "0": "Normal  fading  of woven  seat  materials"
+      },
+      {
+        "0": "Glass  Table  Tops"
+      },
+      {
+        "0": "Acrylic  Table  Tops  with  umbrella  holes  (Commercial)"
+      },
+      {
+        "0": "Steel  Swivel  Mechanisms  (Commercia\\)"
+      },
+      {
+        "0": "Bursting  or  cracking  of tubing  due  to  exposure  to  water  and  freezing  temperatures"
+      },
+      {
+        "0": "Changes  in  wood  color  due  to  the  natural  aging  of the  wood  or  staining"
+      },
+      {
+        "0": "Return  freight  after  first  year  (Consumer  &  Commercial)"
+      },
+      {
+        "0": "Seaside  use - Due  to  the  demands  of salt  air,  Tropitone  recommends  weekly  or"
+      },
+      {
+        "0": "biweekly  periodic  cleaning  of buildup  and  potential  oxidation.  Tropitone  also"
+      },
+      {
+        "0": "recommends  quarterly  waxing  of your  Tropitone  frames  to  assist  in  your  product's"
+      },
+      {
+        "0": "maximum  longevity.  Failure  or  neglect  to  make  needed  cleanings  may  cause  paint"
+      },
+      {
+        "0": "to  blister,  and  such \nfailure  will  void  the  Warranty."
+      }
+    ],
+    "csv": "0\none  year.  Teak  used  in  residential  settings  is  warranted  against  struct ural  failure  during\n\"normal  usage \nfor  one  year.\"\nWhat Is  Not Covered\nFailure  caused  by  unreasonable  or  abusive  use\nFailure  caused  by  neglect  of reasonable  and  necessary  care  and  maintenance\nNormal  fading  of fabrics  or  upholstery  materials\nNormal  fading  of woven  seat  materials\nGlass  Table  Tops\nAcrylic  Table  Tops  with  umbrella  holes  (Commercial)\nSteel  Swivel  Mechanisms  (Commercia\\)\nBursting  or  cracking  of tubing  due  to  exposure  to  water  and  freezing  temperatures\nChanges  in  wood  color  due  to  the  natural  aging  of the  wood  or  staining\nReturn  freight  after  first  year  (Consumer  &  Commercial)\n\"Seaside  use - Due  to  the  demands  of salt  air,  Tropitone  recommends  weekly  or\"\nbiweekly  periodic  cleaning  of buildup  and  potential  oxidation.  Tropitone  also\nrecommends  quarterly  waxing  of your  Tropitone  frames  to  assist  in  your  product's\nmaximum  longevity.  Failure  or  neglect  to  make  needed  cleanings  may  cause  paint\n\"to  blister,  and  such \nfailure  will  void  the  Warranty.\"\n",
+    "shape": [
+      18,
+      1
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 2,
+    "method": "stream",
+    "accuracy": 99.99999999999977,
+    "data": [
+      {
+        "0": "Consumer 1s-Year Warranty \nCommercials-Year Warranty"
+      },
+      {
+        "0": "When  used  in  a residential  setting,  we \nWhen  used  in  a commercial  setting,  we"
+      },
+      {
+        "0": "warranty  our  frames  for  fifteen  years. \nwarranty  our  frames  For  five  years  from"
+      },
+      {
+        "0": "The  warranty  is  valid  from  the  dale  of \nthe  date  of purchase.  Commercial  use  is"
+      },
+      {
+        "0": "purchase  and  applies  only  to  the  original \ndefined ' as  use  in  any  public  area.  If your"
+      },
+      {
+        "0": "purchaser.  Proof  of purchase  is  required. \nTropitone  frame  fails  stru cturally  during"
+      },
+      {
+        "0": "fails  structura lly \nnormal  usage  or if the  finish  peels,  cracks \nIf your  Tropitone  frame"
+      },
+      {
+        "0": "finish  peels, \nor  blisters  within  five  years  from  the  date \nduring  normal  usage,  or if the"
+      },
+      {
+        "0": "cracks  or  blisters  within  fifteen  years,  we \nof purchase,  we  will  repair,  refinish  or"
+      },
+      {
+        "0": "will  repair,  refinish  or  replace  the  frame \nreplace  the  frame  (with  same  or  similar"
+      },
+      {
+        "0": "al  manufacturer's  discretion  (with  same \nproduct  if discontinued)  at  no  charge."
+      },
+      {
+        "0": "or  similar  product  if discontinued)  at  no \nParts  and  labor  are  included  du ring  the"
+      },
+      {
+        "0": "charge .  Parts  and  labor  are  included. \nfirst  year.  Tropitone  will  pay  the  freight"
+      },
+      {
+        "0": "Tropitone  will  pay  freight  costs  for  the \nIn  addition,  the \ncosts  for  the  first  year."
+      },
+      {
+        "0": "first  year  in  the  Continental  U.S. \nIn \nFive, Three  and  One  year  warranties"
+      },
+      {
+        "0": "addition,  the  Five,  Three  and  One  year \nbelow  apply."
+      },
+      {
+        "0": "warranties  below  apply."
+      },
+      {
+        "0": "For 5  Years"
+      },
+      {
+        "0": "We  warranty  our  vinyl  straps  and  lacing  against  breakage  for  five  years  from  the  date"
+      },
+      {
+        "0": "of purchase.  This  applies  only  to  breakage,  not  color  changes.  In  the  unlikely  event"
+      },
+      {
+        "0": "t hat  a  strap  breaks  or  pulls  loose,  Tropitone  will  supply  a  replacement  strap  at  no"
+      },
+      {
+        "0": "charge.  (Labor  not  included.)"
+      },
+      {
+        "0": "For 3 Years"
+      },
+      {
+        "0": "We  warran ty  our  vinyl  straps  against  discoloration  for  three  years  from  the  date"
+      },
+      {
+        "0": "of purchase.  In  the  unlikely  event  that  a  strap  is  grossly  discolored,  Tropitone  will"
+      },
+      {
+        "0": "supply  a  replacement  strap  at  no  charge.  (Labor  not included.)  Strap  replacement"
+      },
+      {
+        "0": "due  to  discoloration  is  at  vinyl  supplier's  discretion.  Solid  surface  table  tops  used"
+      },
+      {
+        "0": "in  residentia l areas  are  warranted  against  manufacturer's  defect  for three  years."
+      },
+      {
+        "0": "Tropitone  will  pay  residential  freight  costs \nfor  the  first  year  in  the  Continental  U.s.  If"
+      },
+      {
+        "0": "the  Stoneworks  or  solid  surface  top  fails  structuraHy  during  normal  usage  Of \nif the \n\u2022"
+      },
+      {
+        "0": "finish  peels,  cracks  or  blisters  within  three  years  from  date  of purchase,  we  will  repair."
+      },
+      {
+        "0": "refinish  or  replace  the  top.  Woven  seat  buckets  used  in  residential  areas  are  warranted"
+      },
+      {
+        "0": ""
+      },
+      {
+        "0": "against  manufacturer's  defect  for  3  years.  Tropitone  will  pay  commercial  freight  costs \nfor  the  first  year.  (Labor  is  included  for  the  first  year.)"
+      },
+      {
+        "0": "For 1 Year"
+      },
+      {
+        "0": "We  warranty  the  fabrics  on  our  cushions,  umbrellas  and  slings  for  one  year"
+      },
+      {
+        "0": "against  tearing,  discoloration  or  fading.  We  warranty  the  following  for  one  year"
+      },
+      {
+        "0": "from  the  date  of purchase:  Woven  seat  buckets  used  in  commercial  areas  against"
+      },
+      {
+        "0": "manufacturer's  defects,  finish  on  coiled  steel  spring  rocker  mechanisms,  cushion \nfills,"
+      },
+      {
+        "0": "acrylic  table  tops  against  bowing  and  warping,  teak  components,  glides,  hardware,"
+      },
+      {
+        "0": "wheels,  connectors,  table  rims,  metal  umbrellas  and  umbrella  bases.  Solid  surface"
+      },
+      {
+        "0": "table  tops  used  in  commercial  areas  are  warranted  against  manufacturer's  defect  for"
+      },
+      {
+        "0": "one  year.  Teak  used  in  residential  settings  is  warranted  against  struct ural  failure  during"
+      },
+      {
+        "0": "normal  usage \nfor  one  year."
+      },
+      {
+        "0": "What Is  Not Covered"
+      },
+      {
+        "0": "Failure  caused  by  unreasonable  or  abusive  use"
+      },
+      {
+        "0": "Failure  caused  by  neglect  of reasonable  and  necessary  care  and  maintenance"
+      },
+      {
+        "0": "Normal  fading  of fabrics  or  upholstery  materials"
+      },
+      {
+        "0": "Normal  fading  of woven  seat  materials"
+      },
+      {
+        "0": "Glass  Table  Tops"
+      },
+      {
+        "0": "Acrylic  Table  Tops  with  umbrella  holes  (Commercial)"
+      },
+      {
+        "0": "Steel  Swivel  Mechanisms  (Commercia\\)"
+      },
+      {
+        "0": "Bursting  or  cracking  of tubing  due  to  exposure  to  water  and  freezing  temperatures"
+      },
+      {
+        "0": "Changes  in  wood  color  due  to  the  natural  aging  of the  wood  or  staining"
+      },
+      {
+        "0": "Return  freight  after  first  year  (Consumer  &  Commercial)"
+      },
+      {
+        "0": "Seaside  use - Due  to  the  demands  of salt  air,  Tropitone  recommends  weekly  or"
+      },
+      {
+        "0": "biweekly  periodic  cleaning  of buildup  and  potential  oxidation.  Tropitone  also"
+      },
+      {
+        "0": "recommends  quarterly  waxing  of your  Tropitone  frames  to  assist  in  your  product's"
+      },
+      {
+        "0": "maximum  longevity.  Failure  or  neglect  to  make  needed  cleanings  may  cause  paint"
+      },
+      {
+        "0": "to  blister,  and  such \nfailure  will  void  the  Warranty."
+      },
+      {
+        "0": "Note:  Warranty  is  valid \nfrom  the  date  of purchase  to  the  original  purchaser  only."
+      },
+      {
+        "0": "Proof of purchase  is  required.  Pictures  or  inspection  may  be  required."
+      }
+    ],
+    "csv": "0\n\"Consumer 1s-Year Warranty \nCommercials-Year Warranty\"\n\"When  used  in  a residential  setting,  we \nWhen  used  in  a commercial  setting,  we\"\n\"warranty  our  frames  for  fifteen  years. \nwarranty  our  frames  For  five  years  from\"\n\"The  warranty  is  valid  from  the  dale  of \nthe  date  of purchase.  Commercial  use  is\"\n\"purchase  and  applies  only  to  the  original \ndefined ' as  use  in  any  public  area.  If your\"\n\"purchaser.  Proof  of purchase  is  required. \nTropitone  frame  fails  stru cturally  during\"\n\"fails  structura lly \nnormal  usage  or if the  finish  peels,  cracks \nIf your  Tropitone  frame\"\n\"finish  peels, \nor  blisters  within  five  years  from  the  date \nduring  normal  usage,  or if the\"\n\"cracks  or  blisters  within  fifteen  years,  we \nof purchase,  we  will  repair,  refinish  or\"\n\"will  repair,  refinish  or  replace  the  frame \nreplace  the  frame  (with  same  or  similar\"\n\"al  manufacturer's  discretion  (with  same \nproduct  if discontinued)  at  no  charge.\"\n\"or  similar  product  if discontinued)  at  no \nParts  and  labor  are  included  du ring  the\"\n\"charge .  Parts  and  labor  are  included. \nfirst  year.  Tropitone  will  pay  the  freight\"\n\"Tropitone  will  pay  freight  costs  for  the \nIn  addition,  the \ncosts  for  the  first  year.\"\n\"first  year  in  the  Continental  U.S. \nIn \nFive, Three  and  One  year  warranties\"\n\"addition,  the  Five,  Three  and  One  year \nbelow  apply.\"\nwarranties  below  apply.\nFor 5  Years\nWe  warranty  our  vinyl  straps  and  lacing  against  breakage  for  five  years  from  the  date\n\"of purchase.  This  applies  only  to  breakage,  not  color  changes.  In  the  unlikely  event\"\n\"t hat  a  strap  breaks  or  pulls  loose,  Tropitone  will  supply  a  replacement  strap  at  no\"\ncharge.  (Labor  not  included.)\nFor 3 Years\nWe  warran ty  our  vinyl  straps  against  discoloration  for  three  years  from  the  date\n\"of purchase.  In  the  unlikely  event  that  a  strap  is  grossly  discolored,  Tropitone  will\"\nsupply  a  replacement  strap  at  no  charge.  (Labor  not included.)  Strap  replacement\ndue  to  discoloration  is  at  vinyl  supplier's  discretion.  Solid  surface  table  tops  used\nin  residentia l areas  are  warranted  against  manufacturer's  defect  for three  years.\n\"Tropitone  will  pay  residential  freight  costs \nfor  the  first  year  in  the  Continental  U.s.  If\"\n\"the  Stoneworks  or  solid  surface  top  fails  structuraHy  during  normal  usage  Of \nif the \n\u2022\"\n\"finish  peels,  cracks  or  blisters  within  three  years  from  date  of purchase,  we  will  repair.\"\nrefinish  or  replace  the  top.  Woven  seat  buckets  used  in  residential  areas  are  warranted\n\"\"\n\"against  manufacturer's  defect  for  3  years.  Tropitone  will  pay  commercial  freight  costs \nfor  the  first  year.  (Labor  is  included  for  the  first  year.)\"\nFor 1 Year\n\"We  warranty  the  fabrics  on  our  cushions,  umbrellas  and  slings  for  one  year\"\n\"against  tearing,  discoloration  or  fading.  We  warranty  the  following  for  one  year\"\nfrom  the  date  of purchase:  Woven  seat  buckets  used  in  commercial  areas  against\n\"manufacturer's  defects,  finish  on  coiled  steel  spring  rocker  mechanisms,  cushion \nfills,\"\n\"acrylic  table  tops  against  bowing  and  warping,  teak  components,  glides,  hardware,\"\n\"wheels,  connectors,  table  rims,  metal  umbrellas  and  umbrella  bases.  Solid  surface\"\ntable  tops  used  in  commercial  areas  are  warranted  against  manufacturer's  defect  for\none  year.  Teak  used  in  residential  settings  is  warranted  against  struct ural  failure  during\n\"normal  usage \nfor  one  year.\"\nWhat Is  Not Covered\nFailure  caused  by  unreasonable  or  abusive  use\nFailure  caused  by  neglect  of reasonable  and  necessary  care  and  maintenance\nNormal  fading  of fabrics  or  upholstery  materials\nNormal  fading  of woven  seat  materials\nGlass  Table  Tops\nAcrylic  Table  Tops  with  umbrella  holes  (Commercial)\nSteel  Swivel  Mechanisms  (Commercia\\)\nBursting  or  cracking  of tubing  due  to  exposure  to  water  and  freezing  temperatures\nChanges  in  wood  color  due  to  the  natural  aging  of the  wood  or  staining\nReturn  freight  after  first  year  (Consumer  &  Commercial)\n\"Seaside  use - Due  to  the  demands  of salt  air,  Tropitone  recommends  weekly  or\"\nbiweekly  periodic  cleaning  of buildup  and  potential  oxidation.  Tropitone  also\nrecommends  quarterly  waxing  of your  Tropitone  frames  to  assist  in  your  product's\nmaximum  longevity.  Failure  or  neglect  to  make  needed  cleanings  may  cause  paint\n\"to  blister,  and  such \nfailure  will  void  the  Warranty.\"\n\"Note:  Warranty  is  valid \nfrom  the  date  of purchase  to  the  original  purchaser  only.\"\nProof of purchase  is  required.  Pictures  or  inspection  may  be  required.\n",
+    "shape": [
+      62,
+      1
+    ]
+  }
+]

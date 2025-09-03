@@ -1,0 +1,50 @@
+Page 9 of 12 
+1.2 NetSuite Check Stock, Look Up Product.docx 
+8/20/2019 
+Inventory Detail Tab 
+Locations Subtab 
+ 
+Filters 
+ 
+What? 
+ 
+1 
+Locations Filter 
+Change your view to only include the inventory of a single 
+location 
+2 
+Items Status by Location 
+A detailed view of inventory by location by status 
+ 
+Columns 
+Note: All columns can be sorted by clicking on the header 
+Column Headers 
+What it means… 
+Physical Location 
+The location that the information on the row represents 
+Quantity on Hand 
+Total quantity in the location including committed inventory 
+Quantity Committed 
+The amount of inventory in the location committed to a sale 
+Quantity Available 
+Quantity on Hand – Quantity Committed.  The amount of the 
+item at the location not on a sales order 
+Quantity on Order 
+The amount in transit to a location.  For the Distribution Center 
+this could include Purchase Orders and incoming transfers from 
+retail locations.  For retail locations this is for product coming in 
+on a transfer only.   
+Quantity in Transit 
+The amount of inventory scheduled to leave on a transfer but 
+have not yet started their journey. 
+Quantity Back Ordered 
+The number of items that are committed on sales orders to fulfill 
+from that location but are not in the location.  This could also 
+show items for a sales order scheduled to fulfill from that location 
+that are not committed to a sales order.     
+Preferred Stock Level 
+The amount of an item that the system will automatically keep at 
+a retail location.   
+ 
+ 
+ 

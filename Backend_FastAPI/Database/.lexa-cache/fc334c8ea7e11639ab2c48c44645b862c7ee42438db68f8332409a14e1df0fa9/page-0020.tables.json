@@ -1,0 +1,183 @@
+[
+  {
+    "page": 20,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 48.73921290598768,
+    "data": [
+      {
+        "0": "20",
+        "1": ""
+      },
+      {
+        "0": "FMLA Leave Procedure",
+        "1": ""
+      },
+      {
+        "0": "N\notification by Team Members of need for leave.",
+        "1": ""
+      },
+      {
+        "0": "The Company cannot know that FMLA leave is needed, and cannot provide FMLA entitlements,",
+        "1": ""
+      },
+      {
+        "0": "unless Team Members first appropriately notify the Company of their need for leave in sufficient",
+        "1": ""
+      },
+      {
+        "0": "detail for the Company to understand that FMLA leave is appropriate.  If the need to use FMLA",
+        "1": ""
+      },
+      {
+        "0": "leave is foreseeable, Team Members must give the company at least 30 days prior notice of the",
+        "1": ""
+      },
+      {
+        "0": "need to take leave. When 30 days-notice is not possible, Team Members must give notice as far",
+        "1": ""
+      },
+      {
+        "0": "in advance as practicable under the circumstances. In an emergency where advance notice of the",
+        "1": ""
+      },
+      {
+        "0": "need for leave cannot be given, Team Members (or their representatives if Team Members are",
+        "1": ""
+      },
+      {
+        "0": "medically  unable  to  give  notice  themselves)  are  required  to  notify  the  Company  as  soon  as",
+        "1": ""
+      },
+      {
+        "0": "reasonably  practicable.    Failure  or  unreasonable  delay  in  providing  notice  may be  grounds  for",
+        "1": ""
+      },
+      {
+        "0": "delaying the start of the FMLA leave and may have other adverse consequences.",
+        "1": ""
+      },
+      {
+        "0": "Requests  for  FMLA",
+        "1": "leave  should  be  directed  to  Human  Resources  using  the  Request  for"
+      },
+      {
+        "0": "Family/Medical Leave form available from Human Resources.",
+        "1": ""
+      },
+      {
+        "0": "When submitting a request for leave, the Team Member must provide sufficient information for",
+        "1": ""
+      },
+      {
+        "0": "the Company to determine if the leave might qualify as FMLA leave and provide information on",
+        "1": ""
+      },
+      {
+        "0": "the anticipated date when the leave would start as well as the anticipated duration of the leave.",
+        "1": ""
+      },
+      {
+        "0": "Team Members also must inform the Company if the requested leave is for a reason for which",
+        "1": ""
+      },
+      {
+        "0": "FMLA leave was previously taken or certified.",
+        "1": ""
+      },
+      {
+        "0": "Notification to Team Members of leave availability",
+        "1": ""
+      },
+      {
+        "0": "Once the Company is aware of a request for FMLA leave under the procedures outlined in this",
+        "1": ""
+      },
+      {
+        "0": "policy and has received the information it needs, it will inform the requesting Team Member of",
+        "1": ""
+      },
+      {
+        "0": "the availability of FMLA leave.  Assuming FMLA leave is available under the circumstances, Team",
+        "1": ""
+      },
+      {
+        "0": "Members will be given a written notice that includes details of the leave that is being granted.  If",
+        "1": ""
+      },
+      {
+        "0": "FMLA leave is not available, the Company will notify the Team Member.",
+        "1": ""
+      },
+      {
+        "0": "M\nedical certification and recertification",
+        "1": ""
+      },
+      {
+        "0": "Team Members who request leave because of their own or a covered relation\u2019s serious health",
+        "1": ""
+      },
+      {
+        "0": "condition must supply substantiating medical certification. Team Members may obtain medical",
+        "1": ""
+      },
+      {
+        "0": "certification forms from Human Resources.   The Company will inform requesting Team Members",
+        "1": ""
+      },
+      {
+        "0": "of when medical certifications must be provided (in any event no more than 15 days after leave",
+        "1": ""
+      },
+      {
+        "0": "is requested).  Team Members should plan on providing medical certification prior to taking leave",
+        "1": ""
+      },
+      {
+        "0": "where  the  need  for",
+        "1": "leave \nis  foreseeable. \n  The  Company  may  require  subsequent  medical"
+      },
+      {
+        "0": "recertification. Failure to provide requested recertification within 15 days, except in extraordinary",
+        "1": ""
+      },
+      {
+        "0": "circumstances, may result in the delay of further FMLA leave (meaning that interim leave may not",
+        "1": ""
+      },
+      {
+        "0": "be  protected  by  the  FMLA).    Team  Members  taking  FMLA  leave  for  their  own  serious  health",
+        "1": ""
+      },
+      {
+        "0": "condition may also be required to provide a fitness-for-duty certification upon return to work,",
+        "1": ""
+      },
+      {
+        "0": "including during intermittent leave.",
+        "1": ""
+      },
+      {
+        "0": "E\nxception for highly compensated Team Members",
+        "1": ""
+      },
+      {
+        "0": "The company may deny FMLA leave to highly compensated Team Members if it determines that",
+        "1": ""
+      },
+      {
+        "0": "granting  FMLA \nleave  would  result",
+        "1": "in  substantial  economic \ninjury  to  the  company. \n  This"
+      },
+      {
+        "0": "determination is made on a case-by-case basis.  For purposes of the FMLA, highly compensated",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\n20,\nFMLA Leave Procedure,\n\"N\notification by Team Members of need for leave.\",\n\"The Company cannot know that FMLA leave is needed, and cannot provide FMLA entitlements,\",\nunless Team Members first appropriately notify the Company of their need for leave in sufficient,\ndetail for the Company to understand that FMLA leave is appropriate.  If the need to use FMLA,\n\"leave is foreseeable, Team Members must give the company at least 30 days prior notice of the\",\n\"need to take leave. When 30 days-notice is not possible, Team Members must give notice as far\",\nin advance as practicable under the circumstances. In an emergency where advance notice of the,\n\"need for leave cannot be given, Team Members (or their representatives if Team Members are\",\nmedically  unable  to  give  notice  themselves)  are  required  to  notify  the  Company  as  soon  as,\nreasonably  practicable.    Failure  or  unreasonable  delay  in  providing  notice  may be  grounds  for,\ndelaying the start of the FMLA leave and may have other adverse consequences.,\nRequests  for  FMLA,leave  should  be  directed  to  Human  Resources  using  the  Request  for\nFamily/Medical Leave form available from Human Resources.,\n\"When submitting a request for leave, the Team Member must provide sufficient information for\",\nthe Company to determine if the leave might qualify as FMLA leave and provide information on,\nthe anticipated date when the leave would start as well as the anticipated duration of the leave.,\nTeam Members also must inform the Company if the requested leave is for a reason for which,\nFMLA leave was previously taken or certified.,\nNotification to Team Members of leave availability,\nOnce the Company is aware of a request for FMLA leave under the procedures outlined in this,\n\"policy and has received the information it needs, it will inform the requesting Team Member of\",\n\"the availability of FMLA leave.  Assuming FMLA leave is available under the circumstances, Team\",\nMembers will be given a written notice that includes details of the leave that is being granted.  If,\n\"FMLA leave is not available, the Company will notify the Team Member.\",\n\"M\nedical certification and recertification\",\nTeam Members who request leave because of their own or a covered relation\u2019s serious health,\ncondition must supply substantiating medical certification. Team Members may obtain medical,\ncertification forms from Human Resources.   The Company will inform requesting Team Members,\nof when medical certifications must be provided (in any event no more than 15 days after leave,\nis requested).  Team Members should plan on providing medical certification prior to taking leave,\nwhere  the  need  for,\"leave \nis  foreseeable. \n  The  Company  may  require  subsequent  medical\"\n\"recertification. Failure to provide requested recertification within 15 days, except in extraordinary\",\n\"circumstances, may result in the delay of further FMLA leave (meaning that interim leave may not\",\nbe  protected  by  the  FMLA).    Team  Members  taking  FMLA  leave  for  their  own  serious  health,\n\"condition may also be required to provide a fitness-for-duty certification upon return to work,\",\nincluding during intermittent leave.,\n\"E\nxception for highly compensated Team Members\",\nThe company may deny FMLA leave to highly compensated Team Members if it determines that,\n\"granting  FMLA \nleave  would  result\",\"in  substantial  economic \ninjury  to  the  company. \n  This\"\n\"determination is made on a case-by-case basis.  For purposes of the FMLA, highly compensated\",\n",
+    "shape": [
+      42,
+      2
+    ]
+  }
+]

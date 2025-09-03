@@ -1,0 +1,95 @@
+[
+  {
+    "page": 10,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 99.99999999999996,
+    "data": [
+      {
+        "0": "After 11/2019",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Residential",
+        "2": "Commercial"
+      },
+      {
+        "0": "Aluminum Finish - peeling, cracking and blistering",
+        "1": "5 Years*",
+        "2": "5 Years*"
+      },
+      {
+        "0": "Aluminum Frames & Fire Pit Frames - material defects and workmanship",
+        "1": "15 Years*",
+        "2": "5 Years*"
+      },
+      {
+        "0": "Basta Sole\u00ae Umbrella Frames - splitting, rusting, manufacturer's defects",
+        "1": "3 Years*",
+        "2": "3 Years*"
+      },
+      {
+        "0": "Fabrics on cushions, cushion fills, umbrellas and slings - tearing, \ndiscoloration, fading",
+        "1": "1 year*",
+        "2": "1 year*"
+      },
+      {
+        "0": "Finish on Coiled Spring Rocker Mechanisms, glides, hardware, wheels, \nconnectors and table rims",
+        "1": "1 year*",
+        "2": "1 year*"
+      },
+      {
+        "0": "Fire Pit Hardware - manufacturer defects and burner, burner tray, burner \ncover, grill grate, blow out box, gas valve, switches, hoses, lines & wires, \nregulator, valves, spark igniter, fittings & fire media",
+        "1": "1 year*",
+        "2": "1 year*"
+      },
+      {
+        "0": "Flame Guard Components and Glass Flame Guard Components - \nmanufacturer's defects",
+        "1": "1 year*",
+        "2": "1 year*"
+      },
+      {
+        "0": "Natural Stone Components - umbrella hole cap for tabletops. Metal patio \numbrellas and umbrella bases",
+        "1": "1 year*",
+        "2": "1 year*"
+      },
+      {
+        "0": "Stoneworks\u00ae and Solid Surface Tabletops - manufacturer defects, structural \nfailure. Finish- peeling, cracking and blistering",
+        "1": "3 Years*",
+        "2": "1 Years*"
+      },
+      {
+        "0": "Tropitone\u00ae Natural Stone Tabletops - structural failure due to defects in \nmaterials or workmanship.",
+        "1": "3 Years*",
+        "2": "1 Years*"
+      },
+      {
+        "0": "Vinyl Strapping - breakage",
+        "1": "5 Years*",
+        "2": "5 Years*"
+      },
+      {
+        "0": "Vinyl Strapping - discoloration",
+        "1": "3 Years*",
+        "2": "3 Years*"
+      },
+      {
+        "0": "Woven Products - discoloration, fading",
+        "1": "1 year*",
+        "2": "1 year*"
+      },
+      {
+        "0": "Woven Products - manufacturer's defects",
+        "1": "3 Years*",
+        "2": "3 Years*"
+      }
+    ],
+    "csv": "0,1,2\nAfter 11/2019,,\n,Residential,Commercial\n\"Aluminum Finish - peeling, cracking and blistering\",5 Years*,5 Years*\nAluminum Frames & Fire Pit Frames - material defects and workmanship,15 Years*,5 Years*\n\"Basta Sole\u00ae Umbrella Frames - splitting, rusting, manufacturer's defects\",3 Years*,3 Years*\n\"Fabrics on cushions, cushion fills, umbrellas and slings - tearing, \ndiscoloration, fading\",1 year*,1 year*\n\"Finish on Coiled Spring Rocker Mechanisms, glides, hardware, wheels, \nconnectors and table rims\",1 year*,1 year*\n\"Fire Pit Hardware - manufacturer defects and burner, burner tray, burner \ncover, grill grate, blow out box, gas valve, switches, hoses, lines & wires, \nregulator, valves, spark igniter, fittings & fire media\",1 year*,1 year*\n\"Flame Guard Components and Glass Flame Guard Components - \nmanufacturer's defects\",1 year*,1 year*\n\"Natural Stone Components - umbrella hole cap for tabletops. Metal patio \numbrellas and umbrella bases\",1 year*,1 year*\n\"Stoneworks\u00ae and Solid Surface Tabletops - manufacturer defects, structural \nfailure. Finish- peeling, cracking and blistering\",3 Years*,1 Years*\n\"Tropitone\u00ae Natural Stone Tabletops - structural failure due to defects in \nmaterials or workmanship.\",3 Years*,1 Years*\nVinyl Strapping - breakage,5 Years*,5 Years*\nVinyl Strapping - discoloration,3 Years*,3 Years*\n\"Woven Products - discoloration, fading\",1 year*,1 year*\nWoven Products - manufacturer's defects,3 Years*,3 Years*\n",
+    "shape": [
+      16,
+      3
+    ]
+  }
+]

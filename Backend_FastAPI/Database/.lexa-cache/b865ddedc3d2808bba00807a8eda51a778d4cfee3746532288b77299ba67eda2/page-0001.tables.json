@@ -1,0 +1,135 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 82.23082770381033,
+    "data": [
+      {
+        "0": "V",
+        "1": "endor Snapshot",
+        "2": ""
+      },
+      {
+        "0": "Treasure Garden\u00ae (TREA-)",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "P",
+        "1": "roduct Categories:",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "\uf0b7 \nCantilever Umbrellas \nOutdoor Rugs"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7  Market Umbrellas",
+        "2": "\uf0b7 \nProtective Furniture"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "Covers \nBeach Umbrellas"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "Bases"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "Umbrella Lights"
+      },
+      {
+        "0": "Special Order Lead Time:  4 - 6 weeks",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "What Fabric Books Are Available for Special Order?",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "Treasure Garden\u00ae Fabric book"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "Sunbrella Home\u00ae Fabric book"
+      },
+      {
+        "0": "Warranty (Residential & Commercial):",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "1 year on AG19/AG19SQ & AG28 Cantilevers, Push Button Tilts, Quad Pulley Lifts, Umbrella"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "Lights, Umbrella bases & Accessories, Protective Furniture Covers, and Outdoor Rugs"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "2 year on AKZ/AKZSQ/AKZRT Cantilevers, Easy Tracks, Starlight Collar Tilts, Shanghai Collar Tilts,"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "Auto Tilts, and Crank Lifts"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "3 year on UCP styles"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "2 year on Solefin\u00ae fabric"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "4 year on O\u2019bravia\u00ae fabric"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7",
+        "2": "5 year on Sunbrella\u00ae/Outdura\u00ae/ Sunbury\u00ae/Bella-Dura\u00ae/Docril\u00ae fabrics"
+      },
+      {
+        "0": "",
+        "1": "\uf0b7  Wind damage and/or rust is not covered warranty",
+        "2": ""
+      },
+      {
+        "0": "Who do I Call for Questions?",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "\uf0b7 \nJustin Pfahl (Sales Representatives)"
+      }
+    ],
+    "csv": "0,1,2\nV,endor Snapshot,\nTreasure Garden\u00ae (TREA-),,\nP,roduct Categories:,\n,\uf0b7,\"\uf0b7 \nCantilever Umbrellas \nOutdoor Rugs\"\n,\uf0b7  Market Umbrellas,\"\uf0b7 \nProtective Furniture\"\n,\uf0b7,\"Covers \nBeach Umbrellas\"\n,\uf0b7,Bases\n,\uf0b7,Umbrella Lights\nSpecial Order Lead Time:  4 - 6 weeks,,\nWhat Fabric Books Are Available for Special Order?,,\n,\uf0b7,Treasure Garden\u00ae Fabric book\n,\uf0b7,Sunbrella Home\u00ae Fabric book\nWarranty (Residential & Commercial):,,\n,\uf0b7,\"1 year on AG19/AG19SQ & AG28 Cantilevers, Push Button Tilts, Quad Pulley Lifts, Umbrella\"\n,,\"Lights, Umbrella bases & Accessories, Protective Furniture Covers, and Outdoor Rugs\"\n,\uf0b7,\"2 year on AKZ/AKZSQ/AKZRT Cantilevers, Easy Tracks, Starlight Collar Tilts, Shanghai Collar Tilts,\"\n,,\"Auto Tilts, and Crank Lifts\"\n,\uf0b7,3 year on UCP styles\n,\uf0b7,2 year on Solefin\u00ae fabric\n,\uf0b7,4 year on O\u2019bravia\u00ae fabric\n,\uf0b7,5 year on Sunbrella\u00ae/Outdura\u00ae/ Sunbury\u00ae/Bella-Dura\u00ae/Docril\u00ae fabrics\n,\uf0b7  Wind damage and/or rust is not covered warranty,\nWho do I Call for Questions?,,\n,,\"\uf0b7 \nJustin Pfahl (Sales Representatives)\"\n",
+    "shape": [
+      24,
+      3
+    ]
+  }
+]

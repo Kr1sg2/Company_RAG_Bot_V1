@@ -1,0 +1,40 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 91.78383671552724,
+    "data": [
+      {
+        "0": "Full Exposure",
+        "1": "Create Your Own",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "SAFETY, CARE, MAINTENANCE & WARRANTY INFORMATION",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "Page 1 of 10"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "Treasure Garden Ownership Packet"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "2/7/2024"
+      }
+    ],
+    "csv": "0,1,2\nFull Exposure,Create Your Own,\n,\"SAFETY, CARE, MAINTENANCE & WARRANTY INFORMATION\",\n,,Page 1 of 10\n,,Treasure Garden Ownership Packet\n,,2/7/2024\n",
+    "shape": [
+      5,
+      3
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+diff --git a/app.py b/app.py
+index 1111111..2222222 100644
+--- a/app.py
++++ b/app.py
+@@ -15,6 +15,7 @@ from fastapi import FastAPI, Request, HTTPException, Query, Depends
+ from fastapi.responses import JSONResponse
+ from fastapi.middleware.cors import CORSMiddleware
++from starlette.middleware.proxy_headers import ProxyHeadersMiddleware
+ from itsdangerous import TimestampSigner, BadSignature, SignatureExpired
+ from pydantic import BaseModel
+ from dotenv import load_dotenv
+@@ -65,11 +66,14 @@ ALLOWED_ORIGINS = [
+     "http://localhost:5173",
+ ]
+ 
+-app.add_middleware(
+-    CORSMiddleware,
+-    allow_origins=ALLOWED_ORIGINS,
+-    allow_credentials=True,
+-    allow_methods=["*"],
+-    allow_headers=["*"],
+-)
++app.add_middleware(ProxyHeadersMiddleware, trusted_hosts="*")
++app.add_middleware(
++    CORSMiddleware,
++    # Accept any subdomain on bizbots24.com (e.g., lexaai.bizbots24.com, Cloudflare Access, etc.)
++    allow_origin_regex=r"^https://([a-z0-9-]+\.)*bizbots24\.com$",
++    allow_credentials=True,
++    allow_methods=["*"],
++    allow_headers=["*"],
++)
+ 
+ # ---------- Helper Functions ----------
+@@ -179,7 +183,7 @@ def admin_login(request: Request, login_data: LoginRequest):
+         httponly=True,
+         secure=True,
+-        samesite="lax",
++        samesite="none",
+         domain=".bizbots24.com"
+     )
+ 

@@ -1,0 +1,206 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "",
+        "1": "CRANK SYSTEM 906CK 907 920",
+        "2": "P-UMCRANK3-XX",
+        "3": "$15.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,CRANK SYSTEM 906CK 907 920,P-UMCRANK3-XX,$15.00\n",
+    "shape": [
+      1,
+      4
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "HANDLE CHAMPAGNE 906CK 907 920",
+        "2": "P-UMHANDLE3-01",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "HANDLE SILVER 906CK 907 920",
+        "2": "P-UMHANDLE3-SS",
+        "3": "$10.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,HANDLE CHAMPAGNE 906CK 907 920,P-UMHANDLE3-01,$10.00\n,HANDLE SILVER 906CK 907 920,P-UMHANDLE3-SS,$10.00\n",
+    "shape": [
+      2,
+      4
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 2,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "CORD UM906CKx",
+        "2": "P-UMCORD12N-906CK",
+        "3": "$3.00"
+      },
+      {
+        "0": "",
+        "1": "CORD UM907x",
+        "2": "P-UMCORD12N-907",
+        "3": "$3.00"
+      },
+      {
+        "0": "",
+        "1": "CORD UM920x",
+        "2": "P-UMCORD12N-920",
+        "3": "$3.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,CORD UM906CKx,P-UMCORD12N-906CK,$3.00\n,CORD UM907x,P-UMCORD12N-907,$3.00\n,CORD UM920x,P-UMCORD12N-920,$3.00\n",
+    "shape": [
+      3,
+      4
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 3,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "FINIAL BRONZE 906CK 907 920",
+        "2": "P-UMFINIAL3-00",
+        "3": "$4.00"
+      },
+      {
+        "0": "",
+        "1": "FINIAL CHAMPAGNE 906CK 907 920",
+        "2": "P-UMFINIAL3-01",
+        "3": "$4.00"
+      },
+      {
+        "0": "",
+        "1": "FINIAL ANTHRACITE 906CK 907 920",
+        "2": "P-UMFINIAL3-02",
+        "3": "$4.00"
+      },
+      {
+        "0": "",
+        "1": "FINIAL WHITE 906CK 907 920",
+        "2": "P-UMFINIAL3-03",
+        "3": "$4.00"
+      },
+      {
+        "0": "",
+        "1": "FINIAL BLACK 906CK 907 920",
+        "2": "P-UMFINIAL3-09",
+        "3": "$4.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,FINIAL BRONZE 906CK 907 920,P-UMFINIAL3-00,$4.00\n,FINIAL CHAMPAGNE 906CK 907 920,P-UMFINIAL3-01,$4.00\n,FINIAL ANTHRACITE 906CK 907 920,P-UMFINIAL3-02,$4.00\n,FINIAL WHITE 906CK 907 920,P-UMFINIAL3-03,$4.00\n,FINIAL BLACK 906CK 907 920,P-UMFINIAL3-09,$4.00\n",
+    "shape": [
+      5,
+      4
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 4,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "HOUSING BRONZE 906CK 907 920",
+        "2": "P-UMHOUSING3-00",
+        "3": "$15.00"
+      },
+      {
+        "0": "",
+        "1": "HOUSING CHAMPAGNE 906CK 907 920",
+        "2": "P-UMHOUSING3-01",
+        "3": "$15.00"
+      },
+      {
+        "0": "",
+        "1": "HOUSING ANTHRACITE 906CK 907 920",
+        "2": "P-UMHOUSING3-02",
+        "3": "$15.00"
+      },
+      {
+        "0": "",
+        "1": "HOUSING WHITE 906CK 907 920",
+        "2": "P-UMHOUSING3-03",
+        "3": "$15.00"
+      },
+      {
+        "0": "",
+        "1": "HOUSING BLACK 906CK 907 920",
+        "2": "P-UMHOUSING3-09",
+        "3": "$15.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,HOUSING BRONZE 906CK 907 920,P-UMHOUSING3-00,$15.00\n,HOUSING CHAMPAGNE 906CK 907 920,P-UMHOUSING3-01,$15.00\n,HOUSING ANTHRACITE 906CK 907 920,P-UMHOUSING3-02,$15.00\n,HOUSING WHITE 906CK 907 920,P-UMHOUSING3-03,$15.00\n,HOUSING BLACK 906CK 907 920,P-UMHOUSING3-09,$15.00\n",
+    "shape": [
+      5,
+      4
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 5,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "NOTCH BRONZE 906CK 907 920",
+        "2": "P-UMNOTCH3-00",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "NOTCH CHAMPAGNE 906CK 907 920",
+        "2": "P-UMNOTCH3-01",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "NOTCH ANTHRACITE 906CK 907 920",
+        "2": "P-UMNOTCH3-02",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "NOTCH WHITE 906CK 907 920",
+        "2": "P-UMNOTCH3-03",
+        "3": "$10.00"
+      },
+      {
+        "0": "",
+        "1": "NOTCH BLACK 906CK 907 920",
+        "2": "P-UMNOTCH3-09",
+        "3": "$10.00"
+      }
+    ],
+    "csv": "0,1,2,3\n,NOTCH BRONZE 906CK 907 920,P-UMNOTCH3-00,$10.00\n,NOTCH CHAMPAGNE 906CK 907 920,P-UMNOTCH3-01,$10.00\n,NOTCH ANTHRACITE 906CK 907 920,P-UMNOTCH3-02,$10.00\n,NOTCH WHITE 906CK 907 920,P-UMNOTCH3-03,$10.00\n,NOTCH BLACK 906CK 907 920,P-UMNOTCH3-09,$10.00\n",
+    "shape": [
+      5,
+      4
+    ]
+  }
+]

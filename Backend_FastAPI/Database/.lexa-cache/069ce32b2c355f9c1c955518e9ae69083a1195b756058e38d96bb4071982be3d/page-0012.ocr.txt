@@ -1,0 +1,15 @@
+Page 12 of 12 
+1.2 NetSuite Check Stock, Look Up Product.docx 
+8/20/2019 
+Pricing Tab 
+Price Levels Subtab 
+All the price levels an item can be sold at.  These prices populate automatically on a Sales Order 
+based on the customer type.   
+ 
+Point of Purchase Files Subtab 
+All the retail Floor Easels and item price tags can be printed from here. 
+ 
+Related Records Tab 
+Transactions Subtab 
+A history of transactions with this specific item on it 
+ 

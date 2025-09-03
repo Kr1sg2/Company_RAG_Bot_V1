@@ -1,0 +1,50 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 99.99999999999991,
+    "data": [
+      {
+        "0": "Filter",
+        "1": "What?",
+        "2": "Why?"
+      },
+      {
+        "0": "Item Status",
+        "1": "Current Stocking Item \nDropped By Leaders \nSpecial Order",
+        "2": "Look for closeouts, or unique items that \nhave been ordered in the past."
+      },
+      {
+        "0": "Brand",
+        "1": "Filter by Brand Name",
+        "2": "Narrow your search to products made by \na specific brand"
+      },
+      {
+        "0": "Collection",
+        "1": "Filter by the Collection Name",
+        "2": "Narrow your search to see only specific \nitems that go to a collection across \nseveral brands.  Example: Type Bali into \nthe Collection filter and see the cushions \nand frames that make up the items in the \ncollection."
+      },
+      {
+        "0": "Description",
+        "1": "Look for key words in item \ndescriptions",
+        "2": "Search the descriptions to find items with \nunique attributes or that fit a criteria.  \nExample: Search Collection \u201cEmpire,\u201d \nDescription \u201cDining\u201d to see all the items \nin the collection that make up a dining \nset tables and chairs included"
+      },
+      {
+        "0": "Category",
+        "1": "Narrow your search to find \nitems with certain product \ncategories",
+        "2": "Search by category to see all the items \nwe carry in a certain category regardless \nof brand.  Example: Search \u201cumbrella\u201d to \nsee all the umbrellas we carry by all \nmanufacturers."
+      },
+      {
+        "0": "Style",
+        "1": "N/A",
+        "2": "This allows to toggle the mode you view \nyour results."
+      }
+    ],
+    "csv": "0,1,2\nFilter,What?,Why?\nItem Status,\"Current Stocking Item \nDropped By Leaders \nSpecial Order\",\"Look for closeouts, or unique items that \nhave been ordered in the past.\"\nBrand,Filter by Brand Name,\"Narrow your search to products made by \na specific brand\"\nCollection,Filter by the Collection Name,\"Narrow your search to see only specific \nitems that go to a collection across \nseveral brands.  Example: Type Bali into \nthe Collection filter and see the cushions \nand frames that make up the items in the \ncollection.\"\nDescription,\"Look for key words in item \ndescriptions\",\"Search the descriptions to find items with \nunique attributes or that fit a criteria.  \nExample: Search Collection \u201cEmpire,\u201d \nDescription \u201cDining\u201d to see all the items \nin the collection that make up a dining \nset tables and chairs included\"\nCategory,\"Narrow your search to find \nitems with certain product \ncategories\",\"Search by category to see all the items \nwe carry in a certain category regardless \nof brand.  Example: Search \u201cumbrella\u201d to \nsee all the umbrellas we carry by all \nmanufacturers.\"\nStyle,N/A,\"This allows to toggle the mode you view \nyour results.\"\n",
+    "shape": [
+      7,
+      3
+    ]
+  }
+]

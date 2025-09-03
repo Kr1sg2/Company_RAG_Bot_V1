@@ -1,0 +1,27 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Cash Wrap Book"
+      },
+      {
+        "0": "Cash Wrap Book"
+      },
+      {
+        "0": "Cash Wrap Book"
+      },
+      {
+        "0": "Cash Wrap Book"
+      }
+    ],
+    "csv": "0\nCash Wrap Book\nCash Wrap Book\nCash Wrap Book\nCash Wrap Book\n",
+    "shape": [
+      4,
+      1
+    ]
+  }
+]

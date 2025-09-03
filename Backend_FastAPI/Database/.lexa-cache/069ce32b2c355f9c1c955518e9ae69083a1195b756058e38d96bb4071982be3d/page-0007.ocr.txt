@@ -1,0 +1,19 @@
+Page 7 of 12 
+1.2 NetSuite Check Stock, Look Up Product.docx 
+8/20/2019 
+Add Ons 
+This area displays the add on sales the product is eligible for. 
+ 
+Field 
+What is it 
+Fabric Protection Eligible 
+This will be checked if fabric protection can be applied to the item 
+Price for Fabric Protection 
+Price to apply fabric protection 
+Use as Category Only 
+This field is not used 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,47 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 93.37883112619276,
+    "data": [
+      {
+        "0": "",
+        "1": "Human Resources Module"
+      },
+      {
+        "0": "In the Human Resources Module you learn about being Leaders team member.  This module covers:",
+        "1": ""
+      },
+      {
+        "0": "\u2713",
+        "1": "The time clock"
+      },
+      {
+        "0": "\u2713",
+        "1": "Store Team selling"
+      },
+      {
+        "0": "\u2713",
+        "1": "Store Team compensation"
+      },
+      {
+        "0": "\u2713",
+        "1": "90 Day review"
+      },
+      {
+        "0": "\u2713",
+        "1": "Team member resources"
+      },
+      {
+        "0": "\u2713",
+        "1": "Store locations and store team member listings by location"
+      }
+    ],
+    "csv": "0,1\n,Human Resources Module\nIn the Human Resources Module you learn about being Leaders team member.  This module covers:,\n\u2713,The time clock\n\u2713,Store Team selling\n\u2713,Store Team compensation\n\u2713,90 Day review\n\u2713,Team member resources\n\u2713,Store locations and store team member listings by location\n",
+    "shape": [
+      8,
+      2
+    ]
+  }
+]

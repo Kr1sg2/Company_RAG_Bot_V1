@@ -1,0 +1,63 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.00000000000006,
+    "data": [
+      {
+        "0": "What is a Base SKU?"
+      },
+      {
+        "0": "One of Leaders competitive advantages is high choice meaning a large number of options.  This"
+      },
+      {
+        "0": "give the customer the ability to get exactly what they want.  NetSuite product data base is built"
+      },
+      {
+        "0": "with base Skus and options to make product easily configurable It is important to understand"
+      },
+      {
+        "0": "what a base SKU is to save confusion and not make mistakes."
+      },
+      {
+        "0": "Let\u2019s use the Madeira Dining chair as an example"
+      },
+      {
+        "0": "The same chair can come in several frame finishes and several fabrics.  It always starts with the"
+      },
+      {
+        "0": "same base SKU."
+      },
+      {
+        "0": "IMPORTANT:  A BASE SKU CAN BE ADDED TO AN INVOICE IN ERROR.  FURNITURE ITEMS"
+      },
+      {
+        "0": "SHOULD HAVE OPTIONS.  IF YOU SEE NO OPTION ON YOUR SKU OR THE PRICE IS"
+      },
+      {
+        "0": "ZERO THERE IS A GOOD CHANCE YOU ADDED A BASE SKU BY MISTAKE.  KEEP"
+      },
+      {
+        "0": "YOUR EYES PEELED.  IF YOU MAKE A MISTAKE, WE GOT YOUR BACK.  PURCHASING"
+      },
+      {
+        "0": "IS ON THE LOOK OUT AND WILL LET YOU KNOW."
+      },
+      {
+        "0": "Using the Item Lookup Shortcut"
+      },
+      {
+        "0": "When you are learning the system start with the Item Lookup portal on the NetSuite home"
+      },
+      {
+        "0": "screen."
+      }
+    ],
+    "csv": "0\nWhat is a Base SKU?\nOne of Leaders competitive advantages is high choice meaning a large number of options.  This\ngive the customer the ability to get exactly what they want.  NetSuite product data base is built\nwith base Skus and options to make product easily configurable It is important to understand\nwhat a base SKU is to save confusion and not make mistakes.\nLet\u2019s use the Madeira Dining chair as an example\nThe same chair can come in several frame finishes and several fabrics.  It always starts with the\nsame base SKU.\nIMPORTANT:  A BASE SKU CAN BE ADDED TO AN INVOICE IN ERROR.  FURNITURE ITEMS\nSHOULD HAVE OPTIONS.  IF YOU SEE NO OPTION ON YOUR SKU OR THE PRICE IS\nZERO THERE IS A GOOD CHANCE YOU ADDED A BASE SKU BY MISTAKE.  KEEP\n\"YOUR EYES PEELED.  IF YOU MAKE A MISTAKE, WE GOT YOUR BACK.  PURCHASING\"\nIS ON THE LOOK OUT AND WILL LET YOU KNOW.\nUsing the Item Lookup Shortcut\nWhen you are learning the system start with the Item Lookup portal on the NetSuite home\nscreen.\n",
+    "shape": [
+      16,
+      1
+    ]
+  }
+]

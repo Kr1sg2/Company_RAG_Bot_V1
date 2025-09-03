@@ -1,0 +1,231 @@
+[
+  {
+    "page": 13,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 52.50556531236956,
+    "data": [
+      {
+        "0": "13",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "UNPAID TIME OFF (UPTO)",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "Team Members must take all available PTO time before taking Unpaid Time Off (UPTO).",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "Scheduled UPTO is to be requested by using the UPTO template in the timekeeping system in",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "the same manner that PTO is requested.  UPTO must be requested in advance and approved by",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "your manager.  In the event you have PTO available, you must use all PTO prior to requesting",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "UPTO.",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "P",
+        "1": "aid Time Off (PTO) Redemption Policy",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "Eligible team members include all full-time, hourly (non-exempt) team members working at the",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "Distribution Center or at a Showroom.  This policy does not apply to any team members who work",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "offsite or are salaried (exempt).",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "A",
+        "1": "minimum of 40 hours (or 5 days) of PTO time used per year is required.  Any unused PTO time",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "beyond the 40 hours (or 5 days) can be redeemed as outlined below.",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "5",
+        "1": "0% of Wage",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "Any amount of unredeemed PTO over 40 hours can be redeemed at 50% of the team member\u2019s",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "wage. To redeem your unused PTO, you must submit a PTO Redemption form, signed by your",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "supervisor, to Human Resources 30 days prior to your anniversary date. The redeemed PTO pay",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "will be paid on the paycheck following the team member\u2019s anniversary.  Team Members will not",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "be paid for PTO time prior to their anniversary date.",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "H",
+        "1": "ow many PTO days do I have left?",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "You will be able to see this information in the time management system.  You can find your used",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "and available PTO hours under \u201cLeave Management\u201d.  The hours shown are the balance after all",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "approved requests have been deducted.   To figure out how many days you have left from the",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "Hours Balance you need to do the following calculation:",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "PTO Days = Hours Balance divided by 8 hours"
+      },
+      {
+        "0": "For example, if you have 64.00 Hours Balance on your stub then to figure out how many PTO",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "Days are remaining you would do:",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "64.00 Hours Balance divided by 8 hours = 8 PTO Days left to use."
+      },
+      {
+        "0": "Holidays",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "Leaders Holding Co\u2122 recognizes two paid holidays during the year. All company locations will be",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "closed on the following holidays and all eligible Team Members will be paid holiday pay:",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Thanksgiving",
+        "3": "4th Thursday in November"
+      },
+      {
+        "0": "",
+        "1": "\u2022",
+        "2": "Christmas",
+        "3": "December 25th"
+      },
+      {
+        "0": "Full-time Team Members are eligible for paid holidays after completing 90 days of service.",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "N",
+        "1": "on-exempt Team Members must work their scheduled workday before and after the holiday to",
+        "2": "",
+        "3": ""
+      },
+      {
+        "0": "be paid for the holiday unless they are absent with prior permission from their supervisor.",
+        "1": "",
+        "2": "",
+        "3": ""
+      }
+    ],
+    "csv": "0,1,2,3\n13,,,\nUNPAID TIME OFF (UPTO),,,\nTeam Members must take all available PTO time before taking Unpaid Time Off (UPTO).,,,\nScheduled UPTO is to be requested by using the UPTO template in the timekeeping system in,,,\nthe same manner that PTO is requested.  UPTO must be requested in advance and approved by,,,\n\"your manager.  In the event you have PTO available, you must use all PTO prior to requesting\",,,\nUPTO.,,,\nP,aid Time Off (PTO) Redemption Policy,,\n\"Eligible team members include all full-time, hourly (non-exempt) team members working at the\",,,\nDistribution Center or at a Showroom.  This policy does not apply to any team members who work,,,\noffsite or are salaried (exempt).,,,\nA,minimum of 40 hours (or 5 days) of PTO time used per year is required.  Any unused PTO time,,\nbeyond the 40 hours (or 5 days) can be redeemed as outlined below.,,,\n5,0% of Wage,,\nAny amount of unredeemed PTO over 40 hours can be redeemed at 50% of the team member\u2019s,,,\n\"wage. To redeem your unused PTO, you must submit a PTO Redemption form, signed by your\",,,\n\"supervisor, to Human Resources 30 days prior to your anniversary date. The redeemed PTO pay\",,,\nwill be paid on the paycheck following the team member\u2019s anniversary.  Team Members will not,,,\nbe paid for PTO time prior to their anniversary date.,,,\nH,ow many PTO days do I have left?,,\nYou will be able to see this information in the time management system.  You can find your used,,,\nand available PTO hours under \u201cLeave Management\u201d.  The hours shown are the balance after all,,,\napproved requests have been deducted.   To figure out how many days you have left from the,,,\nHours Balance you need to do the following calculation:,,,\n,,,PTO Days = Hours Balance divided by 8 hours\n\"For example, if you have 64.00 Hours Balance on your stub then to figure out how many PTO\",,,\nDays are remaining you would do:,,,\n,,,64.00 Hours Balance divided by 8 hours = 8 PTO Days left to use.\nHolidays,,,\nLeaders Holding Co\u2122 recognizes two paid holidays during the year. All company locations will be,,,\nclosed on the following holidays and all eligible Team Members will be paid holiday pay:,,,\n,\u2022,Thanksgiving,4th Thursday in November\n,\u2022,Christmas,December 25th\nFull-time Team Members are eligible for paid holidays after completing 90 days of service.,,,\nN,on-exempt Team Members must work their scheduled workday before and after the holiday to,,\nbe paid for the holiday unless they are absent with prior permission from their supervisor.,,,\n",
+    "shape": [
+      36,
+      4
+    ]
+  }
+]

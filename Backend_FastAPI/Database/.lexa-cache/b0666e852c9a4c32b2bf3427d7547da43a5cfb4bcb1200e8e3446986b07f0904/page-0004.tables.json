@@ -1,0 +1,78 @@
+[
+  {
+    "page": 4,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.00000000000003,
+    "data": [
+      {
+        "0": "Introduction"
+      },
+      {
+        "0": "History"
+      },
+      {
+        "0": "Since 1984, Treasure Garden has built a reputation of leadership by producing top-quality, custom-"
+      },
+      {
+        "0": "made, handcrafted umbrellas.  Combining advanced technology with the latest color and fabric trends,"
+      },
+      {
+        "0": "we continue enhancing our products and their performance yearly.  We are committed to providing the"
+      },
+      {
+        "0": "largest and most innovative selection of shade solutions to suit all your needs, including umbrella"
+      },
+      {
+        "0": "lighting and furniture cover protection."
+      },
+      {
+        "0": "Product Development"
+      },
+      {
+        "0": "This has been the hallmark of Treasure Garden \u2013 consistently designing, testing, and bringing new"
+      },
+      {
+        "0": "innovations to the shade industry.  This attribute ensures greater brand life-cycle management and"
+      },
+      {
+        "0": "maintains our market growth."
+      },
+      {
+        "0": "Capabilities"
+      },
+      {
+        "0": "We offer innovation, quality, and value, and unlike other manufacturers, Treasure Garden is a Vertically"
+      },
+      {
+        "0": "Integrated Manufacturer, ensuring quality."
+      },
+      {
+        "0": "Passion & Dedication"
+      },
+      {
+        "0": "The 6,000 employees who share in the same vision on a daily basis and their attention to detail enables"
+      },
+      {
+        "0": "Treasure Garden to continue to be \"The World's Favorite Shade\"."
+      },
+      {
+        "0": "Manufacturing"
+      },
+      {
+        "0": "We manufacture and produce over 90% of the components used in our products from their raw state."
+      },
+      {
+        "0": "This allows Treasure Garden the advantage of monitoring every stage of the manufacturing process and"
+      },
+      {
+        "0": "maintaining a consistent level of quality."
+      }
+    ],
+    "csv": "0\nIntroduction\nHistory\n\"Since 1984, Treasure Garden has built a reputation of leadership by producing top-quality, custom-\"\n\"made, handcrafted umbrellas.  Combining advanced technology with the latest color and fabric trends,\"\nwe continue enhancing our products and their performance yearly.  We are committed to providing the\n\"largest and most innovative selection of shade solutions to suit all your needs, including umbrella\"\nlighting and furniture cover protection.\nProduct Development\n\"This has been the hallmark of Treasure Garden \u2013 consistently designing, testing, and bringing new\"\ninnovations to the shade industry.  This attribute ensures greater brand life-cycle management and\nmaintains our market growth.\nCapabilities\n\"We offer innovation, quality, and value, and unlike other manufacturers, Treasure Garden is a Vertically\"\n\"Integrated Manufacturer, ensuring quality.\"\nPassion & Dedication\n\"The 6,000 employees who share in the same vision on a daily basis and their attention to detail enables\"\n\"Treasure Garden to continue to be \"\"The World's Favorite Shade\"\".\"\nManufacturing\nWe manufacture and produce over 90% of the components used in our products from their raw state.\nThis allows Treasure Garden the advantage of monitoring every stage of the manufacturing process and\nmaintaining a consistent level of quality.\n",
+    "shape": [
+      21,
+      1
+    ]
+  }
+]

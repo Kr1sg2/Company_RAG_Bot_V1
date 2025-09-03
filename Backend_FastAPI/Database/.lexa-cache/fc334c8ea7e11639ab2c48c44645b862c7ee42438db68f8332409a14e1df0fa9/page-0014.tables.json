@@ -1,0 +1,163 @@
+[
+  {
+    "page": 14,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 76.56115705418532,
+    "data": [
+      {
+        "0": "14",
+        "1": ""
+      },
+      {
+        "0": "401(k) Retirement Plan",
+        "1": ""
+      },
+      {
+        "0": "Leaders Holding Co\u2122  has established a 401(k)  Retirement Plan to provide  Team Members the",
+        "1": ""
+      },
+      {
+        "0": "potential for future financial security for retirement.",
+        "1": ""
+      },
+      {
+        "0": "A",
+        "1": "ll  Team  Members  are  eligible  for  the  401(k)  plan  and  will  be  auto  enrolled  at  3%.  The  first"
+      },
+      {
+        "0": "contribution to the plan will be the first payroll of the month following 60 days of consecutive",
+        "1": ""
+      },
+      {
+        "0": "service.",
+        "1": ""
+      },
+      {
+        "0": "Y",
+        "1": "ou may  elect  the  percentage  of your  salary  to  contribute  based on your retirement planning"
+      },
+      {
+        "0": "goals.  New  Team  Members  will  be  auto  enrolled  at  3%.",
+        "1": "You  may  make  changes  to  your"
+      },
+      {
+        "0": "contribution percentage on the provider website as often as once per month. Leaders Holding",
+        "1": ""
+      },
+      {
+        "0": "Co\u2122  may  also  contribute  an  additional  matching  amount  to  each  Team  Member's  401(k)",
+        "1": ""
+      },
+      {
+        "0": "contribution on an annual basis.  You must be employed on the last day of the calendar year to",
+        "1": ""
+      },
+      {
+        "0": "receive any matching contributions.",
+        "1": ""
+      },
+      {
+        "0": "C",
+        "1": "omplete details of the 401(k) Retirement Plan are described in the Summary Plan Description"
+      },
+      {
+        "0": "found on the provider website. Links to benefits providers can be found in your Netsuite Employee",
+        "1": ""
+      },
+      {
+        "0": "Center. Contact Human Resources for more information about the 401(k) plan.",
+        "1": ""
+      },
+      {
+        "0": "EAP",
+        "1": ""
+      },
+      {
+        "0": "Leaders Holding Co\u2122 cares about the health and well-being of its Team Members and recognizes",
+        "1": ""
+      },
+      {
+        "0": "that a variety of personal problems can disrupt their personal and work lives.  While many Team",
+        "1": ""
+      },
+      {
+        "0": "Members  solve  their  problems  either  on  their  own  or  with  the  help  of  family  and  friends,",
+        "1": ""
+      },
+      {
+        "0": "sometimes Team Members need professional assistance and advice.",
+        "1": ""
+      },
+      {
+        "0": "T",
+        "1": "hrough the Employee Assistance Program (EAP), the Human Resources office can assist you in"
+      },
+      {
+        "0": "finding counseling services available in the area to help you deal with personal problems such as",
+        "1": ""
+      },
+      {
+        "0": "alcohol and other substance abuse, marital and family difficulties, financial or legal troubles, and",
+        "1": ""
+      },
+      {
+        "0": "emotional distress.",
+        "1": ""
+      },
+      {
+        "0": "T",
+        "1": "he EAP is strictly confidential and is designed to safeguard your privacy and rights. Information"
+      },
+      {
+        "0": "given to the EAP counselor may be released only if requested by you in writing.  A Professional",
+        "1": ""
+      },
+      {
+        "0": "Code of Ethics guides all counselors.",
+        "1": ""
+      },
+      {
+        "0": "P",
+        "1": "ersonal  information  concerning  Team  Member  participation  in  the  EAP  is  maintained  in  a"
+      },
+      {
+        "0": "confidential manner.  No information related to a Team Member's participation in the program is",
+        "1": ""
+      },
+      {
+        "0": "entered into the personnel file.",
+        "1": ""
+      },
+      {
+        "0": "I",
+        "1": "f you currently carry health plan; you may be eligible for counseling and only be required to pay"
+      },
+      {
+        "0": "a copay if the counselor is in network (depending on your health plan).    If further counseling is",
+        "1": ""
+      },
+      {
+        "0": "necessary, the EAP counselor will outline community and private services available.  The counselor",
+        "1": ""
+      },
+      {
+        "0": "will  also  let  Team  Members  know  whether  any  costs  associated  with  private  services  may  be",
+        "1": ""
+      },
+      {
+        "0": "covered  by  their  health  plan.    Costs  that  are  not  covered  are  the  responsibility  of  the  Team",
+        "1": ""
+      },
+      {
+        "0": "Member.",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\n14,\n401(k) Retirement Plan,\nLeaders Holding Co\u2122  has established a 401(k)  Retirement Plan to provide  Team Members the,\npotential for future financial security for retirement.,\nA,ll  Team  Members  are  eligible  for  the  401(k)  plan  and  will  be  auto  enrolled  at  3%.  The  first\ncontribution to the plan will be the first payroll of the month following 60 days of consecutive,\nservice.,\nY,ou may  elect  the  percentage  of your  salary  to  contribute  based on your retirement planning\ngoals.  New  Team  Members  will  be  auto  enrolled  at  3%.,You  may  make  changes  to  your\ncontribution percentage on the provider website as often as once per month. Leaders Holding,\nCo\u2122  may  also  contribute  an  additional  matching  amount  to  each  Team  Member's  401(k),\ncontribution on an annual basis.  You must be employed on the last day of the calendar year to,\nreceive any matching contributions.,\nC,omplete details of the 401(k) Retirement Plan are described in the Summary Plan Description\nfound on the provider website. Links to benefits providers can be found in your Netsuite Employee,\nCenter. Contact Human Resources for more information about the 401(k) plan.,\nEAP,\nLeaders Holding Co\u2122 cares about the health and well-being of its Team Members and recognizes,\nthat a variety of personal problems can disrupt their personal and work lives.  While many Team,\n\"Members  solve  their  problems  either  on  their  own  or  with  the  help  of  family  and  friends,\",\nsometimes Team Members need professional assistance and advice.,\nT,\"hrough the Employee Assistance Program (EAP), the Human Resources office can assist you in\"\nfinding counseling services available in the area to help you deal with personal problems such as,\n\"alcohol and other substance abuse, marital and family difficulties, financial or legal troubles, and\",\nemotional distress.,\nT,he EAP is strictly confidential and is designed to safeguard your privacy and rights. Information\ngiven to the EAP counselor may be released only if requested by you in writing.  A Professional,\nCode of Ethics guides all counselors.,\nP,ersonal  information  concerning  Team  Member  participation  in  the  EAP  is  maintained  in  a\nconfidential manner.  No information related to a Team Member's participation in the program is,\nentered into the personnel file.,\nI,f you currently carry health plan; you may be eligible for counseling and only be required to pay\na copay if the counselor is in network (depending on your health plan).    If further counseling is,\n\"necessary, the EAP counselor will outline community and private services available.  The counselor\",\nwill  also  let  Team  Members  know  whether  any  costs  associated  with  private  services  may  be,\ncovered  by  their  health  plan.    Costs  that  are  not  covered  are  the  responsibility  of  the  Team,\nMember.,\n",
+    "shape": [
+      37,
+      2
+    ]
+  }
+]

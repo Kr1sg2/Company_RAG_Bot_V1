@@ -1,0 +1,75 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 87.02015233622053,
+    "data": [
+      {
+        "0": "Thank you for the opportunity.",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "We appreciate your business."
+      },
+      {
+        "0": "Share your honest opinion of our products & service anywhere online.  Bring a copy of the posting to",
+        "1": ""
+      },
+      {
+        "0": "any retail location to receive 50% off an accessory item.  An accessory item is a lamp, wall hanging, or",
+        "1": ""
+      },
+      {
+        "0": "item that can sit on a table.  An accessory item does not include umbrellas, ottomans, occasional chairs,",
+        "1": ""
+      },
+      {
+        "0": "tables, or any other furnishings.",
+        "1": ""
+      },
+      {
+        "0": "Store locations:",
+        "1": "http://leadersfurniture.com/locations/"
+      },
+      {
+        "0": "Website",
+        "1": "leadersfurniture.com"
+      },
+      {
+        "0": "Solutions Center",
+        "1": "solutions.center@leadersfurniture.com"
+      },
+      {
+        "0": "Distribution Center",
+        "1": "leaders@leadersfurniture.com"
+      },
+      {
+        "0": "Social Media",
+        "1": ""
+      },
+      {
+        "0": "Thank you for the opportunity,",
+        "1": ""
+      },
+      {
+        "0": "Tim Newton",
+        "1": ""
+      },
+      {
+        "0": "President",
+        "1": ""
+      },
+      {
+        "0": "President",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\nThank you for the opportunity.,\n,We appreciate your business.\nShare your honest opinion of our products & service anywhere online.  Bring a copy of the posting to,\n\"any retail location to receive 50% off an accessory item.  An accessory item is a lamp, wall hanging, or\",\n\"item that can sit on a table.  An accessory item does not include umbrellas, ottomans, occasional chairs,\",\n\"tables, or any other furnishings.\",\nStore locations:,http://leadersfurniture.com/locations/\nWebsite,leadersfurniture.com\nSolutions Center,solutions.center@leadersfurniture.com\nDistribution Center,leaders@leadersfurniture.com\nSocial Media,\n\"Thank you for the opportunity,\",\nTim Newton,\nPresident,\nPresident,\n",
+    "shape": [
+      15,
+      2
+    ]
+  }
+]

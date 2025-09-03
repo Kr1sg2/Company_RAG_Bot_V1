@@ -1,0 +1,101 @@
+[
+  {
+    "page": 4,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 56.537967603510026,
+    "data": [
+      {
+        "0": "",
+        "1": "proper operation.  If your system needs repair, first, check with your lawn company to see if they work on sprinkler"
+      },
+      {
+        "0": "systems.  If you have concerns with your sprinklers please report them to your territory leader.",
+        "1": ""
+      },
+      {
+        "0": "Monthly maintenance check lists",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "Vendors are contracted to help maintain your showroom.  A check list should be filled out each time a contractor"
+      },
+      {
+        "0": "visits and the check list should be forwarded to Accounts Payable each month.",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "Please do not sign off on incomplete or inferior work.  You have the right to ask the contractor to correct the"
+      },
+      {
+        "0": "concern.",
+        "1": ""
+      },
+      {
+        "0": "Accounts Payable:  a-p@leadersfurniture.com.",
+        "1": ""
+      },
+      {
+        "0": "Path:  R:\\8 About Store Procedures",
+        "1": ""
+      },
+      {
+        "0": "\u2713",
+        "1": "8.22 Cleaning Company Check List"
+      }
+    ],
+    "csv": "0,1\n,\"proper operation.  If your system needs repair, first, check with your lawn company to see if they work on sprinkler\"\nsystems.  If you have concerns with your sprinklers please report them to your territory leader.,\nMonthly maintenance check lists,\n,Vendors are contracted to help maintain your showroom.  A check list should be filled out each time a contractor\nvisits and the check list should be forwarded to Accounts Payable each month.,\n,Please do not sign off on incomplete or inferior work.  You have the right to ask the contractor to correct the\nconcern.,\nAccounts Payable:  a-p@leadersfurniture.com.,\nPath:  R:\\8 About Store Procedures,\n\u2713,8.22 Cleaning Company Check List\n",
+    "shape": [
+      10,
+      2
+    ]
+  },
+  {
+    "page": 4,
+    "table_index": 1,
+    "method": "stream",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "8.25 Window Check List"
+      },
+      {
+        "0": "Finding a local service provider"
+      },
+      {
+        "0": "To find highly rated local service providers in your area."
+      },
+      {
+        "0": "1.    Go to  www.google.com and type in your stores\u2019 address."
+      },
+      {
+        "0": "2.    Click on the map."
+      },
+      {
+        "0": "3.    In the search box on the top left of your screen,"
+      },
+      {
+        "0": "a.    Delete the address."
+      },
+      {
+        "0": "b.    Type in the type of service you are looking for and press <Enter>."
+      },
+      {
+        "0": "4.    Nearby service providers will populate."
+      },
+      {
+        "0": "5.    Review the reputation of each on the right side of the screen.  Call the highest rated providers to"
+      },
+      {
+        "0": "come out and give an estimate."
+      }
+    ],
+    "csv": "0\n8.25 Window Check List\nFinding a local service provider\nTo find highly rated local service providers in your area.\n1.    Go to  www.google.com and type in your stores\u2019 address.\n2.    Click on the map.\n\"3.    In the search box on the top left of your screen,\"\na.    Delete the address.\nb.    Type in the type of service you are looking for and press <Enter>.\n4.    Nearby service providers will populate.\n5.    Review the reputation of each on the right side of the screen.  Call the highest rated providers to\ncome out and give an estimate.\n",
+    "shape": [
+      11,
+      1
+    ]
+  }
+]

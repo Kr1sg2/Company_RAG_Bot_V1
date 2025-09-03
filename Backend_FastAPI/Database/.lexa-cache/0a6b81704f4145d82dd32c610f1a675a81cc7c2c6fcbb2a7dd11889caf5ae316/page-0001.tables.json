@@ -1,0 +1,126 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 93.89901669022547,
+    "data": [
+      {
+        "0": "EASEL NAME",
+        "1": "Topper\nEasel Date Code",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "",
+        "1": "FRONT\nBACK\nFRONT\nBACK",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "Amish Country Counter & \nAccessories",
+        "1": "B",
+        "2": "D",
+        "3": "12/9/2024",
+        "4": "12/9/2024"
+      },
+      {
+        "0": "Latitude Sectional",
+        "1": "B",
+        "2": "D",
+        "3": "",
+        "4": ""
+      }
+    ],
+    "csv": "0,1,2,3,4\nEASEL NAME,\"Topper\nEasel Date Code\",,,\n,\"FRONT\nBACK\nFRONT\nBACK\",,,\n\"Amish Country Counter & \nAccessories\",B,D,12/9/2024,12/9/2024\nLatitude Sectional,B,D,,\n",
+    "shape": [
+      4,
+      5
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 97.92306951156606,
+    "data": [
+      {
+        "0": "EASEL NAME",
+        "1": "Topper\nEasel Date Code",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "",
+        "1": "FRONT\nBACK\nFRONT\nBACK",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "Bayshore Bar",
+        "1": "B",
+        "2": "D",
+        "3": "11/29/2024",
+        "4": "11/29/2024"
+      },
+      {
+        "0": "Bayshore Seating",
+        "1": "B",
+        "2": "D",
+        "3": "11/29/2024",
+        "4": "11/29/2024"
+      },
+      {
+        "0": "Casual Comfort Bar & Accessories",
+        "1": "B",
+        "2": "D",
+        "3": "11/29/2024",
+        "4": "11/29/2024"
+      },
+      {
+        "0": "Oceanside Dining",
+        "1": "B",
+        "2": "D",
+        "3": "11/29/2024",
+        "4": "11/29/2024"
+      },
+      {
+        "0": "Marina Dining",
+        "1": "B",
+        "2": "D",
+        "3": "11/29/2024",
+        "4": "11/29/2024"
+      },
+      {
+        "0": "Marina Seating",
+        "1": "B",
+        "2": "D",
+        "3": "11/29/2024",
+        "4": "11/29/2024"
+      },
+      {
+        "0": "Simplicity Seating",
+        "1": "B",
+        "2": "D",
+        "3": "11/29/2024",
+        "4": "11/29/2024"
+      },
+      {
+        "0": "Wavz Dining",
+        "1": "B",
+        "2": "D",
+        "3": "11/29/2024",
+        "4": "11/29/2024"
+      }
+    ],
+    "csv": "0,1,2,3,4\nEASEL NAME,\"Topper\nEasel Date Code\",,,\n,\"FRONT\nBACK\nFRONT\nBACK\",,,\nBayshore Bar,B,D,11/29/2024,11/29/2024\nBayshore Seating,B,D,11/29/2024,11/29/2024\nCasual Comfort Bar & Accessories,B,D,11/29/2024,11/29/2024\nOceanside Dining,B,D,11/29/2024,11/29/2024\nMarina Dining,B,D,11/29/2024,11/29/2024\nMarina Seating,B,D,11/29/2024,11/29/2024\nSimplicity Seating,B,D,11/29/2024,11/29/2024\nWavz Dining,B,D,11/29/2024,11/29/2024\n",
+    "shape": [
+      10,
+      5
+    ]
+  }
+]

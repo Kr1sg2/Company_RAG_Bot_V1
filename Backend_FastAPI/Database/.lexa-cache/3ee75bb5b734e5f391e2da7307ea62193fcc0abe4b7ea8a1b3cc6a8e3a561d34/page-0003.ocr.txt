@@ -1,0 +1,10 @@
+Page 3 of 5 
+3.1.1 Convert an Opportunity or Quote to a Sale 
+12/5/2023 
+2. While reviewing the opportunity hover over 
+and click Quote  
+3. This will move the Opportunity information into a Quote.  An Opportunity does not have specific 
+product information.  To save the new quote, you will have to complete all of the required 
+fields, including the products the guest is interested in.   
+ 
+ 

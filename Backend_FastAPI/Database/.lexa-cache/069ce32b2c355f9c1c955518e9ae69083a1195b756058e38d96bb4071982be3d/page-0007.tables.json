@@ -1,0 +1,35 @@
+[
+  {
+    "page": 7,
+    "table_index": 2,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Field",
+        "1": "What is it"
+      },
+      {
+        "0": "Fabric Protection Eligible",
+        "1": "This will be checked if fabric protection can be applied to the item"
+      },
+      {
+        "0": "Price for Fabric Protection",
+        "1": "Price to apply fabric protection"
+      },
+      {
+        "0": "Use as Category Only",
+        "1": "This field is not used"
+      },
+      {
+        "0": "",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\nField,What is it\nFabric Protection Eligible,This will be checked if fabric protection can be applied to the item\nPrice for Fabric Protection,Price to apply fabric protection\nUse as Category Only,This field is not used\n,\n",
+    "shape": [
+      5,
+      2
+    ]
+  }
+]

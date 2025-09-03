@@ -1,0 +1,105 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.00000000000003,
+    "data": [
+      {
+        "0": "Where does Aluminum come from?"
+      },
+      {
+        "0": "Aluminum is found naturally in combination with over 270 different minerals and does not occur often"
+      },
+      {
+        "0": "in nature as a free metal. Out of those 270 minerals it is not economically feasible to extract the pure"
+      },
+      {
+        "0": "aluminum  from  the  large  majority  of  them.  Instead  almost  all  metallic  aluminum  is  produced  from"
+      },
+      {
+        "0": "bauxite ore. Bauxite ore is formed by the decomposition of"
+      },
+      {
+        "0": "earth\u2019s \nrocks  and \nsoil,  known  as  bedrock, \nin \ntropical"
+      },
+      {
+        "0": "climates.  The  primary  mining  areas  for  this  special  ore  is"
+      },
+      {
+        "0": "Indonesia, Ghana, Jamaica and portions of Russia.  Because"
+      },
+      {
+        "0": "of  the  high  amount  of  energy  need  to  chemically  extract"
+      },
+      {
+        "0": "aluminum,  compared  to  most  metals,  it  is  extracted  in  a"
+      },
+      {
+        "0": "non-traditional \nprocess \nusing \nheat. \nElectrolysis \nis \nthe"
+      },
+      {
+        "0": "specialized  process \nin  which  the  ore \nis  dissolved \ninto  a"
+      },
+      {
+        "0": "molten  material  that  reduces  it  into  pure  aluminum.  This"
+      },
+      {
+        "0": "process \nis  only  possible  because  of  aluminum\u2019s  unique"
+      },
+      {
+        "0": "melting  point.  The  energy  needed  to  extract  aluminum"
+      },
+      {
+        "0": "represents  20-40%  of  its  cost;  therefore  most  aluminum  is  produced  only  where  electric  power  is"
+      },
+      {
+        "0": "plentiful and the most inexpensive."
+      },
+      {
+        "0": "What are the major uses of aluminum?"
+      },
+      {
+        "0": "One of the most widely used metals; global production of this material exceeded that of any other metal"
+      },
+      {
+        "0": "except iron in 2005. It is used not only in furniture making, but also in household wiring, automotive and"
+      },
+      {
+        "0": "aircraft construction along with building construction, food canning and countless other fields."
+      },
+      {
+        "0": "How is Aluminum Recycled?"
+      },
+      {
+        "0": "The most valuable beverage container to recycle, the aluminum can is only"
+      },
+      {
+        "0": "one  of many  kinds of  scrap  aluminum  that  can  be  re-  cycled  and  re-used"
+      },
+      {
+        "0": "into  the  production  of  new  products.  Aluminum  recycling  has  been  a"
+      },
+      {
+        "0": "common  practice  since  the  early  1900s  and \nis  a  fairly  straightforward"
+      },
+      {
+        "0": "process in comparison to making new\u2026 simply melt the old metal. Because"
+      },
+      {
+        "0": "of \nthe \nsignificant  cost \nsavings \nin \nthe  energy  needed \nto \nrecycle  old"
+      },
+      {
+        "0": "aluminum, close  to one-third of all the  aluminum produced in the United"
+      },
+      {
+        "0": "States comes from recycled scrap."
+      }
+    ],
+    "csv": "0\nWhere does Aluminum come from?\nAluminum is found naturally in combination with over 270 different minerals and does not occur often\nin nature as a free metal. Out of those 270 minerals it is not economically feasible to extract the pure\naluminum  from  the  large  majority  of  them.  Instead  almost  all  metallic  aluminum  is  produced  from\nbauxite ore. Bauxite ore is formed by the decomposition of\n\"earth\u2019s \nrocks  and \nsoil,  known  as  bedrock, \nin \ntropical\"\nclimates.  The  primary  mining  areas  for  this  special  ore  is\n\"Indonesia, Ghana, Jamaica and portions of Russia.  Because\"\nof  the  high  amount  of  energy  need  to  chemically  extract\n\"aluminum,  compared  to  most  metals,  it  is  extracted  in  a\"\n\"non-traditional \nprocess \nusing \nheat. \nElectrolysis \nis \nthe\"\n\"specialized  process \nin  which  the  ore \nis  dissolved \ninto  a\"\nmolten  material  that  reduces  it  into  pure  aluminum.  This\n\"process \nis  only  possible  because  of  aluminum\u2019s  unique\"\nmelting  point.  The  energy  needed  to  extract  aluminum\nrepresents  20-40%  of  its  cost;  therefore  most  aluminum  is  produced  only  where  electric  power  is\nplentiful and the most inexpensive.\nWhat are the major uses of aluminum?\nOne of the most widely used metals; global production of this material exceeded that of any other metal\n\"except iron in 2005. It is used not only in furniture making, but also in household wiring, automotive and\"\n\"aircraft construction along with building construction, food canning and countless other fields.\"\nHow is Aluminum Recycled?\n\"The most valuable beverage container to recycle, the aluminum can is only\"\none  of many  kinds of  scrap  aluminum  that  can  be  re-  cycled  and  re-used\ninto  the  production  of  new  products.  Aluminum  recycling  has  been  a\n\"common  practice  since  the  early  1900s  and \nis  a  fairly  straightforward\"\nprocess in comparison to making new\u2026 simply melt the old metal. Because\n\"of \nthe \nsignificant  cost \nsavings \nin \nthe  energy  needed \nto \nrecycle  old\"\n\"aluminum, close  to one-third of all the  aluminum produced in the United\"\nStates comes from recycled scrap.\n",
+    "shape": [
+      30,
+      1
+    ]
+  }
+]

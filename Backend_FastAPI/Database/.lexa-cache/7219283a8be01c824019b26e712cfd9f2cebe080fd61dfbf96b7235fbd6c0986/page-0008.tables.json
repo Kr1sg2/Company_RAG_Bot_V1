@@ -1,0 +1,92 @@
+[
+  {
+    "page": 8,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 98.51463310133606,
+    "data": [
+      {
+        "0": "",
+        "1": "WASH",
+        "2": "CLEAN",
+        "3": "PROTECT",
+        "4": "",
+        "5": "",
+        "6": "MAINTAIN",
+        "7": ""
+      },
+      {
+        "0": "",
+        "1": "ALL MATERIALS",
+        "2": "ALL MATERIALS",
+        "3": "WICKER",
+        "4": "SYNTHETIC WOOD",
+        "5": "ALUMINUM",
+        "6": "WICKER & POLY",
+        "7": "ALUMINUM"
+      },
+      {
+        "0": "BEST RESULT",
+        "1": "Gel Wash #54",
+        "2": "Extreme\nMulti-Surface\nCleaner",
+        "3": "Quick Wax #59",
+        "4": "Extreme\nVinyl & Rubber\nProtectant",
+        "5": "Corrosion\nBlock",
+        "6": "Wash N Wax \n#143",
+        "7": "Corrosion\nBlock"
+      },
+      {
+        "0": "QUICK & EASY",
+        "1": "Gel Wash #54",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "Wash N Wax \n#143",
+        "7": "Corrosion\nBlock"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": ""
+      }
+    ],
+    "csv": "0,1,2,3,4,5,6,7\n,WASH,CLEAN,PROTECT,,,MAINTAIN,\n,ALL MATERIALS,ALL MATERIALS,WICKER,SYNTHETIC WOOD,ALUMINUM,WICKER & POLY,ALUMINUM\nBEST RESULT,Gel Wash #54,\"Extreme\nMulti-Surface\nCleaner\",Quick Wax #59,\"Extreme\nVinyl & Rubber\nProtectant\",\"Corrosion\nBlock\",\"Wash N Wax \n#143\",\"Corrosion\nBlock\"\nQUICK & EASY,Gel Wash #54,,,,,\"Wash N Wax \n#143\",\"Corrosion\nBlock\"\n,,,,,,,\n",
+    "shape": [
+      5,
+      8
+    ]
+  },
+  {
+    "page": 8,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "VISIBLE SOILING",
+        "1": "COASTAL INCLUDING LAKES",
+        "2": "FULLY EXPOSED",
+        "3": "SCREEN PORCH",
+        "4": "UNDER ROOF COVER"
+      },
+      {
+        "0": "This weekend",
+        "1": "Every 2 Months",
+        "2": "Every 3 Months",
+        "3": "Every 6 Months",
+        "4": "Every 6 Months"
+      }
+    ],
+    "csv": "0,1,2,3,4\nVISIBLE SOILING,COASTAL INCLUDING LAKES,FULLY EXPOSED,SCREEN PORCH,UNDER ROOF COVER\nThis weekend,Every 2 Months,Every 3 Months,Every 6 Months,Every 6 Months\n",
+    "shape": [
+      2,
+      5
+    ]
+  }
+]

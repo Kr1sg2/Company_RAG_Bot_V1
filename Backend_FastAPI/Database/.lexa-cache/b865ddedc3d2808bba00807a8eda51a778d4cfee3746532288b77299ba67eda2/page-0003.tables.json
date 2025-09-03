@@ -1,0 +1,24 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Page 3 of 3"
+      },
+      {
+        "0": "7.76.2 Treasure Garden Snapshot"
+      },
+      {
+        "0": "11/07/2017"
+      }
+    ],
+    "csv": "0\nPage 3 of 3\n7.76.2 Treasure Garden Snapshot\n11/07/2017\n",
+    "shape": [
+      3,
+      1
+    ]
+  }
+]

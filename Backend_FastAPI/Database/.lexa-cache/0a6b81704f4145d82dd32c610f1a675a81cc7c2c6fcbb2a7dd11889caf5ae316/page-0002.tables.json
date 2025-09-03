@@ -1,0 +1,302 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 99.50946867861128,
+    "data": [
+      {
+        "0": "EASEL NAME",
+        "1": "Topper\nEasel Date Code",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "",
+        "1": "FRONT\nBACK\nFRONT\nBACK",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      {
+        "0": "Amelia Island Dining",
+        "1": "A",
+        "2": "D",
+        "3": "10/7/2024",
+        "4": "10/7/2024"
+      },
+      {
+        "0": "Amelia Island Seating",
+        "1": "A",
+        "2": "D",
+        "3": "10/7/2024",
+        "4": "10/7/2024"
+      },
+      {
+        "0": "Bermuda Seating",
+        "1": "A",
+        "2": "D",
+        "3": "5/15/2024",
+        "4": "9/10/2024"
+      },
+      {
+        "0": "Cabana Seating",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Charleston Bar & Counter",
+        "1": "A",
+        "2": "C",
+        "3": "8/1/2022",
+        "4": "8/1/2022"
+      },
+      {
+        "0": "Charleston Dining",
+        "1": "A",
+        "2": "C",
+        "3": "8/1/2022",
+        "4": "8/1/2022"
+      },
+      {
+        "0": "Charleston Seating",
+        "1": "A",
+        "2": "C",
+        "3": "8/1/2022",
+        "4": "8/1/2022"
+      },
+      {
+        "0": "Costa Seating",
+        "1": "A",
+        "2": "D",
+        "3": "4/15/2024",
+        "4": "9/19/2024"
+      },
+      {
+        "0": "Empire Bar & Counter",
+        "1": "D",
+        "2": "C",
+        "3": "6/27/2024",
+        "4": "6/27/2024"
+      },
+      {
+        "0": "Empire Bistro",
+        "1": "D",
+        "2": "C",
+        "3": "6/1/2023",
+        "4": "6/27/2024"
+      },
+      {
+        "0": "Empire High Back Dining",
+        "1": "D",
+        "2": "C",
+        "3": "6/1/2023",
+        "4": "6/27/2024"
+      },
+      {
+        "0": "Garden Terrace Dining",
+        "1": "A",
+        "2": "D",
+        "3": "12/14/2022",
+        "4": "12/14/2022"
+      },
+      {
+        "0": "Garden Terrace Seating",
+        "1": "A",
+        "2": "D",
+        "3": "12/14/2022",
+        "4": "12/14/2022"
+      },
+      {
+        "0": "Horizon Seating",
+        "1": "A",
+        "2": "D",
+        "3": "1/28/2025",
+        "4": "1/28/2025"
+      },
+      {
+        "0": "Kokomo Accessories",
+        "1": "A",
+        "2": "D",
+        "3": "2/28/2024",
+        "4": "2/28/2024"
+      },
+      {
+        "0": "Kokomo Contemporary",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Kokomo Dining",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Kokomo Seating",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Kokomo Stackable Bar & Counter",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Kokomo Stackable Dining",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Laguna Dining",
+        "1": "A",
+        "2": "A",
+        "3": "6/18/2024",
+        "4": "6/18/2024"
+      },
+      {
+        "0": "Laguna Seating",
+        "1": "A",
+        "2": "A",
+        "3": "6/18/2024",
+        "4": "6/18/2024"
+      },
+      {
+        "0": "Madeira Bar & Counter",
+        "1": "C",
+        "2": "C",
+        "3": "6/14/2024",
+        "4": "10/30/2024"
+      },
+      {
+        "0": "Madeira Dining",
+        "1": "C",
+        "2": "C",
+        "3": "6/14/2024",
+        "4": "10/30/2024"
+      },
+      {
+        "0": "Madeira Sling Seating",
+        "1": "C",
+        "2": "C",
+        "3": "11/3/2023",
+        "4": "10/30/2024"
+      },
+      {
+        "0": "Maldives Seating",
+        "1": "A",
+        "2": "D",
+        "3": "5/9/2024",
+        "4": "5/9/2024"
+      },
+      {
+        "0": "Maui Bar & Counter",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Maui Dining",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Maui Seating",
+        "1": "A",
+        "2": "D",
+        "3": "6/27/2023",
+        "4": "6/6/2023"
+      },
+      {
+        "0": "Reef Bar & Counter",
+        "1": "C",
+        "2": "C",
+        "3": "6/14/2024",
+        "4": "6/14/2024"
+      },
+      {
+        "0": "Reef Dining",
+        "1": "C",
+        "2": "C",
+        "3": "6/14/2024",
+        "4": "6/14/2024"
+      },
+      {
+        "0": "Retreat Seating",
+        "1": "A",
+        "2": "D",
+        "3": "6/1/2023",
+        "4": "6/1/2023"
+      },
+      {
+        "0": "Sanibel Dining",
+        "1": "A",
+        "2": "D",
+        "3": "8/23/2023",
+        "4": "8/23/2023"
+      },
+      {
+        "0": "Sanibel Seating",
+        "1": "A",
+        "2": "D",
+        "3": "8/23/2023",
+        "4": "8/23/2023"
+      },
+      {
+        "0": "St Martin Seating",
+        "1": "A",
+        "2": "D",
+        "3": "2/16/2024",
+        "4": "6/6/2023"
+      },
+      {
+        "0": "Surfside",
+        "1": "C",
+        "2": "C",
+        "3": "11/25/2024",
+        "4": "11/25/2024"
+      },
+      {
+        "0": "Trellis Bar & Counter",
+        "1": "C",
+        "2": "C",
+        "3": "5/9/2024",
+        "4": "5/9/2024"
+      },
+      {
+        "0": "Trellis Dining",
+        "1": "C",
+        "2": "A",
+        "3": "5/9/2024",
+        "4": "5/9/2024"
+      },
+      {
+        "0": "Umbrellas",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "9/23/2024"
+      }
+    ],
+    "csv": "0,1,2,3,4\nEASEL NAME,\"Topper\nEasel Date Code\",,,\n,\"FRONT\nBACK\nFRONT\nBACK\",,,\nAmelia Island Dining,A,D,10/7/2024,10/7/2024\nAmelia Island Seating,A,D,10/7/2024,10/7/2024\nBermuda Seating,A,D,5/15/2024,9/10/2024\nCabana Seating,A,D,6/1/2023,6/1/2023\nCharleston Bar & Counter,A,C,8/1/2022,8/1/2022\nCharleston Dining,A,C,8/1/2022,8/1/2022\nCharleston Seating,A,C,8/1/2022,8/1/2022\nCosta Seating,A,D,4/15/2024,9/19/2024\nEmpire Bar & Counter,D,C,6/27/2024,6/27/2024\nEmpire Bistro,D,C,6/1/2023,6/27/2024\nEmpire High Back Dining,D,C,6/1/2023,6/27/2024\nGarden Terrace Dining,A,D,12/14/2022,12/14/2022\nGarden Terrace Seating,A,D,12/14/2022,12/14/2022\nHorizon Seating,A,D,1/28/2025,1/28/2025\nKokomo Accessories,A,D,2/28/2024,2/28/2024\nKokomo Contemporary,A,D,6/1/2023,6/1/2023\nKokomo Dining,A,D,6/1/2023,6/1/2023\nKokomo Seating,A,D,6/1/2023,6/1/2023\nKokomo Stackable Bar & Counter,A,D,6/1/2023,6/1/2023\nKokomo Stackable Dining,A,D,6/1/2023,6/1/2023\nLaguna Dining,A,A,6/18/2024,6/18/2024\nLaguna Seating,A,A,6/18/2024,6/18/2024\nMadeira Bar & Counter,C,C,6/14/2024,10/30/2024\nMadeira Dining,C,C,6/14/2024,10/30/2024\nMadeira Sling Seating,C,C,11/3/2023,10/30/2024\nMaldives Seating,A,D,5/9/2024,5/9/2024\nMaui Bar & Counter,A,D,6/1/2023,6/1/2023\nMaui Dining,A,D,6/1/2023,6/1/2023\nMaui Seating,A,D,6/27/2023,6/6/2023\nReef Bar & Counter,C,C,6/14/2024,6/14/2024\nReef Dining,C,C,6/14/2024,6/14/2024\nRetreat Seating,A,D,6/1/2023,6/1/2023\nSanibel Dining,A,D,8/23/2023,8/23/2023\nSanibel Seating,A,D,8/23/2023,8/23/2023\nSt Martin Seating,A,D,2/16/2024,6/6/2023\nSurfside,C,C,11/25/2024,11/25/2024\nTrellis Bar & Counter,C,C,5/9/2024,5/9/2024\nTrellis Dining,C,A,5/9/2024,5/9/2024\nUmbrellas,,,,9/23/2024\n",
+    "shape": [
+      41,
+      5
+    ]
+  }
+]

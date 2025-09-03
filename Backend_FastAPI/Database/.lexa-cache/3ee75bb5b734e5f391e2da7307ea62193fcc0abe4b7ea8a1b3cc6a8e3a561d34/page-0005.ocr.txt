@@ -1,0 +1,17 @@
+Page 5 of 5 
+3.1.1 Convert an Opportunity or Quote to a Sale 
+12/5/2023 
+Quote to a Sales Order 
+1. From the NetSuite Dashboard, Guest Lookup 
+ 
+2. From the Guest Record in View mode Click the Sales tab and view the Transactions subtab 
+ 
+3. Select the Quote you would like to convert into a Sales Order by clicking the Date or Document 
+Number. 
+ 
+4. Click the button 
+ 
+ 
+5. The Quote will convert into a Sales Order and open in Edit mode.  Make sure the information is 
+correct and proceed with the transaction. 
+Note:  A Sales Order will not approve, reserve or order merchandise unless there is a deposit. 

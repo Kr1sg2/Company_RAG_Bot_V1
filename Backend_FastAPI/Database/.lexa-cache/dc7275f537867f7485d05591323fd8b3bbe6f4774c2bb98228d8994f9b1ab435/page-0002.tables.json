@@ -1,0 +1,119 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 80.87629624250329,
+    "data": [
+      {
+        "0": "How Funds Are Generated and Used",
+        "1": ""
+      },
+      {
+        "0": "Each retail location will accrue 5% of all delivery fees collected, to use toward donation and sponsorship requests.",
+        "1": ""
+      },
+      {
+        "0": "For example, for every $100 in In-Home Delivery Fees invoiced, you earn $5 for your showroom to use for Donations and",
+        "1": ""
+      },
+      {
+        "0": "sponsorships.",
+        "1": ""
+      },
+      {
+        "0": "How Much Has My Team Accrued To Give Back?",
+        "1": ""
+      },
+      {
+        "0": "You can see how much your team has accrued over a given time period by accessing the Advertising | Delivery Income",
+        "1": ""
+      },
+      {
+        "0": "by Location search in NetSuite.  This search will show you how much has been earned.  It will not tell you how much has",
+        "1": ""
+      },
+      {
+        "0": "already been used.",
+        "1": ""
+      },
+      {
+        "0": "1.",
+        "1": "Type \u201cAdvertising | Delivery Income by Location\u201d in the global search at the top of your NetSuite screen."
+      },
+      {
+        "0": "2.",
+        "1": "Set the date range you would like to search"
+      },
+      {
+        "0": "",
+        "1": "3.  Mulitply the total x .05 to calculate how much your team accrued to give back over the time period."
+      },
+      {
+        "0": "\u2713",
+        "1": "Funds will be added to the balance at the beginning of each quarter, based on the In-Home Delivery Fees from"
+      },
+      {
+        "0": "",
+        "1": "the prior quarter."
+      },
+      {
+        "0": "\u2713",
+        "1": "For Community Bank balance inquiries, contact Kimberly Sullivan (Kimberly.Sullivan@leadersfurniture.com)."
+      },
+      {
+        "0": "\u2713",
+        "1": "Funds not used by the end of the year will not roll over.  January 1st of the new year your store balance will start"
+      },
+      {
+        "0": "",
+        "1": "back at $0."
+      },
+      {
+        "0": "\u2713",
+        "1": "Showrooms are welcome to team up and spread the funds over multiple areas for a \u201cshared experience\u201d.  For"
+      },
+      {
+        "0": "",
+        "1": "example, if you are near another showroom and both would like to participate, both showrooms can split the"
+      },
+      {
+        "0": "",
+        "1": "donation."
+      },
+      {
+        "0": "How Do We Donate?",
+        "1": ""
+      },
+      {
+        "0": "\u2022",
+        "1": "Showroom Managers fill out the Donation / Sponsorship Request Form with as much information as possible so"
+      },
+      {
+        "0": "",
+        "1": "we can review for approval."
+      },
+      {
+        "0": "\u2022",
+        "1": "Decisions will typically be made within a week."
+      },
+      {
+        "0": "\u2022",
+        "1": "We are not able to fund or support individuals, family reunions, religious or political organizations, fraternities or"
+      },
+      {
+        "0": "",
+        "1": "sororities."
+      },
+      {
+        "0": "\u2022",
+        "1": "Email completed form and any additional pages or information to Kimberly.Sullivan@leadersfurniture.com."
+      }
+    ],
+    "csv": "0,1\nHow Funds Are Generated and Used,\n\"Each retail location will accrue 5% of all delivery fees collected, to use toward donation and sponsorship requests.\",\n\"For example, for every $100 in In-Home Delivery Fees invoiced, you earn $5 for your showroom to use for Donations and\",\nsponsorships.,\nHow Much Has My Team Accrued To Give Back?,\nYou can see how much your team has accrued over a given time period by accessing the Advertising | Delivery Income,\nby Location search in NetSuite.  This search will show you how much has been earned.  It will not tell you how much has,\nalready been used.,\n1.,Type \u201cAdvertising | Delivery Income by Location\u201d in the global search at the top of your NetSuite screen.\n2.,Set the date range you would like to search\n,3.  Mulitply the total x .05 to calculate how much your team accrued to give back over the time period.\n\u2713,\"Funds will be added to the balance at the beginning of each quarter, based on the In-Home Delivery Fees from\"\n,the prior quarter.\n\u2713,\"For Community Bank balance inquiries, contact Kimberly Sullivan (Kimberly.Sullivan@leadersfurniture.com).\"\n\u2713,Funds not used by the end of the year will not roll over.  January 1st of the new year your store balance will start\n,back at $0.\n\u2713,Showrooms are welcome to team up and spread the funds over multiple areas for a \u201cshared experience\u201d.  For\n,\"example, if you are near another showroom and both would like to participate, both showrooms can split the\"\n,donation.\nHow Do We Donate?,\n\u2022,Showroom Managers fill out the Donation / Sponsorship Request Form with as much information as possible so\n,we can review for approval.\n\u2022,Decisions will typically be made within a week.\n\u2022,\"We are not able to fund or support individuals, family reunions, religious or political organizations, fraternities or\"\n,sororities.\n\u2022,Email completed form and any additional pages or information to Kimberly.Sullivan@leadersfurniture.com.\n",
+    "shape": [
+      26,
+      2
+    ]
+  }
+]

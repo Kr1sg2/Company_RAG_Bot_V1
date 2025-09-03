@@ -1,0 +1,196 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 52.19394254298641,
+    "data": [
+      {
+        "0": "",
+        "1": "Do you know about Aluminum?",
+        "2": ""
+      },
+      {
+        "0": "Aluminum  is  the  most  abundant  metal  in  the  Earth\u2019s  crust  and  is  the  3rd  most  abundant  element on",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Earth after oxygen and silicon, making up about 8% by weight of the Earth\u2019s solid surface. Its remarkable",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "ability to resist corrosion and its low density make it a perfect material in the manufacturing of outdoor",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "furniture.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Is Aluminum Valuable?",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "Although Aluminum is the most abundant metallic element in the Earth\u2019s crust, it is",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "rare in its free form, and was once considered a precious metal more valuable than",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "gold.  The  Washington  monument  was  completed  with  an  aluminum  capstone  in",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "1884,  which  was  the  largest  single  piece  of  cast  aluminum  at  the  time  and  was",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "chosen because it was more expensive than silver, gold or platinum. Napoleon III,",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "the emperor of France, once gave a banquet where the most honored guests were",
+        "2": ""
+      },
+      {
+        "0": "given aluminum utensils, while  the others had to make  do with gold. While aluminum is still a valued",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "material due to its wide use in many industries, it has been produced in commercial quantities for just",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "over 100 years, no longer making it the precious metal that it once was.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "What is Special about Aluminum?",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Aluminum has a variety of special characteristics that make it",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "a  widely  used  material",
+        "1": "in  many",
+        "2": "industries  and  a  perfect"
+      },
+      {
+        "0": "material for outdoor furniture making.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "\uf0b7 \nIt \nis  durable  and",
+        "1": "lightweight,  making",
+        "2": "it  easy \nto"
+      }
+    ],
+    "csv": "0,1,2\n,Do you know about Aluminum?,\nAluminum  is  the  most  abundant  metal  in  the  Earth\u2019s  crust  and  is  the  3rd  most  abundant  element on,,\n\"Earth after oxygen and silicon, making up about 8% by weight of the Earth\u2019s solid surface. Its remarkable\",,\nability to resist corrosion and its low density make it a perfect material in the manufacturing of outdoor,,\nfurniture.,,\n,Is Aluminum Valuable?,\n,\"Although Aluminum is the most abundant metallic element in the Earth\u2019s crust, it is\",\n,\"rare in its free form, and was once considered a precious metal more valuable than\",\n,gold.  The  Washington  monument  was  completed  with  an  aluminum  capstone  in,\n,\"1884,  which  was  the  largest  single  piece  of  cast  aluminum  at  the  time  and  was\",\n,\"chosen because it was more expensive than silver, gold or platinum. Napoleon III,\",\n,\"the emperor of France, once gave a banquet where the most honored guests were\",\n\"given aluminum utensils, while  the others had to make  do with gold. While aluminum is still a valued\",,\n\"material due to its wide use in many industries, it has been produced in commercial quantities for just\",,\n\"over 100 years, no longer making it the precious metal that it once was.\",,\nWhat is Special about Aluminum?,,\nAluminum has a variety of special characteristics that make it,,\na  widely  used  material,in  many,industries  and  a  perfect\nmaterial for outdoor furniture making.,,\n\"\uf0b7 \nIt \nis  durable  and\",\"lightweight,  making\",\"it  easy \nto\"\n",
+    "shape": [
+      20,
+      3
+    ]
+  },
+  {
+    "page": 1,
+    "table_index": 1,
+    "method": "stream",
+    "accuracy": 89.02977123496002,
+    "data": [
+      {
+        "0": "What is Special about Aluminum?",
+        "1": ""
+      },
+      {
+        "0": "Aluminum has a variety of special characteristics that make it",
+        "1": ""
+      },
+      {
+        "0": "a  widely  used  material",
+        "1": "in  many \nindustries  and  a  perfect"
+      },
+      {
+        "0": "material for outdoor furniture making.",
+        "1": ""
+      },
+      {
+        "0": "\uf0b7",
+        "1": "It \nis  durable  and \nlightweight,  making \nit  easy \nto"
+      },
+      {
+        "0": "",
+        "1": "manage and transport."
+      },
+      {
+        "0": "\uf0b7",
+        "1": "Aluminum is approximately one-third the density and"
+      },
+      {
+        "0": "",
+        "1": "stiffness  of  steel;  making \nit  soft  enough  to  bend,"
+      },
+      {
+        "0": "",
+        "1": "machine,  cast  and  weld \ninto  desired  shapes  when"
+      },
+      {
+        "0": "",
+        "1": "heated.  Once cooled Aluminum becomes more rigid and strong enough to bear weight without"
+      },
+      {
+        "0": "",
+        "1": "breaking."
+      },
+      {
+        "0": "\uf0b7",
+        "1": "Aluminum\u2019s  remarkable  ability  to  resist  corrosion  is  due  to  a  thin  surface  layer  of  aluminum"
+      },
+      {
+        "0": "",
+        "1": "oxide that forms when the metal is exposed to air, effectively preventing further oxidation. This"
+      },
+      {
+        "0": "",
+        "1": "corrosion resistance means that it will not rust and will maintain its structural integrity for years"
+      },
+      {
+        "0": "",
+        "1": "in tough outdoor environments."
+      },
+      {
+        "0": "\uf0b7",
+        "1": "Aluminum is a non-ferrous metal, meaning that it contains no iron and is not magnetic and will"
+      },
+      {
+        "0": "",
+        "1": "not spark."
+      }
+    ],
+    "csv": "0,1\nWhat is Special about Aluminum?,\nAluminum has a variety of special characteristics that make it,\na  widely  used  material,\"in  many \nindustries  and  a  perfect\"\nmaterial for outdoor furniture making.,\n\uf0b7,\"It \nis  durable  and \nlightweight,  making \nit  easy \nto\"\n,manage and transport.\n\uf0b7,Aluminum is approximately one-third the density and\n,\"stiffness  of  steel;  making \nit  soft  enough  to  bend,\"\n,\"machine,  cast  and  weld \ninto  desired  shapes  when\"\n,heated.  Once cooled Aluminum becomes more rigid and strong enough to bear weight without\n,breaking.\n\uf0b7,Aluminum\u2019s  remarkable  ability  to  resist  corrosion  is  due  to  a  thin  surface  layer  of  aluminum\n,\"oxide that forms when the metal is exposed to air, effectively preventing further oxidation. This\"\n,corrosion resistance means that it will not rust and will maintain its structural integrity for years\n,in tough outdoor environments.\n\uf0b7,\"Aluminum is a non-ferrous metal, meaning that it contains no iron and is not magnetic and will\"\n,not spark.\n",
+    "shape": [
+      17,
+      2
+    ]
+  }
+]

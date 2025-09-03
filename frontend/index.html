@@ -2,12 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Lexa</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Expose Vite env to plain HTML (Vite will replace %VITE_*% at build time) -->
+    <script>
+      // If %VITE_API_BASE% isn't defined at build time, we'll fall back to /api.
+      window.VITE_API_BASE = '%VITE_API_BASE%';
+    </script>
+
+    <!-- Optional head bootstrap: fetch branding early to avoid FOUC -->
+    <script>
+      (function () {
+        try {
+          var apiBase =
+            (window.VITE_API_BASE && window.VITE_API_BASE !== '%VITE_API_BASE%')
+              ? window.VITE_API_BASE
+              : '/api';
+
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', apiBase + '/admin/settings/public/branding', false); // sync to style before first paint
+          xhr.withCredentials = true;
+          xhr.send(null);
+
+          if (xhr.status >= 200 && xhr.status < 300) {
+            var b = JSON.parse(xhr.responseText);
+
+            // Title
+            if (b.companyName) document.title = b.companyName;
+
+            // Favicon
+            if (b.faviconUrl) {
+              var link = document.querySelector('link[rel="icon"]') || document.createElement('link');
+              link.rel = 'icon';
+              link.href = b.faviconUrl;
+              document.head.appendChild(link);
+            }
+
+            // Quick CSS variables + optional background
+            var css = ':root{';
+            if (b.primaryColor) css += '--brand-primary:' + b.primaryColor + ';';
+            if (b.accentColor)  css += '--brand-accent:' + b.accentColor + ';';
+            css += '}';
+            if (b.pageBackgroundUrl) {
+              css += 'body{background-image:url("' +
+                     String(b.pageBackgroundUrl).replace(/"/g, '\\"') +
+                     '");background-size:cover;background-attachment:fixed;}';
+            }
+
+            var style = document.createElement('style');
+            style.setAttribute('data-branding', 'true');
+            style.textContent = css;
+            document.head.appendChild(style);
+          }
+        } catch (e) {
+          // No-op: the app will fetch branding again inside React.
+        }
+      })();
+    </script>
   </head>
+
   <body>
+    <noscript>Enable JavaScript to use this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+

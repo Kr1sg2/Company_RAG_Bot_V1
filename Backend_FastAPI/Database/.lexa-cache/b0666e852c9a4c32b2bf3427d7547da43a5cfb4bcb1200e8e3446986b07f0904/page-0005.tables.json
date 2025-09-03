@@ -1,0 +1,117 @@
+[
+  {
+    "page": 5,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Safety"
+      },
+      {
+        "0": "Use of umbrellas in need of care and maintenance, use of umbrellas not secure in"
+      },
+      {
+        "0": "their base, or use of damaged umbrellas can result in injury.  Minor repair issues, if"
+      },
+      {
+        "0": "unaddressed, can become major repair and service issues that can create potential"
+      },
+      {
+        "0": "safety issues."
+      },
+      {
+        "0": "Check to ensure your umbrella is secure in it's base before each use.  Never use an"
+      },
+      {
+        "0": "umbrella in windy conditions."
+      }
+    ],
+    "csv": "0\nSafety\n\"Use of umbrellas in need of care and maintenance, use of umbrellas not secure in\"\n\"their base, or use of damaged umbrellas can result in injury.  Minor repair issues, if\"\n\"unaddressed, can become major repair and service issues that can create potential\"\nsafety issues.\nCheck to ensure your umbrella is secure in it's base before each use.  Never use an\numbrella in windy conditions.\n",
+    "shape": [
+      7,
+      1
+    ]
+  },
+  {
+    "page": 5,
+    "table_index": 1,
+    "method": "stream",
+    "accuracy": 87.66889561063215,
+    "data": [
+      {
+        "0": "safety issues.",
+        "1": ""
+      },
+      {
+        "0": "Check to ensure your umbrella is secure in it's base before each use.  Never use an",
+        "1": ""
+      },
+      {
+        "0": "umbrella in windy conditions.",
+        "1": ""
+      },
+      {
+        "0": "\u2713",
+        "1": "Close and store the umbrella in windy conditions or when a storm"
+      },
+      {
+        "0": "",
+        "1": "approaches.  Never allow the umbrella to flap in the wind; this could cause personal injury,"
+      },
+      {
+        "0": "",
+        "1": "damage to personal property, and damage to the umbrella."
+      },
+      {
+        "0": "",
+        "1": "\u2713  Do not use tilting functions during breezy, gusty or windy conditions."
+      },
+      {
+        "0": "\u2713",
+        "1": "Keep the umbrella secured to the umbrella base at all times."
+      },
+      {
+        "0": "",
+        "1": "\u2713  Do not leave an open umbrella unattended."
+      },
+      {
+        "0": "",
+        "1": "\u2713  When adjusting the umbrella, ensure that no person(s), item(s), or personal"
+      },
+      {
+        "0": "",
+        "1": "property are close to the umbrella.  This is important to prevent injury or"
+      },
+      {
+        "0": "",
+        "1": "material damage."
+      },
+      {
+        "0": "",
+        "1": "\u2713  Do not allow children to play on or with an umbrella or umbrella base."
+      },
+      {
+        "0": "",
+        "1": "\u2713  When adjusting or assembling the umbrella or umbrella base, ensure fingers,"
+      },
+      {
+        "0": "",
+        "1": "toes or any other body parts are clear from moving parts.  Failing to do so many result in serious"
+      },
+      {
+        "0": "",
+        "1": "injury"
+      },
+      {
+        "0": "",
+        "1": "\u2713  Always lower and tie umbrellas shut when unattended."
+      }
+    ],
+    "csv": "0,1\nsafety issues.,\nCheck to ensure your umbrella is secure in it's base before each use.  Never use an,\numbrella in windy conditions.,\n\u2713,Close and store the umbrella in windy conditions or when a storm\n,\"approaches.  Never allow the umbrella to flap in the wind; this could cause personal injury,\"\n,\"damage to personal property, and damage to the umbrella.\"\n,\"\u2713  Do not use tilting functions during breezy, gusty or windy conditions.\"\n\u2713,Keep the umbrella secured to the umbrella base at all times.\n,\u2713  Do not leave an open umbrella unattended.\n,\"\u2713  When adjusting the umbrella, ensure that no person(s), item(s), or personal\"\n,property are close to the umbrella.  This is important to prevent injury or\n,material damage.\n,\u2713  Do not allow children to play on or with an umbrella or umbrella base.\n,\"\u2713  When adjusting or assembling the umbrella or umbrella base, ensure fingers,\"\n,toes or any other body parts are clear from moving parts.  Failing to do so many result in serious\n,injury\n,\u2713  Always lower and tie umbrellas shut when unattended.\n",
+    "shape": [
+      17,
+      2
+    ]
+  }
+]

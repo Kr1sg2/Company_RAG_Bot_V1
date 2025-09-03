@@ -1,0 +1,36 @@
+[
+  {
+    "page": 4,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "Search Results"
+      },
+      {
+        "0": "The search results for Collection \u201cMadeira\u201d look like the following.  Can you identify the Base"
+      },
+      {
+        "0": "SKU?  It has a SKU with no options and there are not options pictures.  See the red highlight in"
+      },
+      {
+        "0": "the image below."
+      },
+      {
+        "0": "Page 4 of 12"
+      },
+      {
+        "0": "1.2 NetSuite Check Stock, Look Up Product.docx"
+      },
+      {
+        "0": "8/20/2019"
+      }
+    ],
+    "csv": "0\nSearch Results\nThe search results for Collection \u201cMadeira\u201d look like the following.  Can you identify the Base\nSKU?  It has a SKU with no options and there are not options pictures.  See the red highlight in\nthe image below.\nPage 4 of 12\n\"1.2 NetSuite Check Stock, Look Up Product.docx\"\n8/20/2019\n",
+    "shape": [
+      7,
+      1
+    ]
+  }
+]

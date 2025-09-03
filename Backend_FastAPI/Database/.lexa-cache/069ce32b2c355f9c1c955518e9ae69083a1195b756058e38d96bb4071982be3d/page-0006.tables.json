@@ -1,0 +1,31 @@
+[
+  {
+    "page": 6,
+    "table_index": 2,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "Field",
+        "1": "What is it"
+      },
+      {
+        "0": "COM Yardage",
+        "1": "Number of yards of fabric needed if a customer would like to supply their own \nfabric"
+      },
+      {
+        "0": "Overall Dimensions",
+        "1": "Height, Width, Depth, Seat Height, Arm Height, Weight"
+      },
+      {
+        "0": "Weight",
+        "1": "Weight of the complete item not packaged for shipping"
+      }
+    ],
+    "csv": "0,1\nField,What is it\nCOM Yardage,\"Number of yards of fabric needed if a customer would like to supply their own \nfabric\"\nOverall Dimensions,\"Height, Width, Depth, Seat Height, Arm Height, Weight\"\nWeight,Weight of the complete item not packaged for shipping\n",
+    "shape": [
+      4,
+      2
+    ]
+  }
+]

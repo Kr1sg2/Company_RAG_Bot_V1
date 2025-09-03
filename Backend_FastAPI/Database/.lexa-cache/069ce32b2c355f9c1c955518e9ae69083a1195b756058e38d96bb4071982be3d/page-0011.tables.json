@@ -1,0 +1,83 @@
+[
+  {
+    "page": 11,
+    "table_index": 0,
+    "method": "lattice",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "",
+        "1": "What?",
+        "2": ""
+      },
+      {
+        "0": "1",
+        "1": "Locations Filter",
+        "2": "Change your view to only include the transfers for a single location"
+      },
+      {
+        "0": "2",
+        "1": "Transfer information",
+        "2": "A table of the details of pending transfers"
+      }
+    ],
+    "csv": "0,1,2\n,What?,\n1,Locations Filter,Change your view to only include the transfers for a single location\n2,Transfer information,A table of the details of pending transfers\n",
+    "shape": [
+      3,
+      3
+    ]
+  },
+  {
+    "page": 11,
+    "table_index": 1,
+    "method": "lattice",
+    "accuracy": 99.99999999999997,
+    "data": [
+      {
+        "0": "Column Headers",
+        "1": "What it means\u2026"
+      },
+      {
+        "0": "Date",
+        "1": "Date the record was created"
+      },
+      {
+        "0": "Type",
+        "1": "The record type of the row"
+      },
+      {
+        "0": "Document Number",
+        "1": "The transfer record number"
+      },
+      {
+        "0": "From Physical Location",
+        "1": "The physical location the item is going to leave from"
+      },
+      {
+        "0": "To Physical Location",
+        "1": "The physical location the item is going to"
+      },
+      {
+        "0": "Created By",
+        "1": "The user that created the record"
+      },
+      {
+        "0": "Date Created",
+        "1": "The date and time the record was created"
+      },
+      {
+        "0": "Status",
+        "1": "Pending Fulfillment \u2013 Item has not started to transfer \nPending Receipt \u2013 Item is in transit"
+      },
+      {
+        "0": "Quantity",
+        "1": "The number of items to be transferred.  This number will show \nnegative because you are moving inventory out of its existing \nlocation"
+      }
+    ],
+    "csv": "0,1\nColumn Headers,What it means\u2026\nDate,Date the record was created\nType,The record type of the row\nDocument Number,The transfer record number\nFrom Physical Location,The physical location the item is going to leave from\nTo Physical Location,The physical location the item is going to\nCreated By,The user that created the record\nDate Created,The date and time the record was created\nStatus,\"Pending Fulfillment \u2013 Item has not started to transfer \nPending Receipt \u2013 Item is in transit\"\nQuantity,\"The number of items to be transferred.  This number will show \nnegative because you are moving inventory out of its existing \nlocation\"\n",
+    "shape": [
+      10,
+      2
+    ]
+  }
+]
