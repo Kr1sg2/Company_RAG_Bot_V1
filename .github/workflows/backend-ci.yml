@@ -1,0 +1,62 @@
+name: Backend CI
+
+on:
+  push:
+    paths:
+      - 'backend/**'
+      - 'infra/docker/backend.Dockerfile'
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+  pull_request:
+    paths:
+      - 'backend/**'
+      - 'infra/docker/backend.Dockerfile'
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11']
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Cache pip dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt', '**/pyproject.toml') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install tooling
+      run: |
+        pip install --upgrade pip
+        pip install ruff black pytest
+
+    - name: Install backend dependencies
+      run: |
+        if [ -f backend/requirements.txt ]; then
+          pip install -r backend/requirements.txt
+        elif [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        elif [ -f pyproject.toml ]; then
+          pip install -e .
+        fi
+
+    - name: Run linters
+      run: |
+        ruff check .
+        black --check .
+
+    - name: Run tests
+      if: ${{ hashFiles('backend/**') != '' }}
+      run: pytest -q backend

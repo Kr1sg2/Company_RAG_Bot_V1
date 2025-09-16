@@ -1,0 +1,30 @@
+name: Weekly dependency audit (non-blocking)
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Weekly on Monday at 9 AM UTC
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Node.js security audit
+      if: ${{ hashFiles('frontend/package.json') != '' }}
+      run: |
+        cd frontend
+        npm ci
+        npm audit --audit-level=high || true
+      continue-on-error: true
+
+    - name: Python security audit
+      run: |
+        python -m pip install --upgrade pip
+        pip install safety || true
+        safety check || true
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}

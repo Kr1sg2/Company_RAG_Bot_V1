@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: infra/docker/backend.Dockerfile
+    container_name: company_rag_backend
+    ports:
+      - "8601:8601"
+    env_file:
+      - ../.env
+    volumes:
+      - chroma_db:/app/backend/chroma_db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8601/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: infra/docker/frontend.Dockerfile
+    container_name: company_rag_frontend
+    ports:
+      - "8082:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    environment:
+      VITE_API_BASE: /api
+
+volumes:
+  chroma_db:
