@@ -1,0 +1,36 @@
+# Production Docker Compose Configuration
+# Replace OWNER_REPO_LOWER with your actual repository path in lowercase
+# e.g., kr1sg2/company_rag_bot_v1
+
+version: '3.8'
+
+services:
+  backend:
+    # Replace ${OWNER_REPO_LOWER} with your repo (e.g., kr1sg2/company_rag_bot_v1)
+    image: ghcr.io/${OWNER_REPO_LOWER}/backend:latest
+    container_name: company_rag_backend
+    ports:
+      - "8601:8601"
+    env_file:
+      - .env
+    volumes:
+      - chroma_db:/app/backend/chroma_db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8601/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    # Replace ${OWNER_REPO_LOWER} with your repo (e.g., kr1sg2/company_rag_bot_v1)
+    image: ghcr.io/${OWNER_REPO_LOWER}/frontend:latest
+    container_name: company_rag_frontend
+    ports:
+      - "8082:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  chroma_db:
