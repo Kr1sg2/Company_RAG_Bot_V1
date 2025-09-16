@@ -29,3 +29,5 @@ uploads/
 backups/
 *.bak
 *.backup
+# legacy
+Frontend_Old_20250827_2119/
