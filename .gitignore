@@ -2,6 +2,7 @@
 .env
 .env.*
 .env.*.local
+!.env.example
 *.env
 # db/vector
 backend/chroma_db/
@@ -28,3 +29,5 @@ uploads/
 backups/
 *.bak
 *.backup
+# legacy
+Frontend_Old_20250827_2119/
