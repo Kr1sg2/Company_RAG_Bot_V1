@@ -1,0 +1,24 @@
+Page 1 of 5 
+2.2.0 Make Deposit Reconcile Cash 
+7/6/2019 
+ 
+ 
+Reconcile the Cash Drawer / Make a Deposit 
+Stores teams are responsible for reconciling their cash drawer and making a deposit every night.  The 
+team that comes in the morning should count the cash drawer to confirm it is correct from the night 
+before and take accountability for it.  If the store team fails to keep a record of accountability the 
+manager will be responsible for any lost funds.   
+Note:  The Deposit Form must be set up to only see your stores deposits.  If you do not set up the form 
+you will see the deposits for the entire organization.  Instruction on setting up the form can be 
+found in the 0.16 Standard NetSuite Configuration Set Preferences or the last section of this 
+procedure. 
+Table of Contents 
+Reviewing Received Funds by Payment Type ............................................................................................... 2 
+Cash Drawer Reconciliation .......................................................................................................................... 3 
+Making a Deposit .......................................................................................................................................... 4 
+Deposit Slips .............................................................................................................................................. 4 
+Deposit Bag (When making a night deposit) ............................................................................................ 5 
+ 
+ 
+ 
+ 

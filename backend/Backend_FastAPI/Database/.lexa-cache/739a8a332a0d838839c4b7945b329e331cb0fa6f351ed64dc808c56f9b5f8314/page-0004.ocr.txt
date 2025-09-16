@@ -1,0 +1,64 @@
+Page 4 of 6 
+0.13 Stages of a Customer, CRM Pipeline 
+8/17/2021 
+Quote 
+A customer that is at Quote stage is very close to buying.  Quotes can be made for 
+Guests or for existing customer records.  A Quote is a detailed outline of a potential 
+transaction.  The only thing left would be final confirmation from the customer and a 
+deposit.  Quotes will not need to be re-entered in the system and can be easily turned 
+into a sales order.  Quotes do not reserve inventory. 
+✓ 
+Primary Information Tab 
+o 
+Update the sales rep number 
+o 
+Split the sale and add a second sales rep  
+o 
+Status 
+✓ 
+Items Tab 
+o 
+Add or edit line items of product 
+✓ 
+Shipping Tab 
+o 
+Select the delivery method 
+✓ 
+Communications Tab  
+o 
+Select an automatic message to be added to quotes that are 
+sent 
+o 
+View communication history between the guest and leaders 
+Sales Order 
+A guest that has a Sales Order turns into a Customer.  A Sales Order is a record of what a Guest would like to order that creates firm product 
+reservations against our inventory.  Once a Sales Order is saved it reserves stock merchandise or flags the purchasing department to order 
+merchandise that is needed to fulfill the order.  The product lines on saved Sales Orders can be edited till close of business the day they are 
+written.  The following fields must be completed to finalize and save a Sales Order. 
+✓ 
+Sales Information Tab 
+o 
+Update the sales rep number 
+o 
+Split the sale and add a second sales rep  
+✓ 
+1. Item Tab 
+o 
+Add or edit line items of product 
+✓ 
+2. Shipping/Billing  
+o 
+Enter a new or select an existing delivery address  
+o 
+Select a deliver method 
+o 
+Enter a new or select a billing address 
+✓ 
+3. Customer Signature 
+o 
+Capture the guests signature digitally by them typing their initials or using the mouse 
+Invoice 
+An Invoice is a record showing the final balance on products that are fulfilled.  Leaders policy is to collect the balance before 
+delivery.  Invoices should always show a zero balance unless the invoice will be paid with an approved finance application.  
+ 
+ 

@@ -1,0 +1,24 @@
+Page 1 of 9 
+0.01 Finding Information and Searching the R Drive 
+8/17/2021 
+ 
+Finding and Searching the Knowledge Base 
+At Leader’s Holding Company® and its divisions, information is priceless in training successful people and 
+creating successful teams.  Our guests will receive the best service when we provide the best training 
+and ongoing access to knowledge.  We believe great information should be easily accessible and 
+available to all. 
+In this section we will cover fundamental skills to find and search Leader’s knowledge base. 
+ 
+Table of Contents 
+Network drives .............................................................................................................................................. 2 
+Accessing the drives .................................................................................................................................. 2 
+Stores R: .................................................................................................................................................... 2 
+Quick Search & Control <F> .......................................................................................................................... 3 
+Searching the R: Drive | A Network Drive .................................................................................................... 4 
+What is a Path? ............................................................................................................................................. 9 
+Where is a Path Located? ............................................................................................................................. 9 
+Windows File Explorer .............................................................................................................................. 9 
+Google Chrome .......................................................................................... Error! Bookmark not defined. 
+ 
+ 
+ 

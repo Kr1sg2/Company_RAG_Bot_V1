@@ -1,0 +1,16 @@
+Page 5 of 7 
+5.10 Exchanges Returns Credits Restocking.docx 
+6/14/2024 
+Entering Stand Alone Return Authorization 
+Original Sales Order Not In NetSuite 
+A Stand Alone Return Authorization is used when you are processing a return or exchange for 
+product where the original sales order was not written in NetSuite.   
+1. To begin a new Stand Alone Return Authorization, type “Issue Return Authorizations” into the 
+Global Search Bar, and select the option that comes up. 
+ 
+ 
+2. You will then be brought to the Stand Alone Return Authorization Form where you will: 
+a. Verify the customer Name and account number 
+b. Select the return type 
+c. Select the return method.  
+ 

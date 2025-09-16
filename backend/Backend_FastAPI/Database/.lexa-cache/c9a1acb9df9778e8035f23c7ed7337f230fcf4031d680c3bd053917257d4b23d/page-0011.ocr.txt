@@ -1,0 +1,24 @@
+Page 11 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+3  Send/Email Pertinent Ownership Information – Attach Ownership Packet 
+ 
+Subject: Leaders:  Ownership Information 
+ 
+ 
+${customer.firstname}${customer.companyname},  
+Thank you for giving us the opportunity to create a beautiful space for you.  It’s been a few days and we 
+wanted to ensure you have everything you need to help make an informed decision.  I have attached the 
+care and maintenance packet for the items you are considering. 
+ 
+We hope this helps and I am happy to answer any additional questions. 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your business, 
+ 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to 
+anyone who would benefit from our service. 
+ 
+ 
+ 

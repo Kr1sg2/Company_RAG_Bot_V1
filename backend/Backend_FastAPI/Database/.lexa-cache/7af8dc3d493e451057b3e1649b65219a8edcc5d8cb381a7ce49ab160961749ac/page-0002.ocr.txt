@@ -1,0 +1,32 @@
+Page 2 of 3 
+0.14 Managing The Browser Window and Tabs 
+6/9/2019 
+What is a Browser Tab 
+A browser tab allows you to open multiple web pages in a single browser to help prevent cluttering your 
+desktop.  Mastering tabbed browsing will make you a more efficient computer user helping you to help 
+guests faster and more efficiently, helping you to sell more. 
+ 
+In this example there are three browser tabs 
+ 
+Open In a New Window 
+To maximize your efficiency, you can elect to open information in a new browser tab instead of losing 
+your place and writing over the existing tab.   
+Opening a New Browser Tab. 
+To open a new browser tab, click the 
+ next to the last tab in the browser.  This will give you new 
+blank window to search for information or a website on the internet.   
+ 
+ 
+Opening a Link in a New Browser Tab 
+It is helpful to open a link in a new window so you can reference more than one thing at a time.  For 
+instance, if you have a Customer Record open and you want to reference and item you can open the 
+Product Look-Up link in a new window instead of navigating away from the Customer Record.  This can 
+be done one of two ways 
+Click the Scroll Wheel on the Mouse 
+Most computer mice are equipped with a scroll wheel between the left 
+and right buttons.  Simply scroll over the link you would like to open and 
+click the scroll wheel.  The link will open in a new window.   
+Right Click 
+If your mouse does not have a scroll wheel you can right click the link and choose “Open in a new 
+tab.”  Using this method, you can choose to “Open in a new Window” which will allow you to open 
+the link in a completely new web browser. 

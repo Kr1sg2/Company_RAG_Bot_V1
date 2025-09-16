@@ -1,0 +1,36 @@
+ 
+Page 3 of 5 
+5.1 How to use the PAX credit card reader.docx 
+5/3/2024 
+Printing Preferences 
+Printing preferences can be set to the following methods.  Leaders would prefer it be set to No Receipt.  
+Receipts can always be printed out of NetSuite if the customer would like a paper copy.  Remember, 
+NetSuite automatically emails a receipt to the guest after a deposit is taken on a new sale.   
+1. Open the pay guardian app 
+2. Clicking the three dots in the top right of the screen 
+3. Click “Toggle Printer” 
+a. If your device says “Set Image” and not “Toggle Printer,” contact IT immediately to 
+prevent future errors.  Your device needs an update.  (727) 254-5550 
+Printing Method 
+Result 
+No Receipt 
+No copies printed (Preferred) 
+Merchant Copy 
+A printed receipt for Leaders Only (Never a need for this) 
+Customer Copy Only 
+A printed copy for the customer only 
+Merchant and Customer Copy 
+A printed copy for the customer and Leaders 
+Manual Batch Close 
+From the Pax terminal 
+1. Click and open the Bridgepay App 
+2. Tap Function 
+3. Tap Batch 
+Re-Booting the Terminal 
+If your Pax is not taking payments) try rebooting. 
+1. Press and holding the Red X until the screen says restart  
+2. Tap restart on the screen 
+3. After the device finishes its reboot process try to take the payment again. If it is still not taking 
+payments email (it@leadersfurniture.com) for assistance. 
+ 
+ 

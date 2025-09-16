@@ -1,0 +1,35 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.00000000000001,
+    "data": [
+      {
+        "0": "Learning Ladder",
+        "1": ""
+      },
+      {
+        "0": "Take it to the next level!",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "Page 1 of 1"
+      },
+      {
+        "0": "",
+        "1": "0.01a Learning Ladder.docx"
+      },
+      {
+        "0": "",
+        "1": "9/17/2021"
+      }
+    ],
+    "csv": "0,1\nLearning Ladder,\nTake it to the next level!,\n,Page 1 of 1\n,0.01a Learning Ladder.docx\n,9/17/2021\n",
+    "shape": [
+      5,
+      2
+    ]
+  }
+]

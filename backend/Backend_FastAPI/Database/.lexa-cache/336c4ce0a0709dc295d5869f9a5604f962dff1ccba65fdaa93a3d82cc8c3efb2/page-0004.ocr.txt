@@ -1,0 +1,26 @@
+Page 4 of 9 
+Solutions Center Dashboard and KPIs 
+5/30/2022 
+Reminders 
+All team members should set this list to not show a reminder with Zero results.  Setting reminders this way makes it a 
+“to-do list,” alerting agents of tasks they need to complete.  Please ask for help if your reminders list is showing Zeros. 
+Reminders on the reminders list show a Solutions Team member exactly which case needs attention and why.  The 
+reminders list will direct the Solutions Team through the most efficient day possible.   
+ 
+ 
+Solutions | Escalated Cases 
+Criteria:  
+Case(s) with Escalated Priority, regardless of who the case is assigned to. 
+Goal:  
+Alert the entire team of an escalated case so that any available solutions team member can take more 
+immediate action. 
+Solutions | My Cases to Respond To 
+Criteria:  
+Case(s) assigned to the user in which the system shows no response to an incoming customer or store inquiry 
+about the case.   
+Goal:  
+Alert the assigned team member that an inquiry has been made on one of their cases and we need to reply.  If we 
+do not reply directly to the customer through NetSuite, when we add notes to the case, uncheck the ‘Internal 
+Only’ box so that the system knows we have had external communication regarding the case with the guest. 
+ 
+ 

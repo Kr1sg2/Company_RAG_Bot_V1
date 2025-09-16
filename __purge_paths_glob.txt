@@ -1,0 +1,37 @@
+# Env files anywhere
+*.env
+.env
+.env.*
+**/.env
+**/.env.*
+Backend_FastAPI/.env*
+backend/.env*
+frontend/.env*
+
+# Chroma DB and bad snapshots
+Backend_FastAPI/chroma_db/**
+backend/chroma_db/**
+chroma_db/**
+Backend_FastAPI/chroma_db.bad-*/**
+
+# SQLite/DB artifacts anywhere
+*.sqlite
+*.sqlite3
+*.db
+
+# Virtualenvs / caches
+venv/**
+.venv/**
+Backend_FastAPI/venv/**
+Backend_FastAPI/.venv/**
+backend/venv/**
+backend/.venv/**
+**/__pycache__/**
+
+# Backups, dumps, model blobs
+backups/**
+*.bak
+*.backup
+*.gguf
+*.bin
+*.pt

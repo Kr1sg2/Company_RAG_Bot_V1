@@ -1,0 +1,27 @@
+Page 17 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+Products Tab 
+This tab helps you see our stock of fabric.  More advanced users like to keep track of our fabric stock to 
+make sure there is enough fabric for their order.  This is not necessary; however, we have provided the 
+data.  It is very rare that we are out of a fabric. 
+ 
+Fabric Inventory 
+✓ Shows the estimated yards we have on hand of each fabric 
+Central | Open Orders By Yard 
+✓ This is a report that can be searched by fabric name or number to see how many yards are 
+needed to produce unmade orders.   
+ 
+If the Central | Open Orders by Yard is greater than the Fabric Inventory Yards on Hand (Estimated) 
+amount, we may run out of fabric for your order.  You can drill down further by looking up the incoming 
+purchase order of the fabric you are researching.   
+ 
+Type the fabric number you are looking for in the global search at the top of the window, followed by a 
+“-“.  For example: o4099- 
+ 
+Solutions Center Tab 
+ 
+ 
+The Solutions Center Tab gives a quick overview of your team's open case.  You can click on any of the 
+lines on the screen to see a summary of your location's open cases, the case status, the last time the 
+case was looked at and who is assigned to the case.   

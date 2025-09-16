@@ -1,0 +1,96 @@
+Page 1 of 2 
+12.19a Transfer Worksheet ANSWERS.docx 
+01/15/2018 
+ 
+Transfer Worksheet 
+1. Match the store with its’ Abbreviation by entering the correct three letter code into the box 
+next to the location name. 
+Bradenton 
+BRD 
+ 
+VER 
+Brandon 
+BRN 
+ 
+TAM 
+Casselberry 
+CAS 
+ 
+WPB 
+Clearwater 
+CLW 
+ 
+LAK 
+Delray 
+DEL 
+ 
+DEL 
+East Orlando 
+EOR 
+ 
+SNP 
+Fort Myers  
+FTM 
+ 
+SAR 
+Lakeland 
+LAK 
+ 
+CAS 
+Naples 
+NPL 
+ 
+WHS 
+Naples South 
+SNP 
+ 
+FTM 
+Palm Harbor 
+PMH 
+ 
+BRD 
+Port Charlotte 
+PTC 
+ 
+CLW 
+Saint Petersburg 
+STP 
+ 
+EOR 
+Sarasota 
+SAR 
+ 
+STP 
+Spring Hill 
+SPH 
+ 
+BRN 
+Tampa 
+TAM 
+ 
+NPL 
+West Palm Beach 
+WPB 
+ 
+PTC 
+Warehouse 
+WHS 
+ 
+PMH 
+Vero 
+VER 
+ 
+SPH 
+2. If I print a transfer waiting list before the warehouse has sent me my transfer numbers 
+a. It doesn’t matter, all is well 
+b. I will not get any of the items I printed unless I notify the warehouse office 
+c. The items on the list will transfer to another store 
+d. FROG will send me double of every item 
+3. For an invoice to transfer to the store 
+a. The sale type must be “2” (CPU) 
+b. There must be a firm delivery date, not an estimated delivery date 
+c. The “Deliver From” must be your store’s location 
+d. All items must be linked to stock in the company 
+e. All of the above 
+ 
+ 

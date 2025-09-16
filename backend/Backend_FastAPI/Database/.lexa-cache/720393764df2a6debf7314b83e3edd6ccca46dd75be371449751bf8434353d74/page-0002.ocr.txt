@@ -1,0 +1,21 @@
+ 
+Page 2 of 5 
+0.10 Introduction to NetSuite 
+9/23/2022 
+Logging in 
+To Log In to NetSuite: 
+1. Open a web browser 
+2. Click the shortcut or go to: https://system.netsuite.com/pages/customerlogin.jsp  
+3. Type in your user name and password 
+Waiting for load times 
+NetSuite lives on the internet and is susceptible to slow periods during high web traffic or 
+deteriorated internet speeds.  The Leaders version also has many customizations that were 
+done to help our teams be as efficient as possible navigating our high choice high service 
+environment.   
+Spinning Blue Circle on the active Tab 
+You will see a spinning blue circle on the active tab when the page is loading 
+Waiting Message 
+Some time there will be a “Waiting” message in the bottom left of your screen. 
+ 
+ 
+ 

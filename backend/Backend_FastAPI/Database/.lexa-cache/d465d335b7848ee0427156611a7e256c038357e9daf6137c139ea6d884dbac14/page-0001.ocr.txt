@@ -1,0 +1,33 @@
+Training Class Easels and SPO for Orders 
+ 
+Collection Easels and SPO orders to write up Quotes 
+and Sales Orders 
+ 
+Trainee Notes: 
+• Include Delivery and Protection Plus plan in all 
+Quotes and Sales 
+• Pillow Skus: 
+ 
+Cent-plw, (Size), (Shape),(welt or not ),(Fabric#) 
+Ex.: Cent-plw,18, squa, welt,1610 
+Trainer Notes: 
+• Identify 4 SKU’s in Production, that are out of stock 
+to show how to use link to determine date that item 
+is available for the customer. 
+• Identify 1 SKU in Sandbox for the trainee to sell off 
+their floor and fulfill/bill. 
+• Identify 1 SKU in Sandbox for the trainee to sell off 
+another showroom floor. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+UPDATED 1/31/2025 

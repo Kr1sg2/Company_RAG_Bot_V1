@@ -1,0 +1,17 @@
+Page 4 of 5 
+5.0 Take a Payment 
+4/9/2021 
+If the Sales Order has been fulfilled and Invoiced 
+Take Payment from the Invoice 
+Path:  NetSuite-Look Up A Guest Record (View)–Scroll Down to “Sales” Tab- “Transactions” 
+Invoices that are not fully paid are easy to locate.  Their status will be “Open.”  Invoices that have a fully 
+paid will have a Status of “Paid in Full.” 
+ 
+1. Look up the customer record using Guest Lookup from the NetSuite home dashboard or the 
+Global Search 
+ 
+2. Select the Customer Record in View mode 
+3. In View Mode of the Customer Record scroll down and click on the “Sales” tab.  Click on the 
+“Transactions” subtab. 
+ 
+ 

@@ -1,0 +1,18 @@
+ 
+Page 1 of 1 
+3.5 Close A Sale 
+8/23/2021 
+ 
+Close A Sale 
+A Sales Order can be closed if: 
+✓ There are no special order items on the Sales Order 
+✓ It is not within 48 hours of a scheduled fulfilment 
+o Wait till the day after the scheduled fulfilment to cancel 
+✓ It is not on a transfer 
+o Wait till the day after the scheduled transfer to cancel 
+1. From the NetSuite Dashboard use Guest Lookup to locate the Sales Order 
+ 
+2. With the Sales Order in View mode click 
+ button and follow prompts. 
+ 
+ 

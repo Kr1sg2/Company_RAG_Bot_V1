@@ -1,0 +1,26 @@
+Page 1 of 5 
+5.0 Take a Payment 
+4/9/2021 
+ 
+Take a Payment 
+The way NetSuite manages a customer record causes us to know two different ways to apply a payment.  
+Both are simple to do but we need to know when to use each. 
+ 
+Table of Contents 
+If the Sales Order is not fulfilled & Invoiced ................................................................................................. 2 
+Take Payment from the Sales Order ......................................................................................................... 2 
+If the Sales Order has been fulfilled and Invoiced ........................................................................................ 4 
+Take Payment from the Invoice ................................................................................................................ 4 
+Get an Error? ................................................................................................................................................. 5 
+Do not start over.  Click “Edit” and correct your information .................................................................. 5 
+Why? ......................................................................................................................................................... 5 
+ 
+ 
+ 
+ 
+ 
+Please Note: 
+✓ If you wait to long to insert a card or the card is pulled out to quickly the transaction will not 
+process. 
+✓ Tap to Pay can be done by holding the phone to the back of the terminal.  Please do not move 
+the phone away too fast.  If the phone is moved away to quickly the transaction will not work. 

@@ -1,0 +1,45 @@
+Page 3 of 9 
+Solutions Center Dashboard and KPIs 
+5/30/2022 
+ 
+# 
+What? 
+Why? 
+How? 
+5 
+Quick Links  
+These tiles show  
+Shortcuts to common tasks 
+6 
+Cases To Grab 
+List of new cases that need to be 
+assigned to a solutions agent 
+Click on a line to start working the case 
+7 
+KPI Meter 
+Number of open solutions cases 
+Count of total open cases 
+8 
+Open Cases by 
+Status 
+Number of open cases by status 
+Click on each status to see a detailed list of each 
+case under each status 
+9 
+Closed Cases by 
+Rep 
+Number of cases closed by each 
+solutions agent over a defined time 
+You can adjust the timeframe for the report . 
+10 Key Performance 
+Indicator 
+Solutions Center metrics regarding 
+Open, Closed, & New Cases and the 
+average time a case is open. 
+ 
+11 Settings 
+NetSuite specific settings 
+ 
+ 
+ 
+ 

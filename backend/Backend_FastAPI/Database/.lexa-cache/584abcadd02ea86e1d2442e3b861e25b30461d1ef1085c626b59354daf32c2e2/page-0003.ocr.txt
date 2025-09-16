@@ -1,0 +1,43 @@
+Page 3 of 9 
+3.24 After the Sale Customer Communication 
+3/1/2024 
+Closeouts 
+Reason 
+When 
+Why 
+How 
+Closeout 
+Product 
+For the 
+most 
+inventory, 
+soon after 
+the 
+closeout is 
+announced 
+If they were thinking about adding to 
+their collection, this is the time.  No one 
+wants to come in to find out what they 
+have been planning for is no longer 
+available.   
+Soon after the closeout is 
+announced Email.  Follow up with 
+a call before the sale ends. 
+ 
+Copy and paste images of sale items for a strong impact. 
+Subject Line:  Leaders: Clearance Sale 
+Email Body: 
+ 
+ 
+${customer.firstName}}${customer.companyname}, 
+ 
+We wanted to let you know that your collection is on closeout.  If you were thinking of adding any items now is 
+the time.   
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to anyone 
+who would benefit from our service. 
+ 
+ 
+ 

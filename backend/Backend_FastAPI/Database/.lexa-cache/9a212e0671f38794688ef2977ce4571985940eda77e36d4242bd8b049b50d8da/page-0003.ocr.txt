@@ -1,0 +1,19 @@
+Page 3 of 3 
+4.1 Pricing Levels 
+5/8/2024 
+Quote Pricing  
+To quote the correct pricing level an opportunity: 
+1. Create a guest record with the correct pricing level and save it 
+a. If it is a designer or commercial discounted pricing the record will have to be approved 
+by Sales Leadership before the pricing will quote at a discount. 
+b. If you create the quote before the approval the pricing will be retail our low.  Once the 
+customer record is approved it will not change the pricing.  The reduced-price quote 
+must be written after the approval. 
+2. In the Guest Record in View mode click on 
+.  You will be able to save a record of the 
+guests interests by using the product configurator. 
+a. Note:  You will not see the 
+ button if you are in the Edit mode of the 
+customer record.  Save the record to switch to View mode. 
+3. Save the quote to make it a part of the customer record.  The quote can be edited, emailed to 
+the guest, and converted directly into a sale. 

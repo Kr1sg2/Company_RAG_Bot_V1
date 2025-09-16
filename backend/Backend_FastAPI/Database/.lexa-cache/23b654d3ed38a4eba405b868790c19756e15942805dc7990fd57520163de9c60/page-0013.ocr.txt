@@ -1,0 +1,32 @@
+Page 13 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+ 
+10  Shortcuts 
+Shortcuts can be accessed by clicking the 
+ at the top of the screen or the link in the Shortcuts portlet 
+on the dashboard home screen.   
+ 
+Shortcut 
+What? 
+Make A Bank Deposit 
+Deposits for cash or checks that have not been brought to the bank. 
+My Commission 
+View your commission report for any defined time period. 
+Manager Override 
+Accessible to store managers only.  See the value of override income 
+for any defined time period. 
+Showroom Evaluation 
+Worksheet to measure the success and aptitude of managing a retail 
+showroom.   
+Time Clock 
+Shortcut to the time tracking and time off software we use  
+R:\1 About Benefits, Pay and Human Resources\1.4 Time Clock 
+Dispatch Track 
+Delivery tracking software where you can review the particulars of 
+each stop including completion and images of the furniture in the 
+delivered space.   
+R:\6 About Delivery, Shipping and Transfers\6.15 Dispatch Track 
+ 
+ 
+ 

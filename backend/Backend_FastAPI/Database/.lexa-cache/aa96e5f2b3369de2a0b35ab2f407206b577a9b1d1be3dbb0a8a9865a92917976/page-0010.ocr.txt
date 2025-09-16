@@ -1,0 +1,42 @@
+Page 10 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Open Transfer Orders Subtab 
+ 
+ 
+What? 
+ 
+1 
+Locations Filter 
+Change your view to only include the transfers for a single location 
+2 
+Transfer information 
+A table of the details of pending transfers 
+Columns 
+Note: All columns can be sorted by clicking on the header 
+Column Headers 
+What it means… 
+Date 
+Date the record was created 
+Type 
+The record type of the row 
+Document Number 
+The transfer record number 
+From Physical Location 
+The physical location the item is going to leave from 
+To Physical Location 
+The physical location the item is going to 
+Created By 
+The user that created the record 
+Date Created 
+The date and time the record was created 
+Status 
+Pending Fulfillment – Item has not started to transfer 
+Pending Receipt – Item is in transit 
+Quantity 
+The number of items to be transferred.  This number will show 
+negative because you are moving inventory out of its existing 
+location 
+ 
+ 
+ 

@@ -1,0 +1,20 @@
+Page 1 of 5 
+0.0a Employee Center 
+10/16/2020 
+ 
+NetSuite Employee Center 
+The NetSuite Employee Center is a team member access portal where you can find and edit your human resources 
+information.   
+Users that have an assigned role, like *Retail Sales Rep, will only be able to access the Employee Center from a Leaders 
+Holding Co™ computer.  Team members that do not use NetSuite regularly and do not have a role assigned to their 
+account will be able to access the Employee Center from any computer anywhere.   
+Table of Contents 
+Logging In ................................................................................................................................................................................ 2 
+Employee Handbook ............................................................................................................................................................... 2 
+Paycheck History ..................................................................................................................................................................... 3 
+Print a paycheck .................................................................................................................................................................. 3 
+Update Your Profile ................................................................................................................................................................. 4 
+Address Change................................................................................................................................................................... 5 
+ 
+ 
+ 

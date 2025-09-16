@@ -1,0 +1,39 @@
+Page 1 of 3 
+2.92.21 CUSMs and Re-Sling Monthly Focus 
+6/21/2018 
+ 
+ 
+Monthly Focus 
+What: CUSMs (Customer Owned Merchandise) and Re-Slings 
+Why: 
+At Leaders we take pride in the fact that we are able to service the products that 
+we sell. Re-slinging furniture for our customers is an important and large part of 
+doing exactly that.  
+When: When a customer has a piece of furniture that needs to be re-slung, whether or 
+not they purchased it from Leaders or not, if it is made by a vendor that we 
+currently or at one time were a distributor of, we will do our best to re-sling 
+their furniture. 
+Who: All sales team members need to know the proper procedure in order to execute 
+re-slinging furniture in order to provide our customers with the great service that they expect and deserve from 
+Leaders. 
+FAQ?   
+ 
+CUSMs 
+o This type of invoice is created when we take in a customer’s product that is to be repaired, serviced or 
+inspected at the DC.  
+o For more information please refer to the procedure here: R:\Procedure Manual\2.0 General Store 
+Procedure\2.52 CUSM.pdf 
+ 
+We create this type of invoice by doing a sales entry and entering into FROG a CUSM-SPO
+ 
+ 
+We enter in the information as if it is a new item. This is for the warehouse to be able to 
+identify the item. 
+o The vendor, type of item or style number, frame color, and fabric need to be 
+entered  
+ 
+We do not enter in what is wrong with the item, or what needs to be done to it. We put 
+this information in the memo box. 
+ 
+We need to create a CUSM invoice whether or not the customer is bringing the product into the 
+store to go back on the shuttle, or it is being picked up at their home. 

@@ -1,0 +1,22 @@
+Page 5 of 6 
+5.4 Wells Fargo QR Code Finance 3-14-24 
+3/19/2024 
+Adding the payment to NetSuite 
+1. Write a sales order in NetSuite  
+a. For detailed instruction on how to write a sales order  
+i. R:\3 About Customers and Orders\3.1 Writing a Sales Order 
+2. On the “3. Shipping/Billing/Signature” subtab in the Financial Information section 
+a. Choose the correct Terms from the drop-down menu 
+i. 12 Month 
+ii. 36 Month 
+b. Enter the Wells Fargo approval code in the Wells Fargo Approval Code field 
+ 
+Writing a new sale using an existing account  
+Did you know Leaders’ guests have an average of $3,000 of open credit limit they are not using?  Level up 
+your customers space, add throw pillows, rugs, lighting, and art with low monthly payments on their 
+existing account. 
+1. Write a new sale for the additional product.   
+2. Follow Processing a Transaction and Applying Financing to a Sales Order on page 3 of this 
+document. 
+ 
+ 

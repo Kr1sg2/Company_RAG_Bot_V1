@@ -1,0 +1,25 @@
+ 
+Page 1 of 6 
+2.0 Look Up A Guest 
+6/15/2019 
+ 
+Look Up A Guest 
+NetSuite has very dynamic search capability and more than one way to efficiently accomplish a task.  
+The Global Search box can be used by more advanced users.  When you are learning the system start 
+with the Guest Look Up portal. 
+Before getting started understand the difference between the Edit and View option of a record 
+Edit 
+Allows you to update fields and change information on a record 
+View 
+Does not allow you to make changes on a record but does allow you to take actions 
+on the record like schedule, reschedule, or cancel fulfilment 
+Table of Contents 
+Getting Started .............................................................................................................................................. 2 
+Using the Guest Look Up portal ................................................................................................................ 2 
+Search Results ....................................................................................................................................... 3 
+Using Global Search .................................................................................................................................. 6 
+Open in Edit or View? ................................................................................................................................... 6 
+Addresses View or Change ............................................................................................................................ 6 
+ 
+ 
+ 

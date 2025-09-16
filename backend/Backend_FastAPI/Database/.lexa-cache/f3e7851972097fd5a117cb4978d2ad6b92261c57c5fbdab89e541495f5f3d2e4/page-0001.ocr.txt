@@ -1,0 +1,32 @@
+Page 1 of 1 
+5.12 One Sales Order Deliver and Customer Pick Up Work Around (002) 
+6/2/2020 
+ 
+ 
+One Sales Order – Delivery – Customer Pick-Up in Store - Manager Workaround 
+ 
+If a customer takes delivery of items and wants to pick up the rest later in the store you can use this 
+work around so you do not have to write the pick up items on a separate invoice.  You must have the 
+support of a Store Manager to create the transfer. 
+ 
+ 
+1. Write a Sales Order 
+a. R:\3 About Customers and Orders\3.1 Writing a Sale 
+2. Schedule items for delivery on a Leaders delivery truck 
+3. When a remaining open item on the sales order comes into stock at the distribution center 
+• 
+Your Store Manager must transfer the items to your location 
+• 
+Change the “Reserve From” location on the line item to your store 
+• 
+This will show 0 (zero) in the Committed (Ready to Deliver In Fulfillment Location) column 
+until the transfer updates 
+ 
+ 
+4. When the transfer arrives and the DC updates the transfer,  your item will show Committed 
+(Ready to Deliver In Fulfillment Location).  You do not need to change the Delivery Method on 
+the sales order to “Customer Pick Up at Store”. 
+5. Click Fulfill 
+a. R:\6 About Delivery, Shipping and Transfers\2.1 Fulfill & Deliver Update 
+ 
+You can repeat this as items arrive in stock in the DC until all lines of the sales order are fulfilled.     

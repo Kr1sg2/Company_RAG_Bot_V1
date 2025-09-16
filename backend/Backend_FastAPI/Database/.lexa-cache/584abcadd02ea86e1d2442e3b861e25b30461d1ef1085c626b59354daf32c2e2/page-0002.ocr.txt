@@ -1,0 +1,57 @@
+Page 2 of 9 
+3.24 After the Sale Customer Communication 
+3/1/2024 
+Sale 
+Reason 
+When 
+Why 
+How 
+Sale on items 
+they didn’t buy 
+During the 
+promotion 
+period 
+People love to save money.  Your guest 
+may have not purchased because of 
+price.  If they know they are going to 
+save they are going to be happy you 
+reached out and appreciate you thinking 
+of them 
+Early on in the sale, you can mail.  
+Follow up with a call before the 
+sale ends 
+Sale from a 
+vendor they 
+bought 
+During the 
+sale period 
+This will encourage a customer to add 
+on, get an item they missed the first 
+time, or maybe even buy for another 
+property 
+Early on in the sale you can mail.  
+Follow up with a call before the 
+sale ends 
+Flash 
+Promotion 
+As soon as 
+you know 
+People love to save money and they will 
+appreciate you for telling them how.   
+Call. 
+ 
+Copy and paste images of sale items for a strong impact. 
+Subject Line:  Leaders: On Sales Now 
+Email Body: 
+ 
+${customer.firstName}}${customer.companyname}, 
+ 
+I wanted to share this with you so you did not miss out on an opportunity to save money.  Leaders is having a 
+sale on items you were interested in when you visited.  Please contact me today if I can help.  We are looking 
+forward to hearing from you. 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to anyone 
+who would benefit from our service. 
+ 

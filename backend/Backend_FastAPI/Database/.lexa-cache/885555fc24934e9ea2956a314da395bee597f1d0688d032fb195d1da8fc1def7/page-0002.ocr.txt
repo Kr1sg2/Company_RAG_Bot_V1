@@ -1,0 +1,97 @@
+ 
+Page 2 of 3 
+9.2 General Tips and Trouble Shooting 
+11/20/2018 
+ 
+Concern 
+Possible Solution 
+Computer will not start 
+A 
+Check your power cord to confirm it is plugged securely into the outlet 
+and the computer 
+ 
+B 
+Verify that the surge protector or batter back up is on.  Plug other devices 
+you know work into the surge protector to verify it is on. 
+ 
+C 
+If everything is plugged in securely and the surge protector is on, unplug 
+the computer and plug in a lamp you know is working into the outlet 
+where you unplugged the computer.  Turn the lamp on to test the outlet.  
+If the lamp does not light in the outlet the plug is not working.  Report the 
+dead outlet to maintenance.  Plug your computer into a working outlet. 
+ 
+D 
+Laptop:  If you are using a laptop the battery may not be charged.  Plug in 
+the laptop charger and wait several minutes before you attempt to turn it 
+on. 
+My screen is blank 
+A 
+Make sure the monitor is plugged in and on 
+ 
+B 
+The computer may be in sleep mode.  Click the mouse or press any key on 
+the key board.  Give the computer a couple of seconds to wake up 
+ 
+C 
+Make sure the computer is plugged in and turned on 
+ 
+D 
+Make sure the monitor cable is securely plugged into the computer and 
+securely plugged into the back of the monitor 
+My Keyboard or mouse does not 
+work 
+A 
+If you are using a wired mouse or keyboard make sure it is securely 
+plugged in 
+ 
+B 
+If you are using a wireless keyboard or mouse make sure the unit is 
+turned on and the battery is not dead 
+ 
+C 
+Make sure a button or key is not stuck 
+Sound is not working 
+A 
+Check the volume level by clicking on the speaker 
+ in the bottom right 
+on the task bar.  Make sure the sound is not muted and turned up. 
+ 
+B 
+Check the media player controls.  Often time the media player will have a 
+second set of overriding controls.  Make sure they are turned up as well 
+as the main control in “A”. 
+ 
+C 
+If you have external speakers make sure they are plugged into the green 
+speaker/headphone output port and not the purple microphone port 
+ 
+D 
+Plug headphones in to the headphone port to test that the computer is 
+putting out audio.  
+My computer is running slow 
+A 
+Close and reopen the application you are having a concern with 
+ 
+B 
+Update the application by clicking the “Help” menu in the application.  
+Look for and click on the option to “Update.” 
+ 
+C 
+Close all open programs on your computer and reopen only the ones you 
+need 
+ 
+A 
+Restart your computer 
+My computer is frozen 
+A 
+Restart your computer.  By pressing all at the same time 
+<CTRL><ALT><Delete>.  Find the 
+ in the lower right and click to shut 
+down your computer.  Let your computer stay turned off for one minute 
+before turning it back on. 
+ 
+B 
+If the computer is completely unresponsive press and hold the power 
+button on the computer until the unit powers down.  Let the computer 
+stay off for a minute before powering back on.   

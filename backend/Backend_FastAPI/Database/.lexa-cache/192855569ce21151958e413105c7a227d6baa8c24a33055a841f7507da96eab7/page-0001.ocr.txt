@@ -1,0 +1,41 @@
+ 
+Page 1 of 1 
+8.27 Air Conditioning Trouble Shooting Delta T 
+12/1/2023 
+ 
+Air Conditioning Trouble Shooting 
+Delta T 
+Checking to see if an AC unit is working properly is very easy with a temperature scan gun.  All territory 
+leads and maintenance team members have a temperature scan gun.  All air conditioning technicians 
+have a temperature scan gun.  If you would like your own, you can find them at home improvement and 
+hardware stores. 
+No air conditioning work should be considered completed if the Delta T is less than 16 Degrees. 
+Temperature Scan Gun 
+ 
+How To Measure the Effectiveness of an AC Unit 
+1. Using the temperature scan gun, measure the temperature of the air going into the AC unit.  This 
+is called the return.  Sometimes the return has an air filter. 
+2. Measure the temperature coming out of the AC at the first duct after the air handler.   
+3. Calculate the difference in these two temperatures.  This is called the Delta T. 
+(Temperature Going In) – (Temperature Coming Out) = Delta T 
+Delta T  
+(Degrees Fahrenheit) 
+Condition 
+Action 
+17 or more 
+Good 
+No action necessary 
+15 - 16 
+Weak 
+The unit needs service 
+Less than 14 
+Bad 
+This unit is not functioning and needs immediate repair 
+ 
+Before Calling for Service 
+✓ Check the batteries in your thermostat 
+✓ Check the setting of the thermostat to make sure the AC is on 
+✓ Check to make sure the breakers are on for the AC system at the breaker panel.  Sometimes an 
+AC unit is powered off at the breaker panel in error from the closing the night before.   
+✓ Know the Delta T of each system in your location so that the service tech can be directed to work 
+on the correct units. 

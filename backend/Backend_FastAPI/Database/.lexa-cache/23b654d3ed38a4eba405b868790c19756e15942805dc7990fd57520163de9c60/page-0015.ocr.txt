@@ -1,0 +1,34 @@
+Page 15 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+My Success Tab 
+This tab shows your personal success in different categories and helps you identify where you are strong 
+and areas to improve. 
+ 
+ 
+ 
+Portlet 
+What? 
+1 
+Accelerator Tracking 
+A quick reference to the Accelerator Tracking 
+2 
+Potential Commission on 
+Open Orders 
+A forward-looking view of unearned commission on unfulfilled 
+sales orders in your open order report.  Leaders pays 
+commission on fulfilled, paid in full sales orders.   
+3 
+My Performance 
+A snapshot of your volume for the month and how your volume 
+this month compares to last month 
+4 
+My Sales by Major Category 
+Your sales by major category. This will help you identify your 
+strengths and areas for improvement.   
+5 
+My Sales by Category 
+Your sales by broken down category.  This will help you identify 
+your strengths and areas for improvement.   
+ 
+ 

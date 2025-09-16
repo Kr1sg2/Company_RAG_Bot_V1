@@ -1,0 +1,70 @@
+[
+  {
+    "page": 4,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 66.29085844880866,
+    "data": [
+      {
+        "0": "",
+        "1": "Distribution & Office Team 2011",
+        "2": ""
+      },
+      {
+        "0": "State of the art Technology is used to allow maximum efficiency in receipt, storage, retrieval and",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "distribution of thousands of products everyday.  Leader's Casual Furniture\u00ae inventory is tracked",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "in real time through a state of the art warehouse management system.  At any given time a piece",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "of merchandise can be located anywhere in the company including any of the retail locations.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Over the years many productive decisions have been made.  Leader\u2019s has evolved into one of the",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "largest  and  strongest  casual  furniture  sources",
+        "1": "in  America.",
+        "2": "Leader\u2019s  Casual  Furniture\u00ae  was"
+      },
+      {
+        "0": "awarded top honors in the casual industry with the Apollo Award in 1990.  In 2012 Leader\u2019s Casual",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Furniture\u00ae was recognized as the Casual Furniture Retailer of the year.  Leader\u2019s Casual Furniture\u00ae",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "continues to thrive ahead of the industry curve because all team members are focused on working",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "together to achieve the goal of \u201cA Happy Customer the First Time.\u201d",
+        "1": "",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\n,Distribution & Office Team 2011,\n\"State of the art Technology is used to allow maximum efficiency in receipt, storage, retrieval and\",,\ndistribution of thousands of products everyday.  Leader's Casual Furniture\u00ae inventory is tracked,,\nin real time through a state of the art warehouse management system.  At any given time a piece,,\nof merchandise can be located anywhere in the company including any of the retail locations.,,\nOver the years many productive decisions have been made.  Leader\u2019s has evolved into one of the,,\nlargest  and  strongest  casual  furniture  sources,in  America.,Leader\u2019s  Casual  Furniture\u00ae  was\nawarded top honors in the casual industry with the Apollo Award in 1990.  In 2012 Leader\u2019s Casual,,\nFurniture\u00ae was recognized as the Casual Furniture Retailer of the year.  Leader\u2019s Casual Furniture\u00ae,,\ncontinues to thrive ahead of the industry curve because all team members are focused on working,,\ntogether to achieve the goal of \u201cA Happy Customer the First Time.\u201d,,\n",
+    "shape": [
+      11,
+      3
+    ]
+  }
+]

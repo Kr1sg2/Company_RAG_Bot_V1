@@ -1,0 +1,59 @@
+Page 3 of 3 
+2.92.21 CUSMs and Re-Sling Monthly Focus 
+6/21/2018 
+ 
+ 
+The SKU for these begin with LEAD-RESLING, and select each one accordingly 
+ 
+The customer can choose to re-sling their furniture themselves. We will rent the 
+tool that is needed in order to do this. 
+ 
+SKU in FROG for this is TROP-SLINSTOOL and it is a $75.00 refundable deposit 
+that the customer gets back once it is returned back to the store. 
+ 
+How-to replace a sling video from Tropitone’s website: 
+https://www.tropitone.com/outdoor-furniture/product-care/how-to-videos-
+replace 
+ 
+Slings generally take 4-6 weeks to come in. Once they arrive , notify the customer  
+ 
+If the customer is dropping off the item/s to be re-slung at the store ask them to bring 
+the furniture in as close as possible to the day before the shuttle. Create CUSM invoice 
+at this point if it has not already been done. 
+ 
+If the customer is having Leaders pick-up the furniture, create 
+invoice in FROG using LEAD-PICKUP. The charge for this is $99.00. 
+This includes having the furniture being picked up as well as having 
+it re-delivered once completed. This needs to be on a separate 
+invoice. 
+ 
+ You will have the items needed to be picked up on a separate 
+invoice (CUSM) and you will link the 2 invoices together using the 
+deliver with feature in FROG 
+ 
+Whether the furniture is being dropped off at the store, or it is being 
+picked up by Leaders, there is one final important step to be done: 
+ 
+E-mail the warehouse group to have the furniture re-slung. If you 
+fail to do this, the slings WILL NOT be put on the furniture. 
+ 
+You will find this under the e-mail template titled “Resling 
+Request” 
+ 
+Fill out the information accordingly. 
+ 
+If it is being picked back up at the store send the e-mail the day of the shuttle. 
+ 
+The furniture will return on the following weeks shuttle  
+ 
+If you have scheduled a LEAD-PICKUP, send the e-mail the day you schedule it. 
+ 
+As a general rule of thumb, allow 1 week for the furniture to be re-delivered. If 
+there is a need to have it done quicker, please contact the Warehouse Group 
+and notify them and make sure that it can be done. 
+ 
+Enter in the re-delivery date requested on the e-mail template’s subject 
+heading. 
+ 
+For further information please refer to the procedure: R:\Procedure Manual\2.0 General 
+Store Procedure\2.511 Resling.pdf 

@@ -1,0 +1,42 @@
+Page 2 of 9 
+Solutions Center Dashboard and KPIs 
+5/30/2022 
+Dashboard Overview 
+ 
+ 
+ 
+# 
+What? 
+Why? 
+How? 
+1 
+Global Search 
+Searches all of NetSuite for easy 
+referencing 
+Tutorial documents and videos can be found on 
+the internet by searching “NetSuite Global Search 
+Tips & Tricks.” 
+2 
+Tabs 
+Additional pages with focused 
+information on each topic. 
+Click the tab name to access each focused tab 
+3 
+Reminders 
+Fundamental reports to successfully 
+manage open cases. 
+Click on each visible reminder to see the cases 
+that need work.  If a reminder has zero items in 
+the report, the report may not show in the 
+reminders if you have it set not to show zero. 
+4 
+Aging Cases By 
+Status  
+These tiles show active cases assigned 
+to you that have aged beyond 
+acceptable thresholds and need 
+attention.  Supervisors will see their 
+cases and the team’s cases. 
+Click on each tile to review the case and take 
+action.  
+ 

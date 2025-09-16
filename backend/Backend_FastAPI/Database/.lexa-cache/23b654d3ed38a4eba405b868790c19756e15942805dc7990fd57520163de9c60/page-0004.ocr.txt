@@ -1,0 +1,54 @@
+Page 4 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+Dashboard Layout 
+There are 11 areas of the Homne Screen Dashboard to learn about and tabs.  Each area holds different 
+information. 
+ 
+This is an overview of each area of the dashboard.  We will go into detail for each section later in this 
+document.   
+ 
+What? 
+Why? 
+1 
+Tabs & Global 
+Search 
+The tabs allow a more narrow focus on important topics like your open Solutions 
+Cases, Product, or where you rank among the sales team.  Global Search allows you to 
+quickly find and navigate to information without going through menues.  For 
+additional information: 
+ R:\0 About Leader's Holding Company Essentials\0.12 Symbols & Shortcuts 
+2 
+Reminders 
+Important information about managing your opportunities and open orders.  Should 
+be reviewed daily. 
+3 
+Sales By Location 
+Quickly reference where you rank for the day.  This report must be refreshed 
+manually for the most up to date information.   
+4 
+Calendar 
+If you are using your calendar and tasks, your “to do” list will show up here.  This is a 
+great way to stay organized and give the most professional guest experience. 
+5 
+Navigation 
+Shortcut 
+Quick links to commonly referenced information 
+6 
+Tiles 
+Up-to-date critical information on your and your store's open transactions.  
+7 
+Today's Sales & 
+Quotes 
+The sales and quotes written throughout the company today day. 
+8 
+Top Sales Rep 
+Top sales reps for a given time period.  Default is “Today.” 
+9 
+Settings 
+Links to set up your instance of NetSuite 
+10 Navigation 
+Shortcuts 
+Links to frequently used forms and information in NetSuite 
+11 Settings 
+Menue where you can change particulars about your NetSuite account 

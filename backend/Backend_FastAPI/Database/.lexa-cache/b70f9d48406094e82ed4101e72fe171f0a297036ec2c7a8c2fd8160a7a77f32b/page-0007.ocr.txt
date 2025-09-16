@@ -1,0 +1,89 @@
+Page 7 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+1. Primary Information 
+ 
+Field Name 
+What? 
+Why? 
+Date 
+Date the Sales Order was created 
+ 
+Order# 
+Sales Order Number 
+To Identify the particular sales order 
+Customer 
+Customer name  
+To identify who the Sales Order was written for 
+Phone Number 
+Customer phone number 
+To be able to communicate with the guest 
+Location 
+Location the order was written from 
+To identify the store location where the  sale was written 
+and to track metrics and store success 
+Sales Rep 
+Sales Representative who wrote the 
+order 
+To keep track of success and pay commission 
+Customer 
+Account Notes 
+Notes associated with the 
+customer’s customer record 
+Note for a customer that will show on every transaction 
+Balance Due 
+The amount owed on a sales order 
+NOTE: THIS AMOUNT CAN BE INCORRECT IF THE SALES 
+ORDER IS ALREADY INVOICE/BILLED 
+Item(s) Ready To 
+Deliver 
+Denotes whether items are ready to 
+be scheduled for fulfillment.   
+If Ship Complete Is Checked:  All items must be ready to be 
+fulfilled for the ready-to-deliver checkbox to check. 
+If all items are scheduled on a delivery record, then the 
+Ready to Deliver checkbox will not be checked. 
+If Ship Complete is Not Checked and at least one item is 
+ready to be fulfilled, the Ready to Deliver checkbox will be 
+checked.  
+If the items ready to be fulfilled are scheduled on a 
+delivery record, the Ready to Deliver checkbox will not be 
+checked until another item on the sales order becomes 
+ready to be fulfilled. 
+Eligible for 
+Commission 
+If not checked, it will not pay when 
+fulfilled. 
+This box is used by leadership in instances where policy 
+was disregarded and a sale has a negative financial impact 
+on the organization. 
+Special Order On 
+Hold 
+If checked, order will not be placed 
+with the factory 
+This field is used by purchasing when they cannot 
+confidently place an order with a manufacturer.  While 
+they are waiting for a clear response from the sales 
+professional, they will use this box to stop the order from 
+proceeding. 
+Summary 
+Summary of charges associated with 
+the order 
+ 
+Select Message/ 
+Customer 
+Message 
+Dropdown of prewritten messages 
+Prints on the sales order 
+Message Text 
+Are displaying the test of a message 
+that will print on the sales order 
+You can free-form type in this box  
+Delivery Records 
+If items on a sales order are set for 
+fulfillment, the record will show 
+here 
+Click on the record to edit, change or delete it 
+ 
+ 
+ 

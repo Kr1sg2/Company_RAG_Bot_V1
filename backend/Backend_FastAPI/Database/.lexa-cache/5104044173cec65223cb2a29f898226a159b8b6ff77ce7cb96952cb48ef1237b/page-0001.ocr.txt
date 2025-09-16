@@ -1,0 +1,58 @@
+Page 1 of 1 
+0.11 Netsuite Terminology 
+3/8/2021 
+ 
+NetSuite Terminology 
+ 
+NetSuite 
+What? 
+Guest 
+A person or group who visits 
+your showroom.  You gather 
+minimal information about 
+them and make a record of 
+their visit and general interests. 
+Opportunity 
+A person or persons that have 
+more than just a general 
+interest.  They have started to 
+hone in on particular items.   
+Quote 
+Pricing for a specific person or 
+persons for specific items and 
+services 
+Sales Order 
+An official record of an item or 
+list of items for a specific 
+customer and their price.   
+Take a Payment 
+Taking a deposit or additional 
+funds towards an invoice on an 
+account 
+Invoice / Bill 
+An invoice is a document 
+describing specific goods and 
+requesting compensation from 
+a customer for the goods.   
+Partial Fulfill 
+Delivering what is available for 
+an invoice 
+Commited 
+Available stock dedicated to 
+satisfy the requested quantity 
+of an item on a sales order. 
+Fulfill 
+Finalizing a transaction by giving 
+the customer goods in exchange 
+for compensation in the form of 
+a return, credit, or monies.  
+RA (Return Authorization) 
+Issued for: Equal/Unequal 
+exchanges, Store credit or a 
+Refund,  
+System Information 
+A chronological order of actions 
+taken on a record.  This creates 
+a trail of accountability and can 
+help identify training needs. 
+ 

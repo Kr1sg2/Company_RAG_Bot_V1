@@ -1,0 +1,28 @@
+Page 2 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+Convert A Quote 
+NetSuite has a robust CRM (customer relationship management) platform.  Top-performing 
+sales team members will use it to track the interactions and interests of their guests and 
+previous customers to stay in touch and create more sales.  This will include converting Quotes 
+directly into Sales Orders. 
+Quick Path: Open Quote / Review and Adjust Items as Necessary in Edit Mode / Save to View 
+Mode/ Click New Sales 
+1. Find the Quote 
+a. You can look up an existing quote from the Customer Record 
+i.  Customer Record / Sales Tab/ Transactions Subtab 
+2. Review the Quote and make changes in Edit mode 
+a. Save when complete 
+3. From View mode, click 
+ to convert the Quote into a Sales Order 
+ 
+4. You will now only have to complete 
+a. Tab “2. Items” 
+i. Estimated Ready Date 
+b. Tab “3. Shipping/Billing/Signature” 
+i. Select Ship To 
+ii. Select Bill To 
+iii. Select Terms 
+iv. Select Delivery Method 
+ 
+ 

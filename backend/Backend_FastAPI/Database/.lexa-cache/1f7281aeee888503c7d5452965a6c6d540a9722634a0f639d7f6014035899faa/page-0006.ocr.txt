@@ -1,0 +1,22 @@
+ 
+Page 6 of 8 
+0.12 Symbols and Short Cuts 
+9/23/2022 
+ Quick Actions 
+What 
+Quick Actions looks very similar to Quick Access.  Quick Actions are a quick reference of actions that can be taken 
+against the record you are viewing. 
+Where 
+Quick Actions is found to the right of the button options on the top of the page in View or Edit mode.
+ 
+ Print 
+What 
+The print function in NetSuite is a modern print process.  After hitting the button is starts with a print preview to 
+make sure you are about to print what you want.  The preview window is similar to what you see in any good 
+printing experience. 
+Where 
+The print button will not show up in Edit mode.  It will only show up in View mode.  When in View mode the print 
+button will show up to the right of the menu buttons at the top or bottom of the screen. 
+ 
+ 
+ 

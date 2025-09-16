@@ -1,0 +1,27 @@
+Page 7 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Measurements  
+Particulars about the size of the product. 
+ 
+Field 
+What is it 
+COM Yardage 
+Number of yards of fabric needed if a customer would like to supply their own 
+fabric 
+Overall Dimensions 
+Height, Width, Depth, Seat Height, Arm Height, Weight 
+Weight 
+Weight of the complete item not packaged for shipping 
+ 
+Add Ons 
+This area displays the add on sales the product is eligible for. 
+ 
+Field 
+What is it 
+Fabric Protection Eligible 
+This will be checked if fabric protection can be applied to the item 
+Price for Fabric Protection 
+Price to apply fabric protection 
+ 
+ 

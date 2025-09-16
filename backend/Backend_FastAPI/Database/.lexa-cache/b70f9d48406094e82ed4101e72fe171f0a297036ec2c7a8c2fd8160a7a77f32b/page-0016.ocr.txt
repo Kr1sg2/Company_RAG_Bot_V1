@@ -1,0 +1,38 @@
+Page 16 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+FAQ 
+✓ How do I know if the product I have ordered is in stock? 
+o You can look it up in the Item Look-Up Screen 
+▪ 
+Home Screen / Item Look Up / Inventory Detail Tab 
+o The Available in Fulfill Location on the line item has a quantity greater than the 
+quantity you are reserving 
+✓ How do I know if my order is ready to deliver? 
+o The order ready to deliver check box in the 1. Primary information section is 
+checked 
+o The 
+ button is visible 
+o The order shows up on your Orders Ready To Deliver report.   
+✓ What delivery date is the Sales Order set for? 
+o A Sales Order will normally have a single date that the entire order will fulfill.  
+Because Sales Orders can partially fulfill the delivery date is shown on each line 
+item. 
+✓ I noticed I made a mistake after I saved the order.  Can I fix it without rewriting the sale? 
+o You can edit a Sales Order anytime from the Edit mode.  Keep in mind if you add 
+or take away product you will affect the total value of the Invoice and could 
+affect the date the order will be ready to be fulfilled. 
+✓ How do I set the order for fulfillment? 
+o Set the way the order will be fulfilled in Edit mode by clicking the 
+ button and following the prompts 
+o Set the date by clicking the 
+ in view mode and follow the 
+prompts 
+✓ How do I change the fulfillment date? 
+o To change a transfer date you must reach out to your sales leadership team.  
+You cannot cancel the transfer record once it is created 
+o To change a Delivery date 
+▪ 
+Click on the delivery record in the timeline at the bottom of the Sales 
+Order screen.  Click on the delivery record and then choose to 
+reschedule or cancel. 

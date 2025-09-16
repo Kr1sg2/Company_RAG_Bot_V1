@@ -1,0 +1,2 @@
+Sales Orders Not Approved
+Sales Orders with No Deposits or pending RA exchange

@@ -1,0 +1,14 @@
+ 
+Page 6 of 10 
+2.51 Solutions Center Service Case 
+6/9/2019 
+How to Open a Solutions Case If You Can Locate a Customer Record 
+1. From the NetSuite home screen use Guest Lookup to locate the guest record you would like to 
+open the case for.  You can use the Global Search or the Guest Lookup link. 
+ 
+2. While viewing the customer record in Edit mode click the 
+ button 
+ 
+3. Complete the required fields indicated with an  and 
+ 
+ 

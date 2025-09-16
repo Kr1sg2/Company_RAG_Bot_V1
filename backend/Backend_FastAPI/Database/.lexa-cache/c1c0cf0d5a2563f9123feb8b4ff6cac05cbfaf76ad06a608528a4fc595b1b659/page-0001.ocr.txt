@@ -1,0 +1,99 @@
+Page 1 of 1 
+2.2.1 Cash Drawer Reconciliation Form 
+7/6/2019 
+ 
+ 
+Cash Drawer Reconciliation Form 
+$100 
+. 
+ 
+$100 
+. 
+$50 
+. 
+ 
+$50 
+. 
+$20 
+. 
+ 
+$20 
+. 
+$10 
+. 
+ 
+$10 
+. 
+$5 
+. 
+ 
+$5 
+. 
+$1 
+. 
+ 
+$1 
+. 
+25¢ 
+. 
+ 
+25¢ 
+. 
+10¢ 
+. 
+ 
+10¢ 
+. 
+5¢ 
+. 
+ 
+5¢ 
+. 
+1¢ 
+. 
+ 
+1¢ 
+. 
+Total 
+. 
+ 
+Total 
+. 
+ 
+-100.00 
+ 
+ 
+-100.00 
+Deposit 
+. 
+ 
+Deposit 
+. 
+Date 
+\         \20 
+ 
+Date 
+\         \20 
+Signature 
+ 
+ 
+Signature 
+ 
+Deposit 
+Created 
+Yes      No 
+ 
+Deposit 
+Created 
+Yes      No 
+  
+ 
+ 
+The Deposit field on the form above should match your cash total received in NetSuite.   See the 2.2.0 
+Make a Deposit / Reconcile Cash Procedure in the R: for further information. 
+ 
+ 
+✓ All Cash must be hidden every night 
+✓ When cash or checks total over $2 a deposit must be made that night 
+✓ It is against company policy to keep a deposit on your person or in your vehicle.  
+Deposits must be driven directly to the bank 

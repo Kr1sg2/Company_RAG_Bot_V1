@@ -1,0 +1,16 @@
+Page 2 of 5 
+5.0 NetSuite Take a Payment 
+8/19/2019 
+If the Sales Order is not fulfilled & Invoiced 
+Take Payment from the Sales Order 
+Path:  NetSuite-Look Up A Guest Record (View)–Scroll Down To “Sales Tab”–“Tranasactions” 
+The balance can be seen on the “Sales Information” tab of a sales order or in the breadcrumb trail at the 
+bottom of each sales order by Subtracting Sold from Paid 
+  
+ 
+1. Look up the customer record using Guest Lookup from the NetSuite home dashboard or the 
+Global Search 
+ 
+2. Select the Guest Record in View mode 
+ 
+ 

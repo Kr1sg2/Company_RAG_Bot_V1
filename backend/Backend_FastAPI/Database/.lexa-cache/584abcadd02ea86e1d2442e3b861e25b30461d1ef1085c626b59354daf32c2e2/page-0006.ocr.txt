@@ -1,0 +1,49 @@
+Page 6 of 9 
+3.24 After the Sale Customer Communication 
+3/1/2024 
+Ownership Experience 
+Care and maintenance 
+Reason 
+When 
+Why 
+How 
+Care and 
+Maintenance 
+Products  
+Periodically 
+every year 
+If we encourage a guest to take care of 
+their purchase, they will have a better 
+ownership experience.  Selling care and 
+maintenance products helps you create 
+a long-term client.   
+Email template or post card when 
+you have time.  Run the previous 
+customer report for a time period 
+and work your way through it.  Be 
+sure to know the price of what 
+you are offering and let the guest 
+know in your communication. 
+ 
+Subject Line:  Leaders: Happy Birthday to Your Patio 
+ 
+${customer.firstName}}${customer.companyname}, 
+ 
+Can you believe it has been a year already?  We are just checking in to make sure everything is going great and 
+to remind you how easy your furniture is to clean.  Dish soap, water, and even mix in bleach if you would like.  
+Brush with a soft bristle brush and rinse.  Don’t forget to protect wicker and poly with Meguiar’s and aluminum 
+with corrosion block at least twice a year.   
+ 
+Please let us know if we can help with anything! 
+ 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to anyone 
+who would benefit from our service. 
+ 
+ 
+ 
+ 
+ 
+ 

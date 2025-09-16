@@ -1,0 +1,34 @@
+ 
+Page 6 of 6 
+2.0 Look Up A Guest 
+6/15/2019 
+Using Global Search 
+1. From the top of any NetSuite window type in the guest name you are looking for.  NetSuite 
+will make suggestions based on what you type in. 
+ 
+2. Click on the record you are looking for to go View mode.  Hover over the name and Edit will 
+appear on the right of the line.  Click edit to open the record in Edit mode. 
+ 
+ 
+Open in Edit or View? 
+Once you get your results you will have the option to open a record in Edit or View mode. 
+Edit 
+Allows you to update fields and change information on a record 
+View 
+Does not allow you to make changes on a record but does allow you to take actions 
+on the record like write a New Opportunity, Quote or Sale, or Open a Solutions Case 
+Addresses View or Change 
+The address tab is directly under the primary information.  You must click the 
+ icon on the 
+right side of each record for most of the options.   
+Edit 
+✓ Set default shipping address 
+✓ Set default billing address 
+✓ Change the name of an address record 
+✓ Edit an address 
+✓ Add a new address 
+View 
+✓ See all address the customer has on file 
+✓ Click the 
+ to map the address 
+ 

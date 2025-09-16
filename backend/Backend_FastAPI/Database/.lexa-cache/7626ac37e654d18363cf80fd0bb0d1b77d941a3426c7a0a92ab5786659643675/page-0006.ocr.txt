@@ -1,0 +1,17 @@
+Batteries  
+• The 3D wind sensor is 
+powered by two triple A 
+batteries. 
+• It is important to check the 
+proper installation of the 
+batteries for positive (+) 
+and negative (-) directions 
+as the sensor has two  
+springs on one side of the 
+battery chamber. The 
+spring is usually reserved 
+for the negative side on 
+domestically produced 
+electronics.    
+Positive + 
+Negative - 

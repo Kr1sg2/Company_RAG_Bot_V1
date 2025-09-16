@@ -1,0 +1,21 @@
+ 
+Page 6 of 6 
+2.0 Scheduling Fulfillment 
+3/22/2022 
+ 
+b. Order Information 
+i. Review the information is correct 
+ii. If ship complete is unchecked, you can change the Delivery Methods 
+1. Depending on the Delivery Method, you can choose the Pick Up 
+Location 
+ 
+c. Date For Delivery 
+i. Select the date you would like to schedule the fulfillment 
+ 
+d. Confirmation 
+i. Confirm all information is correct, including who the confirmation email will be 
+sent to. 
+ii. You can uncheck Send Confirmation Email if you do not wish to send an email 
+e. Click 
+ 
+ 

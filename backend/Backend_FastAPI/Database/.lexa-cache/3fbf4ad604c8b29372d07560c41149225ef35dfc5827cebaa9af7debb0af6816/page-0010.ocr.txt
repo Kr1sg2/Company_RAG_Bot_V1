@@ -1,0 +1,117 @@
+R9T12FIRE 
+Page 10 of 12 
+         Rev. E 07AUG12 
+ 
+INTERNAL CONTROLS 
+ 
+ 
+PARTS LIST 
+ 
+ 
+Item No. 
+Description 
+ 
+ 
+ 
+ 
+Part No. 
+ 
+ 
+1 
+ 
+Gas Flex Line, 24” x 1/2"  
+ 
+ 
+R15SP100 
+2 
+ 
+1/2” x 1/2” FIP 90 
+ 
+ 
+ 
+R15CO101 
+3 
+ 
+Gas Hose with Regulator, 3/8” x 12” Long 
+R18FH100 
+4 
+ 
+3/8” Flare x 3/8” MIPT 
+ 
+ 
+R18CO108 
+5 
+ 
+Elbow, 3/8” M x 3/8” F 
+ 
+ 
+R15CO100 
+6 
+ 
+Compression Fitting, 1/8” 
+ 
+ 
+R15CO104 
+7 
+ 
+Gas Valve 
+ 
+ 
+ 
+ 
+R18VL100 
+8 
+ 
+Ignition Wire, set of 3, 12” Long 
+ 
+R19WR100 
+9 
+ 
+Ignition Switch With Gasket  
+ 
+R19SW100 
+10 
+ 
+Knob, Black, for Gas Valve 
+ 
+ 
+R02MS102 
+11 
+ 
+Nut, Retaining, M1 for Gas Valve 
+ 
+R02NU501 
+12 
+ 
+Nipple, 3/8” x 1.5” 
+ 
+ 
+ 
+R15SP101 
+13 
+ 
+Gas Plumbing Support Weldment 
+ 
+W401100HGM 
+14A 
+ 
+Spark Igniter Power Supply (Cap) 
+ 
+R19NT101 
+14B 
+ 
+Spark Igniter Power Supply (Housing) 
+(Sold as Set) 
+15 
+ 
+9 Volt Battery  
+ 
+ 
+ 
+R15DC100 
+16 
+ 
+Brass Adapter, 3/8”   
+ 
+ 
+R15CO111 

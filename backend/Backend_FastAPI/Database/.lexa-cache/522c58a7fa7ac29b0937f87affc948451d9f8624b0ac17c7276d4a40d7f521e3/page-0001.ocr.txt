@@ -1,0 +1,40 @@
+ 
+3D Wind Sensor 
+Troubleshooting Guide  
+ 
+ 
+                                                  
+             
+ 
+• Make sure that the down button on the remote brings the awning out (the down button 
+points to the LED light). If not, the direction of operation on the motor needs to be 
+reversed and the wind sensor re-programmed. Test the awning by pushing up on the 
+front bar for 12 seconds. The awning should retract.                                                                  
+        
+        
+• Check the batteries. The red indicator light will blink when the batteries are properly 
+installed and when the program button is pressed.  
+          
+ 
+• The wind sensor needs to be connected to its mounting bracket for it to function. 
+Check to make sure the round silver magnet in attached to the mounting bracket. Use a 
+silicone base glue to refasten it if necessary.  
+ 
+                                                                                
+ 
+• Try resetting the motor by unplugging if for 5 seconds and immediately plugging it 
+back in. Test the awning.  
+                                                                
+ 
+\ 
+• Reprogram the wind sensor to the motor by pressing the program button on the back 
+of the remote and then the program button on the wind sensor. Test the awning. 
+ 
+• If the awning retracts every ½ hour, it means the batteries are low. Every hour means 
+the batteries are dead or the unit is off its mount.   
+ 
+ 
+ 
+ 
+8.09.FZ 
+ 

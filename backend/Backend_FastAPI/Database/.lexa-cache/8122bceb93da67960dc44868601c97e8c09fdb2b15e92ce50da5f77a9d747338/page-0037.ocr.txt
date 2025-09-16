@@ -1,0 +1,495 @@
+36
+Item #
+Description
+~Deduction
++COM 
+Yardage
+Grade A
+Grade B
+Grade C
+Grade D
+Grade E
+C6800
+Granville Club / Glider 
+61
+4.5
+332
+366
+443
+555
+661
+C6820
+Granville Loveseat 
+123
+7
+592
+643
+753
+913
+1064
+C6830
+Granville Sofa
+183
+10.5
+854
+920
+1062
+1271
+1466
+C6840
+Granville Ottoman
+27
+2.5
+146
+156
+177
+210
+240
+C6810
+Granville Chaise Lounge
+68
+5.5
+406
+440
+513
+620
+720
+C2900
+Laurent Dining Arm / Swivel
+24
+2
+121
+131
+153
+185
+216
+C2910
+Laurent Dining Side Chair
+24
+2
+121
+131
+153
+185
+216
+C2920
+Laurent Armless Counter Stool
+24
+2
+121
+131
+153
+185
+216
+C2700
+Laurent Club/Swivel/Chair Section
+85
+4
+333
+364
+429
+526
+616
+C2770
+Laurent Swivel Recliner
+102
+5
+373
+414
+502
+630
+751
+C2720
+Laurent Loveseat
+171
+8
+667
+727
+859
+1052
+1233
+C2730
+Laurent Sofa
+255
+12
+1000
+1091
+1288
+1578
+1849
+C2860
+Laurent 90º Square Corner
+72
+6
+506
+557
+667
+827
+978
+C2870
+Laurent 45º Curved Corner
+97
+6
+634
+690
+810
+987
+1153
+C2740
+Laurent Ottoman
+42
+2
+171
+184
+211
+252
+289
+C2710
+Laurent Chaise Lounge
+72
+5.5
+428
+463
+540
+652
+758
+C42000
+Napoli Dining Arm / Swivel
+20
+1.5
+118
+128
+150
+182
+213
+C42100
+Napoli Dining Side Chair
+20
+1.5
+118
+128
+150
+182
+213
+C40000
+Napoli Club / Club Swivel
+73
+6
+425
+465
+553
+682
+802
+C40200
+Napoli Loveseat
+148
+10
+852
+933
+1108
+1365
+1607
+C40300
+Napoli Sofa
+221
+15
+1278
+1399
+1663
+2048
+2410
+C40400
+Napoli Ottoman
+38
+2
+220
+235
+268
+316
+362
+C41000
+Napoli Center Chair
+55
+4
+319
+338
+386
+476
+560
+C41600
+Napoli Corner / End Section
+68
+5.5
+435
+460
+528
+647
+766
+C9500
+Porte Dining Arm Chair
+-
+1.5
+62
+70
+87
+110
+133
+C9510
+Porte Dining Side / Armless Barstool
+-
+1.5
+62
+70
+87
+110
+133
+C9520
+Porte Dining Bench with Arms
+-
+1.5
+109
+125
+157
+206
+251
+C9580
+Porte Dining Armless Bench
+-
+1.5
+109
+125
+157
+206
+251
+C9400
+Porte Arm Club 
+-
+3
+109
+125
+157
+206
+251
+C9460
+Porte Rocker
+-
+3
+109
+125
+157
+206
+251
+C9470
+Porte Armless Club
+-
+3
+109
+125
+157
+206
+251
+C9420
+Porte Arm Loveseat
+-
+3
+182
+207
+262
+342
+417
+C9480
+Porte Armless Loveseat
+-
+3
+182
+207
+262
+342
+417
+C9440
+Porte Ottoman
+-
+1.5
+89
+104
+137
+185
+230
+C9430
+Porte Adirondack Ottoman
+-
+1.5
+71
+81
+103
+135
+165
+C9410
+Porte Chaise Lounge
+-
+4
+197
+222
+277
+357
+433
+C32000
+Portofino Dining Arm / Swivel
+24
+2
+121
+131
+153
+185
+216
+C32100
+Portofino Dining Side Chair
+24
+2
+121
+131
+153
+185
+216
+C32300
+Portofino Dining Bench
+-
+4
+272
+295
+348
+424
+494
+C32200
+Portofino Curved Bench
+-
+3
+274
+286
+325
+390
+451
+C30000
+Portofino Club / Swivel Chair
+85
+4
+333
+364
+429
+526
+616
+C30200
+Portofino Loveseat
+171
+8
+667
+727
+859
+1052
+1233
+C30300
+Portofino Sofa
+255
+12
+1000
+1091
+1288
+1578
+1849
+C30400
+Portofino Ottoman
+41
+2
+171
+184
+211
+252
+289
+C3600
+Provence Dining Arm Chair
+24
+2
+106
+123
+152
+199
+242
+C3610
+Provence Dining Side Chair
+24
+2
+106
+123
+152
+199
+242
+C3500
+Provence Club / Swivel 
+54
+3.5
+266
+291
+354
+448
+530
+C3570
+Provence Recliner 
+102
+5
+308
+345
+427
+550
+666
+C3520
+Provence Loveseat
+108
+6.5
+511
+563
+677
+849
+1001
+C3530
+Provence Sofa
+163
+10
+756
+832
+1001
+1243
+1472
+C3540
+Provence Ottoman
+27
+2.5
+149
+163
+193
+239
+282
+C4900
+Tremont Bistro / Barstool
+-
+1.5
+62
+70
+87
+110
+133
+C4910
+Tremont Chaise Lounge
+-
+4
+197
+222
+277
+357
+433
+~Multiplier does not apply to deduction column.
+Continued on next page.
++COM Yardage based on 28" repeat. Yardage may be more for larger repeats. 
+Cushions
+*UPS Accepted • Cushion  fabric selections available on the Internet at www.ebelinc.com or order Ebel Inc.'s extensive swatch book. • See Terms and Conditions
+Order by FAX Toll Free: 800-298-8885 or E-mail orders to orders@ebelinc.com
+***Note: Boxed welted cushions available for a 30% upcharge on Replacement Cushion price. Please specify if desired.***

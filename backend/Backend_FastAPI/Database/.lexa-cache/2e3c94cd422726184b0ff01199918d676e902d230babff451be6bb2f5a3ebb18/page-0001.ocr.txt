@@ -1,0 +1,29 @@
+ 
+Page 1 of 1 
+NetSuite Training Module 2 Quiz 
+9/23/20229/23/2022 
+ 
+NetSuite Training Module 2 Quiz 
+1. Can you lookup a Base SKU to find if there are any available to sell?   
+______________________________________________________________ 
+2. What are the 3 statuses that an item can have? 
+______________________________________________________________ 
+3. What is it called when an item cannot be sold off the retail floor?     
+______________________________________________________________ 
+4. Can you see the price on an Inventory Item page?   
+______________________________________________________________ 
+5. When searching to see if there is inventory to sell , what column should you be looking 
+at ?   
+______________________________________________________________ 
+6. Preferred Stock Level refers to the amount of an item that the system will 
+automatically keep at a retail location.   
+True or False?   
+7. If there is no quantity available – you can view pending purchase orders form the 
+Inventory Item page.   
+True or False?   
+8. Items sold in a store will automatically be fulfilled .  
+True or False?   
+9. Once a Delivery is set , you cannot change or cancel it .  
+True or False?  
+10. I can email my customer directly from their sale in NetSuite.   
+True or False 

@@ -1,0 +1,29 @@
+Page 2 of 2 
+3.3 Ordering Parts & Custom Items.docx 
+7/25/2019 
+How do I use a Place Holder SKU? 
+1. Try to use the configurator to order the item by clicking the 
+ button and 
+following the prompts. 
+a. Check that the following are correct: 
+i. Manufacturer 
+ii. Collection 
+iii. Keyword   
+2. If you cannot configure the items in the configurator, in a Sales Order, on the Items Tab, type 
+the appropriate Place Holder SKU from the list above into the item field. 
+3. Follow the instruction in the Descriptions field 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PLEASE NOTE 
+THIS IS A UNIQUE SITUATION.  CHANGING THE DESCRIPTION OF AN ITEM ORDERED USING THE 
+CONFIGURATOR WILL NOT CHANGE WHAT IS ORDERED.  CHANGING THE DESCRIPTION AND 
+GETTING A RESULT IS EXCLUSIVE TO PLACE HOLDER SKUS 
+ 

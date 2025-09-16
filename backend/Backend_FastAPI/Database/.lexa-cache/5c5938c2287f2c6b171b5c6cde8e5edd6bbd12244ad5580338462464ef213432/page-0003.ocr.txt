@@ -1,0 +1,18 @@
+ 
+Page 3 of 4 
+3.11 Contract Sales 
+6/23/2019 
+Create a Commercial Account Customer Record 
+1. Create a new customer record with the customer type Commercial 
+a. NetSuite Retail Sales Rep Dashboard / Navigation Shortcut Group / Guests / 
+Create Ne Customer 
+ 
+ 
+2. Discounted pricing levels need to be approved.  An alert will pop up on the Sales 
+Leadership Dashboard.  If you need faster approval reach out directly to a Territory 
+Leader by phone or email. 
+3. Once the customer is approved at a discounted price level than you can use the quote 
+form.  The pricing will automatically be at the discounted price 
+4. Delivery will be for white glove set up.  If the customer would like to reduce the delivery 
+fee, we can do curbside delivery.  Please contact a Territory Leader for the discount and 
+to arrange. 

@@ -1,0 +1,12 @@
+How it works 
+• Excessive motion will 
+trigger a response which 
+is transmitted to the 
+motor by radio frequency 
+initiating the retraction of 
+the awning.  
+• The sensor will respond 
+to motion in any 
+direction. Hence the 
+name 3D or 3 
+Dimensions. 

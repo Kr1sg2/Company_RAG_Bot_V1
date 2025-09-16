@@ -1,0 +1,21 @@
+Page 6 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+ 
+The Sales Order Form  
+The sales order form is made up of the Header and Tabs. 
+ 
+✓ Header 
+o Customer Record 
+o Location 
+o Sales Representative 
+o Total 
+✓ Tabs 
+o Items by Line 
+o Shipping & Billing 
+o Promotions 
+o Communication 
+o Delivery Information 
+o System Information 
+ 
+ 

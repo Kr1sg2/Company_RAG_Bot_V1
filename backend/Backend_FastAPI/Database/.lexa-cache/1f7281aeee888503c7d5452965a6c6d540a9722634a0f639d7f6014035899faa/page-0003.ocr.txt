@@ -1,0 +1,23 @@
+ 
+Page 3 of 8 
+0.12 Symbols and Short Cuts 
+9/23/2022 
+NetSuite is Thinking 
+When using a computer, if it does not react immediately we often want to click again or take further action.  
+NetSuite is a cloud (internet) based and it is important to wait and let it finish each action.  Because it is cloud 
+based it may perform slower at times.  You can always tell if NetSuite is processing your request by looking at the 
+header of your open web page.   
+Waiting for Next Task 
+When NetSuite has fully loaded the request and ready for the next task you will see the NetSuite Icon (
+) in the 
+top left on your current tab 
+ 
+Busy Loading the Request 
+When NetSuite is loading your request you will see a loading and a spinning arrow on the tab.  Clicking buttons 
+and hitting keys will not speed it up.  Please note that even if the page is not blank, and the arrow is still spinning, 
+NetSuite is still working. 
+ 
+Some time there will be a “Waiting” message in the bottom left of your screen. 
+ 
+ 
+ 

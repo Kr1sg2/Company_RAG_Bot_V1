@@ -1,0 +1,74 @@
+Page 10 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+3. Shipping/Billing/Signatures 
+ 
+ 
+Field Name 
+What? 
+Why? 
+ 
+Customer Pick Up 
+Instructions 
+Special Instructions to follow for the 
+Ship To Select if it is a customer pick up 
+Follow these instructions to ensure the 
+customer will be charged the correct sales tax 
+ 
+Ship To Select 
+The location the product will be fulfilled 
+to 
+ 
+ 
+Delivery Method 
+The way the transaction will be fulfilled 
+This is set by the 
+ at the top or 
+bottom of the screen. 
+ 
+Shipping Cost 
+The cost for the fulfillment method 
+This field will automatically populate.  You 
+can override the field based on the Play to 
+Win guidelines. 
+ 
+Bill To Select 
+The billing address for the transaction 
+ 
+ 
+Wells Fargo Approval 
+Code 
+This is where the Wells Fargo Approval 
+Code will be stored for the transaction 
+ 
+ 
+Delivery Notes 
+Specific notes for the delivery of all the 
+items on the transaction. 
+ 
+ 
+Terms 
+How the customer will pay their balance 
+ 
+ 
+Tax 
+The county the sales order is taxed at 
+This is controlled by the Ship To Select 
+Address. 
+ 
+Tax% 
+The percent of the tax rate for the Sales 
+Order 
+ 
+ 
+ 
+Use this button to set the delivery 
+method 
+This button will only show up if the sales 
+order is ready to deliver.  This function will 
+only allow you to set fulfillment methods 
+available in the Ship to area and 
+automatically set the Shipping Cost. 
+ 
+ 
+ 

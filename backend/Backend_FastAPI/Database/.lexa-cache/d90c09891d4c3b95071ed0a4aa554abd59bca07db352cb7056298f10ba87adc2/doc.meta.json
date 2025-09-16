@@ -1,0 +1,17 @@
+{
+  "doc_id": "d90c09891d4c3b95071ed0a4aa554abd59bca07db352cb7056298f10ba87adc2",
+  "relative_path": "0-2-history-of-leader-s.pdf",
+  "content_hash": "2050a3427e1090dbf7388d2647a56df01d6c02e17e61c206d4c46ed3076c9216",
+  "file_name": "0-2-history-of-leader-s.pdf",
+  "file_size": 1119913,
+  "mtime": 1757388960.3637977,
+  "processing_config": {
+    "ocr_disabled": false,
+    "tables_disabled": false,
+    "skip_image_only": true,
+    "chunk_size": 1200,
+    "chunk_overlap": 0.25
+  },
+  "chunk_count": 8,
+  "processing_complete": true
+}

@@ -1,0 +1,33 @@
+ 
+Page 1 of 3 
+9.2 General Tips and Trouble Shooting 
+11/20/2018 
+ 
+General I.T. Tips & Trouble Shooting 
+There are many different things that could cause a concern with your computer.  Most of the time, concerns can be 
+fixed using simple troubleshooting techniques, like closing and reopening the program. It's important to try these simple 
+solutions before giving up on your own abilities. No matter what's causing the issue, troubleshooting will always be a 
+process of trial and error—in some cases, you may need to use several different approaches before you can find a 
+solution; other problems may be easy to fix.  The I.T. team uses the following steps that you can try to when attempting 
+to resolve a concern. 
+1. Close and Reopen the Program 
+Before you consider your system broken, please close the program you are experiencing the 
+concern in and reopen it.  If the concern persists please go to step 2. 
+2. Restart the computer 
+When all else fails, restarting the computer is a good thing to try. This can solve a lot of basic 
+issues you may experience with your computer. 
+3. Always check the cables 
+If you're having trouble with a specific piece of computer hardware, such as your monitor or 
+keyboard, an easy first step is to check all related cables to make sure they're properly 
+connected. 
+4. Write down your steps 
+Once you start troubleshooting, you may want to write down each step you take. This way, 
+you'll be able to remember exactly what you've done and can avoid repeating the same 
+mistakes. If you end up asking other people for help, it will be much easier if they know exactly 
+what you've tried already. 
+5. Take notes about error messages 
+If your computer gives you an error message, be sure to take a picture, screen shot or write down as much 
+information as possible about the error message. You may be able to use this information later to find out if 
+other people are having the same error. 
+ 
+ 

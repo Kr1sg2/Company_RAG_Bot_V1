@@ -1,0 +1,25 @@
+ 
+Page 1 of 5 
+5.1 How to use the PAX credit card reader.docx 
+5/3/2024 
+ 
+How to use the credit card reader 
+PAX Device 
+The desktop credit card reader should be used to process payments by dip, swipe, or tap payments 
+while a guest is present in the store.  If a guest is not present, you can take payment by typing the credit 
+card information directly into NetSuite in the “Take Payment” screen.  You should never type or enter 
+data directly into the credit card terminal.   
+The PAX device should be ready to go each day.  If you have any concerns, please consult the 
+troubleshooting portion of this procedure.   
+Table of Contents 
+Taking a Payment .......................................................................................................................................... 2 
+Tap and Pay ................................................................................................................................................... 2 
+Printing Preferences...................................................................................................................................... 3 
+Manual Batch Close ...................................................................................................................................... 3 
+Re-Booting the Terminal ............................................................................................................................... 3 
+Clearing History ............................................................................................................................................. 4 
+Troubleshooting ............................................................................................................................................ 5 
+ 
+ 
+ 
+ 

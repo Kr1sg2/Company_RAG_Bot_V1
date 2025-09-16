@@ -1,0 +1,23 @@
+ 
+Page 3 of 5 
+0.10 Introduction to NetSuite 
+9/23/2022 
+Open in New Tab or Window browser 
+Because NetSuite is cloud based and runs in a web browser you can open what you want to look 
+at in a new window so you can quickly go back to where you were.  This can be done one of two 
+ways. 
+1. Right Click 
+a. Right click on the what you want to open in a new window 
+b. Select Open in a new tab or Open in a new window
+ 
+2. Click what you are trying to open using the center roll ball on your mouse. 
+ 
+ 
+Search the page  
+Searching a page is far more efficient then reading all the words.  To open a 
+search box to search a page for a key word or number: 
+1.  Press and hold <CTRL> and at the same time press <F>. 
+2. Type the word you are searching for and press <ENTER>.   
+3. It will take you to the first instance of the word if there are any on the 
+page.   
+4. Press <ENTER> again to go to the next instance if there is any. 

@@ -1,0 +1,66 @@
+Page 3 of 6 
+0.13 Stages of a Customer, CRM Pipeline 
+8/17/2021 
+Opportunity An Opportunity is a more detailed record of a Guest.  It starts to outline the Guest’s specific interests.  Opportunities in NetSuite will replace 
+your paper follow up log.  The more accurately you use Opportunities the better you will be able to follow up with Guests and the more your 
+sales will be protected.  Procedure 2.300 Whose Sale Is It is based on accurately logging your Opportunities.  You cannot have an Opportunity 
+without creating a Guest record or linking them to an existing customer.   A Guest or customer can have multiple Opportunities.  When Guest’s 
+specific interests are logged accurately it will give you the ability to use powerful tools in NetSuite to follow up in the most effective way, 
+creating more sales, creating more income for you.  Although there are a lot of useful fields only the fields listed in red are required to begin 
+documenting your relationship with the guest. 
+✓ 
+Some Guests will turn into opportunities 
+✓ 
+Primary Information Tab 
+o 
+Project Name 
+o 
+Customer Name 
+▪ 
+Note you can use the 
+ button to the right of the record to create a new guest from the opportunity page 
+o 
+Sales Rep 
+o 
+Expected Close Date 
+o 
+Opportunity Status 
+o 
+Opportunity Probability 
+✓ 
+Opportunity Notes 
+o 
+Area 
+o 
+Comments 
+o 
+Projected total of the opportunity 
+o 
+Reminder Notes 
+✓ 
+Items Tab 
+o 
+Specific stock and special-order products.  Your efforts 
+entering the product here will translate all the way to 
+the sales order.  You will not have to enter the 
+information twice.  You can edit what you entered 
+later. 
+✓ 
+Sales Tab 
+o 
+Create or mark a quote associated with the 
+opportunity 
+✓ 
+Qualifications Tab 
+o 
+Estimated Budget 
+o 
+Sales Readiness 
+o 
+Buying Time Frame 
+o 
+Buying Reason 
+✓ Closed Transactions 
+o Sales statistics on how many quotes were sold from the opportunity  
+ 
+ 

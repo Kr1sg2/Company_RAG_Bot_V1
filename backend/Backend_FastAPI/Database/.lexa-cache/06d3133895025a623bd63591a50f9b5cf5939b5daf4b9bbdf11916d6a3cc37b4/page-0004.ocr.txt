@@ -1,0 +1,17 @@
+ 
+Page 4 of 6 
+3.18 Customer Communication 
+10/31/2023 
+Attach a File 
+When sending an email to a guest you can attache Ownership Packets, Tear Sheats, or any other file 
+stored in NetSuite. 
+ 
+When emailing a guest from an Opportunity, Quote, or Sales Order 
+ 
+1. Compose your message or choose a template 
+ 
+ 
+2. On the Attachements tab, start typing the name of the collection. 
+ 
+ 
+ 

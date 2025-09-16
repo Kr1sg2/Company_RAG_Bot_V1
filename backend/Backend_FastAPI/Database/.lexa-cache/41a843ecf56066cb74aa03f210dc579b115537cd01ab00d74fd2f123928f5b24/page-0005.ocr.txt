@@ -1,0 +1,26 @@
+ 
+Page 5 of 6 
+2.0 Scheduling Fulfillment 
+3/22/2022 
+ 
+All items from Distribution Center, In-Home Delivery plus other delivery methods 
+These steps can be repeated until all items are fulfilled.   
+1. Write a Sales Order 
+a. R:\3 About Customers and Orders\3.1 Writing a Sale 
+2. Set the Delivery Method to anything except In-Store Pick-Up 
+a. Leaders Delivery Truck 
+b. Same Day Delivery 
+3. Unclick the ship complete field on the Items tab. 
+ 
+4. Complete and 
+ the Sales Order 
+5. When items are ready to schedule, click 
+ on the Sales Order when it is in view 
+mode. 
+6. Follow the prompts in the Schedule Delivery screen Add Pictures 
+a. Item Information 
+i. Take off the item you do not wish to fulfill 
+ii. Items can only be removed from the list if Ship Complete has been unchecked 
+ 
+ 
+ 

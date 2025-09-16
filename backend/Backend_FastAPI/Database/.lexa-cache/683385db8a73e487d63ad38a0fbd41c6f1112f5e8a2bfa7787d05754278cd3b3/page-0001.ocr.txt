@@ -1,0 +1,37 @@
+Page 1 of 1 
+2.92.11 Managing Customer Accounts Review 
+6/21/2018 
+ 
+ 
+Managing Customer Accounts Review 
+1. You can only find open customer orders by looking at the AIR report. 
+a. True 
+b. False 
+2. When back-ordering an item off the invoice, you have to e-mail accounts receivable in order to 
+transfer the money to the back-ordered invoice. 
+a. True 
+b. False 
+3. In the look-up window the code “CN-TRN” stands for cancel-transfer. 
+a. True 
+b. False 
+4. The best way to prevent mistakes on tickets is to review the order with the customer before 
+they leave the store. 
+a. True 
+b. False 
+5. Over 80% of delivery issues are caused by errors at the warehouse. 
+a. True 
+b. False 
+6. Sale Type 4s are delivery updated by the warehouse office. 
+a. True 
+b. False 
+7. When creating a credit memo and a LEAD-EXCHANGE the correct way to transfer the money is 
+to enter “0” when the dollar amount pops up, and then enter in the new invoice number. 
+a. True 
+b. False 
+8. The correct way to ensure that Wells Fargo invoices are charged is to enter “CBD” for the 
+method of payment.  
+a. True 
+b. False 
+Sales Associate Name:  _________________________________ 
+Employee ID#:  __________ 
+Date:  _________________ 

@@ -1,0 +1,16 @@
+Page 4 of 4 
+5.11 Refund 
+8/21/2019 
+Get an Error?   
+Do not start over.  Click “Edit” and correct your information. 
+If you have to go back into a record to correct a mistake to get an approval.  Please make sure to 
+correct these two fields before re-submitting.   
+✓ 
+Undeposited Funds 
+✓ 
+Charge Credit Card 
+ 
+Why did the charge fail? 
+o Not sure why you got an error.  Go to 3. Refund Method \ Payment events \ View 
+Details \ Raw Response to see why the bank denied the transaction.  Do not start over.  
+Edit the transaction based on the response and try again. 

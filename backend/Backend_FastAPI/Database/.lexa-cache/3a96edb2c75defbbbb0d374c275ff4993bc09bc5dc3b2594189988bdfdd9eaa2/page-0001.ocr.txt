@@ -1,0 +1,25 @@
+Page 1 of 3 
+2.52 Customer Owned Merchadise CUSM 
+10/14/2020 
+ 
+Customer Owned Merchandise 
+(CUSM-) 
+This procedure is used to track customer owned merchandise in our vast automated Distribution System.  
+Writing a CUSM- ticket creates a barcode for the customer owned item(s) and allows them to be tracked 
+anywhere in the company. 
+When should a CUSM- ticket be used?   
+✓ Guest brings in an item(s) to be serviced 
+✓ Guest brings in an item(s) to be repaired 
+✓ Guest brings in an item(s) to be inspected 
+Table of Contents 
+Identify the product....................................................................................................................................................2 
+Bought from Leaders and Can Find the Sales Order ..............................................................................................2 
+Did not Purchase from Leaders or Cannot Find the Original Sales Order ..............................................................2 
+Write A Tracking Sales Order......................................................................................................................................2 
+Item(s) Left at Store ....................................................................................................................................................3 
+Items Need To Be Picked Up By The Delivery Team ..................................................................................................3 
+Opening a Case ...........................................................................................................................................................3 
+ 
+ 
+ 
+ 

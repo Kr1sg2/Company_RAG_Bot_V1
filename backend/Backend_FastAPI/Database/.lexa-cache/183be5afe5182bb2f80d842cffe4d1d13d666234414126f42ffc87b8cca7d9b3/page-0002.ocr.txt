@@ -1,0 +1,50 @@
+Page 2 of 7 
+5.10 Exchanges Returns Credits Restocking.docx 
+6/14/2024 
+Process Automation 
+Return Type 
+When 
+Automation 
+Equal/Unequal 
+Exchange 
+To exchange for a 
+like item or for a 
+different item 
+On Return Authorization Save: 
+✓ Will write a new Sales Order for the exchange. 
+✓ Will associate the credit for the return once the 
+return is received with the Invoice for the 
+replacement sales order once it is fulfilled 
+✓ If the item is returning to your location you can 
+receive it by clicking 
+. 
+Store Credit 
+When returning an 
+item(s) for store 
+credit 
+On Return Authorization Save 
+✓ Will show you the return authorization.   
+✓ If the item is returning to your location you can 
+receive it by clicking 
+. 
+✓ Issue a gift certificate for the credit by following 
+5.5 Gift Certificates, Issuing a Gift Card for In-
+Store Credit. 
+Refund 
+When item(s) are 
+returned for a 
+refund 
+On Return Authorization Save 
+✓ Will take you to the refund screen 
+ 
+Entering an Associated Return Authorization 
+Original Sale & Invoice is in NetSuite 
+An Associated Return Authorization is used when you are processing a return or exchange for 
+product where the sales order was originally written in NetSuite.  Exchanges are initiated from an 
+Invoice.   
+1. Pull up the original sale with the item you would like to return 
+2. Select the Related Records Tab and select the Related Records subtab 
+ 
+ 
+ 
+ 

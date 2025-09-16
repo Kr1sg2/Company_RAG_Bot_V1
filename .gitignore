@@ -1,0 +1,29 @@
+# env
+.env
+.env.*
+*.env
+# db/vector
+backend/chroma_db/
+chroma_db/
+*.sqlite
+*.sqlite3
+*.db
+# py caches
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+# node
+node_modules/
+dist/
+.cache/
+# data uploads/models
+uploads/
+*.gguf
+*.bin
+*.pt
+# backups
+backups/
+*.bak
+*.backup

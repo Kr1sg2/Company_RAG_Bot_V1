@@ -1,0 +1,12 @@
+Page 9 of 9 
+0.01 Finding Information and Searching the R Drive 
+8/17/2021 
+What is a Path? 
+A file path is a description of where it is located on a network drive.  We do not email documents we 
+send their path.  We do this so there is one master copy of a document instead of many incorrect old  
+R:\Advertising\2017\11 November 
+R drive\subfolder “Advertising”\subfolder “2017”\subfolder “11 November” 
+Where is a Path Located? 
+Windows File Explorer 
+ 
+ 

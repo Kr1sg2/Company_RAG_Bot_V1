@@ -1,0 +1,27 @@
+Page 7 of 9 
+1.4 Time Clock.docx 
+4/17/2024 
+Missed Punch 
+If you miss a punch in and punch out for an entire day, you cannot fix this yourself.  Please reach out to your supervisor. 
+Team Member 
+1. If you missed a punch, the system will recognize it the next time you use the time clock.  For instance if you 
+didn’t clock in and you clock out for lunch, the system will ask you, “Did you forget to Clock In?” 
+2. Click 
+ and follow the prompts 
+3. Correct your time entry.  Please pay close attention to AM and PM 
+4. Click 
+ 
+5. Review the time your submitted.  If you need to make a change you can click 
+.  If all is correct click 
+. 
+6. You missed punch is now submitted to your supervisor for approval. 
+Supervisor Approval 
+1. Log into your Manager Role 
+2. On the dashboard you will see a MISSED PUNCHES report for your team members 
+3. If you agree with the missed punch you can click the 
+ on the right column to approve the correction 
+4. If you need to edit the missed punch 
+a. Click Hours and select Individual Hours on the menu on the right of your screen 
+ 
+b. Search for the team member you would like to edit in the search box 
+ 

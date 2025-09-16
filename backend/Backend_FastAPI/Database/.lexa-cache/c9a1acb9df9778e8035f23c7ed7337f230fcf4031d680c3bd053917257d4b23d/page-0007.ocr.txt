@@ -1,0 +1,34 @@
+Page 7 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+2  Just Checking In - Done 
+ 
+Subject: Leaders: Just Checking In 
+ 
+ 
+ 
+ 
+${customer.firstname}${customer.companyname}, we are just checking in. 
+We look forward to helping you create a great space.  Please let us know if we can help in any way.   
+We can: 
+• 
+Send you finish or fabric samples 
+• 
+Create a scale room planner 
+• 
+Answer any questions 
+• 
+Offer design assistance 
+ 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your 
+business, 
+ 
+ 
+${preferences.message_signature} 
+ 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our 
+name to anyone who would benefit from our service. 
+ 
+ 
+ 

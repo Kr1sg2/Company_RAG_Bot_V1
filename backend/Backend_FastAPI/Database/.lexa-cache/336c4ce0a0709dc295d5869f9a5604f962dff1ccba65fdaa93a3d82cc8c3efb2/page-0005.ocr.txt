@@ -1,0 +1,45 @@
+Page 5 of 9 
+Solutions Center Dashboard and KPIs 
+5/30/2022 
+Solutions | Aging Cases 
+Criteria: 
+Open Case(s) assigned to the user and subordinates without activity for seven calendar days or more.  Cases 
+with a status of Awaiting Incoming Purchase Order, Product at the Manufacturer, On Hold, Product in Repair, 
+Product in Cushion Shop, Waiting on Customer Product or Warranty Claimed with Manufacturer are not 
+included since these statuses are addressed in alternate portions of the dashboard. 
+Goal: 
+Review the case to determine what action needs to be taken in order to progress. 
+Solutions | Aging Incoming PO 
+Criteria: 
+Open Case(s) assigned to the user where the purchase order ETA date is before today.  The purchase order is 
+late. 
+Goal: 
+Communicate with the vendor that the Purchase order is on track for the expected receipt date and provide an 
+update to the customer that things are on track or if any changes to the eta date of occurred. 
+Solutions | customer Owned to Order 
+Criteria: 
+Open Sales Orders for Customer Owned Goods that need a Purchase Order processed in order to have the 
+incoming product received. 
+Goal: 
+Create a purchase order for incoming Customer Owned Goods. 
+Solutions | Purchase Orders to Cancel 
+Criteria: 
+Purchase Orders that are no longer needed for an open sales order. 
+Goal: 
+Determine if product is still needed.  If good are no longer needed cancel with the manufacturer.  Once 
+confirmation is received from the manufacturer of the cancellation, cancel the purchase order in NetSuite. 
+Solutions | Unacknowledged Purchase Orders 
+Criteria: 
+Purchase Orders marked as ‘Notify Solutions’ three days ago or more that do not have an acknowledgment 
+number from the manufacturer. 
+Goal: 
+Confirm we have received an acknowledgment from the Manufacturer for the Purchase Order and enter the 
+acknowledgment number into the NetSuite PO.  If we have not received, inquire for an update from the 
+manufacturer. 
+Solutions | Past ETA Purchase Order 
+Criteria: 
+Open Purchase Orders marked as ‘Notify Solutions’ that are past their expected receipt date. 
+Goal: 
+Inquire with the manufacturer for an update on the purchase order.  Log any updates on the purchasae order 
+and communicate the appropriate information to the guest. 
+ 

@@ -1,0 +1,24 @@
+ 
+Page 7 of 10 
+2.51 Solutions Center Service Case 
+6/9/2019 
+Create a Solutions Case if you Cannot locate customer’s account 
+✓ 
+Purchased from Leaders Casual Furniture® before 2015 
+✓ 
+Did not purchase from Leader’s Casual Furniture® 
+If a customer is not in the Leader's Casual Furniture® computer system because they purchased before 
+2015, did not originally purchase from us, or have changed their information and can no longer 
+remember their old phone number, we simply need to create a Guest Record 
+1. From the NetSuite home screen select “Create New Guest”  
+ 
+2. Complete the guest record and 
+ 
+3. Once the Guest Record is saved it will be in view mode.  The 
+ button will be visible 
+on the top and bottom of the Guest Record in view mode.  
+ 
+4. Complete the required fields indicated with an  and 
+ 
+ 
+ 

@@ -1,0 +1,47 @@
+Page 8 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Tabs 
+Below add ons you will see the tabs for the form.  They include the following: 
+ 
+Tab 
+Information it holds 
+Subtabs 
+Inventory Detail 
+Shows the location and status of 
+inventory in the company and 
+inventory on purchase orders 
+coming to the company. 
+Locations – Inventory by location 
+Purchase Orders Pending – Order for 
+inventory yet to be received 
+Open Transfer Orders – Transfers within the 
+company that have not been completed 
+Open Sales Orders  
+Inventory Statuses  
+Pricing 
+The price of the item at all 
+available levels 
+N/A 
+Related Records 
+Shows the history of all 
+transactions that had the item on 
+it 
+N/A 
+Inventory Detail Tab 
+Locations Subtab 
+ 
+Filters 
+ 
+What? 
+ 
+1 
+Locations Filter 
+Change your view to only include the inventory of a single 
+location 
+2 
+Items Status by Location 
+A detailed view of inventory by location by status 
+ 
+ 
+ 

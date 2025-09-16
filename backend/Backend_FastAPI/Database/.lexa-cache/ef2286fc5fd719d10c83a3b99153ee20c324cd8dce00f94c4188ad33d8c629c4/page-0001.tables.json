@@ -1,0 +1,51 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 100.0,
+    "data": [
+      {
+        "0": "NetSuite Employee Center"
+      },
+      {
+        "0": "The NetSuite Employee Center is a team member access portal where you can find and edit your human resources"
+      },
+      {
+        "0": "information."
+      },
+      {
+        "0": "Users that have an assigned role, like *Retail Sales Rep, will only be able to access the Employee Center from a Leaders"
+      },
+      {
+        "0": "Holding Co\u2122 computer.  Team members that do not use NetSuite regularly and do not have a role assigned to their"
+      },
+      {
+        "0": "account will be able to access the Employee Center from any computer anywhere."
+      },
+      {
+        "0": "Table of Contents"
+      },
+      {
+        "0": "Logging In ................................................................................................................................................................................ 2"
+      },
+      {
+        "0": "Employee Handbook ............................................................................................................................................................... 2"
+      },
+      {
+        "0": "Paycheck History ..................................................................................................................................................................... 3"
+      },
+      {
+        "0": "Print a paycheck .................................................................................................................................................................. 3"
+      },
+      {
+        "0": "Update Your Profile ................................................................................................................................................................. 4"
+      }
+    ],
+    "csv": "0\nNetSuite Employee Center\nThe NetSuite Employee Center is a team member access portal where you can find and edit your human resources\ninformation.\n\"Users that have an assigned role, like *Retail Sales Rep, will only be able to access the Employee Center from a Leaders\"\nHolding Co\u2122 computer.  Team members that do not use NetSuite regularly and do not have a role assigned to their\naccount will be able to access the Employee Center from any computer anywhere.\nTable of Contents\nLogging In ................................................................................................................................................................................ 2\nEmployee Handbook ............................................................................................................................................................... 2\nPaycheck History ..................................................................................................................................................................... 3\nPrint a paycheck .................................................................................................................................................................. 3\nUpdate Your Profile ................................................................................................................................................................. 4\n",
+    "shape": [
+      12,
+      1
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+Page 4 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Viewing the Digital Catalog in NetSuite 
+Shortcut:  NetSuite/Vendor Record/Pricelists and Information Tab/Point of Sale Subtab 
+Traditionaly, manufacturer catalogs were printed every year and hard copies were distributed.  
+Catalogs are now digital and can be quickly searched using by the computer instead of flipping 
+page by page.   
+ 
+Search Short Cut:  <CTRL><F>, type what you are looking for in the search box. 
+ 
+ 
+ 
+Using the Item Lookup Shortcut 
+When you are learning the system start with the Item Lookup portal on the NetSuite home 
+screen. 
+ 
+ 

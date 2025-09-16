@@ -1,0 +1,16 @@
+Page 5 of 5 
+5.0 Take a Payment 
+4/9/2021 
+4. Locate the Invoice you would like to take a payment on.  Open it in view mode by clicking the 
+Invoice Date or the Invoice Number.  Accept Payment 
+ 
+ 
+Note:  The invoice status will be open if there is an amount still owed. 
+5. Follow the prompts in the “Accept Payment” screen and press 
+. 
+Get an Error?   
+Do not start over.  Click “Edit” and correct your information. 
+Why? 
+o Not sure why you go an error.  Go to 3. Refund Method \ Payment events \ View Details 
+\ Raw Response to see why the bank denied the transaction.  Do not start over.  Edit the 
+transaction based on the response and try again. 

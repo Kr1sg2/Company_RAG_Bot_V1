@@ -1,0 +1,21 @@
+Page 7 of 7 
+5.5 Gift Certificates 
+3/2/2022 
+Issuing a Gift Card for In-Store Credit 
+The sales team can create in-store credits by creating Return Authorizations and fulfilling them.  Because 
+of automation limitations, sales team members cannot apply these credits to a Sales Order.  Please send 
+the "Retail | Apply a Store Credit To a Gift Certificate email template from the Sales Order you wrote the 
+gift certificate on. 
+1. Complete a return.  Once the return is received and in inventory the Credit Memo will show 
+status "Fully Applied" and a credit will be on the account. 
+2. Write a sales order for a Gift Certificate and save it. 
+3. Issue the Gift Certificate as outline in this section above.   
+4. From the Sales Order, you wrote the Gift Certificate on, send the email template 
+a. Template Category: 
+Accounts Receivable 
+b. Template: 
+Retail | Apply a Store Credit To a Gift Certificate 
+ 
+c. Be sure to erase the customer's email address and type in ar@leadersfurniture.com 
+ 
+5. Click Merge & Send 

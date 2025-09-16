@@ -1,0 +1,37 @@
+Page 4 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+2. Writing the Sale 
+Writing a sale in NetSuite is easy.  There are three areas you need to be concerned with. 
+1. Primary Information   
+2. Items 
+3. Signature/Billing/Delivery 
+ 
+1. Primary Information 
+✓ Location 
+o Location will already be set as a default for your customer record.  If you are 
+helping at another location, you will have to change this to the location you are 
+helping at manually 
+✓ Sales Rep 
+o The Sales Rep name will default to the team member’s session that is open.  If 
+you are writing a sale on another team member’s log-in, you will have to change 
+this manually. 
+2. Items 
+✓ Use the 
+ button to add new items to the sales order. 
+o Be patient, the configurator is sorting through many options only to show you 
+the options currently available.   
+o Note that you can add items directly to the Sales Order by typing them in the 
+line.  Typing directly on the line is not recommended other than special 
+circumstances outlined in further training. 
+✓ Estimated Ready Date 
+o Once you have entered the product, complete this field.  The Estimated Ready 
+Date field drives your customer follow-up reports and helps you manage open 
+orders. 
+3. Shipping/Billing/Signature 
+✓ Ship To Select 
+o The Ship To address is the address product will be delivered to or picked up 
+from 
+✓ Select the Payment Terms 
+✓ Click the 
+ button and follow the prompts 

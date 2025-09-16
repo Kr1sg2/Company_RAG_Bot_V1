@@ -1,0 +1,20 @@
+ 
+Page 6 of 7 
+1.5 Employee Center 
+2/27/2023 
+Address Change 
+Path:  NetSuite\Employee Center\Home Links Suitlet\Edit Profile\Edit Mode\Address Tab 
+1. From the Address Tab in edit mode click on the  to the far right of the screen 
+a. Click the “Remove” button to remove the old address 
+ 
+ 
+2. Click on  
+ to enter your new address.  Enter the Zip Code first and let the City populate automatically.  Enter 
+the street address in the Address 1 field and any lot, unit or apartment number in the Address 2 field. Be sure 
+your name appears in the “Addressee” field. Click 
+ when your address is complete. 
+ 
+ 
+ 
+3. The address is verified against a data base.  Check your entry if you get an error. DO NOT click in the box “Skip 
+Address Validation”.   

@@ -1,0 +1,28 @@
+ 
+Page 4 of 8 
+0.12 Symbols & Shortcuts 
+12/1/2023 
+Global Search 
+What 
+This is a search box that searches all of NetSuite.  Think of a Google search but only within the company 
+information.  It is a very powerful tool.  Because it is so powerful it can be a bit overwhelming until you get the 
+hang of it.  The same information as all of the other search fields throughout the NetSuite can be found by 
+searching from global search field. 
+Where 
+The global search bar can be found at the top of every page in NetSuite or can be accessed by pressing <ALT> and 
+<G> at the same time 
+ 
+Advanced 
+There are prefixes and symbols that can be used by advanced users to refine their search.  It is not necessary to 
+learn these prefixes and symbols but if you do you will be able to find what you are looking for faster with fewer 
+steps.  Tutorial documents and videos can be found on the internet by searching “NetSuite Global Search Tips & 
+Tricks.” 
+ 
+ Home Button  
+What 
+The Home Button takes you back to the main dashboard screen, the screen you see when you open NetSuite. 
+Where 
+The button is located on the top left of every screen in NetSuite 
+ 
+ 
+ 

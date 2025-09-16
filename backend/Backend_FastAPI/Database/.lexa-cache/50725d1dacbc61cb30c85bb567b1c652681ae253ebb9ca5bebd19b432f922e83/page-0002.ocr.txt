@@ -1,0 +1,16 @@
+Page 2 of 3 
+3.9 Cancel or change commitment location 
+6/9/2019 
+Cancel a Delivery or Shipping Record 
+There are two places to cancel a delivery record both on the Sales Order. 
+From the Order Information “Delivery Records” field 
+1. Look up the Sales Order you would like to work on 
+2. In Edit or View mode click the “Delivery Records” field  or click on the delivery Icon in the time line on the 
+bottom of the screen.   
+  
+ 
+3. Select 
+ 
+ 
+ 
+ 

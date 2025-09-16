@@ -1,0 +1,32 @@
+Page 2 of 2 
+12.46 NetSuite Essentials Review 
+8/19/2021 
+7. Match the Stages of a Customer to its definition. 
+_____ Guest 
+(A) A record showing the final balance on products that are fulfilled 
+_____ Opportunity 
+(B) A record of what a Guest would like to order that creates firm product reservations against 
+our inventory. 
+_____ Quote 
+(C) A person who has visited your showroom and expressed some interest but has not bought 
+yet.  They are not ready to share a great deal of information with you. 
+_____ Sales Order 
+(D) A record that starts to outline the Guest’s specific interests. 
+_____ Invoice 
+(E) A detailed outline of a potential transaction and a guest that is very close to buying. 
+8. You know when you’re in the “Sandbox” environment because it has a different color scheme and 
+reads “Sandbox” in the header. 
+a. True 
+b. False 
+9. A duplicate record for a guest happens when a record shares an email address or a phone number with an existing 
+record. 
+a. True 
+b. False 
+ 
+10. The “global search” helps you to search all of NetSuite, quickly. 
+a. True 
+b. False 
+ 
+11. The keyboard shortcut one can use to access “global search” is <ALT> and <G> at the same time. 
+a. True 
+b. False 

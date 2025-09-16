@@ -1,0 +1,24 @@
+Page 4 of 4 
+6/8/2019 
+2.1 Fulfill Deliver Update 
+Partially Fulfill 
+It may be necessary to only deliver part of a Sales Order.  Remember that it costs $100 or more every 
+time we go to a customers home.  Please have the guest pick up at the store if you are going to partially 
+fulfill. 
+1. Look the Sales Order up using “Guest Lookup” on the NetSuite home screen 
+ 
+2. Once the Sales Order has been located open it in Edit mode. 
+3. On the “Items” subtab uncheck the ship complete button 
+ 
+4. 
+ the Sales Order 
+5. If there is a deposit on the invoice and items are in the organization and available to be fulfilled 
+the 
+ button and 
+will appear on the Sales Order in View mode. 
+ 
+6. If the items are in your location and the customer is taking them you can use the 
+ to 
+Fulfill them from the store.  If you need to schedule a delivery follow the prompts in the 
+ windows.  For more detailed information see the Schedule Change Cancel Fulfilment 
+Procedure in the Procedure Manual 

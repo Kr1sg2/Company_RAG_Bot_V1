@@ -1,0 +1,28 @@
+ 
+Page 3 of 3 
+9.2 General Tips and Trouble Shooting 
+11/20/2018 
+Cannot print from FROG 
+A 
+Check to make sure the printer is turned on and there is paper in the 
+machine 
+ 
+B 
+Make sure the printer in your store is set as the default by right clicking 
+on the Start Button 
+ \Control Panel\On the top right corner click on 
+view large icons\Click on Devices and Printers\Right Click on the printer in 
+your store\Click Set As Default 
+Cannot print from internet or files 
+on the local computer 
+A 
+Check to make sure the printer is turned on and there is paper in the 
+machine 
+ 
+B 
+Make sure the printer in your store is set as the default by right clicking 
+on the Start Button 
+ \Control Panel\On the top right corner click on 
+view large icons\Click on Devices and Printers\Right Click on the printer in 
+your store\Click Set As Default 
+ 

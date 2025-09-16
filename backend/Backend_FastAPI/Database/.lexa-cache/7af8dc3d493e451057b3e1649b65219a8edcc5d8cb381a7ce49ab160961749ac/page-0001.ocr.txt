@@ -1,0 +1,24 @@
+Page 1 of 3 
+0.14 Managing The Browser Window and Tabs 
+6/9/2019 
+ 
+Managing the Browser Window and Tabs 
+NetSuite is a cloud-based system that is accessed through your web browser.  This has a lot of flexibility 
+and many advantages by allowing you to open information in separate windows to reference data, 
+websites, work on more than one record at a time, even be working on multiple things for multiple 
+guests at the same time.  With all this flexibility your web browser can get cluttered.  Take time in the 
+day to clean up your unused tabs.  These skills will work in your everyday life on any computer browser. 
+Table of Contents 
+What is a Browser Tab .................................................................................................................................. 2 
+Open In a New Window ................................................................................................................................ 2 
+Opening a New Browser Tab. ....................................................................................................................... 2 
+Opening a Link in a New Browser Tab .......................................................................................................... 2 
+Click the Scroll Wheel on the Mouse ........................................................................................................ 2 
+Right Click .................................................................................................................................................. 2 
+Periodically Closing Unused Tabs .................................................................................................................. 3 
+Close Entire Web Browser ........................................................................................................................ 3 
+Close Individual Tabs ................................................................................................................................. 3 
+ 
+ 
+ 
+ 

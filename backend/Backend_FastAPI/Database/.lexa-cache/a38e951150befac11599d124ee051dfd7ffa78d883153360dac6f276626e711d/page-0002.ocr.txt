@@ -1,0 +1,22 @@
+Page 2 of 4 
+6/8/2019 
+2.1 Fulfill Deliver Update 
+Where do I look to see….? 
+If all items are in the fulfill from location? 
+There is a check box that will give you a quick view if all items are in the fulfill from location and 
+the Sales Order is ready to deliver.  It is the “Order Ready to Deliver” check box on the “1. 
+Primary Information” section.  You will also see the 
+ button and the 
+ at the 
+top of the Sales Order. 
+ 
+If some items are in the fulfill from location? 
+Path: 
+Sales Order / “2. Items” Tab / Each line item 
+ 
+If the Ship Complete check box is checked? 
+Path: 
+Sales Order / “2. Items” Tab  
+ 
+ 
+ 

@@ -1,0 +1,63 @@
+11/27/2017 
+ 
+Minimum amount financed 
+ 
+Total Purchase Amount After Deposit 
+Plan # 
+12 Month Plan 
+$500 or more 
+1015 
+36 Month Plan 
+$5,000 or more 
+4032 
+Required Deposit 
+ 
+Type of Order 
+Required Deposit 
+All Items in Stock 
+$10.00 
+Some Items In Stock some Items Special Order 
+$200 or 10% of the Subtotal whichever is less 
+All special order 
+$200 or 10% of the Subtotal whichever is less 
+Splitting an Order into More Than One Fulfilment 
+Splitting a sales order into more than one fulfilment will cause the customer to receive a payment 
+statement for each fulfilment.  Wells Fargo only invoices for the amount delivered.   
+For each fulfilment the Balance Due field on the invoice must meet the following minimum value, or it 
+should be paid in full before scheduling. 
+ 
+Total Purchase Amount After Deposit 
+Plan # 
+12 Month Plan 
+$500 or more 
+1015 
+36 Month Plan 
+No minimum value required 
+4032 
+How Are Payments Calculated? 
+ 
+Plan 
+12 Amount Financed  
+ 
+Term 
+Payment 
+Example 
+$3,300 
+/  
+12 
+$275 
+12 months 
+ 
+/  
+12 
+ 
+36 months 
+ 
+/  
+36 
+ 
+ 
+On the 12-month plan, the minimum monthly payment is 3.5% of the order total or $40, whichever is 
+greater.  The amount financed must be paid off within the promotional term. Making minimum monthly 
+payments may result in finance charges after the interest free promotional period.  
+ 

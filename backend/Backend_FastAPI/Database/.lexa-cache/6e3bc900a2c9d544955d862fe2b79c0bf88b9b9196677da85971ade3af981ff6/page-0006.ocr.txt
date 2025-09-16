@@ -1,0 +1,48 @@
+Page 6 of 9 
+1.4 Time Clock.docx 
+4/17/2024 
+Clock In – Start the Day 
+1. Login using a regular role  
+2. Enter your ID Number / Employee Number 
+3. Click 
+ 
+4. Enter your Password / Social Security Number 
+5. Click 
+ 
+6. Click 
+ 
+Leave for Lunch 
+Use Leave On Break for lunch only.  For shorter breaks throughout the day, use Clock In / Clock Out 
+1. Login using a regular role  
+2. Enter your ID Number / Employee Number 
+3. 
+ 
+4. Enter your Password / Social Security Number 
+5. Click 
+ 
+6. Click 
+ 
+Return From Lunch 
+Use when returning from lunch 
+1. Login using a regular role  
+2. Enter your ID Number / Employee Number 
+3. 
+ 
+4. Enter your Password / Social Security Number 
+5. Click 
+ 
+6. Click 
+ 
+ 
+Clock Out – End the Day 
+1. Login using a regular role  
+2. Enter your ID Number / Employee Number 
+3. Click 
+ 
+4. Enter your Password / Social Security Number 
+5. Click 
+ 
+6. Click 
+ 
+ 
+ 

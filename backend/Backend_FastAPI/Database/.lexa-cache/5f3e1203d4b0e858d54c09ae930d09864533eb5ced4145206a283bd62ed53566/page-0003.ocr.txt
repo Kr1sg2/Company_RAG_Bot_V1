@@ -1,0 +1,36 @@
+Page 3 of 7 
+2.92.1 Managing Customer Accounts Monthly Focus 
+6/21/2018 
+ 
+ 
+Reading and understanding the customer look-up window: 
+o The customer look-up window shows all of the customer’s invoices and money 
+movement. Understanding how it works is essential in managing customer accounts. 
+We have a procedure that covers this in-depth.  
+o Level 1 training dives into the “Customer Look-up” function in FROG and helps give an 
+in-depth understanding of this feature: R:\Training\2.0 Level 1 Itinerary\Level 1 Week 
+1\3. Wednesday\2 Customer Look-Up.pdf 
+o Additionally, the review on this topic provides a nice self-test to check your 
+understanding of this feature: R:\Training\2.0 Level 1 Itinerary\Level 1 Week 1\3. 
+Wednesday\Presentations\2.0 Customer Look-Up and Product Look-Up Review.pdf 
+o Below is a typical customer account. We see on line 1, invoice 1817486 has a portion 
+back-ordered off, which creates invoice B18174861 on line 3. 
+ 
+The original deposit for invoice 1817486 was $1119.00. Payment was a “BC” and 
+that is under the column for code 
+ 
+Once the back-order is created, money will be transferred from the original 
+invoice, to the back-ordered invoice. We see that on sales order #1 where 
+directly underneath the deposit, the red arrow points out the back-order, 
+B18174861, with the code “BO” and it moves $332.10 to line 3.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+o  
+o  
+ 
+ 

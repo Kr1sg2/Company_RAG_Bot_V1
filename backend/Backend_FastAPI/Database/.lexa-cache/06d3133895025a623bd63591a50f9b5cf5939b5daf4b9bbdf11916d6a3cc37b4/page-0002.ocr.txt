@@ -1,0 +1,38 @@
+ 
+Page 2 of 6 
+3.18 Customer Communication 
+10/31/2023 
+Types of E-mail 
+Automatic  
+Automatic e-mails are triggered by an activity in NetSuite.  Usually, when a record is created for the first 
+time or a record is changed.   
+Manual  
+The user sends manual e-mails by purposefully going to a record and sending an e-mail from it.   
+1. Go to a record you would like to attach to an e-mail 
+2. Click the 
+link on the top of the page and select 
+ from the drop-down menu or go 
+to the communication tab and select 
+. 
+3. Select  the Messages Tab 
+4. Select the “Retail Customer Communication” template category 
+5. Choose the template you would like to send.   
+6. Click 
+ 
+7. A copy of the e-mail will be attached to the record. 
+a. An opportunity will not attach.  There is not enough information to share. 
+ 
+Record of Sent E-mail 
+NetSuite makes a record of all e-mails sent out automatically and manually.  These records can be 
+referenced on the: 
+✓ Employee Record 
+o On each team members Employee Record, there is a record of all the e-mails the team 
+member sent out of NetSuite 
+✓ Customer Record 
+o On each Customer Record, there is a record of every e-mail sent to the customer for 
+every transaction 
+✓ Sales Order 
+o On each Sales Order, there is a record of every e-mail sent regarding that Sales Order 
+✓ Solutions Center Case 
+o On each Solutions Center Record, there is a record of every e-mail sent to the customer 
+for the specific case 

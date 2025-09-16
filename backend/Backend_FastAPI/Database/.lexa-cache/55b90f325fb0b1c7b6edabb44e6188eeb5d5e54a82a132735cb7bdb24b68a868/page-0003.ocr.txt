@@ -1,0 +1,20 @@
+Page 3 of 6 
+0.16 Standard NetSuite Configuration Set Preferences 
+1/17/2024 
+Bank Deposits 
+The Bank Deposit Screen that is accessible from the Shortcuts on the lower right of your home 
+dashboard natively shows all locations.  Do the following configuration to set up the report to only show 
+your store. 
+. 
+ 
+1. 
+Access the Make Bank Deposit screen 
+2. 
+Click the 
+ button on the Deposits tab 
+ 
+3. 
+Click the “Additional Filters” tab 
+ 
+ 
+ 

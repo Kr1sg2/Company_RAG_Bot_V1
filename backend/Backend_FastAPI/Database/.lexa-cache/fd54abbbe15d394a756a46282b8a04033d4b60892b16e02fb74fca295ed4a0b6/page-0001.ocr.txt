@@ -1,0 +1,18 @@
+Page 1 of 2 
+3.5 Cancel A Sale 
+6/9/2019 
+ 
+Cancel A Sale 
+A Sales Order can be canceled if: 
+✓ There are no special order items on the Sales Order 
+✓ It is not within 48 hours of a scheduled fulfilment 
+o Wait till the day after the scheduled fulfilment to cancel 
+✓ It is not on a transfer 
+o Wait till the day after the scheduled transfer to cancel 
+1. From the NetSuite Dashboard use Guest Lookup to locate the Sales Order 
+ 
+2. With the Sales Order in View mode click the 
+ button 
+ 
+3. Press the 
+ button or Select Cancel Order from the drop-down menu 

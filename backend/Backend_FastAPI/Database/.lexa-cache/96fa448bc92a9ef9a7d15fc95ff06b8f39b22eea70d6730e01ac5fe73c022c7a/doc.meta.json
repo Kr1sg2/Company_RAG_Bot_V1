@@ -1,0 +1,17 @@
+{
+  "doc_id": "96fa448bc92a9ef9a7d15fc95ff06b8f39b22eea70d6730e01ac5fe73c022c7a",
+  "relative_path": "1-10-laptop-purchase-plan.pdf",
+  "content_hash": "767f86ec9da0e7fe9e8d69beda0ace864370c68c82f7ed3a2e99273da1b7efb2",
+  "file_name": "1-10-laptop-purchase-plan.pdf",
+  "file_size": 132763,
+  "mtime": 1757392568.374874,
+  "processing_config": {
+    "ocr_disabled": false,
+    "tables_disabled": false,
+    "skip_image_only": true,
+    "chunk_size": 1200,
+    "chunk_overlap": 0.25
+  },
+  "chunk_count": 2,
+  "processing_complete": true
+}

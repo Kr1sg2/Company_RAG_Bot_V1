@@ -1,0 +1,27 @@
+Page 14 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+Take a Payment / Deposit 
+A Sales Order Will Not Reserve or Order Merchandise without a Deposit 
+Once the Sales Order is saved it will take you to View Mode of the Sales Order.  In View Mode you will 
+be able to review images of the items and options selected to make sure everything is correct.  
+If you need to make a change on the Sales Order simply Click the 
+button to go back to Edit mode. 
+If everything is correct click the 
+ button. 
+Credit Card Present 
+1. The Sales Order balance can be seen directly above the payment field. 
+ 
+2. The minimum deposit will automatically populate.   
+a. You can take more money than the minimum standard if the customer wishes to pay in 
+full. 
+b. If you take less than the amount populated in the window the event will go on a report 
+sent to the Sales Leadership team. 
+ 
+3. Select the Method of Payment 
+ 
+4. Click 
+ 
+5. Follow the prompts on the Pax device 
+6. Please note this will not save the guest’s credit card information.  If a guest wishes to have a 
+credit card on file they will need to follow the Card Not Present instructions on the next page. 

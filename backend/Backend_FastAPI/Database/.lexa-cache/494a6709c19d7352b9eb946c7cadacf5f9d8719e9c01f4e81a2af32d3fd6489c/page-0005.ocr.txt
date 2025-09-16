@@ -1,0 +1,37 @@
+Page 5 of 5 
+6.4 BoxKeeper Transfer System 
+11/27/2017 
+Screen Read Out 
+Approved Scan 
+An approved scan means the item belongs at the location you are at.  If an item is scanned and a 
+Green number comes up on the screen the item belongs at the location.  Below the green will 
+be an invoice number and the customer’s last name if the item is reserved for a customer. 
+ 
+# 
+What 
+Why 
+1 
+A green number appears when an 
+item is being scanned to the correct 
+location.  The number will count up 
+chronologically after each approved 
+item is scanned 
+Having a green number display visually lets the 
+user know that the item is being moved to the 
+correct location 
+2 
+Customer Name 
+His allows the store team to separate their 
+customer owned goods from stock 
+3 
+Invoice # 
+The invoice number that the item is reserved 
+for.  This store team identify the customer and 
+give great service 
+Incorrect Scan 
+An incorrect scan means the item does not belong at the location you are performing a transfer 
+or you got distracted and scanned the same item a second time.  I f you believe the item should 
+be at the location ask the store team member to look the item up and identify the rack location 
+of the serial number in question.  R:\Training\2.0 Level 1 Itinerary\Level 1 Week 1\3. Wednesday\1 
+Product Look-Up Page 7, #7 
+ 

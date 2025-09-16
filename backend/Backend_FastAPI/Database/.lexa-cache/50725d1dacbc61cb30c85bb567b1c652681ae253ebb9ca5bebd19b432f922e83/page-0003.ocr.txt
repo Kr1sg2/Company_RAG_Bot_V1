@@ -1,0 +1,18 @@
+Page 3 of 3 
+3.9 Cancel or change commitment location 
+6/9/2019 
+4. In Edit mode on the Sales Order click the line item “Fulfill From” field you would like to change and choose from 
+the drop down.   
+Note:  You will see a full list of locations.  All locations may not have inventory available.  Only select a 
+location that you have discussed taking an item from the team and they have agreed.   
+ 
+ 
+ 
+Cancel A Transfer Record  
+If the item you would like to change the commitment location for is on a pending transfer you will have to have the 
+transfer canceled first.  Unfortunately, due to access restrictions the sales team cannot cancel transfers.  Please send a 
+cancel transfer request with the email template located here: 
+ 
+R:\14 About Templates, Forms and References\Email Templates\About Fulfillment 
+ 
+ 

@@ -1,0 +1,37 @@
+Page 1 of 2 
+12.46 NetSuite Essentials Review 
+8/19/2021 
+ 
+NetSuite Essentials Review 
+1. NetSuite is cloud based and runs in a web browser? 
+a. True  
+b. False  
+2. What is Partial Fulfillment in NetSuite? 
+a. Delivering what is available for an invoice 
+b. An official record of an item or list of items along with their price for a specific customer 
+c. Taking a deposit or additional funds toward an invoice on an account 
+d. A document describing specific goods and requesting compensation from a customer for the goods. 
+ 
+3. When filling out a record for the first time or changing information in a record, which mode do you 
+need to be in? 
+a. Edit 
+b. View 
+c. Peek 
+d. None of the above 
+ 
+4. An RA (Return Authorization) is part of the process of returning a product to receive a refund, credit to the 
+customer’s account, replacement or repair during the product’s warranty period? 
+ 
+    a. 
+True 
+      b. 
+False 
+5. The “Home” button is located on the top, left side on every screen of NetSuite? 
+ 
+   a. True 
+        b. False 
+6. “Sandbox” in NetSuite is a copy of the live system where you can learn and practice. 
+a. True 
+b. False 
+ 
+ 

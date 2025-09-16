@@ -1,0 +1,67 @@
+[
+  {
+    "page": 2,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 78.45747492635252,
+    "data": [
+      {
+        "0": "Logging In",
+        "1": ""
+      },
+      {
+        "0": "If you have a role assigned to your user, then you will only be able to access the Employee Center from a Leaders",
+        "1": ""
+      },
+      {
+        "0": "computer.",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "1.  Open a web browser and navigate to https://system.netsuite.com/pages/customerlogin.jsp"
+      },
+      {
+        "0": "",
+        "1": "a.  User Name: \nYour email address"
+      },
+      {
+        "0": "",
+        "1": "b. \nPassword: \nSet by you the first time you logged in"
+      },
+      {
+        "0": "2.",
+        "1": "Select the Employee Center Role"
+      },
+      {
+        "0": "",
+        "1": "Users with more than one role assigned to them will have to select the employee center role.  Users with no"
+      },
+      {
+        "0": "",
+        "1": "role assigned to them will automatically go to the Employee Center role"
+      },
+      {
+        "0": "",
+        "1": "a. \nFrom the user role drop-down select Employee Center"
+      },
+      {
+        "0": "Employee Handbook",
+        "1": ""
+      },
+      {
+        "0": "Path:  NetSuite/Employee Center/HR Tab/Policies Subtab",
+        "1": ""
+      },
+      {
+        "0": "The Employee Handbook is where you will find all of the human resources policies and procedures.",
+        "1": ""
+      }
+    ],
+    "csv": "0,1\nLogging In,\n\"If you have a role assigned to your user, then you will only be able to access the Employee Center from a Leaders\",\ncomputer.,\n,1.  Open a web browser and navigate to https://system.netsuite.com/pages/customerlogin.jsp\n,\"a.  User Name: \nYour email address\"\n,\"b. \nPassword: \nSet by you the first time you logged in\"\n2.,Select the Employee Center Role\n,Users with more than one role assigned to them will have to select the employee center role.  Users with no\n,role assigned to them will automatically go to the Employee Center role\n,\"a. \nFrom the user role drop-down select Employee Center\"\nEmployee Handbook,\nPath:  NetSuite/Employee Center/HR Tab/Policies Subtab,\nThe Employee Handbook is where you will find all of the human resources policies and procedures.,\n",
+    "shape": [
+      13,
+      2
+    ]
+  }
+]

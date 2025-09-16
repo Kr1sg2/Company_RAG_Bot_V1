@@ -1,0 +1,39 @@
+Page 2 of 2 
+9.4 Using Your Personal Device in a Retail Showroom 
+8/31/2021 
+ 
+1st Connect to the Network  
+You must connect to the Leaders-BYOD to be allowed the access outlined above. 
+1. You must be in the Leaders retail location within range of the Wi-Fi network. 
+2. On your device, connect to the Leaders-BYOD wireless network 
+a. SSID: 
+Leaders-BYOD 
+b. Password: 
+Florida1971 
+ 
+Set-Up the Ability to Print From Your Device 
+Android or Apple Device 
+1. Make sure you are connected to the Leaders-BYOD network 
+2. Download the HP Smart App on your device 
+a. 
+ 
+3. Follow the set-up instructions in the app. 
+4. Test print a document from NetSuite 
+IT Help? 
+it@leadersfurniture.com 
+(727) 254-5550 
+Widows Device 
+Select the Printer 
+If you cover at another location you will have to follow these steps again to print at the new location 
+1. Open the “Printer & Scanner Settings” 
+a. Click the 
+ in the lower left of your monitor 
+b. Start to type “Printer” 
+c. It will auto complete.  Click the icon 
+ 
+i. It may take a moment to show up.  Select the DIRECT-F5-HP M428fdw LJ printer 
+ii. 
+  
+d. Click Add Device 
+e. Get the PIN code off the printer within 90 seconds and enter it into your device 
+f. Follow the prompt 

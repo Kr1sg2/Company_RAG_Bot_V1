@@ -1,0 +1,25 @@
+Page 3 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+1. Create a Customer Record 
+Writing a sale without a quote is quick and easy.  When creating a customer record, pay attention to 
+duplicate detection.  A customer record that has duplicates will have a yellow warning bar a the top of 
+the screen.   
+Quick Path: Home Screen / Create New Customer / Create new customer record and 
+ / 
+ 
+Duplicate Found 
+If a duplicate record is found, a yellow bar will appear at the top of your screen.  This means that 
+another customer record shares the same phone number as the record you are creating.   
+ 
+1. Confirm with your guest you entered their information correctly. 
+2. Verify if they know the duplicate entity 
+a. If not, try and use another phone number 
+b. If they know the other entity, then click on the name in the yellow duplicate 
+detection bar and update the record.   
+3. 
+ 
+4. While in view mode, click 
+ 
+ 
+ 

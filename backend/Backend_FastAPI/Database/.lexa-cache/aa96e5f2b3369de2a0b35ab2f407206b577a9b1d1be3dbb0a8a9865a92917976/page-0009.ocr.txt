@@ -1,0 +1,62 @@
+Page 9 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Columns 
+Note: All columns can be sorted by clicking on the header 
+Column Headers 
+What it means… 
+Physical Location 
+The location that the information on the row represents 
+Quantity on Hand 
+Total quantity in the location including committed inventory 
+Quantity Committed 
+The amount of inventory in the location committed to a sale 
+Quantity Available 
+Quantity on Hand – Quantity Committed.  The amount of the 
+item at the location not on a sales order 
+Quantity on Order 
+The amount in transit to a location.  For the Distribution Center 
+this could include Purchase Orders and incoming transfers from 
+retail locations.  For retail locations this is for product coming in 
+on a transfer only.   
+Quantity in Transit 
+The amount of inventory scheduled to leave on a transfer but 
+have not yet started their journey. 
+Quantity Back Ordered 
+The number of items that are committed on sales orders to fulfill 
+from that location but are not in the location.  This could also 
+show items for a sales order scheduled to fulfill from that location 
+that are not committed to a sales order.     
+Preferred Stock Level 
+The amount of an item that the system will automatically keep at 
+a retail location.   
+ 
+Purchase orders Pending Subtab 
+Columns 
+Note: All columns can be sorted by clicking on the header 
+Column Headers 
+What it means… 
+Order Date 
+Date the purchase order on the row was ordered 
+Created From 
+If the item was a special order for a sales order the Sales Order that the 
+purchase order was created for will show here 
+PO# 
+Purchase order number 
+ACK# 
+Acknowledgement number from the factory 
+Item# 
+The SKU number that was ordered 
+Order QTY 
+The number of the SKU number that was ordered on the purchase order 
+QTY Received 
+If the purchase order was partially received it will show an amount received 
+less than the total quantity ordered 
+QTY On Order 
+The quantity of the SKU that was order but no yet received 
+ETA 
+The estimated date of arrival for items not yet received on the purchase order 
+Central Status 
+For Central Cushion (CENT-) items only:  Once the cushions on this order start 
+production, this field will tell you what stage of production they are in.   
+ 

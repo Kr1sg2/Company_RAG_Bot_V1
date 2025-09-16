@@ -1,0 +1,21 @@
+Page 6 of 6 
+5.4 Wells Fargo QR Code Finance 3-14-24 
+3/19/2024 
+Cancelling Authorizations 
+You cannot partially cancel any authorizations; it is all or nothing.  If the complete amount of the 
+authorization is not utilized the open balance will expire in 8 months.   
+1. Click on “Cancel an Authorization” on the left navigation menu 
+2. The previous week’s authorizations will be displayed by default.  Select the date range you would 
+like to search 
+3. Once you locate the customer’s account, click on the ‘Cancel Authorization’ link next to the 
+customer’s account. 
+a. The status of a cancelled authorization can also be verified by clicking on the “Recent 
+Authorizations” link within the “View Transactions” area on the Reports tab. 
+Wells Fargo Helpline 
+✓   If you have questions or need assistance with the Internet Processing System, please contact the 
+Client Processing department at 1-800-551-5111 and follow the prompts 
+✓   Client Processing is available: 
+o Monday to Saturday and holidays: 8:00am – 10:00pm Central Time 
+o Sunday: 10:00am – 10pm Central Time 
+o Closed Easter, Thanksgiving and Christmas 
+ 

@@ -1,0 +1,22 @@
+Page 2 of 5 
+0.0a Employee Center 
+10/16/2020 
+Logging In 
+If you have a role assigned to your user, then you will only be able to access the Employee Center from a Leaders 
+computer. 
+1. Open a web browser and navigate to https://system.netsuite.com/pages/customerlogin.jsp 
+a. User Name: 
+Your email address 
+b. Password: 
+Set by you the first time you logged in 
+ 
+2. Select the Employee Center Role 
+Users with more than one role assigned to them will have to select the employee center role.  Users with no 
+role assigned to them will automatically go to the Employee Center role 
+a. From the user role drop-down select Employee Center 
+ 
+Employee Handbook 
+Path:  NetSuite/Employee Center/HR Tab/Policies Subtab 
+The Employee Handbook is where you will find all of the human resources policies and procedures. 
+ 
+ 

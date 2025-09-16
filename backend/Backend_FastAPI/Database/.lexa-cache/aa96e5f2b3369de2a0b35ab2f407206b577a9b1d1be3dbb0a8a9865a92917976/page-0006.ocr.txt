@@ -1,0 +1,37 @@
+Page 6 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Search Results 
+The search results for Collection “Madeira” look like the following.  Can you identify the Base 
+SKU?  It has a SKU with no options and there are not options pictures.  See the red highlight in 
+the image below. 
+ 
+Detailed Information 
+Click on the SKU number to see detailed information about the item. 
+Primary Information  
+Information about the item to describe it and define it in the computer 
+ 
+Field 
+What is it 
+Internal ID 
+ID Number to reference the item when programing NetSuite 
+Item Name/Number 
+The full SKU for the item in Vendor-Frame, Finish, Fabric format 
+Display Name 
+Description of the base SKU of the item 
+Sales Description 
+Description of the item including option attributes 
+Item Status 
+Defines the current stocking status of the item.   
+Nail Down 
+If this box is checked the item cannot be sold off the retail floor 
+Item Category 
+Defines the category the item is in for tracking sales metrics  
+Assembly Needed 
+This box will be checked if an item needs to be assembled 
+Subitem Of 
+Base SKU of the item 
+Item Display Thumbnail Image of the item 
+ 
+ 
+ 

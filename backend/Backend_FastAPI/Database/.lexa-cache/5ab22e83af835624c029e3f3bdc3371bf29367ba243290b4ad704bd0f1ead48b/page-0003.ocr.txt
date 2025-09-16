@@ -1,0 +1,21 @@
+ 
+Page 3 of 3 
+2.3 Schedule Change Cancel Fulfillment 
+12/23/2022 
+Cancel or Reschedule Fulfillment 
+Can be changed or canceled if: 
+✓ No items are on a transfer 
+✓ It is more than 48 hours before fulfillment 
+Cannot be changed or canceled if 
+✓ Items are on a transfer from a store to the distribution center.  You must allow the transfer to 
+complete or ask the Distribution Center office to cancel the transfer before changing or 
+canceling fulfillment. 
+✓ Within 48 hours of fulfillment 
+1. Look up the Sales Order you would like to change or cancel fulfillment on 
+2. Find the Delivery Record on the line item or in the Delivery Record Field.   
+ 
+3. Choose to 
+ or 
+ 
+ 
+4. Follow the prompts 

@@ -1,0 +1,45 @@
+Page 1 of 4 
+1.0 Certificate Of Insurance Request.docx 
+3/14/2024 
+ 
+Certificate Of Insurance 
+From time to time, a guest may request that Leaders provide a certificate of insurance to access a 
+property for delivery.  Leaders is fully insured, and you have the following options.   
+On the Sales Order, choose the level of service requested by adding one of the following SKUs.  The 
+accounts receivable team will execute the request and confirm when it is complete.   
+A certificate of insurance will not be sent if it is on a quote.  For action to happen the request must 
+be on an approved Sales Order with a deposit.   
+ 
+ 
+SKU 
+What? 
+When? 
+Cost 
+Level 1 
+COI-Level1 
+Declaration Page of Our Policy 
+Immediate 
+Free 
+Level 2 
+COI-Level2 
+Customized Policy Declaration Page 
+with Property Specifically Named 
+48 hours from the 
+Request 
+$25 
+Level 3 
+COI-Level3 
+Property Named as Additional 
+Insured 
+48 hours from the 
+Request 
+$50 
+ 
+Table of Contents 
+Level 1 Example Certificate .............................................................................................................. 2 
+Level 2 Example Certificate - $25 ..................................................................................................... 3 
+Level 3 Example Certificate - $50 ..................................................................................................... 4 
+ 
+ 
+ 
+ 

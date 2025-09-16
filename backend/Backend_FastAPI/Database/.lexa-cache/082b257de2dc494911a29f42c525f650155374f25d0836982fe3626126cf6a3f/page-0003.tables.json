@@ -1,0 +1,170 @@
+[
+  {
+    "page": 3,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 57.55651641406131,
+    "data": [
+      {
+        "0": "The transformation to an industry leading company did not happen overnight.  It has always been",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "the opinion of Leader's Casual Furniture\u2019s ownership to grow steadily",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "and under control.  In order to keep this control, the Leader's Casual",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Furniture\u00ae  distribution  system  has  always  been  at  the  forefront  of",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "technology.  Leader\u2019s has had information technology and computer",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "systems in place since the first commercial computer, the Radio Shack",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "TRS-80,  came  out",
+        "1": "in  1979.",
+        "2": "This  system  was  primarily  used  for"
+      },
+      {
+        "0": "accounting.  A Tyler system was implemented in 1988 to automate",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "inventory  management,  accounting,  buying,  sales  analyses,  and"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "begin  a  point  of  sales  system.    In  1993  FROG  (Furniture  Retail"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "Organization Group) was implemented.  FROG is a fully integrated"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "furniture company management system that controls all facets of"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "the business.  In order to continue on the company\u2019s quest to utilize"
+      },
+      {
+        "0": "",
+        "1": "",
+        "2": "technology  to  be  as  efficient  as  possible  and  to  make  decisions"
+      },
+      {
+        "0": "based on real time data the warehouse management portion was split off FROG and on to the",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "more advanced BoxKeeper system in 2010.  Many of our casual furniture industry competitors",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "still operate with no business or inventory management systems today.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "The first warehouse was leased in the mid 70\u2019s in St. Petersburg, FL.  At approximately 15,000",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "square feet it was more than adequate for Leader\u2019s 2",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Showrooms.  In 1983 Leaders grew to a 4 Store chain",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "and  it  was  time  to  find  a  larger  distribution  center",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "located \nin  Clearwater.",
+        "1": "This",
+        "2": "facility \nserved \nthe"
+      },
+      {
+        "0": "company needs till 1994.  This warehouse supported",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "9  showrooms.   From 1995  To  2003 Leader's  Casual",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Furniture\u00ae was in a 52,000 square foot facility also in",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Clearwater.    This  was  adequate  until  the  company",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "reached record volume.",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "In 2004 Leader's Casual Furniture\u00ae moved into their current state of the art facility.  All Leader's",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "Casual  Furniture\u00ae  showrooms  are  supported  by  one  massive  170,000  square  foot  distribution",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "center which is 56 ft high.  With its towering ceiling and large square footage, the building has",
+        "1": "",
+        "2": ""
+      },
+      {
+        "0": "approximately 5,000,000 cubic feet of storage space.",
+        "1": "",
+        "2": ""
+      }
+    ],
+    "csv": "0,1,2\nThe transformation to an industry leading company did not happen overnight.  It has always been,,\nthe opinion of Leader's Casual Furniture\u2019s ownership to grow steadily,,\n\"and under control.  In order to keep this control, the Leader's Casual\",,\nFurniture\u00ae  distribution  system  has  always  been  at  the  forefront  of,,\ntechnology.  Leader\u2019s has had information technology and computer,,\n\"systems in place since the first commercial computer, the Radio Shack\",,\n\"TRS-80,  came  out\",in  1979.,This  system  was  primarily  used  for\naccounting.  A Tyler system was implemented in 1988 to automate,,\n,,\"inventory  management,  accounting,  buying,  sales  analyses,  and\"\n,,begin  a  point  of  sales  system.    In  1993  FROG  (Furniture  Retail\n,,Organization Group) was implemented.  FROG is a fully integrated\n,,furniture company management system that controls all facets of\n,,the business.  In order to continue on the company\u2019s quest to utilize\n,,technology  to  be  as  efficient  as  possible  and  to  make  decisions\nbased on real time data the warehouse management portion was split off FROG and on to the,,\nmore advanced BoxKeeper system in 2010.  Many of our casual furniture industry competitors,,\nstill operate with no business or inventory management systems today.,,\n\"The first warehouse was leased in the mid 70\u2019s in St. Petersburg, FL.  At approximately 15,000\",,\nsquare feet it was more than adequate for Leader\u2019s 2,,\nShowrooms.  In 1983 Leaders grew to a 4 Store chain,,\nand  it  was  time  to  find  a  larger  distribution  center,,\n\"located \nin  Clearwater.\",This,\"facility \nserved \nthe\"\ncompany needs till 1994.  This warehouse supported,,\n9  showrooms.   From 1995  To  2003 Leader's  Casual,,\n\"Furniture\u00ae was in a 52,000 square foot facility also in\",,\nClearwater.    This  was  adequate  until  the  company,,\nreached record volume.,,\nIn 2004 Leader's Casual Furniture\u00ae moved into their current state of the art facility.  All Leader's,,\n\"Casual  Furniture\u00ae  showrooms  are  supported  by  one  massive  170,000  square  foot  distribution\",,\n\"center which is 56 ft high.  With its towering ceiling and large square footage, the building has\",,\n\"approximately 5,000,000 cubic feet of storage space.\",,\n",
+    "shape": [
+      31,
+      3
+    ]
+  }
+]

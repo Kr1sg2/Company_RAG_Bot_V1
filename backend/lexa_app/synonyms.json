@@ -1,0 +1,14 @@
+{
+  "ns": "netsuite",
+  "so": "sales order",
+  "po": "purchase order",
+  "gc": "gift certificate",
+  "est": "estimate",
+  "rma": "return authorization",
+  "cust": "customer",
+  "sku": "item",
+  "upc": "barcode",
+  "rep": "sales rep",
+  "dep": "customer deposit",
+  "quote": "estimate"
+}

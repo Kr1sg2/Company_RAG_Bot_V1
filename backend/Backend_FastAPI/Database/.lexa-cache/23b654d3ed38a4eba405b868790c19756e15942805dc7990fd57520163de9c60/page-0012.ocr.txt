@@ -1,0 +1,30 @@
+Page 12 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+6 Tiles 
+ 
+The tiles are open transactions listed by type for you and your store.  They should be looked at every 
+morning to give guests the fastest and best experience possible.   
+ 
+The top row, “Mine,” will only show your transactions.  The bottom row, “Store,” will show the 
+transaction for all of the team members assigned to the location.   
+Please note that if you cover at a different location and write a sale at a different location, the sale will 
+show in the “Mine” tiles and not in the “Store” tiles because the sale was written for a different location.   
+ 
+7  Sales | Tasks (My Showroom) 
+Top performing showroom teams use Tasks to: 
+✓ Work together to keep a fully recovered showroom 
+o Assing projects on the manager's off days 
+✓ To remind each other of important tasks 
+o Tagging for a sale 
+o Review an incoming transfer 
+✓ To remember to follow up with a guest or supplier 
+ 
+8  Today’s Sales & Quotes 
+This portlet is an overview of the action around the retail locations for the day.  It gives a quick look at 
+what other stores are doing to satisfy curiosity and to help spur competitive spirit.   
+9  Top 10 Sales Reps By Sales Order (Today) 
+Daily top 10 list of sales associates by approved sales orders.  A quick look of who is on top for the day.  
+Feel free to congratulate them and ask them how they had such a great day.   
+ 
+ 

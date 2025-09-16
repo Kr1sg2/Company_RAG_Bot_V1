@@ -1,0 +1,71 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lexa Chat (quick test)</title>
+<style>
+  body { font: 16px/1.45 system-ui, sans-serif; max-width: 920px; margin: 2rem auto; padding: 0 1rem; }
+  header { font-weight: 700; font-size: 1.25rem; margin-bottom: .75rem; }
+  #log { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; min-height: 300px; background: #fafafa; }
+  .msg { margin: .8rem 0; }
+  .me { color: #0b6; font-weight: 600; }
+  .bot { color: #333; white-space: pre-wrap; }
+  .sources { margin-top: .5rem; font-size: .95rem; }
+  .sources a { display: inline-block; margin-right: .6rem; }
+  form { display: flex; gap: .5rem; margin-top: 1rem; }
+  input[type=text] { flex: 1; padding: .65rem .75rem; border: 1px solid #ccc; border-radius: 8px; }
+  button { padding: .6rem .9rem; border: 0; border-radius: 8px; background: #6b7cff; color: #fff; font-weight: 600; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+</style>
+<header>Lexa Chat — quick tester</header>
+<div id="log"></div>
+<form id="f">
+  <input id="q" type="text" placeholder="Ask your docs…" autocomplete="off" />
+  <button id="go" type="submit">Send</button>
+</form>
+<script>
+const API_BASE = "http://127.0.0.1:8601";
+const log = document.getElementById('log');
+const form = document.getElementById('f');
+const q = document.getElementById('q');
+const go = document.getElementById('go');
+
+function add(type, text, sources=[]) {
+  const wrap = document.createElement('div'); wrap.className = 'msg';
+  const who = document.createElement('div'); who.className = type === 'me' ? 'me' : 'bot';
+  who.textContent = type === 'me' ? 'You: ' + text : text;
+  wrap.appendChild(who);
+  if (sources && sources.length) {
+    const s = document.createElement('div'); s.className = 'sources';
+    s.textContent = 'Sources: ';
+    sources.slice(0,3).forEach(src => {
+      const a = document.createElement('a');
+      a.href = src.url; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = src.name; s.appendChild(a);
+    });
+    wrap.appendChild(s);
+  }
+  log.appendChild(wrap);
+  log.scrollTop = log.scrollHeight;
+}
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const text = q.value.trim();
+  if (!text) return;
+  add('me', text);
+  q.value = ''; go.disabled = true;
+  try {
+    const r = await fetch(API_BASE + "/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query: text })
+    });
+    const data = await r.json();
+    add('bot', data.response || '(no response)', data.sources || []);
+  } catch (err) {
+    add('bot', 'Error: ' + err);
+  } finally {
+    go.disabled = false;
+  }
+});
+</script>

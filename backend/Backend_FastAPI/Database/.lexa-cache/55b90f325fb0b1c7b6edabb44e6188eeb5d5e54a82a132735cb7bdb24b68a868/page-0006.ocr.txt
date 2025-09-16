@@ -1,0 +1,12 @@
+Page 6 of 6 
+0.16 Standard NetSuite Configuration Set Preferences 
+1/17/2024 
+Set Items Purchased To Images 
+To make reviewing guests purchases visual and easy.  This setting is “sticky” so once you set the filter to 
+Images it will stay this way on all other customer records till you change it.   
+ 
+1. From any customer record go to the Sales tab 
+2. On the sales tab click the Items Purchased subtab 
+3. Change the View in the drop down menu to “Sublist | Customer Items with Images 
+ 
+ 

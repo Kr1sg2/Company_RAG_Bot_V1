@@ -1,0 +1,25 @@
+ 
+Page 1 of 3 
+2.3 Schedule Change Cancel Fulfillment 
+12/23/2022 
+ 
+Schedule, Change, or Cancel Fulfillment 
+ 
+Fulfillment is the term used to deliver an order.  This can be done by a Leaders delivery truck, customer 
+pick up, or freight carrier.  NetSuite is programmed to only show you the valid choices for your 
+customers address. 
+Orders can only be scheduled for fulfillment when they have a deposit and all items are in possession of 
+Leaders at the distribution center or a store location.   
+Note: Sales Orders can be partially fulfilled if the Ship Complete box is unchecked.  Ship Complete is 
+found on the Sales Order on the “1. Items tab.” 
+ 
+ 
+Table of Contents 
+Schedule a Delivery ....................................................................................................................................... 2 
+Conditions ................................................................................................................................................. 2 
+Change or Cancel Fulfilment ......................................................................................................................... 3 
+Can be changed or canceled if: ................................................................................................................. 3 
+Cannot be changed or canceled if ............................................................................................................ 3 
+ 
+ 
+ 

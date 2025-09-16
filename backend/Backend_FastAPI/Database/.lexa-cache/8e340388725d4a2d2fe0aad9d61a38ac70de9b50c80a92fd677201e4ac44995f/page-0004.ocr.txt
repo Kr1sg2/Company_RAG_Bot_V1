@@ -1,0 +1,33 @@
+Page 4 of 6 
+5.4 Wells Fargo QR Code Finance 3-14-24 
+3/19/2024 
+2. Click “Process a Transaction” 
+a. Follow the prompts 
+b. The guest should have the account number from the approval they just received, or 
+you can fill out any 3 identification fields 
+3. Click 
+ 
+4. Fill out the fields and press 
+ 
+Field 
+What? 
+Amount 
+The amount due on the order after the deposit 
+Plan Number 
+12 Month: 1015, 36 Month 4032 
+Ticket Number 
+Sales Order Number 
+Salesperson ID 
+Your first and last name with no spaces Example: JohnSmith 
+5. Confirm the information and click 
+ 
+6. You now see the agreement for the financing for the sales order.   
+a. Review the Electronic Agreements and Disclosures 
+b. Enter the customer’s email 
+c. Review the Consent to Terms 
+ 
+7. Click 
+ 
+8. On the Authorization write down the approval code to enter in NetSuite. 
+ 
+ 

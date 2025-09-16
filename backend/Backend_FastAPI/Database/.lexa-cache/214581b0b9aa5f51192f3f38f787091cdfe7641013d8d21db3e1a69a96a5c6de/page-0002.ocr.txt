@@ -1,0 +1,41 @@
+ 
+Page 2 of 6 
+2.0 Look Up A Guest 
+6/15/2019 
+Getting Started 
+Using the Guest Look Up portal 
+1. To get started, from the NetSuite Home Screen Click the “Guest Lookup” portal or from the 
+Global Search. 
+ 
+ 
+2. You should see the screen below.  You can search by Email, Phone Number, Last Name, or 
+Company Name.  You can search with partial information if the guest cannot remember the 
+specifics.  You can also change the filters on how the search is conducted but it is recommended 
+that you leave them they way they are set. 
+It is not recommended to use the Advanced Search.  While you can click it, the options are 
+unnecessary and confusing. 
+ 
+Search By 
+What 
+Results 
+Email 
+To find all customer records related to the 
+email address 
+Account or accounts related 
+to a specific email account 
+Phone 
+Find all customer records related to the 
+phone number 
+Account or accounts related 
+to a specific phone number 
+Last Name 
+Find all customers with a specific last 
+name 
+All accounts with the last 
+name that was searched 
+Company Name 
+Find all businesses with a particular name 
+or word(s) in their name 
+Business accounts 
+ 
+ 

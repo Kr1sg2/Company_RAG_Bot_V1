@@ -1,0 +1,23 @@
+Section 2.130  
+ 
+Page 1 of 1 
+7/15/2016 
+ 
+Inventory Reconciliation 
+(Incorrect Inventory Quantities) 
+Occasionally you will come across an item on your showroom floor that is 
+a) 
+On the showroom floor and the computer says it is not 
+b) 
+Not on the showroom floor and the computer says it is 
+c) 
+Is tagged on the floor but have the wrong SKU tag / serial number 
+Step 1:   Compare How Many of a Particular Item the Computer Says You Have Compared to the 
+Actual Number On Your Floor.  
+Step 2:   Find Each Individual Item That Is On Your Floor And Write Down The Serial Number.  
+Look everywhere, including the backroom, storage areas, and restrooms. 
+Step 3:   Send “Inventory” a message in the following format 
+Example Message 
+ 
+Step 4:   In 72 Hours Check That Inventory Has Been Corrected.  If the correction has not 
+occurred send the message again and add “Second Request” to the top line. 

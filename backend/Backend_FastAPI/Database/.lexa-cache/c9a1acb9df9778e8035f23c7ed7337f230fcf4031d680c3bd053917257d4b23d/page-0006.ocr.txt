@@ -1,0 +1,35 @@
+Page 6 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+1  Thank You For The Opportunity – Attach the Quote 
+Subject:  Leaders: Thank you for the opportunity 
+ 
+ 
+ 
+${customer.firstname}${customer.companyname}, we appreciate your time today and are 
+excited to help you create a great space.  Please let us know if we can help in any way.   
+We Can: 
+• 
+Provide you with fabric and finish swatches 
+• 
+Create quotes 
+• 
+Provide images 
+• 
+Create and furnish the space in a room planner 
+• 
+Provide easy care and maintenance instructions for items you are interested in 
+• 
+Answer any questions you have 
+ 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your 
+business, 
+ 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our 
+name to anyone who would benefit from our service. 
+ 
+ 
+ 

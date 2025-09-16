@@ -1,0 +1,35 @@
+Page 1 of 2 
+2.91.7 Credit Memos Monthly Focus 
+6/21/2018 
+ 
+ 
+Monthly Focus 
+What: Credit Memos Procedure  
+Why: 
+A credit memo is how merchandise is returned to 
+inventory via F.R.O.G. once it’s been delivery 
+updated (a Sales Type 9).   
+When: Anytime a Return or Exchange needs to be 
+processed in F.R.O.G. AFTER an invoice becomes 
+delivery updated (a Sale Type 9).  
+Who: All store team members are accountable for understanding how to process a Credit Memo. With 
+this fundamental knowledge, every team member will be able to best help the customer process 
+a return/exchange to ensure customer satisfaction. 
+FAQ: 
+ How do I identify if an invoice is a Sale or a Credit Memo? 
+o A Credit Memo invoice will begin with the letter “C” 
+o Example: 1951649 is a Sale, C1951707 is a Credit Memo 
+ When should a credit memo be put into the system? 
+o Only after the Original sale ticket is Deliver Updated (Sale Type 9). 
+ What happens when I create a Credit Memo? 
+o The credit memo allows for the product to come back into inventory, refunding 
+the customer or exchanging for a different item.  
+ When does the product on the Credit Memo officially show as returned back into the F.R.O.G. 
+system? 
+o When the Credit Memo is Credit Memo Delivery Updated (Sale Type 9). 
+ If I am processing an exchange, when does the rewrite/new ticket get put into F.R.O.G.? 
+o The new order is put into the system before entering the Credit Memo.  This 
+way, if you are utilizing funds from the Credit Memo to pay for the new order, 
+the new order will already be in the system.  By doing it this way, it makes an 
+easy accounting step for transferring money from sales invoice to another. 
+ If I am processing an exchange, what do I enter when F.R.O.G prompts “Enter Refund Amount?” 

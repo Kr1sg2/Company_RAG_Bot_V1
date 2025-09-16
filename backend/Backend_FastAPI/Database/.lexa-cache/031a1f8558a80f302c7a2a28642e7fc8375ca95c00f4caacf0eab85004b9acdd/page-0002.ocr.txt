@@ -1,0 +1,11 @@
+ 
+Page 2 of 2 
+0.15 Loggin In To NetSuite 
+6/9/2019 
+i. 
+ 
+5. Welcome to NetSuite 
+ 
+You will have two different roles available to you.  Your default production role and a training role called 
+a Sandbox.  For Further information on rolls and the Sandbox Training Environment See “Sandbox 
+Training Environment” in the procedure manual. 

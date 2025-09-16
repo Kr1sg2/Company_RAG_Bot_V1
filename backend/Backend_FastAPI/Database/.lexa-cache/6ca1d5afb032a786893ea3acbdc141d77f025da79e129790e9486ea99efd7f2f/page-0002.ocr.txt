@@ -1,0 +1,14 @@
+Page 2 of 2 
+2.91.7 Credit Memos Monthly Focus 
+6/21/2018 
+ 
+o $0.00, this will prompt F.R.O.G. to ask you which invoice you want to move the 
+funds to.  Enter the invoice number for the exchange invoice you wrote before 
+you created the credit memo. 
+ If you make an error on the credit memo, and you see that after it has been created and saved, 
+how is that fixed? 
+o You can cancel the credit memo, and create a new one. Cancelled credit memos 
+will become a sale type 8 
+ Credit Memo Procedure: 
+o R:\Procedure Manual\4.0 Customer Accounts_AR\4.11 Credit Memos & 
+Exchanges.pdf 

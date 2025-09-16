@@ -1,0 +1,22 @@
+ 
+Page 1 of 1 
+3.0 Writing a Manual Sale on Paper & Taking a Deposit in NetSuite 
+6/19/2019 
+ 
+Writing a Manual Sale on Paper, taking a Deposit & Entering it in NetSuite 
+While you are getting used to NetSuite or before we are fully on tablets in the retail stores you may feel 
+more comfortable writing your sales on a manual invoice.  If you do follow these steps to take a deposit. 
+1. Create an amazing space for the guest.   
+2. When the guest needs a quick moment gather their: 
+a. Name 
+b. Phone number 
+c. Email 
+i. To send receipt & Ownership packets 
+d. Shipping and billing address 
+3. Create their customer record in NetSuite 
+4. Open a Sales Order for the guest and put any item you would like on the Sales Order 
+5. Save the sales order 
+6. You will be able to take a deposit against this sales order in any amount you need 
+7. You can print a receipt from the credit card device or from the Take a Payment form 
+8. You can go back and edit the line items on the sales order to match your written copy when 
+time permits. 

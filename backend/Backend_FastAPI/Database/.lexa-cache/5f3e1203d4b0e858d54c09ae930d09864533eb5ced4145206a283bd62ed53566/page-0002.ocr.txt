@@ -1,0 +1,40 @@
+Page 2 of 7 
+2.92.1 Managing Customer Accounts Monthly Focus 
+6/21/2018 
+ 
+ 
+ 
+ 
+Managing Open Orders 
+ 
+o In order for customer invoices to be kept up to date, and have orders that are ready to 
+deliver scheduled, we have the display backlog open when you clock in to work. 
+However, you can manage your open orders at any time, and there are a few ways to do 
+this. 
+ 
+Check the AIR report 
+ 
+FROG\Purchasing\Reports\Against Incoming\Enter Date 
+ 
+Go into the Open Sales Report 
+ 
+FROG\Sales\Reports\Open Sales Reports\Salesman 
+ 
+Go into the Display Backlog on your own: 
+ 
+FROG\Sales\Follow\Display Backlog\Salesman 
+o Updating your customer ETAs. 
+ 
+We frequently have customers that are not 
+ready for delivery for a variety of reasons, and 
+the furniture is being held in the warehouse. 
+We need to move the ETAs in FROG on these 
+invoices.  
+ 
+We also need to utilize the second memo box 
+to note an estimated date of when the customer will be ready for delivery. Any 
+communication with the customer should be put here with the date of contact 
+along with your sales ID number and initials. This way, anyone that is reviewing 
+open orders knows what is happening with the customer’s account.  
+ 
+ 

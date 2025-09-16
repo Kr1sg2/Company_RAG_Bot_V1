@@ -1,0 +1,19 @@
+Page 4 of 6 
+0.16 Standard NetSuite Configuration Set Preferences 
+1/17/2024 
+4. 
+Check the box for the following fields 
+a. Select the “Location” check box 
+i. Do Not select “Current User Sales Location” 
+ii. Do Not select “Sales Location” 
+iii. Do Not select “To Location” 
+b. Select both “Payment Method” check boxes 
+i. Do Not select “Payment Method(filtered) 
+c. 
+ 
+5. 
+The filters will now show.  Choose your Location and Sales Location.  This should be a “sticky 
+setting” and you only will have to do this process once. 
+ 
+ 
+ 

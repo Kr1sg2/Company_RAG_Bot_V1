@@ -1,0 +1,66 @@
+ 
+Page 2 of 8 
+0.12 Symbols and Short Cuts 
+9/23/2022 
+Edit / View 
+All records can be accessed in Edit or View mode.  Edit mode is used when filling out a record for the first time or 
+changing information in a record. View mode is used when searching customer records to verify information.  
+You can only progress to a quote, opportunity or sales order in view mode.  
+ 
+What 
+Where 
+Why 
+Note 
+Edit 
+The choice to Edit a record will 
+be on the record line item 
+usually on the right side.   
+ 
+If you are in a record in View 
+mode there will be a button 
+on the top of the page to edit 
+the record.    
+Opening a record in 
+Edit mode allows 
+you to update or 
+change information 
+Any changes in Edit mode must be 
+saved to make them a part of the 
+record.  If you forget to save the 
+changes the information will have 
+to be reentered. 
+ 
+When you look at a record in Edit 
+mode you will not have the same 
+options to move forward that you 
+do in View mode.  You must save 
+the record to progress.   
+View 
+The choice to View a record 
+will be on the record line item 
+usually on the left side or you 
+may have the choice to click 
+on the line item itself 
+ 
+If you are in a record in Edit 
+mode hit the save button at 
+the top or bottom of the page 
+to enter View mode  
+Opening the record 
+in View mode allows 
+you to review data 
+and take the record 
+forward to next 
+step.  For example 
+take a customer 
+record to a new 
+Sales Order. 
+When you are in View mode you 
+cannot edit individual fields.  
+There will be an Edit button when 
+in view mode that will take you to 
+Edit mode if you need to make 
+changes to the record.   
+ 
+ 
+ 

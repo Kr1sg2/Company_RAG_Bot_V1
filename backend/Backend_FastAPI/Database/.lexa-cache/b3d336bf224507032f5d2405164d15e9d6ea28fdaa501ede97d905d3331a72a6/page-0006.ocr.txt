@@ -1,0 +1,17 @@
+Page 6 of 7 
+5.5 Gift Certificates 
+3/2/2022 
+3. Fill out the Apply Gift Certificate fields 
+a. Enter the code on the back of the gift card 
+ 
+b. Enter the amount you would like to apply to the Sales Order from the Gift Certificate.  It 
+can be the full amount of the gift card or any amount less than the total.   
+c. Available Credit is the amount of funds still available on the Gift Card after the amount 
+you would like use for this transaction.  Unused funds will stay on the Gift Certificate 
+i. Cross out the original amount on the card and write this new value on the back. 
+d. Click 
+ to save  
+4. Finish entering all of the information on the Sales Order and click 
+ 
+ 
+ 

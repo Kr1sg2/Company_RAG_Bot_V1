@@ -1,0 +1,64 @@
+ 
+Page 4 of 5 
+0.10 Introduction to NetSuite 
+9/23/2022 
+Sticky 
+“Sticky” is a term used in NetSuite to describe areas that when you make a choice, they “stick” 
+the next time you are in a screen.  For instance, you can simply press 
+ or if you click 
+ it will stay the next time you have the option.  It will stick from the last choice.  The 
+goal of Sticky is to make you experience more efficient.   
+Edit / View 
+All records can be accessed in Edit or View mode.  When filling out a record for the first time or 
+changing information in a record Edit mode is used.  When progressing through customer record 
+to verify information while you are progressing to a quote, opportunity or sales order, View 
+mode is used.  
+ 
+What 
+Where 
+Why 
+Note 
+Edit 
+The choice to Edit a record will be on 
+the record line item usually on the 
+right side.   
+ 
+If you are in a record in View mode 
+there will be a button on the top of 
+the page to edit the record.    
+Opening a record in 
+Edit mode allows 
+you to update or 
+change information 
+Any changes in Edit mode 
+must be saved to make them 
+a part of the record.  If you 
+forget to save the changes 
+will have to be redone. 
+ 
+When you look at a record in 
+edit mode you will not have 
+the same options to move 
+forward that you do in view 
+mode until you save the 
+record.   
+View 
+The choice to View a record will be 
+on the record line item usually on 
+the right side or sometimes you have 
+the choice to click on the line item 
+itself 
+ 
+If you are in a record in Edit mode hit 
+the save button at the top or bottom 
+of the page to enter View mode  
+Opening the record 
+in View mode 
+allows you to 
+review data  
+When you are in view mode 
+you cannot edit individual 
+fields 
+ 
+ 
+ 

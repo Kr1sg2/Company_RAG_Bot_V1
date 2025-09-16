@@ -1,0 +1,54 @@
+Page 6 of 7 
+2.92.1 Managing Customer Accounts Monthly Focus 
+6/21/2018 
+ 
+Fixing Balancing Issues: 
+o One of the most common daily tasks we all encounter is fixing balancing issues in FROG. 
+Our 2.2 Closing Procedure goes into detail in each aspect of the daily closing procedure, 
+and it has a section focusing on fixing balancing issues: R:\Procedure Manual\2.0 
+General Store Procedure\2.2 Closing Procedure.pdf 
+ 
+Negative difference in bank card 
+ 
+Positive difference in bank card 
+o 2 of the most common mistakes made that creates Open Balance issues: 
+ 
+When creating either a Credit Memo or doing a cancel/rewrite when the money 
+amount pops up, instead of entering “0” and entering the new invoice created, we 
+hit enter instead, and skip over this. This will create one invoice having a negative 
+balance, and another having a positive balance. This is corrected by utilizing the 
+“Move Money” e-mail template: R:\Email Templates\Store Email Templates\Move 
+Money Request.msg 
+ 
+In fact, this template is utilized any time money needs to be moved for an 
+account. 
+ 
+When creating a LEAD-EXCHANGE invoice, sometimes a credit memo is 
+forgotten to be created to off-set the money owed on the exchange, and 
+bring back the damage or incorrect items back into inventory. Simple 
+solution: 
+ Create the Credit Memo: R:\Procedure Manual\4.0 Customer 
+Accounts_AR\4.11 Credit Memo.pdf 
+ Delivery update the credit memo if it is a sale type 2. If it is a sale 
+type 1, the delivery driver or warehouse group will delivery update 
+the credit memo. 
+o When entering a Wells Fargo order, if we do not enter the Method of Payment correctly 
+as “FI”, the customer will not be charged for the order. That is because it will not 
+prompt the accounts receivable department to charge the customer’s Wells Fargo 
+account. There are only 2 options in entering a Wells Fargo order. 
+ 
+Customer is financing the entire order, because it is all stock items. Here is 
+how the money portion should look when entered correctly in FROG:  
+ Deposit is entered as “0” 
+ The balance will be for the full amount, in this case 1624.82, which 
+equals the total amount of the sale. 
+ The deposit is “ND” which will be automatically filled in when you 
+enter in “0” as the deposit 
+ Method of payment is entered always as “FI”. It is NEVER “CBD” on 
+Wells Fargo orders, or else the customer will not be charged for 
+their order! 
+ The FI amount is entered, in this case it is for the total amount of 
+the sale, 1624.82. 
+ 
+ 
+ 

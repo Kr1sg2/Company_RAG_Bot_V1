@@ -1,0 +1,24 @@
+Page 10 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+2  Send/Email Fabric Samples 
+ 
+Subject: Leaders:  Need Samples? 
+ 
+ 
+${customer.firstname}${customer.companyname}, 
+We have finish and fabric samples of most items.  Please let me know which ones you would like me to 
+mail to you by calling or responding to this email. 
+ 
+I am standing by to help make your space a reality. 
+ 
+Cut and paste to insert images of finish and fabrics the guest liked from their visit.   
+ 
+ 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your business, 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our 
+name to anyone who would benefit from our service. 
+ 

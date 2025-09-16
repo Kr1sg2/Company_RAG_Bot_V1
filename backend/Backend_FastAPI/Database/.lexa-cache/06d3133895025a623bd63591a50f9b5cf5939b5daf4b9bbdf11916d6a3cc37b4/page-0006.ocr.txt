@@ -1,0 +1,21 @@
+ 
+Page 6 of 6 
+3.18 Customer Communication 
+10/31/2023 
+Test Messages- See for yourself 
+Want to send the messages to your e-mail so you can see them yourself? 
+1. From the record you would like to attach to the e-mail 
+2. Click the 
+link on the top of the page and select 
+ from the drop-down menu. 
+3. In the Recipients Tab, erase the customer e-mail and type in the e-mail you want to send the 
+test message to. 
+a. This will not save to the Customer Record and will only apply to this instance. 
+4. Select  the Messages Tab 
+5. Select the “Retail Customer Communication” template category 
+6. Choose the template you would like to send.   
+7. Click 
+ 
+8. A copy of the Opportunity will be attached to the e-mail. 
+ 
+ 

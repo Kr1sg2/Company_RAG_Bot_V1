@@ -1,0 +1,20 @@
+Page 16 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+4  Offer 5-day extension - Done 
+ 
+Subject: Leaders:  Need more time? 
+Need more time? 
+ 
+ 
+${customer.firstname}${customer.companyname}, 
+The quote we provided expires ten days from the date it was written.  If you need additional time, we 
+can do a one-time 5-day extension.  Please let me know if this interests you. 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your business, 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to 
+anyone who would benefit from our service. 
+ 
+ 

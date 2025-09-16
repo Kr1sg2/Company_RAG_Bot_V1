@@ -1,0 +1,32 @@
+ 
+Page 4 of 4 
+0.9 SKU Tags 
+8/19/2021 
+ 
+Bulk SKU Tag Example 
+ 
+1. Item Number   A unique combination of letters and number that give an item an identity 
+2. Price  The everyday selling price of an item 
+The item number printed on a bulk tag is not the complete item number. In this example the 
+complete item number is STOT-1500,250.  (Vendor: Stotter Item: 1500 Color: 250) 
+ 
+Current Bulk Vendors 
+Vendor 
+Abbreviation 
+Merchandise 
+Stotter 
+STOT- 
+Placemats 
+Tandy 
+TAND- 
+Hand Carved Wood & Accessories 
+Merritt 
+MERT- 
+Glassware and Dinner Ware 
+Leader’s Fabric Protection 
+FABP- 
+Fabric Protection 
+Leader’s Protection Plus 
+PLUS-PLAN 
+Accident Forgiveness Plan 
+ 

@@ -1,0 +1,50 @@
+Page 11 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Inventory Detail Subtab 
+ 
+Columns 
+Column Headers 
+What it means… 
+Order Date 
+Date the order was placed 
+Sales Order 
+Sales Order number 
+Customer 
+Customer account number and name 
+Estimated Ready Date 
+Date entered on the Sales Order of the estimated date all items will 
+be ready for fulfillment.  This is controlled by the sales associate, not 
+NetSuite 
+Quantity 
+The number of items on the sales order 
+Quantity Committed 
+The number of the SKU you have looked up, on each order 
+Commit From Location 
+The location the items will be reserved to 
+Inventory Statuses Subtab 
+ 
+ 
+What? 
+ 
+1 
+View 
+Only option is Inventory Status on Hand 
+2 
+Physical Location 
+You can sort inventory status by specific location.  All shows the 
+entire company. 
+Columns 
+Note: All columns can be sorted by clicking on the header 
+Column Headers 
+What it means… 
+Status 
+Status of the item 
+Physical Location 
+The location of the specific item(s) on the row 
+On Hand 
+Number of items with the specific status at the location 
+Available 
+Available to sell, Yes or No 
+ 
+ 

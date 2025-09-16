@@ -1,0 +1,13 @@
+Page 5 of 7 
+5.5 Gift Certificates 
+3/2/2022 
+Redeeming 
+To redeem a Gift Certificate, you will need the Gift Certificate number that can be found on the sales 
+order where the gift card was sold in NetSuite.  Gift Certificates can only be applied to Sales Orders in 
+Edit mode. 
+ 
+ 
+1. Write a Sales Order for product as you would normally. 
+2. On the tab 3. Shipping/Billing/Signatures, at the bottom, is the Gift Certificate section. 
+ 
+ 

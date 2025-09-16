@@ -1,0 +1,64 @@
+Page 7 of 7 
+5.10 Exchanges Returns Credits Restocking.docx 
+6/14/2024 
+5. Based on your Return Type selection the following will happen automatically.   
+Return Type 
+When 
+Automation 
+Equal/Unequal 
+Exchange 
+To exchange for a 
+like item or for a 
+different item 
+On Return Authorization Save: 
+✓ Will write a new Sales Order for the exchange. 
+✓ Will associate the credit for the return once the 
+return is received with the Invoice for the 
+replacement sales order once it is fulfilled 
+✓ If the item is returning to your location you can 
+receive it by clicking 
+. 
+Store Credit 
+When returning an 
+item(s) for store 
+credit 
+On Return Authorization Save 
+✓ Will show you the return authorization.   
+✓ If the item is returning to your location you can 
+receive it by clicking 
+. 
+Refund 
+When item(s) are 
+returned for a 
+refund 
+On Return Authorization Save 
+✓ Will take you to the refund screen 
+ 
+6. Complete the steps on the forms that are automatically created for your selected resolution and 
+Save. 
+Create a Restocking Fee 
+A restocking fee is charged when a guest wants to return a special order item.  To create a restocking fee 
+follow these steps.  
+1. Start an Associated Return Authorization using the instruction above 
+2. On the RA make the following selections 
+a. Return Type: Equal / Unequal Exchange  
+b. Return Method: Make the appropriate selection based on the agreement with the 
+guest. 
+c. Edit the items on the Return Authorization item are to only show the items being 
+returned 
+3. Click 
+ 
+4. The automation will automatically write a New Sales Order.  Because you selected 
+“Exchange,” all of the items you left on the Return Authorization will be listed on the new 
+Sales Order. 
+a. Remove all of the items off of the new Sales Order 
+b. Add “Lead-Restocking” and set the line value to the restocking fee 
+5. Click 
+ 
+6. Fulfill the Sales Order with the restocking fee on it. 
+a. The Sales Order with the restocking fee will show and open balance till the returned 
+merchandise is received in Leaders possession. 
+7. The Return Authorization 
+a. Will be fulfilled by the distribution team when the product is picked up.   
+b. Should be fulfilled by the store team only when the customer brings product into the 
+showroom. 

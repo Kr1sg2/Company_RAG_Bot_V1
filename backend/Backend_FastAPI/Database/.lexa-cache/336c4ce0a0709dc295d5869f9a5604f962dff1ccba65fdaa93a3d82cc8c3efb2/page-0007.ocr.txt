@@ -1,0 +1,81 @@
+Page 7 of 9 
+Solutions Center Dashboard and KPIs 
+5/30/2022 
+Aging Cases By Status Tiles 
+ 
+The Aging Cases by Status tiles show cases that need attention.  Statuses on a case are fluid and should be changed 
+based on the phase a case is in. 
+Case Statuses 
+Status 
+What? 
+When? 
+Not Started 
+The case has not been assigned 
+and no action has been taken 
+A case will have this status when it has just 
+been entered. 
+In Progress 
+Immediately after the case is 
+assigned 
+The case is assigned to an agent and they are 
+working to discover a solution 
+Photos Requested 
+Waiting to receive photos from 
+the customer of the concern 
+Assign after the photo request template has 
+been emailed to the customer 
+Waiting for Customer Product(s) Waiting to receive product 
+relating to the case from the 
+customer 
+Assign this status after a Return 
+Authorization has bee written and scheduled. 
+Awaiting Incoming Purchase 
+Order 
+Waiting for product or parts to 
+come from the factory 
+Assign status after a resolution has been 
+agreed to by the factory and the purchase 
+order for parts has been entered in NetSuite 
+Warranty Claim Filed with the 
+Manufacturer 
+A warranty claim has been 
+emailed to the factory using the 
+claim email template 
+Assign status after a warranty claim request 
+has been sent to the factory.   
+Product in the Repair 
+Department 
+Customer-owned product 
+relating to the case is in the 
+repair department 
+Assign status after the customer's product 
+has been received and it has been moved to 
+the repair department 
+Product in the Cushion Shop 
+Customer-owned product 
+relating to the case is in the 
+cushion shop 
+Assign status after the customer's product 
+has been received and it has been moved to 
+the cushion shop 
+Product at the Manufacturer 
+Customer-owned product has 
+left the Leaders Distribution 
+center and is in the custody of 
+the manufacturer 
+Assign status after the product has left the 
+Leaders Distribution Center 
+Ready to Deliver 
+All of the customer's repaired 
+products are ready to be 
+fulfilled back to the customer 
+Assign this status when “Ready to Deliver” is 
+true on the sales order.   
+Re-Opened 
+When a case is closed a 
+customer may contact us again 
+for the same concern.   
+Assign this status when re-opening a 
+previously closed case. 
+Do Not Use 
+This is a default filed we cannot remove.  Do not use it please 

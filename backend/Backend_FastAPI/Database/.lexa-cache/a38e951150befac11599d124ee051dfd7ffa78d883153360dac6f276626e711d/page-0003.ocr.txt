@@ -1,0 +1,24 @@
+Page 3 of 4 
+6/8/2019 
+2.1 Fulfill Deliver Update 
+Fulfill 
+Path: Sales Order / Fulfill Button on header 
+When a sale order meets the criteria outlined earlier in this section you will see the 
+ at the top of 
+the Sales Order. 
+1. Click the 
+ button 
+2. Take notice if money is owed on the Sales Order  
+a. If money is owed you can go back and take a payment from the Sales Order by clicking 
+the 
+ button. 
+b. If you miss the opportunity to take a payment from the Sales Order you will be able to 
+take a payment on the Invoice once the Sales Order is billed. 
+ 
+3. Read any Red instructions on the form. 
+4. Review the items you are going to fulfill.  Remove any item the customer is not physically taking 
+with them. 
+5. Click 
+ to complete the fulfillment 
+ 
+ 

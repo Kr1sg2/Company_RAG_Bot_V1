@@ -1,0 +1,27 @@
+Page 3 of 6 
+5.4 Wells Fargo QR Code Finance 3-14-24 
+3/19/2024 
+How to Apply 
+1. The guest will scan the Wells Fargo QR code posted in your store using their own device. 
+a. Each QR code is unique to the location 
+2. Follow the prompts 
+a. Household income:  Even if applying as an individual the entire household income can be 
+entered. 
+3. A response should be received in seconds.   
+a. Response: 
+i. Approved 
+ii. Pending: 
+1. If the response is pending, the application is being reviewed by a person. 
+2. This takes up to 10 minutes and then a response should be received 
+3. Wells Fargo may call the applicant during this time to verify data 
+4. If no response is received, you can call (800) 551-5111 to inquire 
+iii. Denied 
+1. (800) 551-5111 can be called for further review 
+Processing a Transaction and Applying Financing to a Sales Order 
+Reserve Funds 
+To completely process a transaction, you will need to reserve the funds in the guest’s credit line.  If you do 
+not reserve the funds for your order the guest could use the credit at another business and go above their 
+credit limit. 
+1. Log into Wells Fargo using the link on your NetSuite dashboard or going to the URL below. 
+a. https://retailservices.sec.wellsfargo.com/tablet/login 
+ 

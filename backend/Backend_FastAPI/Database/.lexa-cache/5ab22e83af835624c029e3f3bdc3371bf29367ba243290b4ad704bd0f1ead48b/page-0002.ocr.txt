@@ -1,0 +1,41 @@
+ 
+Page 2 of 3 
+2.3 Schedule Change Cancel Fulfillment 
+12/23/2022 
+Schedule a Delivery 
+Path: From the Sales Order – Set Delivery Method – Follow Prompts 
+Conditions 
+Ship Complete 
+Conditions 
+Is Checked 
+ 
+✓ Must have a deposit 
+✓ All items must be in the organization 
+Is Not Checked 
+ 
+✓ Must have a deposit 
+✓ Items in the organization will be able to be scheduled.  Items not in the 
+organization will not be able to be scheduled.  This will partially fulfill the 
+sales order leaving the other items to be fulfilled when they arrive.   
+ 
+1. Find the Sales Order you would like to schedule.  Open it in View Mode 
+a. If you open the Sales Order in Edit mode you will have to click 
+ to get to View 
+mode 
+2. Click the 
+ button 
+a. If you need to change your delivery method go to the Sales Order in Edit mode, click the 
+ and follow the prompt 
+3. Select the Shipping Method and follow the steps. 
+a. Review the order to make sure it is correct then click 
+ 
+b. Add any delivery notes then click 
+ 
+c. Click on the white space for the date you want to select. 
+i. Acknowledge the date you selected then click 
+ 
+d. Confirm the email that the delivery confirmation will be sent to 
+e. Click 
+ 
+4. The Delivery Record field and the Delivery Record on the line item will update with the Delivery 
+Record number.   

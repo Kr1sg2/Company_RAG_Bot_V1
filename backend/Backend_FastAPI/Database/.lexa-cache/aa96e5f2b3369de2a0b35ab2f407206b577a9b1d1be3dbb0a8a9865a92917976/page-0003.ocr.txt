@@ -1,0 +1,14 @@
+Page 3 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Searching The Digital Pricelist In NetSuite 
+Shortcut:  NetSuite/Vendor Record/Pricelists and Information Tab/Just below the tab 
+ 
+You can search by: 
+1. Collection 
+2. A key word in the description 
+3. Item number, full or partial SKU 
+4. Item Category 
+  
+ 
+ 

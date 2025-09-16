@@ -1,0 +1,458 @@
+35
+Item #
+Description
+~Deduction
++COM 
+Yardage
+Grade A
+Grade B
+Grade C
+Grade D
+Grade E
+C6110
+Avignon/Martinique Dining Arm Chair/Swivel 
+20
+2
+110
+117
+134
+157
+181
+C6200
+Avignon/Martinique Dining Side Chair
+20
+2
+110
+117
+134
+157
+181
+C6300
+Avignon/Martinique Swivel Barstool
+20
+2
+110
+117
+134
+157
+181
+C6370
+Avignon/Martinique Armless Barstool
+20
+2
+110
+117
+134
+157
+181
+C6000
+Avignon/Martinique Club / Swivel
+61
+4.5
+332
+366
+443
+555
+661
+C6020
+Avignon/Martinique Loveseat
+123
+7
+592
+643
+753
+913
+1064
+C6030
+Avignon/Martinique Sofa 
+183
+10.5
+854
+920
+1062
+1271
+1466
+C6040
+Avignon/Martinique Ottoman
+27
+2.5
+146
+156
+177
+210
+240
+C6010
+Avignon/Martinique Chaise Lounge
+78
+7.5
+476
+527
+637
+797
+948
+C6210
+Avignon/Martinique Double Chaise Lounge
+174
+7.5
+796
+867
+1020
+1246
+1456
+C6310
+Avignon Cuddle Chaise Lounge
+174
+7.5
+789
+849
+981
+1173
+1355
+C4110
+Bellevue Wingback Host Chair
+23.69
+2.5
+133
+146
+179
+226
+269
+C4000
+Bellevue Club / Swivel Rocker
+54
+3.5
+275
+299
+351
+427
+497
+C4100
+Bellevue Wingback Club / Swivel Glider
+57
+4
+275
+299
+351
+427
+497
+C4020
+Bellevue Loveseat 
+108
+6.5
+577
+624
+728
+881
+1024
+C4030
+Bellevue Sofa 
+163
+10
+865
+936
+1093
+1320
+1535
+C4040
+Bellevue Ottoman 
+27
+2.5
+164
+176
+202
+240
+276
+C100
+Carlisle Club / Glider Cushions Only
+-
+3.5
+258
+278
+322
+386
+446
+C160
+Carlisle Swivel Recliner Cushions Only
+-
+5
+347
+385
+467
+586
+698
+C120
+Carlisle Loveseat Cushions Only
+-
+6.5
+515
+556
+643
+772
+893
+C130
+Carlisle Sofa Cushions Only
+-
+10.5
+773
+833
+965
+1158
+1339
+C140
+Carlisle Ottoman 
+-
+3
+258
+278
+322
+386
+446
+C4500
+Calais Standard Club / Swivel 
+67
+4
+310
+331
+385
+482
+575
+C4600
+Calais Standard Center Chair 
+67
+4
+310
+331
+385
+482
+575
+C4660
+Calais Standard Corner / End 
+73
+5.5
+426
+454
+526
+654
+780
+C4640
+Calais Standard Ottoman / End 
+-
+2.5
+221
+232
+259
+307
+354
+C4500X Calais Luxe Club / Swivel 
+110
+8.5
+596
+654
+772
+980
+1183
+C4600X Calais Luxe Center Chair 
+80
+5
+385
+411
+484
+612
+737
+C4660X Calais Luxe Corner / End 
+88
+7.5
+563
+606
+715
+907
+1094
+C4640X Calais Luxe Ottoman / End 
+-
+3
+314
+333
+383
+471
+557
+C4650
+Calais Split Corner - Standard Right 
+80
+7
+541
+573
+666
+827
+982
+C4670
+Calais Split Corner - Standard Left 
+80
+7
+541
+573
+666
+827
+982
+C4550
+Calais Chat Table Optional Cushion
+-
+4
+354
+386
+457
+586
+711
+C4580
+Calais Coffee Table Optional Cushion
+-
+4
+377
+412
+486
+625
+757
+C7500
+Dreux Dining Arm / Swivel
+18
+1.5
+109
+116
+133
+157
+180
+C7510
+Dreux Dining Side Chair
+18
+1.5
+109
+116
+133
+157
+180
+C7300
+Dreux Club / Swivel Glider
+55
+3.5
+318
+346
+406
+495
+578
+C7320
+Dreux Loveseat / Loveseat Glider
+110
+7
+637
+692
+813
+990
+1155
+C7330
+Dreux Sofa
+164
+10.5
+946
+1026
+1202
+1459
+1700
+C7340
+Dreux Ottoman
+30
+2
+173
+186
+213
+254
+291
+C7410 
+Dreux Daybed with 5 back pillows
+173
+10
+999
+1082
+1264
+1529
+1777
+7410CS Dreux Daybed Canopy Select Fabrics
+-
+9
+712
+798
+921
+N/A
+N/A
+C7440
+Dreux Daybed Ottoman
+90
+5
+520
+561
+649
+777
+898
+C3700
+Dover Woven Club / Rocker 
+85
+3.5
+372
+389
+435
+515
+593
+C3720
+Dover Woven Loveseat 
+171
+6.5
+744
+779
+869
+1029
+1186
+C3730
+Dover Woven Sofa 
+255
+10.5
+1115
+1168
+1304
+1544
+1779
+C3740
+Dover Woven Ottoman 
+42
+2
+271
+279
+302
+342
+381
+C6900
+Granville Dining Arm Chair
+20
+2
+110
+117
+134
+157
+181
+C6910
+Granville Dining Side Chair
+20
+2
+110
+117
+134
+157
+181
+~Multiplier does not apply to deduction column.
+Continued on next page.
++COM Yardage based on 28" repeat. Yardage may be more for larger repeats. 
+*UPS Accepted • Cushion  fabric selections available on the Internet at www.ebelinc.com or order Ebel Inc.'s extensive swatch book. • See Terms and Conditions
+Order by FAX Toll Free: 800-298-8885 or E-mail orders to orders@ebelinc.com
+Cushions
+***Note: Boxed welted cushions available for a 30% upcharge on Replacement Cushion price. Please specify if desired.***
+***Note: Boxed welted cushions available for a 30% upcharge on Replacement Cushion price. Please specify if desired.***
+***Note: Boxed welted cushions available for a 30% upcharge on Replacement Cushion price. Please specify if desired.***
+***Note: Boxed welted cushions available for a 30% upcharge on Replacement Cushion price. Please specify if desired.***
+***Note: Boxed welted cushions available for a 30% upcharge on Replacement Cushion price. Please specify if desired.***

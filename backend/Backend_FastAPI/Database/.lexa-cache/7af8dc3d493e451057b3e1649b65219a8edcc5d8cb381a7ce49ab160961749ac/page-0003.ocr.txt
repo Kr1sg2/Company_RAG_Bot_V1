@@ -1,0 +1,18 @@
+Page 3 of 3 
+0.14 Managing The Browser Window and Tabs 
+6/9/2019 
+Periodically Closing Unused Tabs 
+With all this flexibility of being able to open information in new tabs your browser can get cluttered and 
+start to make your efforts less efficient.  How many tabs are open in the browser in the example below? 
+ 
+ 
+There are 11 tabs open in the example.  
+Close Entire Web Browser 
+You can close the entire window and all of the tabs by clicking the 
+ on the web browser page.  
+This will close all your tabs and you will lose any work you have not saved. 
+ 
+Close Individual Tabs 
+Each tab can be viewed and closed individually.  Click on the tab to view what it contains.  Click the 
+ on the individual tab to close that specific tab. 
+ 

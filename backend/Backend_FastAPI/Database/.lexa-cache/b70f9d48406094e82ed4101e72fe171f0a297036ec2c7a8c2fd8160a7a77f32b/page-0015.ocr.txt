@@ -1,0 +1,22 @@
+Page 15 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+Card Not Present 
+If the credit card is not present or the guest wishes to put a credit card on file with Leaders, then 
+follow the steps below.  A card on file is “tokenized” so that the card information is encrypted 
+and cannot be accessed by anyone.  Having a method of payment on file with Leaders follows all 
+Red Flag and PCI compliance rules set forth by the United States Government.  Having a card on 
+file with Leaders makes all future orders easier for the guest. 
+Running a charge and not saving it   
+1. Fill out the fields in the Manual Entry column and click 
+ 
+ 
+Saving a credit card on file 
+1. Click the 
+ button to pop out the new card window and fill out each field. 
+ 
+2. Click 
+ when complete 
+3. Finish filling out the fields and click 
+ to execute the transaction. 
+A Sales Order Will Not Reserve or Order Merchandise without a Deposit 

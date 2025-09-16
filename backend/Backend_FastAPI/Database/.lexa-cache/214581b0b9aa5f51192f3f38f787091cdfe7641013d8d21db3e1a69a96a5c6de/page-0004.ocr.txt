@@ -1,0 +1,91 @@
+ 
+Page 4 of 6 
+2.0 Look Up A Guest 
+6/15/2019 
+ 
+#
+Field 
+What 
+Notes 
+1 
+Filters 
+Area where search criteria is 
+entered 
+Search fields can disappear if the filter’s gray line is clicked or 
+collapsed.  If you don’t see filters click the gray line to expand. 
+2 
+E-Mail 
+Search by email 
+ 
+3 
+Phone 
+Search by phone number 
+Can be entered with or without dashes 
+4 
+Last Name 
+Search by last name 
+ 
+5 
+First Name 
+Search by first name 
+Can search any letter combinations 
+6 
+Company 
+Name 
+Search by company name 
+Designer and Commercial accounts will have a company name 
+7 
+Customer 
+Type 
+Search by customer type 
+ 
+8 
+Print your search results 
+ 
+9 
+Edit Toggle 
+ 
+Not used for this screen.  On some screens this will allow in line 
+editing. 
+10 
+Open in Edit 
+Mode 
+Open the line item in Edit 
+Mode 
+Opening in Edit Mode allows you to make changes to the record 
+but does not allow you to progress to the next step till the 
+changes are saved and the document is in View Mode. 
+11 
+Open in 
+View Mode 
+Open the line item in View 
+Mode 
+Opening in View Mode allows you to verify the record detail 
+then progress to the next step.  If you open in View Mode and 
+see a change that needs to happen you will have the option to 
+click Edit to make changes. 
+12 
+First Name 
+First name on the customer 
+record 
+ 
+13 
+Last Name 
+Last name on the customer 
+record 
+ 
+14 
+Company 
+Name 
+Company name on the 
+customer record 
+Designer and Commercial accounts only 
+15 
+Address 1 
+Main address on the 
+customer record 
+ 
+16 
+City  
+City on the customer record 
+ 

@@ -1,0 +1,43 @@
+Page 2 of 3 
+2.52 Customer Owned Merchadise CUSM 
+10/14/2020 
+ 
+ 
+Identify the product 
+Bought from Leaders and Can Find the Sales Order 
+✓ 
+Print the Sales Order and go to “Write a Tracking Sales Order” later in this section. 
+Did not Purchase from Leaders or Cannot Find the Original Sales Order 
+✓ 
+Gather as much of the following information as possible. 
+i. 
+Manufacturer 
+ii. 
+Type of item/Style Number (i.e. Chaise, Chair, End Table) 
+iii. 
+Frame Color 
+iv. 
+Brief description of the fabric. 
+✓ 
+A picture if possible 
+Write A Tracking Sales Order 
+Write a Sales Order for the guest that will serialize and track the customer owned product in the company. 
+1. Lookup the guest if they have bought from us before or create a guest record if they are not in the 
+system. 
+2. From the View mode of the guest record click the 
+ button. 
+3. Complete the Sales Order. 
+a. In the items field use the Product Configurator to create a CUSM item, including CUSM slings 
+only. 
+b. Write a separate line for each different item type 
+c. Make sure the line item quantity matches the quantity of the type of item being dropped off  
+d. Change the description of the item to give a detailed description of the 
+i. Brand 
+ii. Type of item 
+iii. Color 
+iv. Description of the fabric if applicable 
+e. The price should be $0 
+ 
+ 
+ 
+ 

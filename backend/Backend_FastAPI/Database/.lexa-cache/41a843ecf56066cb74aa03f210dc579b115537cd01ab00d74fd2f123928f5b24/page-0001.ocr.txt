@@ -1,0 +1,86 @@
+ 
+Page 1 of 6 
+2.0 Scheduling Fulfillment 
+3/22/2022 
+ 
+ 
+Scheduling Fulfillment  
+This section is specifically about residential delivery in the zones covered by Leaders Furniture delivery 
+fleet.  Commercial sales and shipping on a common carrier are not covered by this program.  Leaders 
+delivery zones can be seen R:\6 About Delivery, Shipping and Transfers\ 2.2 Delivery and Transfer 
+Schedule. 
+Leaders offers several options for guests to choose from to fulfill their orders.   
+ 
+Fee 
+Can pick up an 
+unlimited 
+number of times 
+in store 
+Can pick up an 
+unlimited number 
+of times 
+Distribution 
+Center 
+A single in-home 
+delivery, One 
+Stop 
+One-year free 
+pick-up and 
+delivery for 
+services 
+Unlimited in-
+home deliveries 
+365 days from 
+date of purchase 
+Customer 
+Pick Up 
+$0 
+ 
+ 
+ 
+ 
+ 
+Standard 
+Delivery 
+$149 
+ 
+ 
+ 
+ 
+ 
+Premium 
+Delivery 
+$249 
+ 
+ 
+ 
+ 
+ 
+Same Day 
+Delivery 
+$299 
+ 
+ 
+ 
+ 
+ 
+Shipping 
+R:\6 About Delivery, Shipping and Transfers\2.6 Freight Shipping Rates 
+ 
+Premium Delivery  
+• 
+Residential Delivery only and not an available option for Commercial, Designer or Shipping. 
+• 
+To Charge for Premium.  Select Leaders Delivery Truck as you Delivery Method.  This will charge 
+for Standard Delivery and to make Premium you must enter “LEAD-PREMIUM DELIVERY” as a 
+line item on the Sales Order. 
+When a customer selects in-home delivery and wants to pick up items in the store, you can write more 
+than one Sales Order or decrease your transaction time by writing one Sales Order and following the 
+steps below. 
+The only exception to this policy is if Leaders or a supplier makes a mistake and we are attempting to 
+improve a guests experience.  An extended ETA on special order items is not covered by this exception.  
+Please contact the Sale Leadership team for approval. 
+Table of Contents 
+Schedule Delivery Screen .............................................................................................................................. 3 
+Accessories from Store, Furniture from Distribution Center ........................................................................ 4 
+All items from Distribution Center, In-Home Delivery plus other delivery methods ................................... 5 

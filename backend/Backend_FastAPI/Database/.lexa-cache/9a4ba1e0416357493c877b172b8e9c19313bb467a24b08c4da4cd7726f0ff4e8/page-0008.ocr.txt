@@ -1,0 +1,14 @@
+Page 8 of 8 
+4 About Easels, Floor Signs, Price Tags & Pricing 
+9/26/2022 
+ 
+Perfect Fit Order Forms 
+R:\4 About Easels, POP Pricing\Perfect Fit Order Forms 
+Who is Buying for You  
+Locate the team member who buys each brand and item by: 
+1. Look up an item and click on the Brand on the Inventory Item Record 
+a. Another way is in the global search at the top of the NetSuite page type “vendor:” 
+<space>  “brand name.”  This will take you directly to the Vendor Record.   
+ 
+2. You will see the buyer listed in the bottom center of the Primary Information section. 
+ 

@@ -1,0 +1,39 @@
+Page 1 of 1 
+2.91.71 Credit Memos Review Revised 
+6/21/2018 
+ 
+ 
+Credit Memos Review 
+1. A Credit Memo can be written on an item with an Open Service. 
+a. True 
+b. False 
+2. What is a Credit Memo? 
+a. A discount offered to a previous customer. 
+b. Something offered to the customer when there are service issues. 
+c. An In-Store Credit that expires within one year.  
+d. A Ticket used to Process a Return and bring merchandise back into inventory. 
+e. The Special Instructions on a Sales Order. 
+3. If Customer is doing an exchange, what are the first steps that should be taken? 
+a. Enter all items that are being returned and new purchases on the credit memo 
+b. Enter new invoice, then enter credit memo. 
+c. Call the Solutions Center and wait for instructions. 
+d. Call Sales Leadership for approval on all returns. 
+e. Enter Credit Memo, then enter new invoice. 
+4. When is it appropriate to select “YES” when prompted “Create Even Exchange?” 
+a. Every time an exchange is processed.  
+b. When the exchange occurs the same day the original sale was written. 
+c. Only when the new order is the same dollar amount as the items being returned. 
+d.  Never, we do not use the Even Exchange function in F.R.O.G. 
+5. All exchanges need to be approved and processed through the Solutions Center. 
+a. True 
+b. False 
+6. When should a detailed explanation of the return be entered into the “Memo Data” Field of the 
+Credit Memo? 
+a. Any time the exchange happens after 7 days of customer having possession of product. 
+b. Only when processing an Exchange; not necessary on Returns. 
+c. Never, Memos/comments are only necessary on Sales Orders. 
+d. Always 
+7. If Processing an Exchange Only, “$0.00” should be entered when prompted “Refund Amount” 
+a. True 
+b. False 
+________________________________________ Sales Associate Name____________ SLM #_____________ Date 

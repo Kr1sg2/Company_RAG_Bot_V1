@@ -1,0 +1,18 @@
+Page 4 of 5 
+2.0.1 The Customer Record 
+1/17/2024 
+Transactions Subtab 
+The Transactions Summary tab shows a summary of the Quotes, Sales Orders, Invoices, and Credit 
+Memos and Invoices for a customer’s record.  In both Edit and View mode you can go to the record for 
+each transaction. 
+ 
+Opportunities Subtab 
+An Opportunity is a more detailed record of a Guest. It starts to outline the Guest’s specific interests.  
+Opportunities can be converted into quotes or sales orders. 
+ 
+Support Tab 
+The support tab is where you see all the Solutions Center Cases for a customer record.  You can click on 
+a specific case to see a timeline of events and communication.   
+ 
+ 
+ 

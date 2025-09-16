@@ -1,0 +1,101 @@
+Page 1 of 2 
+2.92.61 Transfer Review 
+6/21/2018 
+ 
+ 
+Transfer Section 2.110 Review 
+1. Match the store with its’ Abbreviation by entering the correct three letter code into the box 
+next to the location name. 
+Bradenton 
+ 
+ 
+VER 
+Brandon 
+ 
+ 
+TAM 
+Casselberry 
+ 
+ 
+WPB 
+Clearwater 
+ 
+ 
+LAK 
+East Orlando 
+ 
+ 
+SNP 
+Fort Myers  
+ 
+ 
+SAR 
+Lakeland 
+ 
+ 
+CAS 
+Naples 
+ 
+ 
+WHS 
+Naples South 
+ 
+ 
+FTM 
+New Port Richey 
+ 
+ 
+BRD 
+Palm Harbor 
+ 
+ 
+CLW 
+Port Charlotte 
+ 
+ 
+EOR 
+Saint Petersburg 
+ 
+ 
+STP 
+Sarasota 
+ 
+ 
+BRN 
+Spring Hill 
+ 
+ 
+NPL 
+Tampa 
+ 
+ 
+PTC 
+West Palm Beach 
+ 
+ 
+NPR 
+Warehouse 
+ 
+ 
+PMH 
+Vero 
+ 
+ 
+SPH 
+ 
+ 
+ 
+ 
+2. If I print a transfer waiting list before the warehouse has sent me my transfer numbers 
+a. It doesn’t matter, all is well 
+b. I will not get any of the items I printed unless I notify the warehouse office 
+c. The items on the list will transfer to another store 
+d. FROG will send me double of every item 
+3. For an invoice to transfer to the store 
+a. The sale type must be “2” (CPU) 
+b. There must be a firm delivery date, not an estimated delivery date 
+c. The Deliver From must be your store’s location 
+d. All items must be linked to stock in the company 
+e. All of the above 
+ 
+ 

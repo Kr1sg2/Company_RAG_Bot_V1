@@ -1,0 +1,30 @@
+Page 12 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+3  Offer Financing Information (Apply from home) - Done 
+ 
+Subject: Leaders:  One year or MORE, same as cash 
+ 
+ 
+${customer.firstname}${customer.companyname}, Can we help further? 
+Thank you for the opportunity to create a beautiful space for you.  We offer convenient financing 
+options for your purchase through Wells Fargo.  The two plan options are: 
+• 
+Financed purchases over $500-no interest if paid within 12 months of regular equal payments 
+• 
+Financed purchases over $5,000-no interest if paid within 36 months of regular equal monthly 
+payments 
+Quick and Easy  
+While using your cell phone, scan the QR Code or Click Here to apply. 
+ 
+ 
+ 
+Powered by Wells Fargo 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your business, 
+ 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to 
+anyone who would benefit from our service. 
+ 

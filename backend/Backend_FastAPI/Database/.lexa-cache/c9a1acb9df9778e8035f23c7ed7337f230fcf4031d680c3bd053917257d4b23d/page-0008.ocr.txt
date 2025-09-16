@@ -1,0 +1,38 @@
+Page 8 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+2  Can We Help Further? – Done 
+ 
+Subject:  Leaders: Can we help? 
+Can we help further? 
+ 
+ 
+ 
+${customer.firstname}${customer.companyname},  
+ 
+Thank you for giving us the opportunity to create a beautiful space.  I am standing by and ready to help.   
+ 
+We can: 
+• 
+Answer any questions you have 
+• 
+Send you finish or fabric samples 
+• 
+Create a scale room planner for you 
+• 
+Offer design assistance to you 
+• 
+Send you care and maintenance packages 
+• 
+Set a one-on-one appointment with you 
+ 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your 
+business, 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our 
+name to anyone who would benefit from our service. 
+ 
+ 
+ 

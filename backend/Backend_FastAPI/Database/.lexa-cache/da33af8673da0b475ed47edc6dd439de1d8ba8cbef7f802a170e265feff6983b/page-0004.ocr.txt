@@ -1,0 +1,50 @@
+Page 4 of 8 
+12.23 WORKBOOK ONE - REVIEW SECTION - Questions and Answers 
+1/9/2019 
+ 
+18. Regarding Follow-up, a.k.a. Follow, when looking at your display backlog in FROG, “Past Due 
+Orders” shows invoices where the Estimated Delivery (ETA) date or the Delivery Date are earlier 
+than today. 
+a. TRUE 
+b. FALSE 
+ 
+19. When in “Follow” looking at your “Past Due Orders” in FROG, if the date is not in the Estimated 
+Delivery Date (ETA) or the Delivery date field is earlier than today and you know the ticket 
+cannot be delivered or set up for delivery, you should set the estimated delivery date to a week 
+from today. 
+a. TRUE 
+b. FALSE 
+ 
+20. When I am maintaining my open order report, if I find a sales order that is past due I should? 
+a. Just leave it.  The customer will call eventually 
+b. Wait for my manager to schedule the delivery 
+c. Contact the customer to see if they are ready for a delivery.  If yes, schedule the delivery.  If 
+no, move the ETA out one week and leave a comment on the record stating the customer 
+was called and not ready. 
+ 
+21. When looking at your “Past Due Orders” in FROG, if all the merchandise is in stock and there is 
+not a memo in the comments stating otherwise, you should call the customer to set up delivery. 
+a. TRUE 
+b. FALSE 
+ 
+Please partner with another sales professional and use FROG PLAY to answer 
+the next 3 questions.  
+ 
+22. How do you access the “Follow” menu? 
+a. FROG\Sales\Reports\Follow 
+b. FROG\Inventory\Reports\Follow 
+c.  FROG\Sales\ Follow 
+ 
+23.  How do you access the “Display Backlog” menu? 
+a. FROG\Sales\Sales Update\Display backlog 
+b. FROG\Inventory\Follow\Display Backlog 
+c. FROG\ Sales\Follow\Display Backlog 
+ 
+24. While looking at your Display Backlog and RTD, “READY TO DELIVER PARTIAL” brings up all of 
+the invoices by SLM number or store that have some, but not all, merchandise in stock and is 
+available to be delivered. 
+a. TRUE 
+b. FALSE 
+ 
+ 
+The next 15 questions are regarding “Whose Sale Is It?”  Please use  

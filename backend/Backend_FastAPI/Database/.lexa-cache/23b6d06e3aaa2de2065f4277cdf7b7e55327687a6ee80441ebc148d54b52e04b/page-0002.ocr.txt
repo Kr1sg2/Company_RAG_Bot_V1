@@ -1,0 +1,42 @@
+Page 2 of 2 
+1.0 Scanning Temperature Touchless Thermometer 
+5/4/2020 
+Device Instructions 
+Leaders has multiple devices in circulation.  Please look at the device instruction online for specific 
+operating instructions. 
+ 
+Device 
+Model 
+Link to manual 
+ 
+ZS-T1 
+How to turn the power on / off: 
+1. Press the M button to turn on the power. 
+2. Press the M button again to turn off the power 
+Automatic power-off without operation within 60 seconds 
+Measurement mode switch: 
+Press "-" button to switch between surface temperature mode 
+and body temperature mode 
+Switch between Celsius and Fahrenheit: 
+Press and hold the "-" button for 5 seconds, and the F1 symbol 
+will appear on the screen. 
+Then press the "-" button three times to display the F4 symbol on 
+the screen. 
+Press the “+” button.  You should see the temperature units change 
+to Fahrenhit. 
+Turn off power to save settings 
+ 
+ 
+NUB838OH 
+How to turn the power on / off: 
+1. Squeeze the trigger 
+Automatic power-off without operation within 60 seconds 
+Measurement mode switch: 
+Press the "MODE" button to switch between surface 
+temperature mode and body temperature mode 
+Switch between Celsius and Fahrenheit: 
+Press and hold the "MODE" button for 5 seconds  
+Press Up Arrow for Celsius 
+Press Down Arrow for Fahrenheit 
+Press and hold “MODE button for 5 seconds to save 
+ 

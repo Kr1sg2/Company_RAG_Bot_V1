@@ -1,0 +1,20 @@
+Page 5 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+Promotions 
+ 
+Current promotions automatically populate on a sales order as you add items that apply to a 
+current sale.  Promotion discounts can be removed by deleting the line item before the sales 
+order is saved, or by going back to a sales order in Edit mode and deleting the line. 
+ 
+3.  Click 
+ 
+The Sale order is now 
+.  You must take a deposit for the order to approve.   
+4.  
+ to approve the Sales Order 
+Note:  If you are trying to write an exchange, credit, or return, please initiate it from the Invoice.  
+Follow 5.10 Exchanges Returns Credits Restocking procedure for detailed instruction. 
+ 
+ 
+ 

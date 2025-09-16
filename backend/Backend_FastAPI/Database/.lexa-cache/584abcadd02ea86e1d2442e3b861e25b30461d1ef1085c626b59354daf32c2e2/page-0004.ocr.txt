@@ -1,0 +1,72 @@
+Page 4 of 9 
+3.24 After the Sale Customer Communication 
+3/1/2024 
+Delivery Follow Up 
+Reason 
+When 
+Why 
+How 
+Review Driver 
+Images/Add-
+On 
+At least 
+once per 
+week 
+With the Dispatch Track system delivery 
+drivers are asked to take pictures of the 
+deliveries they make.  By viewing these 
+you will be able to see how the products 
+you sold look set up in the customer’s 
+home.  Not only will this give you good 
+things to talk about with the guest you 
+will be able to make suggestions on add 
+on products; chaise lounges, rugs, 
+pillows, lighting, art and accessories, 
+etc. 
+Email templated, post card or 
+phone call.  Be sure to know the 
+price of the suggested items when 
+you communicate with the 
+customer. 
+Satisfaction  
+After each 
+customer 
+delivery 
+Call to check on your customers after 
+each delivery.  Ask if there is anything 
+we can help with and follow up with 
+suggested add-on’s 
+Phone Call.  Be sure to know the 
+price of the suggested items when 
+you communicate with the 
+customer. 
+Thank You 
+After each 
+customer 
+delivery 
+Send a post card with a thank you note 
+to let the customer know that we 
+appreciate them 
+Post card - R:\3 About Customers 
+and Orders\3.16 Thank you cards 
+ 
+Copy and paste images from Dispatch Track from the guests previous delivery stops and of the items you are 
+suggesting to make a visually rich presentation. 
+Subject Line:  Leaders: Wow!  It is looking great. 
+Email Body: 
+${customer.firstName}}${customer.companyname}, 
+ 
+I just reviewed the pictures from the delivery team.  It looks beautiful!   
+ 
+I have some ideas to take the space to the next level: 
+ 
+Throw pillows would had a pop of color.  I have a combination of three fabrics picked out that will match your 
+area rug, flooring, and paint. 
+ 
+ 
+  
+ 
+The Maui / Retreat Console table would go great against the wall 
+ 
+ 
+We have some hand crafted table top accessories that will bring texture to the space.  Here are a few examples.   

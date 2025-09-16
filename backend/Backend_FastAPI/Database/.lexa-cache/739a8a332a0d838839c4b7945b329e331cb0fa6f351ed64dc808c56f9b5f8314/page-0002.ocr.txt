@@ -1,0 +1,43 @@
+Page 2 of 6 
+0.13 Stages of a Customer, CRM Pipeline 
+8/17/2021 
+Terms to Learn: 
+Knowing what the following terms mean and how they work together is critical to giving customers the best experience and closing sales. 
+Guest 
+A Guest is a precursor to a Customer record.  A Guest is a person who has visited your showroom and expressed some interest but has not 
+bought yet.    They are not ready to share a great deal of information with you.  They may have filled out a $100 give-a-way.  This allows you to 
+populate the potential for follow up with limited required information.  Although there are a lot of useful fields only the fields listed in red are 
+required to begin documenting your relationship with the Guest.  A Guest record will turn into a Customer record once a Guest has placed an 
+order. 
+You will have many guest records 
+✓ 
+Primary Information Tab 
+o 
+Customer Type 
+o 
+Name 
+o 
+Phone number 
+o 
+Communication Preference 
+o 
+How did the guest hear about Leader’s 
+✓ 
+Address Tab 
+o 
+Delivery Address 
+o 
+Billing Address 
+✓ 
+Sales Tab 
+o 
+Expected close date 
+o 
+Projected Total  
+o 
+Details of customer’s interest 
+o 
+Why they are buying 
+ 
+ 
+ 

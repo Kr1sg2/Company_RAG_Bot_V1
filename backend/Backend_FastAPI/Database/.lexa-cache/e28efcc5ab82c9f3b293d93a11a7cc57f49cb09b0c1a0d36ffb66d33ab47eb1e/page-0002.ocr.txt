@@ -1,0 +1,52 @@
+Page 2 of 2 
+2.92.6 Transfers Monthly Focus 
+6/21/2018 
+ Is product coming to my store and product leaving my store all on the same transfer? 
+o No, incoming product is on a separate transfer than outgoing product.  You can tell 
+where a transfer is going by the transfer number and how it reads. 
+ How do I properly set up a customer order to transfer to my store 2 months from now? 
+o Procedure Section 2.110, Page 3, #2 
+ 
+Sale Type 2 
+ 
+All items linked to warehouse stock 
+ 
+Firm delivery date for the pick-up date 2 months from now 
+ 
+Deliver from, Your store location 
+ What should I expect from the driver team at my store 
+o The driver team is at your store to help the sales teams execute a transfer.  Their job is 
+to make it happen.  You should expect: 
+ 
+Help moving and placing heavy items 
+ 
+Removal of all trash and debris from the store 
+ 
+Never remove an item not on a transfer 
+ 
+Deliver supplies and mail to the store in shuttle bin 
+ 
+Cooperation to stay until the job is done correct 
+ What do the driver teams expect from the store teams? 
+o The store teams are accountable for the final accuracy of the transfer. 
+ 
+The store teams are expected to have their outgoing transfers prepared by the 
+load out door and properly labeled when the driver team arrives. 
+ 
+The store team should safely assist the driver teams to the best of their ability. 
+ 
+The store teams should have their trash and recycle material consolidated and 
+ready to go by the load out door. 
+ 
+Shuttle bags and mail should be prepared to go before the driver teams arrive. 
+ 
+A member of the store team should scan all incoming transfers, not the shuttle 
+driver. 
+ 
+A store team member should verify that the BoxKeeper transfer screen is empty 
+and complete and before the “Confirm Transfer” button is pressed. 
+ How do I find my transfer list if I do not receive an email from the warehouse 
+o Procedure 2.110, page 6 
+ 
+For any further questions, please reference the complete Transfer Procedure 2.110 
+R:\Procedure Manual\2.0 General Store Procedure\2.110 Transfering Merchandise.pdf 

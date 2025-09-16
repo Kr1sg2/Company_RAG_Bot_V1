@@ -1,0 +1,12 @@
+Page 3 of 5 
+0.0a Employee Center 
+10/16/2020 
+Paycheck History 
+Path:  NetSuite\Employee Center\Payroll Suitlet 
+Choose the paycheck you would like to print and click the 
+ 
+ 
+Print a paycheck  
+ 
+ 
+ 

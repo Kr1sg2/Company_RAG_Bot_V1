@@ -1,0 +1,46 @@
+Page 16 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+Showroom Success Tab 
+The Showroom Success Tab is an overview of your showroom's performance.  The default settings are 
+metrics for this month.  You can open each report and filter for a different date range.  
+ 
+ 
+Portlet 
+What? 
+1 
+Showroom Goals 
+Displays where your team is positioned month to date 
+against the showroom’s goals 
+2 
+Sales | Paid in Full 
+Total fulfilled volume for the year that counts toward 
+the Presidents Club 
+3 
+Showroom Sales by Salesperson 
+Show who is on top in written sales in your showroom.  
+Sales written while covering at another location will not 
+show in this field.   
+4 
+Showroom Performance 
+Your showroom performance for the month vs last 
+month and the quarter to show your showroom trend 
+5 
+Showroom Sales by Sales Person 
+Shows the written volume by salesperson by showroom.   
+6 
+Potential Commission on Open Order 
+The amount of unfulfilled sales in each team member's 
+open order. 
+7 
+KPI Scorecard Metrics 
+Your showroom’s key performance indicators compared 
+to goal 
+8 
+Showroom Sales by Major Category 
+Shows what your showroom is good at selling and 
+clarifies where you can improve.   
+9 
+Showroom Sales by Category 
+Shows what your showroom is good at selling and 
+clarifies where you can improve.   

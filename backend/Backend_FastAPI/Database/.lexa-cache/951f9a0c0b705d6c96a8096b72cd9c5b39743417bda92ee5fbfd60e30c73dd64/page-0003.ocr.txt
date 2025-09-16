@@ -1,0 +1,24 @@
+Page 3 of 5 
+3.20 Refresh Don't Replace Prospecting.docx 
+7/19/2024 
+Creating a Prospect List for Your Team 
+You can create a prospect list for your team by printing the report.   
+1. Execute a search.   
+2. Click the 
+ icon 
+a. The file will appear in your downloads 
+3. Have your team to work and check off the guests they have contacted.   
+Legacy Order Lookup (2007 – 2019) 
+Legacy Order Lookup is harder to use than Customer Sales History.  It does not allow you to search by 
+Brand or Date.  Legacy Order Look up is a gold mine of data if you put the extra work into it.   
+1. Click on each guest 
+2. Find orders for Central Cushions or Perfect Fit 
+3. Create a Customer Record If you cannot find one 
+a. If you cannot find a customer record, create a new one. 
+i. If there is no customer record, you will not have an email address.  You will have 
+to send a printed copy of the email and quote through traditional mail 
+4. Create and send the quote with the Replacement Cushion email template 
+a. This will protect your effort under the “Who’s Sale Is It” policy 
+5. Any communication sent out of NetSuite will automatically log in to the communications tab of 
+the Customer Record.  
+6. Follow 3.19 Before the Sale Guest Relationship Management 

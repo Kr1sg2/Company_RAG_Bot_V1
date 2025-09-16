@@ -1,0 +1,44 @@
+Page 1 of 2 
+2.92.6 Transfers Monthly Focus 
+6/21/2018 
+ 
+Monthly Focus 
+What: Transfers 
+Why:   Transfers are how product move between locations.  If we do not 
+transfer product correctly inventory will not be accurate and we 
+will fail the customer.   
+When:  Transfer Schedule is done weekly by the Warehouse.  It is done to 
+refill stock, fulfill a customer’s order, or when manually directed 
+to do so by a user in FROG. 
+Who: All store team members are accountable for understanding the transfer system.  With this 
+fundamental knowledge every team member will be able to best help the customer and create 
+solutions. 
+FAQ? 
+ How does my transfer read? 
+o SAR-671458-WHS 
+o Origin-Document Number-Destination 
+ 
+Origin:   
+ 
+Store 5 Sarasota 
+ 
+Document Number:  
+671458 
+ 
+Destination:   
+ 
+Warehouse 
+ When should go backs be ready? 
+o All products transferring out of the store should be located and moved to the load 
+outdoor the evening before the transfer day. 
+ What happens when I print a transfer list? 
+o If the transfer waiting list is printed 48 hours before your transfer day you will remove 
+the warehouses ability to see the transfer and they will not be able to create the work 
+to execute the transfer.  In short, the transfer will not come.  If you accidentally print 
+the transfer before your transfer day please contact the warehouse office to ensure the 
+transfer still takes place.   (emails Leader’s – Warehouse Office Group) 
+o It is ok and you are expected to print the transfer list after the warehouse team sends 
+the message with the upcoming transfer numbers.  This will give you a hard copy of 
+what is coming and going from your location. 
+ 
+ 

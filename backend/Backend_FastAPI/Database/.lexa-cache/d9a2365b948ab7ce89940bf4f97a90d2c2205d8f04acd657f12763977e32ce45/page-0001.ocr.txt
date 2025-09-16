@@ -1,0 +1,24 @@
+Page 1 of 4 
+5.11 Refund 
+8/21/2019 
+ 
+Refund 
+Refunding money in NetSuite is done from the customer record.  You can only refund money if a 
+customer has given a deposit and the item has not been delivered or an item was returned and there is 
+a credit on the account. 
+ 
+Funds received by cash or check can only be refunded by check.  Funds received by credit card can be 
+refunded back to the card or a check can be requested. 
+At this time you can only refund by manually entering a card. 
+Path: NetSuite \ Customer Record \ Financials Tab \ Refund Button 
+Table of Contents 
+Processing a Credit Card Refund ................................................................................................................... 2 
+Credits ....................................................................................................................................................... 2 
+Deposits .................................................................................................................................................... 2 
+Refunding A Cash Or Check Payment ........................................................................................................... 3 
+Get an Error? ................................................................................................................................................. 4 
+Do not start over.  Click “Edit” and correct your information .................................................................. 4 
+Why? ......................................................................................................................................................... 4 
+ 
+ 
+ 

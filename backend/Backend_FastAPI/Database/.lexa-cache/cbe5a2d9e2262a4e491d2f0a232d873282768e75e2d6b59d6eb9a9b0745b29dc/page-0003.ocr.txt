@@ -1,0 +1,97 @@
+Page 3 of 3 
+0.6.1 Phone Routing 
+2/2/2024 
+How Roll Over Call Guests Are Helped 
+Guest Request 
+Handled By Solutions Team 
+While Guest is on the Phone 
+Send a Message 
+to the Store 
+Do Nothing or 
+Transfer the Guest 
+Back to the Store 
+Store Hours 
+ 
+ 
+Store Schedules, when is 
+someone working 
+ 
+ 
+ 
+Delivery Time Frame Window 
+ 
+ 
+Reschedule Delivery that was 
+scheduled for the next day 
+Look up availability with the 
+guest and let them select.  
+Contact the DC office after 
+the call to finalize the 
+rescheduled:  
+Extension #5564 
+ 
+ 
+Reschedule Delivery 
+Reschedule with the guest on 
+the phone. 
+ 
+ 
+Check order status 
+ 
+ 
+Give an eta to the guest about 
+product from the line level, not 
+the sales order. 
+ 
+ 
+ 
+Schedule delivery if ship 
+complete is checked and no 
+balance 
+ 
+ 
+ 
+Schedule delivery if ship 
+complete is not checked or 
+balance due 
+ 
+ 
+ 
+Split an order and partial deliver 
+ 
+ 
+Open a case 
+ 
+ 
+Change line item quantities 
+ 
+ 
+Schedule a return 
+ 
+ 
+Create an even exchange 
+ 
+ 
+Create an exchange for different 
+items or a store credit 
+ 
+ 
+ 
+Cancel a sale 
+ 
+ 
+Add-On to a sale 
+Keep the guest on the line 
+and set them up with the E-
+commerce team to complete 
+the transaction. 
+ 
+ 
+Create a new sale 
+Keep the guest on the line 
+and set them up with the E-
+commerce team to complete 
+the transaction.  
+ 
+ 
+ 

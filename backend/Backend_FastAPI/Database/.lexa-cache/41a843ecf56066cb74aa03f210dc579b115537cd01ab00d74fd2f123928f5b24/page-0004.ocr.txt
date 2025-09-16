@@ -1,0 +1,27 @@
+ 
+Page 4 of 6 
+2.0 Scheduling Fulfillment 
+3/22/2022 
+ 
+Accessories from Store, Furniture from Distribution Center 
+If items are going to ship, two separate Sales Orders should be written.  Only use these steps for 
+Customer Pick Up and Leaders Delivery Truck. 
+1. Write a Sales Order 
+a. R:\3 About Customers and Orders\3.1 Writing a Sale 
+2. Set the Delivery Method to In-Store Pick Up even if some of the product will be delivered. 
+a. Setting the Delivery Method to In-Store Pick prevents the system from automatically 
+creating a transfer to the Distribution Center for the accessory items.   
+ 
+3. Unclick the ship complete field on the Items tab. 
+4. 
+ 
+Manually type the correct fee in the Shipping Cost field 
+a. $149 
+ 
+5. Complete and 
+ the Sales Order 
+6. Fulfill the accessory items that were taken from the store by the customer 
+7. Edit the sales order and set the “Delivery Method” to “Leaders Delivery Truck.” 
+8. When all the remaining items are in stock at the Distribution Center, click the 
+ 
+button and follow the steps. 

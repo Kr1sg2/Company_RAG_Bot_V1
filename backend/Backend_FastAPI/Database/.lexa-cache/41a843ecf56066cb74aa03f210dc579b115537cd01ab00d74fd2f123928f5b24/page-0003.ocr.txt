@@ -1,0 +1,65 @@
+ 
+Page 3 of 6 
+2.0 Scheduling Fulfillment 
+3/22/2022 
+ 
+Schedule Delivery Screen 
+The schedule screen functions differently based on the Shipping Method set on the Sales Order when 
+the 
+ button is clicked.  The Shipping Method of a Sales Order can be found in the “Set 
+Delivery” field on the 3. Shipping/Billing/Signature tab on a sales order.  See the image below. 
+ 
+If the Sales Order Shipping Method is set to the method in the left column, you will have the following 
+Shipping Method Options in the Schedule Delivery Screen.   
+Sales Order Shipping Method 
+Customer Pick 
+Up at Store 
+Distribution 
+Center 
+Customer Pick 
+Up 
+Leaders Delivery 
+Truck 
+Same Day 
+Delivery 
+Ship Direct 
+Customer Pick Up at Store 
+Yes 
+No 
+No 
+No 
+No 
+Distribution Center Customer 
+Pick Up 
+No 
+Yes 
+No 
+No 
+No 
+Leaders Delivery Truck 
+Yes 
+Yes 
+Yes 
+No 
+No 
+Premium Delivery 
+Yes 
+Yes 
+Yes 
+No 
+No 
+Same Day Delivery 
+No 
+No 
+No 
+Yes 
+No 
+Ship Direct 
+No 
+No 
+No 
+No 
+Yes 
+ 
+ 
+ 

@@ -1,0 +1,20 @@
+ 
+Page 7 of 8 
+0.12 Symbols & Shortcuts 
+12/1/2023 
+Form Tab view or Unrolled View 
+Each form in NetSuite contain a lot of information.  As you have learned earlier a form can be in Edit mode for 
+editing and View mode for carrying a record to the next step.  You can also view the form in Edit or View mode in 
+one of two formats.  Tab view, the screen is compressed, the sections are turned into tabs.  Unrolled view the 
+page is stretched, and dark bars separate the sections as you move down the screen.  NetSuites default is 
+Unrolled.  Unrolled is good for first time users Most users like Tab view.  You can toggle the view mode by clicking 
+on the symbol that appears on the right of the bold lines when you hover over 
+ or 
+ on the right side of the 
+line. 
+ 
+Unrolled View 
+Tab View 
+   
+ 
+ 

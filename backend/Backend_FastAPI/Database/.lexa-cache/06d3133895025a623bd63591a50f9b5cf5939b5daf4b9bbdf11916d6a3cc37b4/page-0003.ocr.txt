@@ -1,0 +1,78 @@
+ 
+Page 3 of 6 
+3.18 Customer Communication 
+10/31/2023 
+Available E-mail Templates 
+ 
+Template 
+Auto 
+Manual 
+Before the Sale Retail | Thank You For Visiting 
+ 
+M 
+ Retail | Quote 
+ 
+M 
+ Retail | Quote Follow Up 
+ 
+M 
+Sales Order Retail | Sales Order Confirmation 
+A 
+M 
+ Retail | Ownership Packets 
+A 
+M* 
+Before Fulfilment Retail | Everything Looks Good 
+ 
+M 
+ Retail | ETA Date Delay 
+ 
+M 
+ Retail | Ready To Schedule 
+ 
+M 
+ Retail | Past ETA Date 
+ 
+M 
+ Retail | Covid Extended Lead Time Apology 
+ 
+M 
+Fulfillment Retail | Customer Pick-Up at Store Scheduled 
+A 
+M 
+ Retail | Your In-Store Pick Up is Ready 
+ 
+M 
+ Retail | Pick Up at the Distribution Center 
+ 
+M 
+ Retail Delivery Truck Scheduled Confirmation 
+A 
+ 
+ Retail | Schedule Shipping Confirmation 
+A 
+ 
+Returns/Exchanges Retail | RA Scheduled Pick Up Confirmation 
+A 
+ 
+ Retail | Exchange Sales Order 
+A 
+M 
+Retail Retail | Current Promotion 
+ 
+M 
+ Retail | Beat the Price Increase 
+ 
+M 
+ Retail | Special Promotion 
+ 
+M 
+Miscellaneous Retail | Casual Comfort Fire Notice 
+ 
+M 
+ 
+Ownership Packets can be sent manually through Outlook by composing an e-mail to the customer and 
+dragging and dropping the ownership packets on the e-mail from: 
+R:\10 About the Solutions Center (Service)\12.0 Ownership Packets 
+ 
+ 

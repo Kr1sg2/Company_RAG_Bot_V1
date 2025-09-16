@@ -1,0 +1,27 @@
+Page 9 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+2  Send/Email Information from Store Visit 
+ 
+Subject: Leaders:  Additional Information? 
+ 
+ 
+${customer.firstname}${customer.companyname},  
+Here is a review of the items, finish, and fabrics we looked at together on your last visit.  We have finish 
+and fabric samples of most items.  Please let me know which ones you would like me to mail to you.   
+ 
+Cut and paste to insert images of items from the guests’ quote 
+ 
+ 
+ 
+ 
+ 
+ 
+Please let me know if I can help with revisions or answer any questions.   
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your 
+business, 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our 
+name to anyone who would benefit from our service. 
+ 

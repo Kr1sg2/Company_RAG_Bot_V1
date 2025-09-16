@@ -1,0 +1,41 @@
+ 
+Page 1 of 1 
+9.3 Internet Trouble Shooting 
+10/24/2017 
+ 
+ 
+Internet Trouble Shooting 
+If you cannot access web pages, your phones are not working, or you cannot get into FROG you may have lost the 
+internet connection at your location.  Many times the equipment just needs to be reset.  Please complete the following 
+steps before calling IT or the internet provider. 
+1. Reset your computer 
+2. Log in and go to www.leadersfurniture.com and navigate through a few pages. If this seems to function properly 
+go to step 3. 
+3. Log into FROG. 
+4. Search for a customer and run a daily sales report. 
+5. If everything is functioning, the reset worked.  If not, proceed to the next step. 
+6. Identify the modem.  It should be the first box plugged in (supplied by the cable provider) after the cable comes 
+out of the wall.   
+7. Unplug the power cable from your modem. 
+8. Identify the Router at your store.  (See image below) 
+9. Unplug the power cable from the Router 
+10. Identify the Switch at your store. (See image below) 
+11. Unplug the power cable from the Switch 
+12. Wait one full minute and plug back in the modem 
+13. Wait five full minutes for the lights to come back on the modem 
+14. Plug the power back into your Router  
+15. Plug the power back into your Switch 
+16. Wait for the lights to come on the Router (where there are Ethernet cables plugged in). 
+17. Restart your computer(s)  
+18. Log in and go to www.leadersfurniture.com and navigate through a few pages. If this seems to function properly 
+go to the next step. 
+19. Log into FROG. 
+20. Search for a customer and run a daily sales report. 
+21. If everything is functioning congratulations you fixed the concern.  Otherwise, contact leaders@allpointpos.com 
+or if email is not possible, call the IT help line at (727) 254-5550 
+ 
+ 
+ 
+Router 
+Switch 
+ 

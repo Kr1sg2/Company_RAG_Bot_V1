@@ -1,0 +1,21 @@
+Page 13 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+3  Make an Appointment - Done 
+ 
+Subject: Leaders:  Design Appointment? 
+ 
+ 
+${customer.firstname}${customer.companyname}, 
+Thank you for allowing me to help you create a beautiful space.  The decisions can be overwhelming, 
+and I am here to help.  I am happy to schedule a one-on-one appointment in-person or by phone. 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your business, 
+ 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to 
+anyone who would benefit from our service. 
+ 
+ 
+ 

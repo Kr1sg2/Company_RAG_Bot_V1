@@ -1,0 +1,53 @@
+Page 9 of 9 
+3.24 After the Sale Customer Communication 
+3/1/2024 
+“Your Premium Delivery Is About to Expire 
+Reason 
+When 
+Why 
+How 
+To save the 
+guest delivery 
+expense on a 
+new order 
+Before the 
+12-month 
+expiration 
+of their one 
+year 
+premium 
+delivery 
+plan. 
+Everyone loves to save money.  This is 
+an opportunity to offer delivery for no 
+additional cost.   
+Email templated, post card or 
+phone call.   Ask them if we can 
+help in any way with their 
+previous purchase.  Suggest care 
+and maintenance, covers, and let 
+them know we offer replacement 
+cushions for any of our in house 
+brands.  Be sure to know the price 
+of the suggested items when you 
+communicate with the customer. 
+ 
+Subject Line:  Leaders: Your Premium Delivery is About To Expire 
+Subject:   
+ 
+ 
+${customer.firstName}}${customer.companyname}, 
+ 
+We wanted to let you know premium delivery subscription is about to expire so you do not miss out on the 
+opportunity.  If you have anything you want to add to your collection we can deliver it for free until 
+date/date/date.   
+ 
+ 
+Let me know if I can help. 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to anyone 
+who would benefit from our service. 
+ 
+ 

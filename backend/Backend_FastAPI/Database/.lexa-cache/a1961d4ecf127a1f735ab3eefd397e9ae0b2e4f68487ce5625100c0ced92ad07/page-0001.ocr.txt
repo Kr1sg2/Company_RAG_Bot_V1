@@ -1,0 +1,47 @@
+Answers- Week 2, Day 1, Part 1 Worksheets 
+What number transaction was invoice 1257049? 
+ 
+ 
+What was the deposit method on Invoice 1257623? 
+d.   Check 
+Where did the money for Invoice 1257435 come from? 
+        d.   Check 
+Type 
+1 – B, Leader’s Delivery 
+2- D, Customer Pick-up 
+3- A, Vendor Direct Ship 
+4- E, Third Party Shipping 
+9- C, Delivered or Canceled Invoice 
+Invoice B12574351 has been delivery updated  
+a. True 
+The total amount of money this customer has had delivered in furniture with Leader's Casual Furniture® 
+is? 
+d.  $220,489.29 
+Invoice 1258842 was delivery updated when? 
+b.   12/06/16 
+How many Palm-5511,PG chairs are in the warehouse? 
+b. 730 
+How many PALM-5511, PG chairs are in “keeps” in *SAR? 
+a. 4 
+BC stands for   
+? 
+a.    Bankcard 
+Leader's Casual Furniture® accepts American Express.  
+ 
+ 
+a.    True 
+A Leader's Casual Furniture SKU # always goes   
+.  
+d.   Vendor – Item # , Frame Color , Fabric Color 
+ 
+Every piece of Palm Springs Rattan® and Garden Classics® has what on the bottom? 
+b.   Nylon Glides 
+ 
+The Sku for a Leader’s Casual Furniture gift card is: 
+c. GIFT-CARD 
+Cash Refunds can be given within the seven day return period. 
+b. False 
+ 
+What is the sell price (36m FI) of standard fabric protection for (1) Upholstered Recliner and (1) Sofa? 
+a. $100.00 
+c. 18 

@@ -1,0 +1,29 @@
+ 
+Page 5 of 8 
+0.12 Symbols & Shortcuts 
+12/1/2023 
+ Recent Records 
+What 
+Think of it as a browsing history on your home computer.  Recent Records is a way to quickly access one of the 
+last 12 things you did. 
+Where 
+Recent Records is on the top left of every page in NetSuite.  It is accessed by simply hovering your mouse over the 
+symbol 
+ Quick Actions 
+What 
+Quick Actions looks very similar to Quick Access.  Quick Actions are a quick reference of actions that can be taken 
+against the record you are viewing. 
+Where 
+Quick Actions is found to the right of the button options on the top of the page in View or Edit mode.
+ 
+ Print 
+What 
+The print function in NetSuite is a modern print process.  After hitting the button is starts with a print preview to 
+make sure you are about to print what you want.  The preview window is similar to what you see in any good 
+printing experience. 
+Where 
+The print button will not show up in Edit mode.  It will only show up in View mode.  When in View mode the print 
+button will show up to the right of the menu buttons at the top or bottom of the screen. 
+ 
+ 
+ 

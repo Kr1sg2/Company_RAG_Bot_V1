@@ -1,0 +1,15 @@
+ 
+Page 4 of 5 
+5.1 How to use the PAX credit card reader.docx 
+5/3/2024 
+Clearing History 
+If a payment fails after the PAX machine batches out, the history may have not been cleared.  To help 
+prevent payments from failing it is important that a PAX device clear its history every night.  Follow 
+these steps to set the machine up to clear its history every night. 
+1. On the PAX device, click on the circle at the bottom of the device to go to the app screen 
+2. Select the PayGuardian App 
+ 
+3. Click on the three dot ellipsis in the top right of the screen 
+ 
+4. Click “Toggle Clear History” 
+ 

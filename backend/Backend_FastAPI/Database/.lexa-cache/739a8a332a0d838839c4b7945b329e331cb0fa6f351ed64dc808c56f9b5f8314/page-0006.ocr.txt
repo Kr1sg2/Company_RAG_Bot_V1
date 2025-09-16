@@ -1,0 +1,31 @@
+Page 6 of 6 
+0.13 Stages of a Customer, CRM Pipeline 
+8/17/2021 
+“Just Visiting” to a Sale 
+Now that we have base understanding of the terms let’s look at how they fit together.  Think of it as a funnel.  You should have many Guests, some of those 
+Guests move to Opportunities, Opportunities that become very serious about buying become Quotes and ultimately a customer buys product with a Sales Order.   
+Funnel Diagram 
+ 
+ 
+Path Diagrams 
+ 
+ 
+Reporting can be run against the selling process to follow up with opportunities and quotes to move them along to a sales order.   
+Guest
+Opportunity
+Quotes
+Sales 
+Orders
+Guest
+Guest
+Opprtunity
+Guest
+Opportunity
+Quote
+Guest
+Opportunity
+Quote
+Sales Order 
+Guest
+Quote
+Sales Order

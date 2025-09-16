@@ -1,0 +1,63 @@
+Page 9 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+Products 
+Shortcut 
+What? 
+Item Look Up 
+Filter through the active stock inventory to look for an item.   
+Product Configurator 
+Quickly and easily configure special order items without being on a 
+quote or sales order.   
+Average Vendor Lead Time 
+See the performance of all vendors over the last three months and the 
+Leaders recommended lead time for new orders. 
+Store Inventory 
+See all of the store inventory by location, by brand, by category. 
+Available Special Order 
+Have fun reviewing canceled special order items to find your guest a 
+deal.  The information can be sorted in many different ways to find 
+what you need.   
+ 
+Operations (My Showroom) 
+Shortcut 
+What? 
+Inbound Transfer Orders 
+Review the inventory that is scheduled to come to your 
+location. 
+Outbound Transfer Orders 
+Review the inventory that is scheduled to leave your 
+location. 
+Make a Deposit 
+Review the collected and undeposited cash and checks 
+from your location to create a bank deposit.  This report 
+will not work if you have not followed the set-up 
+instructions.  0.16 Standard NetSuite Configuration Set 
+Preferences 
+ 
+Forms & References 
+Product Request Forms 
+Shortcut 
+What? 
+Sample Request Form 
+Print to audit and request fabric samples 
+Floor Model Markdown Request 
+Follow the instructions on the form to request price 
+markdowns for showroom samples. 
+Tag Request Form 
+Use this form to request point-of-sale tags 
+Tear Sheer Request Form 
+Request product information tear sheets 
+ 
+Main Vendor Shortcuts 
+Click the shortcut to go to the vendor record.  Here you will find: 
+✓ 
+Catalog 
+✓ 
+Pricelist 
+✓ 
+Ownership Packets 
+✓ 
+Contact information for company representatives 
+ 
+ 

@@ -1,0 +1,23 @@
+ 
+Page 1 of 2 
+0.15 Loggin In To NetSuite 
+6/9/2019 
+ 
+Logging In To NetSuite 
+NetSuite is a cloud-based ERP.  This means it lives in virtual space on the internet.  Each team member 
+will have their own unique log in.  Although you can get to the NetSuite Log-In page you will only be able 
+to log into NetSuite while on a company approved device due to current labor laws.  
+Note:  You can only have one instance of NetSuite open for your log in credentials.  If you open a new 
+browser window and log in again it will close your last session. 
+Getting Started 
+1. Turn on your device and wait for it to boot 
+2. Open a Chrome Web Browser by clicking 
+ on your desktop or tool bar 
+3. Click the NetSuite Shortcut on the Shortcut tool bar.   
+a. 
+b. If you do not see the shortcut use the following URL 
+i. https://system.netsuite.com/pages/customerlogin.jsp  
+4. Type in your: 
+a. Email Address 
+b. Password 
+c. Press <ENTER> 

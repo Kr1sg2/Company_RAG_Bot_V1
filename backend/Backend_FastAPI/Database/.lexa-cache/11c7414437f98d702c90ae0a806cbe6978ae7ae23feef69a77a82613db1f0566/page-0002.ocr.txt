@@ -1,0 +1,47 @@
+ 
+Page 2 of 3 
+6.15 Dispatch Track 
+11/5/2020 
+Logging In 
+URL:  
+ 
+https://leadersfurniture.dispatchtrack.com  
+Username: 
+stores@leadersfurniture.com 
+Password: 
+stores123 
+ 
+Reading the screens 
+Dashboard/Home 
+ 
+The dashboard is the screen you see when you log-in to DispatchTrack.  It contains: 
+ 
+# 
+What 
+Why 
+1 
+Main menu bar 
+Allows you to change to other screens to search orders, search customer, or 
+view survey results 
+2 
+Change Home 
+Screen View 
+Allows you to toggle between the home screen, a map that shows the 
+current location of the fleet and “Instant Alerts,” a chat that goes directly to 
+the delivery team. 
+3 
+Change the date 
+You can change the date of the summary you are viewing here 
+4 
+Overall Summary 
+of the Day 
+This is an overall summary of the day showing if the fleet is on time, the 
+progress of the deliveries of the orders being delivered, and a piece 
+summary of what has been delivered, what still needs to be delivered and 
+what is rejected 
+5 
+Service Units 
+The service units’ section is a summary of each route.  Here you can see the 
+progress of each team, see pictures of the deliveries, and read any notes 
+the delivery team makes.  You can click on any line to view the full record of 
+the delivery and view all of the pictures. 

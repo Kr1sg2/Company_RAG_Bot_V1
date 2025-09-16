@@ -1,0 +1,37 @@
+ 
+Page 2 of 3 
+2.53  Customer Owned Material COM 
+8/23/2021 
+If the fabric IS PURCHASED at Leader's Casual Furniture® 
+ 
+Must be on the invoice 
+Why 
+1 
+The Sales Order for the 
+merchandise and the Sales 
+Order for the fabric must be 
+written for the same customer 
+The cushion manufacturing facility and distribution team 
+will be able to more easily match the fabric with the order 
+2 
+To Special Order the Fabric Use 
+a Place Holder SKU for the 
+BRAND 
+Ordering fabric by the yard is not in the configurator.  Enter 
+the special order placeholder for the SKU and follow the 
+direction in the description field. 
+3.3 Ordering Parts & Customers 
+3 
+Detailed Memo Field Describing 
+the Fabric 
+This will help the fabric be identified by receiving and paired 
+with the correct purchase order.  A detailed description will 
+also help expedite any process where the fabric needs to be 
+located.  This will help your order process through the 
+system with less hang up and be on time. A detailed memo 
+should include: 
+✓ Full Fabric Name/number as listed on the 
+fabric label 
+✓ Detailed description of the fabric 
+✓ The final invoice # the fabric is for  
+✓ Your initials and 4-digit SLM number 

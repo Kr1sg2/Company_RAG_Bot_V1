@@ -1,0 +1,28 @@
+Page 12 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+ 
+2. Quantity 
+a. Enter the quantity of the item 
+3. Brand 
+a. Enter the Brand of the item 
+i. Note that you can scroll through the list or you can start typing and NetSuite will 
+show you matches. 
+4. Collection 
+a. Once the Brand is selected the “Collection” field will populate.  Choose the collections 
+i. If you skip collection and go straight to style it will show all of the styles for the 
+Brand. 
+ii. If you select a Collection, the Style window will only show you the styles 
+available in the collection 
+iii. Note that you can scroll through the list or you can start typing and NetSuite will 
+show you matches 
+5. Style 
+a. Choose Your Style 
+i. Note that you can scroll through the list or you can start typing and NetSuite will 
+show you matches 
+You will notice that on the right side of the window, the Detailed SKU, Price, and Description 
+begins to build automatically.  The configurator will now only show you options that will go with 
+the piece you have selected  Organizing and displaying the options can sometimes take up to 10 
+seconds. 
+ 
+ 

@@ -1,0 +1,17 @@
+{
+  "doc_id": "e1822d7bfcc0d200fae2e4752828e11cdf54a0d3c8b4fcaaf00fbdf746aa02eb",
+  "relative_path": "0-0a-employee-center.pdf",
+  "content_hash": "f2514559b25440a2a345d89d9fb0bc8cb5a7d3b4b04a601ea1960c105d5d0e16",
+  "file_name": "0-0a-employee-center.pdf",
+  "file_size": 521363,
+  "mtime": 1757388962.8221529,
+  "processing_config": {
+    "ocr_disabled": false,
+    "tables_disabled": false,
+    "skip_image_only": true,
+    "chunk_size": 1200,
+    "chunk_overlap": 0.25
+  },
+  "chunk_count": 8,
+  "processing_complete": true
+}

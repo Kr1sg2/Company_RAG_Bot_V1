@@ -1,0 +1,37 @@
+Page 1 of 2 
+2.91.61 Contract Sales Review 
+6/21/2018 
+ 
+ 
+Contract Sales 2.200 Review 
+1. A contract sale has the following quantity discounts: 
+a. 12+ 
+b. 20+ 
+c. 50+ 
+d. 100+ 
+e. A,B, & C 
+2. Each vendor has a different quantity discount multiplier 
+a. True 
+b. False 
+3. We have the following type of contract accounts: 
+a. Executive 
+b. Salesperson 
+c. Split 
+d. House 
+e. B,C, & D 
+4. An umbrella and base count as 2 separate items. 
+a. True 
+b. False 
+5. The commercial warranty for each vendor is: 
+a. The same as the residential warranty 
+b. Vendor specific, but typically it is for a shorter duration 
+c. There is no warranty for contract sales 
+6. We can finance contract sales 
+a. True 
+b. False 
+7. The following are acceptable forms of payment: 
+a. Cash 
+b. Check 
+c. I.O.U. 
+d. Money Order 
+e. A,B, & D 

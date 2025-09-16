@@ -1,0 +1,62 @@
+Page 8 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+5  Navigation Shortcut Group 
+The navigation Shortcut Group contains all the quick links to information that you need to have a 
+successful day. There is more than one set of shortcuts, which are subdivided by category. 
+Change The Short Cut Group 
+To change the shortcut group and what is displayed, hover over the 3 bars in the top left of the shortcut 
+group and select the shortcut group you would like to see.  Once you select, scroll your mouse into an 
+open area on the screen to save your selection.  You can choose between: 
+✓ Sales 
+All of the everyday items you need to manage guests and inventory 
+✓ Forms & References 
+Information is used to reference vendors, keep the showroom fresh, communicate 
+within the company, and tag your floor. 
+✓ Showroom Manager (Only if you have showroom manager permission) 
+Tools to keep inventory up to date in a showroom, hire, and keep track of showroom 
+key performance indicators to share on the weekly manager call. 
+ 
+Sales 
+Guest 
+Shortcut 
+What? 
+Guest Lookup 
+Look up guests who have ordered in the past to reference their accounts. 
+R:\3 About Customers and Orders 
+Create New Customer 
+Create a new customer record 
+R:\3 About Customers and Orders 
+Customer Sales History 
+(2019 – Present) 
+Look up past customers by what they purchased so you can communicate 
+promotions and follow up on the relationship. 
+Legacy Order Lookup 
+(2007 – 2019) 
+Reference old accounts from the Legacy system we had before NetSuite.  If 
+you still do not find what you want, contact the Solutions Center or 
+Purchasing, who can research back to 1994. 
+ 
+Sales Transactions 
+Shortcut 
+What? 
+New Opportunity 
+Record a guest interaction with minimal information about the guest.   
+R:\0 About Leader's Holding Company Essentials\ 0.13 Stages of a Customer, CRM Pipeline 
+New Quote 
+Create a new Quote from a guest interaction to follow up with 
+New Sales Order 
+Create a new sales order.   
+R:\3 About Customers and Orders 
+Opportuintes (My 
+Showroom) 
+Review open opportunities for your showroom to best place your efforts 
+for the day. 
+Close Quotes (My 
+Showroom) 
+You can search this list to let a guest from the past know about a sale.  
+Review past quotes that have been closed for reference and to look for 
+selling opportunities.   
+ 
+ 
+ 

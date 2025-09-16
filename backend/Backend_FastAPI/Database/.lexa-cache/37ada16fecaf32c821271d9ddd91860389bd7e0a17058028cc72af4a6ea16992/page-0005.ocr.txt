@@ -1,0 +1,36 @@
+ 
+Page 5 of 5 
+5.1 How to use the PAX credit card reader.docx 
+5/3/2024 
+5. “Clear History Enabled” should pop up on the bottom of the screen 
+a. If “Disabled” pops up on the screen, repeat steps  
+ 
+Troubleshooting 
+Concern 
+Solution 
+The device will not turn on 
+Check that the power cord is plugged all the way in the back of the device. 
+Check that the power cord is plugged into an outlet 
+Check to make sure the surge protector is turned on  
+Contact IT if the concern persists.  it@leadersfurniture.com 
+The device will not activate to 
+take a payment. 
+Many stores have more than one terminal.  Make sure you selected the 
+correct terminal and try again 
+ 
+Reset the device by unplugging it for one minute.  Follow the Daily Refresh 
+procedure, give the terminal a few minutes to load and try again. 
+“Settle” Error.  The device will 
+not take payment 
+The device did not “Batch Close” automatically and the automatic “Clear 
+History” may not be activated.  Do a manual Batch Close by following the 
+steps in the Manual Batch Close section of this procedure and follow the 
+“Clear History” Section of this Procedure to make sure your machine is 
+clearing its history each night. 
+The payment is not posting back 
+to NetSuite 
+Most of the time a payment does not post back to NetSuite is because the 
+device was the PAX device asked a question on screen that was not 
+answered and the device “timed out.”  An example would be, “Would you 
+like to print a customer copy” of the receipt. 
+ 

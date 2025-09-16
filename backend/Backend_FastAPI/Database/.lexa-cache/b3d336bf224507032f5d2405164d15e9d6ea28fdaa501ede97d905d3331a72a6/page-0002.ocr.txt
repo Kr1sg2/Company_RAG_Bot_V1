@@ -1,0 +1,18 @@
+Page 2 of 7 
+5.5 Gift Certificates 
+3/2/2022 
+Selling a Gift Certificate 
+The gift certificate should be sold under the account of the person paying for the gift certificate.  During 
+the selling process, you can assign the gift certificate to a recipient.   
+1. In NetSuite, find the customer account for the person buying the gift certificate.  If they do not 
+have a customer record create one. 
+2. Write a 
+sale like you would for regular product 
+3. Complete “1. Primary Information” 
+4. Enter "Gift Certificate" as a line item 
+5. Fill out the value of the gift card in the amount field. 
+ 
+6. On the right side of the Gift Certificate line item, click in the Gift Certificate box.  
+ 
+ 
+ 

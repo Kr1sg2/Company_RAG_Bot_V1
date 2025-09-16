@@ -1,0 +1,18 @@
+ 
+Page 4 of 4 
+3.18 Customer Communication In NetSuite 
+6/9/2019 
+Resend Information 
+1. From the NetSuite home screen use Guest Lookup to find the guest record. 
+ 
+2. Open the guest record in View mode 
+3. On the “Transactions” or “Opportunity” tab locate the record you are referencing 
+ 
+4. View the communication record for the transaction by going to the “Communication” subtab on 
+the Sales Order or Quote and clicking 
+. 
+ 
+5. A pop up will allow you to view the details of the communication and give you options   Choose 
+the appropriate action. 
+ 
+ 

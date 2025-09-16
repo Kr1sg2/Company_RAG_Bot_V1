@@ -1,0 +1,47 @@
+Page 3 of 3 
+2.52 Customer Owned Merchadise CUSM 
+10/14/2020 
+Item(s) Left at Store 
+1. Print one Sales Order for every item left 
+a. Attach a copy of the Sales Order to every item 
+2. Mark each area of concern on each item with red tape. 
+3. Attach a complete Inventory Control Form (ICF) to each item 
+a. 2.120 Inventory Control Form 
+4. Place the items on your next available shuttle.  You will not be able to set a transfer date in 
+NetSuite because the items do not show in the organization.  No additional paperwork or 
+transfer order is needed at this time. 
+5. Once the items are received in the Distribution Center they will be labeled and received. 
+6. Open a solutions case if you have not already done so. 
+Items Need To Be Picked Up By The Delivery Team 
+Write a Sales Order for the guest that will be able to be scheduled for fulfilment.  This scheduled fulfilment will 
+send the delivery team to the location to pick up the items. 
+1. Lookup the guest if they have bought from us before or create a guest record if they are not in the 
+system. 
+2. From the View mode of the guest record click the 
+ button. 
+3. Complete the Sales Order. 
+a. In the items field write LEAD-Pickup 
+4. Save the sales order 
+5. Request approval on the sales order from a Sales Leadership Team Member or a member of the 
+Solutions Team 
+a. The approval will have to be requested because no deposit was taken. 
+6. Once the sales order is approved, press the 
+ from the View mode of the customer record 
+and follow the instructions.   
+7. Add notes to the Delivery Memo tab indicating which items the driver is to pick up. 
+8. The guest will get an automatic email confirming the scheduled pick update  
+9. Open a solutions case if you have not already done so. 
+ 
+ 
+Opening a Case 
+• 
+Sometimes there is already a Solutions case and a CUSM sales order open when the customer drops off 
+their furniture.  Always check first.  If there is already a case and a CUSM sales order in NetSuite, 
+proceed to page 3. 
+• 
+If there is no Solutions case opened, one will need to be created so that Solutions can track the 
+merchandise. 
+ 
+**** No matter what, every CUSM sales order written needs to have a Solutions 
+Case opened to go with it.**** 
+ 

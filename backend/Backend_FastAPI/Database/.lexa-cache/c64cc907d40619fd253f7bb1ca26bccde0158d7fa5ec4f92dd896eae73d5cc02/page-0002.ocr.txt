@@ -1,0 +1,72 @@
+ 
+Page 2 of 3 
+2.300 Whose Sale Is It? 
+9/6/2024 
+ 
+Whose Sale Is It? – Decision Table 
+If you wrote a “Customer stage” in a location and the sale happened in “Your Store,” “Another Store,” or 
+“Internet” then…. 
+Customer Stage 
+Your Store 
+Another Store 
+ 
+E-commerce Store 
+Guest 
+NO - Salesperson 
+NO- Store 
+ 
+NO - Salesperson 
+NO - Store 
+ 
+NO - Salesperson 
+YES – Store by 
+Customer Address 
+Opportunity 
+YES - Salesperson 
+90 Days 
+ 
+NO - Salesperson 
+NO Store 
+ 
+NO - Salesperson 
+YES – Store by 
+Customer Address 
+Quote 
+YES - Salesperson 
+90 Days 
+ 
+NO - Salesperson 
+NO - Store 
+ 
+NO - Salesperson 
+NO - Store 
+Add On 
+YES - Salesperson 
+90 Days 
+ 
+NO - Salesperson 
+NO - Store 
+ 
+NO - Salesperson 
+NO - Store 
+ 
+Decision Table Definitions 
+➢ Decision Table - Illustrative of the path of a potential customer from their initial entry into 
+NetSuite or in the case of an add-on from a previous purchase. 
+➢ Customer Stage - Represents the stage that the potential customer is at in our NetSuite CRM 
+(Customer Relationship Management) pipeline or their status after their initial purchase and 
+they choose to “Add On” additional purchase(s) at a later date.  
+➢ Add On - Defined as the same customer returning to purchase “any” additional product after 
+their initial purchase. 
+➢ Salesperson & Store – The prefix “Yes” or “No” in front of either the Salesperson or Store 
+represents “Whose Sale Is It” or who gets credit for the sale.  For example, E-commerce – NO 
+Salesperson, YES – Store by Customer Address = the Salesperson does not get credit for the sale, 
+but the Store does and which store is determined by the customer’s address.  The store closest 
+to the customers address will get credit for the sale. 
+➢ 90 Days – Is the established and defined timeframe attached to a customer, or potential 
+customer, from the initial entry into the Customer Stage until purchase.  For example, an 
+Opportunity, Quote or Add On is valid, and attached to, the original salesperson for a 90-day 
+period.  After the 90-day period any purchase made by a customer is not guaranteed to the 
+original salesperson. 
+ 
+ 

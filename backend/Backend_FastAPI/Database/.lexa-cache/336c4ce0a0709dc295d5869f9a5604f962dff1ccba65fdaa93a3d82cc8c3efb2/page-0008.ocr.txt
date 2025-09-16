@@ -1,0 +1,90 @@
+Page 8 of 9 
+Solutions Center Dashboard and KPIs 
+5/30/2022 
+ 
+Click on each tile and work each case listed in the report.   
+Tile Description 
+Tile 
+When? 
+Report  
+Criteria 
+In Repair (5 Days) 
+Review and work 
+daily 
+Solutions | Product in Repair 
+(Aging) 
+✓ Case is open and not on hold 
+✓ Product is in the Repair 
+Department longer than 5 days 
+✓ The case is assigned to me 
+In Cushion Shop… 
+Review and work 
+daily 
+Solutions | Product in Cushion 
+Shop (Aging) 
+✓ Case is open and not on hold 
+✓ Product is in the Cushion Shop 
+longer than 5 days 
+✓ The case is assigned to me 
+Awaiting Customer 
+Reply 
+Review and work 
+daily 
+Solutions | Awaiting Customer 
+Product (Aging) 
+✓ Case is open and not on hold 
+✓ We are waiting more than 7 days 
+for product to arrive for the 
+guest. 
+✓ Cases assigned to me or not 
+assigned to anyone 
+Warranty Claim 
+Review and work 
+daily 
+Solutions | Warranty Claim 
+Filed (Aging) 
+✓ Case is open and not on hold 
+✓ The Status is Warranty Claim Filed 
+with the manufacturer more than 
+three days ago 
+✓ Cases assigned to me or not 
+assigned to anyone 
+Ready to Schedule 
+Review and work 
+daily 
+Solutions | Ready to Schedule 
+(Mine & My Team) 
+✓ Is a Sales Order or Return 
+Authorization 
+✓ Is ready to deliver 
+✓ I am the sales rep 
+Past Expected ETA 
+Review and work 
+daily 
+Solutions | Past Expected ETA 
+✓ Is a Sales Order or Return 
+Authorization 
+✓ The “Estimated Ready Date” is 
+before today 
+✓ I am the sales rep 
+Fulfilled Not Paid For 
+Review and work 
+daily 
+Solutions | Fulfilled & Not 
+Paid For (Mine & My Team) 
+✓ Is an invoice with an open 
+balance for good delivered before 
+today 
+✓ The method of payment is not 
+financing 
+✓ I am the sales rep 
+Open Transactions 
+N/A 
+Solutions | Open Transactions 
+(Mine & My Team 
+✓ Is an open Return Authorization 
+or a Sales Order 
+✓ I am the sales rep 
+ 
+ 
+ 

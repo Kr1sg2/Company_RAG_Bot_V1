@@ -1,0 +1,38 @@
+Page 1 of 7 
+5.10 Exchanges Returns Credits Restocking.docx 
+6/14/2024 
+ 
+Exchanges / Returns / Credits / Re-Stocking Fee 
+(Return Authorization or RA) 
+To return an item, create an exchange, or take an item back for a store credit an order must be invoiced.  
+An automatic process will run every 6 hours to invoice all appropriate orders. 
+If you recently completed a sale and the guest needs to return an item that has not been automatically 
+billed, you must reach out to an office team member or regional manager for them to manually 
+Bill/Invoice the Sales Order. 
+Why doen’t the Automtic Exchange Process work in the sandbox like it does in production? 
+• 
+The custom programming to automate the exchange process references forms in the live 
+system.  The process errors out in the Sandbox because the system cannot reach these forms 
+that are hardcoded. 
+Quick Facts 
+✓ In NetSuite, all returns, exchanges or credits are referred to as RAs which stands for Return 
+Authorization. 
+✓ There are two different styles of RA 
+o Stand Alone Return Authorization – returning a product or service not invoiced in 
+NetSuite 
+o Return Authorization Linked to an invoice in NetSuite. 
+✓ If the customer does not exist in NetSuite, you will need to add a customer record before 
+proceeding with an RA. 
+Best Practice: 
+✓ Close all your unnecessary web browser tabs.  If you have several tabs open it will be difficult to 
+see the automation that will open in new browser tabs.   
+o 0.14 Managing the Browser Window and Tabs 
+Table of Contents 
+Process Automation ...................................................................................................................................... 2 
+Entering an Associated Return Authorization............................................................................................... 2 
+Original Sale & Invoice is in NetSuite ........................................................................................................ 2 
+Entering Stand Alone Return Authorization ................................................................................................. 5 
+Original Sales Order Not In NetSuite ........................................................................................................ 5 
+Create a Restocking Fee ................................................................................................................................ 7 
+ 
+ 

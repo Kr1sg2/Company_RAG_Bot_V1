@@ -1,0 +1,31 @@
+ 
+Page 1 of 1 
+0.17 Sandbox Training Enviroment 
+5/20/2024 
+ 
+Sandbox Training Environment 
+ 
+Each log-in into NetSuite logs into the active Production system by default.  The production environment is where active 
+live business happens.  This is where the company operates.  You can change to the Sandbox at any time to practice and 
+train.  Sandbox is a training and test environment.  Any work done in the Sandbox will not affect actual company records 
+and is only for testing, practice, and training. 
+ 
+Why doesn’t everything work the same in the sandbox as it does in production? 
+• 
+Check Availability:  The sandbox is a snapshot and does not show current inventory levels. 
+• 
+Automated Exchange Process:  The custom programming to automate the exchange process references forms 
+in the live system.  The process errors out in the Sandbox because the system cannot reach these forms that are 
+hardcoded. 
+• 
+Pop-Ups:  Some pop ups will not work because they are flagged by programing that references the live system.   
+To access the Sandbox: 
+1. Log Into NetSuite 
+2. From the home screen hover over the user name and session in the top right.  A drop-down menu will appear. 
+ 
+3. A drop down will appear.  Select “:Leaders Holding Company” under “Switch To Another Account” 
+ 
+It is clear you are in the Sandbox roll because of the word Sandbox on the header. 
+ 
+Note:  The work you do in the Sandbox will not be in the live system.  If you mistakenly write a sale, schedule a delivery, 
+or any other task for a guest in Sandbox it will not happen. 

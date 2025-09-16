@@ -1,0 +1,54 @@
+Page 1 of 5 
+2.0.1 The Customer Record 
+1/17/2024 
+ 
+The Customer Record 
+A customer record has all the information to successfully service a guest/customer.  Aside from the 
+standard contact information you can find the history of all the items they have purchased, transactions 
+made, deliveries, returns, deposits, and credits. 
+A customer record could contain 
+o 
+Basic customer information 
+o 
+Opportunities 
+o 
+Quotes 
+o 
+Open sales 
+o 
+Fulfilled sales 
+o 
+Return Authorizations 
+o 
+Deposits 
+o 
+Invoices 
+o 
+Payments 
+o 
+Credits 
+o 
+Solutions tickets 
+o 
+Communication records 
+Before getting started understanding the difference between the Edit and View option of a record 
+Edit 
+Allows you to update fields and change information on a record 
+View 
+Does not allow you to make changes on a record but does allow you to take actions 
+on the record like Write a Sale, Quote, or Opportunity 
+Table of Contents 
+Areas of the Form ......................................................................................................................................... 2 
+Primary Information ...................................................................................................................................... 2 
+Comments & Notes ....................................................................................................................................... 3 
+Address Tab ................................................................................................................................................... 3 
+Sales Tab ....................................................................................................................................................... 3 
+Items Purchased Subtab ........................................................................................................................... 3 
+Transactions Subtab .................................................................................................................................. 4 
+Opportunities Subtab ................................................................................................................................ 4 
+Support Tab ................................................................................................................................................... 4 
+Financial Tab ................................................................................................................................................. 5 
+Payment Token Tab ...................................................................................................................................... 5 
+Credit Card Subtab .................................................................................................................................... 5 
+Account Summary ......................................................................................................................................... 5 
+ 

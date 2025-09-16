@@ -1,0 +1,12 @@
+Page 5 of 5 
+0.0a Employee Center 
+10/16/2020 
+Address Change 
+Path:  NetSuite\Employee Center\Home Links Suitlet\Edit Profile\Edit Mode\Address Tab 
+1. From the Address Tab in edit mode click on the 
+ to the far right of the screen 
+2. Edit the address and click 
+ 
+ 
+3. The address is verified against a data base.  Check your entry if you get an error. 
+ 

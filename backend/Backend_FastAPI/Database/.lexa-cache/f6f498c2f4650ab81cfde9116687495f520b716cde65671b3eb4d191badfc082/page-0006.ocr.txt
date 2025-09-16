@@ -1,0 +1,36 @@
+ 
+Page 6 of 8 
+0.12 Symbols & Shortcuts 
+12/1/2023 
+  
+Add New 
+What 
+It gives you the ability to add the necessary information to create a record to populate the field without having to 
+leave the page.  It will pop-out a window to enter the information in. 
+Where 
+Add new is a plus mark symbol that appears next to fields that reference records 
+ 
+ 
+  
+Open a Record Pop Out 
+What 
+The “Open a Record Pop Out” opens the record you have selected in a field in a new window in Edit mode.  This 
+allows you to make changes to a record, save the changes, and move on with your original task without having to 
+close the window.   
+Where 
+The “Open a Record Pop Out” appears next to fields that are populated with a record.  For example, a customer, 
+address, or billing methods.  The “Open a Record Pop Out” will not work unless the field is populated.  It does not 
+work if the field is not populated because there would be nothing to pop out.   
+Open In a New Window 
+What 
+NetSuite is cloud (internet) based.  It does not have many restrictions on what can be opened together.  All web 
+based systems including Google allow you to open a selection in a new window instead of leaving where you are 
+and continuing on to the next step. 
+Where 
+This function is available on any web screen by: 
+1. Placing your selection arrow over the item you would like to open and pressing the roller ball in the 
+center of your mouse.  Click the roller, do not roll it. 
+2. Place your selection arrow over the item you would like to open , right click, select Open Link in a New 
+Window 
+ 
+ 

@@ -1,0 +1,31 @@
+Page 14 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+3  Why choose Leaders? - Done 
+ 
+Subject: Leaders:  Serving Florida Since 1971 
+${customer.firstname}${customer.companyname}, 
+Thank you for allowing us to create a beautiful space for you.  Leaders has been the premier outdoor 
+furniture resource for the state of Florida since 1971!  Nobody knows Florida better. 
+ 
+More choices than any other outdoor store 
+Fastest custom orders 
+Fast delivery  
+We sell only products designed for Florida’s harsh tropical 
+climate. 
+$25,000,000 in stock and ready to deliver. 
+ 
+We don’t use third parties.  Leaders’ team members inspect, 
+load, and deliver your purchase on our trucks.  Our Solutions 
+Team is ready to work with you on any concern. 
+ 
+We look forward to earning your business.  
+, 
+ 
+${preferences.message_signature} 
+ 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to 
+anyone who would benefit from our service. 
+ 
+ 

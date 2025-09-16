@@ -1,0 +1,53 @@
+Page 2 of 5 
+2.0.1 The Customer Record 
+1/17/2024 
+Areas of the Form 
+ 
+All forms in NetSuite have a the primary information, Tabs, and Subtabs.  The customer form follows this 
+format. 
+ 
+Primary Information 
+Field 
+What? 
+Notes 
+Customer Type 
+Sets the format of the form 
+and Price Level 
+Retail, Designer, Commercial 
+Name 
+Customers Name 
+Semi unique identity for the 
+record 
+Email 
+Email Address 
+Email address all of the 
+receipts, order status, and 
+ownership information will 
+be sent to. 
+Phone 
+Main contact phone number 
+ 
+Communication Preference 
+How the customer prefers to 
+be communicated with. 
+ 
+How Did You Hear About Us? 
+How the customer learned 
+about Leaders 
+ 
+Price Level 
+The line item pricing level for 
+the customer record 
+Retail  
+Commercial 
+Designer 
+Current Status 
+This shows the record in the 
+customer funnel 
+Must measure 
+Need to discuss 
+Waiting for sale 
+Etc. 
+Resale Number and Expiration Date 
+ 
+ 

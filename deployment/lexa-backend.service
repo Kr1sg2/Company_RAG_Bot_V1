@@ -1,0 +1,65 @@
+[Unit]
+Description=Lexa AI Backend Service
+Documentation=https://github.com/your-org/lexa-ai
+After=network.target network-online.target
+Wants=network-online.target
+Requires=local-fs.target
+
+[Service]
+Type=exec
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/lexa/backend
+
+# Environment file with all configuration
+EnvironmentFile=/opt/lexa/config/lexa.env
+
+# Python virtual environment path
+Environment="PATH=/opt/lexa/backend/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Service command with production settings
+ExecStart=/opt/lexa/backend/.venv/bin/uvicorn app:app \
+    --host 127.0.0.1 \
+    --port 8601 \
+    --workers 2 \
+    --worker-class uvicorn.workers.UvicornWorker \
+    --access-log \
+    --log-level info
+
+# Health check
+ExecStartPost=/bin/sleep 3
+ExecStartPost=/bin/bash -c 'curl -f http://127.0.0.1:8601/api/health || exit 1'
+
+# Restart configuration
+Restart=always
+RestartSec=5
+StartLimitInterval=60s
+StartLimitBurst=3
+
+# Resource limits
+MemoryMax=2G
+MemoryHigh=1.5G
+CPUQuota=200%
+
+# Security settings
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/opt/lexa/data /opt/lexa/logs
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=lexa-backend
+
+# Environment variables
+Environment="PYTHONPATH=/opt/lexa/backend"
+Environment="PYTHONUNBUFFERED=1"
+Environment="LEXA_LOG_LEVEL=INFO"
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,48 @@
+Page 14 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+11 Settings 
+Please be careful in the Settings menu. You can lock yourself out of NetSuite and even change the way 
+your system works so your experience is less efficient and not the same as your colleagues.   
+ 
+Set Preferences 
+Leaders recommends that you do not adjust preferences other 
+than the color of your sandbox. Changing your preferences will 
+change your NetSuite experience, and your system may not look 
+or perform like your colleagues'.   
+Change Email 
+Do Not Change Your Email Address Here.  It will affect your login.  
+Please ask the Human Resources team to update your employee 
+record. 
+Change Password 
+Change your password 
+Reset 2FA 
+Not Used 
+Generate 2FA Backup Codes 
+Not Used 
+Update Security Questions 
+Update your security questions that are used to recover a lost 
+password.   
+ 
+Activities Tab  
+The activities tab has many helpful tools for advanced users.   
+✓ Calendar 
+o An overview of Events, Calls, and Tasks 
+✓ Event 
+o Event records reserve time on your calendar for appointments and meetings. When you 
+create an event, you are the owner. If you are invited to an event and accept, you are an 
+attendee. You can click on an event displayed on your calendar to see more information 
+about it, such as the location and a list of invited people. 
+✓ Call 
+o Schedule or plan a call to follow up with an opportunity, guest, vendor, or any other 
+phone communication.  In a call record, you can take notes and track the date and time 
+of the communication. 
+✓ Task 
+o Tasks are activities that need to be completed. Use the task record to add new 
+tasks for individuals, companies, or contacts. 
+Customers Tab 
+A quick glance to review summarized information about your team's number of new Sales Orders, Open 
+Quotes, and Open Opportunities against the same time period last month.   
+ 
+ 
+ 

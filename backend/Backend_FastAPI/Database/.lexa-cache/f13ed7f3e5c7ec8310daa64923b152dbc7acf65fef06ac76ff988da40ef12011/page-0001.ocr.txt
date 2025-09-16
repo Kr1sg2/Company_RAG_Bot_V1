@@ -1,0 +1,18 @@
+ 
+Page 1 of 4 
+3.18 Customer Communication In NetSuite 
+6/9/2019 
+ 
+Customer Communication In NetSuite 
+NetSuite has many points of automated communication to the guest.  It tracks this communication in 
+Quote and Sales Order record.  You can resend communication and documents using NetSuite 
+functionality. 
+ 
+Table of Contents 
+When Does NetSuite Automatically Email A Guest? .................................................................................... 2 
+How Do I See What Information Has Been Sent? ......................................................................................... 3 
+Resend Information ...................................................................................................................................... 4 
+ 
+ 
+ 
+ 

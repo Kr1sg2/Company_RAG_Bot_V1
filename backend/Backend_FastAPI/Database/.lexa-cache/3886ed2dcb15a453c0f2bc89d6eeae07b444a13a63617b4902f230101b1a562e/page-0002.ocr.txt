@@ -1,0 +1,25 @@
+Page 2 of 5 
+2.2.0 Make Deposit Reconcile Cash 
+7/6/2019 
+ 
+Reviewing Received Funds by Payment Type 
+1. From the 
+ Shortcut dropdown click “Make Bank Deposit” 
+ 
+2. Set Filters 
+a. Your Filters will only show correctly if you have set up the form as outlined at the end of 
+this procedure. 
+b. Date 
+i. Click on the Date Field 
+ii. Click 
+ 
+iii. Scroll down and select “Today” 
+c. Physical Location 
+i. Select your store 
+d. Payment Method 
+i. You can select one payment method at a time 
+1. Select All to see the funds you received for the day 
+2. Select Cash to reconcile your cash 
+3. Select Check to reconcile you checks 
+ 
+ 

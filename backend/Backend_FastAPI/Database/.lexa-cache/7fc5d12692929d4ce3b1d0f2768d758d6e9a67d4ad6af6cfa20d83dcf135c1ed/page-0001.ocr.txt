@@ -1,0 +1,64 @@
+Page 1 of 2 
+Credit, Damage, Delivery Worksheet 
+01/15/2018 
+ 
+Credit, Damage, Delivery Worksheets 
+1. 
+When does the Store Delivery Update a Sales Order? 
+a. 
+When the warehouse office tells the store to  
+b. 
+As soon as the order is scheduled for Delivery 
+c. 
+When a Customer signs a Delivery Receipt and takes the goods from store 
+d. 
+On any order that has been delivered on a Leader’s Truck 
+2. 
+ICF Card stands for what? 
+a. 
+Isolated Control Factor 
+b. 
+Inventory Created Fairly 
+c. 
+Identified Customer Frame 
+d. 
+Inventory Control Form 
+3. 
+If an item on the floor is damaged, but not excessively, what should be done? 
+a. 
+Fill out Manager’s Clearance form to have item discounted 
+b. 
+Transfer item out to one of the Clearance locations 
+c. 
+Send item back to warehouse with ICF card attached 
+d. 
+Call Purchasing and wait to be advised 
+4. 
+If an item of the floor is damaged and poses a safety threat, what should be done? 
+a. 
+Call Purchasing and wait to be advised 
+b. 
+Transfer item out of store immediately with an attached ICF card 
+c. 
+Fill out Manger’s Clearance form to have item discounted 
+d. 
+Wait until Inventory comes to the store and advises how to handle 
+5. 
+If an item comes off the transfer/shuttle truck damaged, what should be done? 
+a. 
+Notify warehouse office and wait for instructions 
+b. 
+Fill out Manager’s Clearance form to have item discounted 
+c. 
+Call a Clearance showroom and ask if they have room for the piece 
+d. 
+Transfer item back to warehouse immediately 
+6. 
+Cash Refunds can be done at the store level? 
+a. 
+True 
+b. 
+False 
+ 
+ 
+ 

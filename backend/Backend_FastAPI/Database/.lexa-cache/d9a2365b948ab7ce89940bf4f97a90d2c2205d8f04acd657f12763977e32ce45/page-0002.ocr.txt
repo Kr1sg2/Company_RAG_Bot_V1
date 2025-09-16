@@ -1,0 +1,26 @@
+Page 2 of 4 
+5.11 Refund 
+8/21/2019 
+Processing a Credit Card Refund 
+1. In NetSuite, find the customer record of the guest you would like to refund.  Please note, you do 
+not go to the Sales Order, you go to the customer record. 
+2. Under the “Financials” tab you will see the 
+ button 
+ 
+3. Select the refund method “Card Not Present” 
+4. If appropriate, type in a Memo to save with the record 
+5. On the “2. Apply” Tab you will notice a Credits and Deposits sub tab 
+a. Look on the correct subtab to select the funds you are wishing to refund. 
+Subtab 
+What? 
+Credits 
+The Credits subtab will show funds available to refund only when a paid for 
+and fulfilled item is returned.  The return creates a surplus of funds that 
+show here.  Credits form creating and receiving Return Authorizations 
+Deposits 
+The Deposits subtab shows funds that have been taken and the Sales Order 
+they were taken for is not fulfilled.  The money here was taken as a 
+“deposit.” 
+6. Once you have selected the funds to return click the “3. Refund Method” tab 
+ 
+ 

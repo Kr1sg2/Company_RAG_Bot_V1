@@ -1,0 +1,147 @@
+[
+  {
+    "page": 1,
+    "table_index": 0,
+    "method": "stream",
+    "accuracy": 95.29265372534788,
+    "data": [
+      {
+        "0": "opportunity, allow you to look up information faster, and reduce your transaction time.",
+        "1": ""
+      },
+      {
+        "0": "Laptop Purchase Program Guidelines",
+        "1": ""
+      },
+      {
+        "0": "\u2713",
+        "1": "Purchase requests should be emailed to; sales.leadership@leadersfurniture.com for approval."
+      },
+      {
+        "0": "\u2713",
+        "1": "The laptop is purchased by the team member and is the personal property of the team member."
+      },
+      {
+        "0": "",
+        "1": "o \nLeaders\u2019 IT team will not maintain or support the laptop."
+      },
+      {
+        "0": "",
+        "1": "o \nThe intent is to use for both personal and businesses purposes and as such when in use"
+      },
+      {
+        "0": "",
+        "1": "in a Leaders showroom the laptop must present in a professional manner free of any"
+      },
+      {
+        "0": "",
+        "1": "potentially offensive or controversial messaging (stickers, screensavers, etc.)."
+      },
+      {
+        "0": "",
+        "1": "\u2713  All retail sales members employed 90 days or more qualify for the purchase program."
+      },
+      {
+        "0": "\u2713",
+        "1": "Standard specifications include no less than:"
+      },
+      {
+        "0": "",
+        "1": "o  Modern standards able to interact with Leaders selling systems."
+      },
+      {
+        "0": "",
+        "1": "o \nA current version of Windows."
+      },
+      {
+        "0": "",
+        "1": "o \n8GB of RAM or more."
+      },
+      {
+        "0": "",
+        "1": "o \n15\u201d or larger screen."
+      },
+      {
+        "0": "\u2713",
+        "1": "Pricing"
+      },
+      {
+        "0": "",
+        "1": "o  Will be at market value at the time of purchase."
+      },
+      {
+        "0": "",
+        "1": "o \nThree options will be provided to the team member for review."
+      },
+      {
+        "0": "",
+        "1": "o \nPricing on all three options will be communicated back to the team member for"
+      },
+      {
+        "0": "",
+        "1": "approval before purchase is made."
+      },
+      {
+        "0": "",
+        "1": "o \nThe team member must commit to purchase within 48 hours of receiving the pricing."
+      },
+      {
+        "0": "",
+        "1": "After 48 hours the quoted pricing will then become invalid."
+      },
+      {
+        "0": "",
+        "1": "o \nIf a team member wants to commit and move forward to purchase a laptop, please"
+      },
+      {
+        "0": "",
+        "1": "email sales.leadership@leadersfurniture.com with your approval and payment option."
+      },
+      {
+        "0": "\u2713",
+        "1": "Payment Options"
+      },
+      {
+        "0": "",
+        "1": "o \nIn full.  Through a one-time payroll deduction or check."
+      },
+      {
+        "0": "",
+        "1": "o \n6-month payroll deduction plan.  An equal amount will be deducted each payroll."
+      },
+      {
+        "0": "",
+        "1": "o \nPayroll deduction will commence the first payroll cycle after receipt of delivery."
+      },
+      {
+        "0": "\u27a2  Delivery",
+        "1": ""
+      },
+      {
+        "0": "",
+        "1": "o \nDelivery of the laptop will go to the shipping address designated by the team member."
+      },
+      {
+        "0": "",
+        "1": "o \nShipments to the DC are not permitted."
+      },
+      {
+        "0": "",
+        "1": "o \nShipping timelines are determined by the provider not Leaders."
+      },
+      {
+        "0": "\u2713",
+        "1": "In the event of resignation or termination, either voluntary or involuntary, any outstanding"
+      },
+      {
+        "0": "",
+        "1": "balances will be deducted from the employee\u2019s final pay."
+      }
+    ],
+    "csv": "0,1\n\"opportunity, allow you to look up information faster, and reduce your transaction time.\",\nLaptop Purchase Program Guidelines,\n\u2713,Purchase requests should be emailed to; sales.leadership@leadersfurniture.com for approval.\n\u2713,The laptop is purchased by the team member and is the personal property of the team member.\n,\"o \nLeaders\u2019 IT team will not maintain or support the laptop.\"\n,\"o \nThe intent is to use for both personal and businesses purposes and as such when in use\"\n,in a Leaders showroom the laptop must present in a professional manner free of any\n,\"potentially offensive or controversial messaging (stickers, screensavers, etc.).\"\n,\u2713  All retail sales members employed 90 days or more qualify for the purchase program.\n\u2713,Standard specifications include no less than:\n,o  Modern standards able to interact with Leaders selling systems.\n,\"o \nA current version of Windows.\"\n,\"o \n8GB of RAM or more.\"\n,\"o \n15\u201d or larger screen.\"\n\u2713,Pricing\n,o  Will be at market value at the time of purchase.\n,\"o \nThree options will be provided to the team member for review.\"\n,\"o \nPricing on all three options will be communicated back to the team member for\"\n,approval before purchase is made.\n,\"o \nThe team member must commit to purchase within 48 hours of receiving the pricing.\"\n,After 48 hours the quoted pricing will then become invalid.\n,\"o \nIf a team member wants to commit and move forward to purchase a laptop, please\"\n,email sales.leadership@leadersfurniture.com with your approval and payment option.\n\u2713,Payment Options\n,\"o \nIn full.  Through a one-time payroll deduction or check.\"\n,\"o \n6-month payroll deduction plan.  An equal amount will be deducted each payroll.\"\n,\"o \nPayroll deduction will commence the first payroll cycle after receipt of delivery.\"\n\u27a2  Delivery,\n,\"o \nDelivery of the laptop will go to the shipping address designated by the team member.\"\n,\"o \nShipments to the DC are not permitted.\"\n,\"o \nShipping timelines are determined by the provider not Leaders.\"\n\u2713,\"In the event of resignation or termination, either voluntary or involuntary, any outstanding\"\n,balances will be deducted from the employee\u2019s final pay.\n",
+    "shape": [
+      33,
+      2
+    ]
+  }
+]

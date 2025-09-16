@@ -1,0 +1,25 @@
+Page 4 of 7 
+2.92.1 Managing Customer Accounts Monthly Focus 
+6/21/2018 
+ 
+o This customer had an invoice re-written, which is invoice 1817501 on line 2 in order to 
+correct the ticket. 
+ 
+You can see the new invoice on line 2 is written, and the deposit is “ND” for no 
+deposit.  
+ 
+The back-ordered invoice on line 3, B188174861, is cancelled. The code “CN-
+TRN”, cancel –transfer, illustrates this. The $332.10 that is attached to the 
+cancelled invoice is now transferred to the new invoice, 1817501. The red 
+arrows illustrate this money movement. 
+ 
+  
+ 
+o The customer pays for the balance on the two invoices, 1817486 on line 1 and 1817501 
+on line 2 on 07-02-15. They pay by “BC”, which is entered into FROG by going into the 
+customer’s account and going into AR options and selecting cash receipts. The red 
+arrows illustrate the “BC” payments. The balances are paid in full, and the customer’s 
+open balance is now zero. All orders have been either been delivery updated or 
+cancelled, so they show as a sale type 9.  
+ 
+ 

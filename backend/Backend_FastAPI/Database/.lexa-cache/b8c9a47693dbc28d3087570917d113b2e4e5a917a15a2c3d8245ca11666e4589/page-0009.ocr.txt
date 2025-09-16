@@ -1,0 +1,13 @@
+ 
+Page 9 of 10 
+2.51 Solutions Center Service Case 
+6/9/2019 
+How to Close an Active Case 
+If you were able to resolve a case for a customer and you are absolutely sure they will not need further 
+assistance you can close the case. 
+ 
+1. Open the case from the customer record in the “Support” tab. 
+ 
+2. Change the status to closed and press 
+ 
+ 

@@ -1,0 +1,20 @@
+Page 2 of 5 
+6.4 BoxKeeper Transfer System 
+11/27/2017 
+Best Practices 
+1. Put the strap on the back of the tablet over a cone that is in an area with strong WiFi signal and 
+within site of the scanning process. 
+   
+ 
+Prepare to Scan  
+1. Turn on the tablet when in range of the store WiFi.   
+Note: If the tablet is turned on no in range of the store WiFi it will not acquire network 
+connections and the BoxKeeper program will not work.  If this happens and the tablet will 
+not open network drives or you cannot find your icons reset the tablet while standing in 
+range of the Leader’s WiFi system. 
+2. Open BoxKeeper Web 
+ 
+3. Log into BoxKeeper Web 
+ 
+ 
+ 

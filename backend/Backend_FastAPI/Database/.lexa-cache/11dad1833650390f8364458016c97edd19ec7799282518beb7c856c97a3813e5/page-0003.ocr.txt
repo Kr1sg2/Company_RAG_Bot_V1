@@ -1,0 +1,46 @@
+ 
+Page 3 of 3 
+2.53  Customer Owned Material COM 
+8/23/2021 
+If the fabric IS NOT PURCHASED from Leader's Casual Furniture® and is 
+brought into the showroom by the customer 
+Must be on the invoice 
+Why 
+1 
+Sales Order must be 
+written for the same 
+customer that 
+purchased the 
+inventory 
+The cushion manufacturing facility and distribution team will be able 
+to more easily match the fabric with the order 
+2 
+To Special Order the 
+Fabric Use the Product 
+Configurator 
+Ordering the fabric through the configurator creates a unique SKU 
+that helps identifies the customer’s fabric. 
+ 
+3 
+Detailed Memo Field 
+Describing the Fabric 
+This will help the fabric be identified by receiving and paired with the 
+correct purchase order.  A detailed description will also help expedite 
+any process where the fabric needs to be located.  This will help your 
+order process through the system with less hang up and be on time. 
+A detailed memo should include: 
+✓ Full Fabric Name/number as listed on the fabric label 
+✓ Detailed description of the fabric 
+✓ The invoice # the fabric is for 
+✓ Your initials and 4-digit SLM number 
+Special Notes 
+• 
+After the order is complete, the order stays open & is not Delivery Updated 
+o If there is leftover fabric of a yard or more, the COM Fabric will be returned to 
+the warehouse after the order is completed.  It is up to the Sales Team Member 
+to have any leftover COM fabric returned back to the customer and having the 
+Sales Order must be fulfilled. 
+• 
+It is the sales team member’s responsibility to follow up and make sure the fabric gets 
+forwarded to the correct manufacturer.  This is done by emailing the receiving 
+department receiving@leadersfurniture.com  

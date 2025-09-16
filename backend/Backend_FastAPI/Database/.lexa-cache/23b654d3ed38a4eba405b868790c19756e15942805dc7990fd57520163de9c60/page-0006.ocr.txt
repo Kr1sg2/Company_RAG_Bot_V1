@@ -1,0 +1,46 @@
+Page 6 of 17 
+0.19 Sales Team NetSuite Dashboard Overview 
+6/3/2024 
+2  Reminders 
+ 
+Reminder 
+What? 
+Sales | Quote Activity Due 
+If you properly set your “Next Activity” dates on your open 
+quotes, this reminder will tell you which quotes must be 
+followed up on and are past the “Next Activity” date. 
+Sales | Sales Orders Pending 
+Approval (Showroom) 
+Sales Orders must have a deposit to be approved.  Sales 
+Orders will not reserve merchandise if they are not approved.  
+Work with your territory Leader to correct anything in the 
+report.   
+Sales | Special Orders on Hold 
+A special order is placed on hold when the purchasing 
+department does not have enough information to process it. 
+The purchasing department will email you with questions. 
+Please respond to the purchasing team immediately to 
+prevent further delay.   
+Sales | Commissions Approval 
+Needed 
+Sales Orders with pricing errors or repetitive mistakes made by 
+the same sales associate that cause the company unnecessary 
+expenses will show up in this search.  A sales order in this 
+search will not pay a commission when fulfilled.  Resolve them 
+with your territory Leader.   
+Sales | Potential Delivery Additions 
+Multiple trips to a guest's home cause more inconvenience. 
+This report gives you sales orders that you can combine with 
+existing fulfilments, reducing trips and increasing guest 
+satisfaction. 
+Sales | Past ETA (Mine) 
+Your orders that are past the ETA date and not fulfilled 
+Sales | Past ETA (My Showroom) 
+Your store orders that are past the ETA date and not fulfilled 
+Sales | Customer ETA Change 
+Your orders where the ETA date on a line item has changed 
+from what it originally was.  Review the order and 
+communicate with the guest.   
+Sales | Deposits to be Made 
+Daily deposits for your location that have not been brought to 
+the bank.   

@@ -1,0 +1,17 @@
+Page 2 of 3 
+4.1 Pricing Levels 
+5/8/2024 
+Set Pricing Level & Get Approval 
+1. Create A New Guest 
+ 
+2. Select the Customer Type 
+ 
+3. If Commercial or Direct Ship is selected, once the customer record is saved, an email will be sent 
+to the Sales Leadership Team and an alert will be put on their NetSuite Dashboard to approve 
+the customer record for discount pricing.  Before the approval is processed the customer price 
+level will be “Pending Approval” which is equal to retail our low. 
+Partner Pricing Approval 
+Follow the steps in Set Pricing Level in this section.  Once you save the customer record it will 
+automatically email an approval request to the Sales Leadership Team.  
+ 
+ 

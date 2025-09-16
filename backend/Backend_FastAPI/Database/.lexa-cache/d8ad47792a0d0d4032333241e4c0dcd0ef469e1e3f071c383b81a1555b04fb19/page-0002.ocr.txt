@@ -1,0 +1,30 @@
+Page 2 of 5 
+2.110 Transfer Merchandise.docx 
+9/11/2019 
+ 
+When and why will an item transfer? 
+ 
+1.   To refill stock sold off the floor 
+a.    This is called refilling a “minimum stock level.” A minimum stock level is a defined 
+number of a SKU that will be kept at a location. If you reserve the item off your floor 
+and it has a minimum stock level a new item will automatically transfer to your store on 
+the next transfer to refill the meet the minimum level. 
+ 
+2.   To fulfill a Sales Order 
+a.    A customer order will transfer to the correct destination for it to fulfill from. 
+ 
+3.   If manually directed to do so by through a request to your territory leader 
+ 
+a.    R:\14 About Templates, Forms and References\Email Templates\About 
+Inventory\Transfer Request 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NOTE:   Overstock items or items that have a quantity greater than the minimum stock level will not 
+automatically transfer out. If your floor becomes crowded with canceled stock orders or 
+random merchandise transferred in, it is the store team’s responsibility to work with their 
+territory leader to get the surplus product transferred out. 

@@ -1,0 +1,68 @@
+Page 2 of 6 
+0.16 Standard NetSuite Configuration Set Preferences 
+1/17/2024 
+Set Preferences 
+These are general settings to improve your user experience. 
+To access the Set Preferences hover over the 
+ icon and then click “Set Preferences” 
+ 
+General Tab 
+Nickname 
+User Profile - Nickname 
+If you do not go by your given 
+name.  Enter the name you 
+prefer to go by here 
+From Email Address 
+User Profile – From Email 
+Address 
+Type your primary stores email 
+address in this location.  This is 
+the email address that the user 
+roll will send emails from.   
+Signature 
+User Profile - Nickname 
+This will populate on all of the 
+outgoing emails templates your 
+transactions send to guests and 
+customers  
+Please use the standard HTML 
+format.  For instructions see 
+Email Signature HTML at the 
+end of this section. 
+Add Signature to Messages 
+User Profile – Below Signature 
+Enter the signature that will 
+auto populate on your 
+customer communication.   
+ 
+ 
+ 
+Appearance Tab 
+Collapse Tabs in each form 
+Entry Forms - Un Check “Expand 
+Tabs” On Entry Forms   
+ 
+This condenses the information 
+and allows you to focus on less 
+fields at a time.  You can toggle 
+the information on a from by 
+selecting the tab with the 
+information you want 
+Set SandBox Orange Color 
+Colors – Color Theme – Basic 
+Orange 
+This will prevent accidentally 
+using the Sandbox test and 
+training environment for a 
+customer transaction 
+ 
+ 
+Custom Preferences Tab 
+Turn Off Drag & Drop 
+(Do Not Do for Solutions Team Members) 
+File Drag and Drop 
+Turn off all three File Drag and 
+Drop options.  This will 
+eliminate unnecessary clutter 
+from screens that can block 
+functionality. 

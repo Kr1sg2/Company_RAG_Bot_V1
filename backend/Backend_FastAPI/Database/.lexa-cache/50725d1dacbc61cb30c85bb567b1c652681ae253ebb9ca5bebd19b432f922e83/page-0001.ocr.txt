@@ -1,0 +1,68 @@
+Page 1 of 3 
+3.9 Cancel or change commitment location 
+6/9/2019 
+ 
+Change Location an Item is Committed From 
+ 
+Occasionally it may be necessary to change the location an item is committed to.  For example, an item could be missing 
+even though the computer shows stock, or it was discovered the item was damaged. 
+ 
+The default reservation location is the Distribution Center.  Rarely will your orders for furniture have to link to 
+showroom floors.  This happens when the items are closeout, accessory items, or we have low stock. 
+ 
+ 
+Condition 
+Cancel Fulfilment 
+Record 
+Select a New 
+Commitment Location 
+Reschedule  
+Sales Order is Not Scheduled 
+N/A 
+Select a new commit 
+from location on the line 
+item. 
+N/A 
+Item is scheduled on transfer 
+Cancel and delete the 
+transfer record from 
+the Sales Order record 
+Select a new commit 
+from location on the line 
+item. 
+Reschedule the 
+transfer 
+Item is scheduled on a delivery 
+truck 
+Cancel the delivery 
+record from the Sales 
+Order record 
+Select a new commit 
+from location on the line 
+item. 
+Reschedule the 
+delivery 
+Item is scheduled to ship 
+Cancel the shipping 
+record from the Sales 
+Order record 
+Select a new commit 
+from location on the line 
+item. 
+Reschedule the 
+shipment 
+Item is in the process of moving 
+on a transfer 
+You must wait for the 
+transfer to complete to 
+release the item. 
+Contact the Distribution Center Office Team 
+for if you need more immediate assistance. 
+ 
+Table of Contents 
+Cancel a Delivery or Shipping Record ..................................................................................................................................... 2 
+Cancel A Transfer Record ........................................................................................................................................................ 3 
+ 
+ 
+ 
+ 

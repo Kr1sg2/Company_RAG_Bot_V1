@@ -1,0 +1,68 @@
+R9T15FIRE 
+Page 9 of 16 
+Rev. D 04JAN19 
+ 
+ 
+INTERNAL CONTROLS 
+(401600RD, 401600RCT, AND 401701RCT BASE) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PARTS LIST 
+ 
+ 
+Item No. 
+Description 
+Part No. 
+1 
+Knob, Black, for Gas Valve 
+R01MS102 
+2 
+Nut, Retaining, M1 for Gas Valve 
+R02NU501 
+3 
+Gas Valve 
+R18VL100 
+4 
+3/8” Flare x 3/8” MIPT 
+R18CO108 
+5 
+Gas Hose with Regulator, 3/8” x 12” Long 
+Gas Hose with Regulator, 3/8” x 36” Long 
+R18FH100 
+R18FH103 
+6 
+Gas Plumbing Support Weldment 
+WSL30RFPGVS 
+ 
+Gas Plumbing Support Weldment (not shown) 
+W401767FPSGV 
+7 
+Nipple, 3/8” x 1.5” 
+R15SP101 
+8 
+1/2” x 1/2" FIP 90 
+R15CO101 
+9 
+Gas Flex Line, 24” x 1/2" 
+R15SP100 
+ 
+ 
+ 

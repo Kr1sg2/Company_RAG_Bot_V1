@@ -1,0 +1,20 @@
+Page 11 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+The Product Configurator 
+The Product Configurator is a powerful tool and should be used to enter items you are ordering 
+on a Sales Order.  It contains 95% of all items we can order.  The real magic happens because 
+the configurator will only let you configure options on items that are available.  Throughout the 
+configuration process, the configurator creates the correct SKU and correct pricing without the 
+user having to look up or reference any pricelist.  Be patient while the Product Configurator 
+sorts through ordering options.  The time savings and accuracy create synergies throughout 
+Leaders and increases our customer experience 
+From the “2. Items” tab on a sales order click 
+ 
+a. Please note that the Product Configurator must sort a massive amount of data and may 
+have load times of up to 10seconds between choices.  Be patient.  It is worth the wait to 
+get complex orders right the first time. 
+ 
+You know the configurator is thinking when you see this message in the lower right. 
+ 
+ 

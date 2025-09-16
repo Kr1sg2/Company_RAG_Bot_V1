@@ -1,0 +1,14 @@
+Custom Cushions
+AVAILABLE NOW
+Step 5 Enter Sale into NetSuite
+1. Open a Sales Order
+2. Use the Product 
+Configurator to 
+properly place the 
+order
+3. The Month, Day, Year, 
+and Location fields are 
+used to make a unique 
+item number that is 
+only associated with 
+you order.

@@ -1,0 +1,72 @@
+Page 7 of 7 
+2.92.1 Managing Customer Accounts Monthly Focus 
+6/21/2018 
+ 
+ 
+Customer has a special order, so a 25% deposit is required, and the balance 
+is being financed by the customer. Here is how the money portion should 
+look when entered correctly in FROG:  
+ 25% deposit amount is entered, in this case it is 696.17. 
+ Balance is for the remaining amount that will be financed. The 
+deposit and balance equal the total amount of the sale 
+ Deposit taken is entered, in this case it was a “BC”. The deposit can 
+NEVER be “FI”, only “BC”, “CS”, or “CK”. 
+ Method of payment is entered always as “FI”. It is NEVER “CBD” on 
+Wells Fargo orders, or else the customer will not be charged for 
+their order! 
+ FI amount is entered, in this case it is the balance of 2088.52 
+ 
+ 
+The Wells Fargo procedure gives a detailed step by step guideline in opening an 
+account and how to properly authorize a charge on the account: R:\Procedure 
+Manual\4.0 Customer Accounts_AR\4.05 Wells Fargo Finance.pdf 
+ 
+Additionally, we also have a procedure that details how to properly process an 
+add-on sale utilizing the customer’s Wells Fargo account: R:\Procedure 
+Manual\4.0 Customer Accounts_AR\4.5.8 Add On Finance.pdf 
+ 
+In order to to become comfortable and proficient in entering and creating a 
+Wells Fargo account, we have a practice sheet that provides the information 
+required to utilize Wells Fargo’s live website and create a “test” account: 
+R:\Procedure Manual\4.0 Customer Accounts_AR\Wells Fargo Cheat Sheet.pdf 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

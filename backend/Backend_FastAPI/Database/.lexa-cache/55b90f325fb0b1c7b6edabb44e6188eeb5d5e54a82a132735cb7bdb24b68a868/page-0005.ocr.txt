@@ -1,0 +1,33 @@
+Page 5 of 6 
+0.16 Standard NetSuite Configuration Set Preferences 
+1/17/2024 
+Email Signature HTML 
+✓ The signature field located In Preferences - User Profile – Below Signature must be populated in 
+HTML.  Please copy and paste the code into the Below Signature field 
+✓ Please make the changes to personalize it for you and your location 
+Store Team Associate 
+<p><strong>Your Name</strong><br /><strong>Your Location Team</strong><br /> 
+<strong>Leaders Furniture</strong>&reg;<br /> Your store address<br /> City State, Zip<br />(###) 
+###-####<br /> your store email</p> 
+The result will look like this: 
+Tim Newton 
+Bradenton Team 
+Leaders Casual Furniture 
+6303 126th Ave N  
+Largo, FL 33773 
+(727) 867-5309 
+bradenton@leadersfurniture.com 
+Store Manager  
+<p><strong>Your Name</strong><br /><strong>Your Location Manager</strong><br /> 
+<strong>Leaders Furniture</strong>&reg;<br /> Your store address<br /> City State, Zip<br />(###) 
+###-####<br /> your store email</p> 
+The result will look like this: 
+Tim Newton 
+Bradenton Manager 
+Leaders Casual Furniture 
+6303 126th Ave N  
+Largo, FL 33773 
+(727) 867-5309 
+bradenton@leadersfurniture.com 
+ 
+ 

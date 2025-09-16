@@ -1,0 +1,19 @@
+Page 1 of 5 
+5.0 NetSuite Take a Payment 
+8/19/2019 
+ 
+Take a Payment 
+The way NetSuite manages a customer record causes us to know two different ways to apply a payment.  
+Both are simple to do but we need to know when to use each. 
+ 
+Table of Contents 
+If the Sales Order is not fulfilled & Invoiced ................................................................................................. 2 
+Take Payment from the Sales Order ......................................................................................................... 2 
+If the Sales Order has been fulfilled and Invoiced ........................................................................................ 4 
+Take Payment from the Invoice ................................................................................................................ 4 
+Get an Error? ................................................................................................................................................. 5 
+Do not start over.  Click “Edit” and correct your information .................................................................. 5 
+Why? ......................................................................................................................................................... 5 
+ 
+ 
+ 

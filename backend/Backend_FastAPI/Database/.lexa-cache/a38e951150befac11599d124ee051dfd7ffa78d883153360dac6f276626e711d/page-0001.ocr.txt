@@ -1,0 +1,28 @@
+Page 1 of 4 
+6/8/2019 
+2.1 Fulfill Deliver Update 
+ 
+Fulfill 
+Items taken by the customer from the store must be fulfilled from the store.  Items can only be fulfilled 
+by a store team member if the items are physically in your location.  Your location is set on your team 
+member record.  If you cover at another store for a day you will not be able to fulfill items for that 
+location unless your team member record is changed. 
+Fulfilled invoices will be automatically Billed/Invoiced every 6 hours.  A Sales Order must be 
+Billed/Invoiced in order to: 
+✓ Take an additional payment 
+✓ Initiate an exchange, credit or return 
+ 
+Table of Contents 
+Conditions to be able to delivery update: .................................................................................................... 1 
+Where do I look to see….? ........................................................................................................................ 2 
+If all items are in the fulfill from location? ............................................................................................ 2 
+If some items are in the fulfill from location? ....................................................................................... 2 
+If the Ship Complete check box is checked? ......................................................................................... 2 
+Fulfill .............................................................................................................................................................. 3 
+ 
+Conditions to be able to delivery update: 
+✓ Item is in my location 
+✓ All items on the sales order are in the Fulfill from location or some items are in the fulfill location 
+and the Ship Complete box is not checked. 
+ 
+ 

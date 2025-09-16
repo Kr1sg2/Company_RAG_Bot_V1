@@ -1,0 +1,16 @@
+Page 6 of 9 
+Solutions Center Dashboard and KPIs 
+5/30/2022 
+Solutions| Aging Product at the manufacturer 
+Criteria: 
+Open Case(s) assigned to the with a Status of ‘Product at the Manufacturer’ without activity for 2 weeks or 
+longer. 
+Goal: 
+Inquire with the manufacturer for an update.  Update the case, purchase order and the customer. 
+Solutions | Cases on Hold 
+Criteria: 
+Case(s) on hold regardless of who they are assigned. 
+Goal: 
+This report is for awareness.  Close any case after significant amount of time on hold. 
+ 
+ 

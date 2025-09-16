@@ -1,0 +1,25 @@
+Page 4 of 9 
+0.01 Finding Information and Searching the R Drive 
+8/17/2021 
+Searching the R: Drive | A Network Drive 
+At Leader’s Furniture a primary value has always been to keep information accessible to all who need it.  
+The R drive on the computer system is an encyclopedia of knowledge about our products and processes.  
+This R (meaning Retail) is available to all team members at any time for research and for learning.  
+The R drive is organized by category.  Think of the R drive as a digital file cabinet.  Within the drive are 
+categories which could be thought of as drawers of files.  Within the files are documents.  When 
+searching the R drive it is possible to look in the entire file cabinet, in all categories and in all documents, 
+at once.  Such a search might yield many results depending on how much information exists about a 
+searched item. 
+ It is also possible to sort through the names of the drawers and files to limit how much data the search 
+function has to do and results may be faster this way.  With a very little time it is easy to learn the best 
+way to search the huge data field in R for what is needed.  
+A great way to start the learning is to scroll through the file names in the R and open a few to see how it 
+works.  The categories will be labeled “About Leader’s” or “About Products” or “About Training” for a 
+few examples.  In these category files are documents related to those subjects.  But remember, it is 
+possible to search the entire R drive at once but that will take longer than searching a category file. 
+Below are the very simple steps for learning to research in R and its files. 
+Here are the steps with visual illustration. 
+1. Find the file icon on computer screen. It is generally across the lower tol bar. Some stores have 
+an R shortcut installed on desktops. See image below. Look for the file folder with red arrow. 
+2. Click on the file folder icon. Look for the drive named Stores R. 
+ 

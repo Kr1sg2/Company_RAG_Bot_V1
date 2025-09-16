@@ -1,0 +1,38 @@
+Page 5 of 9 
+1.4 Time Clock.docx 
+4/17/2024 
+Clocking, Time Punch 
+1. Access Time Clock Plus in using your regular log in.  Do not use a Manager Role, it will not work.   
+2. Your ID Number Employee Number.  Type in your ID number and click the action you would like to take. 
+ 
+ 
+Field 
+What? 
+1 
+Select Company 
+Do not use – Leaders is a single entity 
+2 
+ID Number 
+Your Employee Number 
+3 
+Clock In 
+First time punch you make when you arrive.  Starts time for the day 
+4 
+Clock Out 
+Last time punch you make when you leave.  Stops time for the day 
+5 
+Leave For Lunch 
+Use this button when you leave for lunch.  You will not be allowed 
+to clock back in for 30 minutes.  This is required by law. 
+6 
+Return From Lunch 
+Click when returning form lunch.  This selection is not available until 
+30 minutes or more from when you submitted your “Leave For 
+Lunch.”  
+7 
+Log On To Dashboard 
+Allows you to request and view time off, see hours worked for a 
+pay period 
+ 
+ 
+ 

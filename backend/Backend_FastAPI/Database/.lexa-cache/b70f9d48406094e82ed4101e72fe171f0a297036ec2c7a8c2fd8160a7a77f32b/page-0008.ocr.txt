@@ -1,0 +1,98 @@
+Page 8 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+2. Items Tab 
+The Items tab is a summary of the items the customer is buying when they will be ready and any 
+promotions that apply.  Click the field names for detailed descriptions.  Let’s take a detailed look at the 
+line items.  They will display a little differently in Edit vs View mode.   
+ 
+ 
+Field Name 
+What? 
+Why? 
+Ship Complete 
+Ship Complete Checkbox 
+Check = Ship all items together 
+Unchecked = Ship not all items together 
+Estimated Ready 
+Date 
+Estimated Date all items on the sales order 
+will be available for the customer  
+To meet customer expectations 
+PO Forecast 
+Forecast for the next available date for its 
+SKU and the quantity you want 
+Provide clarity to customer on next 
+available date of the item 
+Reserve To Your 
+Floor Instructions 
+Special Instructions if you are trying to 
+reserve from your floor and do a customer 
+pick up in your store 
+Follow these instructions so product does 
+not accidentally transfer to the DC 
+Items 
+Total of all the items on the sales order 
+ 
+Item 
+This is where the SKU displays.   
+Notice that the Base SKU shows up before 
+the configured SKU.  NetSuite is saying, 
+“You are ordering this product with these 
+options.” 
+Description 
+A detailed description of what is being 
+ordered 
+You should rarely edit or change these 
+fields.  They should be populated from the 
+configurator 99% of the time.  Read 
+customer-owned merchandise (COM) to 
+learn about the 1% 
+Brand 
+An image of the brand logo for the item will 
+show here 
+ 
+Item & Options 
+This is a black-and-white thumbnail image of 
+the item ordered and color thumbnails of 
+the options 
+This is for a visual reference of what was 
+ordered 
+Quantity 
+Number of items ordered 
+Click on the quantity to adjust 
+Committed 
+(Ready in 
+Fulfilment 
+Location) 
+This will show the number of the line item 
+that are in the location that they will deliver 
+from.   
+This quantity should equal the total 
+quantity of the line to show all are ready 
+to deliver. 
+Fulfilled 
+Because you can partially deliver an invoice 
+this column shows how many of an item 
+have already been fulfilled 
+If the quantity = Fulfilled that line the 
+customer has possession of all of the 
+items on the line. 
+Invoiced 
+This is the number of the items on the line 
+that have been finalized, billed/invoiced. 
+Fully Invoiced Sales Orders can no longer 
+be adjusted. 
+Price Level 
+This is the level for the price of the items 
+This is set by the customer record and 
+should not be adjusted. 
+Each 
+The cost of each item 
+ 
+Amount 
+The number of an item time the cost of each 
+ 
+ 
+ 
+ 

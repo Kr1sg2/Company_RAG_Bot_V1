@@ -1,0 +1,2 @@
+You can re-calculate ETA from the 
+Sales Order

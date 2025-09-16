@@ -1,0 +1,19 @@
+Page 5 of 5 
+2.0.1 The Customer Record 
+1/17/2024 
+Financial Tab 
+The financial tab is full of good information.  Here you can quickly see if a guest is owed money or has a 
+store credit.   
+ 
+Payment Token Tab 
+Credit Card Subtab 
+Deposits and credit card transaction records will be shown here.  This is populated by using the credit 
+card terminals.   
+Credit cards can be manually entered by the customer if they wish for us to save a credit card with their 
+account.  NetSuite will “tokenize” the data to store it in an encrypted way so the card can be used on 
+the account at a later date. 
+Account Summary 
+When viewing a customer record in Edit or View mode you can open a customer record summary by 
+clicking on the 
+ 
+ 

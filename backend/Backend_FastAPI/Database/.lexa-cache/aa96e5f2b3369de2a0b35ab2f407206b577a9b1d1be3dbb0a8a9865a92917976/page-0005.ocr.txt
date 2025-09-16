@@ -1,0 +1,52 @@
+Page 5 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+Search Filters 
+When using the Item Look Up Shortcut you will see the following filters.  You can search by an 
+individual criteria or link criteria together for a narrowed search.   
+Note:  You must clear the filters to start a new search 
+ 
+Filter 
+What? 
+Why? 
+Item Status 
+Current Stocking Item 
+Dropped By Leaders 
+Special Order 
+Look for closeouts, or unique items that 
+have been ordered in the past. 
+Brand 
+Filter by Brand Name 
+Narrow your search to products made by 
+a specific brand 
+Collection 
+Filter by the Collection Name 
+Narrow your search to see only specific 
+items that go to a collection across 
+several brands.  Example: Type Bali into 
+the Collection filter and see the cushions 
+and frames that make up the items in the 
+collection. 
+Description 
+Look for key words in item 
+descriptions 
+Search the descriptions to find items with 
+unique attributes or that fit a criteria.  
+Example: Search Collection “Empire,” 
+Description “Dining” to see all the items 
+in the collection that make up a dining 
+set tables and chairs included 
+Category 
+Narrow your search to find 
+items with certain product 
+categories 
+Search by category to see all the items 
+we carry in a certain category regardless 
+of brand.   
+Style 
+N/A 
+This allows to toggle the mode you view 
+your results.   
+ 
+ 
+ 

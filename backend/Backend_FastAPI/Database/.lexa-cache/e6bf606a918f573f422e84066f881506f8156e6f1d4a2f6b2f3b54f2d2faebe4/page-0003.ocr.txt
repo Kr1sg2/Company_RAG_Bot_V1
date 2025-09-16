@@ -1,0 +1,18 @@
+Page 3 of 9 
+0.01 Finding Information and Searching the R Drive 
+8/17/2021 
+Quick Search & Control <F> 
+Windows now has a built in search box in File Explorer in the top right of the screen. 
+Most other programs like WORD, EXCEL and Acrobat require you to open the search window. 
+1. On computer keyboard click <ctrl> and <f>.  The <f> key in this case means “find.”  A small 
+window will open somewhere on the top of the screen.  If a search window already exists, the 
+cursor will begin flashing in that window. 
+ 
+2. In Windows the search box is on top of the screen usually on the right side. 
+3. Type the word or phrase desired in the window then click <enter>.  
+a. The more specific the search term the more limited the results will be.  If you are too 
+specific you may not find what you are looking for. 
+i. For example:  If we want to know all about rattan, then type in ‘rattan’ in search 
+window.  Many options using the word rattan will be shown.  If we want to know 
+about taking care of rattan, then type in “rattan care” and we will see fewer 
+options. 

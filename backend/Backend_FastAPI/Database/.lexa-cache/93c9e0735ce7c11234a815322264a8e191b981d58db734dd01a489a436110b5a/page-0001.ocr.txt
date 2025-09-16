@@ -1,0 +1,68 @@
+ 
+Parts & Custom Items 
+Item is Not in the Configurator 
+Place Holder SKUs 
+ 
+The item configurator is an amazing tool that will allow you to order almost everything manufacturers 
+have available. For information on the Product Configurator see 3.1 Writing a Sales / Product 
+Configurator.  
+ 
+Parts, custom configurations, or one of a kind items may not be able to be ordered using the 
+configurator.  If you cannot configure an item please use the correct place holder SKU by brand below. 
+ 
+Note:   
+If you see an error in the data in the configurator please communicate it to the purchasing team.  The 
+Purchasing Team maintains the configurator data to give the sales team the ability to write 
+transactions faster and more accurately.   
+ 
+Brand 
+Special Order Item 
+Parts 
+Casual Comfort™ 
+CCOM-SPO.PLACEHOLDER 
+CCOM-PARTS.PLACEHOLDER 
+Customer Owned Merchandise 
+CUSM-PLACEHOLDER 
+N/A 
+Customer Owned Material 
+LEAD-COM.PLACEHOLDER 
+N/A 
+Central Cushion 
+CENT-SPO.PLACEHOLEDER 
+CENT-PARTS.PLACEHOLDER 
+Garden Classics™  
+N/A 
+GARD-PARTS.PLACEHOLDER 
+Hanamint™  
+HANA-SPO.PLACEHOLEDER 
+HANA-PARTS.PLACEHOLDER 
+Island Way Living™ 
+N/A 
+ISLA-PARTS.PLACEHOLDER 
+Jensen Leisure 
+JENS-SPO.PLACEHOLEDER 
+JENS-PARTS.PLACEHOLDER 
+Leaders Parts 
+N/A 
+LEAD-PARTS.PLACEHOLDER 
+Palm Spring Rattan™  
+N/A 
+PALM-PARTS.PLACEHOLDER 
+Treasure Garden® 
+TREA-SPO.PLACEHOLDER 
+TREA-PARTS.PLACEHOLDER 
+Tropitone® 
+TROP-SPO.PLACEHOLDER 
+TROP-PARTS.PLACEHOLDER 
+Palm Springs Upholstery 
+PALM-SPO.PLACEHOLDER 
+PALM-PARTS.PLACEHOLDER 
+Upholstery By You™ 
+BYYO-SPO.PLACEHOLDER 
+BYYO-PARTS.PLACEHOLDER 
+Windward Design™ 
+WIND-SPO.PLACEHOLDER 
+WIND-PARTS.PLACEHOLDER 
+ 
+ 
+    

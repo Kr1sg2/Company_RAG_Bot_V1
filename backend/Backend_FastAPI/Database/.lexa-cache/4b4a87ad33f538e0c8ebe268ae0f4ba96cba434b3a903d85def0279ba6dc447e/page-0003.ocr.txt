@@ -1,0 +1,29 @@
+Page 3 of 5 
+2.0.1 The Customer Record 
+1/17/2024 
+Comments & Notes 
+Field 
+What? 
+Notes 
+Comments 
+Comments from the main 
+customer record that will show 
+on ever Sales Order or Return 
+ 
+Delivery Notes 
+Comments from the main 
+customer record that will show 
+on ever Sales Order or Return 
+ 
+ 
+Address Tab 
+ 
+This tab shows all of the addresses related to the customer record 
+Sales Tab 
+Items Purchased Subtab  
+The items purchased tab shows you all items that the customer has purchased or returned.  It is a 
+summary of the customer’s transaction by item.  In both Edit and View mode you can go to the Sales 
+Order or invoice for each item. 
+ 
+ 
+ 

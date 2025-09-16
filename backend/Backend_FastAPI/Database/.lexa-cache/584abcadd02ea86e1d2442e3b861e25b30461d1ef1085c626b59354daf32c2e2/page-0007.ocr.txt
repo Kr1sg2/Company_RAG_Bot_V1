@@ -1,0 +1,46 @@
+Page 7 of 9 
+3.24 After the Sale Customer Communication 
+3/1/2024 
+Pollen Season 
+Reason 
+When 
+Why 
+How 
+Before pollen 
+& leaf season 
+January, 
+February, 
+October 
+It is much easier and cheaper for a guest 
+to cover their outdoor purchase than let 
+it get filthy and have to spend the time 
+and money to clean it.  They will 
+appreciate you thinking of them. 
+Email templated, post card or 
+phone.  Phone is less work and 
+you will close more sales. 
+Be sure to know the price of 
+covers the customer needs and let 
+the guest know in your 
+communication 
+Subject Line:  Leaders: Prepare for Pollen Season 
+Email Body: 
+ 
+${customer.firstName}}${customer.companyname}, 
+ 
+ 
+We hope you had a great winter season.  We wanted to remind you that pollen season is just around the corner.  
+Protect your investment with covers and save a lot of cleaning.   
+ 
+ 
+ 
+Attached is a quote for the covers that fit your items.  Let me know if I can help. 
+ 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to anyone 
+who would benefit from our service. 
+ 
+ 
+ 

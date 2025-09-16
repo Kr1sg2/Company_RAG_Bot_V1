@@ -1,0 +1,44 @@
+Page 4 of 7 
+5.10 Exchanges Returns Credits Restocking.docx 
+6/14/2024 
+5. When you scroll down, the items on the original invoice will automatically be populated in the 
+items section. Modify the items to only show what you want to accept a return on.  Click the line 
+to allow editing.  Save when complete The red wording on the top right of the Item tab will give 
+instructions on how to: 
+a. Adjust quantities 
+b. Remove a line completely 
+ 
+6. Based on your Return Type selection the following will happen automatically.   
+Return Type 
+When 
+Automation 
+Equal/Unequal 
+Exchange 
+To exchange for a 
+like item or for a 
+different item 
+On Return Authorization Save: 
+✓ Will write a new Sales Order for the exchange. 
+✓ Will associate the credit for the return once the 
+return is received with the Invoice for the 
+replacement sales order once it is fulfilled 
+✓ If the item is returning to your location you can 
+receive it by clicking 
+. 
+Store Credit 
+When returning an 
+item(s) for store 
+credit 
+On Return Authorization Save 
+✓ Will show you the return authorization.   
+✓ If the item is returning to your location you can 
+receive it by clicking 
+. 
+Refund 
+When item(s) are 
+returned for a 
+refund 
+On Return Authorization Save 
+✓ Will take you to the refund screen 
+7. Complete the steps on the forms that are automatically created for your selected resolution and 
+Save. 

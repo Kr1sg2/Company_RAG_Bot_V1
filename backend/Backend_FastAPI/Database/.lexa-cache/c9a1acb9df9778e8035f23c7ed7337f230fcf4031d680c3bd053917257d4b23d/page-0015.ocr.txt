@@ -1,0 +1,24 @@
+Page 15 of 16 
+3.19 Before the Sale Guest Relationship Management 
+10/6/2023 
+4  We can order over the phone - Done 
+ 
+Subject: Leaders:  We Can Make it Easy, Order by Phone? 
+ 
+ 
+${customer.firstname}${customer.companyname}, 
+We know life can get busy, and we want to do our best to make it easy for you.  We can take your order 
+over the phone.  Reply to this email, and I will call you or we are available to you Monday through 
+Saturday, 10 am – 7 pm, and on Sunday 10 am – 6 pm for you to call us. 
+ 
+We look forward to earning your business.   
+ 
+Leaders is Florida family-owned and operated since 1971.  We look forward to earning your business, 
+ 
+${preferences.message_signature} 
+ 
+Referrals are the ultimate compliment one can give.  We appreciate you passing along our name to 
+anyone who would benefit from our service. 
+ 
+ 
+ 

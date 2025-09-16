@@ -1,0 +1,1153 @@
+# app/retrieval.py
+import json
+"""
+Enhanced retrieval with BM25 re-ranking and answer guardrails.
+"""
+import re, os, logging, json
+from typing import List, Dict, Any, Optional, Tuple
+import chromadb
+from chromadb.config import Settings
+try:
+    from rank_bm25 import BM25Okapi
+    BM25_AVAILABLE = True
+except ImportError:
+    BM25_AVAILABLE = False
+
+# Remove global OpenAI import - will be imported lazily
+
+logger = logging.getLogger(__name__)
+
+class EnhancedRetriever:
+    def __init__(self, chroma_path: str, collection_name: str = "lexa_documents"):
+        self.chroma_path = chroma_path
+        self.collection_name = collection_name
+        self.embed_model = os.getenv("LEXA_EMBED_MODEL", "text-embedding-3-large")
+        
+        self.client = chromadb.PersistentClient(
+            path=chroma_path,
+            settings=Settings(anonymized_telemetry=False)
+        )
+        try:
+            self.collection = self.client.get_collection(collection_name)
+        except Exception:
+            logger.warning(f"Collection {collection_name} not found, creating new one")
+            self.collection = self.client.get_or_create_collection(collection_name)
+
+        # Policy preferences (configurable)
+        self.policy_keywords = ["handbook", "policy", "benefit", "hr", "procedure", "manual"]
+
+    def get_query_embedding(self, query: str) -> Optional[List[float]]:
+        """Generate embedding for search query using same model as indexer."""
+        # Lazy import so the app doesn't crash if OpenAI isn't present
+        try:
+            import openai  # type: ignore
+        except Exception:
+            logger.warning("OpenAI SDK not installed; falling back to query_texts mode")
+            return None
+            
+        try:
+            client = openai.OpenAI()
+            response = client.embeddings.create(
+                model=self.embed_model,
+                input=[query]
+            )
+            return response.data[0].embedding
+        except Exception as e:
+            logger.error(f"Failed to generate query embedding: {e}")
+            return None
+
+    def retrieve_with_rerank(self, query: str, top_k: int = 20, final_k: int = 3) -> List[Dict[str, Any]]:
+        try:
+            # Get query embedding using same model as indexer
+            query_embedding = self.get_query_embedding(query)
+            if query_embedding:
+                results = self.collection.query(
+                    query_embeddings=[query_embedding],
+                    n_results=top_k,
+                    include=['documents', 'metadatas', 'distances']
+                )
+            else:
+                results = self.collection.query(
+                    query_texts=[query],
+                    n_results=top_k,
+                    include=['documents', 'metadatas', 'distances']
+                )
+            if not results['documents'][0]:
+                logger.info("No documents found in vector search")
+                return []
+
+            candidates = []
+            documents = results['documents'][0]
+            metadatas = results['metadatas'][0]
+            distances = results['distances'][0]
+
+            for i, (doc, metadata, distance) in enumerate(zip(documents, metadatas, distances)):
+                try:
+                    sim = max(0.0, min(1.0, 1.0 - float(distance)))
+                except Exception:
+                    sim = 0.0
+                candidates.append({
+                    'text': doc,
+                    'metadata': metadata or {},
+                    'vector_score': sim,
+                    'vector_rank': i + 1
+                })
+
+            if BM25_AVAILABLE and len(candidates) > 1:
+                candidates = self._apply_bm25_rerank(query, candidates)
+            else:
+                for c in candidates:
+                    c['bm25_score'] = c['vector_score']
+                    c['combined_score'] = c['vector_score']
+
+            candidates = self._apply_policy_boost(candidates)
+            
+            # Expand with neighboring chunks for better context continuity
+            candidates = self._expand_neighbors(candidates, window=1)
+            
+            candidates.sort(key=lambda x: x['combined_score'], reverse=True)
+            return candidates[:final_k]
+
+        except Exception as e:
+            logger.error(f"Error in retrieval: {e}")
+            return []
+
+    def _apply_bm25_rerank(self, query: str, candidates: List[Dict]) -> List[Dict]:
+        try:
+            tokenized_docs = [re.findall(r'\b\w+\b', c['text'].lower()) for c in candidates]
+            if not tokenized_docs:
+                return candidates
+            bm25 = BM25Okapi(tokenized_docs)
+            query_tokens = re.findall(r'\b\w+\b', query.lower())
+            bm25_scores = bm25.get_scores(query_tokens)
+            max_bm25 = max(bm25_scores) if getattr(bm25_scores, "size", None) else 1.0
+            for i, c in enumerate(candidates):
+                c['bm25_score'] = (bm25_scores[i] / max_bm25) if max_bm25 > 0 else 0
+                c['combined_score'] = (0.6 * c['vector_score'] + 0.4 * c['bm25_score'])
+            return candidates
+        except Exception as e:
+            logger.error(f"BM25 re-ranking failed: {e}")
+            for c in candidates:
+                c['bm25_score'] = 0
+                c['combined_score'] = c['vector_score']
+            return candidates
+
+    def _apply_policy_boost(self, candidates: List[Dict]) -> List[Dict]:
+        for c in candidates:
+            file_name = c['metadata'].get('file_name', '').lower()
+            rel = c['metadata'].get('relative_path', '').lower()
+            boost = 1.0
+            for kw in self.policy_keywords:
+                if kw in file_name or kw in rel:
+                    boost = 1.2
+                    break
+            c['policy_boost'] = boost
+            c['combined_score'] *= boost
+        return candidates
+
+    def _expand_neighbors(self, candidates: List[Dict], window: int = 1) -> List[Dict]:
+        """Expand hits with neighboring chunks from the same file to maintain context continuity."""
+        try:
+            # Get unique chunk identifiers that need neighbors
+            neighbor_queries = []
+            for c in candidates[:10]:  # Only expand top candidates to avoid too many queries
+                metadata = c.get('metadata', {})
+                file_name = metadata.get('file_name')
+                chunk_index = metadata.get('chunk_index')
+                
+                if not file_name or chunk_index is None:
+                    continue
+                    
+                try:
+                    chunk_index = int(chunk_index)
+                except (ValueError, TypeError):
+                    continue
+                
+                # Add neighbor chunk indices
+                for offset in range(-window, window + 1):
+                    if offset == 0:  # Skip the original chunk
+                        continue
+                    neighbor_idx = chunk_index + offset
+                    if neighbor_idx >= 0:  # Don't go below chunk 0
+                        neighbor_queries.append((file_name, neighbor_idx))
+            
+            # Remove duplicates while preserving order
+            seen = set()
+            unique_queries = []
+            for query in neighbor_queries:
+                if query not in seen:
+                    seen.add(query)
+                    unique_queries.append(query)
+            
+            # Fetch neighbor chunks
+            neighbor_candidates = []
+            for file_name, chunk_idx in unique_queries:
+                try:
+                    neighbor_results = self.collection.query(
+                        where={"$and": [
+                            {"file_name": {"$eq": file_name}}, 
+                            {"chunk_index": {"$eq": chunk_idx}}
+                        ]},
+                        n_results=1,
+                        include=['documents', 'metadatas', 'distances']
+                    )
+                    
+                    if neighbor_results['documents'][0]:
+                        doc = neighbor_results['documents'][0][0]
+                        metadata = neighbor_results['metadatas'][0][0]
+                        distance = neighbor_results['distances'][0][0]
+                        
+                        # Add neighbor with lower score so it doesn't dominate
+                        neighbor_candidates.append({
+                            'text': doc,
+                            'metadata': metadata or {},
+                            'vector_score': max(0.0, min(1.0, 1.0 - float(distance))) * 0.8,  # Reduce score
+                            'vector_rank': 999,  # Low rank for neighbors
+                            'bm25_score': 0.0,
+                            'combined_score': max(0.0, min(1.0, 1.0 - float(distance))) * 0.8,
+                            'policy_boost': 1.0,
+                            'is_neighbor': True
+                        })
+                except Exception as e:
+                    logger.debug(f"Failed to fetch neighbor {file_name}:{chunk_idx}: {e}")
+                    continue
+            
+            # Combine original candidates with neighbors, deduplicate by (file_name, chunk_index)
+            all_candidates = []
+            seen_chunks = set()
+            
+            # Add original candidates first (higher priority)
+            for c in candidates:
+                metadata = c.get('metadata', {})
+                key = (metadata.get('file_name'), metadata.get('chunk_index'))
+                if key not in seen_chunks:
+                    seen_chunks.add(key)
+                    all_candidates.append(c)
+            
+            # Add neighbor candidates if not already present
+            for c in neighbor_candidates:
+                metadata = c.get('metadata', {})
+                key = (metadata.get('file_name'), metadata.get('chunk_index'))
+                if key not in seen_chunks:
+                    seen_chunks.add(key)
+                    all_candidates.append(c)
+            
+            return all_candidates
+            
+        except Exception as e:
+            logger.error(f"Error in neighbor expansion: {e}")
+            return candidates  # Return original candidates if expansion fails
+
+    def check_numeric_consistency(self, query: str, candidates: List[Dict]) -> Tuple[bool, Optional[str]]:
+        numeric_pattern = r'\b\d+(?:\.\d+)?\s*(?:days?|years?|months?|weeks?|hours?|%|percent|dollars?|\$)\b'
+        if not re.search(r'\d', query):
+            return True, None
+        facts = []
+        for c in candidates[:3]:
+            text = c['text'].lower()
+            numbers = re.findall(numeric_pattern, text, re.IGNORECASE | re.DOTALL)
+            if numbers:
+                facts.append({'numbers': numbers, 'file_name': c['metadata'].get('file_name', ''), 'policy_boost': c.get('policy_boost', 1.0)})
+        if len(facts) < 2:
+            return True, None
+        all_nums = [n for f in facts for n in f['numbers']]
+        if len(set(all_nums)) > 1:
+            pol = [f for f in facts if f['policy_boost'] > 1.0]
+            if pol:
+                best = max(pol, key=lambda x: x['policy_boost'])
+                return False, f"According to {best['file_name']}: {', '.join(best['numbers'])}"
+        return True, None
+
+    def format_answer_with_citations(self, query: str, candidates: List[Dict]) -> Dict[str, Any]:
+        if not candidates:
+            return {'answer': "I couldn't find relevant information in the documents.", 'sources': [], 'confidence': 0.0}
+        is_consistent, authoritative = self.check_numeric_consistency(query, candidates)
+        answer_parts, sources, seen = [], [], set()
+        for c in candidates[:3]:
+            md = c['metadata']; file_name = md.get('file_name', 'Unknown'); page = md.get('page', 1)
+            key = f"{file_name}::{page}"
+            if key in seen: continue
+            seen.add(key)
+            snippet = c['text'][:200].strip() + ("..." if len(c['text']) > 200 else "")
+            answer_parts.append(snippet)
+            sources.append({'file_name': file_name, 'page': page, 'confidence': c['combined_score']})
+        answer = authoritative if authoritative else " ".join(answer_parts)
+        labels = [f"{s['file_name']}, p. {s['page']}" if s['page'] > 1 else s['file_name'] for s in sources]
+        citation_text = f" — {'; '.join(labels)}" if sources else ""
+        return {'answer': answer + citation_text, 'sources': sources, 'confidence': candidates[0]['combined_score'], 'is_consistent': is_consistent}
+
+COMPANY_ALIASES = [
+    "leader's casual furniture","leaders casual furniture",
+    "leader's furniture","leaders furniture",
+    "leader's florida living","leaders florida living",
+    "leader's holding co","leader's holding company","leaders holding",
+    "leader's","leaders"
+]
+
+def _has_company_alias(s: str) -> bool:
+    if not s: return False
+    q = s.lower().replace("'","'")  # normalize curly apostrophe
+    return any(alias in q for alias in COMPANY_ALIASES)
+
+def _brand_expand_query(q: str) -> str:
+    # Append aliases to bias retrieval without losing original intent
+    aliases = " | ".join(sorted(set(COMPANY_ALIASES[:6])))  # keep it short
+    return f"{q} ({aliases})"
+
+def enhanced_search(query: str, chroma_path: Optional[str] = None) -> Dict[str, Any]:
+    chroma_path = chroma_path or os.getenv("LEXA_CHROMA_PATH", "chroma_db")
+    retriever = EnhancedRetriever(chroma_path)
+    # No brand alias expansion here; use the user query as-is.
+    top_k = int(os.getenv("TOP_K", "12"))
+    candidates = retriever.retrieve_with_rerank(query, top_k=top_k)
+    return _make_final_answer(retriever, query, candidates)
+# === Synthesized answer helpers (appended) ===
+def _get_default_system_prompt() -> str:
+    return (
+        "You are the company knowledge-base assistant. Provide accurate, useful answers "
+        "using ONLY the provided context. Do not include page numbers, file names, "
+        "citations, or any retrieval details in your answer. If the context is "
+        "insufficient or conflicting, say so briefly and suggest what to look for next. "
+        "Prefer short paragraphs or tight bullets. Be precise and avoid speculation. "
+        "Assume the user is asking about Leader's Casual Furniture (also known as Leader's Furniture, Leader's Florida Living, Leader's Holding Co.) unless they explicitly name a different company."
+    )
+
+def _load_system_prompt() -> str:
+    import json, logging, os
+    try:
+        with open('/etc/lexa/branding.json', 'r') as f:
+            branding = json.load(f)
+        sp = branding.get('system_prompt')
+        if sp:
+            return sp
+        logging.getLogger(__name__).warning("branding.json present but missing 'system_prompt'; using default.")
+        return _get_default_system_prompt()
+    except FileNotFoundError:
+        logging.getLogger(__name__).warning("/etc/lexa/branding.json not found; using default system prompt.")
+        return _get_default_system_prompt()
+    except Exception as e:
+        logging.getLogger(__name__).warning(f"Failed to load branding.json ({type(e).__name__}): {e}; using default.")
+        return _get_default_system_prompt()
+
+def _synthesize_answer(query: str, candidates: list) -> str:
+    # Build a clean answer from top retrieved chunks via OpenAI chat completions.
+    if not candidates:
+        return "I couldn't find relevant information in the documents to answer your question."
+    try:
+        import openai, os, logging
+        client = openai.OpenAI()
+        # use top 3 chunks; truncate to keep prompt size reasonable
+        parts = []
+        for i, c in enumerate(candidates[:3]):
+            txt = c.get("text", "") or ""
+            if len(txt) > 800:
+                txt = txt[:800] + "..."
+            parts.append(f"Context {i+1}:\n{txt}")
+        context = "\n\n".join(parts)
+
+        system_prompt = _load_system_prompt()
+        model = os.getenv("LEXA_CHAT_MODEL", "gpt-3.5-turbo")
+
+        logging.getLogger(__name__).info(f"Calling OpenAI chat completions (model={model})")
+        resp = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content":
+                    "Answer the user's question using ONLY the provided context. "
+                    "Do not include page numbers, file names, citations, or mention retrieval.\n\n"
+                    f"Query: {query}\n\n{context}"
+                },
+            ],
+            temperature=0.3,
+            max_tokens=700,
+        )
+        return (resp.choices[0].message.content or "").strip()
+    except Exception as e:
+        import logging
+        logging.getLogger(__name__).error(f"LLM synthesis failed ({type(e).__name__}): {str(e)[:200]}")
+        return "I found related documents but couldn't synthesize a reliable answer. Please retry or refine the question."
+
+def format_answer_synthesized(retriever, query: str, candidates: list) -> dict:
+    # Keep internal shape: {"answer": ..., "sources": ...}
+    if not candidates:
+        return {'answer': "I couldn't find relevant information in the documents.", 'sources': [], 'confidence': 0.0}
+    # numeric check (re-uses existing method on the retriever instance, if present)
+    try:
+        is_consistent, _ = retriever.check_numeric_consistency(query, candidates)
+    except Exception:
+        is_consistent = True
+
+    # cap & dedupe sources by (file_name, page)
+    import os
+    max_sources = int(os.getenv("MAX_SOURCES", "3"))
+    sources, seen = [], set()
+    for c in candidates:
+        md = c.get('metadata', {}) or {}
+        fn = md.get('file_name', 'Unknown')
+        page = md.get('page', 1)
+        key = f"{fn}::{page}"
+        if key in seen:
+            continue
+        seen.add(key)
+        sources.append({'file_name': fn, 'page': page, 'confidence': c.get('combined_score', 0)})
+        if len(sources) >= max_sources:
+            break
+
+    synthesized = _synthesize_answer(query, candidates)
+    return {
+        'answer': synthesized,
+        'sources': sources,
+        'confidence': candidates[0].get('combined_score', 0.0),
+        'is_consistent': is_consistent
+    }
+
+# --- refine: treat "no answer" as no sources; filter sources by score ---
+def _looks_insufficient(answer: str) -> bool:
+    s = (answer or "").lower()
+    flags = [
+        "couldn't find", "could not find",
+        "insufficient", "no relevant information",
+        "couldn’t synthesize", "couldn't synthesize",
+        "could not synthesize"
+    ]
+    return any(f in s for f in flags)
+
+def format_answer_synthesized(retriever, query: str, candidates: list) -> dict:  # override earlier definition
+    if not candidates:
+        return {
+            'answer': "I couldn't find relevant information in the documents.",
+            'sources': [],
+            'confidence': 0.0,
+            'is_consistent': True
+        }
+
+    try:
+        is_consistent, _ = retriever.check_numeric_consistency(query, candidates)
+    except Exception:
+        is_consistent = True
+
+    synthesized = _synthesize_answer(query, candidates)
+
+    # Threshold & cap for sources
+    import os
+    try:
+        min_score = float(os.getenv("MIN_SOURCE_SCORE", "0.18"))
+    except Exception:
+        min_score = 0.18
+
+    max_sources = int(os.getenv("MAX_SOURCES", "3"))
+    sources, seen = [], set()
+    for c in candidates:
+        score = c.get('combined_score', 0.0)
+        if score < min_score:
+            continue
+        md = c.get('metadata', {}) or {}
+        fn = md.get('file_name', 'Unknown')
+        page = md.get('page', 1)
+        key = f"{fn}::{page}"
+        if key in seen:
+            continue
+        seen.add(key)
+        sources.append({'file_name': fn, 'page': page, 'confidence': score})
+        if len(sources) >= max_sources:
+            break
+
+    # If the LLM says there isn't enough context, suppress sources entirely
+    if _looks_insufficient(synthesized):
+        sources = []
+
+    return {
+        'answer': synthesized,
+        'sources': sources,
+        'confidence': candidates[0].get('combined_score', 0.0),
+        'is_consistent': is_consistent
+    }
+
+# --- refine (v2): stronger 'insufficient' detection & source suppression ---
+import re as _re
+
+def _looks_insufficient(answer: str) -> bool:  # override
+    if not answer:
+        return True
+    s = _re.sub(r'\s+', ' ', answer).lower()
+    patterns = [
+        r"\binsufficient context\b",
+        r"\bno (relevant )?information\b",
+        r"\bdoes not contain (any )?(information|info)\b",
+        r"\bnot found in the (provided )?context\b",
+        r"\b(could not|couldn't|did not|didn't)\s(find|locate)\b",
+        r"\bcontext (?:provided )?(?:lacks|does not have|has no)\b",
+        r"\boutside (?:of )?scope\b",
+        r"\bnot enough (?:context|information|info)\b",
+    ]
+    return any(_re.search(p, s) for p in patterns)
+
+def format_answer_synthesized(retriever, query: str, candidates: list) -> dict:  # override
+    if not candidates:
+        return {
+            'answer': "I couldn't find relevant information in the documents.",
+            'sources': [],
+            'confidence': 0.0,
+            'is_consistent': True
+        }
+
+    try:
+        is_consistent, _ = retriever.check_numeric_consistency(query, candidates)
+    except Exception:
+        is_consistent = True
+
+    # Use the synthesizer already defined in this module
+    try:
+        synthesized = _synthesize_answer(query, candidates)
+    except NameError:
+        # If earlier helper name differs in your tree, fall back to retriever method
+        synthesized = getattr(retriever, "synthesize_answer")(query, candidates)
+
+    # Threshold & cap for sources
+    import os
+    try:
+        min_score = float(os.getenv("MIN_SOURCE_SCORE", "0.18"))
+    except Exception:
+        min_score = 0.18
+    max_sources = int(os.getenv("MAX_SOURCES", "3"))
+
+    # Build filtered, deduped sources
+    sources, seen = [], set()
+    for c in candidates:
+        score = c.get('combined_score', 0.0)
+        if score < min_score:
+            continue
+        md = c.get('metadata', {}) or {}
+        fn = md.get('file_name', 'Unknown')
+        page = md.get('page', 1)
+        key = f"{fn}::{page}"
+        if key in seen:
+            continue
+        seen.add(key)
+        sources.append({'file_name': fn, 'page': page, 'confidence': score})
+        if len(sources) >= max_sources:
+            break
+
+    # If the LLM indicates insufficient context → suppress all sources
+    if _looks_insufficient(synthesized):
+        sources = []
+
+    return {
+        'answer': synthesized,
+        'sources': sources,
+        'confidence': candidates[0].get('combined_score', 0.0),
+        'is_consistent': is_consistent
+    }
+
+# =========================
+# === Synthesized output ===
+# =========================
+
+_INSUFF_PATTERNS = [
+    r"\binsufficient context\b",
+    r"\bnot (?:provided|found) in the context\b",
+    r"\bno (?:relevant )?information\b",
+    r"\bcontext (?:does not|doesn['’]t) contain\b",
+    r"\bunavailable in the provided context\b",
+    r"\bI (?:can|could) not find\b",
+]
+
+def _looks_insufficient(text: str) -> bool:
+    if not text:
+        return True
+    tl = text.strip().lower()
+    import re
+    return any(re.search(p, tl) for p in _INSUFF_PATTERNS)
+
+def _load_system_prompt() -> str:
+    """
+    Load a system prompt from /etc/lexa/branding.json if present;
+    otherwise fall back to a safe default.
+    """
+    try:
+        with open('/etc/lexa/branding.json', 'r') as f:
+            data = json.load(f)
+            sp = data.get('system_prompt')
+            if sp:
+                return sp
+            logging.getLogger(__name__).warning(
+                "branding.json present but missing 'system_prompt'; using default")
+    except FileNotFoundError:
+        logging.getLogger(__name__).warning(
+            "/etc/lexa/branding.json not found; using default system prompt")
+    except Exception as e:
+        logging.getLogger(__name__).warning(
+            f"Failed to load /etc/lexa/branding.json ({type(e).__name__}): {e}; using default")
+
+    return (
+        "You are the company knowledge-base assistant. Provide accurate, useful "
+        "answers using ONLY the provided context. Do not include page numbers, "
+        "file names, citations, or any retrieval details in your answer. If the "
+        "context is insufficient or conflicting, say so briefly and suggest what "
+        "to look for next. Prefer short paragraphs or tight bullets. Be precise "
+        "and avoid speculation."
+    )
+
+def _build_context(candidates, max_docs: int = 3, per_chunk_limit: int = 900) -> str:
+    parts = []
+    for i, c in enumerate(candidates[:max_docs]):
+        t = (c.get('text') or '').strip()
+        if not t:
+            continue
+        if len(t) > per_chunk_limit:
+            t = t[:per_chunk_limit] + "..."
+        parts.append(f"Context {i+1}:\n{t}")
+    return "\n\n".join(parts) if parts else ""
+
+def _dedupe_and_filter_sources(candidates, max_sources: int, min_score: float):
+    seen = set()
+    out = []
+    for c in candidates:
+        md = c.get('metadata') or {}
+        fn = md.get('file_name') or "Unknown"
+        pg = md.get('page') or 1
+        score = float(c.get('combined_score') or 0.0)
+        key = (fn, pg)
+        if key in seen:
+            continue
+        if score < min_score:
+            continue
+        seen.add(key)
+        out.append({'file_name': fn, 'page': pg, 'confidence': score})
+        if len(out) >= max_sources:
+            break
+    return out
+
+def make_final_answer(retriever, query: str, candidates):
+    """
+    Single authoritative path:
+    - Synthesize answer via OpenAI chat completion using top context.
+    - If answer looks insufficient -> return sources: []
+    - Else -> return deduped, gated, capped sources.
+    """
+    logger = logging.getLogger(__name__)
+    if not candidates:
+        return {'answer': "I couldn't find relevant information in the documents.",
+                'sources': [], 'confidence': 0.0}
+
+    # Build LLM inputs
+    system_prompt = _load_system_prompt()
+    model = os.getenv("LEXA_CHAT_MODEL", "gpt-3.5-turbo")
+    context = _build_context(candidates, max_docs=3, per_chunk_limit=900)
+    user_msg = f"Query: {query}\n\nContext:\n{context}\n\n" \
+               "Instructions:\n" \
+               "- Answer ONLY from the context.\n" \
+               "- Do NOT mention files, page numbers, or retrieval.\n" \
+               "- If context is insufficient, say so briefly.\n"
+
+    # Call OpenAI
+    try:
+        import openai
+        client = openai.OpenAI()
+        logger.info(f"Calling OpenAI chat completion (model={model})")
+        resp = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_msg},
+            ],
+            temperature=0.3,
+            max_tokens=700,
+        )
+        answer = (resp.choices[0].message.content or "").strip()
+    except Exception as e:
+        logger.error(f"LLM synthesis failed ({type(e).__name__}): {e}")
+        return {
+            'answer': ("I found related documents but couldn’t synthesize a reliable answer. "
+                       "Please retry or refine the question."),
+            'sources': [],
+            'confidence': float(candidates[0].get('combined_score') or 0.0)
+        }
+
+    # If answer is basically “no info”, suppress sources entirely
+    if _looks_insufficient(answer):
+        return {
+            'answer': answer,
+            'sources': [],
+            'confidence': float(candidates[0].get('combined_score') or 0.0)
+        }
+
+    # Otherwise, keep only good, unique, top sources
+    max_sources = int(os.getenv("MAX_SOURCES", "3"))
+    min_score = float(os.getenv("MIN_SOURCE_SCORE", "0.18"))
+    sources = _dedupe_and_filter_sources(candidates, max_sources=max_sources, min_score=min_score)
+
+    return {'answer': answer, 'sources': sources,
+            'confidence': float(candidates[0].get('combined_score') or 0.0)}
+
+# =========================
+# === Single Authoritative Answer Path ===
+# =========================
+
+# NOTE: This block intentionally uses only modules already imported at top (re, json, logging, os).
+
+_INSUFF_PATTERNS = [
+    r"\binsufficient context\b",
+    r"\bnot (?:provided|found) in the (?:given|provided) context\b",
+    r"\bno (?:relevant )?information\b",
+    r"\bcontext (?:does not|doesn['']t) contain\b",
+    r"\bunavailable in the (?:given|provided) context\b",
+    r"\bI (?:can|could) not find\b",
+    r"\bcontext is insufficient\b",
+    r"\binformation (?:is )?not available\b",
+    r"\bcannot determine\b",
+    r"\binsufficient or conflicting\b",
+]
+
+def _looks_insufficient(text: str) -> bool:
+    if not text:
+        return True
+    s = re.sub(r"\s+", " ", str(text).strip().lower())
+    return any(re.search(p, s) for p in _INSUFF_PATTERNS)
+
+def _normalize_token(tok: str) -> str:
+    # Minimal plural robustness; conservative to avoid false matches
+    if len(tok) > 4 and tok.endswith("es") and not tok.endswith("ss"):
+        return tok[:-2]
+    if len(tok) > 3 and tok.endswith("s") and not tok.endswith("ss"):
+        return tok[:-1]
+    return tok
+
+STOPWORDS = {"the","a","an","is","are","to","of","for","on","in","at","by","and","or","with","our","your","do","does","what","time","times","when","how","many","which"}
+DOMAIN_KEYWORDS = {"netsuite","pto","dress","policy","store","stores","retail","hour","hours","open","close","closing","sales","order","quote"}
+
+def _tokenize_lower(s: str):
+    return re.findall(r"[a-zA-Z0-9]+", (s or "").lower())
+
+def _content_tokens(tokens):
+    return [t for t in tokens if t not in STOPWORDS and len(t) > 2]
+
+def _has_lexical_overlap(query: str, cand: dict) -> bool:
+    if not isinstance(cand, dict):
+        return False
+    q_raw = _tokenize_lower(query)
+    q = set(_content_tokens(q_raw))
+    if not q:
+        return False
+    t = set(_content_tokens(_tokenize_lower((cand.get("text") or ""))))
+    md = cand.get("metadata") or {}
+    fn = set(_content_tokens(_tokenize_lower((md.get("file_name") or ""))))
+    overlap = len((q & t) | (q & fn))
+    # Allow a single overlap if it's a domain keyword (store, hours, close, etc.)
+    if overlap >= 2:
+        return True
+    if any(k in q for k in DOMAIN_KEYWORDS) and overlap >= 1:
+        return True
+    return False
+
+def _filter_eligible_sources(query: str, candidates, min_score: float) -> list:
+    out = []
+    for c in candidates or []:
+        if not isinstance(c, dict):
+            continue
+        try:
+            score = float(c.get("combined_score", 0.0))
+        except (TypeError, ValueError):
+            score = 0.0
+        if score >= min_score and _has_lexical_overlap(query, c):
+            out.append(c)
+    return out
+
+def _dedupe_and_cap(candidates: list, max_sources: int) -> list:
+    seen = set()
+    out = []
+    for c in candidates or []:
+        if not isinstance(c, dict):
+            continue
+        md = c.get("metadata") or {}
+        fn = md.get("file_name") or "Unknown"
+        try:
+            pg = int(md.get("page", 1))
+        except (TypeError, ValueError):
+            pg = 1
+        try:
+            score = float(c.get("combined_score", 0.0))
+        except (TypeError, ValueError):
+            score = 0.0
+        key = (fn, pg)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append({"file_name": fn, "page": pg, "confidence": score})
+        if len(out) >= max_sources:
+            break
+    return out
+
+def _load_system_prompt() -> str:
+    # Try branding override; fall back to default prompt.
+    try:
+        with open("/etc/lexa/branding.json", "r") as f:
+            data = json.load(f)
+            sp = data.get("system_prompt")
+            if sp:
+                return sp
+            logging.getLogger(__name__).warning("branding.json present but missing 'system_prompt'; using fallback")
+    except FileNotFoundError:
+        logging.getLogger(__name__).warning("/etc/lexa/branding.json not found; using default system prompt")
+    except Exception as e:
+        logging.getLogger(__name__).warning(f"Failed to load branding.json ({type(e).__name__}): {str(e)[:150]}; using fallback")
+    return (
+        "You are the company knowledge-base assistant. Provide accurate, useful answers using only the provided context. "
+        "Do not include page numbers, file names, citations, or any retrieval details in your answer. "
+        "If the context is insufficient or conflicting, say so briefly and suggest what to check next. Prefer short paragraphs. "
+        "When answering how-to questions, format steps as a concise numbered list. "
+        "Vary your phrasing when information is unavailable; avoid repetitive templates."
+    )
+
+def _build_context(candidates: list, max_docs: int = 3, per_chunk_limit: int = 850) -> str:
+    parts = []
+    for i, c in enumerate((candidates or [])[:max_docs]):
+        if not isinstance(c, dict):
+            continue
+        t = (c.get("text") or "").strip()
+        if not t:
+            continue
+        if len(t) > per_chunk_limit:
+            t = t[:per_chunk_limit] + "..."
+        parts.append(f"Context {i+1}:\n{t}")
+    return "\n\n".join(parts) if parts else ""
+
+HOURS_HINT = ("When the question asks about store hours or closing times, extract opening and closing times by day that are explicitly in the context and present them as bullets like \"Sun: 10am–6pm\". If multiple sources conflict, say so briefly without guessing.")
+
+def _contains_time_range(txt:str)->bool:
+    return bool(re.search(r"\b(1?\d)(?::\d{2})?\s*(am|pm)\s*[-–]\s*(1?\d)(?::\d{2})?\s*(am|pm)\b", (txt or "").lower()))
+
+
+DAY_ORDER = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+DAY_ALIAS = {
+    "sun":"Sunday","sunday":"Sunday",
+    "mon":"Monday","monday":"Monday",
+    "tue":"Tuesday","tues":"Tuesday","tuesday":"Tuesday",
+    "wed":"Wednesday","weds":"Wednesday","wednesday":"Wednesday",
+    "thu":"Thursday","thur":"Thursday","thurs":"Thursday","thursday":"Thursday",
+    "fri":"Friday","friday":"Friday",
+    "sat":"Saturday","saturday":"Saturday",
+}
+# e.g., "Monday 10am – 7pm" (handles -, –, — and optional minutes)
+_HR = re.compile(
+    r'\b(sun(?:day)?|mon(?:day)?|tue(?:s|sday)?|wed(?:nesday)?|thu(?:rs|rsday)?|fri(?:day)?|sat(?:urday)?)\b'
+    r'.{0,80}?'
+    r'(\b(?:1?\d)(?::\d{2})?\s*(?:am|pm)\b)\s*[-–—]\s*(\b(?:1?\d)(?::\d{2})?\s*(?:am|pm)\b)',
+    re.IGNORECASE | re.DOTALL
+)
+
+# Light holiday/one-off detection (extraction-time only)
+HOLIDAY_SKIP_PAT = re.compile(
+    r"\b(holiday|holidays|thanksgiving|christmas|xmas|new\s*year|nye|black\s*friday|easter|memorial|labor|independence|mlk|veterans|presidents)\b",
+    re.IGNORECASE,
+)
+def _skip_for_hours_extraction(meta: dict, text: str) -> bool:
+    name = ((meta or {}).get('file_name') or '') + ' ' + ((meta or {}).get('title') or '')
+    blob = (name + ' ' + (text or '')).lower()
+    return bool(HOLIDAY_SKIP_PAT.search(blob))
+
+
+
+def _canon_day(d:str)->str:
+    return DAY_ALIAS.get(d.lower(), d)
+
+def _extract_store_hours_from_text(text:str)->dict:
+    hours = {}
+    for m in _HR.finditer(text or ""):
+        day = _canon_day(m.group(1))
+        open_t, close_t = m.group(2), m.group(3)
+        if day in DAY_ORDER and day not in hours:
+            hours[day] = f"{open_t}–{close_t}"
+    return hours
+
+def _extract_store_hours_from_candidates(candidates, max_docs:int=20):
+    combined = {}
+    for c in (candidates or [])[:max_docs]:
+        if not isinstance(c, dict):
+            continue
+        t = (c.get("text") or "")
+        for k,v in _extract_store_hours_from_text(t).items():
+            if k not in combined:
+                combined[k] = v
+    # return ordered list (tuples) so caller can format bullets
+    return [(d, combined[d]) for d in DAY_ORDER if d in combined]
+
+
+
+DAY_ORDER = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+DAY_ALIAS = {
+    "sun":"Sunday","sunday":"Sunday",
+    "mon":"Monday","monday":"Monday",
+    "tue":"Tuesday","tues":"Tuesday","tuesday":"Tuesday",
+    "wed":"Wednesday","weds":"Wednesday","wednesday":"Wednesday",
+    "thu":"Thursday","thur":"Thursday","thurs":"Thursday","thursday":"Thursday",
+    "fri":"Friday","friday":"Friday",
+    "sat":"Saturday","saturday":"Saturday",
+}
+
+# Normalize whitespace/dashes from PDFs and make matching robust
+def _normalize_hours_text(txt: str) -> str:
+    if not txt: return ""
+    # unify various unicode spaces to normal space
+    txt = txt.replace("\u00A0", " ").replace("\u2007", " ").replace("\u202F", " ")
+    # collapse other thin/zero-width spaces
+    txt = re.sub(r"[\u2000-\u200B]", " ", txt)
+    # unify dashes/minus
+    txt = txt.replace("–","-").replace("—","-").replace("−","-")
+    # common 'to' words between times -> dash
+    txt = re.sub(r"\bto\b|\bthrough\b|\bthru\b", "-", txt, flags=re.IGNORECASE)
+    # collapse whitespace
+    txt = re.sub(r"[ \t]+", " ", txt)
+    return txt
+
+# time token: allows "10am", "10 am", "10:00am", "10:00 am", "a.m."/"p.m."
+_TIME = r"(?:1?\d)(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?)"
+# day token
+_DAY = r"(?:sun(?:day)?|mon(?:day)?|tue(?:s|sday)?|wed(?:nesday)?|thu(?:rs|rsday)?|fri(?:day)?|sat(?:urday)?)"
+
+# Pattern 1: Day ... 10am - 7pm (dash-like separator)
+_HR_DASH = re.compile(
+    rf"\b({_DAY})\b.{{0,120}}?\b({_TIME})\b\s*[-~–——]\s*\b({_TIME})\b",
+    re.IGNORECASE | re.DOTALL
+)
+
+# Light holiday/one-off detection (extraction-time only)
+HOLIDAY_SKIP_PAT = re.compile(
+    r"\b(holiday|holidays|thanksgiving|christmas|xmas|new\s*year|nye|black\s*friday|easter|memorial|labor|independence|mlk|veterans|presidents)\b",
+    re.IGNORECASE,
+)
+def _skip_for_hours_extraction(meta: dict, text: str) -> bool:
+    name = ((meta or {}).get('file_name') or '') + ' ' + ((meta or {}).get('title') or '')
+    blob = (name + ' ' + (text or '')).lower()
+    return bool(HOLIDAY_SKIP_PAT.search(blob))
+
+
+# Pattern 2 (fallback): Day ... 10am 7pm (no explicit dash, just spacing)
+_HR_SPACE = re.compile(
+    rf"\b({_DAY})\b.{{0,120}}?\b({_TIME})\b\s{{1,10}}\b({_TIME})\b",
+    re.IGNORECASE | re.DOTALL
+)
+
+# Day-range like Mon–Fri 10am–7pm, Sat–Sun 10am–6pm
+_HR_RANGE = re.compile(
+    rf"\b({_DAY})\b\s*(?:-|–|—|to)\s*\b({_DAY})\b.{{0,120}}?\b({_TIME})\b\s*[-~–—]\s*\b({_TIME})\b",
+    re.IGNORECASE | re.DOTALL,
+)
+# Also allow no explicit dash between times
+_HR_RANGE_SPACE = re.compile(
+    rf"\b({_DAY})\b\s*(?:-|–|—|to)\s*\b({_DAY})\b.{{0,120}}?\b({_TIME})\b\s{{1,10}}\b({_TIME})\b",
+    re.IGNORECASE | re.DOTALL,
+)
+
+def _expand_day_range(start: str, end: str):
+    sidx = DAY_ORDER.index(DAY_ALIAS.get(start.lower(), start.capitalize()))
+    eidx = DAY_ORDER.index(DAY_ALIAS.get(end.lower(), end.capitalize()))
+    out = []
+    i = sidx
+    while True:
+        out.append(DAY_ORDER[i])
+        if i == eidx: break
+        i = (i + 1) % 7
+    return out
+
+# Light holiday/one-off detection (extraction-time only)
+HOLIDAY_SKIP_PAT = re.compile(
+    r"\b(holiday|holidays|thanksgiving|christmas|xmas|new\s*year|nye|black\s*friday|easter|memorial|labor|independence|mlk|veterans|presidents)\b",
+    re.IGNORECASE,
+)
+def _skip_for_hours_extraction(meta: dict, text: str) -> bool:
+    name = ((meta or {}).get('file_name') or '') + ' ' + ((meta or {}).get('title') or '')
+    blob = (name + ' ' + (text or '')).lower()
+    return bool(HOLIDAY_SKIP_PAT.search(blob))
+
+
+# --- Holiday/one-off doc detection ---
+HOLIDAY_PAT = re.compile(
+    r"\b("
+    r"holiday|holidays|thanksgiving|christmas|xmas|new\s*year|nye|black\s*friday|"
+    r"easter|memorial|labor|independence|mlk|veterans|presidents|jul\s*4|july\s*4"
+    r")\b",
+    re.IGNORECASE,
+)
+
+def _is_holiday_doc(meta: dict, text: str) -> bool:
+    name = ((meta or {}).get("file_name") or "") + " " + ((meta or {}).get("title") or "")
+    blob = (name + " " + (text or "")).lower()
+    return bool(HOLIDAY_PAT.search(blob))
+
+# Pick ONE best document that looks like the canonical policy (≥6 days),
+# avoiding holiday flyers. Prefer filenames that look like the policy.
+def _extract_hours_best_doc(candidates, max_docs: int = 60):
+    best = None
+    for c in (candidates or [])[:max_docs]:
+        if not isinstance(c, dict): 
+            continue
+        meta = c.get("metadata") or {}
+        text = c.get("text") or ""
+        if _is_holiday_doc(meta, text):
+            continue
+        h = _extract_store_hours_from_text(text)
+        days = len(h)
+        if days < 5:
+            continue
+
+        # score: more days is better; boost "policy/procedure" naming and "open for the public" section
+        score = days
+        fname = (meta.get("file_name") or "").lower()
+        if "team-hours" in fname or "policy" in fname or "procedure" in fname:
+            score += 2
+        if "open for the public" in (text.lower()):
+            score += 1
+
+        if not best or score > best[0]:
+            best = (score, meta, h)
+
+    return best  # (score, meta, hours_dict) or None
+
+# Filenames that look like the canonical policy
+_POLICY_HINTS = ["store-team-hours", "team-hours-policy", "1-55-store-team-hours-policy-procedure"]
+
+def _is_policy_like(fname: str) -> bool:
+    f = (fname or "").lower()
+    return any(h in f for h in _POLICY_HINTS)
+
+def _gather_same_file(candidates, fname: str, window: int = 3):
+    # Return candidates from the same file, prioritizing pages near the first hit
+    same = [c for c in (candidates or []) if isinstance(c, dict)
+            and ((c.get("metadata") or {}).get("file_name") or "").lower() == fname.lower()]
+    try:
+        p0 = int((same[0].get("metadata") or {}).get("page"))
+    except Exception:
+        return same
+    def _w(c):
+        try:
+            p = int((c.get("metadata") or {}).get("page"))
+            return 10 - min(abs(p - p0), 9)  # closer pages rank higher
+        except Exception:
+            return 0
+    return sorted(same, key=_w, reverse=True)
+
+def _canon_day(d:str)->str:
+    return DAY_ALIAS.get(d.lower(), d)
+
+def _extract_store_hours_from_text(text:str)->dict:
+    text = _normalize_hours_text(text)
+    hours = {}
+
+    # 1) Single-day patterns
+    for pat in (_HR_DASH, _HR_SPACE):
+        for m in pat.finditer(text or ""):
+            day = _canon_day(m.group(1))
+            open_t = re.sub(r"\s+", "", m.group(2)).replace("a.m.","am").replace("p.m.","pm")
+            close_t = re.sub(r"\s+", "", m.group(3)).replace("a.m.","am").replace("p.m.","pm")
+            if day in DAY_ORDER and day not in hours:
+                hours[day] = f"{open_t}–{close_t}"
+
+    # 2) Day-range patterns (expand Mon–Fri etc.)
+    for pat in (_HR_RANGE, _HR_RANGE_SPACE):
+        for m in pat.finditer(text or ""):
+            d1 = _canon_day(m.group(1))
+            d2 = _canon_day(m.group(2))
+            open_t = re.sub(r"\s+", "", m.group(3)).replace("a.m.","am").replace("p.m.","pm")
+            close_t = re.sub(r"\s+", "", m.group(4)).replace("a.m.","am").replace("p.m.","pm")
+            for d in _expand_day_range(d1, d2):
+                if d in DAY_ORDER and d not in hours:
+                    hours[d] = f"{open_t}–{close_t}"
+
+    return hours
+
+def _extract_store_hours_from_candidates(candidates, max_docs:int=60):
+    combined = {}
+    for c in (candidates or [])[:max_docs]:
+        if not isinstance(c, dict):
+            continue
+        meta = c.get("metadata") or {}
+        t = c.get("text") or ""
+        if _skip_for_hours_extraction(meta, t):
+            continue
+        for k,v in _extract_store_hours_from_text(t).items():
+            if k not in combined:
+                combined[k] = v
+    return [(d, combined[d]) for d in DAY_ORDER if d in combined]
+
+
+def _make_final_answer(retriever, query: str, candidates: list) -> Dict[str, Any]:
+    """
+    Authoritative finalizer:
+    - Synthesize with OpenAI chat completions (temp=0.35, max_tokens=900).
+    - If answer looks insufficient:
+        * If no eligible candidates (score+overlap): return no sources.
+        * Else: include eligible sources (deduped/capped).
+    - Else: include eligible sources; fallback to top candidates if none eligible.
+    """
+    logger = logging.getLogger(__name__)
+    if not candidates:
+        return {"answer": "I couldn't find relevant information in the documents.", "sources": [], "confidence": 0.0}
+
+    system_prompt = _load_system_prompt()
+    model = os.getenv("LEXA_CHAT_MODEL", "gpt-3.5-turbo")
+    min_score = float(os.getenv("MIN_SOURCE_SCORE", "0.22"))
+    max_sources = int(os.getenv("MAX_SOURCES", "3"))
+    hours_q = bool(re.search(r"\b(hours?|open|opening|close|closing|when do (you|we) (open|close)|hours of operation|business hours)\b", (query or "").lower()))
+
+
+    context = _build_context(candidates, max_docs=3, per_chunk_limit=(1100 if hours_q else 850))
+    # EARLY_HOURS_EXTRACTION_START
+    if hours_q:
+        hours_list = _extract_store_hours_from_candidates(candidates, max_docs=60)
+        if hours_list:
+            bullets = "\n".join([f"- {d}: {t}" for d, t in hours_list])
+            answer = "Store hours:\n" + bullets
+            elig = _filter_eligible_sources(query, candidates, min_score)
+            pool = elig if elig else candidates[:max_sources]
+            return {
+                "answer": answer,
+                "sources": _dedupe_and_cap(pool, max_sources),
+                "confidence": float(candidates[0].get("combined_score", 0.0)) if candidates else 0.0
+            }
+    # EARLY_HOURS_EXTRACTION_END
+    user_msg = (
+        f"Query: {query}\n\n"
+        f"Context:\n{context}\n\n"
+        "Instructions:\n" + (HOURS_HINT + "\n" if hours_q else "") +
+        "- Answer ONLY from the context.\n"
+        "- Do NOT include file names, page numbers, or mention retrieval.\n"
+        "- If context is insufficient, say so briefly and suggest what to check next.\n"
+        "- When the question asks 'how to' or implies steps, present a concise numbered list.\n"
+    )
+
+    try:
+        import openai
+        client = openai.OpenAI()
+        logger.info(f"Calling OpenAI chat completions with model: {model} (temp=0.35, max_tokens=900)")
+        resp = client.chat.completions.create(
+            model=model,
+            messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": user_msg}],
+            temperature=0.2 if hours_q else 0.35,
+            max_tokens=900,
+        )
+        answer = (resp.choices[0].message.content or "").strip()
+    except Exception as e:
+        logger.error(f"LLM synthesis failed ({type(e).__name__}): {str(e)[:150]}")
+        return {
+            "answer": "I found related documents but couldn't synthesize a reliable answer. Please retry or refine the question.",
+            "sources": [],
+            "confidence": float(candidates[0].get("combined_score", 0.0)) if candidates else 0.0,
+        }
+
+    if not _contains_time_range(answer) and _looks_insufficient(answer):
+        elig = _filter_eligible_sources(query, candidates, min_score)
+        if not elig:
+            return {"answer": answer, "sources": [], "confidence": float(candidates[0].get("combined_score", 0.0))}
+        return {"answer": answer, "sources": _dedupe_and_cap(elig, max_sources), "confidence": float(candidates[0].get("combined_score", 0.0))}
+
+    elig = _filter_eligible_sources(query, candidates, min_score)
+    pool = elig if elig else candidates[:max_sources]
+    return {"answer": answer, "sources": _dedupe_and_cap(pool, max_sources), "confidence": float(candidates[0].get("combined_score", 0.0))}
+
+def _looks_insufficient(text: str) -> bool:
+    if not text:
+        return True
+    s = re.sub(r"\s+", " ", str(text).strip().lower())
+    return any(re.search(p, s) for p in _INSUFF_PATTERNS)

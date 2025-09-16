@@ -1,0 +1,99 @@
+Information
+resource
+Wells Fargo Retail Services 
+Internet Process System (IPS)
+Learn how to train your office staff on submitting applications, creating authorizations and processing transactions  
+using IPS. Use the following test information to practice filling out applications and processing transactions on the  
+Online Resource Center at wellsfargo.com/retailservices.
+How to submit an application
+Step 1:
+• Go to Submit an Application under 
+the Internet Processing System tab
+• Application code: Enter the current 
+4 digit code from the Wells Fargo 
+credit application.
+• Application type: Individual or Joint
+•	 Purchase price: Enter whole 
+number(no decimal or cents)
+• Sales person: Enter sales person 
+name or ID 
+Step 2:
+• Name: Joe A. Smith
+• Date of birth (DOB): 01/01/1980
+• Social Security number:  
+999-99-9990
+• Housing status: Own or Rent
+• Physical street address:  
+123 Main St.
+• City: Beverly Hills
+• State: CA
+• ZIP: 90210
+• Email address: Enter email address if provided by customer
+•	 Phone number: 555-555-5555
+• Employer: ABC Construction
+• Work phone number: 555-555-5555
+• Net annual income: 80000
+Step 3:
+• 
+Select Continue
+• 
+Review the application information 
+for accuracy and select Submit.
+•	
+A credit decision will then display 
+with full customer account number 
+and credit limit, if approved.
+How to create an authorization
+• Go to Process a Transaction 
+under the Internet Processing 
+System tab.
+• Search for the cardholder by 
+entering their full credit card 
+account number or search by 
+exactly 3 of the 7 cardholder 
+criteria. Enter test account 
+number 9999999999999999 
+and select Submit.
+•	 Select Authorize for Future Delivery  
+on the left navigation.
+roman one 	
+Amount: 1200.00
+roman two 
+Plan: 1015
+roman three Ticket number: 1111
+roman four Sales person ID:  
+Enter sales person’s name or ID
+roman five 	
+Choose to include Name on receipt
+• Select Submit to obtain  
+an Authorization.
+•	 Once account is authorized, print 
+two copies of the receipt. Have the 
+customer sign one copy for the business 
+and the customer keeps  
+the second copy.
+Process a transaction
+• Search for the cardholder by 
+entering their full credit card 
+account number or search by 
+exactly 3 of the 7 cardholder 
+criteria. Enter test account 
+number 9999999999999999 
+and select Submit.
+• Select Authorize for Future Delivery  
+on the left navigation.
+roman one 
+Amount: 1200.00
+roman two 
+Plan: 1015
+roman three Ticket number: 1111
+roman four Sales person ID:  
+Enter sales person’s name or ID
+roman five 
+Choose to include Name on receipt
+• Select Submit to obtain a final receipt.
+• Once charge is submitted, print two 
+copies of the receipt. Provide one copy 
+to the customer and keep one copy for 
+the business.
+© 2019 Wells Fargo Bank, N.A. All rights reserved. For merchant use only.

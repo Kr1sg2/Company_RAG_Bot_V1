@@ -1,0 +1,81 @@
+Page 5 of 6 
+0.13 Stages of a Customer, CRM Pipeline 
+8/17/2021 
+Summary 
+ 
+What? 
+Required 
+Why? 
+Guest A guest is someone who has visited your showroom.  
+They are not ready to buy but you started to build a 
+relationship with them.  You know their name and 
+their general interests.  You may use the $100 give a 
+way to earn more specifics to add to their record. 
+Customer Type 
+Name 
+Communication Preference 
+Basic record that requires minimal 
+information that you can follow up 
+on at a later date. 
+Opportunity  An opportunity is a guest who is getting serious 
+about buying.  You have worked with them on 
+products, have an idea of the size of the space 
+available to furnish, you have an idea of what the 
+project will cost, you know when the customer 
+would like it by, and why they didn’t buy today.   You 
+may not know all the products they want so you did 
+not put it into a quote.  You can enter products on 
+an opportunity. 
+Guest or Customer Record  
+One step above a Guest record.  
+Require minimal information but 
+you can add more specifics to the 
+record. 
+ 
+An opportunity can be converted 
+to a sales order. 
+Quote A quote is just like a sales order where you put 
+specific items on a sales order but a quote does not 
+reserve the items or bill the customer.  When a 
+quote is emailed or printed it will not have brand or 
+product specific information on it but it will have the 
+items, a brief description and the costs associated 
+with them.  Quotes do not reserve merchandise 
+Guest or Customer Record 
+Specific products a guest or 
+customer would like to order that 
+can be easily converted into a 
+sales order. 
+Sales Order / 
+Customer 
+Sales Orders turn opportunities and quotes from 
+conversations to hard sales that reserve 
+merchandise and create action.   Sales Orders can be 
+edited.  A customer is just that, a person that has a 
+full customer record in the system and has bought 
+from us in the past.  To save a customer record the 
+required fields must be complete. 
+Customer Type 
+Name 
+Email 
+Phone Number 
+Preferred communication 
+method 
+How did they hear about us 
+A record of people who have 
+bought from Leader’s 
+Invoice An Invoice is a record that solidifies what part of a 
+Sales Order has been fulfilled.  It defines the value of 
+products delivered and the payments put toward 
+those products.  If a sales order is paid in full before 
+it is fulfilled the amount owed should be zero.   
+ 
+ 
+Invoicing must happen to take 
+deposits associated with an order 
+and apply them to it.  Invoicing is 
+the record that tracks the value of 
+payments vs the value of product 
+fulfilled in a transaction. 
+ 
+ 

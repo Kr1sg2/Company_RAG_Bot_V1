@@ -1,0 +1,37 @@
+ 
+Page 1 of 1 
+9.5 Phone Trouble Shooting 
+10/24/2017 
+ 
+ 
+Phone Trouble Shooting 
+The phone systems are internet based and each store has the main Cisco phone at their desk and a set of cordless 
+phones to be used around the showroom.  It is important to understand is your concern is with the Cisco desk phone or 
+with the cordless system.  If your store experiences phone concerns follow these steps. 
+Poor Call Quality 
+Cordless Phones 
+ Make sure the phones are charged 
+ Make sure the cords are plugged in tight and not loose 
+ Change the location of the base system.  Make sure it is away from your Wi-Fi antennas. 
+Dropped calls/No Dial Tone 
+ Make sure your cordless phones are being charged overnight 
+o Gather all of your cordless phones and place them on the charger 
+ Check to make sure your internet is working by opening the www.leadersfurniture.com  website and navigating 
+through a few pages. 
+ If calls drop while you are on your cordless phone please reset your phone system following the steps below. 
+Resetting Your Phone System 
+1. Identify the black box your phones are plugged into.  This is called ATA (Analog Telephone Adaptor).   
+2. Make sure all of the connections are tight and pushed in snug.   
+3. Unplug the round power cord from the back of the adapter for one full minute  
+4. After a full minute plug the power cable back in 
+5. Wait 4 minutes for the system to reboot (line 1 should have a green light) 
+6. Try your phone system again 
+7. If this did not solve the concern or you continue to have intermittent trouble please email 
+leaders@allpointpos.com , or you may call the All Point IT help line Monday – Friday 
+8:30am – 6:00pm.  For help all other times please dial (727) 254-5550 
+ 
+ 
+ATA 
+(Analog Telephone Adaptor) 
+ 
+ 

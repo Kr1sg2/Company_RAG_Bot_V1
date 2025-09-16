@@ -1,0 +1,31 @@
+ 
+Page 2 of 4 
+0.9 SKU Tags 
+8/19/2021 
+ 
+Serialized SKU Tag 
+Old SKU Tag:  2000 to 2019 
+ 
+New SKU Tag:  2019 to Current 
+ 
+1. Description: A brief description of the item (Note: “Fr Only”, this item is frame only.  Cushions 
+are not included in this serial number therefore the cost of cushions is not included in the price  
+of this item.) 
+2. SKU#: A unique combination of letters and numbers made up of up to 4 descriptors to identify 
+a product. All SKU numbers will be in the following format. Vendor-Frame#, Frame Color, Fabric 
+Color.  All vendors will be 4 letter abbreviations. 
+• 
+For a detailed break out of the item number format see Leader’s Holding Item 
+Numbers later in this section 
+3. PO#:  Purchase order number 
+4. Serial Number: A unique number that is only used once to identify a piece of merchandise. (Fact: 
+Serial number 1500000 was received to the warehouse 500,000 pieces before serial number 
+2000000.) 
+5. Barcode: A unique combination of lines that is original to each serial number which can be 
+electronically read. 
+6. Receiving Location   The location where the item was received 
+7. Purchase Order#: A purchase order number will be in this area if the item was special ordered 
+for a customer. The invoice number will reflect the invoice it was special ordered for. 
+8. Date Received:   Date received to the warehouse written backwards (September 2012) 
+9. Item # of #: Indicates how many same SKU’s items were in the shipment and which number this 
+individual serial number is 

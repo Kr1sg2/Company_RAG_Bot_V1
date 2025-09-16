@@ -1,0 +1,20 @@
+Page 3 of 5 
+5.0 Take a Payment 
+4/9/2021 
+3. In View of the Guest Record scroll down to the “Sales” tab and expand the “Transactions” 
+subtab by clicking on it 
+ 
+4. Locate the Sales Order you would like to take a payment on.  Open it in view mode by clicking 
+the Sales Order Date or the Sales Order Number.  
+ 
+5. Once the transaction is open in View mode select 
+ from the options at the top or 
+bottom of the screen. 
+a. If you do not see the 
+ button the Sales Order is most likely already 
+Billed.  After a Sales Order is Billed you must go to the Invoice to apply a payment.  
+Follow the instruction below. 
+6. Complete the steps in the Take Payment screen and press 
+. 
+ 
+ 

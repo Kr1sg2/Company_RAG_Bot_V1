@@ -1,0 +1,25 @@
+ 
+Page 2 of 7 
+1.5 Employee Center 
+2/27/2023 
+Logging In 
+If you have a role assigned to your user, then you will only be able to access the Employee Center from a Leaders 
+computer. 
+1. Open a web browser and navigate to https://system.netsuite.com/pages/customerlogin.jsp 
+a. Sales Team Member  
+User Name:  first.last@lcf.com 
+Password:  Leaders123 
+b. DC Team Member 
+User name: your email address 
+Password:  Leaders123 
+ 
+2. You will be prompted to change your password and complete your security questions.  Do not bypass this step 
+as you will not be able to reset your password in the future. 
+ 
+3. Select the Employee Center Role 
+Users with more than one role assigned to them will have to select the employee center role.  Users with no 
+role assigned to them will automatically go to the Employee Center role 
+a. From the user role drop-down select Employee Center 
+ 
+ 
+ 

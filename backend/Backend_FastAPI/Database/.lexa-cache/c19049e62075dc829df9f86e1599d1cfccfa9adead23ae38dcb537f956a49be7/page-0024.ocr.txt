@@ -1,0 +1,7 @@
+Special Orders on Hold
+See the reason the Special Order is on Hold by going 
+to the Sales Order and open up Communication tab
+Open User Notes
+Read the notes detailing why the Special Order is on 
+Hold. Take appropriate action, update user notes and  
+and email Jennifer Foster.

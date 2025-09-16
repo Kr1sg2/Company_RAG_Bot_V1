@@ -1,0 +1,39 @@
+Page 2 of 2 
+12.19a Transfer Worksheet ANSWERS.docx 
+01/15/2018 
+4. To place one specific serial number on a transfer it is best to use the 
+a. Truck look-up menu 
+b. Transfer Pop-Up menu 
+c. Customer look-up menu 
+d. The Serial Rack screen in Sales MFG Look-Up 
+e. Message the warehouse office 
+5. The easiest way to place many of the same items on a transfer regardless of the serial number 
+use the  
+a. Truck look-up menu 
+b. Transfer Pop-Up menu 
+c. Customer look-up menu 
+d. The Serial Rack screen in Sales MFG Look-Up 
+e. Message the warehouse office 
+6. How does a transfer number read?  Example SAR-79354-WHS 
+a. Destination – Chinese Calendar Date – Origin 
+b. Warehouse Door Number – Truck Number – Store Number 
+c. Origin – Document Number – Destination 
+d. It doesn’t really mean anything it is a randomly generated number 
+7. All merchandise whether coming or going from the store is on a single transfer number. 
+a. True 
+b. False 
+8. “KEEP” automatically keeps the specified number of an item on my floor.  Items may transfer to 
+fill a “KEEP” if 
+a. An item on my floor is reserved on an invoice 
+b. An item on my floor is on a transfer to leave my store floor 
+c. Any time the warehouse feels like it 
+d. A and B 
+9. Asterisked lines on the waiting list mean that the items are on the waiting list but the invoice 
+that they are reserved to does not meet the criteria to be on a transfer. 
+a. True 
+b. False 
+10. Customer reserved or owned merchandise always has priority over stock merchandise on a 
+transfer. 
+a. True 
+b. False 
+ 

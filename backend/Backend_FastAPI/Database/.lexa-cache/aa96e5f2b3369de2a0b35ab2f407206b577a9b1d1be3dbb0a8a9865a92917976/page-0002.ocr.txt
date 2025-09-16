@@ -1,0 +1,24 @@
+Page 2 of 12 
+7.00 Check Stock, Look Up Product 
+12/20/2024 
+What is a Base SKU? 
+One of Leaders competitive advantages is high choice meaning a large number of options.  This 
+give the customer the ability to get exactly what they want.  NetSuite product data base is built 
+with base Skus and options to make product easily configurable It is important to understand 
+what a base SKU is to save confusion and not make mistakes.   
+Let’s use the Madeira Dining chair as an example 
+ 
+ 
+The same chair can come in several frame finishes and several fabrics.  It always starts with the 
+same base SKU.   
+IMPORTANT:  A BASE SKU CAN BE ADDED TO AN INVOICE IN ERROR.  FURNITURE ITEMS 
+SHOULD HAVE OPTIONS.  IF YOU SEE NO OPTION ON YOUR SKU OR THE PRICE IS 
+ZERO THERE IS A GOOD CHANCE YOU ADDED A BASE SKU BY MISTAKE.  KEEP 
+YOUR EYES PEELED.  IF YOU MAKE A MISTAKE, WE GOT YOUR BACK.  PURCHASING 
+IS ON THE LOOK OUT AND WILL LET YOU KNOW. 
+ 
+ 
+ 
+ 
+ 
+ 

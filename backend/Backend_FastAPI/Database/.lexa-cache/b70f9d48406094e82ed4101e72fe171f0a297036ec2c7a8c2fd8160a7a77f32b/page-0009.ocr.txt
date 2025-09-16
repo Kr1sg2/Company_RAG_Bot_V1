@@ -1,0 +1,76 @@
+Page 9 of 16 
+3.1 Writing a Sales Order 
+7/4/2024 
+…Items tab continued 
+ 
+Field Name 
+What? 
+Why? 
+ 
+Estimated 
+Availability 
+The estimated date that the items will be 
+available in the company. 
+This will be the date from when a 
+fulfillment can be scheduled not the date 
+they will be in a customer's home.   
+ 
+Reserve From 
+Another Location 
+and Transfer 
+This is where the “Reserve” button will 
+show up if there is not enough stock of an 
+item in the Distribution Center.  You will 
+click on this button if you are permitted to 
+reserve the items from another showroom.   
+DO NOT USE THE RESERVE BUTTON IF YOU 
+ARE RESERVING TO YOUR FLOOR FOR 
+CUSTOMER PICK UP.  IT will transfer the 
+item to the Distribution Center. 
+ 
+Reserve From/ 
+Current Item(s) 
+Location 
+The location the item needs to be at to be 
+fulfilled 
+This should say Distribution Center unless 
+it is a customer pick up at your store. 
+ 
+Available In 
+Reserve From 
+Location 
+This is the stock level of the item available 
+at the location it will fulfill from.   
+If this quantity is higher than the quantity 
+ordered it is in stock and ready to go. 
+ 
+Inventory Detail 
+ 
+ 
+ 
+Scheduled Delivery 
+Date 
+The date the line item is scheduled to be 
+fulfilled 
+Because a Sales Order can be partially 
+delivered, each line item will have a 
+scheduled delivery date. 
+ 
+Scheduled Delivery 
+Method 
+The method the line item will be fulfilled 
+Because a Sales Order can be partially 
+delivered, each line item will have the 
+fulfillment method 
+ 
+Scheduled Delivery 
+Record 
+The record for the line item fulfillment 
+Because each Sales Order can be partially 
+fulfilled, each line item that has been 
+scheduled for fulfillment will have a 
+Delivery Record. 
+ 
+ 
+ 
+ 
