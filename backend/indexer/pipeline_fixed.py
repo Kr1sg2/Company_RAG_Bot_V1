@@ -1,9 +1,16 @@
-# indexer/pipeline_fixed.py
-import os, logging
-from typing import Dict, Any, List, Optional, Tuple
+"""Fixed/Enhanced indexing pipeline."""
+import logging
+import os
 from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
 
-logger = logging.getLogger(__name__)  # <-- move this to the top so it's defined
+from .cache import CacheManager
+from .chunk_fixed import chunk_processor  # uses the shim we just added
+from .config import CONFIG
+from .hashutil import get_file_info
+from .store import document_store
+
+logger = logging.getLogger(__name__)
 
 try:
     import fitz
@@ -29,11 +36,7 @@ try:
 except ImportError:
     OPENAI_AVAILABLE = False
 
-from .hashutil import get_file_info
-from .cache import CacheManager
-from .chunk_fixed import chunk_processor  # uses the shim we just added
-from .store import document_store
-from .config import CONFIG
+ # (imports moved to top for E402 compliance)
 
 # Conditional feature imports
 if not CONFIG.DISABLE_OCR:

@@ -1,4 +1,7 @@
-import os, json, time, threading
+import json
+import os
+import threading
+import time
 from collections import deque
 
 PATH = "data/faq_cache.json"
@@ -16,11 +19,13 @@ WINDOW_SEC = 3600  # 60 minutes
 def enabled():
     return os.environ.get("LEXA_USE_FAQ_CACHE","0") == "1"
 
-def _now(): return int(time.time())
+def _now():
+    return int(time.time())
 
 def _load():
     global _mem
-    if _mem is not None: return
+    if _mem is not None:
+        return
     try:
         with open(PATH, "r") as f:
             _mem = json.load(f)
@@ -35,11 +40,12 @@ def _save():
     except Exception:
         pass
 
-def _key(q:str) -> str:
+def _key(q: str) -> str:
     return (q or "").strip().lower()[:256]
 
-def get(q:str):
-    if not enabled(): return None
+def get(q: str):
+    if not enabled():
+        return None
     global faq_hits, faq_misses
     with _lock:
         _load()
@@ -62,8 +68,9 @@ def get(q:str):
         _hit_times.append(_now())
         return v.get("ans")
 
-def set(q:str, ans:str):
-    if not enabled(): return
+def set(q: str, ans: str):
+    if not enabled():
+        return
     with _lock:
         _load()
         _mem[_key(q)] = {"ans": ans, "ts": _now()}

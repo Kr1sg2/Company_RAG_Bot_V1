@@ -9,8 +9,6 @@ from uuid import uuid4
 import chromadb
 from chromadb.config import Settings
 
-from . import CONFIG
-
 logger = logging.getLogger(__name__)
 
 class DocumentStore:

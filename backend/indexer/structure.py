@@ -5,7 +5,7 @@ Extracts PDF bookmarks and detects headings via text heuristics.
 import os
 import re
 import logging
-from typing import List, Dict, Optional, Tuple, Any
+from typing import List, Dict, Any
 
 logger = logging.getLogger(__name__)
 
@@ -14,9 +14,14 @@ def env_bool(name: str, default: bool) -> bool:
     v = os.getenv(name, str(default))
     return v.strip().lower() in ("1", "true", "yes", "on")
 
-USE_TOC = lambda: env_bool("LEXA_USE_TOC", True)
-TOC_WEIGHT = lambda: float(os.getenv("LEXA_TOC_WEIGHT", "1.10"))
-HEADING_WEIGHT = lambda: float(os.getenv("LEXA_HEADING_WEIGHT", "1.05"))
+def USE_TOC() -> bool:
+    return env_bool("LEXA_USE_TOC", True)
+
+def TOC_WEIGHT() -> float:
+    return float(os.getenv("LEXA_TOC_WEIGHT", "1.10"))
+
+def HEADING_WEIGHT() -> float:
+    return float(os.getenv("LEXA_HEADING_WEIGHT", "1.05"))
 
 # Boilerplate patterns to ignore when detecting headings
 IGNORE_PATTERNS = [

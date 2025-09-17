@@ -1,6 +1,5 @@
 """Unit tests for query rewriting module."""
 import os
-import pytest
 from lexa_app.query_rewrite import expand_query, get_query_intent, is_enabled
 
 class TestQueryRewrite:

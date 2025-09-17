@@ -2,7 +2,6 @@
 OCR utilities for extracting text from PDF pages and images.
 """
 
-from typing import Optional
 import io
 import logging
 

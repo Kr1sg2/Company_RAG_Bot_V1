@@ -5,7 +5,7 @@ Controlled by LEXA_USE_QUERY_REWRITE environment flag.
 import os
 import re
 import logging
-from typing import List, Dict, Set
+from typing import List
 
 logger = logging.getLogger(__name__)
 

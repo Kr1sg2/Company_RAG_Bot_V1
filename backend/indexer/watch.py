@@ -1,7 +1,9 @@
 # indexer/watch.py
-import os, time, threading, logging
+import os
+import time
+import threading
+import logging
 from pathlib import Path
-from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from . import CONFIG
 from .pipeline import document_pipeline
@@ -32,7 +34,6 @@ class DocumentHandler(FileSystemEventHandler):
 
     def _housekeep_loop(self):
         while not self.stop_event.is_set():
-            now = time.time()
             # take a snapshot (don't hold lock while sleeping)
             with self.processing_lock:
                 snapshot = list(self.processing_files.items())
@@ -120,7 +121,6 @@ class DocumentHandler(FileSystemEventHandler):
 
 class DocumentWatcher:
     def __init__(self, watch_dir: str = None):
-        from watchdog.observers import Observer
         self.watch_dir = watch_dir or CONFIG['WATCH_DIR']
         self.observer = None
         self.handler = None
@@ -132,6 +132,7 @@ class DocumentWatcher:
             return False
         try:
             self.handler = DocumentHandler(self.watch_dir)
+            from watchdog.observers import Observer
             self.observer = Observer()
             self.observer.schedule(self.handler, self.watch_dir, recursive=True)
             self.observer.start()

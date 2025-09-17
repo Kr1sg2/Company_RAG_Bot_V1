@@ -3,8 +3,7 @@ Table extraction from PDFs using camelot with fallbacks.
 """
 
 import logging
-from typing import List, Dict, Optional
-import json
+from typing import List, Dict
 
 try:
     import camelot

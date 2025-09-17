@@ -2,7 +2,10 @@
 """
 CLI tool for manual reindexing of documents.
 """
-import os, sys, logging, argparse
+import os
+import sys
+import logging
+import argparse
 from pathlib import Path
 from .pipeline import document_pipeline as pipeline
 from .store import document_store as doc_store

@@ -1,5 +1,5 @@
 # lexa_app/structured_style_autopatch.py
-import os, json
+import os
 
 GUIDE = """You are answering questions about internal company documents.
 When possible, produce a structured answer with these sections (omit ones you can't justify from sources):
@@ -32,7 +32,7 @@ def _inject(style, out):
     return out
 
 def apply_patch(globs: dict) -> bool:
-    if os.getenv("LEXA_STRUCTURED", "1") not in ("1","true","TRUE","yes"):
+    if os.getenv("LEXA_STRUCTURED", "1") not in ("1", "true", "TRUE", "yes"):
         return False
     target_name, orig = None, None
     # Common prompt-builder names to wrap

@@ -2,8 +2,10 @@
 """
 Enhanced retrieval with BM25 re-ranking and answer guardrails.
 """
-import re, os, logging
-from typing import List, Dict, Any, Optional, Tuple
+import logging
+import os
+import re
+from typing import Any, Dict, List, Optional, Tuple
 import chromadb
 from chromadb.config import Settings
 try:
@@ -166,9 +168,12 @@ class EnhancedRetriever:
         is_consistent, authoritative = self.check_numeric_consistency(query, candidates)
         answer_parts, sources, seen = [], [], set()
         for c in candidates[:3]:
-            md = c['metadata']; file_name = md.get('file_name', 'Unknown'); page = md.get('page', 1)
+            md = c['metadata']
+            file_name = md.get('file_name', 'Unknown')
+            page = md.get('page', 1)
             key = f"{file_name}::{page}"
-            if key in seen: continue
+            if key in seen:
+                continue
             seen.add(key)
             snippet = c['text'][:200].strip() + ("..." if len(c['text']) > 200 else "")
             answer_parts.append(snippet)

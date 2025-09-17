@@ -1,6 +1,5 @@
 """Unit tests for answer validation module."""
 import os
-import pytest
 from lexa_app.answer_validator import (
     is_enabled, count_steps, count_citations, validate_answer, 
     enhance_answer_with_validation, detect_completeness_issues
@@ -16,7 +15,7 @@ class TestAnswerValidator:
         """Answer validation should be disabled by default."""
         assert not is_enabled()
         result = validate_answer("Short answer", [])
-        assert result["valid"] == True  # Should pass when disabled
+        assert result["valid"]  # Should pass when disabled
     
     def test_enabled_via_env(self):
         """Answer validation should activate via environment flag."""
@@ -79,7 +78,7 @@ class TestAnswerValidator:
         sources = [{"name": "doc.pdf", "url": "http://example.com"}]
         
         result = validate_answer(response, sources, "how to create sales order")
-        assert result["valid"] == True
+        assert result["valid"]
         assert result["step_count"] == 3
         assert result["citation_count"] == 1
     
@@ -91,7 +90,7 @@ class TestAnswerValidator:
         sources = [{"name": "doc.pdf", "url": "http://example.com"}]
         
         result = validate_answer(response, sources, "how to create sales order")
-        assert result["valid"] == False
+        assert not result["valid"]
         assert result["step_count"] < 3
         assert "at least 3 clear steps" in str(result["suggestions"])
     
@@ -103,7 +102,7 @@ class TestAnswerValidator:
         sources = []
         
         result = validate_answer(response, sources, "how to convert quote")
-        assert result["valid"] == False
+        assert not result["valid"]
         assert result["citation_count"] == 0
         assert "source citation" in str(result["suggestions"])
     
