@@ -8,6 +8,7 @@ from .pipeline import document_pipeline
 
 logger = logging.getLogger(__name__)
 
+
 class DocumentHandler(FileSystemEventHandler):
     def __init__(self, watch_dir: str):
         super().__init__()
@@ -49,7 +50,9 @@ class DocumentHandler(FileSystemEventHandler):
                     size2 = os.path.getsize(path)
                 except Exception:
                     continue
-                stable = (size1 == size2) and ((time.time() - first_seen) >= self.debounce_seconds)
+                stable = (size1 == size2) and (
+                    (time.time() - first_seen) >= self.debounce_seconds
+                )
                 if stable:
                     to_process.append(path)
                     with self.processing_lock:
@@ -57,7 +60,9 @@ class DocumentHandler(FileSystemEventHandler):
 
             for path in to_process:
                 try:
-                    logger.info(f"Processing stable file: {os.path.relpath(path, self.watch_dir)}")
+                    logger.info(
+                        f"Processing stable file: {os.path.relpath(path, self.watch_dir)}"
+                    )
                     document_pipeline.process_document(path, self.watch_dir)
                 except Exception as e:
                     logger.error(f"Processing failed for {path}: {e}")
@@ -66,7 +71,9 @@ class DocumentHandler(FileSystemEventHandler):
 
     def _delete_file(self, file_path: str):
         try:
-            logger.info(f"Deleting from index: {os.path.relpath(file_path, self.watch_dir)}")
+            logger.info(
+                f"Deleting from index: {os.path.relpath(file_path, self.watch_dir)}"
+            )
             document_pipeline.delete_document(file_path, self.watch_dir)
         except Exception as e:
             logger.error(f"Delete failed for {file_path}: {e}")
@@ -118,10 +125,12 @@ class DocumentHandler(FileSystemEventHandler):
         if hasattr(self, "housekeeper"):
             self.housekeeper.join(timeout=5)
 
+
 class DocumentWatcher:
     def __init__(self, watch_dir: str = None):
         from watchdog.observers import Observer
-        self.watch_dir = watch_dir or CONFIG['WATCH_DIR']
+
+        self.watch_dir = watch_dir or CONFIG["WATCH_DIR"]
         self.observer = None
         self.handler = None
         logger.info(f"Document watcher initialized for: {self.watch_dir}")
@@ -160,6 +169,7 @@ class DocumentWatcher:
             logger.info("Received interrupt signal")
         finally:
             self.stop()
+
 
 if __name__ == "__main__":
     watcher = DocumentWatcher()

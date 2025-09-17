@@ -13,7 +13,7 @@ function normalizeAlpha(x: number | undefined, fallback = 1) {
 }
 
 function hexToRgb(hex: string) {
-  let h = (hex || "").trim().replace(/^#/, "");
+  const h = (hex || "").trim().replace(/^#/, "");
   const p = (s: string) => parseInt(s, 16);
   if (h.length === 3) {
     return { r: p(h[0]+h[0]), g: p(h[1]+h[1]), b: p(h[2]+h[2]) };

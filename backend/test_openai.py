@@ -5,7 +5,10 @@ from openai import OpenAI
 
 KEY = os.getenv("OPENAI_API_KEY")
 
-@pytest.mark.skipif(not KEY, reason="OPENAI_API_KEY not set; skipping external API test")
+
+@pytest.mark.skipif(
+    not KEY, reason="OPENAI_API_KEY not set; skipping external API test"
+)
 def test_openai_chat_minimal():
     client = OpenAI(api_key=KEY)
     try:

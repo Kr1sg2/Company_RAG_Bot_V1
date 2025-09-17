@@ -5,6 +5,7 @@ from typing import List, Dict, Any
 CHUNK_CHARS = 1400
 OVERLAP_CHARS = 250
 
+
 def _split_paragraphs(text: str) -> List[str]:
     # keep headings as their own paragraphs
     parts = re.split(r"\n{2,}", text)
@@ -17,6 +18,7 @@ def _split_paragraphs(text: str) -> List[str]:
         p = re.sub(r"([^\n])\n([^\n])", r"\1 \2", p)
         out.append(p)
     return out
+
 
 def make_chunks(page_text: str, meta: Dict[str, Any]) -> List[Dict[str, Any]]:
     if not page_text or not page_text.strip():
@@ -36,4 +38,3 @@ def make_chunks(page_text: str, meta: Dict[str, Any]) -> List[Dict[str, Any]]:
     if buf:
         chunks.append({"text": buf, "metadata": meta})
     return chunks
-

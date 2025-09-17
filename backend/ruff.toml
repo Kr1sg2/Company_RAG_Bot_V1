@@ -1,0 +1,11 @@
+[lint]
+select = ["E", "F", "W"]
+# Ignore lambda-assignment rule and long-line warnings; Black enforces formatting
+ignore = ["E731", "E501"]
+
+# Keep lint scope tight; exclude backups and archives to avoid noise
+exclude = [
+  "backup/**",
+  "archive/**",
+  "*_backup.py",
+]

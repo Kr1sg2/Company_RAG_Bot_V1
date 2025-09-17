@@ -7,6 +7,7 @@ from typing import Dict, Any
 _lock = threading.Lock()
 SETTINGS_FILE = Path("storage/settings.json")
 
+
 def load_settings() -> Dict[str, Any]:
     """Load all settings from storage/settings.json, return empty dict if missing."""
     with _lock:
@@ -18,12 +19,14 @@ def load_settings() -> Dict[str, Any]:
                 return {}
         return {}
 
+
 def save_settings(data: Dict[str, Any]) -> None:
     """Persist full settings to disk, ensure directory exists."""
     with _lock:
         SETTINGS_FILE.parent.mkdir(parents=True, exist_ok=True)
         with open(SETTINGS_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
+
 
 def _get_nested(d: Dict[str, Any], path: str, default=None):
     cur = d or {}
@@ -32,6 +35,7 @@ def _get_nested(d: Dict[str, Any], path: str, default=None):
             return default
         cur = cur[key]
     return cur
+
 
 def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
     """Extract only branding-related fields with defaults."""
@@ -42,36 +46,40 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
     branding = {
         # Basic Settings
         "companyName": settings.get("companyName", "Leaders AI Company Chatbot"),
-        "taglineText": settings.get("taglineText", "Closed-book RAG system - answers only from company documents"),
-        "emptyStateText": settings.get("emptyStateText", "Ask me anything about your company documents!"),
-        "inputPlaceholder": settings.get("inputPlaceholder", "Ask a question about your documents..."),
+        "taglineText": settings.get(
+            "taglineText",
+            "Closed-book RAG system - answers only from company documents",
+        ),
+        "emptyStateText": settings.get(
+            "emptyStateText", "Ask me anything about your company documents!"
+        ),
+        "inputPlaceholder": settings.get(
+            "inputPlaceholder", "Ask a question about your documents..."
+        ),
         "logoDataUrl": settings.get("logoDataUrl"),
         "faviconUrl": settings.get("faviconUrl"),
-
         # Background images (page/card)
         "pageBackgroundUrl": settings.get("pageBackgroundUrl"),
         "chatCardBackgroundUrl": settings.get("chatCardBackgroundUrl"),
-
         # Keep legacy nested objects
-        "colors": settings.get("colors", {
-            "primary": "#6190ff",
-            "accent": "#756bff",
-            "bg": "#0b1020",
-            "text": "#e6e6e6"
-        }),
-        "bubbles": settings.get("bubbles", {
-            "radius": "18px",
-            "aiBg": "#0f1530",
-            "userBg": "#1b2447"
-        }),
-
+        "colors": settings.get(
+            "colors",
+            {
+                "primary": "#6190ff",
+                "accent": "#756bff",
+                "bg": "#0b1020",
+                "text": "#e6e6e6",
+            },
+        ),
+        "bubbles": settings.get(
+            "bubbles", {"radius": "18px", "aiBg": "#0f1530", "userBg": "#1b2447"}
+        ),
         # Original dimensions / legacy
         "chatWidth": settings.get("chatWidth", "920"),
         "chatHeight": settings.get("chatHeight", "56"),
         "chatOffsetTop": settings.get("chatOffsetTop", "7"),
         "cardRadius": settings.get("cardRadius", "18"),
         "cardBg": settings.get("cardBg", "rgba(255,255,255,0.88)"),
-
         # Typography
         "fontFamily": settings.get("fontFamily", "system-ui"),
         "titleFontSize": settings.get("titleFontSize", 32),
@@ -81,7 +89,6 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
         "taglineFontSize": settings.get("taglineFontSize", 18),
         "taglineBold": settings.get("taglineBold", False),
         "taglineItalic": settings.get("taglineItalic", False),
-
         # Enhanced Bubble Controls
         "bubblePadding": settings.get("bubblePadding", 12),
         "bubbleMaxWidth": settings.get("bubbleMaxWidth", 70),
@@ -89,13 +96,11 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
         "aiBubbleBorder": settings.get("aiBubbleBorder", "none"),
         "userTextColor": settings.get("userTextColor", "#111111"),
         "userBubbleBorder": settings.get("userBubbleBorder", "none"),
-
         # Enhanced Card Controls
         "cardPadding": settings.get("cardPadding", 24),
         "inputHeight": settings.get("inputHeight", 44),
         "inputRadius": settings.get("inputRadius", 8),
         "messageSpacing": settings.get("messageSpacing", 16),
-
         # Backgrounds & Shadows
         "pageBackgroundColor": settings.get("pageBackgroundColor", "#ffffff"),
         "cardBackgroundColor": settings.get("cardBackgroundColor", "#ffffff"),
@@ -106,21 +111,18 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
         "shadowOpacity": settings.get("shadowOpacity", 20),
         "enableShadow": settings.get("enableShadow", True),
         "enableGlow": settings.get("enableGlow", False),
-
         # Robot / Avatar
         "avatarImageUrl": settings.get("avatarImageUrl"),
         "avatarSize": settings.get("avatarSize", 40),
         "avatarPosition": settings.get("avatarPosition", "left"),
         "avatarShape": settings.get("avatarShape", "circle"),
         "showAvatarOnMobile": settings.get("showAvatarOnMobile", True),
-        
         # User Avatar
         "userAvatarImageUrl": settings.get("userAvatarImageUrl"),
         "userAvatarSize": settings.get("userAvatarSize", 40),
         "userAvatarPosition": settings.get("userAvatarPosition", "right"),
         "userAvatarShape": settings.get("userAvatarShape", "circle"),
         "showUserAvatarOnMobile": settings.get("showUserAvatarOnMobile", True),
-
         # Audio / TTS & STT
         "enableTextToSpeech": settings.get("enableTextToSpeech", False),
         "enableSpeechToText": settings.get("enableSpeechToText", False),
@@ -130,43 +132,56 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
         "sttAutoSend": settings.get("sttAutoSend", False),
         "showAudioControls": settings.get("showAudioControls", True),
         "ttsAutoPlay": settings.get("ttsAutoPlay", False),
-
         # LLM Controls
         "aiModel": settings.get("aiModel", "gpt-4"),
         "aiTemperature": settings.get("aiTemperature", 0.7),
         "aiMaxTokens": settings.get("aiMaxTokens", 2048),
         "aiTopK": settings.get("aiTopK", 50),
         "aiStrictness": settings.get("aiStrictness", "balanced"),
-        "aiSystemPrompt": settings.get("aiSystemPrompt", "You are a helpful AI assistant."),
+        "aiSystemPrompt": settings.get(
+            "aiSystemPrompt", "You are a helpful AI assistant."
+        ),
         "aiStreamResponses": settings.get("aiStreamResponses", True),
         "aiRetainContext": settings.get("aiRetainContext", True),
         "aiResponseStyle": settings.get("aiResponseStyle", "auto"),
-
         # -------- NEW: flat keys expected by Admin/Chat --------
         # Theme colors (flat) with fallbacks to nested
-        "primaryColor": settings.get("primaryColor", nested_colors.get("primary", "#6190ff")),
-        "accentColor": settings.get("accentColor", nested_colors.get("accent", "#756bff")),
+        "primaryColor": settings.get(
+            "primaryColor", nested_colors.get("primary", "#6190ff")
+        ),
+        "accentColor": settings.get(
+            "accentColor", nested_colors.get("accent", "#756bff")
+        ),
         "textColor": settings.get("textColor", nested_colors.get("text", "#e6e6e6")),
         "mutedTextColor": settings.get("mutedTextColor", "#64748b"),
-        "titleColor": settings.get("titleColor", settings.get("textColor", nested_colors.get("text", "#0f172a"))),
-        "taglineColor": settings.get("taglineColor", settings.get("mutedTextColor", "#64748b")),
-
+        "titleColor": settings.get(
+            "titleColor",
+            settings.get("textColor", nested_colors.get("text", "#0f172a")),
+        ),
+        "taglineColor": settings.get(
+            "taglineColor", settings.get("mutedTextColor", "#64748b")
+        ),
         # Inputs & buttons (flat)
         "inputBackgroundColor": settings.get("inputBackgroundColor", "#ffffff"),
         "inputTextColor": settings.get("inputTextColor", "#0f172a"),
-        "sendButtonBgColor": settings.get("sendButtonBgColor", settings.get("primaryColor", nested_colors.get("primary", "#6190ff"))),
+        "sendButtonBgColor": settings.get(
+            "sendButtonBgColor",
+            settings.get("primaryColor", nested_colors.get("primary", "#6190ff")),
+        ),
         "sendButtonTextColor": settings.get("sendButtonTextColor", "#ffffff"),
         "sendBtnText": settings.get("sendBtnText", "Send"),
-
         # Bubble specifics (flat) with fallbacks to nested bubbles
-        "bubbleRadius": settings.get("bubbleRadius", nested_bubbles.get("radius", "18px")),
+        "bubbleRadius": settings.get(
+            "bubbleRadius", nested_bubbles.get("radius", "18px")
+        ),
         "aiBubbleBg": settings.get("aiBubbleBg", nested_bubbles.get("aiBg", "#0f1530")),
-        "userBubbleBg": settings.get("userBubbleBg", nested_bubbles.get("userBg", "#1b2447")),
+        "userBubbleBg": settings.get(
+            "userBubbleBg", nested_bubbles.get("userBg", "#1b2447")
+        ),
         "assistantBold": settings.get("assistantBold", False),
         "assistantItalic": settings.get("assistantItalic", False),
         "userBold": settings.get("userBold", False),
         "userItalic": settings.get("userItalic", False),
-        
         # NEW: Bubble opacity controls (0.0-1.0)
         "aiOpacity": settings.get("aiOpacity"),
         "userOpacity": settings.get("userOpacity"),
@@ -174,16 +189,16 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
         "userBorderColor": settings.get("userBorderColor"),
         "aiBorderWidth": settings.get("aiBorderWidth"),
         "userBorderWidth": settings.get("userBorderWidth"),
-        
         # Test probe
         "__persist_probe": settings.get("__persist_probe"),
-
         # Card background advanced
         "cardBackgroundUrl": settings.get("cardBackgroundUrl"),
         "cardBackgroundCssOverride": settings.get("cardBackgroundCssOverride"),
-
         # Glow (flat)
-        "glowColor": settings.get("glowColor", settings.get("primaryColor", nested_colors.get("primary", "#6190ff"))),
+        "glowColor": settings.get(
+            "glowColor",
+            settings.get("primaryColor", nested_colors.get("primary", "#6190ff")),
+        ),
         "glowBlur": settings.get("glowBlur", 25),
         "glowOpacity": settings.get("glowOpacity", 20),
     }
@@ -191,11 +206,13 @@ def extract_branding_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
     # Remove None values
     return {k: v for k, v in branding.items() if v is not None}
 
+
 def _coerce_float(v, dflt):
     try:
         return float(v)
     except Exception:
         return dflt
+
 
 def _coerce_int(v, dflt):
     try:
@@ -203,12 +220,14 @@ def _coerce_int(v, dflt):
     except Exception:
         return dflt
 
+
 def _clamp(v, lo, hi, default):
     try:
         x = float(v)
     except Exception:
         return default
     return max(lo, min(hi, x))
+
 
 def extract_ai_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
     """
@@ -218,8 +237,12 @@ def extract_ai_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
     s = settings or {}
     # Accept multiple spellings; prefer canonical if present
     model = s.get("model") or s.get("aiModel") or s.get("openaiModel") or "gpt-4o-mini"
-    temperature = _clamp(s.get("temperature", s.get("aiTemperature", 0.7)), 0.0, 2.0, 0.7)
-    max_tokens = int(_clamp(s.get("max_tokens", s.get("aiMaxTokens", 900)), 1, 4000, 900))
+    temperature = _clamp(
+        s.get("temperature", s.get("aiTemperature", 0.7)), 0.0, 2.0, 0.7
+    )
+    max_tokens = int(
+        _clamp(s.get("max_tokens", s.get("aiMaxTokens", 900)), 1, 4000, 900)
+    )
     top_p = _clamp(s.get("top_p", 1.0), 0.0, 1.0, 1.0)
     frequency_penalty = _clamp(s.get("frequency_penalty", 0.0), -2.0, 2.0, 0.0)
     presence_penalty = _clamp(s.get("presence_penalty", 0.0), -2.0, 2.0, 0.0)
@@ -239,6 +262,7 @@ def extract_ai_fields(settings: Dict[str, Any]) -> Dict[str, Any]:
         "systemPrompt": system_prompt,
     }
 
+
 def extract_full_settings(settings: Dict[str, Any]) -> Dict[str, Any]:
     """Extract complete settings (merge branding + AI)."""
     full = {}
@@ -246,13 +270,23 @@ def extract_full_settings(settings: Dict[str, Any]) -> Dict[str, Any]:
     full.update(extract_ai_fields(settings))
     return full
 
+
 def update_branding_fields(branding_data: Dict[str, Any]) -> Dict[str, Any]:
     """Update branding fields, preserving other settings. Block only sensitive fields."""
     # Block sensitive/auth fields but allow all branding-related fields
     blocked_fields = {
-        "openaiApiKey", "adminPassword", "secretKey", "sessionSecret",
-        "databaseUrl", "apiKeys", "credentials", "password", "token",
-        "auth", "secret", "key"  # generic patterns
+        "openaiApiKey",
+        "adminPassword",
+        "secretKey",
+        "sessionSecret",
+        "databaseUrl",
+        "apiKeys",
+        "credentials",
+        "password",
+        "token",
+        "auth",
+        "secret",
+        "key",  # generic patterns
     }
 
     settings = load_settings()
@@ -265,11 +299,21 @@ def update_branding_fields(branding_data: Dict[str, Any]) -> Dict[str, Any]:
     save_settings(settings)
     return extract_branding_fields(settings)
 
+
 def update_ai_fields(ai_data: Dict[str, Any]) -> Dict[str, Any]:
     """Update only allowed AI fields, preserving other settings."""
     allowed_fields = {
-        "temperature", "top_k", "max_tokens", "strictness", "enableSpeechToText",
-        "enableTextToSpeech", "voice", "model", "sttEnabled", "sttLanguage", "sttAutoSend"
+        "temperature",
+        "top_k",
+        "max_tokens",
+        "strictness",
+        "enableSpeechToText",
+        "enableTextToSpeech",
+        "voice",
+        "model",
+        "sttEnabled",
+        "sttLanguage",
+        "sttAutoSend",
     }
 
     settings = load_settings()
@@ -280,10 +324,10 @@ def update_ai_fields(ai_data: Dict[str, Any]) -> Dict[str, Any]:
     save_settings(settings)
     return extract_ai_fields(settings)
 
+
 def update_full_settings(settings_data: Dict[str, Any]) -> Dict[str, Any]:
     """Update complete settings, preserving unlisted fields."""
     settings = load_settings()
     settings.update(settings_data)
     save_settings(settings)
     return extract_full_settings(settings)
-

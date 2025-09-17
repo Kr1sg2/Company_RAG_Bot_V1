@@ -19,5 +19,15 @@ export default tseslint.config([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    rules: {
+      // Reduce noise in app code; we still prefer strong typing but allow pragmatic any usage
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }
+      ],
+      // Allow empty catch blocks (common in feature-detection)
+      'no-empty': ['warn', { allowEmptyCatch: true }],
+    },
   },
 ])

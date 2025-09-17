@@ -1,15 +1,23 @@
+#!/usr/bin/env python3
 # app_security.py
-import os, base64
-from fastapi import Depends, HTTPException, Request, status
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
+import os
+from fastapi import Depends
+from fastapi import HTTPException
+from fastapi import Request
+from fastapi import status
+from fastapi.security import HTTPBasic
+from fastapi.security import HTTPBasicCredentials
 
 security = HTTPBasic(auto_error=False)
+
 
 def _env_user() -> str:
     return os.getenv("ADMIN_USER", os.getenv("ADMIN_USERNAME", "admin"))
 
+
 def _env_pass() -> str:
     return os.getenv("ADMIN_PASSWORD", os.getenv("ADMIN_PASS", "Krypt0n!t3"))
+
 
 def require_admin_basic(
     request: Request,
@@ -27,12 +35,17 @@ def require_admin_basic(
     got_user = (user or "").strip()
     exp_user = (expected_user or "").strip()
 
-    ok = bool(creds) and scheme == "basic" and got_user == exp_user and (creds.password or "") == (expected_pass or "")
-    
+    ok = (
+        bool(creds)
+        and scheme == "basic"
+        and got_user == exp_user
+        and (creds.password or "") == (expected_pass or "")
+    )
+
     if not ok:
         raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED, 
+            status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Unauthorized",
-            headers={"WWW-Authenticate": 'Basic realm="Lexa Admin"'}
+            headers={"WWW-Authenticate": 'Basic realm="Lexa Admin"'},
         )
     return True
