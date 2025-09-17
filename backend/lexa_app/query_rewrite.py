@@ -66,37 +66,47 @@ def expand_query(original_query: str) -> List[str]:
     
     variants = [original_query]
     query_lower = original_query.lower()
-    
-    # 1. Abbreviation expansion
+
+    # 1. Add procedural context for how-to queries FIRST so they're not trimmed
+    if any(starter in query_lower for starter in ['how to', 'how do i', 'steps to']):
+        proc1 = query_lower.replace('how to', 'steps to')
+        if proc1 != query_lower:
+            variants.append(proc1)
+        proc2 = query_lower.replace('how do i', 'process for')
+        if proc2 != query_lower:
+            variants.append(proc2)
+        proc3 = query_lower.replace('how to', 'process for')
+        if proc3 != query_lower:
+            variants.append(proc3)
+        # Generic procedure suffix
+        if (proc1 != query_lower) or (proc2 != query_lower):
+            variants.append(query_lower + ' procedure')
+
+    # 2. Abbreviation expansion
     expanded_abbrevs = query_lower
     for abbrev, expansion in ABBREVIATION_EXPANSIONS.items():
         expanded_abbrevs = re.sub(r'\b' + re.escape(abbrev.lower()) + r'\b', expansion, expanded_abbrevs)
-    
     if expanded_abbrevs != query_lower:
         variants.append(expanded_abbrevs)
-    
-    # 2. Synonym expansion  
+
+    # 3. Synonym expansion (limited)
     for term, synonyms in NETSUITE_SYNONYMS.items():
         if term in query_lower:
-            for synonym in synonyms[:2]:  # Limit to 2 synonyms to avoid explosion
+            for synonym in synonyms[:1]:  # Limit to 1 synonym per term to avoid explosion
                 synonym_variant = query_lower.replace(term, synonym)
                 if synonym_variant != query_lower:
                     variants.append(synonym_variant)
-    
-    # 3. Process chain detection
+
+    # 4. Process chain detection (require at least two words to match)
     for process, expansions in PROCESS_CHAINS.items():
-        if process in query_lower or any(word in query_lower for word in process.split()):
+        words = set(process.split())
+        match_count = sum(1 for w in words if w in query_lower)
+        if process in query_lower or match_count >= 2:
             variants.extend(expansions)
     
-    # 4. Add procedural context for how-to queries
-    if any(starter in query_lower for starter in ['how to', 'how do i', 'steps to']):
-        procedural_variant = query_lower.replace('how to', 'steps to')
-        procedural_variant = procedural_variant.replace('how do i', 'process for')
-        if procedural_variant != query_lower:
-            variants.append(procedural_variant + ' procedure')
-    
     # Remove duplicates and limit variants
-    unique_variants = list(dict.fromkeys(variants))[:5]  # Max 5 variants
+    # Preserve insertion order and keep to max 5 total variants
+    unique_variants = list(dict.fromkeys(variants))[:5]
     
     if len(unique_variants) > 1:
         logger.info(f"Query expanded: '{original_query}' → {len(unique_variants)} variants")
@@ -111,19 +121,19 @@ def get_query_intent(query: str) -> str:
     """
     query_lower = query.lower()
     
+    # Troubleshooting queries - check FIRST to catch phrasing like "how to fix"
+    if any(issue in query_lower for issue in [
+        'error', 'problem', 'issue', 'not working', 'failed', 'wrong',
+        'missing', 'broken', 'fix'
+    ]):
+        return 'troubleshooting'
+    
     # Procedural queries
     if any(starter in query_lower for starter in [
         'how to', 'how do i', 'steps to', 'process for', 'way to',
         'create', 'make', 'convert', 'cancel', 'setup'
     ]):
         return 'procedural'
-    
-    # Troubleshooting queries  
-    if any(issue in query_lower for issue in [
-        'error', 'problem', 'issue', 'not working', 'failed', 'wrong',
-        'missing', 'broken', 'fix'
-    ]):
-        return 'troubleshooting'
     
     # Navigation queries
     if any(nav in query_lower for nav in [
