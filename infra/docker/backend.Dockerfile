@@ -9,9 +9,15 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app/backend
 
-# Install build essentials only if a package needs compilation (kept minimal)
-# Note: Most deps have prebuilt wheels; OS tools like poppler/tesseract are not
-# required for image build and can be added at deploy-time if runtime OCR is needed.
+# System packages required by OCR/PDF tools and some optional deps:
+RUN apt-get update \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+     poppler-utils \
+     tesseract-ocr \
+     ghostscript \
+     libglib2.0-0 \
+     libgl1 \
+ && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies first (leverages Docker layer caching)
 COPY backend/requirements.txt ./
