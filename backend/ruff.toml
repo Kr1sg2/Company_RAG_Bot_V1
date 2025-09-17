@@ -1,0 +1,9 @@
+select = ["E", "F", "W"]
+ignore = ["E731"]
+
+# Keep lint scope tight; exclude backups and archives to avoid noise
+exclude = [
+  "backup/**",
+  "archive/**",
+  "*_backup.py",
+]

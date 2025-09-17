@@ -142,13 +142,18 @@ def hybrid_rerank(query, candidates, k=None):
     for i, c in enumerate(candidates):
         t = _get_text(c).lower()
         has_tbl = ('|') in t or 'table' in t or 'column' in t  # crude but effective
-    bonus_tbl = TABLE_BONUS if tbl_hint and has_tbl else 0.0
-    bonus_num = NUM_BONUS if _has_num_context(t) else 0.0
-        fused_score = w*V[i] + (1-w)*(L[i]+bonus) + bonus_tbl + bonus_num
+        bonus_tbl = TABLE_BONUS if tbl_hint and has_tbl else 0.0
+        bonus_num = NUM_BONUS if _has_num_context(t) else 0.0
+        fused_score = w * V[i] + (1 - w) * (L[i] + bonus) + bonus_tbl + bonus_num
         if isinstance(c, dict):
             c = dict(c)
             c.setdefault("metrics", {})
-            c["metrics"].update({"lex": L[i], "vec": V[i], "fused": fused_score, "has_num": 1 if bonus_num>0 else 0})
+            c["metrics"].update({
+                "lex": L[i],
+                "vec": V[i],
+                "fused": fused_score,
+                "has_num": 1 if bonus_num > 0 else 0,
+            })
         out.append((fused_score, c))
     out.sort(key=lambda x: x[0], reverse=True)
     ranked = [c for _, c in out]
@@ -159,7 +164,8 @@ def hybrid_rerank(query, candidates, k=None):
 
         def _meta(c):
             m = (c.get('metadata') or c.get('metadatas') or {})
-            if isinstance(m, list) and m: m = m[0]
+            if isinstance(m, list) and m:
+                m = m[0]
             return m or {}
         def _page(m):
             for k in ('page', 'page_start', 'page_no', 'page_number'):

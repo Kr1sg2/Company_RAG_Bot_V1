@@ -1,7 +1,12 @@
+#!/usr/bin/env python3
 # app_security.py
-import os, base64
-from fastapi import Depends, HTTPException, Request, status
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
+import os
+from fastapi import Depends
+from fastapi import HTTPException
+from fastapi import Request
+from fastapi import status
+from fastapi.security import HTTPBasic
+from fastapi.security import HTTPBasicCredentials
 
 security = HTTPBasic(auto_error=False)
 
