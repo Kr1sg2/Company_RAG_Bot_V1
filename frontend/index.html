@@ -6,20 +6,19 @@
     <title>Lexa</title>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 
-    <!-- Expose Vite env to plain HTML (Vite will replace %VITE_*% at build time) -->
-    <script>
-      // If %VITE_API_BASE% isn't defined at build time, we'll fall back to /api.
-      window.VITE_API_BASE = '%VITE_API_BASE%';
+    <!-- Expose Vite env to plain HTML using import.meta.env via inline module -->
+    <script type="module">
+      // This runs at build time and in dev under Vite
+      const fallback = '/api';
+      const base = (import.meta.env && import.meta.env.VITE_API_BASE) || fallback;
+      window.VITE_API_BASE = base;
     </script>
 
     <!-- Optional head bootstrap: fetch branding early to avoid FOUC -->
     <script>
       (function () {
         try {
-          var apiBase =
-            (window.VITE_API_BASE && window.VITE_API_BASE !== '%VITE_API_BASE%')
-              ? window.VITE_API_BASE
-              : '/api';
+          var apiBase = (window.VITE_API_BASE) ? window.VITE_API_BASE : '/api';
 
           var xhr = new XMLHttpRequest();
           xhr.open('GET', apiBase + '/admin/settings/public/branding', false); // sync to style before first paint
