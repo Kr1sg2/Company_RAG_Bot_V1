@@ -70,8 +70,10 @@ def detect_completeness_issues(text: str) -> List[str]:
     if text.endswith('...') or text.endswith('..'):
         issues.append("Answer appears truncated")
     
-    # Incomplete sentences
-    if not text.strip().endswith(('.', '!', '?', ':')):
+    # Incomplete sentences (only if not primarily a list/steps answer)
+    stripped = text.strip()
+    looks_like_list = bool(re.search(r'^(\s*(\d+[\.)]|[-\*•]))\s+', stripped, re.MULTILINE))
+    if not looks_like_list and not stripped.endswith(('.', '!', '?', ':')):
         issues.append("Answer may be incomplete (no ending punctuation)")
     
     # Vague references
@@ -110,9 +112,9 @@ def validate_answer(response_text: str, sources: List[Dict], query: str = "") ->
     is_valid = True
     
     # Check step count for procedural queries
-    is_procedural = any(keyword in query.lower() for keyword in [
-        'how to', 'steps', 'process', 'create', 'convert', 'make'
-    ]) if query else False
+    is_procedural = any(keyword in (query or '').lower() for keyword in [
+        'how to', 'steps', 'process', 'create', 'convert', 'make', 'procedure', 'cancel'
+    ])
     
     if is_procedural and step_count < 3:
         suggestions.append("Procedural answer should have at least 3 clear steps")

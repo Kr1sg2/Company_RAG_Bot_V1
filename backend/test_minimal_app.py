@@ -8,7 +8,7 @@ print("Creating FastAPI app...")
 app = FastAPI(title="Test App")
 
 @app.get("/test")
-async def test_endpoint():
+async def ping():
     return {"status": "ok"}
 
 print(f"App created successfully: {app}")
