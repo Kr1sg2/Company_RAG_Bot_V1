@@ -26,4 +26,4 @@ jobs:
           context: .
           file: infra/docker/backend.Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}/backend:latest
+          tags: ghcr.io/${{ toLower(github.repository) }}/backend:latest
