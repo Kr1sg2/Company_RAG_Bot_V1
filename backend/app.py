@@ -45,16 +45,17 @@ signer = TimestampSigner(SECRET_KEY)
 enhanced_search = None
 try:
     from lexa_app.retrieval import enhanced_search
+
     logger.info("✅ Enhanced search imported successfully")
 except Exception as e:
     logger.warning(f"Enhanced search not available: {e}")
 
 # ---------- FastAPI app ----------
 app = FastAPI(
-    title="LexaAI Backend", 
-    docs_url="/api/docs", 
-    redoc_url="/api/redoc", 
-    openapi_url="/api/openapi.json"
+    title="LexaAI Backend",
+    docs_url="/api/docs",
+    redoc_url="/api/redoc",
+    openapi_url="/api/openapi.json",
 )
 
 # ---------- CORS ----------
@@ -76,6 +77,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # ---------- Helper Functions ----------
 def build_file_url(request: Request, source_doc: str, page_number: int = 1) -> str:
     """Build proxy-safe link for a stored file with page fragments for PDFs."""
@@ -91,32 +93,36 @@ def build_file_url(request: Request, source_doc: str, page_number: int = 1) -> s
 
     safe = quote(source_doc)
     url = f"{base}/files/{safe}"
-    
+
     # Ensure PDFs jump to the exact page
     if page_number and str(source_doc).lower().endswith(".pdf"):
         if "#page=" not in url and "page=" not in url:
             url = f"{url}#page={page_number}"
-    
+
     return url
+
 
 def load_settings() -> Dict[str, Any]:
     """Load settings from storage."""
     try:
         if SETTINGS_FILE.exists():
-            with open(SETTINGS_FILE, 'r') as f:
+            with open(SETTINGS_FILE, "r") as f:
                 return json.load(f)
     except Exception:
         pass
     return {}
 
+
 def verify_password(password: str) -> bool:
     """Verify admin password."""
     return password == ADMIN_PASSWORD
+
 
 def create_session_token() -> str:
     """Create a session token."""
     payload = {"user": "admin", "timestamp": time.time()}
     return signer.sign(json.dumps(payload))
+
 
 def verify_session_token(token: str) -> bool:
     """Verify session token."""
@@ -127,6 +133,7 @@ def verify_session_token(token: str) -> bool:
     except (BadSignature, SignatureExpired, json.JSONDecodeError):
         return False
 
+
 def require_admin_session(request: Request) -> bool:
     """Require valid admin session."""
     session_cookie = request.cookies.get("lexa_session")
@@ -134,17 +141,20 @@ def require_admin_session(request: Request) -> bool:
         raise HTTPException(status_code=401, detail="Authentication required")
     return True
 
+
 # ---------- Models ----------
 class LoginRequest(BaseModel):
     password: str
 
+
 # ---------- API Routes ----------
 @app.get("/health")
-@app.get("/healthz") 
+@app.get("/healthz")
 @app.get("/api/health")
 def health_check():
     """Health check endpoint."""
     return {"status": "ok", "service": "lexa-backend"}
+
 
 @app.get("/api/admin/settings/public/branding")
 def get_public_branding():
@@ -157,9 +167,10 @@ def get_public_branding():
             "appName": branding.get("appName", "LexaAI"),
             "tagline": branding.get("tagline", "Your AI Assistant"),
             "primaryColor": branding.get("primaryColor", "#3B82F6"),
-            "logoUrl": branding.get("logoUrl", "")
-        }
+            "logoUrl": branding.get("logoUrl", ""),
+        },
     }
+
 
 @app.post("/admin/login")
 @app.post("/auth/login")
@@ -167,13 +178,10 @@ def admin_login(request: Request, login_data: LoginRequest):
     """Admin login endpoint."""
     if not verify_password(login_data.password):
         raise HTTPException(status_code=401, detail="Invalid password")
-    
+
     token = create_session_token()
-    response = JSONResponse({
-        "success": True,
-        "message": "Logged in successfully"
-    })
-    
+    response = JSONResponse({"success": True, "message": "Logged in successfully"})
+
     # Set session cookie with proper attributes for Cloudflare
     response.set_cookie(
         key="lexa_session",
@@ -182,24 +190,27 @@ def admin_login(request: Request, login_data: LoginRequest):
         httponly=True,
         secure=True,
         samesite="none",
-        domain=".bizbots24.com"
+        domain=".bizbots24.com",
     )
-    
+
     return response
 
+
 @app.post("/admin/logout")
-@app.post("/auth/logout")  
+@app.post("/auth/logout")
 def admin_logout():
     """Admin logout endpoint."""
     response = JSONResponse({"success": True, "message": "Logged out"})
     response.delete_cookie("lexa_session")
     return response
 
+
 @app.get("/admin/me")
 @app.get("/auth/me")
 def get_current_user(request: Request, _: bool = Depends(require_admin_session)):
     """Get current user info."""
     return {"user": "admin", "authenticated": True}
+
 
 @app.get("/api/chat/")
 def chat_endpoint(request: Request, query: str = Query(..., description="User query")):
@@ -221,38 +232,50 @@ def chat_endpoint(request: Request, query: str = Query(..., description="User qu
     # Convert enhanced sources to UI format with max 3 sources
     sources = []
     seen = set()
-    
+
     for src in (enhanced_sources or [])[:3]:  # Hard cap at 3 sources
         file_name = src.get("file_name", "Unknown")
         page = src.get("page", 1)
         url = build_file_url(request, file_name, page)
-        
+
         # Safety-net: guarantee page-targeted PDF URLs
-        if file_name.lower().endswith(".pdf") and page and "#page=" not in url and "page=" not in url:
+        if (
+            file_name.lower().endswith(".pdf")
+            and page
+            and "#page=" not in url
+            and "page=" not in url
+        ):
             url = f"{url}#page={page}"
-        
+
         if url in seen:
             continue
-            
-        name = f"{file_name} (p.{page})" if file_name.lower().endswith(".pdf") else file_name
+
+        name = (
+            f"{file_name} (p.{page})"
+            if file_name.lower().endswith(".pdf")
+            else file_name
+        )
         sources.append({"name": name, "url": url})
         seen.add(url)
 
     # If enhanced search found no information, return early
     if "couldn't find relevant information" in enhanced_answer.lower():
-        return {"response": "I could not find relevant information in my database.", "sources": []}
+        return {
+            "response": "I could not find relevant information in my database.",
+            "sources": [],
+        }
 
-    return {
-        "response": enhanced_answer,
-        "sources": sources
-    }
+    return {"response": enhanced_answer, "sources": sources}
+
 
 @app.get("/query/")
 def legacy_query(request: Request, query: str = Query(...)):
     """Legacy query endpoint."""
     return chat_endpoint(request, query)
 
+
 if __name__ == "__main__":
     print(f"App instance: {app}")
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8600)

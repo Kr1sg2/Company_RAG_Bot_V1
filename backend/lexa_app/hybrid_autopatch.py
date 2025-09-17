@@ -7,20 +7,33 @@ from collections import Counter
 # ---------- tiny helpers ----------
 _WORD = re.compile(r"[a-z0-9]+")
 
+
 def _tok(s: str):
     return _WORD.findall((s or "").lower())
 
+
 _SYNONYMS = {
-    "policy": ["procedure","guidelines","rules","standard"],
-    "purchase": ["buy","procure","acquire","order"],
-    "approval": ["authorize","sign off","sign-off","approve"],
-    "eligible": ["qualification","qualify","eligibility","who can"],
-    "pricing": ["price","cost","amount","limit","cap","maximum"],
-        "laptop": ["computer","notebook","device","hardware"],
-        "program": ["plan","policy","scheme"],
-        "purchase program": ["buying program","procurement program","laptop plan","employee laptop plan"],
-    "employee center": ["employees center","netsuite employee center","suite","portal"],
+    "policy": ["procedure", "guidelines", "rules", "standard"],
+    "purchase": ["buy", "procure", "acquire", "order"],
+    "approval": ["authorize", "sign off", "sign-off", "approve"],
+    "eligible": ["qualification", "qualify", "eligibility", "who can"],
+    "pricing": ["price", "cost", "amount", "limit", "cap", "maximum"],
+    "laptop": ["computer", "notebook", "device", "hardware"],
+    "program": ["plan", "policy", "scheme"],
+    "purchase program": [
+        "buying program",
+        "procurement program",
+        "laptop plan",
+        "employee laptop plan",
+    ],
+    "employee center": [
+        "employees center",
+        "netsuite employee center",
+        "suite",
+        "portal",
+    ],
 }
+
 
 def _expand_queries(q: str, limit: int = 5):
     ql = q.lower()
@@ -39,7 +52,8 @@ def _expand_queries(q: str, limit: int = 5):
     if " and " in ql:
         a, b = ql.split(" and ", 1)
         ex.update({a.strip(), b.strip()})
-    return list(ex)[:1+limit]
+    return list(ex)[: 1 + limit]
+
 
 def _idf(corpus_tokens):
     N = len(corpus_tokens)
@@ -48,13 +62,16 @@ def _idf(corpus_tokens):
         df.update(set(doc))
     return {t: math.log(1 + (N - df[t] + 0.5) / (df[t] + 0.5)) for t in df}
 
+
 PRESENCE_BONUS = {
-    'approval': 0.15,
-    'limit': 0.15,
-    'pricing': 0.15,
-    'price': 0.15,
-    'eligible': 0.10,
+    "approval": 0.15,
+    "limit": 0.15,
+    "pricing": 0.15,
+    "price": 0.15,
+    "eligible": 0.10,
 }
+
+
 def _bm25(qtoks, dtoks, idf, avgdl, k1=1.2, b=0.75):
     if not dtoks:
         return 0.0
@@ -69,6 +86,7 @@ def _bm25(qtoks, dtoks, idf, avgdl, k1=1.2, b=0.75):
         score += idf[t] * (tf * (k1 + 1) / (denom or 1))
     return score
 
+
 def _norm(xs):
     if not xs:
         return xs
@@ -77,10 +95,18 @@ def _norm(xs):
         return [0.0] * len(xs)
     return [(x - m) / (M - m) for x in xs]
 
+
 def _get_text(c):
     if isinstance(c, dict):
-        return c.get("text") or c.get("document") or c.get("content") or c.get("page_content") or ""
+        return (
+            c.get("text")
+            or c.get("document")
+            or c.get("content")
+            or c.get("page_content")
+            or ""
+        )
     return str(c)
+
 
 def _get_vecscore(c):
     # try several common keys; higher is better
@@ -93,15 +119,40 @@ def _get_vecscore(c):
             return 1.0 - float(c["distance"])
     return 0.0
 
+
 # ---------- public: fuse + rerank ----------
-TABLE_BONUS=0.12
-LIMIT_TERMS=('price','pricing','cost','limit','cap','approval','approve','authorized','table','tenure','employment','eligible','eligibility','wait','waiting','days','months','years')
-NUM_BONUS = float(os.getenv('LEXA_NUM_BONUS', '0.18'))
-NUM_RX = re.compile(r'(?i)(\b\$?\d{1,4}(?:[.,]\d{3})*(?:\.\d+)?\b)\s*(days?|months?|years?|usd|\$|percent|%)')
-NEAR_RX = re.compile(r'(?i)(eligible|eligibility|tenure|employment|approval|limit|price|pricing|cap|cost|wait|since|after)')
+TABLE_BONUS = 0.12
+LIMIT_TERMS = (
+    "price",
+    "pricing",
+    "cost",
+    "limit",
+    "cap",
+    "approval",
+    "approve",
+    "authorized",
+    "table",
+    "tenure",
+    "employment",
+    "eligible",
+    "eligibility",
+    "wait",
+    "waiting",
+    "days",
+    "months",
+    "years",
+)
+NUM_BONUS = float(os.getenv("LEXA_NUM_BONUS", "0.18"))
+NUM_RX = re.compile(
+    r"(?i)(\b\$?\d{1,4}(?:[.,]\d{3})*(?:\.\d+)?\b)\s*(days?|months?|years?|usd|\$|percent|%)"
+)
+NEAR_RX = re.compile(
+    r"(?i)(eligible|eligibility|tenure|employment|approval|limit|price|pricing|cap|cost|wait|since|after)"
+)
+
 
 def _has_num_context(t):
-    t = t or ''
+    t = t or ""
     if not NUM_RX.search(t):
         return False
     # look within ~100 chars of a policy term
@@ -111,9 +162,10 @@ def _has_num_context(t):
             return True
     return False
 
+
 def hybrid_rerank(query, candidates, k=None):
-    ql=(query or '').lower()
-    bonus=sum(v for k,v in PRESENCE_BONUS.items() if k in ql)
+    ql = (query or "").lower()
+    bonus = sum(v for k, v in PRESENCE_BONUS.items() if k in ql)
     """Rerank a list of candidate chunks (dicts or strings) using BM25-like lexical
     scoring over *expanded queries*, then fuse with vector score."""
     if not candidates:
@@ -135,48 +187,57 @@ def hybrid_rerank(query, candidates, k=None):
     # fuse
     vec = [_get_vecscore(c) for c in candidates]
     L, V = _norm(lex), _norm(vec)
-    ql = (query or '').lower()
+    ql = (query or "").lower()
     tbl_hint = any(t in ql for t in LIMIT_TERMS)
     # attach scores & sort
     out = []
     for i, c in enumerate(candidates):
         t = _get_text(c).lower()
-        has_tbl = ('|') in t or 'table' in t or 'column' in t  # crude but effective
+        has_tbl = ("|") in t or "table" in t or "column" in t  # crude but effective
         bonus_tbl = TABLE_BONUS if tbl_hint and has_tbl else 0.0
         bonus_num = NUM_BONUS if _has_num_context(t) else 0.0
         fused_score = w * V[i] + (1 - w) * (L[i] + bonus) + bonus_tbl + bonus_num
         if isinstance(c, dict):
             c = dict(c)
             c.setdefault("metrics", {})
-            c["metrics"].update({
-                "lex": L[i],
-                "vec": V[i],
-                "fused": fused_score,
-                "has_num": 1 if bonus_num > 0 else 0,
-            })
+            c["metrics"].update(
+                {
+                    "lex": L[i],
+                    "vec": V[i],
+                    "fused": fused_score,
+                    "has_num": 1 if bonus_num > 0 else 0,
+                }
+            )
         out.append((fused_score, c))
     out.sort(key=lambda x: x[0], reverse=True)
     ranked = [c for _, c in out]
     # DIVERSITY_ON
-    if os.getenv('LEXA_DIVERSITY', '1') in ('1', 'true', 'TRUE', 'yes'):
-        max_per = int(os.getenv('LEXA_DUP_MAX_PER_PAGE','2'))   # max chunks per (doc,page)
-        thr = float(os.getenv('LEXA_NEAR_DUP_JACCARD','0.88'))  # 0..1 (higher = stricter dedup)
+    if os.getenv("LEXA_DIVERSITY", "1") in ("1", "true", "TRUE", "yes"):
+        max_per = int(
+            os.getenv("LEXA_DUP_MAX_PER_PAGE", "2")
+        )  # max chunks per (doc,page)
+        thr = float(
+            os.getenv("LEXA_NEAR_DUP_JACCARD", "0.88")
+        )  # 0..1 (higher = stricter dedup)
 
         def _meta(c):
-            m = (c.get('metadata') or c.get('metadatas') or {})
+            m = c.get("metadata") or c.get("metadatas") or {}
             if isinstance(m, list) and m:
                 m = m[0]
             return m or {}
+
         def _page(m):
-            for k in ('page', 'page_start', 'page_no', 'page_number'):
+            for k in ("page", "page_start", "page_no", "page_number"):
                 if k in m:
                     try:
                         return int(m[k])
                     except Exception:
                         pass
             return None
+
         def _name(m):
-            return m.get('file_name') or m.get('source') or m.get('doc_name')
+            return m.get("file_name") or m.get("source") or m.get("doc_name")
+
         def _sig(c):
             return set(_tok(_get_text(c)))
 
@@ -193,7 +254,7 @@ def hybrid_rerank(query, candidates, k=None):
             sig = _sig(c)
             is_dup = False
             for sc in selected:
-                ssig = sc.get('__sig')
+                ssig = sc.get("__sig")
                 if not sig or not ssig:
                     continue
                 inter = len(sig & ssig)
@@ -206,28 +267,38 @@ def hybrid_rerank(query, candidates, k=None):
 
             if isinstance(c, dict):
                 c = dict(c)
-                c['__sig'] = sig
+                c["__sig"] = sig
             selected.append(c)
             seen[key] += 1
             if len(selected) >= (k or len(ranked)):
                 break
 
-        ranked = [{k:v for k,v in c.items() if k != '__sig'} if isinstance(c,dict) else c for c in selected]
+        ranked = [
+            {k: v for k, v in c.items() if k != "__sig"} if isinstance(c, dict) else c
+            for c in selected
+        ]
 
     return ranked[:k] if k else ranked
+
 
 def apply_patch(globs: dict) -> bool:
     """Monkey-patch the first retriever function we can find."""
     if os.getenv("LEXA_HYBRID", "1") not in ("1", "true", "TRUE", "yes"):
         return False
     target = None
-    for name in ("retrieve", "retrieve_chunks", "search_chunks", "search", "get_context"):
+    for name in (
+        "retrieve",
+        "retrieve_chunks",
+        "search_chunks",
+        "search",
+        "get_context",
+    ):
         fn = globs.get(name)
         if callable(fn):
             target = name
             orig = fn
             break
-    if not target: 
+    if not target:
         return False
 
     def wrapped(query, *args, **kwargs):
@@ -249,6 +320,7 @@ def apply_patch(globs: dict) -> bool:
             return hybrid_rerank(query, cands, k=k)
         except Exception:
             return cands[:k]
+
     globs[target] = wrapped
     globs["_hybrid_patched"] = target
     return True

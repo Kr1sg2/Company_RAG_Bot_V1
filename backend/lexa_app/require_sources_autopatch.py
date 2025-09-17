@@ -3,22 +3,27 @@ import os
 from typing import Any, Dict
 
 _MIN = int(os.getenv("LEXA_MIN_SOURCES", "1"))
-_MSG = os.getenv("LEXA_NO_SOURCE_MESSAGE",
-                 "I couldn't find a grounded answer in the indexed documents.")
-_ON  = os.getenv("LEXA_REQUIRE_SOURCES", "1").lower() in ("1","true","yes")
+_MSG = os.getenv(
+    "LEXA_NO_SOURCE_MESSAGE",
+    "I couldn't find a grounded answer in the indexed documents.",
+)
+_ON = os.getenv("LEXA_REQUIRE_SOURCES", "1").lower() in ("1", "true", "yes")
 
-_KEYS = ("chat","api_chat","chat_api","chat_route","answer","qa","respond")
+_KEYS = ("chat", "api_chat", "chat_api", "chat_route", "answer", "qa", "respond")
+
 
 def _looks_like_resp(x: Any) -> bool:
     return isinstance(x, dict) and ("response" in x or "answer" in x)
 
-def _normalize(resp: Dict[str,Any]) -> Dict[str,Any]:
+
+def _normalize(resp: Dict[str, Any]) -> Dict[str, Any]:
     # prefer "response"; keep both if they already exist
     if "response" not in resp and "answer" in resp:
         resp["response"] = resp.get("answer")
     if "sources" not in resp or resp["sources"] is None:
         resp["sources"] = []
     return resp
+
 
 def apply_patch(globs: dict) -> bool:
     if not _ON:
