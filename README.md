@@ -94,3 +94,14 @@ See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed production setup instructions.
 - [CONFIG.md](./CONFIG.md) - Configuration options
 - [FRONTEND.md](./FRONTEND.md) - Frontend architecture
 - [DEPLOYMENT.md](./DEPLOYMENT.md) - Production deployment guide
+
+## Frontend
+
+### Local dev
+
+```bash
+cd frontend && npm ci && npm run dev
+# Dev: VITE_API_BASE=http://localhost:8601 ; Prod: /api
+```
+
+The minimal chat UI posts to `/api/chat`.
