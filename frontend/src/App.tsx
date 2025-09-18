@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-do
 import ClientChat from "./pages/ClientChat";
 import AdminLogin from "./pages/AdminLogin";
 import AdminBranding from "./pages/AdminBranding";
+import Chat from "./components/Chat";
 
 function Navigation() {
   const location = useLocation();
@@ -29,7 +30,15 @@ export default function App() {
     <BrowserRouter>
       <Navigation />
       <Routes>
-        <Route path="/" element={<ClientChat />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <ClientChat />
+              <Chat />
+            </>
+          }
+        />
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/branding" element={<AdminBranding />} />
       </Routes>
