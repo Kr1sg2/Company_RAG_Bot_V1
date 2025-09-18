@@ -1,12 +1,30 @@
 import { apiUrl } from '../config';
 import type { Branding } from './brandingTypes';
 
-// --- Types used by the chat client ------------------------------------------------
+// --- New Chat API Types (for new Chat component) --------------------------------
+export type ChatRequest = { message: string };
+export type ChatSource = { title?: string; url?: string; snippet?: string };
+export type ChatResponse = { answer: string; sources?: ChatSource[] };
+
+// New simplified chat function for the new Chat component
+export async function chat(req: ChatRequest, signal?: AbortSignal): Promise<ChatResponse> {
+  const base = import.meta.env.VITE_API_BASE || "/api";
+  const r = await fetch(`${base}/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(req),
+    signal,
+  });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.json();
+}
+
+// --- Legacy Types used by existing chat client -----------------------------------
 export type ChatRole = 'system' | 'user' | 'assistant';
 export interface ChatMessage { role: ChatRole; content: string; }
 
 // Keep `answer?` for compatibility with ClientChat.tsx which may read response.answer
-export interface ChatResponse {
+export interface LegacyChatResponse {
   reply: string;
   answer?: string;
   sources?: any[];
@@ -118,7 +136,7 @@ export async function putAdminBranding(
 
 // --- Chat endpoint(s) -------------------------------------------------------------
 // Robust POST JSON to /api/chat with fallback to /api/chat/ if 404
-export async function chat(userText: string, opts?: { system?: string }): Promise<ChatResponse> {
+export async function legacyChat(userText: string, opts?: { system?: string }): Promise<LegacyChatResponse> {
   const controller = new AbortController();
   const payload: any = { message: userText };
 

@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       // Dev-only: keep /api prefix; NGINX handles this in prod
       '/api': {
-        target: 'http://127.0.0.1:8600',
+        target: 'http://localhost:8601',
         changeOrigin: true,
       },
     },
