@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { fetchPublicBranding, chat } from "../lib/api";
+import { fetchPublicBranding, legacyChat } from "../lib/api";
 import type { Branding } from "../lib/brandingTypes";
 import { BrandingStyleMapper, avatarClassFromShape } from "../lib/brandingToStyles";
 import { buildSystemPrompt } from "../lib/prompt";
@@ -138,7 +138,7 @@ export default function ClientChat() {
 
     try {
       const systemPrompt = branding ? buildSystemPrompt(branding as Branding) : undefined;
-      const response = await chat(userMessage.content, { system: systemPrompt });
+      const response = await legacyChat(userMessage.content, { system: systemPrompt });
       
       const assistantContent = (response.answer ?? response.reply);
       

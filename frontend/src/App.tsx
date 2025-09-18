@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-do
 import ClientChat from "./pages/ClientChat";
 import AdminLogin from "./pages/AdminLogin";
 import AdminBranding from "./pages/AdminBranding";
+import Chat from "./components/Chat";
 
 function Navigation() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function Navigation() {
   return (
     <nav className="p-3 border-b flex gap-3 text-sm">
       <Link to="/">Chat</Link>
+      <Link to="/simple-chat">Simple Chat</Link>
       <Link to="/admin/login">Admin Login</Link>
       <Link to="/admin/branding">Branding</Link>
     </nav>
@@ -30,6 +32,7 @@ export default function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<ClientChat />} />
+        <Route path="/simple-chat" element={<Chat />} />
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/branding" element={<AdminBranding />} />
       </Routes>
