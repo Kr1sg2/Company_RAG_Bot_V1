@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { fetchPublicBranding, chat } from "../lib/api";
+import { fetchPublicBranding, chatLegacy as chat } from "../lib/api";
 import type { Branding } from "../lib/brandingTypes";
 import { BrandingStyleMapper, avatarClassFromShape } from "../lib/brandingToStyles";
 import { buildSystemPrompt } from "../lib/prompt";
