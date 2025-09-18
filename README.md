@@ -39,6 +39,24 @@ npm install
 npm run dev
 ```
 
+## Frontend
+
+### Local dev
+```bash
+cd frontend && npm ci && npm run dev
+```
+
+**VITE_API_BASE behavior for dev/prod:**
+- Development: Uses `http://localhost:8601` (proxied via Vite)
+- Production: Uses `/api` (served by backend)
+
+**Features:**
+- Minimal chat UI with typed API client
+- POST requests to `/api/chat` endpoint
+- Response display with sources
+- Recent questions persistence (localStorage)
+- Abort functionality for in-flight requests
+
 ## Testing the System
 
 ### Test Backend API
