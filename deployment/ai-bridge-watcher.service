@@ -1,0 +1,17 @@
+[Unit]
+Description=AI Bridge Inbox Watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=bizbots24
+Group=bizbots24
+EnvironmentFile=/etc/lexa/ai-bridge.env
+ExecStart=/bin/bash /home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI/bridge_watcher/watch_inbox.sh
+Restart=on-failure
+RestartSec=5
+Nice=5
+
+[Install]
+WantedBy=multi-user.target
