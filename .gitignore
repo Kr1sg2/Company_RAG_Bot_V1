@@ -28,3 +28,4 @@ backups/
 *.bak
 *.backup
 Frontend_Old_*
+backend/Database/.lexa-cache/
