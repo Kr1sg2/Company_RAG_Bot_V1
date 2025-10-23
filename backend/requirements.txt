@@ -8,8 +8,6 @@ bcrypt<4.1
 python-dotenv
 openai
 chromadb
-langchain
-langchain-openai
 tiktoken
 pillow
 numpy
@@ -18,7 +16,6 @@ pdf2image
 
 # Document Indexing Service Dependencies
 watchdog>=4.0.0
-pdfminer.six>=20231228
 pdf2image>=1.17.0
 pytesseract>=0.3.10
 camelot-py[cv]>=0.11.0
