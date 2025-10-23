@@ -15,7 +15,7 @@ from urllib.parse import quote
 from fastapi import FastAPI, Request, HTTPException, Query, Depends
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from starlette.middleware.proxy_headers import ProxyHeadersMiddleware
+from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from itsdangerous import TimestampSigner, BadSignature, SignatureExpired
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -49,6 +49,16 @@ try:
 except Exception as e:
     logger.warning(f"Enhanced search not available: {e}")
 
+# Import hybrid AI system
+hybrid_ai_available = False
+try:
+    from lexa_app.hybrid_endpoints import hybrid_router
+    from lexa_app.hybrid_ai import hybrid_ai_service
+    hybrid_ai_available = True
+    logger.info("✅ Hybrid AI system loaded")
+except Exception as e:
+    logger.warning(f"Hybrid AI not available: {e}")
+
 # ---------- FastAPI app ----------
 app = FastAPI(
     title="LexaAI Backend", 
@@ -66,7 +76,7 @@ ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
 
-app.add_middleware(ProxyHeadersMiddleware, trusted_hosts="*")
+app.add_middleware(TrustedHostMiddleware, allowed_hosts=["*"])
 app.add_middleware(
     CORSMiddleware,
     # Accept any subdomain on bizbots24.com (e.g., lexaai.bizbots24.com, Cloudflare Access, etc.)
@@ -75,6 +85,21 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Register hybrid AI router if available
+if hybrid_ai_available:
+    app.include_router(hybrid_router)
+    logger.info("✅ Hybrid AI router registered")
+
+# Initialize hybrid AI on startup
+@app.on_event("startup")
+async def startup_hybrid_ai():
+    if hybrid_ai_available:
+        try:
+            await hybrid_ai_service.initialize()
+            logger.info("✅ Hybrid AI service initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize hybrid AI service: {e}")
 
 # ---------- Helper Functions ----------
 def build_file_url(request: Request, source_doc: str, page_number: int = 1) -> str:

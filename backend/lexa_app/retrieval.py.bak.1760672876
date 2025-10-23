@@ -191,15 +191,12 @@ class EnhancedRetriever:
         }
 
     def _generate_llm_answer(self, query: str, context: str) -> str:
-        """Generate a coherent answer using LLM based on retrieved context.
+        """Generate a coherent answer using LLM based on retrieved context."""
+        try:
+            import openai
+            client = openai.OpenAI()
 
-        Supports two modes controlled by LEXA_USE_HYBRID_RETRIEVAL environment variable:
-        - True (default): Uses hybrid router for intelligent provider selection
-        - False: Direct OpenAI API call (legacy mode)
-        """
-        use_hybrid = os.getenv("LEXA_USE_HYBRID_RETRIEVAL", "true").lower() in ("1", "true", "yes")
-
-        system_prompt = """You are a helpful AI assistant that answers questions based on provided context from company documents.
+            system_prompt = """You are a helpful AI assistant that answers questions based on provided context from company documents.
 
 Your task is to:
 1. Read the context carefully and extract ALL relevant information
@@ -213,7 +210,7 @@ Your task is to:
 
 Format your response to be informative and complete, prioritizing thoroughness over brevity."""
 
-        user_prompt = f"""Context from company documents:
+            user_prompt = f"""Context from company documents:
 
 {context}
 
@@ -221,45 +218,17 @@ Question: {query}
 
 Please provide a comprehensive and detailed answer based on the context above. Include all relevant information, steps, examples, and details that would help the user fully understand the topic."""
 
-        try:
-            if use_hybrid:
-                # Use hybrid router for intelligent provider selection
-                logger.info("Using hybrid router for answer generation")
-                from .hybrid_ai import hybrid_ai_service
-                from .providers.base_provider import ProviderRequest
+            response = client.chat.completions.create(
+                model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                temperature=0.3,
+                max_tokens=1500
+            )
 
-                if not hybrid_ai_service.initialized:
-                    logger.warning("Hybrid service not initialized, falling back to direct OpenAI")
-                    return self._generate_openai_answer(system_prompt, user_prompt)
-
-                # Create provider request
-                # Note: Ollama will automatically cap at 512 tokens (CPU performance limit)
-                # OpenAI will use the full 1500 tokens for detailed answers
-                request = ProviderRequest(
-                    prompt=query,  # Original query
-                    context=context,  # Retrieved document context
-                    system_message=system_prompt,
-                    temperature=0.3,
-                    max_tokens=1500  # Ollama caps at 512, OpenAI uses 1500
-                )
-
-                # Route through hybrid system
-                import asyncio
-                loop = asyncio.new_event_loop()
-                asyncio.set_event_loop(loop)
-                try:
-                    response = loop.run_until_complete(hybrid_ai_service.router.route_query(request))
-                    if response.success:
-                        return response.content.strip()
-                    else:
-                        logger.error(f"Hybrid generation failed: {response.error}")
-                        raise Exception(response.error)
-                finally:
-                    loop.close()
-            else:
-                # Legacy mode: Direct OpenAI call
-                logger.info("Using direct OpenAI for answer generation (legacy mode)")
-                return self._generate_openai_answer(system_prompt, user_prompt)
+            return response.choices[0].message.content.strip()
 
         except Exception as e:
             logger.error(f"LLM answer generation failed: {e}")
@@ -273,23 +242,6 @@ Please provide a comprehensive and detailed answer based on the context above. I
                         snippet = lines[1][:300].strip()
                         snippets.append(snippet)
             return " ".join(snippets) if snippets else "I apologize, but I'm having trouble generating an answer at the moment."
-
-    def _generate_openai_answer(self, system_prompt: str, user_prompt: str) -> str:
-        """Direct OpenAI API call (legacy mode)."""
-        import openai
-        client = openai.OpenAI()
-
-        response = client.chat.completions.create(
-            model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ],
-            temperature=0.3,
-            max_tokens=1500
-        )
-
-        return response.choices[0].message.content.strip()
 
 def enhanced_search(query: str, chroma_path: Optional[str] = None) -> Dict[str, Any]:
     chroma_path = chroma_path or os.getenv("LEXA_CHROMA_PATH", "chroma_db")

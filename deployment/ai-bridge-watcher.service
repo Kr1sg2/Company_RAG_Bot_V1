@@ -10,8 +10,15 @@ Group=bizbots24
 EnvironmentFile=/etc/lexa/ai-bridge.env
 ExecStart=/bin/bash /home/bizbots24/Company_Chatbot_Files/Lexa_AI_V2/Backend_FastAPI/bridge_watcher/watch_inbox.sh
 Restart=on-failure
-RestartSec=5
+RestartSec=2
 Nice=5
+
+# --- Hardening (read-only system, only inbox/processed writable) ---
+# Note: Some hardening options may conflict with script execution
+NoNewPrivileges=yes
+PrivateTmp=yes
+ReadWritePaths=/home/bizbots24/ai-bridge/inbox
+ReadWritePaths=/home/bizbots24/ai-bridge/inbox/.processed
 
 [Install]
 WantedBy=multi-user.target

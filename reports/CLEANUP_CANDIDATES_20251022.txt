@@ -1,0 +1,16 @@
+backend/app_broken.py
+backend/app_broken_final.py
+backend/app_debug.py
+backend/app_original_backup.py
+backend/app_clean.py
+backend/app_working.py
+backend/storage/settings (Copy).json
+backend/storage/settings (Copy 2).json
+backend/lexa_app/hybrid_autopatch.py
+backend/lexa_app/crossrefs_autopatch.py
+backend/lexa_app/require_sources_autopatch.py
+backend/lexa_app/quote_facts_autopatch.py
+backend/lexa_app/structured_style_autopatch.py
+backend/indexer/pipeline_original_backup.py
+backend/indexer/pipeline_fixed.py
+backend/indexer/chunk_fixed.py

@@ -117,60 +117,27 @@ export async function putAdminBranding(
 }
 
 // --- Chat endpoint(s) -------------------------------------------------------------
-// Robust POST JSON to /api/chat with fallback to /api/chat/ if 404
+// GET to /api/chat/?query=...
 export async function chat(userText: string, opts?: { system?: string }): Promise<ChatResponse> {
   const controller = new AbortController();
-  const payload: any = { message: userText };
 
-  // pass custom system prompt if admin set one or caller passes one
-  if (opts?.system) payload.systemPrompt = opts.system;
+  // Backend expects GET with query parameter
+  const queryParam = encodeURIComponent(userText);
+  const url = apiUrl(`/chat/?query=${queryParam}`);
 
-  // ALSO: if you already loaded public branding into memory and it has systemPrompt,
-  // set payload.systemPrompt ??= branding.systemPrompt;
   try {
-    const branding = await fetchPublicBranding();
-    if (branding?.systemPrompt && !payload.systemPrompt) {
-      payload.systemPrompt = branding.systemPrompt;
-    }
-  } catch {
-    // If branding fetch fails, continue without it
-  }
-
-  // Ensure we never send any web/tool-related flags (locked to closed RAG)
-  payload.tools = [];
-  payload.tool_choice = "none";
-  delete payload.allowWeb;
-  delete payload.enableWeb;
-
-  async function postTo(path: string) {
-    const r = await fetch(apiUrl(path), {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const r = await fetch(url, {
+      method: 'GET',
       credentials: 'include',
       signal: controller.signal,
-      body: JSON.stringify(payload),
     });
-    if (r.status === 404) throw new Error('TRY_FALLBACK');
-    return ok<any>(r);
-  }
 
-  try {
-    try { 
-      const j = await postTo('/chat'); 
-      const reply = j?.reply ?? j?.response ?? j?.content ?? j?.message ?? (typeof j === 'string' ? j : '');
-      const sources = j?.sources ?? j?.data?.sources ?? j?.context?.sources ?? [];
-      return { reply, answer: reply, sources };
-    }
-    catch (e: any) {
-      if (String(e?.message) === 'TRY_FALLBACK') {
-        const j = await postTo('/chat/');
-        const reply = j?.reply ?? j?.response ?? j?.content ?? j?.message ?? (typeof j === 'string' ? j : '');
-        const sources = j?.sources ?? j?.data?.sources ?? j?.context?.sources ?? [];
-        return { reply, answer: reply, sources };
-      }
-      throw e;
-    }
-  } finally {
-    // Cleanup if needed
+    const j = await ok<any>(r);
+    const reply = j?.reply ?? j?.response ?? j?.content ?? j?.message ?? (typeof j === 'string' ? j : '');
+    const sources = j?.sources ?? j?.data?.sources ?? j?.context?.sources ?? [];
+    return { reply, answer: reply, sources };
+  }
+  catch (e: any) {
+    throw e;
   }
 }
